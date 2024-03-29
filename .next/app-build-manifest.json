@@ -21,10 +21,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/sports/page.js"
     ],
-    "/not-found": [
+    "/media/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/not-found.js"
+      "static/chunks/app/media/page.js"
     ]
   }
 }
