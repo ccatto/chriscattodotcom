@@ -27,6 +27,7 @@ const Home = () => {
               <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
             </Link>
           </div>
+
           <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
             {/* Add Hero Images Here */}
             {/* <Image
@@ -37,6 +38,30 @@ const Home = () => {
               alt="Screenshots of the dashboard project showing desktop version"
             /> */}
           </div>
+        </div>
+        <div>
+          <h3 className='text-color-black min-h-7'> blah 7 </h3>
+          <hr></hr>   
+        </div>
+        <div>
+          <h3 className='text-color-black'> blah</h3>
+          <hr></hr>   
+        </div>
+        <div>
+          <h3 className='text-color-black h-80'> blah</h3>
+          <hr></hr>   
+        </div>
+        <div>
+          <h3 className='text-color-black'> blah</h3>
+          <hr></hr>   
+        </div>
+        <div>
+          <h3 className='text-color-black'> blah</h3>
+          <hr></hr>   
+        </div>
+        <div>
+          <h3 className='text-color-black'> blah</h3>
+          <hr></hr>   
         </div>
     </>
 
