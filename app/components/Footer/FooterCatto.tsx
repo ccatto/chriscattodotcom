@@ -62,7 +62,8 @@ const FooterCatto = () => {
                 </div>
                 <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
                 <div className="sm:flex sm:items-center sm:justify-between">
-                    <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© {new Date().getFullYear()} Chris Catto .com™. All Rights Reserved.
+                    <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+                        © {new Date().getFullYear()} Chris Catto .com™. All Rights Reserved.
                     </span>
                     <div className="flex mt-4 sm:justify-center sm:mt-0">
                         {/* https://tw-elements.com/docs/standard/components/social-buttons/ */}
@@ -114,7 +115,8 @@ const FooterCatto = () => {
                             </span>
                             <span className="sr-only">YouTube account</span>
                         </a>
-                        <a href="https://sfcc-unofficial.slack.com/team/U04SR6SMJ80" target="_blank" className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                        {/* #todo get flex box to work on mobile for the extra 3 social */}
+                        {/* <a href="https://sfcc-unofficial.slack.com/team/U04SR6SMJ80" target="_blank" className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
                             <span className="[&>svg]:h-5 [&>svg]:w-5">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +127,7 @@ const FooterCatto = () => {
                                 </svg>
                             </span>
                             <span className="sr-only">Slack account</span>
-                        </a>
+                        </a> */}
                         <a href="https://www.facebook.com/chriscattodotcom/" className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5" target="_blank">
                             <span className="[&>svg]:h-5 [&>svg]:w-5">
                                 <svg
@@ -162,7 +164,7 @@ const FooterCatto = () => {
                             </span>
                             <span className="sr-only">Instagram</span>
                         </a>
-                        <a href="https://t.snapchat.com/UdLzmjxH" target="_blank" className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                        {/* <a href="https://t.snapchat.com/UdLzmjxH" target="_blank" className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
                             <span className="[&>svg]:h-5 [&>svg]:w-5">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -185,7 +187,9 @@ const FooterCatto = () => {
                                 </svg>
                             </span>
                             <span className="sr-only">Discord community</span>
-                        </a>
+                        </a> */}
+                        <div>
+                        </div>
                     </div>
                 </div>
                 </div>

@@ -1,6 +1,3 @@
-// import React from 'react'
-// import Link from 'next/link';
-// import Nav from '../Nav/Nav';
 import NavCatto from '../NavCatto/NavCatto';
 
 const Header = () => {
@@ -10,7 +7,6 @@ const Header = () => {
             <NavCatto/>
         </header>
     </>
-
   )
 }
 export default Header
