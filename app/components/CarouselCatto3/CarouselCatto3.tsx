@@ -14,7 +14,7 @@ const CarouselCatto3 = ({ data }: {
     const carouselRef = useRef(null)
     let totalSlides = data.length; // Total slides
     console.log('totalSlides === ', totalSlides);
-    console.log('currentImg === ', currentImg);
+    console.log('currentImg number === ', currentImg);
     const clickNextHandler = () => {
         return (event: React.MouseEvent) => {
             if (currentImg + 1 === totalSlides ) {
