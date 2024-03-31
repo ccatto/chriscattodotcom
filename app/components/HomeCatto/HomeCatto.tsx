@@ -1,6 +1,10 @@
 import Image from "next/image"
 import CarouselCatto from "../CarouselCatto/CarouselCatto";
 import CarouselSimple from "../CarouselSimple/CarouselSimple";
+import CarouselCatto2 from "../CarouselCatto2/CarouselCatto2";
+const DATA = [{ image: "/images/Chris-Catto-Sunrise.jpg" },
+ { image: "/hero-mobile.png" }, 
+ { image: "/Catto.png" }]
 
 const HomeCatto = () => {
     return (
@@ -15,8 +19,8 @@ const HomeCatto = () => {
                 height={374}
                 alt="Chris Catto Sunrise"/> */}
               <h3>above Carousel </h3>
-              <CarouselSimple/>
-              <CarouselCatto/>
+              {/* <CarouselSimple/> */}
+              <CarouselCatto2 data={DATA}/>
               <h4>below Carousel </h4>
           </div>
       </>

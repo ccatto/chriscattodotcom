@@ -988,6 +988,9 @@ select {
 .pointer-events-none {
   pointer-events: none;
 }
+.static {
+  position: static;
+}
 .fixed {
   position: fixed;
 }
@@ -1186,6 +1189,9 @@ select {
 .h-6 {
   height: 1.5rem;
 }
+.h-60 {
+  height: 15rem;
+}
 .h-7 {
   height: 1.75rem;
 }
@@ -1218,9 +1224,6 @@ select {
 }
 .h-full {
   height: 100%;
-}
-.h-60 {
-  height: 15rem;
 }
 .max-h-\[275px\] {
   max-height: 275px;
@@ -1276,6 +1279,9 @@ select {
 .w-8 {
   width: 2rem;
 }
+.w-80 {
+  width: 20rem;
+}
 .w-96 {
   width: 24rem;
 }
@@ -1290,9 +1296,6 @@ select {
 }
 .w-screen {
   width: 100vw;
-}
-.w-80 {
-  width: 20rem;
 }
 .min-w-0 {
   min-width: 0px;
@@ -1877,14 +1880,14 @@ select {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.duration-300 {
+  transition-duration: 300ms;
+}
 .duration-500 {
   transition-duration: 500ms;
 }
 .duration-700 {
   transition-duration: 700ms;
-}
-.duration-300 {
-  transition-duration: 300ms;
 }
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
