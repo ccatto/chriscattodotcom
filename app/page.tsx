@@ -5,15 +5,16 @@
 // import Footer from '@/app/components/Footer/Footer';
 // import FooterCatto from './components/Footer/FooterCatto';
 import SimpleMain from './components/SimpleMain/SimpleMain';
+import HomeCatto from './components/HomeCatto/HomeCatto';
 // import Nav from './components/Nav/Nav';
 // import { useState } from 'react'
 
 export default function Page() {
   return (
     <>
-      <main className="flex min-h-screen flex-col p-6 bg-slate-400">test
-      {/* <SimpleMain /> */}
-      </main>
+      {/* <main className="flex min-h-screen flex-col p-6 bg-slate-400">test
+      </main> */}
+      <HomeCatto />
     </>
   );
 }
