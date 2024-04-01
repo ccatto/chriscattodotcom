@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+// import { Image } from 'next/image';
 
 const FooterCatto = () => {
   return (
@@ -11,16 +12,29 @@ const FooterCatto = () => {
                 <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                     <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
-                        <a href="https://www.ChrisCatto.com" className="flex items-center">
+                        <Link href="https://www.ChrisCatto.com" className="flex items-center">
                             <Image
-                            src="/Chris-Catto-dot-com.png"
-                            width={107}
-                            height={50}
-                            className="hidden md:block"
-                            alt="Chris Catto .com"
+                                alt="Chris Catto .com"
+                                loading="lazy"
+                                width="107"
+                                height="50"
+                                decoding="async"
+                                // data-nimg="1"
+                                className="hidden md:block mr-3 rounded-2xl"
+                                // style="color:transparent"
+                                // srcset="
+                                //     /_next/image?url=%2FChris-Catto-dot-com.png&w=128&q=75 1x,
+                                //     /_next/image?url=%2FChris-Catto-dot-com.png&w=256&q=75 2x
+                                // "
+                                src="/_next/image?url=%2FChris-Catto-dot-com.png&w=256&q=75"
                             />
+                            <Image className="w-10 h-10 rounded-full mr-3"
+                            src="/images/ChrisCatto-Avatar.png"
+                            width={50}
+                            height={50}
+                            alt="Rounded ChrisCatto.com avatar"/>
                             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">ChrisCatto.com</span>
-                        </a>
+                        </Link>
                     </div>
                     <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                         <div>

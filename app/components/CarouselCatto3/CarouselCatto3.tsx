@@ -55,7 +55,8 @@ const CarouselCatto3 = ({ data }: {
     return (
         <>
             {/* Carousel container */}
-            <div id="indicators-carousel" className="relative w-full">
+            <div id="indicators-carousel" className="relative w-full overflow-hidden">
+                <h1>Carousel Container</h1>
             {/* <div className='w-80 h-60 rounded-md overflow-hidden relative'> */}
                 {/* Carousel Wrapper */}
                 {/* <div className="relative h-56 overflow-hidden rounded-lg md:h-96"> */}
@@ -71,7 +72,7 @@ const CarouselCatto3 = ({ data }: {
                         {data.map((v, i) => (
                             <div key={i} className='duration-700 ease-in-out'>
                                 <Image
-                                    className='absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
+                                    className='block w-full'
                                     alt={`carousel-image-${i}`}
                                     fill
                                     src={v.image || "/hero-desktop.png"}
@@ -92,7 +93,7 @@ const CarouselCatto3 = ({ data }: {
                     // onClick={() => setCurrentImg(prev => prev - 1)}
                     className={`border px-4 py-2 font-bold ${currentImg === 0 && 'opacity-50'}`}
                 >
-                    {"<"}
+ {"<"}
                 </button>
                 <button
                     // disabled={currentImg === data.length - 1}

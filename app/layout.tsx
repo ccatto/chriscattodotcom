@@ -12,9 +12,13 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${montserrat.className} overflow-x-hidden w-screen absolute bg-gray-800 antialiased flex flex-col min-h-screen m-0`}>
           <Header/>
-          <main className="flex-1 mt-20">
-            {children}
-          </main>
+          <div className='flex mt-20 h-full'>
+            <div className='flex-[1] bg-gradient-to-r from-gray-500' to-gray-900></div>
+            <main className='flex-[98] bg-red-500'>
+              {children}
+            </main>
+            <div className='flex-[1] bg-gradient-to-r from-gray-900 to-gray-500'></div>
+          </div>
           <FooterCatto/>
       </body>
     </html>
