@@ -11,23 +11,15 @@ const DATA = [{ image: "/images/Chris-Catto-Sunrise.jpg" },
 
 const HomeCatto = () => {
     return (
-        <section 
-            // className="h-[296rem]"
-        >
-            Main Text
-            <JumbotronCatto/>
-            {/* <Image 
-            className="mt-20 rounded-full w-96 h-96" 
-            src="/images/Chris-Catto-Sunrise.jpg"
-            width={800}
-            height={374}
-            alt="Chris Catto Sunrise"/> */}
-            <h3>above Carousel </h3>
-            {/* <CarouselSimple/> */}
-            {/* <CarouselCatto2 data={DATA}/> */}
-            <CarouselCatto3 data={DATA}/>
-            <h4>below Carousel </h4>
-        </section>
+        <>
+            <hr className="m-3"/>
+            <section 
+                // className="h-[296rem]"
+            >
+                <JumbotronCatto/>
+            </section>
+            <hr className="m-3"/>
+        </>
     )
   }
   export default HomeCatto

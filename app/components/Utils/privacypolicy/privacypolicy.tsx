@@ -2,9 +2,16 @@ const PrivacyPolicy = () => {
   return (
     <>
         <div>
-        PRIVACY POLICY
+        <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8">
+                <h1 className="text-gray-900 dark:text-white text-3xl md:text-5xl font-extrabold mb-2">
+                PRIVACY POLICY
+                </h1>
+                {/* <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-6">
+                    I enjoy documenting & writing about when I am developing software. This is broken down into different technologies & languages such as JavaScript & SFCC.
+                </p> */}
+        </div>
 
-    Last updated November 17, 2006
+    Last updated November 17, 2021
 
 
 

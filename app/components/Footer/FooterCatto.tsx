@@ -41,20 +41,28 @@ const FooterCatto = () => {
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Code</h2>
                             <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                 <li className="mb-4">
-                                    <a href="https://flowbite.com/" className="hover:underline">Javascript</a>
+                                    <Link href="/code" className="hover:underline">
+                                        Javascript
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="https://tailwindcss.com/" className="hover:underline">SFCC</a>
+                                    <Link href="/code" className="hover:underline">
+                                        SFCC
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">About</h2>
-                            <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                                <Link href="/about">
+                                    About
+                                </Link>
+                            </h2>
+                            {/* <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                 <li className="mb-4">
                                     <a href="https://github.com/themesberg/flowbite" className="hover:underline ">Resume</a>
                                 </li>
-                            </ul>
+                            </ul> */}
                         </div>
                         <div>
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
@@ -67,9 +75,9 @@ const FooterCatto = () => {
                                     <span>Privacy Policy </span>
                                 </Link>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <a href="#" className="hover:underline">Terms &amp; Conditions</a>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                     </div>

@@ -67,7 +67,7 @@ const NavCatto = () => {
                                 <span>Code </span>
                             </Link>
                         </li>
-                        <li>
+                        {/* <li>
                         <Link
                             href="/sports"
                             className={clsx(
@@ -81,8 +81,8 @@ const NavCatto = () => {
                         >
                             <span>Sports</span>
                         </Link>
-                        </li>
-                        <li>
+                        </li> */}
+                        {/* <li>
                         <Link
                             href="/media"
                             className={clsx(
@@ -96,7 +96,7 @@ const NavCatto = () => {
                         >
                             <span>Media</span>
                         </Link>
-                        </li>
+                        </li> */}
                         <li>
                             <Link
                                 href="/about"

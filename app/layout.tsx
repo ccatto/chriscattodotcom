@@ -14,7 +14,7 @@ export default function RootLayout({
           <Header/>
           <div className='flex mt-20 h-full'>
             <div className='flex-[1] bg-gradient-to-r from-gray-500' to-gray-900></div>
-            <main className='flex-[98] bg-red-500'>
+            <main className='flex-[98] bg-gray-700'>
               {children}
             </main>
             <div className='flex-[1] bg-gradient-to-r from-gray-900 to-gray-500'></div>
