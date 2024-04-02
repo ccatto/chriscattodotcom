@@ -1,7 +1,6 @@
 {
-  "/code/page": "app/code/page.js",
   "/page": "app/page.js",
-  "/media/page": "app/media/page.js",
-  "/sports/page": "app/sports/page.js",
+  "/code/page": "app/code/page.js",
+  "/about/page": "app/about/page.js",
   "/about/privacypolicy/page": "app/about/privacypolicy/page.js"
 }
