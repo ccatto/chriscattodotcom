@@ -3,7 +3,7 @@
 // Carousel.tsx
 import React, { useRef, useState } from 'react';
 import { useSpring, animated } from 'react-spring';
-import { useDrag } from 'react-use-gesture';
+// import { useDrag } from 'react-use-gesture';
 import Link from 'next/link';
 import Image from 'next/image';
 
