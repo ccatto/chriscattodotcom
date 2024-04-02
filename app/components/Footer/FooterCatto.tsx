@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+// import { Image } from 'next/image';
 
 const FooterCatto = () => {
   return (
@@ -11,36 +12,57 @@ const FooterCatto = () => {
                 <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                     <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
-                        <a href="https://www.ChrisCatto.com" className="flex items-center">
+                        <Link href="https://www.ChrisCatto.com" className="flex items-center">
                             <Image
-                            src="/Chris-Catto-dot-com.png"
-                            width={107}
-                            height={50}
-                            className="hidden md:block"
-                            alt="Chris Catto .com"
+                                alt="Chris Catto .com"
+                                loading="lazy"
+                                width="107"
+                                height="50"
+                                decoding="async"
+                                // data-nimg="1"
+                                className="hidden md:block mr-3 rounded-2xl"
+                                // style="color:transparent"
+                                // srcset="
+                                //     /_next/image?url=%2FChris-Catto-dot-com.png&w=128&q=75 1x,
+                                //     /_next/image?url=%2FChris-Catto-dot-com.png&w=256&q=75 2x
+                                // "
+                                src="/_next/image?url=%2FChris-Catto-dot-com.png&w=256&q=75"
                             />
+                            <Image className="w-10 h-10 rounded-full mr-3"
+                            src="/images/ChrisCatto-Avatar.png"
+                            width={50}
+                            height={50}
+                            alt="Rounded ChrisCatto.com avatar"/>
                             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">ChrisCatto.com</span>
-                        </a>
+                        </Link>
                     </div>
                     <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                         <div>
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Code</h2>
                             <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                 <li className="mb-4">
-                                    <a href="https://flowbite.com/" className="hover:underline">Javascript</a>
+                                    <Link href="/code" className="hover:underline">
+                                        Javascript
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="https://tailwindcss.com/" className="hover:underline">SFCC</a>
+                                    <Link href="/code" className="hover:underline">
+                                        SFCC
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">About</h2>
-                            <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                                <Link href="/about">
+                                    About
+                                </Link>
+                            </h2>
+                            {/* <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                 <li className="mb-4">
                                     <a href="https://github.com/themesberg/flowbite" className="hover:underline ">Resume</a>
                                 </li>
-                            </ul>
+                            </ul> */}
                         </div>
                         <div>
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
@@ -53,9 +75,9 @@ const FooterCatto = () => {
                                     <span>Privacy Policy </span>
                                 </Link>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <a href="#" className="hover:underline">Terms &amp; Conditions</a>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                     </div>

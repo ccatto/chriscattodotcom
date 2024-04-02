@@ -1,13 +1,16 @@
-import Head from "next/head";
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
+import JumbotronCattoAbout from "../components/JumbotronCattoAbout/JumbotronCattoAbout";
+import About5050Catto1 from "../components/About5050Catto1/About5050Catto1";
 
 export default function Page() {
   return (
-    <>
-      <Header/>
-      <p>About Page</p>
-      <Footer/>
-    </>
+    <div className="bg-slate-400 h-lvh">
+      {/* <p>About Page</p> */}
+      {/* <About5050Catto1/>
+      <hr/> */}
+      <hr className="m-3"/>
+      <JumbotronCattoAbout/>
+      <hr className="m-3"/>
+      {/* <About5050Catto1/> */}
+    </div>
   );
 }
