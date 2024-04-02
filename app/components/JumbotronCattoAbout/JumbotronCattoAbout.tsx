@@ -12,6 +12,9 @@ const JumbotronCattoAbout = () => {
             <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
                 With over 20 years of experience in developing software I still enjoy coding. I have worked for large fortune 500 companies to small startups. I have enjoyed working with many different technologies, earlier on in my career it was much more Microsoft .NET & currently have been utilizing Salesforce Commerce Cloud to build eCommerce sites. 
             </p>
+            <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+                This web app is build with basically with the following technologies: NextJS; React; Typescript; Tailwind; Node; Express & Postgresql. 
+            </p>
         </div>
     </section>
   )
