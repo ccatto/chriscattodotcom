@@ -1,12 +1,16 @@
 // import type { Photo } from @models/
 import Image from "next/image";
-
+import { ImageClass } from "@/app/models/image";
 // type Props = {
 //   photo: Photo
 // }
 
+const imageOne = new ImageClass('urlFake', 'altFake');
+console.log("imageOne === ", imageOne);
+
 // const ImageCatto = ({ photo} : {photo: [photoURL: string, photoAlt: string}]) => {
 const ImageCatto = ({ photo} : {photo: string}) => {
+
   return (
     <>
         <div className="rounded-xl h-96 relative overflow-hidden">
