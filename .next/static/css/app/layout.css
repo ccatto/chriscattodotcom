@@ -1042,11 +1042,11 @@ select {
 .m-0 {
   margin: 0px;
 }
-.m-4 {
-  margin: 1rem;
-}
 .m-3 {
   margin: 0.75rem;
+}
+.m-4 {
+  margin: 1rem;
 }
 .mx-3 {
   margin-left: 0.75rem;
@@ -1664,10 +1664,6 @@ select {
 .bg-purple-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 232 255 / var(--tw-bg-opacity));
-}
-.bg-red-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 .bg-red-800 {
   --tw-bg-opacity: 1;
