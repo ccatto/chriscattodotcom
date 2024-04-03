@@ -12,11 +12,9 @@ const GA4TagCatto = () => {
 
   gtag('config', 'G-1PMYR3ETW4');
         </Script> */}
-        <noscript
-            dangerouslySetInnerHTML={{
-            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=${GTM_ID}" height="0" width="0" style="display: none; visibility: hidden;"></iframe>`,
-            }} 
-        />
+        <script>
+            window.dataLayer = window.dataLayer || [];
+        </script>
         <Script id="google-tag-manager" strategy="afterInteractive">
             {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
