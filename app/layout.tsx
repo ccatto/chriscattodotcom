@@ -1,7 +1,14 @@
 import '@/app/ui/global.css';
 import { montserrat } from '@/app/ui/fonts';
-import Header from './components/Header/Header';
+import HeaderCatto from './components/HeaderCatto/HeaderCatto';
 import FooterCatto from './components/Footer/FooterCatto';
+import GA4TagCatto from './components/Utils/GA4/GA4';
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Chris Catto',
+  description: 'Chris Catto personal site home'
+}
 
 export default function RootLayout({
   children,
@@ -10,8 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+     <GA4TagCatto/>
       <body className={`${montserrat.className} overflow-x-hidden w-screen absolute bg-gray-800 antialiased flex flex-col min-h-screen m-0`}>
-          <Header/>
+          <HeaderCatto/>
           <div className='flex mt-20 h-full'>
             <div className='flex-[1] bg-gradient-to-r from-gray-500' to-gray-900></div>
             <main className='flex-[98] bg-gray-700'>
