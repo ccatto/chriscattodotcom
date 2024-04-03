@@ -1,14 +1,14 @@
 {
   "/_not-found": "app/_not-found.js",
-  "/page": "app/page.js",
-  "/family/page": "app/family/page.js",
-  "/media/page": "app/media/page.js",
   "/code/sfcc/page": "app/code/sfcc/page.js",
-  "/code/javascript/page": "app/code/javascript/page.js",
+  "/family/page": "app/family/page.js",
+  "/page": "app/page.js",
+  "/media/page": "app/media/page.js",
   "/zzzSampleComponent/page": "app/zzzSampleComponent/page.js",
   "/pages/Test/page": "app/pages/Test/page.js",
   "/sports/page": "app/sports/page.js",
-  "/about/privacypolicy/page": "app/about/privacypolicy/page.js",
+  "/code/javascript/page": "app/code/javascript/page.js",
   "/code/page": "app/code/page.js",
+  "/about/privacypolicy/page": "app/about/privacypolicy/page.js",
   "/about/page": "app/about/page.js"
 }
