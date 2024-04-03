@@ -13,7 +13,7 @@ const NavCatto = () => {
         setIsNavOpen(!isNavOpen);
     };
   const pathName = usePathname();
-  console.log("pathName === ", pathName);
+//   console.log("pathName === ", pathName);
 
   return (
     <>

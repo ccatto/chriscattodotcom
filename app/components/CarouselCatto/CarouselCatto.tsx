@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Button } from '@/app/ui/button';
 
 const CarouselCatto = () => {
-  const carouselElement: HTMLElement = document.getElementById('catto-carousel');
+//   const carouselElement: HTMLElement = document.getElementById('catto-carousel');
 
 //   const items: CarouselItem[] = [
   const items = [

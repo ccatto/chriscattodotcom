@@ -12,7 +12,7 @@ const FooterCatto = () => {
                 <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                     <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
-                        <Link href="https://www.ChrisCatto.com" className="flex items-center">
+                        <Link href="/" className="flex items-center">
                             <Image
                                 alt="Chris Catto .com"
                                 loading="lazy"

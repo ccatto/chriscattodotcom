@@ -1,5 +1,11 @@
 import JumbotronCattoAbout from "../components/JumbotronCattoAbout/JumbotronCattoAbout";
 import About5050Catto1 from "../components/About5050Catto1/About5050Catto1";
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About Chris Catto',
+  description: 'About Chris Catto including Code and Family'
+}
 
 export default function Page() {
   return (
