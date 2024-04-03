@@ -4,6 +4,19 @@ const GTM_ID = 'GTM-1PMYR3ETW4';
 const GA4TagCatto = () => {
     return (
       <>
+        {/* <Script async src="https://www.googletagmanager.com/gtag/js?id=G-1PMYR3ETW4"/>
+        <Script>
+        window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1PMYR3ETW4');
+        </Script> */}
+        <noscript
+            dangerouslySetInnerHTML={{
+            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=${GTM_ID}" height="0" width="0" style="display: none; visibility: hidden;"></iframe>`,
+            }} 
+        />
         <Script id="google-tag-manager" strategy="afterInteractive">
             {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
