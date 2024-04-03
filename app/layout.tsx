@@ -2,8 +2,9 @@ import '@/app/ui/global.css';
 import { montserrat } from '@/app/ui/fonts';
 import HeaderCatto from './components/HeaderCatto/HeaderCatto';
 import FooterCatto from './components/Footer/FooterCatto';
-import GA4TagCatto from './components/Utils/GA4/GA4';
+import GA4TagCatto from './components/Utils/GA4TagCatto/GA4TagCatto';
 import { Metadata } from 'next'
+// import { GoogleAnalytics } from '@next/third-parties/google';
 
 export const metadata: Metadata = {
   title: 'Chris Catto',
@@ -18,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
      <GA4TagCatto/>
+      {/* <GoogleAnalytics gaId="G-1PMYR3ETW4" /> */}
       <body className={`${montserrat.className} overflow-x-hidden w-screen absolute bg-gray-800 antialiased flex flex-col min-h-screen m-0`}>
           <HeaderCatto/>
           <div className='flex mt-20 h-full'>

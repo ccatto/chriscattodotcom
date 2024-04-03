@@ -1,5 +1,5 @@
 import Head from "next/head";
-import GA4 from "../Utils/GA4/GA4";
+import GA4 from "../Utils/GA4TagCatto/GA4TagCatto";
 
 // const SEOHeadCatto = ({ pageTitle, pageDescription}) => (
 const SEOHeadCatto = () => (
