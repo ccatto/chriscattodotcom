@@ -13,7 +13,7 @@ const FooterCatto = () => {
                     <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
                         <Link href="/" className="flex items-center">
-                            <Image
+                            {/* <Image
                                 alt="Chris Catto .com"
                                 loading="lazy"
                                 width="107"
@@ -27,7 +27,7 @@ const FooterCatto = () => {
                                 //     /_next/image?url=%2FChris-Catto-dot-com.png&w=256&q=75 2x
                                 // "
                                 src="/_next/image?url=%2FChris-Catto-dot-com.png&w=256&q=75"
-                            />
+                            /> */}
                             <Image className="w-10 h-10 rounded-full mr-3"
                             src="/images/ChrisCatto-Avatar.png"
                             width={50}

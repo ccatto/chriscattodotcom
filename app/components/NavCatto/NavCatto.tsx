@@ -10,10 +10,9 @@ import clsx from 'clsx';
 const NavCatto = () => {
   const [isNavOpen, setIsNavOpen] = useState(true);
   const handleClick = () => {
-        setIsNavOpen(!isNavOpen);
-    };
+      setIsNavOpen(!isNavOpen);
+  };
   const pathName = usePathname();
-//   console.log("pathName === ", pathName);
 
   return (
     <>
@@ -40,6 +39,7 @@ const NavCatto = () => {
                         <li>
                             <Link
                                 href="/"
+                                onClick={handleClick}
                                 className={clsx(
                                     {
                                         "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-blue-500 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent": pathName === '/',
@@ -55,6 +55,7 @@ const NavCatto = () => {
                         <li>
                             <Link
                                 href="/code"
+                                onClick={handleClick}
                                 className={clsx(
                                     {
                                         "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-blue-500 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent": pathName === '/code',
@@ -100,6 +101,7 @@ const NavCatto = () => {
                         <li>
                             <Link
                                 href="/about"
+                                onClick={handleClick}
                                 className={clsx(
                                     {
                                         "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-blue-500 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent": pathName === '/about',
