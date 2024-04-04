@@ -6,7 +6,8 @@ const About5050Catto2 = () => {
     <>
       <div className="flex m-4">
         <div className="w-1/2 bg-gray-500">
-          <ImageCatto photo="/images/ibm-5150.png" />
+          raw text
+          {/* <ImageCatto photo="/images/ibm-5150.png" /> */}
         </div>
         <div className="w-1/2 bg-gray-400 h-12">
           <div className="block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">

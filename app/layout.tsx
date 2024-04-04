@@ -4,7 +4,6 @@ import HeaderCatto from './components/HeaderCatto/HeaderCatto';
 import FooterCatto from './components/Footer/FooterCatto';
 import GA4TagCatto from './components/Utils/GA4TagCatto/GA4TagCatto';
 import { Metadata } from 'next'
-// import HeadCatto from './components/HeadCatto/HeadCatto';
 
 export const metadata: Metadata = {
   title: 'Chris Catto',

@@ -4,19 +4,57 @@ import ImageCatto from "../ImageCatto/ImageCatto";
 const About5050CattoSFCCBadge = () => {
   return (
     <>
-      <div className="flex m-4 h-64">
-        <div className="w-1/2 bg-gray-400 h-12">
-          <div className="block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+      <div className="flex m-4 h-[32rem]">
+      {/* <div className="flex m-4 lg:h-[30rem] md:h-[68rem]"> */}
+      {/* 68rem need to make mobile height alter to bigger */}
+        <div className="w-1/2 bg-gray-400 h-full mr-3">
+          <div className="h-full w-full block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Learned to code on IBM in early 1980's
+              SFCC B2C Developer Certified
             </h5>
             <p className="font-normal text-gray-700 dark:text-gray-400">
-              My father taught me how to code on an IBM with 5 1/4 floppy's when I was in grade school. I learned DOS & Lotus 1-2-3 which stated my love for coding.
+              <div>
+                I have enjoyed eCommerce development with SFCC since it was Demandware in 2015. Over the years I have worked on many areas of the platform including:
+              </div>
+              <ul className="w-full">
+                <li className="w-full px-4 py-2 border-b border-gray-200 rounded-t-lg dark:border-gray-600">
+                  Utilized different architecture such as SFRA; Composable/PWA kit; OCAPI; SCAPI & good ol' SiteGen
+                </li>
+                <li className="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600">
+                  Worked within all area's of Business Manager
+                </li>
+                <li className="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600">
+                  Integration of 3rd party link cartridges such as payment processors, API's; taxes; subscriptions & loyalty.
+                </li>
+                <li className="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600">
+                  Development of jobs to automate tasks & processes including custom scripts & out of the box job steps
+                </li>
+                <li className="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600">
+                  Implemented javascript controllers & ISML templates
+                </li>
+                <li className="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600">
+                  Developed with Page designer; content slots & content assets
+                </li>
+                <li className="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600">
+                  Utilized & developed custom hooks to configure functionality
+                </li>
+                <li className="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600">
+                  Used OCAPI Open Commerce API to access HTTP requests & responses
+                </li>
+                <li className="w-full px-4 py-2 rounded-b-lg">
+                  Measured & ensure site performance
+                </li>        
+              </ul>
+              {/* <ul className="w-full text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white mt-3">
+
+              </ul> */}
             </p>
+
           </div>
         </div>
-        <div className="w-1/2 bg-gray-500 h-64 ">
-          <div className="h-64 overflow-hidden relative">
+        <div className="w-1/2 bg-gray-400 h-full ml-3">
+          <div className="h-full w-full overflow-hidden relative rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            {/* <div>test</div> */}
             <ImageCatto 
               src="/images/Chris-Catto-SFCC-Certified-B2C-Commerce-Developer-Badge.png" 
               alt="cattoImage"
