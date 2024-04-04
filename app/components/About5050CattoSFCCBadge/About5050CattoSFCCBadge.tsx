@@ -21,6 +21,7 @@ const About5050CattoSFCCBadge = () => {
               src="/images/Chris-Catto-SFCC-Certified-B2C-Commerce-Developer-Badge.png" 
               alt="cattoImage"
               priority={false}
+              sizes="calc(49vw - 16px)"
             />
           </div>
           {/* <ImageCatto photo="/images/Chris-Catto-SFCC-Certified-B2C-Commerce-Developer-Badge.png" /> */}

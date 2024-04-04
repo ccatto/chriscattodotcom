@@ -15,7 +15,7 @@ export default function Page() {
       {/* <About5050Catto1/>
       <hr/> */}
       <hr className="m-3"/>
-      <JumbotronCattoAbout/>
+      {/* <JumbotronCattoAbout/> */}
       <hr className="m-3"/>
       <About5050CattoSFCCBadge/>
       <hr className="m-3"/>
