@@ -1018,6 +1018,12 @@ select {
 .h-full {
   height: 100%;
 }
+.h-64 {
+  height: 16rem;
+}
+.h-36 {
+  height: 9rem;
+}
 .max-h-\[275px\] {
   max-height: 275px;
 }
@@ -1110,6 +1116,9 @@ select {
 }
 .max-w-screen-xl {
   max-width: 1280px;
+}
+.max-w-full {
+  max-width: 100%;
 }
 .flex-1 {
   flex: 1 1 0%;
@@ -1637,6 +1646,9 @@ select {
 .pt-8 {
   padding-top: 2rem;
 }
+.pt-\[100\%\] {
+  padding-top: 100%;
+}
 .text-left {
   text-align: left;
 }
@@ -1786,6 +1798,10 @@ select {
 }
 .outline-2 {
   outline-width: 2px;
+}
+.blur {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .transition-all {
   transition-property: all;
