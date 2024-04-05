@@ -2,6 +2,8 @@ import JumbotronCattoAbout from "../components/JumbotronCattoAbout/JumbotronCatt
 import About5050Catto1 from "../components/About5050Catto1/About5050Catto1";
 import { Metadata } from 'next'
 import About5050CattoSFCCBadge from "../components/About5050CattoSFCCBadge/About5050CattoSFCCBadge";
+import About5050Catto3x3TechGrid from "../components/About5050Catto3x3TechGrid/About5050Catto3x3TechGrid";
+import TechStackImages3x3 from "../components/TechStackImages3x3/TechStackImages3x3";
 
 export const metadata: Metadata = {
   title: 'About Chris Catto',
@@ -15,7 +17,11 @@ export default function Page() {
       {/* <About5050Catto1/>
       <hr/> */}
       <hr className="m-3"/>
+      <TechStackImages3x3/>
+      <hr className="m-3"/>
       {/* <JumbotronCattoAbout/> */}
+      <hr className="m-3"/>
+      <About5050Catto3x3TechGrid/>
       <hr className="m-3"/>
       <About5050CattoSFCCBadge/>
       <hr className="m-3"/>

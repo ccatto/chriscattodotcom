@@ -7,4 +7,4 @@ const zzzComponentExample = () => {
     </>
   )
 }
-export default zzzComponentExample
+export default zzzComponentExample;
