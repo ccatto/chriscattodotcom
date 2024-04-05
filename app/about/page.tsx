@@ -16,9 +16,9 @@ export default function Page() {
       {/* <p>About Page</p> */}
       {/* <About5050Catto1/>
       <hr/> */}
-      <hr className="m-3"/>
-      <TechStackImages3x3/>
-      <hr className="m-3"/>
+      {/* <hr className="m-3"/>
+      <TechStackImages3x3/> */}
+      {/* <hr className="m-3"/> */}
       {/* <JumbotronCattoAbout/> */}
       <hr className="m-3"/>
       <About5050Catto3x3TechGrid/>

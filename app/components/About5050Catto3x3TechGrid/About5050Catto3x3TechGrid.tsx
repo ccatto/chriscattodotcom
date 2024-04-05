@@ -1,89 +1,50 @@
-// import Image from "next/image";
 import ImageCatto from "../ImageCatto/ImageCatto";
+import TechStackImages3x3 from "../TechStackImages3x3/TechStackImages3x3";
 
 const About5050Catto3x3TechGrid = () => {
   return (
     <>
       <div className="flex m-4 h-[33rem]">
-      {/* <div className="flex m-4 lg:h-[30rem] md:h-[68rem]"> */}
-      {/* 68rem need to make mobile height alter to bigger */}
         <div className="w-1/2 bg-gray-400 h-full mr-3">
-          <div className="h-full w-full block bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-            <div className="flex h-[10rem] m-1">
-              <div className="w-1/3 bg-orange-500 m-1"></div>
-              <div className="w-1/3 bg-red-500 m-1"></div>
-              <div className="w-1/3 bg-green-500 m-1"></div>
-            </div>
-            <div className="flex h-[10rem] m-1">
-              <div className="w-1/3 bg-orange-500 h-[10rem] m-1"></div>
-              <div className="w-1/3 bg-red-500 h-[10rem] m-1"></div>
-              <div className="w-1/3 bg-green-500 h-[10rem] m-1"></div>
-            </div>
-            <div className="flex h-[10rem] m-1">
-              <div className="w-1/3 bg-red-500 h-[10rem] m-1"></div>
-              <div className="w-1/3 bg-orange-500 h-[10rem] m-1"></div>
-              <div className="w-1/3 bg-green-500 h-[10rem] m-1"></div>
-            </div>
-            {/* <ImageCatto
-                src="/images/Chris-Catto-SFCC-Certified-B2C-Commerce-Developer-Badge.png" 
-                alt="cattoImage"
-                priority={false}
-                sizes="calc(49vw - 16px)"
-              /> */}
-          </div>
+          <TechStackImages3x3/>
         </div>
         <div className="w-1/2 bg-gray-400 h-full ml-3">
           <div className="h-full w-full overflow-hidden relative rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <h5 className="ml-3 mt-2 mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               My favorite technologies & languages
             </h5>
             <div className="font-normal text-gray-700 dark:text-gray-400">
-              <p>
-                Blah
-              </p>
               <ul className="w-full mt-2 mb-2">
                 <li className="w-full px-4 py-2 border-b border-gray-200 rounded-t-lg dark:border-gray-600">
-                  1 Next JS
+                  Next.js - React based front end framework
                 </li>
                 <li className="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600">
-                  2 Express JS
+                  AWS - many services such as Route53; S3; EC2 & Amplify (used other cloud platforms such as GCP)
                 </li>
                 <li className="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600">
-                  3 GraphQL
+                  JavaScript - has taken over the world as our scripting language. I remember in the late 90's using Perl.
                 </li>
                 <li className="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600">
-                  4 PostgreSQL
+                  PostgreSQL - I am proficient  with many db's such as MongoDB & SQL Server
                 </li>
                 <li className="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600">
-                  5 Node
+                  Express.js & Node - Express for API's and Node as our fundamental platform
                 </li>
                 <li className="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600">
-                  6 .NET
+                  Tailwind CSS - have utilized many CSS frameworks over the years this is my favorite currently
                 </li>
                 <li className="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600">
-                  7 SQL in General
+                  TypeScript - strongly typed JS; an industry standard now a days
                 </li>
                 <li className="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600">
-                  8 Tailwind CSS 
+                  GraphQL - data queries for API's fetching the exact data we need
                 </li>
                 <li className="w-full px-4 py-2 rounded-b-lg">
-                  9 React? 
+                  React - frontend JS library; I prefer this architecture over Angular these days
                 </li>
               </ul>
-              {/* <ul className="w-full text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white mt-3">
-
-              </ul> */}
             </div>
-
           </div>
-          {/* <ImageCatto photo="/images/Chris-Catto-SFCC-Certified-B2C-Commerce-Developer-Badge.png" /> */}
-
-          {/* <Image 
-            className="mt-20 rounded-full w-96 h-96" 
-            src="/images/Chris-Catto-Sunrise.jpg"
-            width={800}
-            height={374}
-            alt="Chris Catto Sunrise"/> */}
         </div>
       </div>
     </>
