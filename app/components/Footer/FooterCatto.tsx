@@ -33,7 +33,19 @@ const FooterCatto = () => {
                             width={50}
                             height={50}
                             alt="Rounded ChrisCatto.com avatar"/>
-                            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">ChrisCatto.com</span>
+                            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                                ChrisCatto.com
+                            </span>
+                            <Image className="w-10 h-10 ml-5"
+                                src="/images/AmericanFlag.gif"
+                                width={50}
+                                height={50}
+                                alt="American Flag Chris Catto"/>
+                            {/* <Image className="w-10 h-10 ml-5"
+                                src="/images/earth.gif"
+                                width={50}
+                                height={50}
+                                alt="Earth"/> */}
                         </Link>
                     </div>
                     <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -72,9 +84,17 @@ const FooterCatto = () => {
                                         href="/about/privacypolicy"
                                         className="hover:underline" aria-current="page"
                                     >
-                                    <span>Privacy Policy </span>
-                                </Link>
+                                        <span>Privacy Policy </span>
+                                    </Link>
                                 </li>
+                                {/* <li className="mb-4">
+                                    <Link
+                                        href="/sitemap.xml"
+                                        className="hover:underline" aria-current="page"
+                                    >
+                                        <span>Sitemap</span>
+                                    </Link>
+                                </li> */}
                                 {/* <li>
                                     <a href="#" className="hover:underline">Terms &amp; Conditions</a>
                                 </li> */}

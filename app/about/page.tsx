@@ -14,13 +14,14 @@ export default function Page() {
   return (
     <div className="bg-slate-400 h-lvh">
       {/* <p>About Page</p> */}
-      {/* <About5050Catto1/>
+      {/* <About5050Catto1/> */}
+      {/* 
       <hr/> */}
       {/* <hr className="m-3"/>
       <TechStackImages3x3/> */}
       {/* <hr className="m-3"/> */}
-      {/* <JumbotronCattoAbout/> */}
-      <hr className="m-3"/>
+      <JumbotronCattoAbout/>
+      <hr className="m-1"/>
       <About5050Catto3x3TechGrid/>
       <hr className="m-3"/>
       <About5050CattoSFCCBadge/>
