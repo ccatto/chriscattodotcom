@@ -36,11 +36,13 @@ const FooterCatto = () => {
                             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                                 ChrisCatto.com
                             </span>
-                            <Image className="w-10 h-10 ml-5"
-                                src="/images/AmericanFlag.gif"
-                                width={50}
-                                height={50}
-                                alt="American Flag Chris Catto"/>
+                            <div className='hidden lg:block'>
+                                <Image className="w-10 h-10 ml-5"
+                                    src="/images/AmericanFlag.gif"
+                                    width={50}
+                                    height={50}
+                                    alt="American Flag Chris Catto"/>
+                            </div>
                             {/* <Image className="w-10 h-10 ml-5"
                                 src="/images/earth.gif"
                                 width={50}
