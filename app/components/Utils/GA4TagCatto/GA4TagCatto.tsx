@@ -1,12 +1,13 @@
 import Script from 'next/script'
-const GTM_ID = 'G-1PMYR3ETW4';
+import { GTM_ID } from '@/app/constants/constants';
+// const GTM_ID = 'G-1PMYR3ETW4';
 
 const GA4TagCatto = () => {
     return (
     <>
-        <script>
+        <Script>
             window.dataLayer = window.dataLayer || [];
-        </script>
+        </Script>
         <Script id="google-tag-manager" strategy="afterInteractive">
             {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

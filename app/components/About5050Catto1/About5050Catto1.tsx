@@ -16,7 +16,7 @@ const About5050Catto1 = () => {
           </div>
         </div>
         <div className="w-1/2 bg-gray-500">
-          <ImageCatto photo="/images/ibm-5150.png" />
+          {/* <ImageCatto photo="/images/ibm-5150.png" /> */}
           {/* <Image 
             className="mt-20 rounded-full w-96 h-96" 
             src="/images/Chris-Catto-Sunrise.jpg"
