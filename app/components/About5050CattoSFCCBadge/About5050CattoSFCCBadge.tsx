@@ -55,7 +55,7 @@ const About5050CattoSFCCBadge = () => {
           </div>
         </div>
         <div className="w-1/2 bg-gray-400 h-full ml-3">
-          <div className="h-full w-full overflow-hidden relative rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+          <div className="h-full w-full overflow-hidden relative rounded-lg shadow dark:bg-gray-500 dark:border-gray-700 dark:hover:bg-gray-700">
             {/* <div>test</div> */}
             <ImageCatto 
               src="/images/Chris-Catto-SFCC-Certified-B2C-Commerce-Developer-Badge.png" 
