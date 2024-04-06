@@ -1,7 +1,8 @@
 import '@/app/ui/global.css';
 import { montserrat } from '@/app/ui/fonts';
 // import FooterCatto from './components/Footer/FooterCatto';
-import Header from './components/Header/Header';
+// import Header from './components/Header/Header';
+import HeaderCatto from './components/HeaderCatto/HeaderCatto';
 import FooterCatto from './components/Footer/FooterCatto';
 
 export default function RootLayout({
@@ -13,7 +14,7 @@ export default function RootLayout({
     <html lang="en">
       {/* <body>{children}</body> */}
       <body className={`${montserrat.className} antialiased flex flex-col `}>
-        <Header/>
+        <HeaderCatto/>
           <article className="pt-20 flex-1">
             {children}
           </article>
