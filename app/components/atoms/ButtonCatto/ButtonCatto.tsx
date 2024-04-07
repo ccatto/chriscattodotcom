@@ -4,20 +4,20 @@ type Props = {
     onClick2: string,
     // isButton?: boolean,
     // buttonText: string,
-  }
-  
+}
 
-const ButtonCatto = ({ text, style, onClick2}: Props ) => {
+
+const ButtonCatto = ({ text, style, onClick2 }: Props) => {
     return (
-      <>
-          <div 
-            className={style}
+        <>
+            <div
+                className={style}
             // onClick={onClick2}
             // Type 'string' is not assignable to type 'MouseEventHandler<HTMLDivElement>'.ts(2322)
             >
-            {text}
-          </div>
-      </>
+                {text}
+            </div>
+        </>
     )
-  }
-  export default ButtonCatto;
+}
+export default ButtonCatto;

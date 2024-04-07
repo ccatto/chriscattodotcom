@@ -5,8 +5,8 @@ const About5050CattoFamily = () => {
     <div className="flex m-4 h-[23rem] lg:h-[17rem]">
       <div className="w-1/2 bg-gray-400 h-full mr-3">
         <div className="h-full w-full overflow-hidden relative rounded-lg shadow dark:bg-gray-500 dark:border-gray-700 dark:hover:bg-gray-700">
-          <ImageCatto 
-            src="/images/icons/family-simple.svg" 
+          <ImageCatto
+            src="/images/icons/family-simple.svg"
             alt="cattoImage"
             priority={false}
             sizes="calc(49vw - 16px)"
@@ -21,10 +21,10 @@ const About5050CattoFamily = () => {
           <div className="font-normal text-gray-700 dark:text-gray-400">
             <div className="hidden lg:block">
               <p className="indent-4">
-                I grew up in the finger lakes in upstate New York with my parents & two older brothers. My father pushed education ever since I was little. While other kids played games on Atari's we had an IBM with 5 1/4 floppy disks that I learned to code on. I enjoyed playing many sports too such as hockey & tennis. 
+                I grew up in the finger lakes in upstate New York with my parents & two older brothers. My father pushed education ever since I was little. While other kids played games on Atari's we had an IBM with 5 1/4 floppy disks that I learned to code on. I enjoyed playing many sports too such as hockey & tennis.
               </p>
               <p className="indent-4">
-                I moved to attend Florida Atlantic University to study computer engineering; met my wife there & have lived in Florida ever since. We have three children; I enjoy spending my spare time with family; coding & still play sports for recreation. 
+                I moved to attend Florida Atlantic University to study computer engineering; met my wife there & have lived in Florida ever since. We have three children; I enjoy spending my spare time with family; coding & still play sports for recreation.
               </p>
               {/* <p className="indent-4">
                 I grew up in the finger lakes in upstate New York with my parents & two older brothers. 

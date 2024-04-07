@@ -6,21 +6,20 @@ import CarouselCatto3 from "../CarouselCatto3/CarouselCatto3";
 import JumbotronCatto from "../JumbotronCatto/JumbotronCatto";
 
 const DATA = [{ image: "/images/Chris-Catto-Sunrise.jpg" },
- { image: "/hero-mobile.png" }, 
- { image: "/Catto.png" }]
+{ image: "/hero-mobile.png" },
+{ image: "/Catto.png" }]
 
 const HomeCatto = () => {
     return (
         <>
-            <hr className="m-3"/>
-            <section 
-                // className="h-[296rem]"
+            <hr className="m-3" />
+            <section
+            // className="h-[296rem]"
             >
-                <JumbotronCatto/>
+                <JumbotronCatto />
             </section>
-            <hr className="m-3"/>
+            <hr className="m-3" />
         </>
     )
-  }
-  export default HomeCatto
-  
+}
+export default HomeCatto
