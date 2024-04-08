@@ -1,4 +1,4 @@
-import CarouselCatto3 from "../components/CarouselCatto3/CarouselCatto3";
+import CarouselCatto3 from "../../components/CarouselCatto3/CarouselCatto3";
 
 const DATA = [{ image: "/images/Chris-Catto-Sunrise.jpg" },
  { image: "/hero-mobile.png" }, 

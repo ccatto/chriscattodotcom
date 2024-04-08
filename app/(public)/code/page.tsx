@@ -1,4 +1,4 @@
-import JumbotronCattoCode from "../components/JumbotronCattoCode/JumbotronCattoCode"
+import JumbotronCattoCode from "../../components/JumbotronCattoCode/JumbotronCattoCode"
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
