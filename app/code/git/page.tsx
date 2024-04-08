@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 export default function Page() {
     return (
         <>
-            <div className="flex">
-                <aside className="flex-[20] bg-red-600">
+            <div className="flex h-screen">
+                <aside className="flex-[20]" aria-label="Sidebar">
                     <SideNavGitCatto />
                 </aside>
                 <article className="flex-[80] bg-blue-500">

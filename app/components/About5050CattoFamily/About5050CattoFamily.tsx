@@ -6,7 +6,7 @@ const About5050CattoFamily = () => {
       <div className="w-1/2 bg-gray-400 h-full mr-3">
         <div className="h-full w-full overflow-hidden relative rounded-lg shadow dark:bg-gray-500 dark:border-gray-700 dark:hover:bg-gray-700">
           <ImageCatto
-            src="/images/icons/family-simple.svg"
+            src="/images/CattoFam.svg"
             alt="cattoImage"
             priority={false}
             sizes="calc(49vw - 16px)"
