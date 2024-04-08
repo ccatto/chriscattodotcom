@@ -22,6 +22,7 @@ const FooterCatto = () => {
                                     ChrisCatto.com
                                 </span>
                                 <Image className="w-10 h-10 ml-5"
+                                    unoptimized
                                     src="/images/AmericanFlag.gif"
                                     width={50}
                                     height={50}
