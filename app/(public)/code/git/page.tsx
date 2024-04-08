@@ -9,19 +9,22 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <>
-      <div className="flex h-screen">
-        <aside className="flex-[20]" aria-label="Sidebar">
-          <SideNavGitCatto />
-        </aside>
-        <article className="flex-[80] bg-blue-500">
-          <JumbotronCattoFlexible
-            title="Git Source Control"
-            description="Git is the industry standard for source control. This section I am displaying some of the commands that I use frequently."
-          />
-        </article>
+    // flex-nowrap justify-center items-center text-center
+    <div className="flex flex-col flex-nowrap h-screen w-full ">
+      <div className='flex-1 bg-green-500'>
+        <JumbotronCattoFlexible
+          title="Git Source Control"
+          description="Git is the industry standard for source control. This section I am displaying some of the main concepts & the commands that I use frequently."
+        />
       </div>
+      <div className='flex-1 bg-blue-500'>
+        middle
+      </div>
+      <div className='flex-1 bg-red-500'>
+        bottom
+      </div>
+
       <hr className="m-3" />
-    </>
+    </div>
   )
 }
