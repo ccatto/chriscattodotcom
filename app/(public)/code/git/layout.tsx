@@ -3,13 +3,14 @@
 import { ReactNode } from "react";
 import JumbotronCattoFlexible from "@/app/components/JumbotronCattoFlexible/JumbotronCattoFlexible"
 import SideNavGitCatto from '@/app/components/SideNavGitCatto/SideNavGitCatto';
-import { LayoutProps } from "@/.next/types/app/layout";
-// import { LayoutProps } from "@/.next/types/app/page";
+import { LayoutProps } from "@/.next/types/app/page";
+
+// import { LayoutProps } from "@/.next/types/app/layout";
 
 // const type LayoutProps = {
 //   children: ReactNode;
 // }
-// const type LayoutProps = {
+// const interface LayoutProps2 = {
 //   children: ReactNode;
 //   // Your other props here.
 // }
