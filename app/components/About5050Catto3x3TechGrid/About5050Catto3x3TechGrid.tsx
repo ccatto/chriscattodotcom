@@ -6,7 +6,7 @@ const About5050Catto3x3TechGrid = () => {
     <>
       <div className="flex lg:m-4 h-[28rem]">
         <div className="w-1/2 bg-gray-400 h-full">
-          <TechStackImages3x3/>
+          <TechStackImages3x3 />
         </div>
         <div className="w-1/2 bg-gray-400 h-full ml-[2px] lg:ml-3">
           <div className="h-full w-full overflow-hidden relative rounded-2xl shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
