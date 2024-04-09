@@ -4,8 +4,8 @@ import CommandPromptDisplay from '@/app/components/Utils/CommandPromptDisplay/Co
 // import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Chris Catto Code Git Installation',
-  description: 'Chris Catto Code Git Installation'
+  title: 'Chris Catto Code Git Tutorial Overview',
+  description: 'Chris Catto Code Git Tutorial Overview'
 }
 
 export default function Page() {

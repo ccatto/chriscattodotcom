@@ -3,8 +3,8 @@ import JumbotronCattoFlexible from "@/app/components/JumbotronCattoFlexible/Jumb
 import CommandPromptDisplay from '@/app/components/Utils/CommandPromptDisplay/CommandPromptDisplay'
 
 export const metadata: Metadata = {
-  title: 'Chris Catto Code Git Commands Add',
-  description: 'Chris Catto Code Git Commands Add'
+  title: 'Chris Catto Code Git Tutorial Commands Add',
+  description: 'Chris Catto Code Git Tutorial Commands Add'
 }
 
 export default function Page() {
@@ -24,7 +24,7 @@ export default function Page() {
         <div className='pl-10'>
           <CommandPromptDisplay
             command='git add .'
-            output=''
+            output='no message just goes shows next prompt.'
           />
         </div>
       </div>

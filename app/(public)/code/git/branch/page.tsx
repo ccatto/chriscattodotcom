@@ -3,8 +3,8 @@ import JumbotronCattoFlexible from "@/app/components/JumbotronCattoFlexible/Jumb
 import CommandPromptDisplay from '@/app/components/Utils/CommandPromptDisplay/CommandPromptDisplay'
 
 export const metadata: Metadata = {
-  title: 'Chris Catto Code Git Tutorial Commands Version',
-  description: 'Chris Catto Code Git Tutorial Commands Version'
+  title: 'Chris Catto Code Git Tutorial Commands Rebase',
+  description: 'Chris Catto Code Git Tutorial Commands Rebase'
 }
 
 export default function Page() {
@@ -12,8 +12,8 @@ export default function Page() {
     <div className="flex flex-col flex-nowrap h-screen w-full ">
       <div className='flex-[20]'>
         <JumbotronCattoFlexible
-          title="Git Command version"
-          description="Version is a command we can use to tell if Git is installed & what version we are using."
+          title="Git Command Rebase"
+          description="Rebase is a command we can use to rebase our local branch which could be a feature onto another branch such as develop."
         />
       </div>
       <hr className="p-0" />
@@ -23,12 +23,11 @@ export default function Page() {
         </h2>
         <div className='pl-10'>
           <CommandPromptDisplay
-            command='git --version'
-            output='git version 2.37.1 (Apple Git-137.1)'
+            command='git rebase develop'
+            output='First, rewinding head to replay your work on top of it.'
           />
         </div>
       </div>
-      {/* <hr className="m-3" /> */}
     </div>
   )
 }

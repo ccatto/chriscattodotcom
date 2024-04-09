@@ -3,8 +3,8 @@ import JumbotronCattoFlexible from "@/app/components/JumbotronCattoFlexible/Jumb
 import CommandPromptDisplay from '@/app/components/Utils/CommandPromptDisplay/CommandPromptDisplay'
 
 export const metadata: Metadata = {
-  title: 'Chris Catto Code Git Commands Pull',
-  description: 'Chris Catto Code Git Commands Pull'
+  title: 'Chris Catto Code Git Tutorial Commands Pull',
+  description: 'Chris Catto Code Git Tutorial Commands Pull'
 }
 
 export default function Page() {
