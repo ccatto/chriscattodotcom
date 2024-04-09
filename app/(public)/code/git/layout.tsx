@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import SideNavGitCatto from '@/app/components/SideNavGitCatto/SideNavGitCatto';
+import Image from "next/image";
 
 type LayoutProps = {
   children: ReactNode;
@@ -8,11 +9,11 @@ type LayoutProps = {
 const GitLayout = ({ children }: LayoutProps) => {
   return (
     <>
-      <div className="flex h-screen">
+      <div className="flex h-full">
         <aside className="flex-[20]" aria-label="Sidebar">
           <SideNavGitCatto />
         </aside>
-        <article className="flex-[80]">
+        <article className="flex-[80] h-full">
           {children}
         </article>
       </div>

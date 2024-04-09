@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div className="flex flex-col flex-nowrap h-screen w-full ">
+    <div className="flex flex-col flex-nowrap h-full w-full ">
       <div className='flex-[20]'>
         <JumbotronCattoFlexible
           title="Git Command Log"
@@ -30,25 +30,37 @@ export default function Page() {
           />
         </div>
         <div>
-          git log
-          `q` quit to get back to terminal shell prompt;
+          <div className='p-5 m-5  flex-1 border-2 border-white rounded-2xl bg-[#f0efe7] '>
+            <h2 className='text-[#f14e32]'>
+              Some git log examples:
+            </h2>
+            <p className='text-[#4e443c]'>
+              git log
+              <br />
+              `q` quit to get back to terminal shell prompt;
+              <br />
+              git log --oneline
+              <br />
+              # A nice flag for log
+              <br />
+              git log --pretty=format:"%h%x09%an%x09%ad%x09%s"
+              <br />
+              # some ASCII art
+              <br />
+              git log --graph --oneline --decorate --all
+              <br />
+              # search - need beter examles for this flag
+              <br />
+              git log -S
+              <br />
+              git log --all --simplify-by-decoration
+              <br />
+              # fun with flags:
+              <br />
+              git log --graph --oneline
+            </p>
+          </div>
 
-
-          git log --oneline
-
-          # A nice flag for log
-          git log --pretty=format:"%h%x09%an%x09%ad%x09%s"
-
-          # some ASCII art
-          git log --graph --oneline --decorate --all
-
-          # search - need beter examles for this flag
-          git log -S
-
-          git log --all --simplify-by-decoration
-
-          # fun with flags:
-          git log --graph --oneline
         </div>
       </div>
       {/* <hr className="m-3" /> */}
