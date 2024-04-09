@@ -3,8 +3,8 @@ import JumbotronCattoFlexible from "@/app/components/JumbotronCattoFlexible/Jumb
 import CommandPromptDisplay from '@/app/components/Utils/CommandPromptDisplay/CommandPromptDisplay'
 
 export const metadata: Metadata = {
-  title: 'Chris Catto Code Git Commands Clone',
-  description: 'Chris Catto Code Git Commands Clone'
+  title: 'Chris Catto Code Git Commands Pull',
+  description: 'Chris Catto Code Git Commands Pull'
 }
 
 export default function Page() {
@@ -12,8 +12,8 @@ export default function Page() {
     <div className="flex flex-col flex-nowrap h-screen w-full ">
       <div className='flex-[20]'>
         <JumbotronCattoFlexible
-          title="Git Command clone"
-          description="Clone is a command we can use to create a clone or copy of an existing repo locally."
+          title="Git Command Reset"
+          description="Reset is a command we can use to undo changes." 
         />
       </div>
       <hr className="p-0" />
@@ -23,14 +23,11 @@ export default function Page() {
         </h2>
         <div className='pl-10'>
           <CommandPromptDisplay
-            command='git clone'
-            output='commit 9d48c9f1b214e8002b7804cd47facd0691f09747
-            Author: Catto <catto@somemail.com>
-            Date:   Mon Apr 8 09:30:01 2013 -0400.'
+            command='git reset --hard HEAD'
+            output='HEAD is now at 82fdfcc commit comment.'
           />
         </div>
       </div>
-      {/* <hr className="m-3" /> */}
     </div>
   )
 }

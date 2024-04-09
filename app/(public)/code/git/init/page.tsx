@@ -3,8 +3,8 @@ import JumbotronCattoFlexible from "@/app/components/JumbotronCattoFlexible/Jumb
 import CommandPromptDisplay from '@/app/components/Utils/CommandPromptDisplay/CommandPromptDisplay'
 
 export const metadata: Metadata = {
-  title: 'Chris Catto Code Git Commands Pull',
-  description: 'Chris Catto Code Git Commands Pull'
+  title: 'Chris Catto Code Git Commands Init',
+  description: 'Chris Catto Code Git Commands Init'
 }
 
 export default function Page() {
@@ -12,8 +12,8 @@ export default function Page() {
     <div className="flex flex-col flex-nowrap h-screen w-full ">
       <div className='flex-[20]'>
         <JumbotronCattoFlexible
-          title="Git Command Reset"
-          description="Reset is a command we can use to undo changes." 
+          title="Git Command Init"
+          description="Init is a command we can use to create a new git repo. It creates a .git subdirectory. "
         />
       </div>
       <hr className="p-0" />
@@ -23,8 +23,8 @@ export default function Page() {
         </h2>
         <div className='pl-10'>
           <CommandPromptDisplay
-            command='git pull'
-            output='Already up to date.'
+            command='git init'
+            output='Initialized empty Git repository in /Users/chriscatto/Documents/GitK8/TestGitInit/.git/'
           />
         </div>
       </div>

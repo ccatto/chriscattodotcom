@@ -3,8 +3,8 @@ import JumbotronCattoFlexible from "@/app/components/JumbotronCattoFlexible/Jumb
 import CommandPromptDisplay from '@/app/components/Utils/CommandPromptDisplay/CommandPromptDisplay'
 
 export const metadata: Metadata = {
-  title: 'Chris Catto Code Git Commands Clone',
-  description: 'Chris Catto Code Git Commands Clone'
+  title: 'Chris Catto Code Git Commands Log',
+  description: 'Chris Catto Code Git Commands Log'
 }
 
 export default function Page() {
@@ -12,8 +12,8 @@ export default function Page() {
     <div className="flex flex-col flex-nowrap h-screen w-full ">
       <div className='flex-[20]'>
         <JumbotronCattoFlexible
-          title="Git Command clone"
-          description="Clone is a command we can use to create a clone or copy of an existing repo locally."
+          title="Git Command Log"
+          description="Log is a command we can use to see the commit history in our repo."
         />
       </div>
       <hr className="p-0" />
@@ -23,11 +23,32 @@ export default function Page() {
         </h2>
         <div className='pl-10'>
           <CommandPromptDisplay
-            command='git clone'
+            command='git log'
             output='commit 9d48c9f1b214e8002b7804cd47facd0691f09747
             Author: Catto <catto@somemail.com>
             Date:   Mon Apr 8 09:30:01 2013 -0400.'
           />
+        </div>
+        <div>
+          git log
+          `q` quit to get back to terminal shell prompt;
+
+
+          git log --oneline
+
+          # A nice flag for log
+          git log --pretty=format:"%h%x09%an%x09%ad%x09%s"
+
+          # some ASCII art
+          git log --graph --oneline --decorate --all
+
+          # search - need beter examles for this flag
+          git log -S
+
+          git log --all --simplify-by-decoration
+
+          # fun with flags:
+          git log --graph --oneline
         </div>
       </div>
       {/* <hr className="m-3" /> */}

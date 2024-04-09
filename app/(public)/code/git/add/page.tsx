@@ -3,8 +3,8 @@ import JumbotronCattoFlexible from "@/app/components/JumbotronCattoFlexible/Jumb
 import CommandPromptDisplay from '@/app/components/Utils/CommandPromptDisplay/CommandPromptDisplay'
 
 export const metadata: Metadata = {
-  title: 'Chris Catto Code Git Commands Version',
-  description: 'Chris Catto Code Git Commands Version'
+  title: 'Chris Catto Code Git Commands Add',
+  description: 'Chris Catto Code Git Commands Add'
 }
 
 export default function Page() {
@@ -12,8 +12,8 @@ export default function Page() {
     <div className="flex flex-col flex-nowrap h-screen w-full ">
       <div className='flex-[20]'>
         <JumbotronCattoFlexible
-          title="Git Command Log"
-          description="Log is a command we can use to see the commit history in our repo ."
+          title="Git Command Add"
+          description="Add is a command we can use to add the changes in the working directory to the staging area. If we use a dot (.) after git add it will add all the altered files to the staging area. After a git add we often run git commit."
         />
       </div>
       <hr className="p-0" />
@@ -23,10 +23,8 @@ export default function Page() {
         </h2>
         <div className='pl-10'>
           <CommandPromptDisplay
-            command='git status'
-            output='commit 9d48c9f1b214e8002b7804cd47facd0691f09747
-            Author: Catto <catto@somemail.com>
-            Date:   Mon Apr 8 09:30:01 2013 -0400.'
+            command='git add .'
+            output=''
           />
         </div>
       </div>
