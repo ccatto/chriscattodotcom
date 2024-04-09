@@ -12,8 +12,8 @@ export default function Page() {
     <div className="flex flex-col flex-nowrap h-screen w-full ">
       <div className='flex-[20]'>
         <JumbotronCattoFlexible
-          title="Git Command Pull"
-          description="Pull is a command we can use to obtain the latest code in an existing repo locally from a remote repo. Pull is used to fetch and download content from a remote repository and immediately update the local repository to match that content. Pull will sync our local repo with the upstream alters."
+          title="Git Command Reset"
+          description="Reset is a command we can use to undo changes." 
         />
       </div>
       <hr className="p-0" />
