@@ -127,13 +127,13 @@ export default function Page() {
           </li>
         </ul>
       </div>
-      <div className="flex-1 w-full overflow-hidden relative">
+      {/* <div className="flex-1 w-full overflow-hidden relative">
         <Image
           src="/images/git-orange.svg"
           alt="Git version control"
           layout="fill"
         />
-      </div>
+      </div> */}
       <hr className="m-3" />
     </div>
   )

@@ -48,7 +48,7 @@ export default function Page() {
           <br />
           23423
           <br />
-          toward
+          1888888
           <br />
           2
           <br />
@@ -75,7 +75,7 @@ export default function Page() {
           <br />
           1
           <br />
-          blue green
+          blue gree
           <br />
           1
           <br />
@@ -83,7 +83,7 @@ export default function Page() {
           <br />
           12
           <br />
-          black grey
+          black
           <br />
           1
           <br />

@@ -10,8 +10,13 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
+
+    // <div className="flex flex-col flex-nowrap h-full w-full ">
+    // <div className='h-56 flex-1'>
+
     <div className="flex flex-col flex-nowrap h-screen w-full ">
-      <div className='flex-[20]'>
+      {/* <div className='flex-[20]'> */}
+      <div className='h-56 flex-1'>
         <JumbotronCattoFlexible
           title="Installing Git"
           description="Git needs to be installed before we use it. This is assuming we have homebrew installed."
