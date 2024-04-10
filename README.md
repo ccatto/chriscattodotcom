@@ -9,6 +9,8 @@ This is based from the starter template for the Next.js App Router Course. It co
 
 Current node version is 20.9.0 as of March 26th 2024;
 
+* using @next/third-parties for GA4. 
+
 
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> 
