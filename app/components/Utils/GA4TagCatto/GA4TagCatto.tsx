@@ -2,12 +2,41 @@ import Script from 'next/script'
 import { GTM_ID } from '@/app/constants/constants';
 // const GTM_ID = 'G-1PMYR3ETW4';
 
+declare global {
+  interface Window {
+    dataLayer: any[];
+    gtag: (...args: any[]) => void;
+  }
+}
+
+const initializeGoogleAnalytics = (): void => {
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function gtag() {
+    window.dataLayer.push(arguments);
+  };
+  window.gtag('js', new Date());
+  window.gtag('config', 'G-1PMYR3ETW4');
+};
+
+
+
+const loadGoogleTagManagerScript = (): void => {
+  const script = document.createElement('script');
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-1PMYR3ETW4';
+  script.async = true;
+  document.head.appendChild(script);
+};
+
+// Call the functions to initialize GA4
+
+
 const GA4TagCatto = () => {
     return (
         <>
-            <Script>
+             <Script>
                 window.dataLayer = window.dataLayer || [];
             </Script>
+            {/*
             <Script id="google-tag-manager" strategy="afterInteractive">
                 {`
                     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -16,7 +45,19 @@ const GA4TagCatto = () => {
                     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
                     })(window,document,'script','dataLayer','${GTM_ID}');
                 `}
-            </Script>
+            </Script> */}
+            {/* <Script async src="https://www.googletagmanager.com/gtag/js?id=G-1PMYR3ETW4"></Script> */}
+<Script>
+// In your TypeScript file, import the necessary modules
+loadGoogleTagManagerScript();
+initializeGoogleAnalytics();
+
+// Google tag (gtag.js)
+
+
+// Load Google Tag Manager script asynchronously
+
+</Script>
         </>
     )
 }

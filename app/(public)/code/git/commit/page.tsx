@@ -3,8 +3,8 @@ import JumbotronCattoFlexible from "@/app/components/JumbotronCattoFlexible/Jumb
 import CommandPromptDisplay from '@/app/components/Utils/CommandPromptDisplay/CommandPromptDisplay'
 
 export const metadata: Metadata = {
-  title: 'Chris Catto Code Git Tutorial Commands Version',
-  description: 'Chris Catto Code Git Tutorial Commands Version'
+  title: 'Chris Catto Code Git Tutorial Commands Commit',
+  description: 'Chris Catto Code Git Tutorial Commands Commit'
 }
 
 export default function Page() {
@@ -12,8 +12,8 @@ export default function Page() {
     <div className="flex flex-col flex-nowrap h-screen w-full ">
       <div className='flex-[20]'>
         <JumbotronCattoFlexible
-          title="Git Command version"
-          description="Version is a command we can use to tell if Git is installed & what version we are using."
+          title="Git Command Commit"
+          description="Commit is a command we can use to create commit which is a snapshot of our repo.  We often use the option -m with a comment after it wrapped in double quotes."
         />
       </div>
       <hr className="p-0" />
@@ -23,8 +23,8 @@ export default function Page() {
         </h2>
         <div className='pl-10'>
           <CommandPromptDisplay
-            command='git --version'
-            output='git version 2.37.1 (Apple Git-137.1)'
+            command='git commit -m "feat/Tix-044: my commit message."'
+            output='7 files changed, 100 insertions(+), 12 deletions(-)'
           />
         </div>
       </div>

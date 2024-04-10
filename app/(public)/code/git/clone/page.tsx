@@ -3,8 +3,8 @@ import JumbotronCattoFlexible from "@/app/components/JumbotronCattoFlexible/Jumb
 import CommandPromptDisplay from '@/app/components/Utils/CommandPromptDisplay/CommandPromptDisplay'
 
 export const metadata: Metadata = {
-  title: 'Chris Catto Code Git Tutorial Commands Version',
-  description: 'Chris Catto Code Git Tutorial Commands Version'
+  title: 'Chris Catto Code Git Tutorial Commands Clone',
+  description: 'Chris Catto Code Git Tutorial Commands Clone'
 }
 
 export default function Page() {
@@ -12,8 +12,8 @@ export default function Page() {
     <div className="flex flex-col flex-nowrap h-screen w-full ">
       <div className='flex-[20]'>
         <JumbotronCattoFlexible
-          title="Git Command version"
-          description="Version is a command we can use to tell if Git is installed & what version we are using."
+          title="Git Tutorial Command Clone"
+          description="Clone is a command we can use to create a clone or copy of an existing repo locally."
         />
       </div>
       <hr className="p-0" />
@@ -23,8 +23,8 @@ export default function Page() {
         </h2>
         <div className='pl-10'>
           <CommandPromptDisplay
-            command='git --version'
-            output='git version 2.37.1 (Apple Git-137.1)'
+            command='git clone urlOfRepo'
+            output='git clone creates a working copy of a repo. When on a github page there is a "clone" button in the top right usually where we can get the path to use. We can use ssh or https;'
           />
         </div>
       </div>

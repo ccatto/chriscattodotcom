@@ -3,8 +3,8 @@ import JumbotronCattoFlexible from "@/app/components/JumbotronCattoFlexible/Jumb
 import CommandPromptDisplay from '@/app/components/Utils/CommandPromptDisplay/CommandPromptDisplay'
 
 export const metadata: Metadata = {
-  title: 'Chris Catto Code Git Tutorial Commands Version',
-  description: 'Chris Catto Code Git Tutorial Commands Version'
+  title: 'Chris Catto Code Git Tutorial Commands Pull',
+  description: 'Chris Catto Code Git Tutorial Commands Pull'
 }
 
 export default function Page() {
@@ -12,8 +12,8 @@ export default function Page() {
     <div className="flex flex-col flex-nowrap h-screen w-full ">
       <div className='flex-[20]'>
         <JumbotronCattoFlexible
-          title="Git Command version"
-          description="Version is a command we can use to tell if Git is installed & what version we are using."
+          title="Git Command Pull"
+          description="Pull is a command we can use to obtain the latest code in an existing repo locally from a remote repo. Pull is used to fetch and download content from a remote repository and immediately update the local repository to match that content. Pull will sync our local repo with the upstream alters."
         />
       </div>
       <hr className="p-0" />
@@ -23,12 +23,11 @@ export default function Page() {
         </h2>
         <div className='pl-10'>
           <CommandPromptDisplay
-            command='git --version'
-            output='git version 2.37.1 (Apple Git-137.1)'
+            command='git pull'
+            output='Already up to date.'
           />
         </div>
       </div>
-      {/* <hr className="m-3" /> */}
     </div>
   )
 }

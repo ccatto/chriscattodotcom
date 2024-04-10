@@ -1,29 +1,45 @@
 import { Metadata } from 'next'
 import JumbotronCattoFlexible from "@/app/components/JumbotronCattoFlexible/JumbotronCattoFlexible"
-import SideNavGitCatto from '@/app/components/SideNavGitCatto/SideNavGitCatto'
+import CommandPromptDisplay from '@/app/components/Utils/CommandPromptDisplay/CommandPromptDisplay'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Chris Catto Code Git Source Control',
-  description: 'Chris Catto Code Git Source Control'
+  title: 'Chris Catto Code Git Tutorial Installation',
+  description: 'Chris Catto Code Git Tutorial Installation'
 }
 
 export default function Page() {
   return (
-    <>
-      <div className='flex flex-col flex-nowrap justify-center items-center w-full h-full'>
-        <div className='flex-1 w-full bg-slate-500 justify-center items-center text-center'>
-          <JumbotronCattoFlexible
-            title="Git Installation"
-            description="Git installation is pretty straight forward"
+
+    // <div className="flex flex-col flex-nowrap h-full w-full ">
+    // <div className='h-56 flex-1'>
+
+    <div className="flex flex-col flex-nowrap h-screen w-full ">
+      {/* <div className='flex-[20]'> */}
+      <div className='h-56 flex-1'>
+        <JumbotronCattoFlexible
+          title="Installing Git"
+          description="Git needs to be installed before we use it. This is assuming we have homebrew installed."
+        />
+      </div>
+      <hr className="p-0" />
+      <div className='flex-1 lg:flex-[80] dark:bg-gray-700 p-2'>
+        <div className='p-4 text-gray-400'>
+          We need homebrew installed. 
+          <br/>
+          Also after to ensure git is installed we can check the using the <Link href="/code/git/version">version command</Link>.
+        </div>
+        <h2 className="inline-block mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+          Terminal example:
+        </h2>
+        <div className='lg:pl-10'>
+          <CommandPromptDisplay
+            command='brew install git'
+            output='==> installing git'
           />
         </div>
-        <div className='flex-1 bg-red-300'>
-          middle
-        </div>
-        <div className='flex-1 bg-green-500'>
-          bottom
-        </div>
       </div>
-    </>
+      {/* <hr className="m-3" /> */}
+    </div>
   )
 }
