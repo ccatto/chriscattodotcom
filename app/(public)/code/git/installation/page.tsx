@@ -18,7 +18,7 @@ export default function Page() {
         />
       </div>
       <hr className="p-0" />
-      <div className='flex-[80] dark:bg-gray-700 p-2'>
+      <div className='flex-1 lg:flex-[80] dark:bg-gray-700 p-2'>
         <div className='p-4 text-gray-400'>
           We need homebrew installed. 
           <br/>
@@ -27,7 +27,7 @@ export default function Page() {
         <h2 className="inline-block mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
           Terminal example:
         </h2>
-        <div className='pl-10'>
+        <div className='lg:pl-10'>
           <CommandPromptDisplay
             command='brew install git'
             output='==> installing git'
