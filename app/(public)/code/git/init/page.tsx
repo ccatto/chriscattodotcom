@@ -12,7 +12,7 @@ export default function Page() {
     <div className="flex flex-col flex-nowrap h-screen w-full ">
       <div className='flex-[20]'>
         <JumbotronCattoFlexible
-          title="Git Command Init"
+          title="Git Tutorial Command Init"
           description="Init is a command we can use to create a new git repo. It creates a .git subdirectory. "
         />
       </div>

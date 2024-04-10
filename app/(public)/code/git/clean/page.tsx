@@ -24,7 +24,7 @@ export default function Page() {
         <div className='pl-10'>
           <CommandPromptDisplay
             command='git clean -f'
-            output='# allows us to create a new branch and name it'
+            output='remove unwanted files from your working directory'
           />
         </div>
       </div>

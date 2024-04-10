@@ -10,7 +10,7 @@ const GitLayout = ({ children }: LayoutProps) => {
   return (
     <>
       <div className="flex h-full">
-        <aside className="flex-[20]" aria-label="Sidebar">
+        <aside className="hidden lg:block lg:flex-[20]" aria-label="Sidebar">
           <SideNavGitCatto />
         </aside>
         <article className="flex-[80] h-full">

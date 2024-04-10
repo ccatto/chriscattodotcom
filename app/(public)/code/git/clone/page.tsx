@@ -12,7 +12,7 @@ export default function Page() {
     <div className="flex flex-col flex-nowrap h-screen w-full ">
       <div className='flex-[20]'>
         <JumbotronCattoFlexible
-          title="Git Command clone"
+          title="Git Tutorial Command Clone"
           description="Clone is a command we can use to create a clone or copy of an existing repo locally."
         />
       </div>
@@ -23,10 +23,8 @@ export default function Page() {
         </h2>
         <div className='pl-10'>
           <CommandPromptDisplay
-            command='git clone'
-            output='commit 9d48c9f1b214e8002b7804cd47facd0691f09747
-            Author: Catto <catto@somemail.com>
-            Date:   Mon Apr 8 09:30:01 2013 -0400.'
+            command='git clone urlOfRepo'
+            output='git clone creates a working copy of a repo. When on a github page there is a "clone" button in the top right usually where we can get the path to use. We can use ssh or https;'
           />
         </div>
       </div>
