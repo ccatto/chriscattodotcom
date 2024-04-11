@@ -8,6 +8,16 @@ export const metadata: Metadata = {
   description: 'Chris Catto Code Git Source Control'
 }
 
+// image of git for footer a nice to have;
+      // {/* <div className="flex-1 w-full overflow-hidden relative">
+      //   <Image
+      //     src="/images/git-orange.svg"
+      //     alt="Git version control"
+      //     layout="fill"
+      //   />
+      // </div> */}
+
+
 export default function Page() {
   return (
     <div className="flex flex-col flex-nowrap h-full w-full ">
@@ -18,7 +28,6 @@ export default function Page() {
         />
       </div>
       <div className='flex-1 p-5 m-5 border-2 border-white rounded-2xl bg-[#f0efe7] text-[#4e443c] '>
-        {/* <div className= ''> */}
         <ul className="space-y-2 font-medium">
           <li>
             <a href="/code/git/overview" className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white group">
@@ -127,13 +136,7 @@ export default function Page() {
           </li>
         </ul>
       </div>
-      {/* <div className="flex-1 w-full overflow-hidden relative">
-        <Image
-          src="/images/git-orange.svg"
-          alt="Git version control"
-          layout="fill"
-        />
-      </div> */}
+      
       <hr className="m-3" />
     </div>
   )
