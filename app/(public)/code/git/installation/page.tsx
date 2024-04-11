@@ -1,7 +1,8 @@
 import { Metadata } from 'next'
 import JumbotronCattoFlexible from "@/app/components/JumbotronCattoFlexible/JumbotronCattoFlexible"
 import CommandPromptDisplay from '@/app/components/Utils/CommandPromptDisplay/CommandPromptDisplay'
-import Link from 'next/link'
+import Link from 'next/link';
+import LinkCatto from '@/app/components/atoms/LinkCatto/LinkCatto';
 
 export const metadata: Metadata = {
   title: 'Chris Catto Code Git Tutorial Installation',
@@ -10,12 +11,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-
-    // <div className="flex flex-col flex-nowrap h-full w-full ">
-    // <div className='h-56 flex-1'>
-
     <div className="flex flex-col flex-nowrap h-screen w-full ">
-      {/* <div className='flex-[20]'> */}
       <div className='h-56 flex-1'>
         <JumbotronCattoFlexible
           title="Installing Git"
@@ -27,11 +23,9 @@ export default function Page() {
         <div className='p-4 text-gray-400'>
           We need homebrew installed.
           <br />
-          Also after to ensure git is installed we can check the using the <Link href="/code/git/version">version command</Link>.
+          Also after to ensure git is installed we can check the using the <LinkCatto linkText='version command' href='/code/git/version' />.
         </div>
       </div>
-
-
       <section className='flex-1 m-5 border-2 border-white rounded-2xl bg-gray-900 text-gray-200 font-mono '>
         <div className="flex w-100 items-center h-10 px-4 border-2 bg-gray-700 rounded-t-2xl border-b-[1px] border-slate-900">
           <div className="h-3 w-3 mr-2 rounded-full bg-red-500"></div>
@@ -50,11 +44,8 @@ export default function Page() {
             <span className="text-green-500">&gt; Output:</span>
             <div className="bg-gray-800 p-2 mt-1">
               <p>
-              ==&gt; installing git
+                ==&gt; installing git
               </p>
-              {/* <p>
-              {outputLine2}
-            </p> */}
             </div>
           </div>
         </div>

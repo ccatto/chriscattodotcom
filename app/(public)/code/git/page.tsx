@@ -9,14 +9,13 @@ export const metadata: Metadata = {
 }
 
 // image of git for footer a nice to have;
-      // {/* <div className="flex-1 w-full overflow-hidden relative">
-      //   <Image
-      //     src="/images/git-orange.svg"
-      //     alt="Git version control"
-      //     layout="fill"
-      //   />
-      // </div> */}
-
+// {/* <div className="flex-1 w-full overflow-hidden relative">
+//   <Image
+//     src="/images/git-orange.svg"
+//     alt="Git version control"
+//     layout="fill"
+//   />
+// </div> */}
 
 export default function Page() {
   return (
@@ -136,7 +135,7 @@ export default function Page() {
           </li>
         </ul>
       </div>
-      
+
       <hr className="m-3" />
     </div>
   )
