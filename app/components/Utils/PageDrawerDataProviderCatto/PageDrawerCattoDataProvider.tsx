@@ -25,7 +25,7 @@ export const PageDrawerCattoDataContext = createContext<any>({
 
 const PageDrawerCattoDataProviderWrapper = ({ children, ...props }: Props) => {
   // const sharedData = "this is shared simple data YO";
-  let [isPageDrawerOpen, setIsPageDrawerOpen] = useState(true);
+  let [isPageDrawerOpen, setIsPageDrawerOpen] = useState(false);
 
   return (
     <PageDrawerCattoDataContext.Provider value={{ isPageDrawerOpen }}>

@@ -47,19 +47,18 @@ const GitDrawerSideNavCatto = () => {
   let { isPageDrawerOpen } = usePageDrawerDataCattoContext();
   console.log("-- ++ ---- Context isPageDrawerOpen === ", isPageDrawerOpen);
 
-  const [isGitDrawerOpen, setGitDrawerOpen] = useState(false);
-  // setGitDrawerOpen(false);
+  // const [isGitDrawerOpen, setGitDrawerOpen] = useState(false);
+
   const clickSideNavHandler = () => {
     console.log('isGitDrawerOpen === ', isPageDrawerOpen);
     isPageDrawerOpen = !isPageDrawerOpen;
-    // setGitDrawerOpen(!isGitDrawerOpen);
     console.log('After Set | isGitDrawerOpen === ', isPageDrawerOpen);
   };
 
   return (
     <>
       {/* <div className={`w-full md:block md:w-auto ${isNavOpen ? "hidden" : "block"}`}></div> */}
-      <aside className={`lg:flex-[20]  ${isGitDrawerOpen ? "hidden" : "block"} `} aria-label="Sidebar">
+      <aside className={`lg:flex-[20]  ${isPageDrawerOpen ? "hidden" : "block"} `} aria-label="Sidebar">
         {/* <aside className={`lg:flex-[20]  `} aria-label="Sidebar"> */}
         <button
           className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
