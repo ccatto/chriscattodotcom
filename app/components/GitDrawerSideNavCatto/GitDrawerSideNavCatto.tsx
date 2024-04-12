@@ -3,8 +3,17 @@ import React, { useState } from "react";
 // import ImageCatto from "../../ImageCatto/ImageCatto";
 import ImageCatto from "../ImageCatto/ImageCatto";
 import SideNavGitCatto from "../SideNavGitCatto/SideNavGitCatto";
+// import { usePageDrawerDataCattoContext } from "../Utils/PageDrawerDataProviderCatto/PageDrawerCattoDataProvider";
+// import { usePageDrawerDataCattoContext } from "../Utils/PageDrawerCattoDataProvider/PageDrawerCattoDataProvider";
 
-const clickSideNavHandler = () => {
+// usePageDrawerDataCattoContext
+// import { usePageDrawerDataCattoContext } from "../Utils/PageDrawerDataProviderCatto/PageDrawerCattoDataProvider";
+// usePageDrawerDataCattoContext
+import { usePageDrawerDataCattoContext } from "../Utils/PageDrawerDataProviderCatto/PageDrawerCattoDataProvider";
+
+
+// const clickSideNavHandler = () => {
+
 
   // const [isGitDrawerOpen, setGitDrawerOpen] = useState(true);
 
@@ -28,25 +37,33 @@ const clickSideNavHandler = () => {
   //   // }
   //   event.preventDefault();
   // }
-}
+// }
 
 const GitDrawerSideNavCatto = () => {
 
-  const [isGitDrawerOpen, setGitDrawerOpen] = useState(true);
+  // New Context approach YO:
+  // let { isPageDrawerOpen } = usePageDrawerDataCattoContext();
+  // console.log("------ Context isPageDrawerOpen2 === ", isPageDrawerOpen);
+  let { isPageDrawerOpen } = usePageDrawerDataCattoContext();
+  console.log("-- ++ ---- Context isPageDrawerOpen === ", isPageDrawerOpen);
+
+  const [isGitDrawerOpen, setGitDrawerOpen] = useState(false);
+  // setGitDrawerOpen(false);
   const clickSideNavHandler = () => {
-    console.log('isGitDrawerOpen === ', isGitDrawerOpen);
-    setGitDrawerOpen(!isGitDrawerOpen);
-    console.log('After Set | isGitDrawerOpen === ', isGitDrawerOpen);
+    console.log('isGitDrawerOpen === ', isPageDrawerOpen);
+    isPageDrawerOpen = !isPageDrawerOpen;
+    // setGitDrawerOpen(!isGitDrawerOpen);
+    console.log('After Set | isGitDrawerOpen === ', isPageDrawerOpen);
   };
 
   return (
     <>
-     {/* <div className={`w-full md:block md:w-auto ${isNavOpen ? "hidden" : "block"}`}></div> */}
+      {/* <div className={`w-full md:block md:w-auto ${isNavOpen ? "hidden" : "block"}`}></div> */}
       <aside className={`lg:flex-[20]  ${isGitDrawerOpen ? "hidden" : "block"} `} aria-label="Sidebar">
-      {/* <aside className={`lg:flex-[20]  `} aria-label="Sidebar"> */}
+        {/* <aside className={`lg:flex-[20]  `} aria-label="Sidebar"> */}
         <button
           className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-        onClick={clickSideNavHandler}
+          onClick={clickSideNavHandler}
         >
           whole aside button!
           <div className="h-5 w-5 overflow-hidden relative rounded-lg shadow dark:bg-gray-100 dark:border-gray-700 dark:hover:bg-gray-700">

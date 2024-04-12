@@ -9,10 +9,39 @@ import ButtonCatto from "@/app/components/atoms/ButtonCatto/ButtonCatto";
 import ImageCatto from "@/app/components/ImageCatto/ImageCatto";
 // import GitDrawerOpenButtonCatto from "@/app/components/atoms/GitDrawerOpenButtonCatto/GitDrawerOpenButtonCatto";
 import GitDrawerSideNavCatto from "@/app/components/GitDrawerSideNavCatto/GitDrawerSideNavCatto";
+// import PageDrawerCattoDataProvider from "@/app/components/Utils/PageDrawerCattoDataProvider/PageDrawerCattoDataProvider";
+// import PageDrawerCattoDataProviderWrapper from "@/app/components/Utils/PageDrawerCattoDataProvider/PageDrawerCattoDataProvider";
+// import { usePageDrawerCattoDataContext } from "@/app/components/Utils/PageDrawerCattoDataProvider/PageDrawerCattoDataProvider";
+// PageDrawerCattoDataProviderWrapper
+import PageDrawerCattoDataProviderWrapper from "@/app/components/Utils/PageDrawerDataProviderCatto/PageDrawerCattoDataProvider";
+
 
 type LayoutProps = {
   children: ReactNode;
 }
+
+const GitLayout = ({ children }: LayoutProps) => {
+  // console.log('1 isGitDrawerOpen === ', isGitDrawerOpen);
+  // let { isPageDrawerOpen2 } = usePageDrawerCattoDataContext();
+  // console.log("------ Context isPageDrawerOpen2 === ", isPageDrawerOpen2);
+
+  return (
+    <>
+
+      <div className="flex h-full">
+        <PageDrawerCattoDataProviderWrapper>
+          <GitDrawerSideNavCatto />
+          <article className="flex-[80] lg:flex-[80] h-full">
+            {children}
+          </article>
+        </PageDrawerCattoDataProviderWrapper>
+      </div>
+      <hr className="m-3" />
+    </>
+  )
+}
+export default GitLayout;
+
 
 // const clickSideNavHandler = () => {
 
@@ -39,20 +68,3 @@ type LayoutProps = {
 //   //   event.preventDefault();
 //   // }
 // }
-
-const GitLayout = ({ children }: LayoutProps) => {
-  // console.log('1 isGitDrawerOpen === ', isGitDrawerOpen);
-  return (
-    <>
-
-      <div className="flex h-full">
-        <GitDrawerSideNavCatto />
-        <article className="flex-[80] lg:flex-[80] h-full">
-          {children}
-        </article>
-      </div>
-      <hr className="m-3" />
-    </>
-  )
-}
-export default GitLayout;

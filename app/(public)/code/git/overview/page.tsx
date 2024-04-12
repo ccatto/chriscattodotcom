@@ -1,5 +1,8 @@
 import { Metadata } from 'next'
 import JumbotronCattoFlexible from "@/app/components/JumbotronCattoFlexible/JumbotronCattoFlexible"
+// import { usePageDrawerDataCattoContext } from "../Utils/PageDrawerCattoDataProvider/PageDrawerCattoDataProvider";
+
+// import { usePageDrawerDataCattoContext } from '@/app/components/Utils/PageDrawerCattoDataProvider/PageDrawerCattoDataProvider'
 
 export const metadata: Metadata = {
   title: 'Chris Catto Code Git Tutorial Overview',
@@ -7,6 +10,13 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
+  // let { isPageDrawerOpen } = usePageDrawerDataCattoContext();
+
+  // New Context approach YO:
+  // let { isPageDrawerOpen } = usePageDrawerDataCattoContext();
+  // console.log("------ Context isPageDrawerOpen2 === ", isPageDrawerOpen);
+
+
   return (
     <>
       <div className="flex flex-col flex-nowrap h-full w-full ">
