@@ -20,6 +20,8 @@ type LayoutProps = {
   children: ReactNode;
 }
 
+// let app
+
 const GitLayout = ({ children }: LayoutProps) => {
   // console.log('1 isGitDrawerOpen === ', isGitDrawerOpen);
   // let { isPageDrawerOpen2 } = usePageDrawerCattoDataContext();
@@ -27,7 +29,6 @@ const GitLayout = ({ children }: LayoutProps) => {
 
   return (
     <>
-
       <div className="flex h-full">
         <PageDrawerCattoDataProviderWrapper>
           <GitDrawerSideNavCatto />
