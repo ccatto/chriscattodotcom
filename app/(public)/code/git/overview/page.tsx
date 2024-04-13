@@ -1,11 +1,11 @@
-"use client";
+// "use client";
 
 // import { Metadata } from 'next'
 import JumbotronCattoFlexible from "@/app/components/JumbotronCattoFlexible/JumbotronCattoFlexible"
 // import { usePageDrawerDataCattoContext } from "../Utils/PageDrawerCattoDataProvider/PageDrawerCattoDataProvider";
 
 // import { usePageDrawerDataCattoContext } from '@/app/components/Utils/PageDrawerCattoDataProvider/PageDrawerCattoDataProvider'
-import { usePageDrawerDataCattoContext } from '@/app/components/Utils/PageDrawerDataProviderCatto/PageDrawerCattoDataProvider';
+// import { usePageDrawerDataCattoContext } from '@/app/components/Utils/PageDrawerDataProviderCatto/PageDrawerCattoDataProvider';
 import GitOverview from "@/app/components/Git/GitOverview/GitOverview";
 
 // export const metadata: Metadata = {
@@ -14,8 +14,8 @@ import GitOverview from "@/app/components/Git/GitOverview/GitOverview";
 // }
 
 export default function Page() {
-  let { isPageDrawerOpen } = usePageDrawerDataCattoContext();
-  console.log('inside overview logging: isPageDrawerOpen === ', isPageDrawerOpen);
+  // let { isPageDrawerOpen } = usePageDrawerDataCattoContext();
+  // console.log('inside overview logging: isPageDrawerOpen === ', isPageDrawerOpen);
 
   // New Context approach YO:
   // let { isPageDrawerOpen } = usePageDrawerDataCattoContext();

@@ -72,6 +72,7 @@ const GitDrawerSideNavCatto = () => {
       <div className={`${simpleFalse ? "hidden" : "block"}  h-20 w-20 bg-red-500 `}>
         <GitSimpleTestNavCatto />
       </div>
+      
       <aside className={`lg:flex-[20]  ${isDrawerOpen ? "hidden" : "block"} `} aria-label="Sidebar">
 
 
