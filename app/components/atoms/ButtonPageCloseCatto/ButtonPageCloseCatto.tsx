@@ -4,9 +4,10 @@ import ImageCatto from "../../ImageCatto/ImageCatto";
 
 const ButtonPageCloseCatto = () => {
   let { isPageDrawerOpen } = usePageDrawerDataCattoContext();
+  console.log("==== ===== =====  inside BUTTON isPageDrawerOpen === ", isPageDrawerOpen);
   const clickSideNavHandler = () => {
     console.log('ATOM Page isGitDrawerOpen === ', isPageDrawerOpen);
-    isPageDrawerOpen = !isPageDrawerOpen;
+    isPageDrawerOpen = true;
     // setIsNavOpen(!isNavOpen);
     console.log('ATOM Page After Set | isGitDrawerOpen === ', isPageDrawerOpen);
   };

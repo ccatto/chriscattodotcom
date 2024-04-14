@@ -9,11 +9,17 @@ import ButtonCatto from "@/app/components/atoms/ButtonCatto/ButtonCatto";
 import ImageCatto from "@/app/components/ImageCatto/ImageCatto";
 // import GitDrawerOpenButtonCatto from "@/app/components/atoms/GitDrawerOpenButtonCatto/GitDrawerOpenButtonCatto";
 import GitDrawerSideNavCatto from "@/app/components/GitDrawerSideNavCatto/GitDrawerSideNavCatto";
+
+// GitNavDrawerCatto - NEW 
+import GitNavDrawerCatto from "@/app/components/Git/GitNavDrawerCatto/GitNavDrawerCatto";
+
+
 // import PageDrawerCattoDataProvider from "@/app/components/Utils/PageDrawerCattoDataProvider/PageDrawerCattoDataProvider";
 // import PageDrawerCattoDataProviderWrapper from "@/app/components/Utils/PageDrawerCattoDataProvider/PageDrawerCattoDataProvider";
 // import { usePageDrawerCattoDataContext } from "@/app/components/Utils/PageDrawerCattoDataProvider/PageDrawerCattoDataProvider";
 // PageDrawerCattoDataProviderWrapper
 import PageDrawerCattoDataProviderWrapper from "@/app/components/Utils/PageDrawerDataProviderCatto/PageDrawerCattoDataProvider";
+
 
 
 type LayoutProps = {
@@ -31,7 +37,8 @@ const GitLayout = ({ children }: LayoutProps) => {
     <>
       <div className="flex h-full">
         <PageDrawerCattoDataProviderWrapper>
-          <GitDrawerSideNavCatto />
+          {/* <GitDrawerSideNavCatto /> */}
+          <GitNavDrawerCatto /> 
           <article className="flex-[80] lg:flex-[80] h-full">
             {children}
           </article>
