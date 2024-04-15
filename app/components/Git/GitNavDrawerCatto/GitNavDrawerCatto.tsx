@@ -11,12 +11,16 @@ import { usePageDrawerDataCattoContext } from '../../Utils/PageDrawerDataProvide
 
 const GitNavDrawerCatto = () => {
 
-  let { isPageDrawerOpen } = usePageDrawerDataCattoContext();
+  let { isPageDrawerOpen, setIsPageDrawerOpen } = usePageDrawerDataCattoContext();
   console.log('---------------- inside Nav Drawer isPageDrawerOpen === ', isPageDrawerOpen);
 
   const [isDrawerOpen4, setIsDrawerOpen4] = useState(false);
+
   const clickCloseDrawer = () => {
     console.log('inside clickCloseDrawer');
+
+    setIsPageDrawerOpen(false);
+    console.log('------ After Update ---------- inside Nav Drawer isPageDrawerOpen === ', isPageDrawerOpen);
 
     // state
     setIsDrawerOpen4(!isDrawerOpen4);
