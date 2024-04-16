@@ -1,5 +1,14 @@
 import { Metadata } from 'next'
 import JumbotronCattoFlexible from "@/app/components/JumbotronCattoFlexible/JumbotronCattoFlexible"
+// import hljs from 'highlight.js'
+// import 'highlight.js/styles/default.css';
+// import hljs from 'highlight.js/lib/core';
+// import javascript from 'highlight.js/lib/languages/javascript';
+// import { useEffect } from 'react';
+// SyntaxHighlightingCatto
+import SyntaxHighlightingCatto from '@/app/components/Utils/SyntaxHighlightingCatto/SyntaxHighlightingCatto'
+// SyntaxHighlightingReactCatto
+import SyntaxHighlightingReactCatto from '@/app/components/Utils/SyntaxHighlightingReactCatto/SyntaxHighlightingReactCatto'
 
 export const metadata: Metadata = {
   title: 'Chris Catto Code JavaScript Fundamentals',
@@ -7,9 +16,25 @@ export const metadata: Metadata = {
 }
 
 const fundamentals = () => {
+
+  // useEffect(() => {
+  //   hljs.initHighlighting();
+  //   }, []);
+
+  // hljs.highlightAll();
+
+  // let codeBlock = ['one', 'two'];
+  let codeBlock = 'line 1 \n line 2';
+
   return (
     <>
       <div className="flex flex-col flex-nowrap h-screen w-full ">
+        {/* <SyntaxHighlightingCatto/>
+        <pre>
+          <code className="javascript">
+            32 alert( 'Hello, world!' );
+          </code>
+        </pre> */}
         <div className='flex-[20]'>
           <JumbotronCattoFlexible
             title="JavaScript Fundamentals Hello World"
@@ -21,21 +46,11 @@ const fundamentals = () => {
           <h2 className="inline-block mb-4 text-3xl font-extrabold tracking-tight">
             JavaScript Fundamentals Hello World
           </h2>
-          <div className='pl-10'>
-            <p>Hello World! </p>
-            <br />
-            <p>  
-              <br />
-                &lt;script &gt;
-                <br />
-                <p className='indent-4'>
-                alert( 'Hello, world!' );
-                </p>
-                &lt;/script &gt;
-              <br />
-            </p>
-            <br />
-          </div>
+          <h3>top</h3>
+          <SyntaxHighlightingReactCatto codeString={codeBlock} />
+          {/* <SyntaxHighlightingReactCatto codeString='<span>Hello<br />Hi</span>'/> */}
+          {/* <SyntaxHighlightingReactCatto codeString='(num) => num + 1<br/> next + " \n " + address'/> */}
+
         </div>
       </div>
     </>
