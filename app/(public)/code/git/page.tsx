@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <div className="flex flex-col flex-nowrap h-full w-full ">
-      <div className='flex-1'>
+      <div className='flex-auto bg-green-400'>
         <JumbotronCattoFlexible
           title="Git Source Control"
           description="Git is the industry standard for source control. This section I am displaying some of the main concepts & the commands that I use frequently."
@@ -135,7 +135,6 @@ export default function Page() {
           </li>
         </ul>
       </div>
-
       <hr className="m-3" />
     </div>
   )

@@ -7,17 +7,11 @@ import JSSideNavLinkList from "../JSSideNavLinkList/JSSideNavLinkList";
 const JSNavDrawerCatto = () => {
 
   const [isJSDrawerOpen, setIsJSDrawerOpen] = useState(false);
-
-  console.log('isJSDrawerOpen === ', isJSDrawerOpen);
   const clickCloseJSDrawer = () => {
-    // console.log("+++ isJSDrawerOpen === ", isJSDrawerOpen);
     setIsJSDrawerOpen(!isJSDrawerOpen);
-    // console.log(" 222 isJSDrawerOpen === ", isJSDrawerOpen);
   }
   const clickOpenJSDrawer = () => {
-    // console.log("---- in CLOSE isJSDrawerOpen === ", isJSDrawerOpen);
     setIsJSDrawerOpen(!isJSDrawerOpen);
-    // console.log("in CLosed 222 isJSDrawerOpen === ", isJSDrawerOpen);
   }
 
   return (
@@ -44,7 +38,7 @@ const JSNavDrawerCatto = () => {
         {/* Open */}
         <div className={`${isJSDrawerOpen ? "hidden" : "block"} h-full w-full`}>
           <div className="relative w-full">
-            <div className="absolute w-full">
+            <div className="absolute w-full block lg:hidden">
               <div className="flex justify-end">
                 <button
                   className="focus:ring-1 rounded-lg px-1 py-1 me-1 mb-1 m-auto"
@@ -68,4 +62,5 @@ const JSNavDrawerCatto = () => {
     </>
   )
 }
+
 export default JSNavDrawerCatto;
