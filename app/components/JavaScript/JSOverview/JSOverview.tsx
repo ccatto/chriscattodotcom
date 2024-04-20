@@ -19,7 +19,21 @@ const JSOverview = () => {
           />
         </div>
         <hr className="p-0" />
-        <div className='flex-[80] dark:bg-gray-700 p-2'>
+        <div className='flex-[80] m-4 dark:bg-[#f7df1e] text-black p-2'>
+          <h2 className="inline-block mb-4 text-3xl font-extrabold tracking-tight">
+            JavaScript Overview
+          </h2>
+          <div>
+            JavaScript is the most used language these days.
+            {/* <br />
+            Values passed to a function as parameters are copied to its local variables.
+            <br />
+            A function may access outer variables. But it works only from inside out. The code outside of the function doesn’t see its local variables.
+            <br />
+            A function can return a value. If it doesn’t, then its result is undefined. */}
+          </div>
+        </div>
+        {/* <div className='flex-[80] dark:bg-gray-700 p-2'>
           <h2 className="inline-block mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
             JavaScript
           </h2>
@@ -30,7 +44,7 @@ const JSOverview = () => {
             <br />
             <p>Libraries </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   )
