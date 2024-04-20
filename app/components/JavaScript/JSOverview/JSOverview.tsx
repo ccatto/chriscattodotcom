@@ -2,6 +2,7 @@
 
 import { Metadata } from 'next'
 import JumbotronCattoFlexible from "@/app/components/JumbotronCattoFlexible/JumbotronCattoFlexible"
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Chris Catto Code JavaScript Overview',
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 const JSOverview = () => {
   return (
     <>
-      <div className="flex flex-col flex-nowrap h-screen w-full ">
+      <div className="flex flex-col flex-nowrap h-full w-full ">
         <div className='flex-[20]'>
           <JumbotronCattoFlexible
             title="JavaScript Overview"
@@ -19,32 +20,27 @@ const JSOverview = () => {
           />
         </div>
         <hr className="p-0" />
-        <div className='flex-[80] m-4 dark:bg-[#f7df1e] text-black p-2'>
+        <div className='flex-[80] m-4 p-4 rounded-2xl dark:bg-[#f7df1e] text-black ring-2 ring-gray-300 dark:ring-gray-500'>
           <h2 className="inline-block mb-4 text-3xl font-extrabold tracking-tight">
             JavaScript Overview
           </h2>
           <div>
-            JavaScript is the most used language these days.
-            {/* <br />
-            Values passed to a function as parameters are copied to its local variables.
-            <br />
-            A function may access outer variables. But it works only from inside out. The code outside of the function doesn’t see its local variables.
-            <br />
-            A function can return a value. If it doesn’t, then its result is undefined. */}
+            <ol className="indent-4 space-y-1 list-disc list-inside">
+              <li>
+                <Link href="https://en.wikipedia.org/wiki/JavaScript" rel="noopener noreferrer" target="_blank" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">JavaScript</Link> in my opinion is the best & most used language these days.
+              </li>
+              <li>
+                JS is an event based language which responds in real time to user interactions.
+              </li>
+              <li>
+                There are many JS frameworks these days such as Next; React; Angular; Vue; Svelte which make it very powerful.
+              </li>
+              <li>
+                I remember in the late 90's utilizing Perl scripts in Netscape Navigator which is is when <Link href="https://en.wikipedia.org/wiki/Brendan_Eich" rel="noopener noreferrer" target="_blank" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Brendan Eich</Link> invented JS in 1995.
+              </li>
+            </ol>
           </div>
         </div>
-        {/* <div className='flex-[80] dark:bg-gray-700 p-2'>
-          <h2 className="inline-block mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-            JavaScript
-          </h2>
-          <div className='pl-10'>
-            <p>Hello World! </p>
-            <br />
-            <p>Fundamentals </p>
-            <br />
-            <p>Libraries </p>
-          </div>
-        </div> */}
       </div>
     </>
   )

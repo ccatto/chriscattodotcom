@@ -22,7 +22,7 @@ const fundamentals = () => {
           />
         </div>
         <hr className="p-0" />
-        <div className='flex-[80] m-4 dark:bg-[#f7df1e] text-black p-2'>
+        <div className='flex-[80] m-4 dark:bg-[#f7df1e] text-black p-4 ring-2 ring-gray-300 dark:ring-gray-500'>
           <h2 className="inline-block mb-4 text-3xl font-extrabold tracking-tight">
             JavaScript Fundamentals Functions
           </h2>
