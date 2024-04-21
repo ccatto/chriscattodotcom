@@ -22,4 +22,5 @@ const JavaScriptLayout = ({ children }: LayoutProps) => {
     </>
   )
 }
+
 export default JavaScriptLayout;

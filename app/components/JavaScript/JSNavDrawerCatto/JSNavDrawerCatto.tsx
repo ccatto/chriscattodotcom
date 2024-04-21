@@ -8,9 +8,11 @@ const JSNavDrawerCatto = () => {
 
   const [isJSDrawerOpen, setIsJSDrawerOpen] = useState(false);
   const clickCloseJSDrawer = () => {
+    console.log('inside close ');
     setIsJSDrawerOpen(!isJSDrawerOpen);
   }
   const clickOpenJSDrawer = () => {
+    console.log('inside open ');
     setIsJSDrawerOpen(!isJSDrawerOpen);
   }
 
@@ -38,6 +40,7 @@ const JSNavDrawerCatto = () => {
         {/* Open */}
         <div className={`${isJSDrawerOpen ? "hidden" : "block"} h-full w-full`}>
           <div className="relative w-full">
+            {/* <div className="absolute w-full"> */}
             <div className="absolute w-full block lg:hidden">
               <div className="flex justify-end">
                 <button
