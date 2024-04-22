@@ -10,7 +10,6 @@ const JSSideNavLinkList = () => {
 
   return (
     <>
-    
       <div className="hidden lg:block h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
         <ul className="space-y-2 font-medium">
           <li>
