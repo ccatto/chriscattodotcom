@@ -1,45 +1,38 @@
 // 'use client';
 
 import React, { ReactNode, useState } from "react";
-// import React, { useState } from 'react';
+import GitNavDrawerCatto from "@/app/components/Git/GitNavDrawerCatto/GitNavDrawerCatto";
+import PageDrawerCattoDataProviderWrapper from "@/app/components/Utils/PageDrawerDataProviderCatto/PageDrawerCattoDataProvider";
+
 import SideNavGitCatto from '@/app/components/SideNavGitCatto/SideNavGitCatto';
 import Image from "next/image";
 import ButtonCatto from "@/app/components/atoms/ButtonCatto/ButtonCatto";
-// import React, { useEffect, useRef, useState } from 'react'
 import ImageCatto from "@/app/components/ImageCatto/ImageCatto";
-// import GitDrawerOpenButtonCatto from "@/app/components/atoms/GitDrawerOpenButtonCatto/GitDrawerOpenButtonCatto";
 import GitDrawerSideNavCatto from "@/app/components/GitDrawerSideNavCatto/GitDrawerSideNavCatto";
 
+// import React, { useState } from 'react';
+// import GitDrawerOpenButtonCatto from "@/app/components/atoms/GitDrawerOpenButtonCatto/GitDrawerOpenButtonCatto";
+// import React, { useEffect, useRef, useState } from 'react'
 // GitNavDrawerCatto - NEW 
-import GitNavDrawerCatto from "@/app/components/Git/GitNavDrawerCatto/GitNavDrawerCatto";
-
-
 // import PageDrawerCattoDataProvider from "@/app/components/Utils/PageDrawerCattoDataProvider/PageDrawerCattoDataProvider";
 // import PageDrawerCattoDataProviderWrapper from "@/app/components/Utils/PageDrawerCattoDataProvider/PageDrawerCattoDataProvider";
 // import { usePageDrawerCattoDataContext } from "@/app/components/Utils/PageDrawerCattoDataProvider/PageDrawerCattoDataProvider";
 // PageDrawerCattoDataProviderWrapper
-import PageDrawerCattoDataProviderWrapper from "@/app/components/Utils/PageDrawerDataProviderCatto/PageDrawerCattoDataProvider";
-
-
 
 type LayoutProps = {
   children: ReactNode;
 }
 
-// let app
-
 const GitLayout = ({ children }: LayoutProps) => {
-  // console.log('1 isGitDrawerOpen === ', isGitDrawerOpen);
-  // let { isPageDrawerOpen2 } = usePageDrawerCattoDataContext();
-  // console.log("------ Context isPageDrawerOpen2 === ", isPageDrawerOpen2);
-
   return (
     <>
       <div className="flex h-full">
         <PageDrawerCattoDataProviderWrapper>
           {/* <GitDrawerSideNavCatto /> */}
-          <GitNavDrawerCatto /> 
-          <article className="flex-[80] lg:flex-[80] h-full">
+          <aside className="lg:flex-[20] h-full">
+            <GitNavDrawerCatto />
+          </aside>
+          <article className=" lg:flex-[80] h-full">
             {children}
           </article>
         </PageDrawerCattoDataProviderWrapper>
@@ -50,17 +43,15 @@ const GitLayout = ({ children }: LayoutProps) => {
 }
 export default GitLayout;
 
-
+// console.log('1 isGitDrawerOpen === ', isGitDrawerOpen);
+// let { isPageDrawerOpen2 } = usePageDrawerCattoDataContext();
+// console.log("------ Context isPageDrawerOpen2 === ", isPageDrawerOpen2);
 // const clickSideNavHandler = () => {
-
 //   // const [isGitDrawerOpen, setGitDrawerOpen] = useState(true);
-
 //   // const handleClick = () => {
 //   //   setGitDrawerOpen(!isGitDrawerOpen);
 //   // };
-
 //   // console.log('00 22 00 isGitDrawerOpen === ', isGitDrawerOpen);
-
 //   // return (event: React.MouseEvent) => {
 //   //   // console.log('1 isGitDrawerOpen === ', isGitDrawerOpen);
 //   //   // console.log('inside PREVIOUS CLICK');

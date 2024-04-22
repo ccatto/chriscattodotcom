@@ -11,10 +11,10 @@ const JavaScriptLayout = ({ children }: LayoutProps) => {
     <>
       <div className="flex h-full">
         {/* <aside className="lg:flex-[20] h-full"> */}
-        <aside className="flex-[20] lg:flex-[20] h-full">
+        <aside className="lg:flex-[20] h-full">
           <JSNavDrawerCatto />
         </aside>
-        <article className="flex-[80] lg:flex-[80] h-full">
+        <article className="lg:flex-[80] h-full">
           {children}
         </article>
       </div>

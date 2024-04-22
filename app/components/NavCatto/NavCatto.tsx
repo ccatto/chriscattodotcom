@@ -11,15 +11,11 @@ const NavCatto = () => {
   const [isNavLevel1Item1Open, setIsNavLevel1Item1Open] = useState(false);
 
   const handleHamburgClick = () => {
-    console.log(' 1 isNavOpen === ', isNavOpen);
     setIsNavOpen(!isNavOpen);
-    console.log('2 isNavOpen === ', isNavOpen);
   };
 
   const handleNavL1I2Click = () => {
-    console.log('inside handleNavL1I2Click isNavLevel1Item1Open === ', isNavLevel1Item1Open);
     setIsNavLevel1Item1Open(!isNavLevel1Item1Open);
-    console.log('inside handleNavL1I2Click isNavLevel1Item1Open !!!!!!!! === ', isNavLevel1Item1Open);
   }
 
   const handleCloseAllClick = () => {
@@ -34,11 +30,6 @@ const NavCatto = () => {
   const handleNavAboutClick = () => {
     handleCloseAllClick();
   }
-
-  // old can remove this function
-  // const handleClick = () => {
-  //   setIsNavOpen(!isNavOpen);
-  // };
 
   const pathName = usePathname();
 
@@ -101,7 +92,6 @@ const NavCatto = () => {
                       "flex py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent": pathName !== '/code',
                     },
                   )}
-                  // className="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                   onClick={() => setIsNavLevel1Item1Open(!isNavLevel1Item1Open)}
                 >
                   Code
@@ -115,7 +105,7 @@ const NavCatto = () => {
                     <li>
                       <Link
                         href="/code"
-                        className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
+                        className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-blue-200'
                         onClick={handleCloseAllClick}
                       >
                         Code Home
@@ -124,7 +114,7 @@ const NavCatto = () => {
                     <li>
                       <Link
                         href="/code/javascript"
-                        className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
+                        className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-blue-200'
                         onClick={handleCloseAllClick}
                       >
                         JavaScript
@@ -133,7 +123,7 @@ const NavCatto = () => {
                     <li>
                       <Link
                         href="/code/git"
-                        className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
+                        className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-blue-200'
                         onClick={handleCloseAllClick}
                       >
                         Git
@@ -142,29 +132,11 @@ const NavCatto = () => {
                   </ul>
                 </div>
               </li>
-              {/* Old working code link */}
-              {/* <li>
-                <Link
-                  href="/code"
-                  // onClick={handleClick}
-                  className={clsx(
-                    {
-                      "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-blue-500 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent": pathName === '/code',
-                    },
-                    {
-                      "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent": pathName !== '/code',
-                    },
-                  )}
-                >
-                  <span>Code </span>
-                </Link>
-              </li> */}
               {/* About Link */}
               <li>
                 <Link
                   href="/about"
                   onClick={handleNavAboutClick}
-                  // onClick={handleClick}
                   className={clsx(
                     {
                       "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-blue-500 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent": pathName === '/about',
@@ -174,39 +146,11 @@ const NavCatto = () => {
                     },
                   )}
                 >
-                  <span>About</span>
+                  <span>
+                    About
+                  </span>
                 </Link>
               </li>
-              {/* <li>
-                <Link
-                  href="/sports"
-                  className={clsx(
-                    {
-                      "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-blue-500 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent": pathName === '/sports',
-                    },
-                    {
-                      "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent": pathName !== '/sports',
-                    },
-                  )}
-                >
-                  <span>Sports</span>
-                </Link>
-              </li> */}
-              {/* <li>
-                <Link
-                  href="/media"
-                  className={clsx(
-                    {
-                      "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-blue-500 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent": pathName === '/media',
-                    },
-                    {
-                      "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent": pathName !== '/media',
-                    },
-                  )}
-                >
-                  <span>Media</span>
-                </Link>
-              </li> */}
             </ul>
           </div>
         </div>
