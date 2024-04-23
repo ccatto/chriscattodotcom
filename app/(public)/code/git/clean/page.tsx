@@ -21,12 +21,10 @@ export default function Page() {
         <h2 className="inline-block mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
           Terminal example:
         </h2>
-        <div className='pl-10'>
-          <CommandPromptDisplay
-            command='git clean -f'
-            output='remove unwanted files from your working directory'
-          />
-        </div>
+        <CommandPromptDisplay
+          command='git clean -f'
+          output='remove unwanted files from your working directory'
+        />
       </div>
     </div>
   )

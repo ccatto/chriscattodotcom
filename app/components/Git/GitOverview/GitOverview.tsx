@@ -19,36 +19,12 @@ const GitOverview = () => {
 
   return (
     <>
-      <div className="flex flex-col flex-nowrap h-full w-full ">
-        {/* <h1>yo here git overview</h1> */}
-        {/* <GitSimpleTestNavCatto /> */}
-        <div className='h-56 flex-1'>
-
-          <div className="relative">
-            {/* <div className="block lg:hidden align-top "> */}
-            <div className="absolute">
-              {/* <ButtonPageCloseCatto /> */}
-              {/* <button
-                className=" top-0 left-0 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-                onClick={clickSideNavHandler}
-              >
-                <div className="h-5 w-5 overflow-hidden relative rounded-lg shadow dark:bg-gray-100 dark:border-gray-700 dark:hover:bg-gray-700">
-                  <ImageCatto
-                    src="/images/icons/drawer-nav.svg"
-                    alt="cattoImage"
-                    priority={false}
-                    sizes="calc(49vw - 16px)"
-                  />
-                </div>
-              </button> */}
-            </div>
-
+      <div className="flex flex-col flex-nowrap w-full ">
+        <div className='flex-1'>
             <JumbotronCattoFlexible
               title="Git Overview"
               description="Git if free & open source version control system that is an industry standard. We are able to clone a repo; branch & merge.  "
             />
-          </div>
-
         </div>
         <hr className="p-1" />
         <div className='flex-1 p-5 m-5 border-2 border-white rounded-2xl bg-[#f0efe7] text-[#4e443c] '>

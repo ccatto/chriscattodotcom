@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import JumbotronCattoFlexible from "@/app/components/JumbotronCattoFlexible/JumbotronCattoFlexible"
+import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Chris Catto Code JavaScript Fundamentals',
@@ -17,16 +18,37 @@ const fundamentals = () => {
           />
         </div>
         <hr className="p-0" />
-        <div className='flex-[80] dark:bg-[#f7df1e] text-black p-2'>
+        <div className='flex-[80] m-4 p-4 rounded-2xl dark:bg-[#f7df1e] text-black ring-2 ring-gray-300 dark:ring-gray-500'>
           <h2 className="inline-block mb-4 text-3xl font-extrabold tracking-tight">
             JavaScript Fundamentals
           </h2>
           <div className='pl-10'>
-            <p>Hello World! </p>
-            <br />
-            <p>Fundamentals </p>
-            <br />
-            <p>Libraries </p>
+            <ul>
+              <li>
+                <Link href="/code/javascript/fundamentals/helloworld"
+                  className="flex items-center p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white group">
+                  Hello World!
+                </Link>
+              </li>
+              <li>
+                <Link href="/code/javascript/fundamentals/fundamentals"
+                  className="flex items-center p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white group">
+                  Fundamentals
+                </Link>
+              </li>
+              <li>
+                <Link href="/code/javascript/fundamentals/functions"
+                  className="flex items-center p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white group">
+                  Functions
+                </Link>
+              </li>
+              <li>
+                <Link href="/code/javascript/fundamentals/objects"
+                  className="flex items-center p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white group">
+                  Objects
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

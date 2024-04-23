@@ -1,7 +1,8 @@
 import { Metadata } from 'next'
 import JumbotronCattoFlexible from "@/app/components/JumbotronCattoFlexible/JumbotronCattoFlexible"
 import SideNavGitCatto from '@/app/components/SideNavGitCatto/SideNavGitCatto'
-import Image from 'next/image'
+import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Chris Catto Code Git Source Control',
@@ -20,13 +21,11 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <div className="flex flex-col flex-nowrap h-full w-full ">
-      <div className='flex-auto'>
-        <JumbotronCattoFlexible
-          title="Git Source Control"
-          description="Git is the industry standard for source control. This section I am displaying some of the main concepts & the commands that I use frequently."
-        />
-      </div>
-      <div className='flex-1 p-5 m-5 border-2 border-white rounded-2xl bg-[#f0efe7] text-[#4e443c] '>
+      <JumbotronCattoFlexible
+        title="Git Source Control"
+        description="Git is the industry standard for source control. This section I am displaying some of the main concepts & the commands that I use frequently."
+      />
+      <div className='flex-auto p-5 m-4 border-2 border-white rounded-2xl bg-[#f0efe7] text-[#4e443c] '>
         <ul className="space-y-2 font-medium">
           <li>
             <a href="/code/git/overview" className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white group">
@@ -37,7 +36,7 @@ export default function Page() {
             </a>
           </li>
           <li>
-            <a href="/code/git/installation" className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white group">
+            <Link href="/code/git/installation" className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white group">
               {/* <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19.059 10.898l-3.171-7.927A1.543 1.543 0 0 0 14.454 2H12.02l.38 4.065h2.7L10 10.293 4.9 6.065h2.7L7.98 2H5.546c-.632 0-1.2.384-1.434.971L.941 10.898a4.25 4.25 0 0 0-.246 2.272l.59 3.539A1.544 1.544 0 0 0 2.808 18h14.383c.755 0 1.399-.546 1.523-1.291l.59-3.539a4.22 4.22 0 0 0-.245-2.272zm-2.1 4.347a.902.902 0 0 1-.891.755H3.932a.902.902 0 0 1-.891-.755l-.365-2.193A.902.902 0 0 1 3.567 12h12.867c.558 0 .983.501.891 1.052l-.366 2.193z" />
               </svg> */}
@@ -45,7 +44,7 @@ export default function Page() {
                 <path d="M19.059 10.898l-3.171-7.927A1.543 1.543 0 0 0 14.454 2H12.02l.38 4.065h2.7L10 10.293 4.9 6.065h2.7L7.98 2H5.546c-.632 0-1.2.384-1.434.971L.941 10.898a4.25 4.25 0 0 0-.246 2.272l.59 3.539A1.544 1.544 0 0 0 2.808 18h14.383c.755 0 1.399-.546 1.523-1.291l.59-3.539a4.22 4.22 0 0 0-.245-2.272zm-2.1 4.347a.902.902 0 0 1-.891.755H3.932a.902.902 0 0 1-.891-.755l-.365-2.193A.902.902 0 0 1 3.567 12h12.867c.558 0 .983.501.891 1.052l-.366 2.193z" />
               </svg>
               <span className="ms-3">Installation</span>
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#" className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 group dark:hover:text-white">

@@ -21,14 +21,12 @@ export default function Page() {
         <h2 className="inline-block mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
           Terminal example:
         </h2>
-        <div className='pl-10'>
-          <CommandPromptDisplay
-            command='git log'
-            output='commit 9d48c9f1b214e8002b7804cd47facd0691f09747
+        <CommandPromptDisplay
+          command='git log'
+          output='commit 9d48c9f1b214e8002b7804cd47facd0691f09747
             Author: Catto <catto@somemail.com>
             Date:   Mon Apr 8 09:30:01 2013 -0400.'
-          />
-        </div>
+        />
         <div>
           <div className='p-5 m-5  flex-1 border-2 border-white rounded-2xl bg-[#f0efe7] '>
             <h2 className='text-[#f14e32]'>

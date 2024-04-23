@@ -21,12 +21,10 @@ export default function Page() {
         <h2 className="inline-block mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
           Terminal example:
         </h2>
-        <div className='pl-10'>
-          <CommandPromptDisplay
-            command='git add .'
-            output='no message just goes shows next prompt.'
-          />
-        </div>
+        <CommandPromptDisplay
+          command='git add .'
+          output='no message just goes shows next prompt.'
+        />
       </div>
       {/* <hr className="m-3" /> */}
     </div>

@@ -12,7 +12,7 @@ export default function Page() {
     <div className="flex flex-col flex-nowrap h-screen w-full ">
       <div className='flex-[20]'>
         <JumbotronCattoFlexible
-          title="Git Command version"
+          title="Git Command Version"
           description="Version is a command we can use to tell if Git is installed & what version we are using."
         />
       </div>
@@ -21,12 +21,12 @@ export default function Page() {
         <h2 className="inline-block mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
           Terminal example:
         </h2>
-        <div className='pl-10'>
+        {/* <div className=''> */}
           <CommandPromptDisplay
             command='git --version'
             output='git version 2.37.1 (Apple Git-137.1)'
           />
-        </div>
+        {/* </div> */}
       </div>
       {/* <hr className="m-3" /> */}
     </div>

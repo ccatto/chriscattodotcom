@@ -13,7 +13,7 @@ export default function Page() {
       <div className='flex-[20]'>
         <JumbotronCattoFlexible
           title="Git Command Reset"
-          description="Reset is a command we can use to undo changes." 
+          description="Reset is a command we can use to undo changes."
         />
       </div>
       <hr className="p-0" />
@@ -21,12 +21,10 @@ export default function Page() {
         <h2 className="inline-block mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
           Terminal example:
         </h2>
-        <div className='pl-10'>
-          <CommandPromptDisplay
-            command='git reset --hard HEAD'
-            output='HEAD is now at 82fdfcc commit comment.'
-          />
-        </div>
+        <CommandPromptDisplay
+          command='git reset --hard HEAD'
+          output='HEAD is now at 82fdfcc commit comment.'
+        />
       </div>
     </div>
   )

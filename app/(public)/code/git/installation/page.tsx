@@ -50,30 +50,6 @@ export default function Page() {
           </div>
         </div>
       </section>
-
-      {/* <div className='lg:pl-10 flex-1'>
-          <CommandPromptDisplay
-            command='brew install git'
-            output='==> installing git'
-          />
-        </div> */}
-      {/* <div className='flex-1 lg:flex-[80] dark:bg-gray-700 p-2'>
-        <div className='p-4 text-gray-400'>
-          We need homebrew installed.
-          <br />
-          Also after to ensure git is installed we can check the using the <Link href="/code/git/version">version command</Link>.
-        </div>
-        <h2 className="inline-block mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-          Terminal example:
-        </h2>
-        <div className='lg:pl-10'>
-          <CommandPromptDisplay
-            command='brew install git'
-            output='==> installing git'
-          />
-        </div>
-      </div> */}
-      {/* <hr className="m-3" /> */}
     </div>
   )
 }
