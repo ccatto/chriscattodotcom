@@ -33,7 +33,8 @@ const JumbotronCatto = () => {
             <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
               I've enjoyed developing software all of my life. Professionally I have utilized many different technologies currently focused on JavaScript, API's, databases & eCommerce including Salesforce Commerce Commerce Cloud.
             </p>
-            <a href="/code" className="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center">Read more
+            <a href="/code" className="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center">
+              Read more
               <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
               </svg>

@@ -21,12 +21,10 @@ export default function Page() {
         <h2 className="inline-block mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
           Terminal example:
         </h2>
-        <div className='pl-10'>
-          <CommandPromptDisplay
-            command='git commit -m "feat/Tix-044: my commit message."'
-            output='7 files changed, 100 insertions(+), 12 deletions(-)'
-          />
-        </div>
+        <CommandPromptDisplay
+          command='git commit -m "feat/Tix-044: my commit message."'
+          output='7 files changed, 100 insertions(+), 12 deletions(-)'
+        />
       </div>
       {/* <hr className="m-3" /> */}
     </div>

@@ -21,12 +21,11 @@ export default function Page() {
         <h2 className="inline-block mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
           Terminal example:
         </h2>
-        <div className='pl-10'>
-          <CommandPromptDisplay
-            command='git push'
-            output='remote: Resolving deltas: 100% (8/8), completed with 4 local objects.'
-          />
-          {/* 
+        <CommandPromptDisplay
+          command='git push'
+          output='remote: Resolving deltas: 100% (8/8), completed with 4 local objects.'
+        />
+        {/* 
             Enumerating objects: 29, done.
             Counting objects: 100% (29/29), done.
             Delta compression using up to 12 threads
@@ -36,7 +35,6 @@ export default function Page() {
             remote: Resolving deltas: 100% (8/8), completed with 4 local objects.
             To https://github.com/ccatto/chriscattodotcom.git
                82fdfcc..3e7bf87  feat/cc-001-init -> feat/cc-001-init */}
-        </div>
       </div>
       {/* <hr className="m-3" /> */}
     </div>

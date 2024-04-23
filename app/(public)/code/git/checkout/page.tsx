@@ -21,12 +21,10 @@ export default function Page() {
         <h2 className="inline-block mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
           Terminal example:
         </h2>
-        <div className='pl-10'>
-          <CommandPromptDisplay
-            command='git checkout -b branchName'
-            output='# allows us to create a new branch and name it'
-          />
-        </div>
+        <CommandPromptDisplay
+          command='git checkout -b branchName'
+          output='# allows us to create a new branch and name it'
+        />
       </div>
       <div className='p-5 mx-12 mt-3  flex-1 border-2 border-white rounded-2xl bg-[#f0efe7] '>
         <h2 className='text-[#f14e32]'>

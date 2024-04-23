@@ -1,0 +1,59 @@
+import { Metadata } from 'next'
+import JumbotronCattoFlexible from "@/app/components/JumbotronCattoFlexible/JumbotronCattoFlexible"
+import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Chris Catto Code JavaScript Fundamentals',
+  description: 'Chris Catto JavaScript Fundamentals'
+}
+
+const fundamentals = () => {
+  return (
+    <>
+      <div className="flex flex-col flex-nowrap h-screen w-full ">
+        <div className='flex-[20]'>
+          <JumbotronCattoFlexible
+            title="JavaScript Fundamentals"
+            description="JavaScript fundamentals including a hello world example; variables data types; operations; functions ect. "
+          />
+        </div>
+        <hr className="p-0" />
+        <div className='flex-[80] m-4 p-4 rounded-2xl dark:bg-[#f7df1e] text-black ring-2 ring-gray-300 dark:ring-gray-500'>
+          <h2 className="inline-block mb-4 text-3xl font-extrabold tracking-tight">
+            JavaScript Fundamentals
+          </h2>
+          <div className='pl-10'>
+            <ul>
+              <li>
+                <Link href="/code/javascript/fundamentals/helloworld"
+                  className="flex items-center p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white group">
+                  Hello World!
+                </Link>
+              </li>
+              <li>
+                <Link href="/code/javascript/fundamentals/fundamentals"
+                  className="flex items-center p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white group">
+                  Fundamentals
+                </Link>
+              </li>
+              <li>
+                <Link href="/code/javascript/fundamentals/functions"
+                  className="flex items-center p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white group">
+                  Functions
+                </Link>
+              </li>
+              <li>
+                <Link href="/code/javascript/fundamentals/objects"
+                  className="flex items-center p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white group">
+                  Objects
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}
+
+export default fundamentals;

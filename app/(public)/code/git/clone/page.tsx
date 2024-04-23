@@ -21,12 +21,10 @@ export default function Page() {
         <h2 className="inline-block mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
           Terminal example:
         </h2>
-        <div className='pl-10'>
-          <CommandPromptDisplay
-            command='git clone urlOfRepo'
-            output='git clone creates a working copy of a repo. When on a github page there is a "clone" button in the top right usually where we can get the path to use. We can use ssh or https;'
-          />
-        </div>
+        <CommandPromptDisplay
+          command='git clone urlOfRepo'
+          output='git clone creates a working copy of a repo. When on a github page there is a "clone" button in the top right usually where we can get the path to use. We can use ssh or https;'
+        />
       </div>
       {/* <hr className="m-3" /> */}
     </div>

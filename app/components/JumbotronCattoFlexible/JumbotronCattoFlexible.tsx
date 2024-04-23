@@ -11,8 +11,8 @@ type Props = {
 const JumbotronCattoFlexible = ({ title, description }: Props) => {
   // const JumbotronCattoFlexible = ({ title, description, isButton, buttonText}: Props ) => {
   return (
-    <section className="m-2 h-full bg-center bg-no-repeat bg-gray-700 bg-blend-multiply">
-      <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8">
+    <section className="m-2 bg-center bg-no-repeat bg-gray-700 bg-blend-multiply">
+      <div className="p-8 mb-2 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl">
         <h1 className="text-gray-900 dark:text-white text-3xl md:text-5xl font-extrabold mb-2">
           {title}
         </h1>
