@@ -16,10 +16,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body className={`${montserrat.className} overflow-x-hidden w-screen absolute bg-gray-800 antialiased flex flex-col min-h-screen m-0`}>
         <HeaderCatto />
-        {/* <div className='flex mt-20 h-full'> */}
         <div className='flex mt-20 h-full'>
           <div className='flex-[1] h-full bg-gradient-to-r from-gray-500 to-gray-900'></div>
           <main className='flex-[98] bg-gray-700'>

@@ -1,37 +1,69 @@
-// import { Metadata } from 'next'
-// import { ReactNode } from "react";
-import { ReactNode } from "react";
-import JumbotronCattoFlexible from "@/app/components/JumbotronCattoFlexible/JumbotronCattoFlexible"
+// 'use client';
+
+import React, { ReactNode, useState } from "react";
+import GitNavDrawerCatto from "@/app/components/Git/GitNavDrawerCatto/GitNavDrawerCatto";
+import PageDrawerCattoDataProviderWrapper from "@/app/components/Utils/PageDrawerDataProviderCatto/PageDrawerCattoDataProvider";
+
 import SideNavGitCatto from '@/app/components/SideNavGitCatto/SideNavGitCatto';
-import { LayoutProps } from "@/.next/types/app/page";
+import Image from "next/image";
+import ButtonCatto from "@/app/components/atoms/ButtonCatto/ButtonCatto";
+import ImageCatto from "@/app/components/ImageCatto/ImageCatto";
+import GitDrawerSideNavCatto from "@/app/components/GitDrawerSideNavCatto/GitDrawerSideNavCatto";
 
-// import { LayoutProps } from "@/.next/types/app/layout";
+// import React, { useState } from 'react';
+// import GitDrawerOpenButtonCatto from "@/app/components/atoms/GitDrawerOpenButtonCatto/GitDrawerOpenButtonCatto";
+// import React, { useEffect, useRef, useState } from 'react'
+// GitNavDrawerCatto - NEW 
+// import PageDrawerCattoDataProvider from "@/app/components/Utils/PageDrawerCattoDataProvider/PageDrawerCattoDataProvider";
+// import PageDrawerCattoDataProviderWrapper from "@/app/components/Utils/PageDrawerCattoDataProvider/PageDrawerCattoDataProvider";
+// import { usePageDrawerCattoDataContext } from "@/app/components/Utils/PageDrawerCattoDataProvider/PageDrawerCattoDataProvider";
+// PageDrawerCattoDataProviderWrapper
 
-// const type LayoutProps = {
-//   children: ReactNode;
-// }
-// const interface LayoutProps2 = {
-//   children: ReactNode;
-//   // Your other props here.
-// }
+type LayoutProps = {
+  children: ReactNode;
+}
 
 const GitLayout = ({ children }: LayoutProps) => {
   return (
     <>
-      <div className="flex h-screen">
-        <aside className="flex-[20]" aria-label="Sidebar">
-          <SideNavGitCatto />
-        </aside>
-        <article className="flex-[80] bg-blue-500">
-          {children}
-          {/* <JumbotronCattoFlexible
-            title="Git Source Control"
-            description="Git is the industry standard for source control. This section I am displaying some of the commands that I use frequently."
-          /> */}
-        </article>
+      <div className="flex h-full">
+        <PageDrawerCattoDataProviderWrapper>
+          {/* <GitDrawerSideNavCatto /> */}
+          <aside className="lg:flex-[20] h-full">
+            <GitNavDrawerCatto />
+          </aside>
+          <article className=" lg:flex-[80] h-full">
+            {children}
+          </article>
+        </PageDrawerCattoDataProviderWrapper>
       </div>
       <hr className="m-3" />
     </>
   )
 }
 export default GitLayout;
+
+// console.log('1 isGitDrawerOpen === ', isGitDrawerOpen);
+// let { isPageDrawerOpen2 } = usePageDrawerCattoDataContext();
+// console.log("------ Context isPageDrawerOpen2 === ", isPageDrawerOpen2);
+// const clickSideNavHandler = () => {
+//   // const [isGitDrawerOpen, setGitDrawerOpen] = useState(true);
+//   // const handleClick = () => {
+//   //   setGitDrawerOpen(!isGitDrawerOpen);
+//   // };
+//   // console.log('00 22 00 isGitDrawerOpen === ', isGitDrawerOpen);
+//   // return (event: React.MouseEvent) => {
+//   //   // console.log('1 isGitDrawerOpen === ', isGitDrawerOpen);
+//   //   // console.log('inside PREVIOUS CLICK');
+//   //   setGitDrawerOpen(!isGitDrawerOpen);
+//   //   console.log('setGitDrawerOpen === ', isGitDrawerOpen);
+//   //   // if (currentImg === 0 ) {
+//   //   //     console.log('inside AT beginning');
+//   //   //     setCurrentImg(totalSlides - 1);
+//   //   // } else {
+//   //   //     console.log('not at end yet');
+//   //   //     setCurrentImg(currentImg - 1);
+//   //   // }
+//   //   event.preventDefault();
+//   // }
+// }
