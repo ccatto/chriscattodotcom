@@ -4,7 +4,7 @@ import CommandPromptDisplay from '@/app/components/Utils/CommandPromptDisplay/Co
 
 export const metadata: Metadata = {
   title: 'Chris Catto Code Git Tutorial Commands Branch ',
-  description: 'Chris Catto Code Git Tutorial Commands Branch'
+  description: 'Chris Catto Code Git Tutorial Commands Rebase'
 }
 
 export default function Page() {
