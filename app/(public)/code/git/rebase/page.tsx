@@ -3,7 +3,7 @@ import JumbotronCattoFlexible from "@/app/components/JumbotronCattoFlexible/Jumb
 import CommandPromptDisplay from '@/app/components/Utils/CommandPromptDisplay/CommandPromptDisplay'
 
 export const metadata: Metadata = {
-  title: 'Chris Catto Code Git Tutorial Commands Branch ',
+  title: 'Chris Catto Code Git Tutorial Commands Rebase ',
   description: 'Chris Catto Code Git Tutorial Commands Rebase'
 }
 
