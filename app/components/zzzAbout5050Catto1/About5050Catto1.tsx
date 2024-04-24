@@ -28,4 +28,5 @@ const About5050Catto1 = () => {
     </>
   )
 }
+
 export default About5050Catto1

@@ -12,7 +12,7 @@ export default function Page() {
   return (
     <>
       <div className="flex flex-col flex-nowrap h-full w-full ">
-        <div className='flex-0'>
+        <div className='flex'>
           <JumbotronCattoFlexible
             title="JavaScript"
             description="JavaScript has become so important & a massively large language; this section is my way of trying to define; outline & learn .js"
@@ -28,14 +28,6 @@ export default function Page() {
                 <span className="ms-3">JavaScript Overview</span>
               </a>
             </li>
-            {/* <li>
-              <a href="/code/javascript/next" className="flex items-center p-2 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white group">
-                <svg className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-[#4e443c]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 21">
-                  <path d="M19.059 10.898l-3.171-7.927A1.543 1.543 0 0 0 14.454 2H12.02l.38 4.065h2.7L10 10.293 4.9 6.065h2.7L7.98 2H5.546c-.632 0-1.2.384-1.434.971L.941 10.898a4.25 4.25 0 0 0-.246 2.272l.59 3.539A1.544 1.544 0 0 0 2.808 18h14.383c.755 0 1.399-.546 1.523-1.291l.59-3.539a4.22 4.22 0 0 0-.245-2.272zm-2.1 4.347a.902.902 0 0 1-.891.755H3.932a.902.902 0 0 1-.891-.755l-.365-2.193A.902.902 0 0 1 3.567 12h12.867c.558 0 .983.501.891 1.052l-.366 2.193z" />
-                </svg>
-                <span className="ms-3">JavaScript Next</span>
-              </a>
-            </li> */}
             <li>
               <a href="/code/javascript/fundamentals" className="flex items-center p-2 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 group dark:hover:text-white">
                 <svg className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-[#4e443c]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 21">
@@ -49,16 +41,6 @@ export default function Page() {
                     Hello World
                   </a>
                 </li>
-                {/* <li>
-                  <a href="/code/javascript/fundamentals/helloworld" className="flex items-center w-full p-2 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100  dark:hover:bg-gray-700 dark:hover:text-white">
-                    Code; variables; types; loops; functions; switch
-                  </a>
-                </li> */}
-                {/* <li>
-                  <a href="/code/javascript/fundamentals/helloworld" className="flex items-center w-full p-2 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100  dark:hover:bg-gray-700 dark:hover:text-white">
-                    Code Quality
-                  </a>
-                </li> */}
                 <li>
                   <a href="/code/javascript/fundamentals/functions" className="flex items-center w-full p-2 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100  dark:hover:bg-gray-700 dark:hover:text-white">
                     Functions
@@ -69,32 +51,10 @@ export default function Page() {
                     Objects
                   </a>
                 </li>
-                {/* <li>
-                  <a href="/code/git/clean" className="flex items-center w-full p-2 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100  dark:hover:bg-gray-700 dark:hover:text-white">
-                    Miscellaneous
-                  </a>
-                </li> */}
               </ul>
             </li>
-            {/* <li>
-              <a href="#" className="flex items-center p-2 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 group dark:hover:text-white">
-                <svg className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-[#4e443c]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
-                  <path d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z" />
-                </svg>
-                <span className="flex-1 ms-3 whitespace-nowrap">Browser</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" className="flex items-center p-2 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 group dark:hover:text-white">
-                <svg className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-[#4e443c]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
-                  <path d="M17 5.923A1 1 0 0 0 16 5h-3V4a4 4 0 1 0-8 0v1H2a1 1 0 0 0-1 .923L.086 17.846A2 2 0 0 0 2.08 20h13.84a2 2 0 0 0 1.994-2.153L17 5.923ZM7 9a1 1 0 0 1-2 0V7h2v2Zm0-5a2 2 0 1 1 4 0v1H7V4Zm6 5a1 1 0 1 1-2 0V7h2v2Z" />
-                </svg>
-                <span className="flex-1 ms-3 whitespace-nowrap">Libraries</span>
-              </a>
-            </li> */}
           </ul>
         </div>
-
         {/* <hr className="m-3" /> */}
       </div>
     </>

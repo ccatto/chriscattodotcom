@@ -1,3 +1,11 @@
+
+
 export default function Page() {
-    return <p>Family Page</p>;
-  }
+  return (
+    <>
+      <div className="bg-green-600">
+        Family Page
+      </div>
+    </>
+  )
+}

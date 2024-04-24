@@ -17,7 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={`${montserrat.className} overflow-x-hidden w-screen absolute bg-gray-800 antialiased flex flex-col min-h-screen m-0`}>
+      {/*  */}
+      <body className={`min-h-[calc(100vh-26rem)] ${montserrat.className} overflow-x-hidden w-screen absolute bg-gray-800 antialiased flex flex-col m-0`}>
+      {/* <body className={`min-h-screen ${montserrat.className} m-0 overflow-x-hidden w-screen absolute bg-gray-800 antialiased flex flex-col`}> */}
         <HeaderCatto />
         <div className='flex mt-20 h-full'>
           <div className='flex-[1] h-full bg-gradient-to-r from-gray-500 to-gray-900'></div>

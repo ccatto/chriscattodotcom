@@ -2,16 +2,16 @@ import JumbotronCattoCode from "../../components/JumbotronCattoCode/JumbotronCat
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Chris Catto Code',
-    description: 'Chris Catto Code including JavaScript SFCC NextJS Git Terminal'
+  title: 'Chris Catto Code',
+  description: 'Chris Catto Code | Code tutorials including: JavaScript SFCC Next API\'s .NET AWS SQL CSS React GraphQL TypeScript.'
 }
 
 export default function Page() {
-    return (
-        <>
-            <hr className="m-3" />
-            <JumbotronCattoCode />
-            <hr className="m-3" />
-        </>
-    )
+  return (
+    <>
+      <hr className="m-3" />
+      <JumbotronCattoCode />
+      <hr className="m-3" />
+    </>
+  )
 }

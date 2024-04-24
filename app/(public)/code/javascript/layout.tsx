@@ -9,7 +9,7 @@ const JavaScriptLayout = ({ children }: LayoutProps) => {
 
   return (
     <>
-      <div className="flex h-full">
+      <div className="flex min-h-[calc(100vh-27rem)]">
         {/* <aside className="lg:flex-[20] h-full"> */}
         <aside className="lg:flex-[20] h-full">
           <JSNavDrawerCatto />
