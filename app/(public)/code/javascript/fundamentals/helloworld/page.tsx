@@ -1,6 +1,6 @@
-import { Metadata } from 'next'
-import JumbotronCattoFlexible from "@/app/components/JumbotronCattoFlexible/JumbotronCattoFlexible"
-import SyntaxHighlightingReactCatto from '@/app/components/Utils/SyntaxHighlightingReactCatto/SyntaxHighlightingReactCatto'
+import { Metadata } from 'next';
+import JumbotronCattoFlexible from "@/app/components/JumbotronCattoFlexible/JumbotronCattoFlexible";
+import SyntaxHighlightingReactCatto from '@/app/components/Utils/SyntaxHighlightingReactCatto/SyntaxHighlightingReactCatto';
 
 export const metadata: Metadata = {
   title: 'Chris Catto Code JavaScript Fundamentals',

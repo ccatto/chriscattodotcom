@@ -22,3 +22,11 @@ model navigation {
   nav_level        String?   @db.VarChar(10)
   nav_one_level_up String?   @db.VarChar(80)
 }
+
+model pages {
+  page_id          Int       @id @default(autoincrement())
+  page_name        String    @db.VarChar(100)
+  page_title       String?   @db.VarChar(200)
+  page_description String?   @db.VarChar(2000)
+  created_date     DateTime? @default(now()) @db.Timestamp(6)
+}

@@ -29,7 +29,7 @@
     ".next/types/**/*.ts",
     "app/lib/placeholder-data.js",
     "scripts/seed.js"
-  ],
+, "app/ui/pages"  ],
   "exclude": ["node_modules"],
   "types": ["@types/gtag.js"],
 }

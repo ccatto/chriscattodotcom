@@ -1,6 +1,16 @@
 
 async function getNav() {
   const res = await fetch('http://localhost:3000/api/navigation');
+
+  if(!res.ok) {
+    throw new Error('failed to fetch nav');
+  }
+  return await res.json();
+  
+}
+
+async function getNav2() {
+  const res = await fetch('http://localhost:3000/api/navigation');
   
   // const data = await res.json();
   // return data;
@@ -15,14 +25,15 @@ async function getNav() {
 
 // export default async function NavList(params:type) {
   export default async function NavList() {
-    const navItems = await getNav();
+    const navItems = await getNav2();
+    // console.log('navItems === ', navItems);
     return (
       <>
-      <h1>nav items! </h1>
+      <div>nav items! </div>
       {navItems.map((navItem:any) => 
         <div>{navItem.nav_name}</div>)
       }
-      <h6> below nav items</h6>
+      <div> below nav items -</div>
       </>
     )
 }
