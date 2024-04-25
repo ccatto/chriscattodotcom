@@ -12,3 +12,13 @@ model playing_with_neon {
   name  String
   value Float? @db.Real
 }
+
+model navigation {
+  navigation_id    Int       @id @default(autoincrement())
+  nav_name         String    @db.VarChar(40)
+  nav_link         String?   @db.VarChar(100)
+  nav_image        String?   @db.VarChar(100)
+  created_date     DateTime? @default(now()) @db.Timestamp(6)
+  nav_level        String?   @db.VarChar(10)
+  nav_one_level_up String?   @db.VarChar(80)
+}

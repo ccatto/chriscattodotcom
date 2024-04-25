@@ -5,12 +5,10 @@ type LayoutProps = {
   children: ReactNode;
 }
 
-const JavaScriptLayout = ({ children }: LayoutProps) => {
-
+const PrismaLayout = ({ children }: LayoutProps) => {
   return (
     <>
       <div className="min-h-[calc(100vh-27rem)] flex">
-        {/* <aside className="lg:flex-[20] h-full"> */}
         <aside className="lg:flex-[20] h-full">
           <JSNavDrawerCatto />
         </aside>
@@ -23,4 +21,4 @@ const JavaScriptLayout = ({ children }: LayoutProps) => {
   )
 }
 
-export default JavaScriptLayout;
+export default PrismaLayout;

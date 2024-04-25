@@ -1,3 +1,20 @@
+export type NavigationCatto = {
+  navigation_id: number;
+  nav_name: string;
+  nav_link: string;
+  nav_image: string;
+  created_date: string;
+}
+
+
+
+
+
+///////////////////////////////////
+// Below is from startup project //
+///////////////////////////////////
+
+
 // This file contains type definitions for your data.
 // It describes the shape of the data, and what data type each property should accept.
 // For simplicity of teaching, we're manually defining these types.

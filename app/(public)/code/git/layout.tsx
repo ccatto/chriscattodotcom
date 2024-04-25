@@ -6,7 +6,7 @@ import PageDrawerCattoDataProviderWrapper from "@/app/components/Utils/PageDrawe
 
 import SideNavGitCatto from '@/app/components/SideNavGitCatto/SideNavGitCatto';
 import Image from "next/image";
-import ButtonCatto from "@/app/components/atoms/ButtonCatto/ButtonCatto";
+import ButtonCatto from "@/app/components/AtomicDesign/atoms/ButtonCatto/ButtonCatto";
 import ImageCatto from "@/app/components/ImageCatto/ImageCatto";
 import GitDrawerSideNavCatto from "@/app/components/GitDrawerSideNavCatto/GitDrawerSideNavCatto";
 
@@ -26,7 +26,7 @@ type LayoutProps = {
 const GitLayout = ({ children }: LayoutProps) => {
   return (
     <>
-      <div className="flex h-full">
+      <div className="min-h-[calc(100vh-27rem)] flex">
         <PageDrawerCattoDataProviderWrapper>
           {/* <GitDrawerSideNavCatto /> */}
           <aside className="lg:flex-[20] h-full">

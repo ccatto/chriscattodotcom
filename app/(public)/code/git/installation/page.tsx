@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import JumbotronCattoFlexible from "@/app/components/JumbotronCattoFlexible/JumbotronCattoFlexible"
 import CommandPromptDisplay from '@/app/components/Utils/CommandPromptDisplay/CommandPromptDisplay'
 import Link from 'next/link';
-import LinkCatto from '@/app/components/atoms/LinkCatto/LinkCatto';
+import LinkCatto from '@/app/components/AtomicDesign/atoms/LinkCatto/LinkCatto';
 
 export const metadata: Metadata = {
   title: 'Chris Catto Code Git Tutorial Installation',

@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from "react";
-import ImageCatto from "../../ImageCatto/ImageCatto";
+import ImageCatto from "../../../ImageCatto/ImageCatto";
 
 
 const clickSideNavHandler = () => {

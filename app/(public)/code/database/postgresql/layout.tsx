@@ -8,7 +8,7 @@ type LayoutProps = {
 const PostgresqlLayout = ({ children }: LayoutProps) => {
   return (
     <>
-      <div className="flex h-full">
+      <div className="min-h-[calc(100vh-27rem)] flex">
         <aside className="lg:flex-[20] h-full">
           <JSNavDrawerCatto />
         </aside>

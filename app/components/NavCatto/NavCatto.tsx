@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react';
+import React, { ReactNode, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
@@ -343,5 +343,7 @@ const NavCatto = () => {
       </nav >
     </>
   )
+  
 }
+
 export default NavCatto
