@@ -5,6 +5,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
+// import NavLoginCatto from "NavLoginCatto";
+import NavLoginCatto from '../NavLoginCatto/NavLoginCatto';
 
 const NavCatto = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -50,6 +52,9 @@ const NavCatto = () => {
               ChrisCatto.com
             </span>
           </Link>
+          <div className='text-white'>
+            <NavLoginCatto />
+          </div>
           {/* Hamburg icon */}
           <button
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -343,7 +348,7 @@ const NavCatto = () => {
       </nav >
     </>
   )
-  
+
 }
 
 export default NavCatto

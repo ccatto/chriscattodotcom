@@ -26,6 +26,8 @@ Current node version is 20.9.0 as of March 26th 2024;
 - using pg package v^8.11.5 for postgresql 
 - using prisma as ORM 
 - using @prisma/client as db client
+- using next-auth for authentication
+
 
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> 

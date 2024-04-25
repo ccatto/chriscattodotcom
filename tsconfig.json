@@ -29,7 +29,7 @@
     ".next/types/**/*.ts",
     "app/lib/placeholder-data.js",
     "scripts/seed.js"
-, "app/ui/pages"  ],
+, "app/ui/pages", "app/components/NavLoginCatto"  ],
   "exclude": ["node_modules"],
   "types": ["@types/gtag.js"],
 }
