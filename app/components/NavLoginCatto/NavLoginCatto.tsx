@@ -5,13 +5,13 @@ import { getServerSession } from 'next-auth';
 // import SessionProvider from "./components/SessionProvider";
 import { SessionProvider } from "next-auth/react";
 // import { getServerSession } from 'next-auth';
-
+// import SessionProvider from 
 
 const NavLoginCatto = () => {
-  const session =   getServerSession();
+  // const session =   getServerSession();
   // const session = await getServerSession(req, res, authConfig);
   // <SessionProvider>
-    // const { data: session } = useSession();
+    const { data: session } = useSession();
   // </SessionProvider>
   
   if (session) {
