@@ -1,8 +1,8 @@
 import { Pool, QueryResultRow } from 'pg';
 
-const pool = new Pool({ 
+const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
-  ssl: true
+  ssl: true,
 });
 
 async function getData() {
@@ -22,7 +22,7 @@ export default async function Page() {
 
 export const query = <Result extends QueryResultRow>(
   text: string,
-  params: any[] = []
+  params: any[] = [],
 ) => {
-  return pool.query<Result>(text, params)
-}
+  return pool.query<Result>(text, params);
+};

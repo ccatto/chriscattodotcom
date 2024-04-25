@@ -1,33 +1,34 @@
-import { Metadata } from 'next'
-import JumbotronCattoFlexible from "@/app/components/JumbotronCattoFlexible/JumbotronCattoFlexible"
-import SyntaxHighlightingReactCatto from '@/app/components/Utils/SyntaxHighlightingReactCatto/SyntaxHighlightingReactCatto'
+import { Metadata } from 'next';
+import JumbotronCattoFlexible from '@/app/components/JumbotronCattoFlexible/JumbotronCattoFlexible';
+import SyntaxHighlightingReactCatto from '@/app/components/Utils/SyntaxHighlightingReactCatto/SyntaxHighlightingReactCatto';
 
 export const metadata: Metadata = {
   title: 'Chris Catto Code JavaScript Fundamentals Objects',
-  description: 'Chris Catto JavaScript Fundamentals Objects'
-}
+  description: 'Chris Catto JavaScript Fundamentals Objects',
+};
 
 const objects = () => {
-
-  const codeBlock = ' // create a simple object \nconst simpleObject = {}; \nconst simpleObject2 = new Object();';
-  const codeBlock2 = '// example of simple object \nconst person = {\n  firstName: \'Chris\',\n  lastName: \'Catto\'\n};';
+  const codeBlock =
+    ' // create a simple object \nconst simpleObject = {}; \nconst simpleObject2 = new Object();';
+  const codeBlock2 =
+    "// example of simple object \nconst person = {\n  firstName: 'Chris',\n  lastName: 'Catto'\n};";
 
   return (
     <>
-      <div className="flex flex-col flex-nowrap h-full w-full ">
-        <div className='flex-[20]'>
+      <div className="flex h-full w-full flex-col flex-nowrap ">
+        <div className="flex-[20]">
           <JumbotronCattoFlexible
             title="JavaScript Fundamentals Objects"
             description="JavaScript fundamentals Objects "
           />
         </div>
         <hr className="p-0" />
-        <div className='flex-[80] m-4 p-4 rounded-2xl dark:bg-[#f7df1e] text-black ring-2 ring-gray-300 dark:ring-gray-500'>
-          <h2 className="inline-block mb-4 text-3xl font-extrabold tracking-tight">
+        <div className="m-4 flex-[80] rounded-2xl p-4 text-black ring-2 ring-gray-300 dark:bg-[#f7df1e] dark:ring-gray-500">
+          <h2 className="mb-4 inline-block text-3xl font-extrabold tracking-tight">
             JavaScript Fundamentals Objects
           </h2>
           <SyntaxHighlightingReactCatto codeString={codeBlock} />
-          <br/>
+          <br />
           <h2>ES6 Objects </h2>
           <SyntaxHighlightingReactCatto codeString={codeBlock2} />
           <div>
@@ -42,7 +43,7 @@ const objects = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
 export default objects;

@@ -3,12 +3,12 @@ import { montserrat } from '@/app/ui/fonts';
 import HeaderCatto from './components/HeaderCatto/HeaderCatto';
 import FooterCatto from './components/Footer/FooterCatto';
 import GA4TagCatto from './components/Utils/GA4TagCatto/GA4TagCatto';
-import { Metadata } from 'next'
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Chris Catto',
-  description: 'Chris Catto personal site home'
-}
+  description: 'Chris Catto personal site home',
+};
 
 export default function RootLayout({
   children,
@@ -17,56 +17,56 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={`${montserrat.className} overflow-x-hidden w-screen absolute bg-gray-800 antialiased flex flex-col min-h-screen m-0`}>
-        <div className='bg-orange-500 grow'>
+      <body
+        className={`${montserrat.className} absolute m-0 flex min-h-screen w-screen flex-col overflow-x-hidden bg-gray-800 antialiased`}
+      >
+        <div className="grow bg-orange-500">
           <HeaderCatto />
-          <div className='bg-blue-500 mt-20 min-h-[calc(100vh-26rem)]'>
-            <div className='bg-red-400 min-h-[calc(100vh-26rem)]'>
+          <div className="mt-20 min-h-[calc(100vh-26rem)] bg-blue-500">
+            <div className="min-h-[calc(100vh-26rem)] bg-red-400">
               <h1>body simple</h1>
-              <br/>
+              <br />
               <h1>body simple</h1>
-              <br/>
+              <br />
               <h1>body simple</h1>
-              <br/>
+              <br />
               <h1>body simple</h1>
-              <br/>
+              <br />
               <h1>body simple</h1>
-              <br/>
+              <br />
               <h1>body simple</h1>
-              <br/>
+              <br />
               <h1>body simple</h1>
-              <br/>
+              <br />
               <h1>body simple</h1>
-              <br/>
+              <br />
               <h1>body simple</h1>
-              <br/>
+              <br />
               <h1>body simple</h1>
-              <br/>
+              <br />
               <h1>body simple</h1>
-              <br/>
+              <br />
               <h1>body simple</h1>
-              <br/>
+              <br />
               <h1>body simple</h1>
-              <br/>
+              <br />
               <h1>body simple</h1>
-              <br/>
+              <br />
               <h1>body simple</h1>
-              <br/>
+              <br />
               <h1>body simple</h1>
-              <br/>
+              <br />
               <h1>body simple</h1>
-              <br/>
+              <br />
               <h1>body simple</h1>
-              <br/>
+              <br />
               <h1>body simple</h1>
-              <br/>
+              <br />
               <h1>body simple</h1>
-              <br/>
+              <br />
               <h1>body simple</h1>
-              <br/>
-              
+              <br />
             </div>
-
           </div>
 
           <FooterCatto />

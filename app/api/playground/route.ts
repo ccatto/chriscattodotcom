@@ -1,8 +1,8 @@
-import { PrismaClient } from '@prisma/client'
+import { PrismaClient } from '@prisma/client';
 
-const prisma = new PrismaClient()
+const prisma = new PrismaClient();
 
-export const dynamic = 'force-dynamic' // defaults to auto
+export const dynamic = 'force-dynamic'; // defaults to auto
 export async function GET(request: Request) {}
 
 async function main() {
@@ -15,11 +15,10 @@ async function main() {
 
 main()
   .then(async () => {
-    await prisma.$disconnect()
+    await prisma.$disconnect();
   })
   .catch(async (e) => {
-    console.error(e)
-    await prisma.$disconnect()
-    process.exit(1)
-  })
-  
+    console.error(e);
+    await prisma.$disconnect();
+    process.exit(1);
+  });

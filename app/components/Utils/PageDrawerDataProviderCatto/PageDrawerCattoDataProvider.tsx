@@ -1,12 +1,12 @@
 // PageDrawerCattoDataProvider.tsx
 
-"use client"
+'use client';
 import {
   ReactNode,
   createContext,
   useState,
   useContext,
-  useEffect
+  useEffect,
 } from 'react';
 
 interface IContextProps {
@@ -14,7 +14,7 @@ interface IContextProps {
   dispatch: ({ type }: { type: string }) => void;
 }
 interface Props {
-  children?: ReactNode
+  children?: ReactNode;
   // any props that come into the component
 }
 
@@ -66,20 +66,19 @@ const PageDrawerCattoDataProviderWrapper = ({ children, ...props }: Props) => {
   //   console.log('desktop FB TEst === inside  screen.orientation !== undefined ++++++++++  +++++');
   // }
 
-
   let [isPageDrawerOpen, setIsPageDrawerOpen] = useState(false);
 
   return (
-    <PageDrawerCattoDataContext.Provider value={{ isPageDrawerOpen, setIsPageDrawerOpen }}>
+    <PageDrawerCattoDataContext.Provider
+      value={{ isPageDrawerOpen, setIsPageDrawerOpen }}
+    >
       {children}
     </PageDrawerCattoDataContext.Provider>
-  )
-}
+  );
+};
 
 export default PageDrawerCattoDataProviderWrapper;
 
 export function usePageDrawerDataCattoContext() {
   return useContext(PageDrawerCattoDataContext);
 }
-
-

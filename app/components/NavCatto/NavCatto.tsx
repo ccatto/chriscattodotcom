@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import React, { ReactNode, useState } from 'react';
 import Link from 'next/link';
@@ -23,50 +23,71 @@ const NavCatto = () => {
     setIsNavLevel1Item1Open(false);
     setIsNavLevel2Item1Open(false);
     setIsNavLevel3Item1Open(false);
-  }
+  };
 
   const handleNavHomeClick = () => {
     handleCloseAllClick();
-  }
+  };
 
   const handleNavAboutClick = () => {
     handleCloseAllClick();
-  }
+  };
 
   const pathName = usePathname();
 
   return (
     <>
-      <nav className="bg-white border-gray-200 dark:bg-gray-900">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <nav className="border-gray-200 bg-white dark:bg-gray-900">
+        <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
           {/* Top left Site name & image */}
-          <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+          <Link
+            href="/"
+            className="flex items-center space-x-3 rtl:space-x-reverse"
+          >
             <Image
               src="/Chris-Catto-dot-com.png"
               width={107}
               height={50}
-              className="hidden md:block rounded-2xl"
+              className="hidden rounded-2xl md:block"
               alt="ChrisCatto.com"
             />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+            <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
               ChrisCatto.com
             </span>
           </Link>
-          <div className='text-white'>
+          <div className="text-white">
             <NavLoginCatto />
           </div>
           {/* Hamburg icon */}
           <button
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            onClick={handleHamburgClick} type="button" aria-controls="navbar-default" aria-expanded="false">
+            className="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+            onClick={handleHamburgClick}
+            type="button"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
             <span className="sr-only">Open main menu</span>
-            <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
+            <svg
+              className="h-5 w-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
             </svg>
           </button>
           {/* Main Nav Level-1 Section  */}
-          <div className={`${!isNavOpen ? "hidden" : "block"} w-full md:block md:w-auto`}>
-            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <div
+            className={`${!isNavOpen ? 'hidden' : 'block'} w-full md:block md:w-auto`}
+          >
+            <ul className="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium rtl:space-x-reverse dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900">
               {/* Home Link */}
               <li>
                 <Link
@@ -74,16 +95,16 @@ const NavCatto = () => {
                   onClick={handleNavHomeClick}
                   className={clsx(
                     {
-                      "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-blue-500 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent": pathName === '/',
+                      'block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white':
+                        pathName === '/',
                     },
                     {
-                      "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent": pathName !== '/',
+                      'block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500':
+                        pathName !== '/',
                     },
                   )}
                 >
-                  <span>
-                    Home
-                  </span>
+                  <span>Home</span>
                 </Link>
               </li>
               {/* Code link section */}
@@ -92,28 +113,46 @@ const NavCatto = () => {
                 <button
                   className={clsx(
                     {
-                      "flex py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-blue-500 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent": pathName === '/code',
+                      'flex rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white':
+                        pathName === '/code',
                     },
                     {
-                      "flex py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent": pathName !== '/code',
+                      'flex rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500':
+                        pathName !== '/code',
                     },
                   )}
                   onClick={() => setIsNavLevel1Item1Open(!isNavLevel1Item1Open)}
                 >
                   Code
                   <svg
-                    className="mt-2 w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
+                    className="ms-2.5 mt-2 h-2.5 w-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m1 1 4 4 4-4"
+                    />
                   </svg>
                 </button>
                 {/* Nav level 1 expanded div */}
-                <div className={`${isNavLevel1Item1Open ? "block" : "hidden"} h-100 absolute z-10 mt-3 lg:ml-[-2em]  px-3 py-2  text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm dark:bg-gray-700`}>
-                  <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
+                <div
+                  className={`${isNavLevel1Item1Open ? 'block' : 'hidden'} h-100 absolute z-10 mt-3 rounded-lg  bg-gray-900 px-3  py-2 text-sm font-medium text-white shadow-sm dark:bg-gray-700 lg:ml-[-2em]`}
+                >
+                  <ul
+                    className="py-2 text-sm text-gray-700 dark:text-gray-200"
+                    aria-labelledby="dropdownLargeButton"
+                  >
                     {/* Nav Code / Code Home */}
                     <li>
                       <Link
                         href="/code"
-                        className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-blue-300'
+                        className="block px-4 py-2 hover:bg-gray-100 hover:text-blue-300 dark:hover:bg-gray-600"
                         onClick={handleCloseAllClick}
                       >
                         Code Home
@@ -121,63 +160,97 @@ const NavCatto = () => {
                     </li>
                     {/* Nav code JavaScript */}
                     <li>
-                      <button className="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-blue-300"
-                        onClick={() => setIsNavLevel2Item1Open(!isNavLevel2Item1Open)}
+                      <button
+                        className="flex w-full items-center justify-between px-4 py-2 hover:bg-gray-100 hover:text-blue-300 dark:hover:bg-gray-600"
+                        onClick={() =>
+                          setIsNavLevel2Item1Open(!isNavLevel2Item1Open)
+                        }
                       >
                         JavaScript
-                        <svg className="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
+                        <svg
+                          className="ms-2.5 h-2.5 w-2.5"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 10 6"
+                        >
+                          <path
+                            stroke="currentColor"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="m1 1 4 4 4-4"
+                          />
                         </svg>
                       </button>
                       {/* Nav 2nd level JavaScript Menu */}
-                      <div className={`${isNavLevel2Item1Open ? "block" : "hidden"} z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-500`}>
-                        <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
+                      <div
+                        className={`${isNavLevel2Item1Open ? 'block' : 'hidden'} z-10 w-44 divide-y divide-gray-100 rounded-lg bg-white shadow dark:bg-gray-500`}
+                      >
+                        <ul
+                          className="py-2 text-sm text-gray-700 dark:text-gray-200"
+                          aria-labelledby="doubleDropdownButton"
+                        >
                           <li>
-                            <Link href="/code/javascript"
-                              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                              onClick={handleCloseAllClick}>
+                            <Link
+                              href="/code/javascript"
+                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              onClick={handleCloseAllClick}
+                            >
                               JavaScript Home
                             </Link>
                           </li>
                           <li>
-                            <Link href="/code/javascript/overview"
-                              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                              onClick={handleCloseAllClick}>
+                            <Link
+                              href="/code/javascript/overview"
+                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              onClick={handleCloseAllClick}
+                            >
                               JS Overview
                             </Link>
                           </li>
                           <li>
-                            <Link href="/code/javascript/fundamentals"
-                              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                              onClick={handleCloseAllClick}>
+                            <Link
+                              href="/code/javascript/fundamentals"
+                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              onClick={handleCloseAllClick}
+                            >
                               Fundamentals
                             </Link>
                           </li>
                           <li>
-                            <Link href="/code/javascript/fundamentals/helloworld"
-                              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                              onClick={handleCloseAllClick}>
+                            <Link
+                              href="/code/javascript/fundamentals/helloworld"
+                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              onClick={handleCloseAllClick}
+                            >
                               Hello World
                             </Link>
                           </li>
                           <li>
-                            <Link href="/code/javascript/fundamentals/datatypes"
-                              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                              onClick={handleCloseAllClick}>
+                            <Link
+                              href="/code/javascript/fundamentals/datatypes"
+                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              onClick={handleCloseAllClick}
+                            >
                               Data Types
                             </Link>
                           </li>
                           <li>
-                            <Link href="/code/javascript/fundamentals/functions"
-                              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                              onClick={handleCloseAllClick}>
+                            <Link
+                              href="/code/javascript/fundamentals/functions"
+                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              onClick={handleCloseAllClick}
+                            >
                               Functions
                             </Link>
                           </li>
                           <li>
-                            <Link href="/code/javascript/fundamentals/objects"
-                              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                              onClick={handleCloseAllClick}>
+                            <Link
+                              href="/code/javascript/fundamentals/objects"
+                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              onClick={handleCloseAllClick}
+                            >
                               Objects
                             </Link>
                           </li>
@@ -186,122 +259,181 @@ const NavCatto = () => {
                     </li>
                     {/* Nav Code Git */}
                     <li>
-                      <button className="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 hover:text-blue-300"
-                        onClick={() => setIsNavLevel3Item1Open(!isNavLevel3Item1Open)}
+                      <button
+                        className="flex w-full items-center justify-between px-4 py-2 hover:bg-gray-100 hover:text-blue-300 dark:hover:bg-gray-600"
+                        onClick={() =>
+                          setIsNavLevel3Item1Open(!isNavLevel3Item1Open)
+                        }
                       >
                         Git
-                        <svg className="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
+                        <svg
+                          className="ms-2.5 h-2.5 w-2.5"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 10 6"
+                        >
+                          <path
+                            stroke="currentColor"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="m1 1 4 4 4-4"
+                          />
                         </svg>
                       </button>
                       {/* Nav 2nd level Git Menu h-100 overflow-y-auto*/}
-                      <div className={`${isNavLevel3Item1Open ? "block" : "hidden"} overflow-auto h-100 z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-500`}>
-                        <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
+                      <div
+                        className={`${isNavLevel3Item1Open ? 'block' : 'hidden'} h-100 z-10 w-44 divide-y divide-gray-100 overflow-auto rounded-lg bg-white shadow dark:bg-gray-500`}
+                      >
+                        <ul
+                          className="py-2 text-sm text-gray-700 dark:text-gray-200"
+                          aria-labelledby="doubleDropdownButton"
+                        >
                           <li>
-                            <Link href="/code/git"
-                              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                              onClick={handleCloseAllClick}>
+                            <Link
+                              href="/code/git"
+                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              onClick={handleCloseAllClick}
+                            >
                               Git Home
                             </Link>
                           </li>
                           <li>
-                            <Link href="/code/git/overview"
-                              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                              onClick={handleCloseAllClick}>
+                            <Link
+                              href="/code/git/overview"
+                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              onClick={handleCloseAllClick}
+                            >
                               Git Overview
                             </Link>
                           </li>
                           {/* #todo make this nav look better when it's long list */}
-                          <div className='hidden'>
+                          <div className="hidden">
                             <li>
-                              <Link href="/code/git/installation"
-                                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                                onClick={handleCloseAllClick}>
+                              <Link
+                                href="/code/git/installation"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                onClick={handleCloseAllClick}
+                              >
                                 Installation
                               </Link>
                             </li>
                             <li>
-                              <Link href="/code/git/version"
-                                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                                onClick={handleCloseAllClick}>
+                              <Link
+                                href="/code/git/version"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                onClick={handleCloseAllClick}
+                              >
                                 Version
                               </Link>
                             </li>
                             <li>
-                              <Link href="/code/git/status"
-                                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                                onClick={handleCloseAllClick}>
+                              <Link
+                                href="/code/git/status"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                onClick={handleCloseAllClick}
+                              >
                                 Status
                               </Link>
                             </li>
                           </div>
                           <li>
-                            <Link href="/code/git/log"
-                              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                              onClick={handleCloseAllClick}>
+                            <Link
+                              href="/code/git/log"
+                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              onClick={handleCloseAllClick}
+                            >
                               Log
                             </Link>
                           </li>
                           <li>
-                            <Link href="/code/git/branch"
-                              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                              onClick={handleCloseAllClick}>
+                            <Link
+                              href="/code/git/branch"
+                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              onClick={handleCloseAllClick}
+                            >
                               Branch
                             </Link>
                           </li>
                           <li>
-                            <Link href="/code/git/checkout"
-                              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                              onClick={handleCloseAllClick}>
+                            <Link
+                              href="/code/git/checkout"
+                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              onClick={handleCloseAllClick}
+                            >
                               Checkout
                             </Link>
                           </li>
                           <li>
-                            <Link href="/code/git/clean"
-                              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                              onClick={handleCloseAllClick}>
+                            <Link
+                              href="/code/git/clean"
+                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              onClick={handleCloseAllClick}
+                            >
                               Clean
                             </Link>
                           </li>
                           <li>
-                            <Link href="/code/git/clone" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                              onClick={handleCloseAllClick}>
+                            <Link
+                              href="/code/git/clone"
+                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              onClick={handleCloseAllClick}
+                            >
                               Clone
                             </Link>
                           </li>
                           <li>
-                            <Link href="/code/git/pull" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                              onClick={handleCloseAllClick}>
+                            <Link
+                              href="/code/git/pull"
+                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              onClick={handleCloseAllClick}
+                            >
                               Pull
                             </Link>
                           </li>
                           <li>
-                            <Link href="/code/git/reset" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                              onClick={handleCloseAllClick}>
+                            <Link
+                              href="/code/git/reset"
+                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              onClick={handleCloseAllClick}
+                            >
                               Reset
                             </Link>
                           </li>
                           <li>
-                            <Link href="/code/git/init" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                              onClick={handleCloseAllClick}>
+                            <Link
+                              href="/code/git/init"
+                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              onClick={handleCloseAllClick}
+                            >
                               Init
                             </Link>
                           </li>
                           <li>
-                            <Link href="/code/git/add" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                              onClick={handleCloseAllClick}>
+                            <Link
+                              href="/code/git/add"
+                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              onClick={handleCloseAllClick}
+                            >
                               Add
                             </Link>
                           </li>
                           <li>
-                            <Link href="/code/git/commit" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                              onClick={handleCloseAllClick}>
+                            <Link
+                              href="/code/git/commit"
+                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              onClick={handleCloseAllClick}
+                            >
                               Commit
                             </Link>
                           </li>
                           <li>
-                            <Link href="/code/git/push" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                              onClick={handleCloseAllClick}>
+                            <Link
+                              href="/code/git/push"
+                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              onClick={handleCloseAllClick}
+                            >
                               Push
                             </Link>
                           </li>
@@ -330,25 +462,24 @@ const NavCatto = () => {
                   onClick={handleNavAboutClick}
                   className={clsx(
                     {
-                      "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-blue-500 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent": pathName === '/about',
+                      'block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white':
+                        pathName === '/about',
                     },
                     {
-                      "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent": pathName !== '/about',
+                      'block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500':
+                        pathName !== '/about',
                     },
                   )}
                 >
-                  <span>
-                    About
-                  </span>
+                  <span>About</span>
                 </Link>
               </li>
             </ul>
-          </div >
-        </div >
-      </nav >
+          </div>
+        </div>
+      </nav>
     </>
-  )
+  );
+};
 
-}
-
-export default NavCatto
+export default NavCatto;

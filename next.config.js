@@ -13,15 +13,15 @@ const nextConfig = {
     ],
   },
   // images: {
-    // domains: ['images.somedomain.com'],
-    // remotePatters: [
-    //     {
-    //         protocol: 'https',
-    //         hostname: 'images.pexels.com',
-    //         port: '',
-    //         pathname: '/photos/**'
-    //     }
-    // ]
+  // domains: ['images.somedomain.com'],
+  // remotePatters: [
+  //     {
+  //         protocol: 'https',
+  //         hostname: 'images.pexels.com',
+  //         port: '',
+  //         pathname: '/photos/**'
+  //     }
+  // ]
   // }
 };
 

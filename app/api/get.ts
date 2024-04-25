@@ -1,9 +1,9 @@
 // pages/api/get.ts
 // import prisma from "../../../prisma/client";
-import prisma from "@/prisma/client";
+import prisma from '@/prisma/client';
 
-export default async function handler(req:any, res:any) {
-  if (req.method === "GET") {
+export default async function handler(req: any, res: any) {
+  if (req.method === 'GET') {
     const { user } = req.query;
 
     try {

@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { materialDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
@@ -28,8 +28,8 @@ import { materialDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 // }
 
 type Props = {
-  codeString: string,
-  codeString1?: string
+  codeString: string;
+  codeString1?: string;
   // codeString2?: string,
   // codeString3?: string,
   // codeString4?: string,
@@ -42,12 +42,12 @@ type Props = {
   // codeString11?: string,
   // codeString12?: string,
   // codeString13?: string,
-}
+};
 
 // const SyntaxHighlightingReactCatto = ({ codeString }: Props) => {
 const SyntaxHighlightingReactCatto = ({
   codeString,
-  codeString1
+  codeString1,
   // codeString2,
   // codeString3,
   // codeString4,
@@ -61,9 +61,7 @@ const SyntaxHighlightingReactCatto = ({
   // codeString12,
   // codeString13,
 }: Props) => {
-
   const codeString22 = '(num) => num + 1<br/> next + "\n" + address';
-
 
   // codeString.forEach(function (miniCodeString, index) {
   //   // console.log(index); // index
@@ -86,7 +84,11 @@ const SyntaxHighlightingReactCatto = ({
   // });
 
   return (
-    <SyntaxHighlighter language="javascript" style={materialDark} showLineNumbers>
+    <SyntaxHighlighter
+      language="javascript"
+      style={materialDark}
+      showLineNumbers
+    >
       {codeString}
       {/* {addLineBreak(str)} */}
     </SyntaxHighlighter>

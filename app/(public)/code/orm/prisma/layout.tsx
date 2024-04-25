@@ -1,24 +1,22 @@
-import React, { ReactNode, useState } from "react";
-import JSNavDrawerCatto from "@/app/components/JavaScript/JSNavDrawerCatto/JSNavDrawerCatto";
+import React, { ReactNode, useState } from 'react';
+import JSNavDrawerCatto from '@/app/components/JavaScript/JSNavDrawerCatto/JSNavDrawerCatto';
 
 type LayoutProps = {
   children: ReactNode;
-}
+};
 
 const PrismaLayout = ({ children }: LayoutProps) => {
   return (
     <>
-      <div className="min-h-[calc(100vh-27rem)] flex">
-        <aside className="lg:flex-[20] h-full">
+      <div className="flex min-h-[calc(100vh-27rem)]">
+        <aside className="h-full lg:flex-[20]">
           <JSNavDrawerCatto />
         </aside>
-        <article className="lg:flex-[80] h-full">
-          {children}
-        </article>
+        <article className="h-full lg:flex-[80]">{children}</article>
       </div>
       <hr className="m-3" />
     </>
-  )
-}
+  );
+};
 
 export default PrismaLayout;

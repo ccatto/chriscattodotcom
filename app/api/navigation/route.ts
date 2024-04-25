@@ -1,10 +1,10 @@
 // app/api/hello.js
 
-import { PrismaClient } from '@prisma/client'
+import { PrismaClient } from '@prisma/client';
 
-const prisma = new PrismaClient()
+const prisma = new PrismaClient();
 
-import { NextResponse } from "next/server";
+import { NextResponse } from 'next/server';
 
 // Handles GET requests to /api
 export async function GET(request: Request) {
@@ -17,9 +17,8 @@ export async function GET(request: Request) {
 // Handles POST requests to /api
 export async function POST(request: Request) {
   // ...
-  return NextResponse.json({ message: "Hello World" });
+  return NextResponse.json({ message: 'Hello World' });
 }
-
 
 // export default function handler(req, res) {
 //   res.status(200).json({ text: 'Hello' });

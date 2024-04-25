@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { NextResponse } from 'next/server';
 
 // try {
 //   const results = await new Promise((resolve, reject) => {

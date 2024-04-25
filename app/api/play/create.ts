@@ -1,10 +1,10 @@
 // pages/api/play/create.ts
-import prisma from "../../../prisma/client";
+import prisma from '../../../prisma/client';
 
-export default async function handler(req:any, res:any) {
-  if (req.method === "POST") {
+export default async function handler(req: any, res: any) {
+  if (req.method === 'POST') {
     const { name, value } =
-      typeof req.body == "string" ? JSON.parse(req.body) : req.body;
+      typeof req.body == 'string' ? JSON.parse(req.body) : req.body;
 
     try {
       // we can access db records with prisma functions

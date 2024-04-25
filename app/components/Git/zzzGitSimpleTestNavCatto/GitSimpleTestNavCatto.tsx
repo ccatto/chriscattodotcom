@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 // import React from 'react';
 import React, { useState } from 'react';
@@ -14,7 +14,6 @@ import SideNavGitCatto from '../../SideNavGitCatto/SideNavGitCatto';
 
 // SideNavGitCatto
 
-
 const GitSimpleTestNavCatto = () => {
   const [isDrawerOpen4, setIsDrawerOpen4] = useState(false);
 
@@ -28,18 +27,21 @@ const GitSimpleTestNavCatto = () => {
   const clickCloseDrawer = () => {
     console.log('inside clickCloseDrawer');
     setIsDrawerOpen4(!isDrawerOpen4);
-    console.log('\||||||||||||||||||| inside SIMPLE');
+    console.log('||||||||||||||||||| inside SIMPLE');
   };
   const pathName = usePathname();
 
   return (
     <>
-      <aside className={` ${isDrawerOpen4 ? "hidden" : "block"} lg:flex-[20]`} aria-label="Sidebar">
+      <aside
+        className={` ${isDrawerOpen4 ? 'hidden' : 'block'} lg:flex-[20]`}
+        aria-label="Sidebar"
+      >
         <button
-          className=" focus:ring-1  rounded-lg px-1 py-1 me-1 mb-1 "
+          className=" mb-1  me-1 rounded-lg px-1 py-1 focus:ring-1 "
           onClick={clickCloseDrawer}
         >
-          <div className="h-5 w-5 overflow-hidden relative rounded-lg shadow dark:bg-gray-300 dark:border-gray-700 dark:hover:bg-gray-700">
+          <div className="relative h-5 w-5 overflow-hidden rounded-lg shadow dark:border-gray-700 dark:bg-gray-300 dark:hover:bg-gray-700">
             <ImageCatto
               src="/images/icons/close-x.svg"
               alt="cattoImage"
@@ -70,8 +72,7 @@ const GitSimpleTestNavCatto = () => {
 
       {/* <aside className={`lg:flex-[20] bg-lime-600 ${isNavOpen3 ? "hidden" : "block"} `} aria-label="Sidebar"> */}
       {/* <aside className={`lg:flex-[20] bg-lime-600 `} aria-label="Sidebar"> */}
-
     </>
-  )
-}
-export default GitSimpleTestNavCatto
+  );
+};
+export default GitSimpleTestNavCatto;
