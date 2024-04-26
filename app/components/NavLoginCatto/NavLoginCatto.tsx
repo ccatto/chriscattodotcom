@@ -1,58 +1,45 @@
 'use client';
 import Link from 'next/link';
 import { signIn, signOut, useSession } from 'next-auth/react';
-import { getServerSession } from 'next-auth';
-// import SessionProvider from "./components/SessionProvider";
-import { SessionProvider } from 'next-auth/react';
+import ImageCatto from '../ImageCatto/ImageCatto';
 // import { getServerSession } from 'next-auth';
-// import SessionProvider from
+// import { SessionProvider } from 'next-auth/react';
+
 
 const NavLoginCatto = () => {
-  // const session =   getServerSession();
-  // const session = await getServerSession(req, res, authConfig);
-  // <SessionProvider>
   const { data: session } = useSession();
-  // </SessionProvider>
-
   if (session) {
     return (
       <>
-        {/* <SessionProvider session={session}> */}
-        {session?.user?.name} <br />
-        <button onClick={() => signOut()}>Sign Out</button>
-        {/* </SessionProvider> */}
+        {/* Logged IN */}
+        <li>
+          {/* <li className='justify-center'>
+          <span className='text-slate-400 text-xs'>
+          <span className='text-slate-400 text-xs justify-center flex'>
+          </span> */}
+          <button
+            className='block rounded text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500'
+            onClick={() => signOut()}>
+            <span className='text-slate-400 pr-1'>Hey {session?.user?.name} -</span> Sign Out
+          </button>
+          {/* <ImageCatto {session.user.image ?? ""} */}
+        </li>
       </>
     );
   }
   return (
     <>
-      {/* <SessionProvider session={session}> */}
-      Not signed in <br />
-      <button className="text-white" onClick={() => signIn()}>
-        Sign In
-      </button>
-      {/* </SessionProvider> */}
+      {/* Not signed in */}
+      <li>
+        {/* <li className='justify-center h-2.5 leading-[2.5rem]'> */}
+        <button
+          className='block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500'
+          onClick={() => signIn()}>
+          Sign In
+        </button>
+      </li>
     </>
   );
 };
 
 export default NavLoginCatto;
-
-// function AuthButton() {
-//   const {data: session} = useSession();
-
-//   if (session) {
-//     return (
-//       <>
-//         {session?.user?.name} <br/>
-//         <button onClick={() => signOut()}>Sign Out</button>
-//       </>
-//     )
-//   }
-//   return(
-//     <>
-//       Not signed in <br/>
-//       <button className="text-white" onClick={() => signIn()}>Sign In</button>
-//     </>
-//   )
-// }
