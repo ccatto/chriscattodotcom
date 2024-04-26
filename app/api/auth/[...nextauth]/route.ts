@@ -1,6 +1,8 @@
 import NextAuth from 'next-auth';
 import GitHubProvider from 'next-auth/providers/github';
 import GoogleProvider from 'next-auth/providers/google';
+import FacebookProvider from 'next-auth/providers/facebook';
+import AppleProvider from 'next-auth/providers/apple';
 
 // export const authOptions = {
 const authOptions = {
@@ -9,9 +11,17 @@ const authOptions = {
       clientId: process.env.GITHUB_ID ?? '',
       clientSecret: process.env.GITHUB_SECRET ?? '',
     }),
-    // GoogleProvider({
-    //   clientId: process.env.GOOGLE_CLIENT_ID,
-    //   clientSecret: process.env.GOOGLE_CLIENT_SECRET
+    GoogleProvider({
+      clientId: process.env.GOOGLE_CLIENT_ID ?? '',
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET ?? '',
+    }),
+    FacebookProvider({
+      clientId: process.env.FACEBOOK_CLIENT_ID ?? '',
+      clientSecret: process.env.FACEBOOK_CLIENT_SECRET ?? '',
+    }),
+    // AppleProvider({
+    //   clientId: process.env.APPLE_ID ?? '',
+    //   clientSecret: process.env.APPLE_SECRET ?? '',
     // }),
   ],
 };
@@ -19,20 +29,3 @@ const authOptions = {
 const handler = NextAuth(authOptions);
 
 export { handler as GET, handler as POST };
-
-// const handler = NextAuth({
-//   ...
-// })
-
-// export { handler as GET, handler as POST }
-
-// import type { NextApiRequest, NextApiResponse } from "next"
-// // import NextAuth from "next-auth"
-
-// export default async function auth(req: NextApiRequest, res: NextApiResponse) {
-//   // Do whatever you want here, before the request is passed down to `NextAuth`
-//   return await NextAuth(req, res, {
-//     // ...
-//     // console.log('blah');
-//   })
-// }
