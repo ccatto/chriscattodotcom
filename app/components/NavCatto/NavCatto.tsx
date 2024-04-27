@@ -90,7 +90,7 @@ const NavCatto = () => {
             <ul className=" flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium rtl:space-x-reverse dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900">
               {/* Home Link */}
               <li>
-              {/* <li className='h-2.5 leading-[2.5rem] justify-center'> */}
+                {/* <li className='h-2.5 leading-[2.5rem] justify-center'> */}
                 <Link
                   href="/"
                   onClick={handleNavHomeClick}
@@ -110,7 +110,7 @@ const NavCatto = () => {
               </li>
               {/* Code link section */}
               <li>
-              {/* <li className='h-2.5 leading-[2.5rem] justify-center'> */}
+                {/* <li className='h-2.5 leading-[2.5rem] justify-center'> */}
                 {/* Code nav link level 1  */}
                 <button
                   className={clsx(
@@ -459,7 +459,7 @@ const NavCatto = () => {
               </li>
               {/* About Link */}
               <li>
-              {/* <li className='h-2.5 leading-[2.5rem] justify-center'> */}
+                {/* <li className='h-2.5 leading-[2.5rem] justify-center'> */}
                 <Link
                   href="/about"
                   onClick={handleNavAboutClick}
@@ -478,7 +478,7 @@ const NavCatto = () => {
                 </Link>
               </li>
               {/* Login Link Section */}
-              <NavLoginCatto />
+              {/* <NavLoginCatto /> */}
             </ul>
           </div>
         </div>

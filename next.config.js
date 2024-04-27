@@ -12,6 +12,9 @@ const nextConfig = {
       },
     ],
   },
+  experimental: {
+    serverActions: true,
+  },
   // images: {
   // domains: ['images.somedomain.com'],
   // remotePatters: [

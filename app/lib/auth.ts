@@ -1,7 +1,7 @@
-import { PrismaAdapter } from "@auth/prisma-adapter";
-import { AuthOptions } from "next-auth";
-import { EmailProvider } from "next-auth/providers/email";
-import db from "./dbPrisma";
+import { PrismaAdapter } from '@auth/prisma-adapter';
+import { AuthOptions } from 'next-auth';
+import { EmailProvider } from 'next-auth/providers/email';
+import db from './dbPrisma';
 import GitHubProvider from 'next-auth/providers/github';
 import GoogleProvider from 'next-auth/providers/google';
 import FacebookProvider from 'next-auth/providers/facebook';
@@ -9,7 +9,7 @@ import FacebookProvider from 'next-auth/providers/facebook';
 
 export const options = {
   session: {
-    strategy: "database",
+    strategy: 'database',
     // max age 30 days:
     maxAge: 30 * 24 * 60 * 60,
   },
@@ -24,8 +24,8 @@ export const options = {
           name: `${profile.given_name} ${profile.family_name}`,
           email: profile.email,
           image: profile.picture,
-          role: profile.role ? profile.role : "user",
-         }
+          role: profile.role ? profile.role : 'user',
+        };
       },
     }),
     GoogleProvider({
