@@ -20,11 +20,9 @@ const NavLoginCatto = () => {
             className="block rounded text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
             onClick={() => signOut()}
           >
-                    {/* Hey {session?.user?.name} - */}
+            {/* Hey {session?.user?.name} - */}
             <div className="pr-1 text-slate-400">
-      
-              Hey - need name here session.user.name ?
-               {/* {session} */}
+              Hey - need name here session.user.name ?{/* {session} */}
             </div>
             Sign Out
           </button>

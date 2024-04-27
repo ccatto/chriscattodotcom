@@ -14,15 +14,14 @@ export default async function Page() {
   return (
     <>
       <hr className="m-3" />
-      <div className='text-white'>
-{/* 
+      <div className="text-white">
+        {/* 
         getServerSession Result: {session?.user?.name ? (
           <div> {session?.user?.name}</div>
         ) : (
           <div>not logged in</div>
         )} */}
-
-      </div >
+      </div>
       <hr className="m-3" />
     </>
   );

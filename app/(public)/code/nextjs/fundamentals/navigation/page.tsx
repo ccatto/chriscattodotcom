@@ -4,43 +4,43 @@ import SyntaxHighlightingReactCatto from '@/app/components/Utils/SyntaxHighlight
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Chris Catto Code Next.js Fundamentals Hello World',
-  description: 'Chris Catto Next.js Hello World',
+  title: 'Chris Catto Code Next.js Fundamentals Navigation & Links',
+  description: 'Chris Catto Next.js Navigation & Links',
 };
 
 const helloworld = () => {
-  let codeBlock = '\n npx create-next-app@latest \n';
+  let codeBlock =
+    'import Link from \'next/link\';\n\n<Link href="about">About<Link> \n';
 
   return (
     <>
       <div className="flex h-screen w-full flex-col flex-nowrap ">
         <div className="flex-none">
           <JumbotronCattoFlexible
-            title="Next.js Fundamentals Hello World"
-            description="Next.js fundamentals including a hello world / create app example."
+            title="Next.js Fundamentals Navigation & Links"
+            description="Next.js fundamentals Navigation & Links."
           />
         </div>
         <hr className="p-0" />
         <div className="m-4 flex-[80] rounded-2xl p-4 text-white ring-2 ring-gray-300 dark:bg-black dark:ring-gray-500">
           <h2 className="mb-4 inline-block text-3xl font-extrabold tracking-tight">
-            Next.js Fundamentals Hello World / Create app
+            Next.js Fundamentals Navigation & Links
           </h2>
-          <div>
-            <ul className="text-xl font-normal text-gray-700 dark:text-gray-400">
+          <div className="text-xl font-normal text-gray-700 dark:text-gray-400">
+            <ul>
               <li className="m-5">
-                To create a "Hello World" Next.js app we use the CLI tool to
-                simply create it. After creating it just run `yarn install` &
-                then `yarn dev`.
+                Navigation between pages are done so with the "next\Link"
+                component.
               </li>
               <li className="m-5">
                 There are some nice templates to check out here on the official
                 page:{' '}
                 <Link
-                  href="https://github.com/vercel/next.js/tree/canary/examples"
+                  href="https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating#how-routing-and-navigation-works"
                   target="_blank"
                   className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                 >
-                  Next.js starter templates
+                  Next.js official Linking & Routing page
                 </Link>
               </li>
             </ul>

@@ -12,22 +12,21 @@ export const metadata: Metadata = {
 export default async function Page() {
   const session = await getServerSession();
 
-  if(!session || !session.user) {
-    redirect("/api/auth/signin");
-  } 
+  if (!session || !session.user) {
+    redirect('/api/auth/signin');
+  }
 
   return (
     <>
       <hr className="m-3" />
-      <div className='text-white'>
+      <div className="text-white">
         {/* <h1>This is protected CMS</h1>
         getServerSession Result: {session?.user?.name ? (
           <div> {session?.user?.name}</div>
         ) : (
           <div>not logged in</div>
         )} */}
-
-      </div >
+      </div>
       <hr className="m-3" />
     </>
   );

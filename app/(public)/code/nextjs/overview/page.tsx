@@ -3,8 +3,8 @@ import JumbotronCattoFlexible from '@/app/components/JumbotronCattoFlexible/Jumb
 import SyntaxHighlightingReactCatto from '@/app/components/Utils/SyntaxHighlightingReactCatto/SyntaxHighlightingReactCatto';
 
 export const metadata: Metadata = {
-  title: 'Chris Catto Code Next.js Overview',
-  description: 'Chris Catto Next.js Overview',
+  title: 'Chris Catto Code Next.js Overview Tutorial',
+  description: 'Chris Catto Next.js Overview Tutorial',
 };
 
 const overview = () => {
@@ -12,7 +12,7 @@ const overview = () => {
 
   return (
     <>
-      <div className="flex h-screen w-full flex-col flex-nowrap ">
+      <div className="flex h-full w-full flex-col flex-nowrap ">
         <div className="flex-[20]">
           <JumbotronCattoFlexible
             title="Next.js Overview"
@@ -20,29 +20,39 @@ const overview = () => {
           />
         </div>
         <hr className="p-0" />
-        <div className="m-4 flex-[80] rounded-2xl p-4 text-white ring-2 ring-gray-300 dark:bg-black dark:ring-gray-500">
+        <div className="m-4 flex-[80] rounded-2xl p-10 text-white ring-2 ring-gray-300 dark:bg-black dark:ring-gray-500">
           <h2 className="mb-4 inline-block text-3xl font-extrabold tracking-tight">
             Next.js Fundamentals
           </h2>
           {/* <SyntaxHighlightingReactCatto codeString={codeBlock} /> */}
-          <ul className="list-inside list-disc space-y-1 indent-4">
-            <li>Built in Optimizations such as image & script optimizations for improved UX</li>
-            <li>
-              Dynamic HTML Streaming: instantly stream UI from the server integrated with the app router.
-            </li>
-            <li>
-              React Server Components: add components with out sending additional client side js. This feature is hear to stay.
-            </li>
-            <li>
-              Data Fetching: react components async & await our data; supports both server & client data fetching.
-            </li>
-            <li>
-              Route Handlers: we can build API endpoints to connect third party services.
-            </li>
-            <li>
-              Advance Routing & Nested Layouts: create routes using the file system including layouts.
-            </li>
-          </ul>
+          <div className="m-4 flex-[80] rounded-2xl p-4 text-white ring-2 ring-gray-300 dark:bg-black dark:ring-gray-500">
+            <ul className="list-inside list-disc  indent-4">
+              <li className="m-5">
+                Built in Optimizations such as image & script optimizations for
+                improved UX
+              </li>
+              <li className="m-5">
+                Dynamic HTML Streaming: instantly stream UI from the server
+                integrated with the app router.
+              </li>
+              <li className="m-5">
+                React Server Components: add components with out sending
+                additional client side js. This feature is hear to stay.
+              </li>
+              <li className="m-5">
+                Data Fetching: react components async & await our data; supports
+                both server & client data fetching.
+              </li>
+              <li className="m-5">
+                Route Handlers: we can build API endpoints to connect third
+                party services.
+              </li>
+              <li className="m-5">
+                Advance Routing & Nested Layouts: create routes using the file
+                system including layouts.
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </>

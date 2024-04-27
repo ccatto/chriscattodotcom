@@ -92,26 +92,26 @@ const NextJSSideNavLinkList = () => {
               </li>
               <li>
                 <a
-                  href="/code/nextjs/fundamentals/datatypes"
+                  href="/code/nextjs/fundamentals/routing"
                   className="group flex w-full items-center rounded-lg p-2 pl-11 text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 >
-                  NOT Data Types
+                  Routing
                 </a>
               </li>
               <li>
                 <a
-                  href="/code/nextjs/fundamentals/functions"
+                  href="/code/nextjs/fundamentals/navigation"
                   className="group flex w-full items-center rounded-lg p-2 pl-11 text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 >
-                  NOT Functions
+                  Navigation
                 </a>
               </li>
               <li>
                 <a
-                  href="/code/nextjs/fundamentals/objects"
+                  href="/code/nextjs/fundamentals/tailwind-styling-css"
                   className="group flex w-full items-center rounded-lg p-2 pl-11 text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 >
-                  NOT Objects
+                  Styling - CSS
                 </a>
               </li>
             </ul>

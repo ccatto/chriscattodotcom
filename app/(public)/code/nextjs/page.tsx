@@ -4,8 +4,8 @@ import JumbotronCattoFlexible from '@/app/components/JumbotronCattoFlexible/Jumb
 // import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Chris Catto Code Next.js Home',
-  description: 'Chris Catto Code Next.js  Home',
+  title: 'Chris Catto Code Next.js Home Tutorial',
+  description: 'Chris Catto Code Next.js Home Tutorial',
 };
 
 export default function Page() {

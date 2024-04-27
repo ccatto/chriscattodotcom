@@ -33,20 +33,20 @@ const authOptions: AuthOptions = {
       clientId: process.env.GITHUB_ID ?? '',
       clientSecret: process.env.GITHUB_SECRET ?? '',
       profile(profile: GithubProfile) {
-          console.log('profile === ', profile);
-      //   async profile(profile) {
+        console.log('profile === ', profile);
+        //   async profile(profile) {
         return {
-          ...profile, 
-            role: profile.role ?? "user",
-            id: profile.id.toString(),
-            image: profile.avatar_url,
-            
-      //     // // id: tokens.id_token || profile.sub,
-      //     name: `${profile.given_name} ${profile.family_name}`,
-      //     email: profile.email,
-      //     image: profile.picture,
-      //     role: profile.role ? profile.role : "user",
-         }
+          ...profile,
+          role: profile.role ?? 'user',
+          id: profile.id.toString(),
+          image: profile.avatar_url,
+
+          //     // // id: tokens.id_token || profile.sub,
+          //     name: `${profile.given_name} ${profile.family_name}`,
+          //     email: profile.email,
+          //     image: profile.picture,
+          //     role: profile.role ? profile.role : "user",
+        };
       },
     }),
     GoogleProvider({
@@ -66,7 +66,7 @@ const authOptions: AuthOptions = {
   callbacks: {
     // https://authjs.dev/guides/role-based-access-control
     async jwt({ token, user }) {
-      if (user) token.role = user.role
+      if (user) token.role = user.role;
       return token;
       // Persist the OAuth access_token to the token right after signin
       // if (account) {
@@ -74,13 +74,13 @@ const authOptions: AuthOptions = {
       // }
       return token;
     },
-    // if we want to utilize the role in client components 
+    // if we want to utilize the role in client components
     async session({ session, token }) {
-      if (session?.user) session.user.role = token.role
+      if (session?.user) session.user.role = token.role;
       // Send properties to the client, like an access_token from a provider.
       // session.accessToken = token.accessToken
-      return session
-    }
+      return session;
+    },
   },
 
   // callbacks: {

@@ -7,17 +7,15 @@ import { withAuth, NextRequestWithAuth } from 'next-auth/middleware';
 // import {type }
 export default withAuth(
   // withAuth augments our 'Request' with the user's token;
-  function middleware( request: NextRequestWithAuth){
+  function middleware(request: NextRequestWithAuth) {
     console.log(request.nextUrl.pathname);
     console.log(request.nextauth.token);
   },
   {
     callbacks: {
-      authorized: ({ token }) => token?.role === "admin"
+      authorized: ({ token }) => token?.role === 'admin',
     },
   },
-
-
 );
 
 //   callbacks: {
@@ -29,4 +27,4 @@ export default withAuth(
 // });
 
 // export const config = { matcher: ['/admin:path*', '/profile'] };
-export const config = { matcher: ["/extra", "/dashboard"]}
+export const config = { matcher: ['/extra', '/dashboard'] };

@@ -15,6 +15,7 @@ This is based from the starter template for the Next.js App Router Course. It co
 ```
 
 ### to run prettier
+
 ```
     $ yarn prettier
 ```
