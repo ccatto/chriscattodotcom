@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import JumbotronCattoFlexible from '@/app/components/JumbotronCattoFlexible/JumbotronCattoFlexible';
 import SyntaxHighlightingReactCatto from '@/app/components/Utils/SyntaxHighlightingReactCatto/SyntaxHighlightingReactCatto';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Chris Catto Code Next.js Fundamentals Tutorial',
@@ -26,7 +27,7 @@ const fundamentals = () => {
           </h2>
           <ul className="space-y-2 font-medium">
             <li>
-              <a
+              <Link
                 href="/code/nextjs/fundamentals/helloworld"
                 className="group flex items-center rounded-lg p-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
               >
@@ -45,10 +46,10 @@ const fundamentals = () => {
                 <span className="ms-3">
                   Next.js Hello World / Create React App
                 </span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/code/nextjs/fundamentals/routing"
                 className="group flex items-center rounded-lg  p-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
               >
@@ -66,39 +67,47 @@ const fundamentals = () => {
                   />
                 </svg>
                 <span className="ms-3">Next.js Routing</span>
-              </a>
+              </Link>
               <ul id="dropdown-example" className="space-y-2 py-2 indent-4">
                 <li>
-                  <a
+                  <Link
                     href="/code/nextjs/fundamentals/helloworld"
                     className="group flex w-full items-center rounded-lg p-2 pl-11 transition duration-75 hover:bg-gray-100  dark:hover:bg-gray-700 dark:hover:text-white"
                   >
                     Hello World
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/code/nextjs/fundamentals/routing"
                     className="group flex w-full items-center rounded-lg p-2 pl-11 transition duration-75 hover:bg-gray-100  dark:hover:bg-gray-700 dark:hover:text-white"
                   >
                     Routing
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/code/nextjs/fundamentals/navigation"
                     className="group flex w-full items-center rounded-lg p-2 pl-11 transition duration-75 hover:bg-gray-100  dark:hover:bg-gray-700 dark:hover:text-white"
                   >
                     Navigation & Links
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/code/nextjs/fundamentals/tailwind-styling-css"
                     className="group flex w-full items-center rounded-lg p-2 pl-11 transition duration-75 hover:bg-gray-100  dark:hover:bg-gray-700 dark:hover:text-white"
                   >
                     Styling TailwindCSS
-                  </a>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/code/nextjs/fundamentals/authentication"
+                    className="group flex w-full items-center rounded-lg p-2 pl-11 transition duration-75 hover:bg-gray-100  dark:hover:bg-gray-700 dark:hover:text-white"
+                  >
+                    Next-Auth | Authentication
+                  </Link>
                 </li>
               </ul>
             </li>

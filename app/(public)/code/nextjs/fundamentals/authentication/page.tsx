@@ -17,7 +17,7 @@ const helloworld = () => {
         <div className="flex-none">
           <JumbotronCattoFlexible
             title="Next.js Fundamentals Authentication"
-            description="Next.js fundamentals Authentication."
+            description="Next.js fundamentals Authentication"
           />
         </div>
         <hr className="p-0" />
@@ -26,7 +26,7 @@ const helloworld = () => {
             Next.js Fundamentals Authentication
           </h2>
           <div>
-            <p>
+            {/* <p>
               Authentication is an important piece of many sites. I currently
               choose to use the package{' '}
               <Link
@@ -37,13 +37,14 @@ const helloworld = () => {
               </Link>
               . In this page let us highlight some important pieces of
               authorization within Next.js.
-            </p>
+            </p> */}
             <ul className="text-xl font-normal text-gray-700 dark:text-gray-400">
               <li className="m-5">
                 Authentication is an important piece of many sites. I currently
                 choose to use the package{' '}
                 <Link
                   target="_blank"
+                  className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                   href="https://authjs.dev/reference/next-auth"
                 >
                   next-auth

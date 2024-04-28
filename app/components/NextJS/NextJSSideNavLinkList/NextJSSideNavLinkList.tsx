@@ -1,5 +1,7 @@
 'use client';
+import Link from 'next/link';
 import { useState } from 'react';
+
 
 const NextJSSideNavLinkList = () => {
   const [isJSFundamentalsDrawerOpen, setIsJSFundamentalsDrawerOpen] =
@@ -13,7 +15,7 @@ const NextJSSideNavLinkList = () => {
       <div className="hidden h-full overflow-y-auto bg-gray-50 px-3 py-4 dark:bg-gray-800 lg:block">
         <ul className="space-y-2 font-medium">
           <li>
-            <a
+            <Link
               href="/code/nextjs"
               className="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
             >
@@ -31,10 +33,10 @@ const NextJSSideNavLinkList = () => {
                 ></path>
               </svg>
               <span className="ms-3">Next.js Home</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               href="/code/nextjs/overview"
               className="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
             >
@@ -51,7 +53,7 @@ const NextJSSideNavLinkList = () => {
                 />
               </svg>
               <span className="ms-3">Next.js Overview</span>
-            </a>
+            </Link>
           </li>
           {/* <li>
             <a href="/code/javascript/fundamentals" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
@@ -62,7 +64,7 @@ const NextJSSideNavLinkList = () => {
             </a>
           </li> */}
           <li>
-            <a
+            <Link
               href="/code/nextjs/fundamentals"
               className="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
             >
@@ -80,7 +82,7 @@ const NextJSSideNavLinkList = () => {
                 />
               </svg>
               <span className="ms-3">Fundamentals</span>
-            </a>
+            </Link>
             <ul id="dropdown-example" className="space-y-2 py-2 indent-4">
               <li>
                 <a
@@ -91,28 +93,36 @@ const NextJSSideNavLinkList = () => {
                 </a>
               </li>
               <li>
-                <a
+                <Link
                   href="/code/nextjs/fundamentals/routing"
                   className="group flex w-full items-center rounded-lg p-2 pl-11 text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 >
                   Routing
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/code/nextjs/fundamentals/navigation"
                   className="group flex w-full items-center rounded-lg p-2 pl-11 text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 >
                   Navigation
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/code/nextjs/fundamentals/tailwind-styling-css"
                   className="group flex w-full items-center rounded-lg p-2 pl-11 text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 >
                   Styling - CSS
-                </a>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/code/nextjs/fundamentals/authentication"
+                  className="group flex w-full items-center rounded-lg p-2 pl-11 text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                >
+                  Authentication
+                </Link>
               </li>
             </ul>
           </li>

@@ -71,8 +71,96 @@ const JumbotronCattoCode = () => {
             </a>
           </div>
           <div className="rounded-lg border border-gray-200 bg-gray-50 p-8 dark:border-gray-700 dark:bg-gray-800 md:p-12">
-            <a
+            {/* <Link
               href="#"
+              className="mb-2 inline-flex items-center rounded-md bg-purple-100 px-2.5 py-0.5 text-xs font-medium text-purple-800 dark:bg-gray-700 dark:text-purple-400"
+            > */}
+            <div className="mb-2 inline-flex items-center rounded-md bg-purple-100 px-2.5 py-0.5 text-xs font-medium text-purple-800 dark:bg-gray-700 dark:text-purple-400">
+              <svg
+                className="me-1.5 h-2.5 w-2.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 16"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M5 4 1 8l4 4m10-8 4 4-4 4M11 1 9 15"
+                />
+              </svg>
+              SFCC
+              </div>
+            {/* </Link> */}
+            <h2 className="mb-2 text-3xl font-extrabold text-gray-900 dark:text-white">
+              Salesforce Commerce Cloud
+            </h2>
+            <p className="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">
+              Salesforce Commerce Cloud is a SASS eCommerce solution where the
+              platform allows brands to sell products online. I have been in the
+              space for over 7 years now and enjoy the platform.
+            </p>
+          </div>
+        </div>
+        {/* 2nd Row */}
+        <div className="mt-6 grid gap-8 md:grid-cols-2">
+          {/* Git section */}
+          <div className="rounded-lg border border-gray-200 bg-gray-50 p-8 dark:border-gray-700 dark:bg-gray-800 md:p-12">
+            <Link
+              href="/code/git/overview"
+              className="bg-orange mb-2 inline-flex items-center rounded-md bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:bg-gray-700 dark:text-orange-400"
+            >
+              <svg
+                className="me-1.5 h-2.5 w-2.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 16"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M5 4 1 8l4 4m10-8 4 4-4 4M11 1 9 15"
+                />
+              </svg>
+              Git Version Control
+            </Link>
+            <h2 className="mb-2 text-3xl font-extrabold text-gray-900 dark:text-white">
+              Git Version Control
+            </h2>
+            <p className="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">
+              Git in an industry standard. It's truly a foundation for coding.
+            </p>
+            <Link
+              href="/code/git"
+              className="inline-flex items-center text-lg font-medium text-blue-600 hover:underline dark:text-blue-500"
+            >
+              Read more Git
+              <svg
+                className="ms-2 h-3.5 w-3.5 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </Link>
+          </div>
+          {/* Next.js */}
+          <div className="rounded-lg border border-gray-200 bg-gray-50 p-8 dark:border-gray-700 dark:bg-gray-800 md:p-12">
+            <Link
+              href="/code/nextjs"
               className="mb-2 inline-flex items-center rounded-md bg-purple-100 px-2.5 py-0.5 text-xs font-medium text-purple-800 dark:bg-gray-700 dark:text-purple-400"
             >
               <svg
@@ -90,19 +178,41 @@ const JumbotronCattoCode = () => {
                   d="M5 4 1 8l4 4m10-8 4 4-4 4M11 1 9 15"
                 />
               </svg>
-              SFCC
-            </a>
+              Next.js
+            </Link>
             <h2 className="mb-2 text-3xl font-extrabold text-gray-900 dark:text-white">
-              Salesforce Commerce Cloud
+              Next.js
             </h2>
             <p className="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">
-              Salesforce Commerce Cloud is a SASS eCommerce solution where the
-              platform allows brands to sell products online. I have been in the
-              space for over 7 years now and enjoy the platform.
+              Next.js is react framework to build high quality web applications. I have been enjoying utilizing framework & this site is currently built on it. 
             </p>
+            <Link
+              href="/code/nextjs"
+              className="inline-flex items-center text-lg font-medium text-blue-600 hover:underline dark:text-blue-500"
+            >
+              Read more on Next.js
+              <svg
+                className="ms-2 h-3.5 w-3.5 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </Link>
           </div>
         </div>
-        <div className="mt-6 grid gap-8 md:grid-cols-2">
+
+        {/* 3rd Row */}
+        {/* <div className="mt-6 grid gap-8 md:grid-cols-2">
+          
           <div className="rounded-lg border border-gray-200 bg-gray-50 p-8 dark:border-gray-700 dark:bg-gray-800 md:p-12">
             <Link
               href="/code/git/overview"
@@ -154,7 +264,7 @@ const JumbotronCattoCode = () => {
             </a>
           </div>
           <div className="rounded-lg border border-gray-200 bg-gray-50 p-8 dark:border-gray-700 dark:bg-gray-800 md:p-12">
-            <a
+            <Link
               href="#"
               className="mb-2 inline-flex items-center rounded-md bg-purple-100 px-2.5 py-0.5 text-xs font-medium text-purple-800 dark:bg-gray-700 dark:text-purple-400"
             >
@@ -174,7 +284,7 @@ const JumbotronCattoCode = () => {
                 />
               </svg>
               Terminal Commands
-            </a>
+            </Link>
             <h2 className="mb-2 text-3xl font-extrabold text-gray-900 dark:text-white">
               Terminal Commands
             </h2>
@@ -183,7 +293,8 @@ const JumbotronCattoCode = () => {
               useful commands are outlined here.
             </p>
           </div>
-        </div>
+        </div> */}
+
       </div>
     </section>
   );
