@@ -12,6 +12,8 @@ const NavCatto = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isNavLevel1Item1Open, setIsNavLevel1Item1Open] = useState(false);
   const [isNavLevel2Item1Open, setIsNavLevel2Item1Open] = useState(false);
+  const [isNavLevel2NextOpen, setIsNavLevel2NextOpen] = useState(false);
+
   const [isNavLevel3Item1Open, setIsNavLevel3Item1Open] = useState(false);
 
   const handleHamburgClick = () => {
@@ -254,6 +256,105 @@ const NavCatto = () => {
                               onClick={handleCloseAllClick}
                             >
                               Objects
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    {/* Nav code Next.js */}
+                    <li>
+                      <button
+                        className="flex w-full items-center justify-between px-4 py-2 hover:bg-gray-100 hover:text-blue-300 dark:hover:bg-gray-600"
+                        onClick={() =>
+                          setIsNavLevel2NextOpen(!isNavLevel2NextOpen)
+                        }
+                      >
+                        Next.js
+                        <svg
+                          className="ms-2.5 h-2.5 w-2.5"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 10 6"
+                        >
+                          <path
+                            stroke="currentColor"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="m1 1 4 4 4-4"
+                          />
+                        </svg>
+                      </button>
+                      {/* Nav 2nd level NextJS Menu */}
+                      <div
+                        className={`${isNavLevel2NextOpen ? 'block' : 'hidden'} z-10 w-44 divide-y divide-gray-100 rounded-lg bg-white shadow dark:bg-gray-500`}
+                      >
+                        <ul
+                          className="py-2 text-sm text-gray-700 dark:text-gray-200"
+                          aria-labelledby="doubleDropdownButton"
+                        >
+                          <li>
+                            <Link
+                              href="/code/nextjs"
+                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              onClick={handleCloseAllClick}
+                            >
+                              Next.js Home
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/code/nextjs/overview"
+                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              onClick={handleCloseAllClick}
+                            >
+                              Next Overview
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/code/nextjs/fundamentals"
+                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              onClick={handleCloseAllClick}
+                            >
+                              Next Fundamentals
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/code/nextjs/fundamentals/helloworld"
+                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              onClick={handleCloseAllClick}
+                            >
+                              Next Hello World
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/code/nextjs/fundamentals/tailwind-styling-css"
+                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              onClick={handleCloseAllClick}
+                            >
+                              Tailwind Styling
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/code/nextjs/fundamentals/navigation"
+                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              onClick={handleCloseAllClick}
+                            >
+                              Navigation
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/code/nextjs/fundamentals/authentication"
+                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              onClick={handleCloseAllClick}
+                            >
+                              Next Auth
                             </Link>
                           </li>
                         </ul>
