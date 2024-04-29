@@ -9,11 +9,11 @@ export const metadata: Metadata = {
 };
 
 const helloworld = () => {
-  let codeBlock = '\n npx create-next-app@latest \n';
+  let codeBlock = 'yarn add next-auth';
 
   return (
     <>
-      <div className="flex h-screen w-full flex-col flex-nowrap ">
+      <div className="flex h-full w-full flex-col flex-nowrap ">
         <div className="flex-none">
           <JumbotronCattoFlexible
             title="Next.js Fundamentals Authentication"
@@ -66,7 +66,145 @@ const helloworld = () => {
             </ul>
           </div>
           <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
-          <SyntaxHighlightingReactCatto codeString={codeBlock} />
+          <p className='flex justify-center text-2xl'>
+            Summary of setting up next-auth in Next.js includes the following:
+          </p>
+          <div className='flex justify-center mt-4'>
+            <ol className="space-y-4 w-[30rem]">
+              <li>
+                <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
+                  <div className="flex items-center justify-between">
+                    {/* <span className="sr-only">User info 88</span> */}
+                    <h3 className="font-medium">1. Install next-auth</h3>
+                    {/* <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5" />
+                      </svg> */}
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-medium">2. Define .env var</h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-medium">3. Create OAuth Id's & Secrete's</h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-medium">3. Create OAuth Id's & Secret's</h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-medium">4. Add SessionProvider & wrap layout</h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-medium">5. Add API ...nextauth route</h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-medium">6. Add signIn; signOut's</h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-medium">7. Create Protected sections</h3>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </div>
+          <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
+          <p className='flex justify-center text-2xl'>
+            Details of setting up next-auth in Next.js includes the following:
+          </p>
+          <div className='mt-4'>
+            <ol className="space-y-4 w-full">
+              <li>
+                <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
+                  <div className="flex items-center">
+                    {/* <span className="sr-only">User info 88</span> */}
+                    <h3 className="basis-1/4 font-medium">1. Install next-auth</h3>
+                    <div className='basis-3/4 ml-5 bg-slate-600 rounded-2xl p-2'>
+                      To install next-auth we add the package.
+                      <SyntaxHighlightingReactCatto codeString={codeBlock} />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-medium">2. Define .env var</h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-medium">3. Create OAuth Id's & Secrete's</h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-medium">3. Create OAuth Id's & Secret's</h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-medium">4. Add SessionProvider & wrap layout</h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-medium">5. Add API ...nextauth route</h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-medium">6. Add signIn; signOut's</h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-medium">7. Create Protected sections</h3>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </div>
+          DETails
+          Roles https://authjs.dev/guides/role-based-access-control
+
         </div>
       </div>
     </>
