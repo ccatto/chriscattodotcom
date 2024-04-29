@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 
 const helloworld = () => {
   let codeBlock = 'yarn add next-auth';
+  let codeBlock2 = 'NEXTAUTH_SECRET=""\nGOOGLE_CLIENT_ID=""\nGOOGLE_CLIENT_SECRET=""';
 
   return (
     <>
@@ -92,14 +93,14 @@ const helloworld = () => {
               <li>
                 <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
                   <div className="flex items-center justify-between">
-                    <h3 className="font-medium">3. Create OAuth Id's & Secrete's</h3>
+                    <h3 className="font-medium">2.5 Create OAuth Id's & Secrete's</h3>
                   </div>
                 </div>
               </li>
               <li>
                 <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
                   <div className="flex items-center justify-between">
-                    <h3 className="font-medium">3. Create OAuth Id's & Secret's</h3>
+                    <h3 className="font-medium">4. Create Middleware.ts file </h3>
                   </div>
                 </div>
               </li>
@@ -153,34 +154,51 @@ const helloworld = () => {
               </li>
               <li>
                 <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
-                  <div className="flex items-center justify-between">
-                    <h3 className="font-medium">2. Define .env var</h3>
+                  <div className="flex items-center">
+                    <h3 className="basis-1/4 font-medium">2. Define .env var</h3>
+                    <div className='basis-3/4 ml-5 bg-slate-600 rounded-2xl p-2'>
+                      In our .env file we add the follow:
+                      <SyntaxHighlightingReactCatto codeString={codeBlock2} />
+                    </div>
                   </div>
                 </div>
               </li>
               <li>
                 <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
-                  <div className="flex items-center justify-between">
-                    <h3 className="font-medium">3. Create OAuth Id's & Secrete's</h3>
+                  <div className="flex items-center">
+                    <h3 className="basis-1/4 font-medium">2.5 Create OAuth Id's & Secret's</h3>
+                    <div className='basis-3/4 ml-5 bg-slate-600 rounded-2xl p-2'>
+                      The OAuth provider Id & Secrete is obtained from each provider & is slightly different for each.
+                      <SyntaxHighlightingReactCatto codeString={codeBlock2} />
+                      The
+                    </div>
                   </div>
                 </div>
               </li>
               <li>
                 <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
-                  <div className="flex items-center justify-between">
-                    <h3 className="font-medium">3. Create OAuth Id's & Secret's</h3>
+                  <div className="flex items-center">
+                    <h3 className="basis-1/4 font-medium">4. Add SessionProvider & wrap layout</h3>
+                    <div className='basis-3/4 ml-5 bg-slate-600 rounded-2xl p-2'>
+                      Session provider we can add the component & the wrap our layout.
+                      <SyntaxHighlightingReactCatto codeString={codeBlock2} />
+                    </div>
                   </div>
                 </div>
               </li>
               <li>
                 <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
-                  <div className="flex items-center justify-between">
-                    <h3 className="font-medium">4. Add SessionProvider & wrap layout</h3>
+                  <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
+                    <div className="flex items-center">
+                      <h3 className="basis-1/4 font-medium">
+                        5. Add API ...nextauth route
+                      </h3>
+                      <div className='basis-3/4 ml-5 bg-slate-600 rounded-2xl p-2'>
+                        We need to add the API route & the relative path is `app/api/auth/[...nextauth]/route.ts`
+                        <SyntaxHighlightingReactCatto codeString={codeBlock2} />
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </li>
-              <li>
-                <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
                   <div className="flex items-center justify-between">
                     <h3 className="font-medium">5. Add API ...nextauth route</h3>
                   </div>
