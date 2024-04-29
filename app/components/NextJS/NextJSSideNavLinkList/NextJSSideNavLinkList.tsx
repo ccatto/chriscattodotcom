@@ -124,6 +124,14 @@ const NextJSSideNavLinkList = () => {
                   Authentication
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/code/nextjs/fundamentals/metadata"
+                  className="group flex w-full items-center rounded-lg p-2 pl-11 text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                >
+                  Metadata
+                </Link>
+              </li>
             </ul>
           </li>
         </ul>

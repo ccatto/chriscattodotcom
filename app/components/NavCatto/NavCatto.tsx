@@ -25,6 +25,7 @@ const NavCatto = () => {
     setIsNavLevel1Item1Open(false);
     setIsNavLevel2Item1Open(false);
     setIsNavLevel3Item1Open(false);
+    setIsNavLevel2NextOpen(false);
   };
 
   const handleNavHomeClick = () => {
@@ -195,7 +196,7 @@ const NavCatto = () => {
                           className="py-2 text-sm text-gray-700 dark:text-gray-200"
                           aria-labelledby="doubleDropdownButton"
                         >
-                          <li>
+                          {/* <li>
                             <Link
                               href="/code/javascript"
                               className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
@@ -203,7 +204,7 @@ const NavCatto = () => {
                             >
                               JavaScript Home
                             </Link>
-                          </li>
+                          </li> */}
                           <li>
                             <Link
                               href="/code/javascript/overview"
@@ -294,7 +295,7 @@ const NavCatto = () => {
                           className="py-2 text-sm text-gray-700 dark:text-gray-200"
                           aria-labelledby="doubleDropdownButton"
                         >
-                          <li>
+                          {/* <li>
                             <Link
                               href="/code/nextjs"
                               className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
@@ -302,7 +303,7 @@ const NavCatto = () => {
                             >
                               Next.js Home
                             </Link>
-                          </li>
+                          </li> */}
                           <li>
                             <Link
                               href="/code/nextjs/overview"
@@ -393,7 +394,7 @@ const NavCatto = () => {
                           className="py-2 text-sm text-gray-700 dark:text-gray-200"
                           aria-labelledby="doubleDropdownButton"
                         >
-                          <li>
+                          {/* <li>
                             <Link
                               href="/code/git"
                               className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
@@ -401,7 +402,7 @@ const NavCatto = () => {
                             >
                               Git Home
                             </Link>
-                          </li>
+                          </li> */}
                           <li>
                             <Link
                               href="/code/git/overview"

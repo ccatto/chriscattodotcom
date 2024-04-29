@@ -8,9 +8,11 @@ export const metadata: Metadata = {
   description: 'Chris Catto Next.js Authentication Tutorial',
 };
 
-const helloworld = () => {
-  let codeBlock = 'yarn add next-auth';
-  let codeBlock2 = 'NEXTAUTH_SECRET=""\nGOOGLE_CLIENT_ID=""\nGOOGLE_CLIENT_SECRET=""';
+const authentication = () => {
+  const codeBlock = 'yarn add next-auth';
+  const codeBlock2 = 'NEXTAUTH_SECRET=""\nGOOGLE_CLIENT_ID=""\nGOOGLE_CLIENT_SECRET=""';
+  const codeBlock3 = 'openssl rand -base64 32';
+  const codeblock4apinextauth = 'import NextAuth from "next-auth”\nimport GithubProvider from "next-auth/providers/github”\n\nexport const authOptions = {\n // Configure auth providers here\n providers: [ GithubProvider({ clientId: process.env.GITHUB_ID,\n clientSecret: process.env.GITHUB_SECRET,\n }),\n // ...add more providers here such as fb or apple\n ],\n}'
 
   return (
     <>
@@ -53,7 +55,7 @@ const helloworld = () => {
                 . In this page let us highlight some important pieces of
                 authorization within Next.js.
               </li>
-              <li className="m-5">
+              {/* <li className="m-5">
                 There are some nice templates to check out here on the official
                 page:{' '}
                 <Link
@@ -63,12 +65,12 @@ const helloworld = () => {
                 >
                   Next.js starter templates
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
           <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
           <p className='flex justify-center text-2xl'>
-            Summary of setting up next-auth in Next.js includes the following:
+            <span className='font-bold pr-2'>Summary</span>of setting up next-auth in Next.js includes the following:
           </p>
           <div className='flex justify-center mt-4'>
             <ol className="space-y-4 w-[30rem]">
@@ -100,7 +102,7 @@ const helloworld = () => {
               <li>
                 <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
                   <div className="flex items-center justify-between">
-                    <h3 className="font-medium">4. Create Middleware.ts file </h3>
+                    <h3 className="font-medium">3. Create Middleware.ts file </h3>
                   </div>
                 </div>
               </li>
@@ -136,7 +138,7 @@ const helloworld = () => {
           </div>
           <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
           <p className='flex justify-center text-2xl'>
-            Details of setting up next-auth in Next.js includes the following:
+            <span className='font-bold pr-2'>Details</span> of setting up next-auth in Next.js includes the following:
           </p>
           <div className='mt-4'>
             <ol className="space-y-4 w-full">
@@ -145,7 +147,7 @@ const helloworld = () => {
                   <div className="flex items-center">
                     {/* <span className="sr-only">User info 88</span> */}
                     <h3 className="basis-1/4 font-medium">1. Install next-auth</h3>
-                    <div className='basis-3/4 ml-5 bg-slate-600 rounded-2xl p-2'>
+                    <div className='basis-3/4 ml-5 bg-slate-600 rounded-2xl p-2 indent-4'>
                       To install next-auth we add the package.
                       <SyntaxHighlightingReactCatto codeString={codeBlock} />
                     </div>
@@ -157,7 +159,9 @@ const helloworld = () => {
                   <div className="flex items-center">
                     <h3 className="basis-1/4 font-medium">2. Define .env var</h3>
                     <div className='basis-3/4 ml-5 bg-slate-600 rounded-2xl p-2'>
-                      In our .env file we add the follow:
+                      <div className='indent-4'>
+                        In our .env file we add the follow:
+                      </div>
                       <SyntaxHighlightingReactCatto codeString={codeBlock2} />
                     </div>
                   </div>
@@ -167,10 +171,30 @@ const helloworld = () => {
                 <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
                   <div className="flex items-center">
                     <h3 className="basis-1/4 font-medium">2.5 Create OAuth Id's & Secret's</h3>
-                    <div className='basis-3/4 ml-5 bg-slate-600 rounded-2xl p-2'>
-                      The OAuth provider Id & Secrete is obtained from each provider & is slightly different for each.
-                      <SyntaxHighlightingReactCatto codeString={codeBlock2} />
-                      The
+                    <div className='basis-3/4 ml-5 bg-slate-600 rounded-2xl p-2 indent-4'>
+                      The OAuth provider Id & Secrete is obtained from each provider & is slightly different for each. For example this is a good resource for <Link
+                        href="https://support.google.com/cloud/answer/6158849"
+                        target='_blank'
+                        className="font-medium text-blue-600 hover:underline dark:text-blue-500">
+                        Setting up Google Oauth 2.0 documentation
+                      </Link>
+                      <SyntaxHighlightingReactCatto codeString={codeBlock3} />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
+                  <div className="flex items-center">
+                    <h3 className="basis-1/4 font-medium">3. Middleware.ts</h3>
+                    <div className='basis-3/4 ml-5 bg-slate-600 rounded-2xl p-2 indent-4'>
+                      Creating middleware.ts in root directory allows us to run code before a request is completed. We can check session cookies before granting access to protected pages & API routes. <Link
+                        href="https://nextjs.org/docs/app/building-your-application/routing/middleware"
+                        target="_blank"
+                        className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      >
+                        Middleware official page on Next.js
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -179,28 +203,25 @@ const helloworld = () => {
                 <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
                   <div className="flex items-center">
                     <h3 className="basis-1/4 font-medium">4. Add SessionProvider & wrap layout</h3>
-                    <div className='basis-3/4 ml-5 bg-slate-600 rounded-2xl p-2'>
+                    <div className='basis-3/4 ml-5 bg-slate-600 rounded-2xl p-2 indent-4'>
                       Session provider we can add the component & the wrap our layout.
-                      <SyntaxHighlightingReactCatto codeString={codeBlock2} />
+                      <SyntaxHighlightingReactCatto codeString={codeBlock3} />
                     </div>
                   </div>
                 </div>
               </li>
               <li>
                 <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
-                  <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
-                    <div className="flex items-center">
-                      <h3 className="basis-1/4 font-medium">
-                        5. Add API ...nextauth route
-                      </h3>
-                      <div className='basis-3/4 ml-5 bg-slate-600 rounded-2xl p-2'>
+                  <div className="flex items-center">
+                    <h3 className="basis-1/4 font-medium">
+                      5. Add API ...nextauth route
+                    </h3>
+                    <div className='basis-3/4 ml-5 bg-slate-600 rounded-2xl p-2'>
+                      <div className='indent-4'>
                         We need to add the API route & the relative path is `app/api/auth/[...nextauth]/route.ts`
-                        <SyntaxHighlightingReactCatto codeString={codeBlock2} />
                       </div>
+                      <SyntaxHighlightingReactCatto codeString={codeblock4apinextauth} />
                     </div>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <h3 className="font-medium">5. Add API ...nextauth route</h3>
                   </div>
                 </div>
               </li>
@@ -229,4 +250,4 @@ const helloworld = () => {
   );
 };
 
-export default helloworld;
+export default authentication;
