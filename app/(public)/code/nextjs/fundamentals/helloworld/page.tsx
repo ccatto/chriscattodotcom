@@ -13,7 +13,7 @@ const helloworld = () => {
 
   return (
     <>
-      <div className="flex h-screen w-full flex-col flex-nowrap ">
+      <div className="flex h-full w-full flex-col flex-nowrap ">
         <div className="flex-none">
           <JumbotronCattoFlexible
             title="Next.js Fundamentals Hello World"

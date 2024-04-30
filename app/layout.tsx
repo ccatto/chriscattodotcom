@@ -48,7 +48,7 @@ export default async function RootLayout({
             <main className="flex-[98] bg-gray-700">{children}</main>
             <div className="flex-[1] bg-gradient-to-r from-gray-900 to-gray-500"></div>
           </div>
-          {/* <FooterCatto /> */}
+          <FooterCatto />
           {/* </SessionProvider> */}
         </body>
         <GA4TagCatto />

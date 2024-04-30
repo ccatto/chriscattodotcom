@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div className="flex h-screen w-full flex-col flex-nowrap ">
+    <div className="flex h-full w-full flex-col flex-nowrap ">
       <div className="flex-[20]">
         <JumbotronCattoFlexible
           title="Git Command Branch"

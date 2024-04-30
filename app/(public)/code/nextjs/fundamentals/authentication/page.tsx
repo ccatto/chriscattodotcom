@@ -11,11 +11,12 @@ export const metadata: Metadata = {
 const authentication = () => {
   const codeBlock = 'yarn add next-auth';
   const codeBlock2 =
-    'NEXTAUTH_SECRET=""\nGOOGLE_CLIENT_ID=""\nGOOGLE_CLIENT_SECRET=""';
+    'AUTH_SECRET=""\nAUTH_GOOGLE_ID=""\nAUTH_GOOGLE_SECRET=""';
   const codeBlock3 = 'openssl rand -base64 32';
-  const codeblock4apinextauth =
-    'import NextAuth from "next-auth”\nimport GithubProvider from "next-auth/providers/github”\n\nexport const authOptions = {\n // Configure auth providers here\n providers: [ GithubProvider({ clientId: process.env.GITHUB_ID,\n clientSecret: process.env.GITHUB_SECRET,\n }),\n // ...add more providers here such as fb or apple\n ],\n}';
-
+  const codeBlock4SessionProvider = 'import { SessionProvider } from \"next-auth\/react\";\n\nreturn (\n  <SessionProvider>\n    <html>\n        <body ...Inside-of-Layout\n    </html>\n  </SessionProvider>\n';
+  const codeblock4authts =
+    'import NextAuth from "next-auth”\nimport GithubProvider from "next-auth/providers/github”\n\nexport const authOptions = {\n // Configure auth providers here\n providers: [ GithubProvider({\n    clientId: process.env.GITHUB_ID,\n    clientSecret: process.env.GITHUB_SECRET,\n }),\n // ...add more providers here such as fb or apple\n ],\n}';
+  const codeblockAPIRoute = 'export { GET, POST } from \'auth\';'
   return (
     <>
       <div className="flex h-full w-full flex-col flex-nowrap ">
@@ -122,7 +123,7 @@ const authentication = () => {
                 >
                   <div className="flex items-center justify-between">
                     <h3 className="font-medium">
-                      3. Create Middleware.ts file{' '}
+                      3. Create auth.ts file
                     </h3>
                   </div>
                 </div>
@@ -151,7 +152,7 @@ const authentication = () => {
                   </div>
                 </div>
               </li>
-              <li>
+              {/* <li>
                 <div
                   className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                   role="alert"
@@ -172,7 +173,7 @@ const authentication = () => {
                     </h3>
                   </div>
                 </div>
-              </li>
+              </li> */}
             </ol>
           </div>
           <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
@@ -210,8 +211,20 @@ const authentication = () => {
                     </h3>
                     <div className="ml-5 basis-3/4 rounded-2xl bg-slate-600 p-2">
                       <div className="indent-4">
-                        In our .env file we add the follow: Naming convention
-                        AUTH_provider_ID || CLIENT
+                        In our .env file we add the follow: <br />
+                        In v5 the naming convention is nicer since it's all prefixed with "Auth":
+                        <ol>
+                          <li>
+                            * prefix with AUTH_
+                          </li>
+                          <li>
+                            * then Provider name
+                          </li>
+                          <li>
+                            * Suffix is ID || Client
+                          </li>
+                        </ol>
+                        For example something like: AUTH_Provider_ ID || CLIENT
                       </div>
                       <SyntaxHighlightingReactCatto codeString={codeBlock2} />
                     </div>
@@ -229,7 +242,8 @@ const authentication = () => {
                     </h3>
                     <div className="ml-5 basis-3/4 rounded-2xl bg-slate-600 p-2 indent-4">
                       The OAuth provider Id & Secrete is obtained from each
-                      provider & is slightly different for each. For example
+                      provider & is slightly different for each.
+                      <br />For example
                       this is a good resource for{' '}
                       <Link
                         href="https://support.google.com/cloud/answer/6158849"
@@ -238,6 +252,7 @@ const authentication = () => {
                       >
                         Setting up Google Oauth 2.0 documentation
                       </Link>{' '}
+                      <br />
                       There are is a whole large{' '}
                       <Link
                         href="https://authjs.dev/reference/core/providers"
@@ -251,23 +266,21 @@ const authentication = () => {
                   </div>
                 </div>
               </li>
-              {/* <li>
+              <li>
                 <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
                   <div className="flex items-center">
-                    <h3 className="basis-1/4 font-medium">3. Middleware.ts</h3>
-                    <div className='basis-3/4 ml-5 bg-slate-600 rounded-2xl p-2 indent-4'>
-                      Creating middleware.ts in root directory allows us to run code before a request is completed. We can check session cookies before granting access to protected pages & API routes. 
-                      <Link
-                        href="https://nextjs.org/docs/app/building-your-application/routing/middleware"
-                        target="_blank"
-                        className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                      >
-                        Middleware official page on Next.js
-                      </Link>
+                    <h3 className="basis-1/4 font-medium">3. auth.ts</h3>
+                    <div className='basis-3/4 ml-5 bg-slate-600 rounded-2xl p-2'>
+                      <div className=' indent-4'>
+                        Creating auth.ts in root directory allows us to add config & authentication for our providers.
+                      </div>
+                      <SyntaxHighlightingReactCatto
+                        codeString={codeblock4authts}
+                      />
                     </div>
                   </div>
                 </div>
-              </li> */}
+              </li>
               <li>
                 <div
                   className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -277,10 +290,11 @@ const authentication = () => {
                     <h3 className="basis-1/4 font-medium">
                       4. Add SessionProvider & wrap layout
                     </h3>
-                    <div className="ml-5 basis-3/4 rounded-2xl bg-slate-600 p-2 indent-4">
-                      Session provider we can add the component & the wrap our
-                      layout.
-                      <SyntaxHighlightingReactCatto codeString={codeBlock3} />
+                    <div className="ml-5 basis-3/4 rounded-2xl bg-slate-600 p-2">
+                      <div className='indent-4'>
+                        Session provider we can add the import & the wrap our layout.
+                      </div>
+                      <SyntaxHighlightingReactCatto codeString={codeBlock4SessionProvider} />
                     </div>
                   </div>
                 </div>
@@ -298,15 +312,17 @@ const authentication = () => {
                       <div className="indent-4">
                         We need to add the API route & the relative path is
                         `app/api/auth/[...nextauth]/route.ts`
+                        <br />
+                        In next-auth v5 this file is much simplified and the config is in our auth.ts file;
                       </div>
                       <SyntaxHighlightingReactCatto
-                        codeString={codeblock4apinextauth}
+                        codeString={codeblockAPIRoute}
                       />
                     </div>
                   </div>
                 </div>
               </li>
-              <li>
+              {/* <li>
                 <div
                   className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                   role="alert"
@@ -327,10 +343,33 @@ const authentication = () => {
                     </h3>
                   </div>
                 </div>
-              </li>
+              </li> */}
             </ol>
           </div>
-          DETails Roles https://authjs.dev/guides/role-based-access-control
+          <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
+          <p>
+            Then next we can create login & out sections. Also protect our pages. This section covers the basics of next-auth v5.
+          </p>
+          <br />
+          <p>
+            Then next we move on to roles <Link
+              href="https://authjs.dev/guides/role-based-access-control"
+              target='_blank'
+              className="font-medium text-blue-600 hover:underline dark:text-blue-500">
+              Official Auth JS Role based access
+            </Link>
+          </p>
+          <br />
+          <p>
+            We can also implement middleware to cover the whole app & here is some documentation: <Link
+              href="https://nextjs.org/docs/app/building-your-application/routing/middleware"
+              target="_blank"
+              className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+            >
+              Middleware official page on Next.js
+            </Link>
+          </p>
+
         </div>
       </div>
     </>

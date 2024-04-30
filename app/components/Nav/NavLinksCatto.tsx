@@ -17,7 +17,6 @@ const NavLinksCatto = () => {
   const handleHamburgClick = () => {
     setIsNavOpen(!isNavOpen);
   };
-
   const handleCloseAllClick = () => {
     setIsNavOpen(false);
     setIsNavLevel1Item1Open(false);
@@ -25,11 +24,9 @@ const NavLinksCatto = () => {
     setIsNavLevel3Item1Open(false);
     setIsNavLevel2NextOpen(false);
   };
-
   const handleNavHomeClick = () => {
     handleCloseAllClick();
   };
-
   const handleNavAboutClick = () => {
     handleCloseAllClick();
   };
@@ -38,10 +35,12 @@ const NavLinksCatto = () => {
 
   return (
     <>
-      <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
-        {/* Hamburg icon */}
+      {/* Hamburg icon | Mobile */}
+      <div className='md:hidden pr-4 flex space-x-3 rtl:space-x-reverse items-center justify-end w-full text-gray-200'>
         <button
-          className="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+          // className="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+          // className="h-10 w-10 rounded-lg text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+          className="pr-3"
           onClick={handleHamburgClick}
           type="button"
           aria-controls="navbar-default"
@@ -64,10 +63,13 @@ const NavLinksCatto = () => {
             />
           </svg>
         </button>
-        {/* Main Nav Level-1 Section  */}
-        <div
-          className={`${!isNavOpen ? 'hidden' : 'block'} w-full md:block md:w-auto`}
-        >
+      </div>
+      {/* Nav Links & sub nav links */}
+      <div
+        className={`${!isNavOpen ? 'hidden' : 'block'} pt-20 lg:pt-0 w-full md:block md:w-auto `}
+      >
+        <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4 ">
+          {/* Main Nav Level-1 Section  */}
           <ul className=" flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium rtl:space-x-reverse dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900">
             {/* Home Link */}
             <li>
@@ -192,7 +194,7 @@ const NavLinksCatto = () => {
                             JS Overview
                           </Link>
                         </li>
-                        <li>
+                        {/* <li>
                           <Link
                             href="/code/javascript/fundamentals"
                             className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
@@ -200,7 +202,7 @@ const NavLinksCatto = () => {
                           >
                             Fundamentals
                           </Link>
-                        </li>
+                        </li> */}
                         <li>
                           <Link
                             href="/code/javascript/fundamentals/helloworld"
@@ -291,7 +293,7 @@ const NavLinksCatto = () => {
                             Next Overview
                           </Link>
                         </li>
-                        <li>
+                        {/* <li>
                           <Link
                             href="/code/nextjs/fundamentals"
                             className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
@@ -299,7 +301,7 @@ const NavLinksCatto = () => {
                           >
                             Next Fundamentals
                           </Link>
-                        </li>
+                        </li> */}
                         <li>
                           <Link
                             href="/code/nextjs/fundamentals/helloworld"
