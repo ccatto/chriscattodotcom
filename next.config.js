@@ -5,6 +5,8 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'lh3.googleusercontent.com',
+        port: "",
+        pathname: "/a/**",
       },
       {
         protocol: 'https',
@@ -12,9 +14,9 @@ const nextConfig = {
       },
     ],
   },
-  experimental: {
-    serverActions: true,
-  },
+  // experimental: {
+  //   serverActions: true,
+  // },
   // images: {
   // domains: ['images.somedomain.com'],
   // remotePatters: [

@@ -44,7 +44,7 @@ const authentication = () => {
             <ul className="text-xl font-normal text-gray-700 dark:text-gray-400">
               <li className="m-5">
                 Authentication is an important piece of many sites. I currently
-                choose to use the package{' '}
+                choose to use the package 'next-auth'. There is currently v5 which has some breaking changes to v4; this tutorial of setting up authenticaion in Next.js 14 is utlizing v5. 
                 <Link
                   target="_blank"
                   className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -161,6 +161,7 @@ const authentication = () => {
                     <div className='basis-3/4 ml-5 bg-slate-600 rounded-2xl p-2'>
                       <div className='indent-4'>
                         In our .env file we add the follow:
+                        Naming convention AUTH_provider_ID || CLIENT
                       </div>
                       <SyntaxHighlightingReactCatto codeString={codeBlock2} />
                     </div>
@@ -177,18 +178,23 @@ const authentication = () => {
                         target='_blank'
                         className="font-medium text-blue-600 hover:underline dark:text-blue-500">
                         Setting up Google Oauth 2.0 documentation
+                      </Link> There are is a whole large <Link href="https://authjs.dev/reference/core/providers"
+                        target='_blank'
+                        className="font-medium text-blue-600 hover:underline dark:text-blue-500">
+                        list of Auth.js OAuth providers
                       </Link>
                       <SyntaxHighlightingReactCatto codeString={codeBlock3} />
                     </div>
                   </div>
                 </div>
               </li>
-              <li>
+              {/* <li>
                 <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
                   <div className="flex items-center">
                     <h3 className="basis-1/4 font-medium">3. Middleware.ts</h3>
                     <div className='basis-3/4 ml-5 bg-slate-600 rounded-2xl p-2 indent-4'>
-                      Creating middleware.ts in root directory allows us to run code before a request is completed. We can check session cookies before granting access to protected pages & API routes. <Link
+                      Creating middleware.ts in root directory allows us to run code before a request is completed. We can check session cookies before granting access to protected pages & API routes. 
+                      <Link
                         href="https://nextjs.org/docs/app/building-your-application/routing/middleware"
                         target="_blank"
                         className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -198,7 +204,7 @@ const authentication = () => {
                     </div>
                   </div>
                 </div>
-              </li>
+              </li> */}
               <li>
                 <div className="w-full p-4 text-slate-200 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:border-green-800 dark:text-slate-200" role="alert">
                   <div className="flex items-center">

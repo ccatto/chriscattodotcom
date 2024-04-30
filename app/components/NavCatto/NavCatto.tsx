@@ -7,6 +7,18 @@ import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
 // import NavLoginCatto from "NavLoginCatto";
 import NavLoginCatto from '../NavLoginCatto/NavLoginCatto';
+import AuthHeaderCatto from '../UI/AuthHeaderCatto';
+import AuthHeaderCatto2 from '../UI/AuthHeaderCatto2/AuthHeaderCatto2';
+import AuthHeaderCatto3 from '../UI/AuthHeaderCatto3/AuthHeaderCatto3';
+import AuthHeaderCatto4 from '../UI/AuthHeaderCatto4/AuthHeaderCatto4';
+
+// import AppBarCatto from '../UI/AppBarCatto/AppBarCatto';
+// import AppBarCatto from '../UI/AppBarCatto/AppBarCatto';
+import AuthSignOutButtonParentCatto from '../UI/AuthSignOutButtonParentCatto/AuthSignOutButtonParentCatto';
+import AuthSignOutButtonCatto from '../UI/AuthSignOutButtonCatto/AuthSignOutButtonCatto';
+import AppBarSignOutCatto from '../UI/AppBarSignOutCatto/AppBarSignOutCatto';
+import AppBarSignInCatto from '../UI/AppBarSignInCatto/AppBarSignInCatto';
+
 
 const NavCatto = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -580,7 +592,20 @@ const NavCatto = () => {
                 </Link>
               </li>
               {/* Login Link Section */}
-              <NavLoginCatto />
+              {/* <NavLoginCatto /> */}
+
+              {/* next-auth version 5 login component */}
+              {/* <AuthHeaderCatto /> */}
+
+              {/* <AuthHeaderCatto2 /> */}
+              {/* <AuthHeaderCatto3 /> */}
+
+              {/* <AuthHeaderCatto4 /> */}
+              {/* <AppBarCatto /> */}
+              {/* <AuthSignOutButtonParentCatto/> */}
+              <AuthSignOutButtonCatto>
+                <AppBarSignOutCatto />
+              </AuthSignOutButtonCatto>
             </ul>
           </div>
         </div>

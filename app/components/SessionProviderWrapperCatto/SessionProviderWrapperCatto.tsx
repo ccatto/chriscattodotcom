@@ -1,12 +1,12 @@
 'use client';
 
 import { SessionProvider } from 'next-auth/react';
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 const SessionProviderWrapperCatto = ({
   children,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
 }) => {
   return (
     <>
@@ -15,3 +15,18 @@ const SessionProviderWrapperCatto = ({
   );
 };
 export default SessionProviderWrapperCatto;
+
+
+
+// const SessionProviderWrapperCatto = ({
+//   children,
+// }: {
+//   children: React.ReactNode;
+// }) => {
+//   return (
+//     <>
+//       <SessionProvider>{children}</SessionProvider>
+//     </>
+//   );
+// };
+// export default SessionProviderWrapperCatto;

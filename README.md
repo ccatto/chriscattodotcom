@@ -33,6 +33,8 @@ Current node version is 20.9.0 as of March 26th 2024;
 * using @prisma/client as db client
 * using next-auth for authentication
 * using @auth/prisma-adapter for auth adapter
+* using  @auth/prisma-adapter for data base adapter for next-auth v5
+
 
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> 
