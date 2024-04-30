@@ -1,7 +1,7 @@
 import React from 'react';
 import { auth, signIn, signOut } from 'auth';
 import Link from 'next/link';
-import SignOutCatto from './zzzSignOutCatto.tsx/SignOutCatto';
+import SignOutCatto from '../zzzOLD/zzzSignOutCatto.tsx/SignOutCatto';
 // import { auth } from "auth";
 // import SignOutCatto from "./SignOutCatto.tsx/SignOutCatto";
 // import ImageCatto from "../ImageCatto/ImageCatto";

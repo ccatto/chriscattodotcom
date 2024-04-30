@@ -2,17 +2,41 @@
 
 import React, { ReactNode, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
-import NavLeftNameImageCatto from '../Nav/NavLeftNameImageCatto';
-import AuthClientInOutWrapperCatto from '../Auth/AuthClientInOutWrapperCatto/AuthClientInOutWrapperCatto';
+// import NavLoginCatto from "NavLoginCatto";
+import NavLoginCatto from '../../NavLoginCatto/NavLoginCatto';
+import AuthHeaderCatto from '../../UI/AuthHeaderCatto';
+import AuthHeaderCatto2 from '../zzzAuthHeaderCatto2/AuthHeaderCatto2';
+import AuthHeaderCatto3 from '../zzzAuthHeaderCatto3/AuthHeaderCatto3';
+import AuthHeaderCatto4 from '../zzzAuthHeaderCatto4/AuthHeaderCatto4';
 
+// import AppBarCatto from '../UI/AppBarCatto/AppBarCatto';
+// import AppBarCatto from '../UI/AppBarCatto/AppBarCatto';
+// import AuthSignOutButtonParentCatto from '../UI/AuthSignOutButtonParentCatto/AuthSignOutButtonParentCatto';
+import AuthSignInButtonCatto from '../zzzAuthSignInButtonCatto/AuthSignInButtonCatto';
+import AuthSignOutButtonCatto from '../zzzAuthSignOutButtonCatto/AuthSignOutButtonCatto';
+import AppBarSignOutCatto from '../zzzAppBarSignOutCatto/AppBarSignOutCatto';
+import AppBarSignInCatto from '../zzzAppBarSignInCatto/AppBarSignInCatto';
 
-const NavCatto = () => {
+import AuthSignInClientWrapperCatto from '../zzzUI-client-server/zzzAuthSignInClientWrapperCatto/AuthSignInClientWrapperCatto';
+import AuthSignOutClientWrapperCatto from '../zzzUI-client-server/zzzAuthSignOutClientWrapperCatto/zzzAuthSignOutClientWrapperCatto';
+
+import AuthClientInOutWrapperCatto from '../zzzUI-client-server/zzzAuthClientInOutWrapperCatto/AuthClientInOutWrapperCatto';
+import AuthServerInOutFormsCatto from '../zzzUI-client-server/zzzAuthServerInOutFormsCatto/AuthServerInOutFormsCatto';
+
+import AppBarCattoBackup from '../zzzAppBarCattoBackup/AppBarCattoBackup';
+
+import AppBar from '@/app/zzzappbar';
+import AppBar44 from '@/app/zzzappbar44';
+
+const NavCatto = ({ children }: { children: React.ReactNode }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isNavLevel1Item1Open, setIsNavLevel1Item1Open] = useState(false);
   const [isNavLevel2Item1Open, setIsNavLevel2Item1Open] = useState(false);
   const [isNavLevel2NextOpen, setIsNavLevel2NextOpen] = useState(false);
+
   const [isNavLevel3Item1Open, setIsNavLevel3Item1Open] = useState(false);
 
   const handleHamburgClick = () => {
@@ -42,7 +66,24 @@ const NavCatto = () => {
       <nav className="border-gray-200 bg-white dark:bg-gray-900">
         <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
           {/* Top left Site name & image */}
-          <NavLeftNameImageCatto />
+          <Link
+            href="/"
+            className="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <Image
+              src="/Chris-Catto-dot-com.png"
+              width={107}
+              height={50}
+              className="hidden rounded-2xl md:block"
+              alt="ChrisCatto.com"
+            />
+            <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
+              ChrisCatto.com
+            </span>
+          </Link>
+          {/* <div className="text-white">
+            <NavLoginCatto />
+          </div> */}
           {/* Hamburg icon */}
           <button
             className="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
@@ -561,12 +602,43 @@ const NavCatto = () => {
                   <span>About</span>
                 </Link>
               </li>
-              {/* Next-Auth Login Logout */}
-              {/* <li> */}
+              {/* Login Link Section */}
+              {/* <NavLoginCatto /> */}
+
+              {/* next-auth version 5 login component */}
+              {/* <AuthHeaderCatto /> */}
+
+              {/* <AuthHeaderCatto2 /> */}
+              {/* <AuthHeaderCatto3 /> */}
+
+              {/* <AuthHeaderCatto4 /> */}
+              {/* <AppBarCatto /> */}
+              {/* <AuthSignOutButtonParentCatto/> */}
+
+              {/* <h3>app bar wrapped</h3> */}
+              {/*    <AppBar/> */}
+              <AuthClientInOutWrapperCatto>
+                {/* <AppBar44 /> */}
+                {children}
+              </AuthClientInOutWrapperCatto>
+
+              {/* <h3>sign in below</h3> */}
+
               {/* <AuthClientInOutWrapperCatto>
-                  {children}
-                </AuthClientInOutWrapperCatto> */}
-              {/* </li> */}
+                <AuthServerInOutFormsCatto />
+              </AuthClientInOutWrapperCatto> */}
+
+              {/* <AuthSignInClientWrapperCatto>
+                <AppBarSignInCatto />
+              </AuthSignInClientWrapperCatto> */}
+              {/* <AuthSignInButtonCatto> */}
+              {/* <AppBarSignInCatto/> */}
+              {/* </AuthSignInButtonCatto> */}
+              <hr />
+              <h3>sign out below</h3>
+              {/* <AuthSignOutButtonCatto>
+                <AppBarSignOutCatto />
+              </AuthSignOutButtonCatto> */}
             </ul>
           </div>
         </div>

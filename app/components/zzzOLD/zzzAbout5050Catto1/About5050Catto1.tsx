@@ -1,5 +1,5 @@
 // import Image from "next/image";
-import ImageCatto from '../ImageCatto/ImageCatto';
+import ImageCatto from '../../ImageCatto/ImageCatto';
 
 const About5050Catto1 = () => {
   return (
