@@ -1,4 +1,4 @@
-import { CardWrapperCatto } from "@/app/components/Auth/card-wrapper-catto"
+import { CardWrapperCatto } from '@/app/components/Auth/card-wrapper-catto';
 
 export const LoginFormCatto = () => {
   return (
@@ -8,9 +8,10 @@ export const LoginFormCatto = () => {
         headerLabel="Welcome Back header label"
         backButtonLabel="Don't have an account?"
         backButtonHref="/auth/register"
-        showSocial>
-            Login form
+        showSocial
+      >
+        Login form
       </CardWrapperCatto>
     </div>
-  )
-}
+  );
+};

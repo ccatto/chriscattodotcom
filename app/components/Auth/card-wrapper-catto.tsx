@@ -1,8 +1,8 @@
-"use client";
+'use client';
 // import { Card } from "@/app/ui/dashboard/cards";
-import { HeaderAuthCatto } from "./header-auth-catto";
-import { SocialAuthCatto } from "./social-auth-catto";
-import { BackButtonAuthCatto } from "./back-button-auth-catto";
+import { HeaderAuthCatto } from './header-auth-catto';
+import { SocialAuthCatto } from './social-auth-catto';
+import { BackButtonAuthCatto } from './back-button-auth-catto';
 
 interface CardWrapperProps {
   children: React.ReactNode;
@@ -17,16 +17,15 @@ export const CardWrapperCatto = ({
   headerLabel,
   backButtonLabel,
   backButtonHref,
-  showSocial }: CardWrapperProps) => {
+  showSocial,
+}: CardWrapperProps) => {
   return (
     <div id="card1">
       <div id="cardHeader1">
         <HeaderAuthCatto label={headerLabel} />
       </div>
 
-      <div id="cardContent1">
-        {children}
-      </div>
+      <div id="cardContent1">{children}</div>
       {showSocial && (
         <div id="cardFooter1">
           <SocialAuthCatto />
@@ -34,11 +33,8 @@ export const CardWrapperCatto = ({
         </div>
       )}
       <div id="cardFooter2">
-        <BackButtonAuthCatto 
-          label={backButtonLabel}
-          href={backButtonHref}
-          />
+        <BackButtonAuthCatto label={backButtonLabel} href={backButtonHref} />
       </div>
     </div>
-  )
-}
+  );
+};

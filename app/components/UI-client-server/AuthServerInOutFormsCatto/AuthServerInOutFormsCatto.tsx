@@ -1,5 +1,4 @@
-
-import { auth, signIn, signOut } from "auth";
+import { auth, signIn, signOut } from 'auth';
 
 async function AuthServerInOutFormsCatto() {
   const session = await auth();
@@ -13,7 +12,9 @@ async function AuthServerInOutFormsCatto() {
               await signOut();
             }}
           >
-            <button className="text-white" type="submit">Sign Out 44</button>
+            <button className="text-white" type="submit">
+              Sign Out 44
+            </button>
           </form>
         </>
       ) : (
@@ -24,7 +25,9 @@ async function AuthServerInOutFormsCatto() {
               await signIn();
             }}
           >
-            <button className="text-white" type="submit">🔐 Sign In 444</button>
+            <button className="text-white" type="submit">
+              🔐 Sign In 444
+            </button>
           </form>
         </>
       )}

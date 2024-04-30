@@ -1,7 +1,7 @@
-import React from "react";
-import { auth, signIn, signOut } from "auth";
-import Link from "next/link";
-import SignOutCatto from "../SignOutCatto.tsx/SignOutCatto";
+import React from 'react';
+import { auth, signIn, signOut } from 'auth';
+import Link from 'next/link';
+import SignOutCatto from '../zzzSignOutCatto.tsx/SignOutCatto';
 // import { auth } from "auth";
 // import SignOutCatto from "./SignOutCatto.tsx/SignOutCatto";
 // import ImageCatto from "../ImageCatto/ImageCatto";
@@ -10,21 +10,19 @@ import SignOutCatto from "../SignOutCatto.tsx/SignOutCatto";
 // import { auth, signIn, signOut } from "auth";
 // import ButtonCatto from "../AtomicDesign/atoms/ButtonCatto/ButtonCatto";
 
-
-type Props = {}
+type Props = {};
 
 function SignIn2() {
   return (
     <>
       <form
         action={async () => {
-          "use server";
+          'use server';
           await signIn();
         }}
       >
         <button type="submit">Sign In</button>
       </form>
-
     </>
     // <form
     //   action={async () => {
@@ -44,7 +42,6 @@ function SignOut() {
         <h1>sign out</h1>
         <SignOutCatto />
       </div>
-
     </>
     // <form
     //   action={async () => {
@@ -57,12 +54,10 @@ function SignOut() {
   );
 }
 const AuthHeaderCatto3 = async (props: Props) => {
-
   const session = await auth();
-  console.log("Session in AuthHeader 2342 === ", session);
+  console.log('Session in AuthHeader 2342 === ', session);
   return (
     <>
-
       <div className="ml-auto">
         {session && session.user ? (
           <div className="flex gap-2">
@@ -91,9 +86,8 @@ const AuthHeaderCatto3 = async (props: Props) => {
           // </form>
         )}
       </div>
-
     </>
-  )
-}
+  );
+};
 
-export default AuthHeaderCatto3
+export default AuthHeaderCatto3;

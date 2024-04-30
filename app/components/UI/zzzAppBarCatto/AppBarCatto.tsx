@@ -1,14 +1,10 @@
 import { auth, signIn, signOut } from 'auth';
 import Link from 'next/link';
 import React from 'react';
-// import AppBarSignOutCatto from "../AppBarSignOutCatto/AppBarSignOutCatto";
-// import AppBarSignInCatto from "../AuthServerInOutLinksCatto/AuthServerInOutLinksCatto";
+import AppBarSignOutCatto from '../zzzAppBarSignOutCatto/AppBarSignOutCatto';
+import AppBarSignInCatto from '../zzzAppBarSignInCatto/AppBarSignInCatto';
 
-async function AuthSignOutButtonCatto({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+async function AppBarCatto() {
   const session = await auth();
   return (
     // <div className="p-2 bg-gradient-to-b from-slate-800 to-slate-600 flex gap-2 ">
@@ -20,20 +16,13 @@ async function AuthSignOutButtonCatto({
       {/* <div className="ml-auto"> */}
       <div className="text-white">
         {session && session.user ? (
-          // <AppBarSignOutCatto />
-          <>
-            <h1>sign out</h1>
-            {children}
-          </>
+          <AppBarSignOutCatto />
         ) : (
-          // <AppBarSignInCatto />
-          <>
-            <h1>sign in8</h1>f
-          </>
+          <AppBarSignInCatto />
         )}
       </div>
     </div>
   );
 }
 
-export default AuthSignOutButtonCatto;
+export default AppBarCatto;

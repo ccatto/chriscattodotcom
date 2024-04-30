@@ -1,8 +1,6 @@
-
-
-import React from "react";
-import { auth, signIn, signOut } from "auth";
-import Link from "next/link";
+import React from 'react';
+import { auth, signIn, signOut } from 'auth';
+import Link from 'next/link';
 // import SignOutCatto from "../SignOutCatto.tsx/SignOutCatto";
 // import { auth } from "auth";
 // import SignOutCatto from "./SignOutCatto.tsx/SignOutCatto";
@@ -12,8 +10,7 @@ import Link from "next/link";
 // import { auth, signIn, signOut } from "auth";
 // import ButtonCatto from "../AtomicDesign/atoms/ButtonCatto/ButtonCatto";
 
-
-type Props = {}
+type Props = {};
 function SignOut() {
   return (
     <>
@@ -21,7 +18,6 @@ function SignOut() {
         <h1>sign out</h1>
         {/* <SignOutCatto /> */}
       </div>
-
     </>
     // <form
     //   action={async () => {
@@ -34,12 +30,10 @@ function SignOut() {
   );
 }
 const AuthHeaderCatto4 = async (props: Props) => {
-
   // const session = await auth();
   // console.log("Session in AuthHeader 2342 === ", session);
   return (
     <>
-
       <div>
         <h1 className="text-white">logged in </h1>
       </div>
@@ -50,12 +44,10 @@ const AuthHeaderCatto4 = async (props: Props) => {
           Sign in6
           {/* </button> */}
         </Link>
-        )
-        {/* } */}
-      </div >
-
+        ){/* } */}
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default AuthHeaderCatto4
+export default AuthHeaderCatto4;

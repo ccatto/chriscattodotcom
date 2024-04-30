@@ -1,7 +1,7 @@
-"use server";
-import { auth, signIn, signOut } from "auth";
-import Link from "next/link";
-import React from "react";
+'use server';
+import { auth, signIn, signOut } from 'auth';
+import Link from 'next/link';
+import React from 'react';
 
 async function AppBarSignOutCatto() {
   const session = await auth();
@@ -10,7 +10,6 @@ async function AppBarSignOutCatto() {
       <p>{session?.user.name}</p>
       <form
         action={async () => {
-          
           await signOut();
         }}
       >

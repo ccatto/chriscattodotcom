@@ -1,22 +1,18 @@
-import { auth, signIn, signOut } from "auth";
-import Link from "next/link";
-import React from "react";
+import { auth, signIn, signOut } from 'auth';
+// import Link from "next/link";
+import React from 'react';
 
-async function AppBar() {
+async function NextAuthLoginOutCatto() {
   const session = await auth();
   return (
-    <div className="p-2 bg-gradient-to-b from-slate-800 to-slate-600 flex gap-2 ">
-      <Link href={"/clientPage"}>Client Page</Link>
-      <Link href={"/serverPage"}>Server Page</Link>
-      <Link href={"/middlewareProtected"}>Middleware Protected Page</Link>
-      <Link href={"/about"}>About</Link>
-      <div className="ml-auto text-white mt-20">
+    <div className="flex gap-2 bg-gradient-to-b from-slate-800 to-slate-600 p-2 ">
+      <div className="ml-auto mt-20 text-white">
         {session && session.user ? (
           <div className="flex gap-2">
             <p>{session.user.name}</p>
             <form
               action={async () => {
-                "use server";
+                'use server';
                 await signOut();
               }}
             >
@@ -26,7 +22,7 @@ async function AppBar() {
         ) : (
           <form
             action={async () => {
-              "use server";
+              'use server';
               await signIn();
             }}
           >
@@ -38,4 +34,4 @@ async function AppBar() {
   );
 }
 
-export default AppBar;
+export default NextAuthLoginOutCatto;

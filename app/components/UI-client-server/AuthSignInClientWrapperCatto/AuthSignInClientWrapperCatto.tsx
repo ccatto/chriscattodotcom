@@ -1,16 +1,12 @@
-"use client";
+'use client';
 
-import React from "react";
+import React from 'react';
 
 function AuthSignInClientWrapperCatto({
-  children
+  children,
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <>
-      {children}
-    </>
-  );
+  return <>{children}</>;
 }
 export default AuthSignInClientWrapperCatto;

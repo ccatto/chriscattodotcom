@@ -1,11 +1,11 @@
-import { auth, signIn, signOut } from "auth";
-import Link from "next/link";
-import React from "react";
-import AppBarSignOutCatto from "../AppBarSignOutCatto/AppBarSignOutCatto";
-import AppBarSignInCatto from "../AppBarSignInCatto/AppBarSignInCatto";
+import { auth, signIn, signOut } from 'auth';
+import Link from 'next/link';
+import React from 'react';
+import AppBarSignOutCatto from '../zzzAppBarSignOutCatto/AppBarSignOutCatto';
+import AppBarSignInCatto from '../zzzAppBarSignInCatto/AppBarSignInCatto';
 
 async function AuthSignOutButtonCatto({
-  children
+  children,
 }: {
   children: React.ReactNode;
 }) {
@@ -28,11 +28,8 @@ async function AuthSignOutButtonCatto({
         ) : (
           // <AppBarSignInCatto />
           <>
-
-            <h1>sign in8</h1>
-f
+            <h1>sign in8</h1>f
           </>
-
         )}
       </div>
     </div>

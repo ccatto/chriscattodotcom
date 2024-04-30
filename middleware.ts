@@ -1,24 +1,16 @@
-// v5 one line:  
-export { auth as middleware} from "auth";
-
+// v5 one line:
+export { auth as middleware } from 'auth';
 
 // from official next.js page:
 // import NextAuth from 'next-auth';
 // import { authConfig } from './auth.config';
- 
+
 // export default NextAuth(authConfig).auth;
- 
+
 // export const config = {
 //   // https://nextjs.org/docs/app/building-your-application/routing/middleware#matcher
 //   matcher: ['/((?!api|_next/static|_next/image|.*\\.png$).*)'],
 // };
-
-
-
-
-
-
-
 
 //////
 // old below
@@ -27,7 +19,6 @@ export { auth as middleware} from "auth";
 // // export { default } from 'next-auth/middleware';
 
 // // https://next-auth.js.org/configuration/nextjs#advanced-usage
-
 
 // // v4
 // import { withAuth, NextRequestWithAuth } from 'next-auth/middleware';

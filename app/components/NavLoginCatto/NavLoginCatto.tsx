@@ -8,10 +8,10 @@ import ImageCatto from '../ImageCatto/ImageCatto';
 const NavLoginCatto = () => {
   return (
     <>
-    <div>simple NavLoginCatto </div>
+      <div>simple NavLoginCatto </div>
     </>
-  )
-}
+  );
+};
 // const NavLoginCatto = () => {
 //   const { data: session } = useSession();
 //   if (session) {

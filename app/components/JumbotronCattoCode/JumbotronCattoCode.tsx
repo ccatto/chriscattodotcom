@@ -92,7 +92,7 @@ const JumbotronCattoCode = () => {
                 />
               </svg>
               SFCC
-              </div>
+            </div>
             {/* </Link> */}
             <h2 className="mb-2 text-3xl font-extrabold text-gray-900 dark:text-white">
               Salesforce Commerce Cloud
@@ -184,7 +184,9 @@ const JumbotronCattoCode = () => {
               Next.js
             </h2>
             <p className="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400">
-              Next.js is react framework to build high quality web applications. I have been enjoying utilizing framework & this site is currently built on it. 
+              Next.js is react framework to build high quality web applications.
+              I have been enjoying utilizing framework & this site is currently
+              built on it.
             </p>
             <Link
               href="/code/nextjs"
@@ -294,7 +296,6 @@ const JumbotronCattoCode = () => {
             </p>
           </div>
         </div> */}
-
       </div>
     </section>
   );

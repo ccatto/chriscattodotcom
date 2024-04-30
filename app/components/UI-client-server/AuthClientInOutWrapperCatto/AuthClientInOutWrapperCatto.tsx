@@ -1,14 +1,10 @@
-"use client";
-import React from "react";
+'use client';
+import React from 'react';
 async function AuthClientInOutWrapperCatto({
-  children
+  children,
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <>
-      {children}
-    </>
-  );
+  return <>{children}</>;
 }
 export default AuthClientInOutWrapperCatto;

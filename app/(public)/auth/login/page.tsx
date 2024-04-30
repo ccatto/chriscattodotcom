@@ -1,4 +1,4 @@
-import { LoginFormCatto } from "@/app/components/Auth/login-form-catto";
+import { LoginFormCatto } from '@/app/components/Auth/login-form-catto';
 
 const LoginPage = () => {
   return (
@@ -6,6 +6,6 @@ const LoginPage = () => {
       Login Page!
       <LoginFormCatto />
     </div>
-  )
-}
+  );
+};
 export default LoginPage;

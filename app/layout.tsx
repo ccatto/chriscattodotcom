@@ -15,9 +15,8 @@ import SessionProviderWrapperCatto from './components/SessionProviderWrapperCatt
 
 // import SessionProvider from "./components/SessionProvider";
 // import SessionProvider from "/SessionProvider";
-import AppBar from './appbar';
+import AppBar from './zzzappbar';
 // import AppBarCatto from './components/UI/AppBarCatto/AppbarCatto';
-
 
 export const metadata: Metadata = {
   title: 'Chris Catto',
@@ -41,7 +40,7 @@ export default async function RootLayout({
           {/* <SessionProvider session={session}> */}
           <HeaderCatto />
           {/* <AppBar/> */}
-          <hr/>
+          <hr />
           {/* <div className='mt-56'>yo</div> */}
           {/* <AppBarCatto /> */}
           <div className="mt-20 flex h-full">

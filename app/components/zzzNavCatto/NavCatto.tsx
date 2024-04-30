@@ -602,12 +602,43 @@ const NavCatto = ({ children }: { children: React.ReactNode }) => {
                   <span>About</span>
                 </Link>
               </li>
-              {/* Next-Auth Login Logout */}
-              <li>
-                <AuthClientInOutWrapperCatto>
-                  {children}
-                </AuthClientInOutWrapperCatto>
-              </li>
+              {/* Login Link Section */}
+              {/* <NavLoginCatto /> */}
+
+              {/* next-auth version 5 login component */}
+              {/* <AuthHeaderCatto /> */}
+
+              {/* <AuthHeaderCatto2 /> */}
+              {/* <AuthHeaderCatto3 /> */}
+
+              {/* <AuthHeaderCatto4 /> */}
+              {/* <AppBarCatto /> */}
+              {/* <AuthSignOutButtonParentCatto/> */}
+
+              {/* <h3>app bar wrapped</h3> */}
+              {/*    <AppBar/> */}
+              <AuthClientInOutWrapperCatto>
+                {/* <AppBar44 /> */}
+                {children}
+              </AuthClientInOutWrapperCatto>
+
+              {/* <h3>sign in below</h3> */}
+
+              {/* <AuthClientInOutWrapperCatto>
+                <AuthServerInOutFormsCatto />
+              </AuthClientInOutWrapperCatto> */}
+
+              {/* <AuthSignInClientWrapperCatto>
+                <AppBarSignInCatto />
+              </AuthSignInClientWrapperCatto> */}
+              {/* <AuthSignInButtonCatto> */}
+              {/* <AppBarSignInCatto/> */}
+              {/* </AuthSignInButtonCatto> */}
+              <hr />
+              <h3>sign out below</h3>
+              {/* <AuthSignOutButtonCatto>
+                <AppBarSignOutCatto />
+              </AuthSignOutButtonCatto> */}
             </ul>
           </div>
         </div>

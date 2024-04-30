@@ -1,7 +1,7 @@
-import React from "react";
-import { auth, signIn, signOut } from "auth";
-import Link from "next/link";
-import SignOutCatto from "./SignOutCatto.tsx/SignOutCatto";
+import React from 'react';
+import { auth, signIn, signOut } from 'auth';
+import Link from 'next/link';
+import SignOutCatto from './zzzSignOutCatto.tsx/SignOutCatto';
 // import { auth } from "auth";
 // import SignOutCatto from "./SignOutCatto.tsx/SignOutCatto";
 // import ImageCatto from "../ImageCatto/ImageCatto";
@@ -10,26 +10,27 @@ import SignOutCatto from "./SignOutCatto.tsx/SignOutCatto";
 // import { auth, signIn, signOut } from "auth";
 // import ButtonCatto from "../AtomicDesign/atoms/ButtonCatto/ButtonCatto";
 
-
-type Props = {}
+type Props = {};
 
 const AuthHeaderCatto = async (props: Props) => {
-
   const session = await auth();
-  console.log("Session in AuthHeader 2342 === ", session);
+  console.log('Session in AuthHeader 2342 === ', session);
   return (
     <>
       {/* <h1>simple header</h1> */}
       <div className="ml-auto">
         {session && session.user ? (
           <>
-            <h1 className="text-white">
-              loggedIn
-            </h1>
-            <Link href="/api/auth/signout"
+            <h1 className="text-white">loggedIn</h1>
+            <Link
+              href="/api/auth/signout"
               className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-            > | sign out | </Link>
+            >
+              {' '}
+              | sign out |{' '}
+            </Link>
           </>
+        ) : (
           // <SignOutCatto/>
           // <div className="flex gap-2">
           //   <p>{session.user.name}</p>
@@ -42,14 +43,14 @@ const AuthHeaderCatto = async (props: Props) => {
           //     <button type="submit">Sign Out</button>
           //   </form>
           // </div>
-        ) : (
           <>
-            <h1 className="text-white">
-              simple logged out
-            </h1>
-            <Link href="/api/auth/signin"
+            <h1 className="text-white">simple logged out</h1>
+            <Link
+              href="/api/auth/signin"
               className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-            >Sign In3</Link>
+            >
+              Sign In3
+            </Link>
           </>
           // <form
           //   action={async () => {
@@ -82,7 +83,7 @@ const AuthHeaderCatto = async (props: Props) => {
         }
       </h1> */}
     </>
-  )
-}
+  );
+};
 
-export default AuthHeaderCatto
+export default AuthHeaderCatto;

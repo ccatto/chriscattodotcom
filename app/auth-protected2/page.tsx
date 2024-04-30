@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { useSession } from "next-auth/react";
-import React from "react";
-import { auth, signIn, signOut } from "auth";
+import { useSession } from 'next-auth/react';
+import React from 'react';
+import { auth, signIn, signOut } from 'auth';
 
 export default async function Page() {
   // const session = await auth();
@@ -10,25 +10,22 @@ export default async function Page() {
   console.log('99auth protected session: ', session);
   if (!session || !session.user) {
     return (
-      <div className="text-white m-3 mt-20">
+      <div className="m-3 mt-20 text-white">
         <h2>NOT LOgged in auth protected fun page2</h2>
       </div>
-    )
+    );
   } else {
     return (
       <>
         <hr className="m-3" />
-        <div className="text-white mt-20">
-          <h2 className="text-white mt-20">
-            2 auth protected fun page2</h2>
+        <div className="mt-20 text-white">
+          <h2 className="mt-20 text-white">2 auth protected fun page2</h2>
         </div>
         <hr className="m-3" />
       </>
     );
   }
-
 }
-
 
 // "use client";
 // import { useSession } from 'next-auth/react';
@@ -46,8 +43,6 @@ export default async function Page() {
 //   //   you need to sign in yo!
 //   // </div>
 
-
-
 //   return
 //   <div>
 //     <hr className="m-3" />
@@ -60,12 +55,10 @@ export default async function Page() {
 // }
 // export default page;
 
-
 // // import JumbotronCattoCode from '../../components/JumbotronCattoCode/JumbotronCattoCode';
 // // import {Metadata} from 'next';
 // // import {getServerSession} from 'next-auth';
 // // import {redirect} from 'next/navigation';
-
 
 // // export const metadata: Metadata = {
 // //   title: 'Chris Catto auth fun protected client',
@@ -78,7 +71,7 @@ export default async function Page() {
 // //   redirect('/api/auth/signin');
 // // }
 
-// {/* 
+// {/*
 //         getServerSession Result: {session?.user?.name ? (
 //           <div> {session?.user?.name}</div>
 //         ) : (

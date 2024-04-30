@@ -9,7 +9,8 @@ export const metadata: Metadata = {
 };
 
 const metadataFunction = () => {
-  let codeBlock = 'import { Metadata } from \'next\';\n\nexport const metadata: Metadata = {\n    title: \'Page Title\',\n    description: \'Page Description\',\n};';
+  let codeBlock =
+    "import { Metadata } from 'next';\n\nexport const metadata: Metadata = {\n    title: 'Page Title',\n    description: 'Page Description',\n};";
 
   return (
     <>
@@ -28,10 +29,12 @@ const metadataFunction = () => {
           <div>
             <ul className="text-xl font-normal text-gray-700 dark:text-gray-400">
               <li className="m-5">
-                Metadata provides details about a webpage embedded within our &lt;head&gt; element.
+                Metadata provides details about a webpage embedded within our
+                &lt;head&gt; element.
               </li>
               <li className="m-5">
-                Metadata details can be located here: <Link
+                Metadata details can be located here:{' '}
+                <Link
                   href="https://nextjs.org/docs/app/building-your-application/optimizing/metadata"
                   target="_blank"
                   className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -40,7 +43,8 @@ const metadataFunction = () => {
                 </Link>
               </li>
               <li className="m-5">
-                favicon.ico which we place in our \public is another form of static metadata.
+                favicon.ico which we place in our \public is another form of
+                static metadata.
               </li>
             </ul>
           </div>

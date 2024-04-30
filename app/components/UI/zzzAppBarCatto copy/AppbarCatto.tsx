@@ -1,8 +1,8 @@
-import { auth, signIn, signOut } from "auth";
-import Link from "next/link";
-import React from "react";
-import AppBarSignOutCatto from "../AppBarSignOutCatto/AppBarSignOutCatto";
-import AppBarSignInCatto from "../AppBarSignInCatto/AppBarSignInCatto";
+import { auth, signIn, signOut } from 'auth';
+import Link from 'next/link';
+import React from 'react';
+import AppBarSignOutCatto from '../zzzAppBarSignOutCatto/AppBarSignOutCatto';
+import AppBarSignInCatto from '../zzzAppBarSignInCatto/AppBarSignInCatto';
 
 async function AppBarCatto() {
   const session = await auth();

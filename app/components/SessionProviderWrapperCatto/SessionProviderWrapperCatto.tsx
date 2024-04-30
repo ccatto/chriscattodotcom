@@ -3,11 +3,7 @@
 import { SessionProvider } from 'next-auth/react';
 import React, { ReactNode } from 'react';
 
-const SessionProviderWrapperCatto = ({
-  children,
-}: {
-  children: ReactNode;
-}) => {
+const SessionProviderWrapperCatto = ({ children }: { children: ReactNode }) => {
   return (
     <>
       <SessionProvider>{children}</SessionProvider>
@@ -15,8 +11,6 @@ const SessionProviderWrapperCatto = ({
   );
 };
 export default SessionProviderWrapperCatto;
-
-
 
 // const SessionProviderWrapperCatto = ({
 //   children,

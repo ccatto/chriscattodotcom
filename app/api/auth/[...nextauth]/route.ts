@@ -1,5 +1,5 @@
 // export {GET, POST} from "../../../../auth";
-export {GET, POST} from "auth";
+export { GET, POST } from 'auth';
 
 // import { prisma } from '@/prisma/client';
 // import NextAuth, { AuthOptions } from 'next-auth';

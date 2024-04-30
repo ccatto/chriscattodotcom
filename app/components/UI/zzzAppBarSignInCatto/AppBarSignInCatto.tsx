@@ -1,7 +1,7 @@
-"use server";
-import { auth, signIn, signOut } from "auth";
-import Link from "next/link";
-import React from "react";
+'use server';
+import { auth, signIn, signOut } from 'auth';
+import Link from 'next/link';
+import React from 'react';
 
 async function AppBarSignInCatto() {
   const session = await auth();
@@ -14,9 +14,12 @@ async function AppBarSignInCatto() {
       ) : (
         <>
           <h1>sign in8</h1>
-          <Link href="/api/auth/signin"
-              className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-            >Sign In 44</Link>
+          <Link
+            href="/api/auth/signin"
+            className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+          >
+            Sign In 44
+          </Link>
           {/* <form
             action={async () => {
               await signIn();
@@ -25,9 +28,7 @@ async function AppBarSignInCatto() {
             <button className="text-white" type="submit">Sign In</button>
           </form> */}
         </>
-
       )}
-
     </>
   );
 }
