@@ -7,7 +7,6 @@ import clsx from 'clsx';
 import NavLeftNameImageCatto from '../Nav/NavLeftNameImageCatto';
 import AuthClientInOutWrapperCatto from '../Auth/AuthClientInOutWrapperCatto/AuthClientInOutWrapperCatto';
 
-
 const NavCatto = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isNavLevel1Item1Open, setIsNavLevel1Item1Open] = useState(false);

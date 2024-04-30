@@ -36,7 +36,7 @@ const NavLinksCatto = () => {
   return (
     <>
       {/* Hamburg icon | Mobile */}
-      <div className='md:hidden pr-4 flex space-x-3 rtl:space-x-reverse items-center justify-end w-full text-gray-200'>
+      <div className="flex w-full items-center justify-end space-x-3 pr-4 text-gray-200 rtl:space-x-reverse md:hidden">
         <button
           // className="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
           // className="h-10 w-10 rounded-lg text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
@@ -66,14 +66,13 @@ const NavLinksCatto = () => {
       </div>
       {/* Nav Links & sub nav links */}
       <div
-        className={`${!isNavOpen ? 'hidden' : 'block'} pt-20 lg:pt-0 w-full md:block md:w-auto `}
+        className={`${!isNavOpen ? 'hidden' : 'block'} w-full pt-20 md:block md:w-auto lg:pt-0 `}
       >
         <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4 ">
           {/* Main Nav Level-1 Section  */}
           <ul className=" flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium rtl:space-x-reverse dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900">
             {/* Home Link */}
             <li>
-              {/* <li className='h-2.5 leading-[2.5rem] justify-center'> */}
               <Link
                 href="/"
                 onClick={handleNavHomeClick}
@@ -93,7 +92,6 @@ const NavLinksCatto = () => {
             </li>
             {/* Code link section */}
             <li>
-              {/* <li className='h-2.5 leading-[2.5rem] justify-center'> */}
               {/* Code nav link level 1  */}
               <button
                 className={clsx(
@@ -176,15 +174,6 @@ const NavLinksCatto = () => {
                         className="py-2 text-sm text-gray-700 dark:text-gray-200"
                         aria-labelledby="doubleDropdownButton"
                       >
-                        {/* <li>
-                            <Link
-                              href="/code/javascript"
-                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                              onClick={handleCloseAllClick}
-                            >
-                              JavaScript Home
-                            </Link>
-                          </li> */}
                         <li>
                           <Link
                             href="/code/javascript/overview"
@@ -194,15 +183,6 @@ const NavLinksCatto = () => {
                             JS Overview
                           </Link>
                         </li>
-                        {/* <li>
-                          <Link
-                            href="/code/javascript/fundamentals"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
-                          >
-                            Fundamentals
-                          </Link>
-                        </li> */}
                         <li>
                           <Link
                             href="/code/javascript/fundamentals/helloworld"
@@ -275,15 +255,6 @@ const NavLinksCatto = () => {
                         className="py-2 text-sm text-gray-700 dark:text-gray-200"
                         aria-labelledby="doubleDropdownButton"
                       >
-                        {/* <li>
-                            <Link
-                              href="/code/nextjs"
-                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                              onClick={handleCloseAllClick}
-                            >
-                              Next.js Home
-                            </Link>
-                          </li> */}
                         <li>
                           <Link
                             href="/code/nextjs/overview"
@@ -293,15 +264,6 @@ const NavLinksCatto = () => {
                             Next Overview
                           </Link>
                         </li>
-                        {/* <li>
-                          <Link
-                            href="/code/nextjs/fundamentals"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
-                          >
-                            Next Fundamentals
-                          </Link>
-                        </li> */}
                         <li>
                           <Link
                             href="/code/nextjs/fundamentals/helloworld"
@@ -374,15 +336,6 @@ const NavLinksCatto = () => {
                         className="py-2 text-sm text-gray-700 dark:text-gray-200"
                         aria-labelledby="doubleDropdownButton"
                       >
-                        {/* <li>
-                            <Link
-                              href="/code/git"
-                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                              onClick={handleCloseAllClick}
-                            >
-                              Git Home
-                            </Link>
-                          </li> */}
                         <li>
                           <Link
                             href="/code/git/overview"
@@ -521,18 +474,6 @@ const NavLinksCatto = () => {
                             Push
                           </Link>
                         </li>
-                        {/* <li>
-                            <Link href="/code/git/init" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                              onClick={handleCloseAllClick}>
-                              Init2
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="/code/git/init" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                              onClick={handleCloseAllClick}>
-                              Init3
-                            </Link>
-                          </li> */}
                       </ul>
                     </div>
                   </li>
@@ -541,7 +482,6 @@ const NavLinksCatto = () => {
             </li>
             {/* About Link */}
             <li>
-              {/* <li className='h-2.5 leading-[2.5rem] justify-center'> */}
               <Link
                 href="/about"
                 onClick={handleNavAboutClick}
@@ -560,11 +500,11 @@ const NavLinksCatto = () => {
               </Link>
             </li>
             {/* Next-Auth Login Logout */}
-            {/* <li> */}
-            {/* <AuthClientInOutWrapperCatto>
-                  {children}
-                </AuthClientInOutWrapperCatto> */}
-            {/* </li> */}
+            {/* <li>
+              <AuthClientInOutWrapperCatto>
+                {children}
+              </AuthClientInOutWrapperCatto>
+            </li> */}
           </ul>
         </div>
       </div>
