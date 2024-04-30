@@ -1,4 +1,4 @@
-/// <reference path="path/to/node_modules/@types/react-syntax-highlighter/index.d.ts" />
+/// <reference path="/node_modules/@types/react-syntax-highlighter/index.d.ts" />
 // https://github.com/storybookjs/storybook/issues/11684 
 // Thanks to Jessidhia on Github
 declare module 'react-syntax-highlighter/dist/cjs/create-element' {
