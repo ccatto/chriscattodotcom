@@ -3,7 +3,8 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 // import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { materialDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-// import  from '@/app/lib/react-syntax-highlighter';
+// import * from '../../../../app/lib/react-syntax-highlighter';
+// './app/lib/react-syntax-highlighter';
 // import { oneDark } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 
 // #todo: pass in an array
