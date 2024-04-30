@@ -1,17 +1,19 @@
 // CarouselCatto2.tsx
-"use client"
-import Image from 'next/image'
-import React, { useEffect, useRef, useState } from 'react'
+'use client';
+import Image from 'next/image';
+import React, { useEffect, useRef, useState } from 'react';
 
-const CarouselCatto3 = ({ data }: {
+const CarouselCatto3 = ({
+  data,
+}: {
   data: {
-    image: string
-  }[]
+    image: string;
+  }[];
 }) => {
   // State and Ref initialization
-  const [currentImg, setCurrentImg] = useState(0)
-  const [carouselSize, setCarouselSize] = useState({ width: 0, height: 0 })
-  const carouselRef = useRef(null)
+  const [currentImg, setCurrentImg] = useState(0);
+  const [carouselSize, setCarouselSize] = useState({ width: 0, height: 0 });
+  const carouselRef = useRef(null);
   let totalSlides = data.length; // Total slides
   console.log('totalSlides === ', totalSlides);
   console.log('currentImg number === ', currentImg);
@@ -25,8 +27,8 @@ const CarouselCatto3 = ({ data }: {
         setCurrentImg(currentImg + 1);
       }
       event.preventDefault();
-    }
-  }
+    };
+  };
   const clickPreviousHandler = () => {
     return (event: React.MouseEvent) => {
       console.log('inside PREVIOUS CLICK');
@@ -38,19 +40,19 @@ const CarouselCatto3 = ({ data }: {
         setCurrentImg(currentImg - 1);
       }
       event.preventDefault();
-    }
-  }
+    };
+  };
   // useEffect to get the initial carousel size
   useEffect(() => {
-    let elem = carouselRef.current as unknown as HTMLDivElement
-    let { width, height } = elem.getBoundingClientRect()
+    let elem = carouselRef.current as unknown as HTMLDivElement;
+    let { width, height } = elem.getBoundingClientRect();
     if (carouselRef.current) {
       setCarouselSize({
         width,
         height,
-      })
+      });
     }
-  }, [])
+  }, []);
 
   return (
     <>
@@ -64,36 +66,34 @@ const CarouselCatto3 = ({ data }: {
         <div
           ref={carouselRef}
           style={{
-            left: -currentImg * carouselSize.width
+            left: -currentImg * carouselSize.width,
           }}
-
-          className='relative h-56 overflow-hidden rounded-lg md:h-96'>
+          className="relative h-56 overflow-hidden rounded-lg md:h-96"
+        >
           {/* Map through data to render images */}
           {data.map((v, i) => (
-            <div key={i} className='duration-700 ease-in-out'>
+            <div key={i} className="duration-700 ease-in-out">
               <Image
-                className='block w-full'
+                className="block w-full"
                 alt={`carousel-image-${i}`}
                 fill
-                src={v.image || "/hero-desktop.png"}
+                src={v.image || '/hero-desktop.png'}
               />
             </div>
           ))}
         </div>
         {/* </div> */}
-
-
       </div>
 
       {/* Navigation buttons */}
-      <div className='flex justify-center mt-3'>
+      <div className="mt-3 flex justify-center">
         <button
           // disabled={currentImg === 0}
           onClick={clickPreviousHandler()}
           // onClick={() => setCurrentImg(prev => prev - 1)}
           className={`border px-4 py-2 font-bold ${currentImg === 0 && 'opacity-50'}`}
         >
-          {"<"}
+          {'<'}
         </button>
         <button
           // disabled={currentImg === data.length - 1}
@@ -102,11 +102,11 @@ const CarouselCatto3 = ({ data }: {
           // onClick={() => setCurrentImg(prev => prev + 1)}
           className={`border px-4 py-2 font-bold ${currentImg === data.length - 1 && 'opacity-50'}`}
         >
-          {">"}
+          {'>'}
         </button>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default CarouselCatto3
+export default CarouselCatto3;

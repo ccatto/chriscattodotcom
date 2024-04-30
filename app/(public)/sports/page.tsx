@@ -1,3 +1,3 @@
 export default function Page() {
-    return <p>Sports Page</p>;
+  return <p>Sports Page</p>;
 }

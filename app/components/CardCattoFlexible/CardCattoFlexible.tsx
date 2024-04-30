@@ -1,19 +1,15 @@
-
-
 type Props = {
-  title: string,
-  description: string,
+  title: string;
+  description: string;
   // isButton?: boolean,
   // buttonText: string,
-}
+};
 
-const CardCattoFlexible = ({ title, description}: Props ) => {
+const CardCattoFlexible = ({ title, description }: Props) => {
   return (
     <>
-        <div className="bg-red-800 h-96">
-        CardCattoFlexible
-        </div>
+      <div className="h-96 bg-red-800">CardCattoFlexible</div>
     </>
-  )
-}
+  );
+};
 export default CardCattoFlexible;

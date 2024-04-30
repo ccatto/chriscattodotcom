@@ -1,50 +1,58 @@
-import { Metadata } from 'next'
-import JumbotronCattoFlexible from "@/app/components/JumbotronCattoFlexible/JumbotronCattoFlexible"
-import Link from 'next/link'
+import { Metadata } from 'next';
+import JumbotronCattoFlexible from '@/app/components/JumbotronCattoFlexible/JumbotronCattoFlexible';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Chris Catto Code JavaScript Fundamentals',
-  description: 'Chris Catto JavaScript Fundamentals'
-}
+  description: 'Chris Catto JavaScript Fundamentals',
+};
 
 const fundamentals = () => {
   return (
     <>
-      <div className="flex flex-col flex-nowrap h-screen w-full ">
-        <div className='flex-[20]'>
+      <div className="flex h-full w-full flex-col flex-nowrap ">
+        <div className="flex-[20]">
           <JumbotronCattoFlexible
             title="JavaScript Fundamentals"
             description="JavaScript fundamentals including a hello world example; variables data types; operations; functions ect. "
           />
         </div>
         <hr className="p-0" />
-        <div className='flex-[80] m-4 p-4 rounded-2xl dark:bg-[#f7df1e] text-black ring-2 ring-gray-300 dark:ring-gray-500'>
-          <h2 className="inline-block mb-4 text-3xl font-extrabold tracking-tight">
+        <div className="m-4 flex-[80] rounded-2xl p-4 text-black ring-2 ring-gray-300 dark:bg-[#f7df1e] dark:ring-gray-500">
+          <h2 className="mb-4 inline-block text-3xl font-extrabold tracking-tight">
             JavaScript Fundamentals
           </h2>
-          <div className='pl-10'>
+          <div className="pl-10">
             <ul>
               <li>
-                <Link href="/code/javascript/fundamentals/helloworld"
-                  className="flex items-center p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white group">
+                <Link
+                  href="/code/javascript/fundamentals/helloworld"
+                  className="group flex items-center rounded-lg p-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
+                >
                   Hello World!
                 </Link>
               </li>
               <li>
-                <Link href="/code/javascript/fundamentals/fundamentals"
-                  className="flex items-center p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white group">
+                <Link
+                  href="/code/javascript/fundamentals/fundamentals"
+                  className="group flex items-center rounded-lg p-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
+                >
                   Fundamentals
                 </Link>
               </li>
               <li>
-                <Link href="/code/javascript/fundamentals/functions"
-                  className="flex items-center p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white group">
+                <Link
+                  href="/code/javascript/fundamentals/functions"
+                  className="group flex items-center rounded-lg p-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
+                >
                   Functions
                 </Link>
               </li>
               <li>
-                <Link href="/code/javascript/fundamentals/objects"
-                  className="flex items-center p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white group">
+                <Link
+                  href="/code/javascript/fundamentals/objects"
+                  className="group flex items-center rounded-lg p-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
+                >
                   Objects
                 </Link>
               </li>
@@ -53,7 +61,7 @@ const fundamentals = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
 export default fundamentals;
