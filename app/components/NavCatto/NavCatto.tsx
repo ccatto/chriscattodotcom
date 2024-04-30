@@ -14,13 +14,28 @@ import AuthHeaderCatto4 from '../UI/AuthHeaderCatto4/AuthHeaderCatto4';
 
 // import AppBarCatto from '../UI/AppBarCatto/AppBarCatto';
 // import AppBarCatto from '../UI/AppBarCatto/AppBarCatto';
-import AuthSignOutButtonParentCatto from '../UI/AuthSignOutButtonParentCatto/AuthSignOutButtonParentCatto';
+// import AuthSignOutButtonParentCatto from '../UI/AuthSignOutButtonParentCatto/AuthSignOutButtonParentCatto';
+import AuthSignInButtonCatto from '../UI/AuthSignInButtonCatto/AuthSignInButtonCatto';
 import AuthSignOutButtonCatto from '../UI/AuthSignOutButtonCatto/AuthSignOutButtonCatto';
 import AppBarSignOutCatto from '../UI/AppBarSignOutCatto/AppBarSignOutCatto';
 import AppBarSignInCatto from '../UI/AppBarSignInCatto/AppBarSignInCatto';
 
+import AuthSignInClientWrapperCatto from '../UI-client-server/AuthSignInClientWrapperCatto/AuthSignInClientWrapperCatto';
+import AuthSignOutClientWrapperCatto from '../UI-client-server/AuthSignOutClientWrapperCatto/AuthSignOutClientWrapperCatto';
 
-const NavCatto = () => {
+import AuthClientInOutWrapperCatto from '../UI-client-server/AuthClientInOutWrapperCatto/AuthClientInOutWrapperCatto';
+import AuthServerInOutFormsCatto from '../UI-client-server/AuthServerInOutFormsCatto/AuthServerInOutFormsCatto';
+
+import AppBarCattoBackup from '../UI/AppBarCattoBackup/AppBarCattoBackup';
+
+import AppBar from '@/app/appbar';
+import AppBar44 from '@/app/appbar44';
+
+const NavCatto = ({
+  children
+}: {
+  children: React.ReactNode
+}) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isNavLevel1Item1Open, setIsNavLevel1Item1Open] = useState(false);
   const [isNavLevel2Item1Open, setIsNavLevel2Item1Open] = useState(false);
@@ -603,9 +618,31 @@ const NavCatto = () => {
               {/* <AuthHeaderCatto4 /> */}
               {/* <AppBarCatto /> */}
               {/* <AuthSignOutButtonParentCatto/> */}
-              <AuthSignOutButtonCatto>
+
+              <h3>app bar wrapped</h3>
+              {/*    <AppBar/> */}
+              <AuthClientInOutWrapperCatto>
+                {/* <AppBar44 /> */}
+                {children}
+              </AuthClientInOutWrapperCatto>
+
+              <h3>sign in below</h3>
+
+              {/* <AuthClientInOutWrapperCatto>
+                <AuthServerInOutFormsCatto />
+              </AuthClientInOutWrapperCatto> */}
+
+              {/* <AuthSignInClientWrapperCatto>
+                <AppBarSignInCatto />
+              </AuthSignInClientWrapperCatto> */}
+              {/* <AuthSignInButtonCatto> */}
+              {/* <AppBarSignInCatto/> */}
+              {/* </AuthSignInButtonCatto> */}
+              <hr />
+              <h3>sign out below</h3>
+              {/* <AuthSignOutButtonCatto>
                 <AppBarSignOutCatto />
-              </AuthSignOutButtonCatto>
+              </AuthSignOutButtonCatto> */}
             </ul>
           </div>
         </div>

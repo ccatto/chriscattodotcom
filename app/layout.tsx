@@ -15,7 +15,7 @@ import SessionProviderWrapperCatto from './components/SessionProviderWrapperCatt
 
 // import SessionProvider from "./components/SessionProvider";
 // import SessionProvider from "/SessionProvider";
-// import AppBar from './appbar';
+import AppBar from './appbar';
 // import AppBarCatto from './components/UI/AppBarCatto/AppbarCatto';
 
 
