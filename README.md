@@ -35,6 +35,8 @@ Current node version is 20.9.0 as of March 26th 2024;
 * using @auth/prisma-adapter for auth adapter
 * using @auth/prisma-adapter for data base adapter for next-auth v5
 
+Needed to update tsconfig.json to add `"noImplicitAny": false,` to resolve the react-syntax-highlighter type error. 
+
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> 
     <a href="https://aws.amazon.com/amplify/" target="_blank" rel="noreferrer"> <img src="https://docs.amplify.aws/assets/logo-dark.svg" alt="amplify" width="40" height="40"/> </a> 
