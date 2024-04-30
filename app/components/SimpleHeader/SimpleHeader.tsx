@@ -1,10 +1,8 @@
 const SimpleHeader = () => {
   return (
     <>
-        <header className="bg-blue-50 ">
-            header Text
-        </header>
+      <header className="bg-blue-50 ">header Text</header>
     </>
-  )
-}
-export default SimpleHeader
+  );
+};
+export default SimpleHeader;

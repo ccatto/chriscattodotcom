@@ -19,17 +19,18 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "auth": ["./auth.ts"]
     }
   },
   "include": [
-    "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/lib/placeholder-data.js",
-    "scripts/seed.js"
+    "scripts/seed.js",
+    "app/ui/pages"
   ],
   "exclude": ["node_modules"],
-  "types": ["@types/gtag.js"],
+  "types": ["@types/gtag.js"]
 }

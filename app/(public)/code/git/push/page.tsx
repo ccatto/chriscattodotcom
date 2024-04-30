@@ -1,29 +1,29 @@
-import { Metadata } from 'next'
-import JumbotronCattoFlexible from "@/app/components/JumbotronCattoFlexible/JumbotronCattoFlexible"
-import CommandPromptDisplay from '@/app/components/Utils/CommandPromptDisplay/CommandPromptDisplay'
+import { Metadata } from 'next';
+import JumbotronCattoFlexible from '@/app/components/JumbotronCattoFlexible/JumbotronCattoFlexible';
+import CommandPromptDisplay from '@/app/components/Utils/CommandPromptDisplay/CommandPromptDisplay';
 
 export const metadata: Metadata = {
   title: 'Chris Catto Code Git Tutorial Commands Push',
-  description: 'Chris Catto Code Git Tutorial Commands Push'
-}
+  description: 'Chris Catto Code Git Tutorial Commands Push',
+};
 
 export default function Page() {
   return (
-    <div className="flex flex-col flex-nowrap h-screen w-full ">
-      <div className='flex-[20]'>
+    <div className="flex h-screen w-full flex-col flex-nowrap ">
+      <div className="flex-[20]">
         <JumbotronCattoFlexible
           title="Git Command Push"
           description="Push is a command we can use to upload local repo content to a remote repo."
         />
       </div>
       <hr className="p-0" />
-      <div className='flex-[80] dark:bg-gray-700 p-2'>
-        <h2 className="inline-block mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+      <div className="flex-[80] p-2 dark:bg-gray-700">
+        <h2 className="mb-4 inline-block text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
           Terminal example:
         </h2>
         <CommandPromptDisplay
-          command='git push'
-          output='remote: Resolving deltas: 100% (8/8), completed with 4 local objects.'
+          command="git push"
+          output="remote: Resolving deltas: 100% (8/8), completed with 4 local objects."
         />
         {/* 
             Enumerating objects: 29, done.
@@ -38,5 +38,5 @@ export default function Page() {
       </div>
       {/* <hr className="m-3" /> */}
     </div>
-  )
+  );
 }
