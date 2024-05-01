@@ -31,12 +31,7 @@ const ContactFormCatto = () => {
   });
 
   const onSubmit: SubmitHandler<FormFields> = async (data) => {
-    console.log("🚀 ~ constonSubmit:SubmitHandler<FormFields>= ~ data:", data)
     try {
-      // simple await 1 second to prove await with async
-      // await new Promise((resolve) => setTimeout(resolve, 1000));
-
-      console.log("-------- inside onSubmit");
       const response = await fetch('api/email', {
         method: 'POST',
         headers: {
@@ -44,9 +39,6 @@ const ContactFormCatto = () => {
         },
         body: JSON.stringify(data),
       });
-
-      // console.log("🚀 ~ conston Submit:SubmitHandler<FormFields>= ~ response:", response)
-      // console.log('data == ', data);
     } catch {
       setError('root', {
         message: 'This is an error with the form',
@@ -150,15 +142,15 @@ const ContactFormCatto = () => {
         </div>
       )}
       {isSubmitSuccessfulTrue && (
-        <div className="items-center h-full justify-center grid md:grid-cols-1 mt-5">
-          <div className='flex items-center justify-center'>
+        <div className="mt-5 grid h-full items-center justify-center md:grid-cols-1">
+          <div className="flex items-center justify-center">
             <JumbotronCattoFlexible
               title="Your message has been sent to Chris Catto"
               description="I appreciate you reaching out to me and sending me a message. I will receive it in my email. Let's stay in touch!"
             />
           </div>
           <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-200 md:my-10" />
-          <div className="flex items-center justify-center mb-5">
+          <div className="mb-5 flex items-center justify-center">
             <Link
               href="/code"
               className="inline-flex items-center justify-center rounded-lg bg-blue-700 px-5 py-2.5 text-center text-base font-medium text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"

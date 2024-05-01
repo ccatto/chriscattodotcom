@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <div className=' min-h-[calc(100vh-27rem)]'>
+    <div className="min-h-[calc(100vh-27rem)]">
       <ContactFormCatto />
     </div>
   );

@@ -3,13 +3,12 @@ import nodemailer from 'nodemailer';
 import Mail from 'nodemailer/lib/mailer';
 
 export async function POST(request: NextRequest) {
-  
   // console.log("inside POST Route request === ", request);
   const { email, name, userNote } = await request.json();
   // console.log("🚀 ~ POST ~ message:", userNote)
   // console.log("🚀 ~ POST ~ name:", name)
   // console.log("email = ", email);
-  
+
   const transport = nodemailer.createTransport({
     service: 'gmail',
     /* 
