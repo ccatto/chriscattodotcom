@@ -499,6 +499,25 @@ const NavLinksCatto = () => {
                 <span>About</span>
               </Link>
             </li>
+            {/* Contact Link */}
+            <li>
+              <Link
+                href="/contact"
+                onClick={handleNavAboutClick}
+                className={clsx(
+                  {
+                    'block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white':
+                      pathName === '/contact',
+                  },
+                  {
+                    'block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500':
+                      pathName !== '/contact',
+                  },
+                )}
+              >
+                <span>Contact Me</span>
+              </Link>
+            </li>
             {/* Next-Auth Login Logout */}
             {/* <li>
               <AuthClientInOutWrapperCatto>
