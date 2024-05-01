@@ -1,6 +1,10 @@
 import { Metadata } from 'next';
-import JumbotronCattoFlexible from '@/app/components/JumbotronCattoFlexible/JumbotronCattoFlexible';
-import CommandPromptDisplay from '@/app/components/Utils/CommandPromptDisplay/CommandPromptDisplay';
+// import JumbotronCattoFlexible from '@/app/components/JumbotronCattoFlexible/JumbotronCattoFlexible';
+// import CommandPromptDisplay from '@/app/components/Utils/CommandPromptDisplay/CommandPromptDisplay';
+import JumbotronCattoFlexible from '../../../../components/JumbotronCattoFlexible/JumbotronCattoFlexible';
+import CommandPromptDisplay from '../../../..//components/Utils/CommandPromptDisplay/CommandPromptDisplay';
+
+import React from 'react';
 
 export const metadata: Metadata = {
   title: 'Chris Catto Code Git Tutorial Commands Branch',
