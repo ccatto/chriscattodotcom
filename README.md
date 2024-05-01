@@ -34,6 +34,10 @@ Current node version is 20.9.0 as of March 26th 2024;
 * using next-auth for authentication
 * using @auth/prisma-adapter for auth adapter
 * using @auth/prisma-adapter for data base adapter for next-auth v5
+* using nodemailer for sending emails;
+* using react-hook-form for forms
+* using @hookform/resolvers for access to resolvers we can plug into our forms
+* using zod for validation library;
 
 Needed to update tsconfig.json to add `"noImplicitAny": false,` to resolve the react-syntax-highlighter type error.
 

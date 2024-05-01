@@ -18,9 +18,11 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".",
     "paths": {
       "@/*": ["./*"],
-      "auth": ["./auth.ts"]
+      "auth": ["./auth.ts"],
+      "@components/*": ["./components/*"]
     },
     "noImplicitAny": false
   },
@@ -30,7 +32,8 @@
     ".next/types/**/*.ts",
     "app/lib/placeholder-data.js",
     "scripts/seed.js",
-    "app/ui/pages"
+    "app/ui/pages",
+    "app/(public)/contact/simpleform"
   ],
   "exclude": ["node_modules"],
   "types": ["@types/gtag.js"]
