@@ -53,11 +53,13 @@ const FooterCatto = () => {
                   <h2 className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
                     <Link href="/about">About</Link>
                   </h2>
-                  {/* <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                  <ul className="text-gray-500 dark:text-gray-400 font-medium">
                     <li className="mb-4">
-                      <a href="https://github.com/themesberg/flowbite" className="hover:underline ">Resume</a>
+                      <Link href="/contact" className="hover:underline ">
+                        Contact Me ✉️
+                      </Link>
                     </li>
-                  </ul> */}
+                  </ul>
                 </div>
                 <div>
                   <h2 className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
