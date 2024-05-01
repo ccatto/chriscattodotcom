@@ -7,7 +7,7 @@ async function main() {
   // const allUsers = await prisma.user.findMany()
   // console.log(allUsers)
   const playTableData = await prisma.playing_with_neon.findMany();
-  console.log('playTableData ===', playTableData);
+  // console.log('playTableData ===', playTableData);
 }
 
 main()
