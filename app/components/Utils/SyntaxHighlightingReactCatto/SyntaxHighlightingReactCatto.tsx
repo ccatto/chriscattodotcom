@@ -90,8 +90,8 @@ const SyntaxHighlightingReactCatto = ({
 
   return (
     // <div className=''>
-    <div className='lg:w-full w-[18rem]'>
-    {/* <div className='w-[37rem] lg:w-full'> */}
+    <div className="w-[18rem] lg:w-full">
+      {/* <div className='w-[37rem] lg:w-full'> */}
       <SyntaxHighlighter
         language="javascript"
         style={materialDark}

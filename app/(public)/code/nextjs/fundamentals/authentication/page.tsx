@@ -38,10 +38,11 @@ const authentication = () => {
             <div>
               <ul className="text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li className="m-5">
-                  Authentication is an important piece of many sites. I currently
-                  choose to use the package 'next-auth'. There is currently v5
-                  which has some breaking changes to v4; this tutorial of setting
-                  up authenticaion in Next.js 14 is utlizing v5.
+                  Authentication is an important piece of many sites. I
+                  currently choose to use the package 'next-auth'. There is
+                  currently v5 which has some breaking changes to v4; this
+                  tutorial of setting up authenticaion in Next.js 14 is utlizing
+                  v5.
                   <Link
                     target="_blank"
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -142,15 +143,17 @@ const authentication = () => {
                       className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                       role="alert"
                     >
-                      <div className="flex flex-wrap lg:flex-nowrap items-center">
-                        <h3 className="lg:basis-1/4 font-medium mb-3 lg:mb-0">
+                      <div className="flex flex-wrap items-center lg:flex-nowrap">
+                        <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                           1. Install next-auth
                         </h3>
-                        <div className="lg:ml-5 w-full lg:basis-3/4 rounded-2xl bg-slate-600 p-2">
-                          <div className='indent-4'>
+                        <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
+                          <div className="indent-4">
                             To install next-auth we add the package.
                           </div>
-                          <SyntaxHighlightingReactCatto codeString={codeBlock} />
+                          <SyntaxHighlightingReactCatto
+                            codeString={codeBlock}
+                          />
                         </div>
                       </div>
                     </div>
@@ -160,11 +163,11 @@ const authentication = () => {
                       className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                       role="alert"
                     >
-                      <div className="flex flex-wrap lg:flex-nowrap items-center">
-                        <h3 className="lg:basis-1/4 font-medium mb-3 lg:mb-0">
+                      <div className="flex flex-wrap items-center lg:flex-nowrap">
+                        <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                           2. Define .env var
                         </h3>
-                        <div className="lg:ml-5 w-full lg:basis-3/4 rounded-2xl bg-slate-600 p-2">
+                        <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className="indent-4">
                             In our .env file we add the follow: <br />
                             In v5 the naming convention is nicer since it's all
@@ -174,9 +177,12 @@ const authentication = () => {
                               <li>* then Provider name</li>
                               <li>* Suffix is ID || Client</li>
                             </ol>
-                            For example something like: AUTH_Provider_ ID || CLIENT
+                            For example something like: AUTH_Provider_ ID ||
+                            CLIENT
                           </div>
-                          <SyntaxHighlightingReactCatto codeString={codeBlock2} />
+                          <SyntaxHighlightingReactCatto
+                            codeString={codeBlock2}
+                          />
                         </div>
                       </div>
                     </div>
@@ -186,14 +192,14 @@ const authentication = () => {
                       className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                       role="alert"
                     >
-                      <div className="flex flex-wrap lg:flex-nowrap items-center">
-                        <h3 className="lg:basis-1/4 font-medium mb-3 lg:mb-0">
+                      <div className="flex flex-wrap items-center lg:flex-nowrap">
+                        <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                           2.5 Create OAuth Id's & Secret's
                         </h3>
-                        <div className="lg:ml-5 w-full lg:basis-3/4 rounded-2xl bg-slate-600 p-2">
-                          <div className='indent-4'>
-                            The OAuth provider Id & Secrete is obtained from each
-                            provider & is slightly different for each.
+                        <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
+                          <div className="indent-4">
+                            The OAuth provider Id & Secrete is obtained from
+                            each provider & is slightly different for each.
                           </div>
                           <br />
                           For example this is a good resource for{' '}
@@ -213,7 +219,9 @@ const authentication = () => {
                           >
                             list of Auth.js OAuth providers
                           </Link>
-                          <SyntaxHighlightingReactCatto codeString={codeBlock3} />
+                          <SyntaxHighlightingReactCatto
+                            codeString={codeBlock3}
+                          />
                         </div>
                       </div>
                     </div>
@@ -223,18 +231,18 @@ const authentication = () => {
                       className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                       role="alert"
                     >
-                      <div className="flex flex-wrap lg:flex-nowrap items-center">
-                        <h3 className="lg:basis-1/4 font-medium mb-3 lg:mb-0">
+                      <div className="flex flex-wrap items-center lg:flex-nowrap">
+                        <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                           3. auth.ts
                         </h3>
-                        <div className="lg:ml-5 w-full lg:basis-3/4 rounded-2xl bg-slate-600 p-2">
+                        <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className=" indent-4">
                             Creating auth.ts in root directory allows us to add
                             config & authentication for our providers.
                           </div>
                           <SyntaxHighlightingReactCatto
-                              codeString={codeblock4authts}
-                            />
+                            codeString={codeblock4authts}
+                          />
                         </div>
                       </div>
                     </div>
@@ -244,14 +252,14 @@ const authentication = () => {
                       className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                       role="alert"
                     >
-                      <div className="flex flex-wrap lg:flex-nowrap items-center">
-                        <h3 className="lg:basis-1/4 font-medium mb-3 lg:mb-0">
+                      <div className="flex flex-wrap items-center lg:flex-nowrap">
+                        <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                           4. Add SessionProvider & wrap layout
                         </h3>
-                        <div className="lg:ml-5 w-full lg:basis-3/4 rounded-2xl bg-slate-600 p-2">
+                        <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className="indent-4">
-                            Session provider we can add the import & the wrap our
-                            layout.
+                            Session provider we can add the import & the wrap
+                            our layout.
                           </div>
                           <SyntaxHighlightingReactCatto
                             codeString={codeBlock4SessionProvider}
@@ -265,11 +273,11 @@ const authentication = () => {
                       className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                       role="alert"
                     >
-                      <div className="flex flex-wrap lg:flex-nowrap items-center">
-                        <h3 className="lg:basis-1/4 font-medium mb-3 lg:mb-0">
+                      <div className="flex flex-wrap items-center lg:flex-nowrap">
+                        <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                           5. Add API ...nextauth route
                         </h3>
-                        <div className="lg:ml-5 w-full lg:basis-3/4 rounded-2xl bg-slate-600 p-2">
+                        <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className="indent-4">
                             We need to add the API route & the relative path is
                             `app/api/auth/[...nextauth]/route.ts`
@@ -304,8 +312,8 @@ const authentication = () => {
               </p>
               <br />
               <p>
-                We can also implement middleware to cover the whole app & here is
-                some documentation:{' '}
+                We can also implement middleware to cover the whole app & here
+                is some documentation:{' '}
                 <Link
                   href="https://nextjs.org/docs/app/building-your-application/routing/middleware"
                   target="_blank"
