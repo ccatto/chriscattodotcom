@@ -1,4 +1,5 @@
 'use client';
+import React from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 // import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { materialDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
@@ -88,14 +89,19 @@ const SyntaxHighlightingReactCatto = ({
   // });
 
   return (
-    <SyntaxHighlighter
-      language="javascript"
-      style={materialDark}
-      showLineNumbers
-    >
-      {codeString}
-      {/* {addLineBreak(str)} */}
-    </SyntaxHighlighter>
+    // <div className=''>
+    <div className="w-[18rem] lg:w-full">
+      {/* <div className='w-[37rem] lg:w-full'> */}
+      <SyntaxHighlighter
+        language="javascript"
+        style={materialDark}
+        showLineNumbers
+        wrapLines={true}
+      >
+        {codeString}
+        {/* {addLineBreak(str)} */}
+      </SyntaxHighlighter>
+    </div>
   );
 };
 

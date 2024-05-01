@@ -22,7 +22,7 @@
       "@/*": ["./*"],
       "auth": ["./auth.ts"]
     },
-    "noImplicitAny": false,
+    "noImplicitAny": false
   },
   "include": [
     "**/*.ts",

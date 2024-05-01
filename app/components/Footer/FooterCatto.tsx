@@ -5,7 +5,7 @@ import Link from 'next/link';
 const FooterCatto = () => {
   return (
     <>
-      <footer className="bg-white p-6 dark:bg-gray-900">
+      <footer className="w-full bg-white p-6 dark:bg-gray-900">
         <div className=" m-4 rounded-xl bg-white shadow dark:bg-gray-800">
           <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div className="md:flex md:justify-between">

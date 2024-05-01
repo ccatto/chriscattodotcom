@@ -1,7 +1,8 @@
 import { Metadata } from 'next';
-import JumbotronCattoFlexible from '@/app/components/JumbotronCattoFlexible/JumbotronCattoFlexible';
-import SyntaxHighlightingReactCatto from '@/app/components/Utils/SyntaxHighlightingReactCatto/SyntaxHighlightingReactCatto';
+// import JumbotronCattoFlexible from '@/app/components/JumbotronCattoFlexible/JumbotronCattoFlexible';
+import JumbotronCattoFlexible from '../../../../../components/JumbotronCattoFlexible/JumbotronCattoFlexible';
 import Link from 'next/link';
+import React from 'react';
 
 export const metadata: Metadata = {
   title: 'Chris Catto Code Next.js Fundamentals Routing',
