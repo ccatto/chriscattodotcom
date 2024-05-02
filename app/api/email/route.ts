@@ -10,8 +10,8 @@ export async function POST(request: NextRequest) {
   // console.log("email = ", email);
 
   const transport = nodemailer.createTransport({
-    // service: 'gmail',
-    host: "smtp.gmail.com",
+    service: 'gmail',
+    // host: "smtp.gmail.com",
     port: 465,
     secure: true,
 
