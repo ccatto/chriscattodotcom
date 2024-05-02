@@ -10,8 +10,8 @@ export async function POST(request: NextRequest) {
   // console.log("email = ", email);
 
   const transport = nodemailer.createTransport({
-    // service: 'gmail',
-    host: "smtp.gmail.com",
+    service: 'gmail',
+    // host: "smtp.gmail.com",
     port: 465,
     secure: true,
 
@@ -27,6 +27,7 @@ export async function POST(request: NextRequest) {
       https://github.com/nodemailer/nodemailer/blob/master/lib/well-known/services.json
   */
     auth: {
+      // might need oauth2
       // type: "OAuth2",
       user: process.env.NODEMAILER_MY_EMAIL,
       pass: process.env.NODEMAILER_PASSWORD,
