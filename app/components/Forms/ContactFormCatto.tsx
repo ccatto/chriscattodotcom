@@ -17,7 +17,7 @@ type FormFields = z.infer<typeof schema>;
 
 const ContactFormCatto = () => {
   const [isSubmitSuccessfulTrue, setIsSubmitSuccessfulTrue] = useState(false);
-  const [isEmailSentFail500, setIsEmailSentFail500] = useState(true);
+  const [isEmailSentFail500, setIsEmailSentFail500] = useState(false);
   const {
     register,
     handleSubmit,
