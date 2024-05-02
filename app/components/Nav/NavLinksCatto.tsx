@@ -500,7 +500,7 @@ const NavLinksCatto = () => {
               </Link>
             </li>
             {/* Contact Link */}
-            <li>
+            {/* <li>
               <Link
                 href="/contact"
                 onClick={handleNavAboutClick}
@@ -517,7 +517,8 @@ const NavLinksCatto = () => {
               >
                 <span>Contact Me</span>
               </Link>
-            </li>
+            </li> */}
+
             {/* Next-Auth Login Logout */}
             {/* <li>
               <AuthClientInOutWrapperCatto>
