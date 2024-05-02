@@ -17,7 +17,7 @@ type FormFields = z.infer<typeof schema>;
 
 const ContactFormCatto = () => {
   const [isSubmitSuccessfulTrue, setIsSubmitSuccessfulTrue] = useState(false);
-
+  const [isEmailSentFail500, setIsEmailSentFail500] = useState(false);
   const {
     register,
     handleSubmit,
@@ -32,6 +32,7 @@ const ContactFormCatto = () => {
 
   const onSubmit: SubmitHandler<FormFields> = async (data) => {
     try {
+      setIsEmailSentFail500(false);
       const response = await fetch('api/email', {
         method: 'POST',
         headers: {
@@ -39,18 +40,16 @@ const ContactFormCatto = () => {
         },
         body: JSON.stringify(data),
       });
+      if (response.status === 200 && response.statusText === 'OK') {
+        setIsSubmitSuccessfulTrue(true);
+      }
     } catch {
       setError('root', {
         message: 'This is an error with the form',
       });
+      setIsEmailSentFail500(true);
     }
   };
-
-  useEffect(() => {
-    if (isSubmitSuccessful) {
-      setIsSubmitSuccessfulTrue(true);
-    }
-  }, [isSubmitSuccessful]);
 
   return (
     <>
@@ -67,7 +66,7 @@ const ContactFormCatto = () => {
               <div className="mb-6 grid gap-6 md:grid-cols-1">
                 <div className="">
                   <label className="mb-2 block text-sm font-medium text-gray-900 dark:text-white">
-                    Email Address
+                    Your Email Address
                   </label>
                   <div className="relative">
                     <div className="pointer-events-none absolute inset-y-0 start-0 flex items-center ps-3.5">
@@ -150,10 +149,66 @@ const ContactFormCatto = () => {
           <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-200 md:my-10" />
           <div className="mb-5 flex items-center justify-center">
             <Link
-              href="/code"
+              href="/about"
               className="inline-flex items-center justify-center rounded-lg bg-blue-700 px-5 py-2.5 text-center text-base font-medium text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
             >
-              Check out some code
+              Check out my about page
+              <svg
+                className="ms-2 h-3.5 w-3.5 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </Link>
+            <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-200 md:my-10" />
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center rounded-lg bg-blue-700 px-5 py-2.5 text-center text-base font-medium text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+            >
+              Send another message
+              <svg
+                className="ms-2 h-3.5 w-3.5 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      )}
+      {isEmailSentFail500 && (
+        <div className="mt-5 grid h-full items-center justify-center md:grid-cols-1">
+          <div className="flex items-center justify-center">
+            <JumbotronCattoFlexible
+              title="Oops! There was an error"
+              description="There was a technical difficulty and please try again"
+            />
+          </div>
+          <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-200 md:my-10" />
+          <div className="mb-5 flex items-center justify-center">
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center rounded-lg bg-blue-700 px-5 py-2.5 text-center text-base font-medium text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+            >
+              Try the email again
               <svg
                 className="ms-2 h-3.5 w-3.5 rtl:rotate-180"
                 aria-hidden="true"

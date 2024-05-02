@@ -38,6 +38,7 @@ Current node version is 20.9.0 as of March 26th 2024;
 * using react-hook-form for forms
 * using @hookform/resolvers for access to resolvers we can plug into our forms
 * using zod for validation library;
+* using googleapis for google APIs & dynamically generate access token;
 
 Needed to update tsconfig.json to add `"noImplicitAny": false,` to resolve the react-syntax-highlighter type error.
 
