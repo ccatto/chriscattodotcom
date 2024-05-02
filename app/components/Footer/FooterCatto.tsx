@@ -53,7 +53,7 @@ const FooterCatto = () => {
                   <h2 className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
                     <Link href="/about">About</Link>
                   </h2>
-                  <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                  <ul className="font-medium text-gray-500 dark:text-gray-400">
                     <li className="mb-4">
                       <Link href="/contact" className="hover:underline ">
                         Contact Me ✉️
