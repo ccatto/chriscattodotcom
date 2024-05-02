@@ -2,6 +2,8 @@ import { type NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 const { google } = require('googleapis');
 const OAuth2 = google.auth.OAuth2;
+import { log } from '@logtail/next';
+
 // import Mail from 'nodemailer/lib/mailer';
 
 export async function POST(request: NextRequest) {
@@ -25,7 +27,7 @@ export async function POST(request: NextRequest) {
     const accessToken = await new Promise((resolve, reject) => {
       oauth2Client.getAccessToken((err, token) => {
         if (err) {
-          console.log('----- Error here cannot getAccessToken boo ------', err);
+          // console.log('----- Error here cannot getAccessToken boo ------', err);
           reject();
         }
         resolve(token);
@@ -57,8 +59,11 @@ export async function POST(request: NextRequest) {
         subject: `💌 -  ‼  - YO K8 Message from ${name} (${email})`,
         text: userNote,
       };
+      log.info("austin-austin: 2 about to call createTransporter");
       let emailTransporter = await createTransporter();
+      log.info("austin-austin: 3 obtained email transporter");
       await emailTransporter.sendMail(mailOptions);
+      log.info("austin-austin: 4 after sendMail with mail options");
 
       // #TODO explore utlizing a promise here instead of just calling function
       //   new Promise<string>((resolve, reject) => {
@@ -70,6 +75,7 @@ export async function POST(request: NextRequest) {
       //       }
       //     });
     } catch (err) {
+      log.error("austin-austin: 88 caught an error after sendMail");
       return NextResponse.json({ error: err }, { status: 500 });
       console.log('ERROR: ', err);
     }
@@ -77,9 +83,12 @@ export async function POST(request: NextRequest) {
 
   // call send email
   try {
+    log.info("austin-austin: 1 about to call send email");
     await sendSecureGoogleMail();
+    log.info("austin-austin: 5 after email sent about to return");
     return NextResponse.json({ message: 'Email sent' });
   } catch (err) {
+    log.error("austin-austin: 99 caught an error after sendMail");
     return NextResponse.json({ error: err }, { status: 500 });
   }
 
