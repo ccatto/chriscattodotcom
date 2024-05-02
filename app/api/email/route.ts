@@ -70,6 +70,7 @@ export async function POST(request: NextRequest) {
       //       }
       //     });
     } catch (err) {
+      return NextResponse.json({ error: err }, { status: 500 });
       console.log('ERROR: ', err);
     }
   };
