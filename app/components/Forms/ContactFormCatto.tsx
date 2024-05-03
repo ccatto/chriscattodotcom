@@ -25,7 +25,7 @@ const ContactFormCatto = () => {
     formState: { errors, isSubmitting, isSubmitSuccessful },
   } = useForm<FormFields>({
     defaultValues: {
-      userNote: 'Hello Chris Catto \n I wanted to let you know that the website is working. This is testing the import contact feature. Thanks Joe Catto.',
+      userNote: 'Hello Chris Catto \n ',
     },
     resolver: zodResolver(schema),
   });
@@ -42,11 +42,11 @@ const ContactFormCatto = () => {
         body: JSON.stringify(data),
       });
       if (response.status === 200 && response.statusText === 'OK') {
-        console.log('in success response === ', response);
+        // console.log('in success response === ', response);
         setIsSubmitSuccessfulTrue(true);
       }
     } catch {
-      console.log('YO an ERROR not 200');
+      // console.log('YO an ERROR not 200');
       setError('root', {
         message: 'This is an error with the form',
       });
@@ -133,7 +133,7 @@ const ContactFormCatto = () => {
                   type="submit"
                   className="mb-2 me-2 rounded-lg bg-blue-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
-                  {isSubmitting ? '📩 Mailing..' : '📨 Send Message YO'}
+                  {isSubmitting ? '📩 Mailing..' : '📨 Send Message'}
                 </button>
                 {errors.root && <div>{errors.root.message}</div>}
               </div>
