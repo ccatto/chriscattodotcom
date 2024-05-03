@@ -41,6 +41,7 @@ Current node version is 20.9.0 as of March 26th 2024;
 * using googleapis for google APIs & dynamically generate access token;
 * @logtail/next for https://betterstack.com/docs/logs/javascript/nextjs/
 * Using @sendgrid/mail to send email after issue with nodemailer on aws
+* @flydotio/dockerfile produces a dicker file 
 
 Needed to update tsconfig.json to add `"noImplicitAny": false,` to resolve the react-syntax-highlighter type error.
 
