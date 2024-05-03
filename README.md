@@ -24,6 +24,9 @@ Current node version is 20.9.0 as of March 26th 2024;
 
 ## April 23, 2024 Release 1.1.01
 
+* 003 release May 3rd 003 contact page | gridsend & fly.io udated
+
+
 - Release includes Layouts; Nav; 3 sections including Home; code & about.
 
 * using @next/third-parties for GA4.
