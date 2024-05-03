@@ -25,7 +25,7 @@ const ContactFormCatto = () => {
     formState: { errors, isSubmitting, isSubmitSuccessful },
   } = useForm<FormFields>({
     defaultValues: {
-      userNote: 'Hello Chris Catto ...',
+      userNote: 'Hello Chris Catto \n ',
     },
     resolver: zodResolver(schema),
   });
@@ -33,19 +33,23 @@ const ContactFormCatto = () => {
   const onSubmit: SubmitHandler<FormFields> = async (data) => {
     try {
       setIsEmailSentFail500(false);
-      const response = await fetch('api/email', {
+      const response = await fetch('api/sendgrid', {
+        // const response = await fetch('api/email', {
         method: 'POST',
         headers: {
           'content-type': 'application/json',
         },
         body: JSON.stringify(data),
       });
-      if (response.status === 200 && response.statusText === 'OK') {
-        console.log('in success response === ', response);
+      // console.log("response === ", response);
+      // console.log("response.status === ", response.status);
+      // console.log("response.statusText -=== ", response.statusText);
+      if (response.status === 200) {
+        // console.log('in success response === ', response);
         setIsSubmitSuccessfulTrue(true);
       }
     } catch {
-      console.log('YO an ERROR not 200');
+      // console.log('YO an ERROR not 200');
       setError('root', {
         message: 'This is an error with the form',
       });
@@ -198,7 +202,6 @@ const ContactFormCatto = () => {
               </Link>
             </div>
           </div>
-
         </div>
       )}
       {isEmailSentFail500 && (
