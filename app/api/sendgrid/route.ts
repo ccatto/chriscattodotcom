@@ -8,11 +8,16 @@ export async function POST(request: NextRequest) {
 
   sgMail.setApiKey(process.env.SENDGRID_API_KEY!);
   const msg = {
+    // to: process.env.NODEMAILER_MY_EMAIL,
+    // from: process.env.NODEMAILER_MY_EMAIL, // Use the email address or domain you verified above
     to: process.env.NODEMAILER_MY_EMAIL,
-    from: process.env.NODEMAILER_MY_EMAIL, // Use the email address or domain you verified above
-    subject: `💌 -  ‼  - YO Sendgrid K8 Message from ${name} (${email})`,
+    from: 'chriscatto3@gmail.com', // Use the email address or domain you verified above
+    // subject: 'Sending with Twilio SendGrid is Fun',
+    // text: 'and easy to do anywhere, even with Node.js',
+    html: `<strong>There is some info here. I am testing. ${userNote} and easy to do anywhere, even with Node.js</strong>`,
+    subject: `💌 -  ‼!  - YO Sendgrid K8 Message from ${name} (${email})`,
     text: userNote,
-    html: `<strong>${userNote} and easy to do anywhere, even with Node.js</strong>`,
+    // html: '<strong> and easy to do anywhere, even with Node.js</strong>',
   };
 
   // //ES6
