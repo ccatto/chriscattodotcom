@@ -33,7 +33,8 @@ const ContactFormCatto = () => {
   const onSubmit: SubmitHandler<FormFields> = async (data) => {
     try {
       setIsEmailSentFail500(false);
-      const response = await fetch('api/email', {
+      const response = await fetch('api/sendgrid', {
+      // const response = await fetch('api/email', {
         method: 'POST',
         headers: {
           'content-type': 'application/json',
