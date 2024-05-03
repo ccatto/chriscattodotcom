@@ -15,7 +15,7 @@ export async function POST(request: NextRequest) {
     // subject: 'Sending with Twilio SendGrid is Fun',
     // text: 'and easy to do anywhere, even with Node.js',
     html: `<strong>There is some info here. I am testing. ${userNote} and easy to do anywhere, even with Node.js</strong>`,
-    subject: `💌 -  ‼  - YO Sendgrid K8 Message from ${name} (${email})`,
+    subject: `💌 -  ‼!  - YO Sendgrid K8 Message from ${name} (${email})`,
     text: userNote,
     // html: '<strong> and easy to do anywhere, even with Node.js</strong>',
   };
