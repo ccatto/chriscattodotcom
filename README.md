@@ -26,6 +26,8 @@ Current node version is 20.9.0 as of March 26th 2024;
 
 - Release includes Layouts; Nav; 3 sections including Home; code & about.
 
+test git actions
+
 * using @next/third-parties for GA4.
 * using "react-syntax-highlighter": "^15.5.0", && @types/react-syntax-highlighter for syntax highlighting
 * using pg package v^8.11.5 for postgresql
