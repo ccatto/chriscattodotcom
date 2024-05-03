@@ -198,7 +198,6 @@ const ContactFormCatto = () => {
               </Link>
             </div>
           </div>
-
         </div>
       )}
       {isEmailSentFail500 && (
