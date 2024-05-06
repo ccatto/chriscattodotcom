@@ -47,6 +47,8 @@ test git actions
 * @logtail/next for https://betterstack.com/docs/logs/javascript/nextjs/
 * Using @sendgrid/mail to send email after issue with nodemailer on aws
 * @flydotio/dockerfile produces a dicker file 
+* using datejs open source js date library great for manipulating dates & times
+
 
 Needed to update tsconfig.json to add `"noImplicitAny": false,` to resolve the react-syntax-highlighter type error.
 
