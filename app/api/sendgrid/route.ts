@@ -2,7 +2,7 @@ import { type NextRequest, NextResponse } from 'next/server';
 import sgMail from '@sendgrid/mail';
 
 export async function POST(request: NextRequest) {
-  console.log("inside post sendgrid");
+  console.log('inside post sendgrid');
 
   const { email, name, userNote } = await request.json();
 

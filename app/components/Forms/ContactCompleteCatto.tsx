@@ -4,7 +4,6 @@ import JumbotronCattoFlexible from '@/app/components/JumbotronCattoFlexible/Jumb
 import Link from 'next/link';
 
 const ContactCompleteCatto = () => {
-
   return (
     <>
       <div className="mt-5 grid h-full items-center justify-center md:grid-cols-1">
@@ -65,7 +64,6 @@ const ContactCompleteCatto = () => {
           </div>
         </div>
       </div>
-
     </>
   );
 };

@@ -24,6 +24,33 @@ model Account {
   @@unique([providerId, providerAccountId])
 }
 
+
+model navigation {
+  navigation_id    Int       @id @default(autoincrement())
+  nav_name         String    @db.VarChar(40)
+  nav_link         String?   @db.VarChar(100)
+  nav_image        String?   @db.VarChar(100)
+  created_date     DateTime? @default(now()) @db.Timestamp(6)
+  nav_level        String?   @db.VarChar(10)
+  nav_one_level_up String?   @db.VarChar(80)
+}
+
+
+
+model pages {
+  page_id          Int       @id @default(autoincrement())
+  page_name        String    @db.VarChar(100)
+  page_title       String?   @db.VarChar(200)
+  page_description String?   @db.VarChar(2000)
+  created_date     DateTime? @default(now()) @db.Timestamp(6)
+}
+
+model playing_with_neon {
+  id    Int    @id @default(autoincrement())
+  name  String
+  value Float? @db.Real
+}
+
 model Session {
   id           String   @id @default(cuid())
   userId       String
@@ -59,26 +86,10 @@ model VerificationRequest {
 }
 
 
-model playing_with_neon {
-  id    Int    @id @default(autoincrement())
-  name  String
-  value Float? @db.Real
-}
-
-model navigation {
-  navigation_id    Int       @id @default(autoincrement())
-  nav_name         String    @db.VarChar(40)
-  nav_link         String?   @db.VarChar(100)
-  nav_image        String?   @db.VarChar(100)
-  created_date     DateTime? @default(now()) @db.Timestamp(6)
-  nav_level        String?   @db.VarChar(10)
-  nav_one_level_up String?   @db.VarChar(80)
-}
-
-model pages {
-  page_id          Int       @id @default(autoincrement())
-  page_name        String    @db.VarChar(100)
-  page_title       String?   @db.VarChar(200)
-  page_description String?   @db.VarChar(2000)
-  created_date     DateTime? @default(now()) @db.Timestamp(6)
+model Contact {
+  contact_id           String   @id @default(cuid())
+  name                 String
+  email_address        String
+  message     String
+  date_created DateTime @default(now())
 }
