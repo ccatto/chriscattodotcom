@@ -24,31 +24,29 @@ Current node version is 20.9.0 as of March 26th 2024;
 
 ## April 23, 2024 Release 1.1.01
 
-* 003 release May 3rd 003 contact page | gridsend & fly.io udated
+- 003 release May 3rd 003 contact page | gridsend & fly.io udated
 
-
-- Release includes Layouts; Nav; 3 sections including Home; code & about.
+* Release includes Layouts; Nav; 3 sections including Home; code & about.
 
 test git actions
 
-* using @next/third-parties for GA4.
-* using "react-syntax-highlighter": "^15.5.0", && @types/react-syntax-highlighter for syntax highlighting
-* using pg package v^8.11.5 for postgresql
-* using prisma as ORM
-* using @prisma/client as db client
-* using next-auth for authentication
-* using @auth/prisma-adapter for auth adapter
-* using @auth/prisma-adapter for data base adapter for next-auth v5
-* using nodemailer for sending emails;
-* using react-hook-form for forms
-* using @hookform/resolvers for access to resolvers we can plug into our forms
-* using zod for validation library;
-* using googleapis for google APIs & dynamically generate access token;
-* @logtail/next for https://betterstack.com/docs/logs/javascript/nextjs/
-* Using @sendgrid/mail to send email after issue with nodemailer on aws
-* @flydotio/dockerfile produces a dicker file 
-* using datejs open source js date library great for manipulating dates & times
-
+- using @next/third-parties for GA4.
+- using "react-syntax-highlighter": "^15.5.0", && @types/react-syntax-highlighter for syntax highlighting
+- using pg package v^8.11.5 for postgresql
+- using prisma as ORM
+- using @prisma/client as db client
+- using next-auth for authentication
+- using @auth/prisma-adapter for auth adapter
+- using @auth/prisma-adapter for data base adapter for next-auth v5
+- using nodemailer for sending emails;
+- using react-hook-form for forms
+- using @hookform/resolvers for access to resolvers we can plug into our forms
+- using zod for validation library;
+- using googleapis for google APIs & dynamically generate access token;
+- @logtail/next for https://betterstack.com/docs/logs/javascript/nextjs/
+- Using @sendgrid/mail to send email after issue with nodemailer on aws
+- @flydotio/dockerfile produces a dicker file
+- using datejs open source js date library great for manipulating dates & times
 
 Needed to update tsconfig.json to add `"noImplicitAny": false,` to resolve the react-syntax-highlighter type error.
 

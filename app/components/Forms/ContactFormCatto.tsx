@@ -11,6 +11,7 @@ const schema = z.object({
   email: z.string().email(),
   name: z.string().min(1),
   userNote: z.string().min(5),
+  // email_address: z.string().email(),
 });
 
 type FormFields = z.infer<typeof schema>;
@@ -31,6 +32,7 @@ const ContactFormCatto = () => {
   });
 
   const onSubmit: SubmitHandler<FormFields> = async (data) => {
+    // console.log("inside onsubmit");
     try {
       setIsEmailSentFail500(false);
       const response = await fetch('api/sendgrid', {
@@ -41,10 +43,23 @@ const ContactFormCatto = () => {
         },
         body: JSON.stringify(data),
       });
-      // console.log("response === ", response);
+
+      const contactDataResponse = await fetch('api/contact', {
+        method: 'POST',
+        headers: {
+          'content-type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+      // console.log("--------------contactDataResponse === ", contactDataResponse);
       // console.log("response.status === ", response.status);
       // console.log("response.statusText -=== ", response.statusText);
-      if (response.status === 200) {
+
+      if (
+        contactDataResponse.status === 200 &&
+        contactDataResponse.status === 200
+      ) {
+        // if (response.status === 200) {
         // console.log('in success response === ', response);
         setIsSubmitSuccessfulTrue(true);
         // resizeTo({});
@@ -59,10 +74,10 @@ const ContactFormCatto = () => {
   };
 
   const handleMailAgainClick = () => {
-    console.log("inside handleMailAgainClick()");
+    console.log('inside handleMailAgainClick()');
     setIsSubmitSuccessfulTrue(false);
     // reset();
-  }
+  };
 
   return (
     <>

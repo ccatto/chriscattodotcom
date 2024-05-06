@@ -14,8 +14,8 @@ const nextConfig = {
       },
     ],
   },
-  output: "standalone",
-  
+  output: 'standalone',
+
   // experimental: {
   //   serverActions: true,
   // },
