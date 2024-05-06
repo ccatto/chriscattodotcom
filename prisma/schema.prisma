@@ -43,6 +43,9 @@ model pages {
   page_title       String?   @db.VarChar(200)
   page_description String?   @db.VarChar(2000)
   created_date     DateTime? @default(now()) @db.Timestamp(6)
+  page_body        String?   @db.VarChar(30000) 
+  is_active        Boolean?  @default(false)
+  is_draft         Boolean?  @default(true)
 }
 
 model playing_with_neon {

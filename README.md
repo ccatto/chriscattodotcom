@@ -28,6 +28,8 @@ Current node version is 20.9.0 as of March 26th 2024;
 
 * Release includes Layouts; Nav; 3 sections including Home; code & about.
 
+- 004 contact page including inserting results via prisma into contact table May 6th 2024.
+
 test git actions
 
 - using @next/third-parties for GA4.
