@@ -20,9 +20,12 @@ export async function POST(request: Request) {
   try {
     await prisma.pages.create({
       data: {
-        // page_title: requestData['email'],
-        page_description: requestData['name'],
-        page_body: requestData['userNote'],
+        page_name: requestData['page_title'],
+        page_title: requestData['page_title'],
+        page_description: requestData['page_description'],
+        page_body: requestData['page_body'],
+        is_active: requestData['is_active'],
+        is_draft: requestData['is_draft'],
       },
     });
     console.log('insert completed');
