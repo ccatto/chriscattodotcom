@@ -50,6 +50,7 @@ test git actions
 - @flydotio/dockerfile produces a dicker file
 - using datejs open source js date library great for manipulating dates & times
 - using framer-motion for animations; when trying quickly couldn't get tailwind animation-spin work so went with this popular 3rd party library;
+- using @tanstack/react-table for a data table
 
 Needed to update tsconfig.json to add `"noImplicitAny": false,` to resolve the react-syntax-highlighter type error.
 

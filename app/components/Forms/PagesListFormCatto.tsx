@@ -11,6 +11,7 @@ import { GET } from '@/app/api/pages/route';
 import GetPagesServer from '../Data/GetPages/GetPages';
 import { flushAllTraces } from 'next/dist/trace';
 import LoadingCatto from '../Utils/Loading';
+import GetPageListServerCatto from '../ServerComponents/GetPageListServerCatto';
 
 const schema = z.object({
   page_title: z.string().min(3),
@@ -114,7 +115,15 @@ const PagesListFormCatto = () => {
     getPage757();
   }, []);
 
-  console.log(' ++++++++++++++++ pages3 ', pages3);
+  console.log(' ++++++++ 2 ++++++++ pages3 ', pages3);
+  console.log('+++++++ typeof pages3 === ', typeof(pages3));
+  console.log(' &&&&& ^^^^^^^& pages2 ', pages2);
+  console.log('   ^^^^^^^^^  typeof pages2 === ', typeof(pages2));
+  // pages2.map
+  // pages3.forEach((value, key) => {
+  //   console.log("5here YO value === ", value);
+  //   console.log("6  here YO key === ", key);
+  // })
 
   //   const { page } = await getPages99();
   // console.log('page === ', page);
@@ -248,6 +257,7 @@ const PagesListFormCatto = () => {
 
   return (
     <>
+    <GetPageListServerCatto/>
       {/* {!isLoading && <div><LoadingCatto/>loading can create a util component & import it here like whoa!</div>} */}
       {/* {!isLoading && <div>NOT loading</div>} */}
       {!isSubmitSuccessfulTrue && (
