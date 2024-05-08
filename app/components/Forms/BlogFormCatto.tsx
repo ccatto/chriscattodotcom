@@ -59,14 +59,14 @@ const PagesFormCatto = () => {
       //   // console.log("response.status === ", response.status);
       //   // console.log("response.statusText -=== ", response.statusText);
 
-        if (
-          pagesDataResponse.status === 200 
-          // && contactDataResponse.status === 200
-        ) {
-      //     // if (response.status === 200) {
-      //     // console.log('in success response === ', response);
-          setIsSubmitSuccessfulTrue(true);
-      //     // resizeTo({});
+      if (
+        pagesDataResponse.status === 200
+        // && contactDataResponse.status === 200
+      ) {
+        //     // if (response.status === 200) {
+        //     // console.log('in success response === ', response);
+        setIsSubmitSuccessfulTrue(true);
+        //     // resizeTo({});
       }
     } catch (e) {
       console.log('YO an ERROR not 200 e ===', e);
