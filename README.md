@@ -64,7 +64,7 @@ shadcn components:
 table npx shadcn-ui@latest add table
 dropdown menu npx shadcn-ui@latest add dropdown-menu
 button
-
+input
 
 ---
 
