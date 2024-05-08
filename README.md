@@ -58,19 +58,19 @@ test git actions
 * tailwind-merge
 * tailwindcss-animate
 
----- 
-shadcn components: 
+---
+
+shadcn components:
 table npx shadcn-ui@latest add table
+dropdown menu npx shadcn-ui@latest add dropdown-menu
+button
+
 
 ---
+
 - using @tanstack/react-table for a data table
 
-
-
-
-
-
--------------------------
+---
 
 Needed to update tsconfig.json to add `"noImplicitAny": false,` to resolve the react-syntax-highlighter type error.
 
