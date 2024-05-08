@@ -51,15 +51,26 @@ test git actions
 - using datejs open source js date library great for manipulating dates & times
 - using framer-motion for animations; when trying quickly couldn't get tailwind animation-spin work so went with this popular 3rd party library;
 - adding shadcn-ui to project
--- shadcn-ui installed the following: 
+  -- shadcn-ui installed the following:
+
 * class-variance-authority
 * lucid-react
 * tailwind-merge
 * tailwindcss-animate
-----------------------------
-- might add this ? using @tanstack/react-table for a data table
+
+---- 
+shadcn components: 
+table npx shadcn-ui@latest add table
+
+---
+- using @tanstack/react-table for a data table
 
 
+
+
+
+
+-------------------------
 
 Needed to update tsconfig.json to add `"noImplicitAny": false,` to resolve the react-syntax-highlighter type error.
 
