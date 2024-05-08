@@ -1,8 +1,7 @@
 'use client';
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 export const GetPageData44 = () => {
-
   type Page = {
     created_date?: Date;
     is_active?: boolean;
@@ -17,7 +16,7 @@ export const GetPageData44 = () => {
   const [pages, setPages] = useState([]);
 
   const getPageData = async () => {
-    console.log("0 here inside getPageData");
+    console.log('0 here inside getPageData');
     try {
       const responsePageData = await fetch(
         process.env.NEXT_PUBLIC_BASE_URL + '/api/pages',
@@ -30,7 +29,7 @@ export const GetPageData44 = () => {
       if (responsePageData) {
         console.log('3 inside here we have a response');
         const pagesData = await responsePageData.json();
-        console.log("4 pagesData |||||| ================== ", pagesData);
+        console.log('4 pagesData |||||| ================== ', pagesData);
         if (pagesData) {
           // console.log('typeof pagesData ?  === ', typeof pagesData,);
           setPages(pagesData);
@@ -47,11 +46,10 @@ export const GetPageData44 = () => {
     getPageData();
   }, []);
 
-  console.log("before return pages === ", pages);
-  (pages as Page[]).map(item => {
-    console.log("item 2 == ", item);
-  })
-
+  console.log('before return pages === ', pages);
+  (pages as Page[]).map((item) => {
+    console.log('item 2 == ', item);
+  });
 
   // const users = (data as User[]).map(user => { // <-error line under map method
   //   return {
@@ -62,20 +60,16 @@ export const GetPageData44 = () => {
   //   }
   // });
 
-
   // pages.map()
 
   return (
     <>
       <h1> GetPageData44 </h1>
 
-      {(pages as Page[]).map(item => 
-         (
-          <h1>{item.page_body}</h1>
-        )
-      )}
-
+      {(pages as Page[]).map((item) => (
+        <h1>{item.page_body}</h1>
+      ))}
     </>
   );
-}
+};
 export default GetPageData44;

@@ -1,11 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 const GetPageListServerCatto = () => {
-
   const [pages, setPages] = useState({});
 
   const getPageData = async () => {
-    console.log("0 here inside getPageData");
+    console.log('0 here inside getPageData');
     try {
       const responsePageData = await fetch(
         process.env.NEXT_PUBLIC_BASE_URL + '/api/pages',
@@ -18,9 +17,9 @@ const GetPageListServerCatto = () => {
       if (responsePageData) {
         console.log('3 inside here we have a response');
         const pagesData = await responsePageData.json();
-        console.log("4 pagesData |||||| ================== ", pagesData);
+        console.log('4 pagesData |||||| ================== ', pagesData);
         if (pagesData) {
-          console.log('typeof pagesData ?  === ', typeof pagesData,);
+          console.log('typeof pagesData ?  === ', typeof pagesData);
           setPages(pagesData);
         }
         //   // setPages3(pagesData);
@@ -59,16 +58,14 @@ const GetPageListServerCatto = () => {
     getPageData();
   }, []);
 
-  console.log("before return pages === ", pages);
+  console.log('before return pages === ', pages);
   // pages.map()
 
   return (
     <>
-      <h1 className="text-white">
-        GetPageListServerCatto
-      </h1>
+      <h1 className="text-white">GetPageListServerCatto</h1>
     </>
   );
-}
+};
 
 export default GetPageListServerCatto;

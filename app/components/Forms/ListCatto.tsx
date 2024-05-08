@@ -14,25 +14,22 @@ import LoadingCatto from '../Utils/Loading';
 import GetPageListServerCatto from '../ServerComponents/GetPageListServerCatto';
 import { getPagesDataNow } from '@/app/lib/data/pagesData';
 
-
 const ListCatto = () => {
-
   // const newPagesData = getPagesDataNow();
   // console.log('------ 888888      88888       88888       8888 ---- newPagesData ', newPagesData);
 
   useEffect(() => {
     const newPagesData = getPagesDataNow();
-    console.log('------ 888888      88888       88888       8888 ---- newPagesData ', newPagesData);
+    console.log(
+      '------ 888888      88888       88888       8888 ---- newPagesData ',
+      newPagesData,
+    );
     // getPage757();
   }, []);
 
-
-
-
-
   return (
     <>
-      <h1 >simple List </h1>
+      <h1>simple List </h1>
       <GetPageListServerCatto />
     </>
   );

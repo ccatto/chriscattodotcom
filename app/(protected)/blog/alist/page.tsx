@@ -1,4 +1,3 @@
-
 import { Metadata } from 'next';
 import GetPageData44 from '@/app/components/Data/GetPageData44';
 
@@ -11,8 +10,7 @@ export default function Page() {
   return (
     <div className="flex h-full flex-col flex-nowrap text-white ">
       <h1>test list</h1>
-      <GetPageData44/>
-
+      <GetPageData44 />
     </div>
   );
 }

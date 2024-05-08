@@ -116,9 +116,9 @@ const PagesListFormCatto = () => {
   }, []);
 
   console.log(' ++++++++ 2 ++++++++ pages3 ', pages3);
-  console.log('+++++++ typeof pages3 === ', typeof(pages3));
+  console.log('+++++++ typeof pages3 === ', typeof pages3);
   console.log(' &&&&& ^^^^^^^& pages2 ', pages2);
-  console.log('   ^^^^^^^^^  typeof pages2 === ', typeof(pages2));
+  console.log('   ^^^^^^^^^  typeof pages2 === ', typeof pages2);
   // pages2.map
   // pages3.forEach((value, key) => {
   //   console.log("5here YO value === ", value);
@@ -257,7 +257,7 @@ const PagesListFormCatto = () => {
 
   return (
     <>
-    <GetPageListServerCatto/>
+      <GetPageListServerCatto />
       {/* {!isLoading && <div><LoadingCatto/>loading can create a util component & import it here like whoa!</div>} */}
       {/* {!isLoading && <div>NOT loading</div>} */}
       {!isSubmitSuccessfulTrue && (
