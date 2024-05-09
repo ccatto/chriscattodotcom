@@ -44,8 +44,8 @@ export function getPagesDataNow() {
   //     // dataArray = data;
   //     // console.log('dataArray ', dataArray);
   //     // return dataArray;
-
   //   })
+  
   const newData = () => {
     localPagesData.then((data) => {
       console.log('444444444 4444444 data ', data);
