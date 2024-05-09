@@ -1,8 +1,9 @@
 name: Fly Deploy
-on:
-  push:
-    branches:
-      - develop # change to main if needed
+# on:
+#   push:
+#     branches:
+#       - develop # change to main if needed
+
 # on:
 #   pull_request:
 #     branches:
