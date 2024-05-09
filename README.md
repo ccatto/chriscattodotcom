@@ -24,11 +24,13 @@ Current node version is 20.9.0 as of March 26th 2024;
 
 ## April 23, 2024 Release 1.1.01
 
-- 003 release May 3rd 003 contact page | gridsend & fly.io udated
+- 003 release May 3rd 003 contact page | gridsend & fly.io updated
 
 * Release includes Layouts; Nav; 3 sections including Home; code & about.
 
 - 004 contact page including inserting results via prisma into contact table May 6th 2024.
+
+* Release May 9th includes Added Prisma section & shadcn; tables & data fetching.
 
 test git actions
 
