@@ -20,14 +20,14 @@
 --     CONSTRAINT "navigation_pkey" PRIMARY KEY ("navigation_id")
 -- );
 
--- CreateTable
-CREATE TABLE "pages" (
-    "page_id" SERIAL NOT NULL,
-    "page_name" VARCHAR(100) NOT NULL,
-    "page_title" VARCHAR(200),
-    "page_description" VARCHAR(2000),
-    "created_date" TIMESTAMP(6) DEFAULT CURRENT_TIMESTAMP,
+-- -- CreateTable
+-- CREATE TABLE "pages" (
+--     "page_id" SERIAL NOT NULL,
+--     "page_name" VARCHAR(100) NOT NULL,
+--     "page_title" VARCHAR(200),
+--     "page_description" VARCHAR(2000),
+--     "created_date" TIMESTAMP(6) DEFAULT CURRENT_TIMESTAMP,
 
-    CONSTRAINT "pages_pkey" PRIMARY KEY ("page_id")
-);
+--     CONSTRAINT "pages_pkey" PRIMARY KEY ("page_id")
+-- );
 

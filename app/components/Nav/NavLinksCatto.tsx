@@ -12,6 +12,7 @@ const NavLinksCatto = () => {
   const [isNavLevel1Item1Open, setIsNavLevel1Item1Open] = useState(false);
   const [isNavLevel2Item1Open, setIsNavLevel2Item1Open] = useState(false);
   const [isNavLevel2NextOpen, setIsNavLevel2NextOpen] = useState(false);
+  const [isNavLevel2PrismaOpen, setIsNavLevel2PrismaOpen] = useState(false);
   const [isNavLevel3Item1Open, setIsNavLevel3Item1Open] = useState(false);
 
   const handleHamburgClick = () => {
@@ -23,6 +24,7 @@ const NavLinksCatto = () => {
     setIsNavLevel2Item1Open(false);
     setIsNavLevel3Item1Open(false);
     setIsNavLevel2NextOpen(false);
+    setIsNavLevel2PrismaOpen(false);
   };
   const handleNavHomeClick = () => {
     handleCloseAllClick();
@@ -477,6 +479,69 @@ const NavLinksCatto = () => {
                       </ul>
                     </div>
                   </li>
+                  {/* Nav code ORM Prisma */}
+                  <li>
+                    <button
+                      className="flex w-full items-center justify-between px-4 py-2 hover:bg-gray-100 hover:text-blue-300 dark:hover:bg-gray-600"
+                      onClick={() =>
+                        setIsNavLevel2PrismaOpen(!isNavLevel2PrismaOpen)
+                      }
+                    >
+                      Prisma
+                      <svg
+                        className="ms-2.5 h-2.5 w-2.5"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 10 6"
+                      >
+                        <path
+                          stroke="currentColor"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="m1 1 4 4 4-4"
+                        />
+                      </svg>
+                    </button>
+                    {/* Nav 2nd level Prisma Menu */}
+                    <div
+                      className={`${isNavLevel2PrismaOpen ? 'block' : 'hidden'} z-10 w-44 divide-y divide-gray-100 rounded-lg bg-white shadow dark:bg-gray-500`}
+                    >
+                      <ul
+                        className="py-2 text-sm text-gray-700 dark:text-gray-200"
+                        aria-labelledby="doubleDropdownButton"
+                      >
+                        <li>
+                          <Link
+                            href="/code/orm/prisma"
+                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                            onClick={handleCloseAllClick}
+                          >
+                            Prisma Home
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/code/orm/prisma/getting-started"
+                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                            onClick={handleCloseAllClick}
+                          >
+                            Prisma Getting Started
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            href="/code/orm/prisma/updates"
+                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                            onClick={handleCloseAllClick}
+                          >
+                            Prisma Making Updates
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
                 </ul>
               </div>
             </li>
@@ -519,14 +584,14 @@ const NavLinksCatto = () => {
               </Link>
             </li>
             {/* Next-Auth Login Logout */}
-            <li>
+            {/* <li>
               <Link
                 href="/auth/login"
                 className="block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
               >
                 Login
               </Link>
-            </li>
+            </li> */}
             {/* <li>
               <AuthClientInOutWrapperCatto>
                 {children}
