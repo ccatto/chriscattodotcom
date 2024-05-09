@@ -561,11 +561,11 @@ const NavCatto = () => {
                 </Link>
               </li>
               {/* Next-Auth Login Logout */}
-              {/* <li> */}
-              {/* <AuthClientInOutWrapperCatto>
+              {/* <li> 
+              <AuthClientInOutWrapperCatto>
                   {children}
-                </AuthClientInOutWrapperCatto> */}
-              {/* </li> */}
+                </AuthClientInOutWrapperCatto>
+              </li> */}
             </ul>
           </div>
         </div>

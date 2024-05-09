@@ -15,6 +15,25 @@ export async function GET(request: Request) {
 
 // Handles POST requests to /api
 export async function POST(request: Request) {
-  // ...
-  return NextResponse.json({ message: 'Hello World' });
+  const requestData = await request.json();
+  console.log('inside route requestData === ', requestData);
+  try {
+    await prisma.pages.create({
+      data: {
+        page_name: requestData['page_title'],
+        page_title: requestData['page_title'],
+        page_description: requestData['page_description'],
+        page_body: requestData['page_body'],
+        is_active: requestData['is_active'],
+        is_draft: requestData['is_draft'],
+      },
+    });
+    console.log('insert completed');
+    return NextResponse.json({ message: 'Success: Post data' });
+  } catch (e) {
+    console.log('we have an error YO e === ', e);
+    return NextResponse.json({ message: 'ERROR Post data' });
+  }
+
+  // return NextResponse.json({ message: 'Hello World' });
 }
