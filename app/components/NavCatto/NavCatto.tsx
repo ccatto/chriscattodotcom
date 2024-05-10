@@ -4,7 +4,7 @@ import React, { ReactNode, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
-import NavLeftNameImageCatto from '../Nav/NavLeftNameImageCatto';
+import NavLeftNameImageCatto from './NavLeftNameImageCatto';
 import AuthClientInOutWrapperCatto from '../Auth/AuthClientInOutWrapperCatto/AuthClientInOutWrapperCatto';
 
 const NavCatto = () => {
@@ -337,6 +337,15 @@ const NavCatto = () => {
                               onClick={handleCloseAllClick}
                             >
                               Next Auth
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              href="/code/nextjs/shadcn-ui"
+                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              onClick={handleCloseAllClick}
+                            >
+                              Shadcn-ui
                             </Link>
                           </li>
                         </ul>

@@ -54,17 +54,21 @@ test git actions
 - using framer-motion for animations; when trying quickly couldn't get tailwind animation-spin work so went with this popular 3rd party library;
 - adding shadcn-ui to project
   -- shadcn-ui installed the following:
+
 * class-variance-authority
 * lucid-react
 * tailwind-merge
 * tailwindcss-animate
+
 ---
+
 shadcn components:
-* table npx shadcn-ui@latest add table
-* dropdown menu npx shadcn-ui@latest add dropdown-menu
-* button
-* input
-* accordion
+
+- table npx shadcn-ui@latest add table
+- dropdown menu npx shadcn-ui@latest add dropdown-menu
+- button
+- input
+- accordion
 
 ---
 
