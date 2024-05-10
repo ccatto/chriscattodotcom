@@ -19,6 +19,7 @@
     "@logtail/next": "^0.1.5",
     "@next/third-parties": "^14.1.4",
     "@prisma/client": "^5.13.0",
+    "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-dropdown-menu": "^2.0.6",
     "@radix-ui/react-slot": "^1.0.2",
     "@sendgrid/mail": "^8.1.3",
