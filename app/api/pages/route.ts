@@ -14,10 +14,10 @@ export async function GET(request: Request) {
   return NextResponse.json(pageData);
 }
 
-// Handles POST requests to /api 
+// Handles POST requests to /api
 export async function POST(request: Request) {
-  console.log("----------- inside ------- POST Pages ================= ");
-  console.log("----------- 2 inside ------- POST Pages ================= ");
+  console.log('----------- inside ------- POST Pages ================= ');
+  console.log('----------- 2 inside ------- POST Pages ================= ');
   const requestData = await request.json();
   console.log('inside route requestData === ', requestData);
   try {

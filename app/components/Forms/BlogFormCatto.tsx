@@ -50,7 +50,7 @@ const PagesFormCatto = () => {
       // const pagesDataResponseGet = await getPages();
       // const res = await fetch('http://localhost:3000/api/pages');
       const pagesDataResponse = await fetch('http://localhost:3000/api/pages', {
-      // const pagesDataResponse = await fetch('api/pages', {
+        // const pagesDataResponse = await fetch('api/pages', {
         method: 'POST',
         headers: {
           'content-type': 'application/json',
