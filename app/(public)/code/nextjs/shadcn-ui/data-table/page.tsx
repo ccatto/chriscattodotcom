@@ -14,9 +14,12 @@ export const metadata: Metadata = {
 };
 
 const page = () => {
-  const codeBlock = 'npx shadcn-ui@latest add table\nyarn add @tanstack/react-table';
-  const codeBlock2 = 'import { ColumnDef } from "@tanstack/react-table";\nexport const columns: ColumnDef<TableNameType>[] = [';
-  const codeBlock3 = 'import { DataTable } from "./data-table"\n<DataTable columns={columns} data={data} />';
+  const codeBlock =
+    'npx shadcn-ui@latest add table\nyarn add @tanstack/react-table';
+  const codeBlock2 =
+    'import { ColumnDef } from "@tanstack/react-table";\nexport const columns: ColumnDef<TableNameType>[] = [';
+  const codeBlock3 =
+    'import { DataTable } from "./data-table"\n<DataTable columns={columns} data={data} />';
   const codeBlock4SessionProvider =
     'import { SessionProvider } from "next-auth/react";\n\nreturn (\n  <SessionProvider>\n    <html>\n        <body ...Inside-of-Layout\n    </html>\n  </SessionProvider>\n';
   const codeblock4authts =
@@ -40,21 +43,38 @@ const page = () => {
             <div>
               <ul className="text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li className="m-5">
-                  Tables displaying tabular data is critical for just about any app. In Next.js one way we can accomplish this is utlizing Shadcn-ui Data-Table which leverages the <Link target='_blank'
-                    href="https://tanstack.com/table/latest" className="font-medium text-blue-600 hover:underline dark:text-blue-500">
+                  Tables displaying tabular data is critical for just about any
+                  app. In Next.js one way we can accomplish this is utlizing
+                  Shadcn-ui Data-Table which leverages the{' '}
+                  <Link
+                    target="_blank"
+                    href="https://tanstack.com/table/latest"
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                  >
                     popular tanstack table.
-                  </Link> It takes a little customization as we have to define our columns and choose which features we want to add such as pagination but this component sure can save us some time while adding consistancy to our tables. <Link
+                  </Link>{' '}
+                  It takes a little customization as we have to define our
+                  columns and choose which features we want to add such as
+                  pagination but this component sure can save us some time while
+                  adding consistancy to our tables.{' '}
+                  <Link
                     target="_blank"
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                     href="https://ui.shadcn.com/docs/components/data-table"
                   >
                     Take a look at the official Shadcn-ui data-table doc page.
-                  </Link> It also is dependent upon the <Link
+                  </Link>{' '}
+                  It also is dependent upon the{' '}
+                  <Link
                     target="_blank"
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                     href="https://classic.yarnpkg.com/en/package/@tanstack/react-table"
-                  > tanstack/react-table package.
-                  </Link> The folder structure we need the 3 .tsx files including columns; data-table & the page itself.
+                  >
+                    {' '}
+                    tanstack/react-table package.
+                  </Link>{' '}
+                  The folder structure we need the 3 .tsx files including
+                  columns; data-table & the page itself.
                 </li>
               </ul>
             </div>
@@ -96,8 +116,18 @@ const page = () => {
                       role="alert"
                     >
                       <div className="flex items-center justify-between">
+                        <h3 className="font-medium">3. Define the columns</h3>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                      role="alert"
+                    >
+                      <div className="flex items-center justify-between">
                         <h3 className="font-medium">
-                          3. Define the columns
+                          4. Create the DataTable component
                         </h3>
                       </div>
                     </div>
@@ -109,7 +139,8 @@ const page = () => {
                     >
                       <div className="flex items-center justify-between">
                         <h3 className="font-medium">
-                          4. Create the DataTable component</h3>
+                          5. Render the table on the page
+                        </h3>
                       </div>
                     </div>
                   </li>
@@ -120,18 +151,8 @@ const page = () => {
                     >
                       <div className="flex items-center justify-between">
                         <h3 className="font-medium">
-                          5. Render the table on the page</h3>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div
-                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
-                      role="alert"
-                    >
-                      <div className="flex items-center justify-between">
-                        <h3 className="font-medium">
-                          6. Many customizations available</h3>
+                          6. Many customizations available
+                        </h3>
                       </div>
                     </div>
                   </li>
@@ -155,7 +176,8 @@ const page = () => {
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className="indent-4">
-                            To install the shadcn-ui table we add the following packages:
+                            To install the shadcn-ui table we add the following
+                            packages:
                           </div>
                           <SyntaxHighlightingReactCatto
                             codeString={codeBlock}
@@ -175,16 +197,22 @@ const page = () => {
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-3 lg:ml-5 lg:basis-3/4">
                           <div className="indent-4">
-                            In our app directory we create a parent folder for what ever the page we want named & inside that we will create the following 3 files:
+                            In our app directory we create a parent folder for
+                            what ever the page we want named & inside that we
+                            will create the following 3 files:
                             <ol className="ind ml-6 mt-2 list-outside list-disc">
                               <li>
-                                page.tsx - this is the normal server page file where we'll fetch data & render the table
+                                page.tsx - this is the normal server page file
+                                where we'll fetch data & render the table
                               </li>
                               <li>
-                                columns.tsx - we define our columns of the table here
+                                columns.tsx - we define our columns of the table
+                                here
                               </li>
                               <li>
-                                data-table.tsx - this is the client component which will contain the &lt;DataTable \&gt; component
+                                data-table.tsx - this is the client component
+                                which will contain the &lt;DataTable \&gt;
+                                component
                               </li>
                             </ol>
                             <p className="mt-2">
@@ -206,7 +234,14 @@ const page = () => {
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-3 lg:ml-5 lg:basis-3/4">
                           <div className="indent-4">
-                            Columns are where we define what our table will look like. The columns define the data that will be displayed; how it will be formatted & filtered. Basically the columns we define in an array. Below shows how we import the ColumnDef from tanstack/react-table and how we define it. Note the TableNameType is defined as a Type and will the data we are displaying:
+                            Columns are where we define what our table will look
+                            like. The columns define the data that will be
+                            displayed; how it will be formatted & filtered.
+                            Basically the columns we define in an array. Below
+                            shows how we import the ColumnDef from
+                            tanstack/react-table and how we define it. Note the
+                            TableNameType is defined as a Type and will the data
+                            we are displaying:
                           </div>
                           <SyntaxHighlightingReactCatto
                             codeString={codeBlock2}
@@ -226,11 +261,15 @@ const page = () => {
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className=" indent-4">
-                            This is where we add the data-table code from the <Link
-                              target='_blank'
+                            This is where we add the data-table code from the{' '}
+                            <Link
+                              target="_blank"
                               href="https://ui.shadcn.com/docs/components/data-table"
                               className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                            >shadcn-ui data-table docs</Link> into our data-table.tsx file.
+                            >
+                              shadcn-ui data-table docs
+                            </Link>{' '}
+                            into our data-table.tsx file.
                           </div>
                         </div>
                       </div>
@@ -247,7 +286,8 @@ const page = () => {
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className=" indent-4">
-                            We import & render the data-table on our page.tsx. Our data variable is basically an array of the data.
+                            We import & render the data-table on our page.tsx.
+                            Our data variable is basically an array of the data.
                           </div>
                           <SyntaxHighlightingReactCatto
                             codeString={codeBlock3}
@@ -268,28 +308,14 @@ const page = () => {
                         <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className=" indent-4">
                             We customize our table including:
-                            <ul className='ind ml-6 mt-2 list-outside list-disc'>
-                              <li>
-                                Cell Formatting
-                              </li>
-                              <li>
-                                Row Actions such as an edit button
-                              </li>
-                              <li>
-                                Pagination
-                              </li>
-                              <li>
-                                Sorting
-                              </li>
-                              <li>
-                                Filtering
-                              </li>
-                              <li>
-                                Visibility
-                              </li>
-                              <li>
-                                Row Selection via a chkbox
-                              </li>
+                            <ul className="ind ml-6 mt-2 list-outside list-disc">
+                              <li>Cell Formatting</li>
+                              <li>Row Actions such as an edit button</li>
+                              <li>Pagination</li>
+                              <li>Sorting</li>
+                              <li>Filtering</li>
+                              <li>Visibility</li>
+                              <li>Row Selection via a chkbox</li>
                             </ul>
                           </div>
                         </div>
@@ -300,7 +326,8 @@ const page = () => {
               </div>
               <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
               <p className="indent-5">
-                As we see we can leverage the Shadcn-ui data-table component to display tabular data & it's quite flexible while saving us time.
+                As we see we can leverage the Shadcn-ui data-table component to
+                display tabular data & it's quite flexible while saving us time.
               </p>
               <br />
             </div>

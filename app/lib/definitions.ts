@@ -98,3 +98,15 @@ export type InvoiceForm = {
   amount: number;
   status: 'pending' | 'paid';
 };
+
+export type Page = {
+  created_date?: Date;
+  is_active?: boolean;
+  is_draft?: boolean;
+  page_body?: string;
+  page_description?: string;
+  page_id?: number;
+  page_name?: string;
+  page_title?: string;
+  page_directory?: string;
+};

@@ -7,6 +7,9 @@ import About5050CattoFamily from '../../components/About5050CattoFamily/About505
 export const metadata: Metadata = {
   title: 'About Chris Catto',
   description: 'About Chris Catto including Code and Family',
+  alternates: {
+    canonical: 'https://www.chriscatto.com/about',
+  },
 };
 
 export default function Page() {
