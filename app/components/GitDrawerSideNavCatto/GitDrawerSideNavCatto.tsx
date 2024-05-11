@@ -1,43 +1,10 @@
 'use client';
 import React, { useState } from 'react';
-// import ImageCatto from "../../ImageCatto/ImageCatto";
 import ImageCatto from '../ImageCatto/ImageCatto';
 import SideNavGitCatto from '../SideNavGitCatto/SideNavGitCatto';
-// import { usePageDrawerDataCattoContext } from "../Utils/PageDrawerDataProviderCatto/PageDrawerCattoDataProvider";
-// import { usePageDrawerDataCattoContext } from "../Utils/PageDrawerCattoDataProvider/PageDrawerCattoDataProvider";
-
-// usePageDrawerDataCattoContext
-// import { usePageDrawerDataCattoContext } from "../Utils/PageDrawerDataProviderCatto/PageDrawerCattoDataProvider";
-// usePageDrawerDataCattoContext
 import { usePageDrawerDataCattoContext } from '../Utils/PageDrawerDataProviderCatto/PageDrawerCattoDataProvider';
-import GitSimpleTestNavCatto from '../Git/zzzGitSimpleTestNavCatto/GitSimpleTestNavCatto';
-// GitSimpleTestNavCatto
-
-// const clickSideNavHandler = () => {
-
-// const [isGitDrawerOpen, setGitDrawerOpen] = useState(true);
-
-// const handleClick = () => {
-//   setGitDrawerOpen(!isGitDrawerOpen);
-// };
-
-// console.log('00 22 00 isGitDrawerOpen === ', isGitDrawerOpen);
-
-// return (event: React.MouseEvent) => {
-//   // console.log('1 isGitDrawerOpen === ', isGitDrawerOpen);
-//   // console.log('inside PREVIOUS CLICK');
-//   setGitDrawerOpen(!isGitDrawerOpen);
-//   console.log('setGitDrawerOpen === ', isGitDrawerOpen);
-//   // if (currentImg === 0 ) {
-//   //     console.log('inside AT beginning');
-//   //     setCurrentImg(totalSlides - 1);
-//   // } else {
-//   //     console.log('not at end yet');
-//   //     setCurrentImg(currentImg - 1);
-//   // }
-//   event.preventDefault();
-// }
-// }
+// import GitSimpleTestNavCatto from '../Git/zzzGitSimpleTestNavCatto/GitSimpleTestNavCatto';
+// import GitSimpleTestNavCatto from '../Git/zzzGitSimpleTestNavCatto/GitSimpleTestNavCatto';
 
 const GitDrawerSideNavCatto = () => {
   let [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -69,11 +36,11 @@ const GitDrawerSideNavCatto = () => {
   return (
     <>
       {/* <div className={`w-full md:block md:w-auto ${isNavOpen ? "hidden" : "block"}`}></div> */}
-      <div
+      {/* <div
         className={`${simpleFalse ? 'hidden' : 'block'}  h-20 w-20 bg-red-500 `}
       >
         <GitSimpleTestNavCatto />
-      </div>
+      </div> */}
 
       <aside
         className={`lg:flex-[20]  ${isDrawerOpen ? 'hidden' : 'block'} `}
