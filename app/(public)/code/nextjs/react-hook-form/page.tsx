@@ -14,9 +14,9 @@ export const metadata: Metadata = {
 };
 
 const page = () => {
-  const codeBlock = 'npx shadcn-ui@latest init';
-  const codeBlock2 = 'AUTH_SECRET=""\nAUTH_GOOGLE_ID=""\nAUTH_GOOGLE_SECRET=""';
-  const codeBlock3 = 'npx shadcn-ui@latest add input';
+  const codeBlock = 'npm install react-hook-form';
+  const codeBlock2 = 'import { SubmitHandler, useForm } from \'react-hook-form\';';
+  const codeBlock3 = 'const schema = z.object({\n  email: z.string().min(3),\n  password: z.string().min(3),\n});\ntype FormFields = z.infer<typeof schema>;';
   const codeBlock4SessionProvider =
     'import { SessionProvider } from "next-auth/react";\n\nreturn (\n  <SessionProvider>\n    <html>\n        <body ...Inside-of-Layout\n    </html>\n  </SessionProvider>\n';
   const codeblock4authts =
@@ -27,45 +27,28 @@ const page = () => {
       <div className="flex h-full w-full flex-col flex-nowrap ">
         <div className="flex-none">
           <JumbotronCattoFlexible
-            title="Next.js Shadcn-ui"
-            description="Next.js Shadcn-ui is a component library which is open-source & customizable which works well with Next.js."
+            title="Next.js React-hook-form Tutorial"
+            description="Next.js React-hook-form is a very popular library to create forms in React & Next.js. Let's take a look at how we an leverage & implement react-hook-form."
           />
         </div>
         <hr className="p-0" />
         <div className="m-4 flex-[80] rounded-2xl p-4 text-[#FAFAFA] ring-2 ring-gray-300 dark:bg-[#09090B] dark:ring-gray-500">
           <h2 className="mb-4 inline-block text-3xl font-extrabold tracking-tight">
-            Next.js Shadcn-ui
+            Next.js React-Hook-Form
           </h2>
           <div>
             <div>
               <ul className="text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li className="m-5">
-                  Shadcn-ui is an interesting component library since it's open
-                  source & slightly different from conventional ones such as{' '}
+                  React-hook-from is an interesting library since it helps us to manage complex forms. The 
                   <Link
                     target="_blank"
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                    href="https://mui.com/material-ui/all-components/"
+                    href="https://react-hook-form.com/get-started"
                   >
-                    Mui
-                  </Link>
-                  . In the{' '}
-                  <Link
-                    target="_blank"
-                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                    href="https://ui.shadcn.com/"
-                  >
-                    Official Shadcn-ui page
-                  </Link>{' '}
-                  they state it's NOT a component library & it's just a
-                  collection of re-usable components that we can copy & paste
-                  into our project. This is my current choice for a component
-                  library I especially like it for the data-table but just like
-                  any component library it helps us build ui quicker &
-                  consistent. To me it's kinda slick & minimal in the design.
-                  The installation is easy & we can add only what we need; also
-                  I like the docs. Obviously with any package we want a large
-                  community of people using it & Shadcn is widely adopted.
+                    official React-Hook-Form page
+                  </Link> they state it's performant; flexible & extensible forms with easy-to-use validation & I agree with that which is why I choose to use it. In this steps I am going to also use Zod as validation. 
+          
                 </li>
               </ul>
             </div>
@@ -73,7 +56,7 @@ const page = () => {
             <div>
               <p className="flex justify-center text-2xl">
                 <span className="pr-2 font-bold">Summary</span>of setting up
-                Shadcn-ui in Next.js includes the following:
+                react-hook-form in Next.js includes the following:
               </p>
               <div className="mt-4 flex justify-center">
                 <ol className="w-full space-y-4">
@@ -84,7 +67,7 @@ const page = () => {
                     >
                       <div className="flex items-center justify-between">
                         <h3 className="font-medium">
-                          1. Add the shad-cn package
+                          1. Add the react-hook-form package
                         </h3>
                       </div>
                     </div>
@@ -96,7 +79,7 @@ const page = () => {
                     >
                       <div className="flex items-center justify-between">
                         <h3 className="font-medium">
-                          2. Configure components.json
+                          2. Import useForm from react-hook-form
                         </h3>
                       </div>
                     </div>
@@ -108,7 +91,7 @@ const page = () => {
                     >
                       <div className="flex items-center justify-between">
                         <h3 className="font-medium">
-                          3. App structure & alters
+                          3. Define our schema for Zod validation & the Type of the form fields
                         </h3>
                       </div>
                     </div>
@@ -139,11 +122,11 @@ const page = () => {
                     >
                       <div className="flex flex-wrap items-center lg:flex-nowrap">
                         <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                          1. 1. Add the shad-cn package
+                          1. Install the react-hook-form package
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className="indent-4">
-                            To install shadcn-ui we add the package.
+                            To install react-hook-form we add the package.
                           </div>
                           <SyntaxHighlightingReactCatto
                             codeString={codeBlock}
@@ -159,28 +142,16 @@ const page = () => {
                     >
                       <div className="flex flex-wrap items-center lg:flex-nowrap">
                         <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                          2. Configure components.json
+                          2. Import useForm from react-hook-form
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className="indent-4">
-                            We are prompted with a few simple questions:
-                            <ol className="ind ml-6 mt-2 list-outside list-disc">
-                              <li>
-                                Which style would you like to use? › Default
-                              </li>
-                              <li>
-                                Which color would you like to use as base color?
-                                › Slate
-                              </li>
-                              <li>
-                                Do you want to use CSS variables for colors? ›
-                                yes
-                              </li>
-                            </ol>
+                            We simply import the hook at the top of the file:
+                            <SyntaxHighlightingReactCatto
+                            codeString={codeBlock2}
+                          />
                             <p className="mt-2">
-                              For the style choice the New York (I like the name
-                              but currently choose the default) style uses less
-                              padding & less rounded components.
+                              While we are doing this lets also import the SubmitHandler function
                             </p>
                           </div>
                         </div>
@@ -194,21 +165,15 @@ const page = () => {
                     >
                       <div className="flex flex-wrap items-center lg:flex-nowrap">
                         <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                          3. App structure & alters
+                          3. Define our schema for Zod validation & the Type of the form fields
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className="indent-4">
-                            There is a directory created "components/ui/" with a
-                            lowercase "c" & this is where the components will be
-                            added. Also if we take a look at the packages it
-                            installs are the following:
+                            In typescript we have to define our a type of the form fields. With Zod we obviously need to have that installed & imported at the top.
                           </div>
-                          <ol className="ml-6 mt-2 list-outside list-disc">
-                            <li>class-variance-authority</li>
-                            <li>lucid-react</li>
-                            <li>tailwind-merge</li>
-                            <li>tailwindcss-animate</li>
-                          </ol>
+                          <SyntaxHighlightingReactCatto
+                            codeString={codeBlock3}
+                          />
                         </div>
                       </div>
                     </div>

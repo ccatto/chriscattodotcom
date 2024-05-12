@@ -61,6 +61,7 @@ test git actions
 * tailwindcss-animate
 
 ---
+- Adding stripe @stripe/stripe-js
 
 shadcn components:
 

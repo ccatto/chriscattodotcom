@@ -397,6 +397,15 @@ const NavLinksCatto = () => {
                         </li>
                         <li>
                           <Link
+                            href="/code/git/how-do-i-delete-a-git-branch-locally-and-remotely"
+                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                            onClick={handleCloseAllClick}
+                          >
+                            Delete Branches
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
                             href="/code/git/branch"
                             className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
                             onClick={handleCloseAllClick}
