@@ -64,6 +64,7 @@ test git actions
 
 - Adding stripe @stripe/stripe-js
 - using react-embed-gist to display code embedded
+- using use-shopping-cart for shopping cart state & logic for Stipe;
 
 shadcn components:
 
