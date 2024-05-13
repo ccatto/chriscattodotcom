@@ -6,6 +6,9 @@ import JumbotronCattoFlexible from '@/app/components/JumbotronCattoFlexible/Jumb
 export const metadata: Metadata = {
   title: 'Chris Catto Code Next.js Home Tutorial',
   description: 'Chris Catto Code Next.js Home Tutorial',
+  alternates: {
+    canonical: 'https://www.chriscatto.com/code',
+  },
 };
 
 export default function Page() {

@@ -1,4 +1,4 @@
-import UserLoginFormCatto from "@/app/components/Forms/UserLoginFormCatto";
+import UserLoginFormCatto from '@/app/components/Forms/UserLoginFormCatto';
 
 const EmailLoginPage = () => {
   return (

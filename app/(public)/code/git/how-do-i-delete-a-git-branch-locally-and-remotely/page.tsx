@@ -20,56 +20,56 @@ export default function Page() {
       <hr className="p-0" />
       <div className="flex-[80] p-2 dark:bg-gray-700">
         <h2 className="mb-4 inline-block text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-          Delete a <span className='font-bold text-blue-500'>remote</span> branch
+          Delete a <span className="font-bold text-blue-500">remote</span>{' '}
+          branch
         </h2>
-        <h6>
-          Terminal example:
-        </h6>
+        <h6>Terminal example:</h6>
         <CommandPromptDisplay
           command="git push origin -d branchName"
           output=" - [deleted]         branchName"
         />
         <h2 className="mb-4 inline-block text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-          Delete a <span className='font-bold text-blue-500'>local</span> branch
+          Delete a <span className="font-bold text-blue-500">local</span> branch
         </h2>
-        <h6>
-          Terminal example:
-        </h6>
+        <h6>Terminal example:</h6>
         <CommandPromptDisplay
           command="git branch -D branchName"
           output="Deleted branch branchName (was a5f2b57)."
         />
       </div>
-      <div className="flex-[80] p-5 m-5 dark:bg-gray-400 rounded-2xl border-slate-100-400 border-2 border-b-[1px] text-slate-900">
-        When we delete a branch ensure that we are not on that branch so just checkout a different branch.
+      <div className="border-slate-100-400 m-5 flex-[80] rounded-2xl border-2 border-b-[1px] p-5 text-slate-900 dark:bg-gray-400">
+        When we delete a branch ensure that we are not on that branch so just
+        checkout a different branch.
         <br />
         We have 3 different branches that are involved. We have:
-        <div className='pl-10'>
-          <ul className='list-disc indent-'>
-            <li>
-              the local branch
-            </li>
-            <li>
-              The remote origin branch
-            </li>
-            <li>
-              The local remote-tracking branch
-            </li>
+        <div className="pl-10">
+          <ul className="indent- list-disc">
+            <li>the local branch</li>
+            <li>The remote origin branch</li>
+            <li>The local remote-tracking branch</li>
           </ul>
         </div>
         <br />
-        To delete the remote branch we need to utilize the "push origin" so it will be "git push origin --delete branchName"
+        To delete the remote branch we need to utilize the "push origin" so it
+        will be "git push origin --delete branchName"
         <br />
-        Here is the <Link
+        Here is the{' '}
+        <Link
           target="_blank"
           className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-          href="https://git-scm.com/book/en/v2/Git-Branching-Branch-Management">official Git documentation for Branch Management.</Link>
+          href="https://git-scm.com/book/en/v2/Git-Branching-Branch-Management"
+        >
+          official Git documentation for Branch Management.
+        </Link>
         <br />
-        Here is the <Link
+        Here is the{' '}
+        <Link
           target="_blank"
           className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-          href="https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches">official Git documentation for Remote Branches.</Link>
-
+          href="https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches"
+        >
+          official Git documentation for Remote Branches.
+        </Link>
       </div>
     </div>
   );

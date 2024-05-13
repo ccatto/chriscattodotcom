@@ -61,7 +61,9 @@ test git actions
 * tailwindcss-animate
 
 ---
+
 - Adding stripe @stripe/stripe-js
+- using react-embed-gist to display code embedded
 
 shadcn components:
 

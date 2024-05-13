@@ -9,19 +9,25 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Chris Catto Code Next.js Shadcn-ui',
-  description: 'Chris Catto Next.js Shadcn-ui component library',
+  title: 'Chris Catto Code Next.js React Hook Form',
+  description: 'Chris Catto Next.js React-Hook-Form',
 };
 
 const page = () => {
   const codeBlock = 'npm install react-hook-form';
-  const codeBlock2 = 'import { SubmitHandler, useForm } from \'react-hook-form\';';
-  const codeBlock3 = 'const schema = z.object({\n  email: z.string().min(3),\n  password: z.string().min(3),\n});\ntype FormFields = z.infer<typeof schema>;';
-  const codeBlock4SessionProvider =
-    'import { SessionProvider } from "next-auth/react";\n\nreturn (\n  <SessionProvider>\n    <html>\n        <body ...Inside-of-Layout\n    </html>\n  </SessionProvider>\n';
-  const codeblock4authts =
-    'import NextAuth from "next-auth”\nimport GithubProvider from "next-auth/providers/github”\n\nexport const authOptions = {\n // Configure auth providers here\n providers: [ GithubProvider({\n    clientId: process.env.GITHUB_ID,\n    clientSecret: process.env.GITHUB_SECRET,\n }),\n // ...add more providers here such as fb or apple\n ],\n}';
-  const codeblockAPIRoute = "export { GET, POST } from 'auth';";
+  const codeBlock2 =
+    "import { SubmitHandler, useForm } from 'react-hook-form';";
+  const codeBlock3 =
+    'const schema = z.object({\n  email: z.string().min(3),\n  password: z.string().min(3),\n});\ntype FormFields = z.infer<typeof schema>;';
+  const codeBlock4 =
+    "const {\n  register,\n  handleSubmit,\n  setError,\n  formState: { errors, isSubmitting, isSubmitSuccessful },\n} = useForm<FormFields>({\n  defaultValues: {\n    email: 'email ... ',\n   },\n  resolver: zodResolver(schema),\n});\n";
+  const codeBlock5 = "<input{...register('email')}";
+  const codeBlock6 =
+    'const onSubmit: SubmitHandler<FormFields> = async (data) => {\n console.log("data === ", data);\n //do stuff\n} \n\n<form onSubmit={handleSubmit(onSubmit)}>';
+  const codeBlock7 = "{errors.email && (\n<div>{errors.email.message}</div>\n)}";
+  const codeBlock8 = "<button disabled={isSubmitting}";
+
+
   return (
     <>
       <div className="flex h-full w-full flex-col flex-nowrap ">
@@ -40,15 +46,19 @@ const page = () => {
             <div>
               <ul className="text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li className="m-5">
-                  React-hook-from is an interesting library since it helps us to manage complex forms. The 
+                  React-hook-from is an interesting library since it helps us to
+                  manage complex forms. The
                   <Link
                     target="_blank"
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                     href="https://react-hook-form.com/get-started"
                   >
                     official React-Hook-Form page
-                  </Link> they state it's performant; flexible & extensible forms with easy-to-use validation & I agree with that which is why I choose to use it. In this steps I am going to also use Zod as validation. 
-          
+                  </Link>{' '}
+                  they state it's performant; flexible & extensible forms with
+                  easy-to-use validation & I agree with that which is why I
+                  choose to use it. In this steps I am going to also use Zod as
+                  validation. We will install these 3 packages: react-hook-form hookform/resolvers zod.
                 </li>
               </ul>
             </div>
@@ -91,7 +101,8 @@ const page = () => {
                     >
                       <div className="flex items-center justify-between">
                         <h3 className="font-medium">
-                          3. Define our schema for Zod validation & the Type of the form fields
+                          3. Define our schema for Zod validation & the Type of
+                          the form fields
                         </h3>
                       </div>
                     </div>
@@ -102,7 +113,54 @@ const page = () => {
                       role="alert"
                     >
                       <div className="flex items-center justify-between">
-                        <h3 className="font-medium">4. Add components</h3>
+                        <h3 className="font-medium">4. Custom hook useForm</h3>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                      role="alert"
+                    >
+                      <div className="flex items-center justify-between">
+                        <h3 className="font-medium">
+                          5. Register function</h3>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                      role="alert"
+                    >
+                      <div className="flex items-center justify-between">
+                        <h3 className="font-medium">
+                          6. Custom onSubmit Function & handleSubmit function
+                        </h3>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                      role="alert"
+                    >
+                      <div className="flex items-center justify-between">
+                        <h3 className="font-medium">
+                          7. Display errors
+                        </h3>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                      role="alert"
+                    >
+                      <div className="flex items-center justify-between">
+                        <h3 className="font-medium">
+                          8. Utilize isSubmitting for async function
+                        </h3>
                       </div>
                     </div>
                   </li>
@@ -148,10 +206,11 @@ const page = () => {
                           <div className="indent-4">
                             We simply import the hook at the top of the file:
                             <SyntaxHighlightingReactCatto
-                            codeString={codeBlock2}
-                          />
+                              codeString={codeBlock2}
+                            />
                             <p className="mt-2">
-                              While we are doing this lets also import the SubmitHandler function
+                              While we are doing this lets also import the
+                              SubmitHandler function
                             </p>
                           </div>
                         </div>
@@ -165,11 +224,14 @@ const page = () => {
                     >
                       <div className="flex flex-wrap items-center lg:flex-nowrap">
                         <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                          3. Define our schema for Zod validation & the Type of the form fields
+                          3. Define our schema for Zod validation & the Type of
+                          the form fields
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className="indent-4">
-                            In typescript we have to define our a type of the form fields. With Zod we obviously need to have that installed & imported at the top.
+                            In typescript we have to define our a type of the
+                            form fields. With Zod we obviously need to have that
+                            installed & imported at the top.
                           </div>
                           <SyntaxHighlightingReactCatto
                             codeString={codeBlock3}
@@ -185,27 +247,113 @@ const page = () => {
                     >
                       <div className="flex flex-wrap items-center lg:flex-nowrap">
                         <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                          4. Add components
+                          4. Custom hook useForm
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className=" indent-4">
-                            Adding components is quite easy just add it and then
-                            in our directory of "components/ui/" the component
-                            is added.
+                            We will make use of the custom hook useForm:
                           </div>
                           <SyntaxHighlightingReactCatto
-                            codeString={codeBlock3}
+                            codeString={codeBlock4}
                           />
                         </div>
                       </div>
                     </div>
                   </li>
+                  <li>
+                    <div
+                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                      role="alert"
+                    >
+                      <div className="flex flex-wrap items-center lg:flex-nowrap">
+                        <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                          5. Make use of Register function
+                        </h3>
+                        <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
+                          <div className=" indent-4">
+                            We register each input field so that each input
+                            fields are registered and when we change the values
+                            it gets sent to the form.
+                          </div>
+                          <SyntaxHighlightingReactCatto
+                            codeString={codeBlock5}
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                      role="alert"
+                    >
+                      <div className="flex flex-wrap items-center lg:flex-nowrap">
+                        <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                          6. Custom onSubmit function in typescript & implement
+                          handleSubmit function
+                        </h3>
+                        <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
+                          <div className=" indent-4">
+                            We will create a custom onSubmit function which will
+                            utilize SubmitHandler imported from react-hook-form.
+                            Then in our form element we will use onSubmit
+                            attribute & call the handleSubmit function:
+                          </div>
+                          <SyntaxHighlightingReactCatto
+                            codeString={codeBlock6}
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                      role="alert"
+                    >
+                      <div className="flex flex-wrap items-center lg:flex-nowrap">
+                        <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                          7. Access formState and error object
+                        </h3>
+                        <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
+                          <div className=" indent-4">
+                            We will show errors so below each input field we will add the error.field_name.message:
+                          </div>
+                          <SyntaxHighlightingReactCatto
+                            codeString={codeBlock7}
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                      role="alert"
+                    >
+                      <div className="flex flex-wrap items-center lg:flex-nowrap">
+                        <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                          8. Utilize isSubmitting for async function to display feedback to user.
+                        </h3>
+                        <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
+                          <div className=" indent-4">
+                            Utilize isSubmitting for async function to display feedback to user.
+                          </div>
+                          <SyntaxHighlightingReactCatto
+                            codeString={codeBlock8}
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
                 </ol>
               </div>
               <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
               <p className="indent-5">
-                Then next we can utilize other shadcn-ui components to our
-                projects.
+                Let's take a look at an entire file where we use react-hook-form:
+                <script src="https://gist.github.com/ccatto/d33aadd7e683e25ba8c6942b5eeec9b1.js"></script>  
+                end
               </p>
               <br />
             </div>

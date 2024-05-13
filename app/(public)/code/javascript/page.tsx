@@ -1,12 +1,13 @@
 import { Metadata } from 'next';
 import JumbotronCattoFlexible from '@/app/components/JumbotronCattoFlexible/JumbotronCattoFlexible';
 import Link from 'next/link';
-// import SideNavGitCatto from '@/app/components/SideNavGitCatto/SideNavGitCatto'
-// import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Chris Catto Code JavaScript Home',
   description: 'Chris Catto Code JavaScript Home',
+  alternates: {
+    canonical: 'https://www.chriscatto.com/code/javascript',
+  },
 };
 
 export default function Page() {
