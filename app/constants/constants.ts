@@ -13,7 +13,7 @@ export const constants = {
   : "https://www.chriscatto.com",
   db: "neon-catto",
   paymentLinks: {
-    cattoTestProduct: 
+    cattoTestProduct:
     process.env.NODE_ENV === "development"
     ? "https://buy.stripe.com/test_3csbKSf3O8fm0jm145"
     : "https://buy.stripe.com/test_3csbKSf3O8fm0jm145",

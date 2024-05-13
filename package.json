@@ -10,7 +10,9 @@
     "dev": "next dev",
     "prettier": "prettier --write --ignore-unknown .",
     "prettier:check": "prettier --check --ignore-unknown .",
-    "start": "next start"
+    "start": "next start",
+    "stripe listen": "stripe listen --forward-to localhost:3000/api/stripe-checkout-session",
+    "stripe trigger": "stripe trigger payment_intent.succeeded"
   },
   "dependencies": {
     "@auth/prisma-adapter": "^2.0.0",

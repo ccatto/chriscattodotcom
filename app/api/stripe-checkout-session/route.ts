@@ -1,4 +1,4 @@
-import { Customer } from './../../lib/definitions';
+// import { Customer } from './../../lib/definitions';
 import { NextRequest, NextResponse } from 'next/server';
 import Stripe from "stripe";
 import dayjs from "dayjs";
@@ -66,13 +66,17 @@ const handleCompletedCheckoutSession = async (
 // Stripe POST 
 export async function POST(request: NextRequest, response: NextResponse) {
 
+  // const payload = await request.body;
   const payload = await request.text();
   const responseParsed = JSON.parse(payload);
   const stripeSignature = request.headers.get("Stripe-Signature");
+
   const dateTime = new Date(responseParsed.created = 1000).toLocaleDateString();
   const timeString = new Date(responseParsed.created = 1000).toLocaleDateString();
+
   let stripeResult = "Stripe Webhook called;";
   let stripeEvent;
+  const testing = true;
 
   // const { PRICE_ID } = await request.json();
   // console.log('PRICE_ID === ' ,PRICE_ID);
@@ -87,9 +91,11 @@ export async function POST(request: NextRequest, response: NextResponse) {
   try {
     console.log("inside try & want to constructEvent -----------------------");
     stripeEvent = stripe.webhooks.constructEvent(
+      // responseParsed,
       payload,
       stripeSignature!,
-      process.env.STRIPE_SECRET_KEY!,
+      // need web hook secret key not stripe secret key
+      process.env.STRIPE_WEBHOOK_SECRET!,
     )
     console.log('inside try event.type === ', stripeEvent.type );
   } catch(e){
@@ -97,26 +103,36 @@ export async function POST(request: NextRequest, response: NextResponse) {
     return NextResponse.json({ error: e }, { status: 400 });
   }
 
-  switch (stripeEvent.type) {
-    case "checkout.session.completed":
-      const savedSession = await handleCompletedCheckoutSession(stripeEvent);
-      if(!savedSession) 
-        return NextResponse.json(
-          {error: "unable to save checkout session"}, 
-          {status: 500}
-      );
-      break;
-    case "payment_intent.succeeded": 
-      // need to create a different function not 
-      const updated = await handleCompletedCheckoutSession(stripeEvent);
-      if(!updated) 
-        return NextResponse.json(
-          {error: "unable to save checkout session"}, 
-          {status: 500}
-      );
-      break;
-    default: 
-      console.warn('unhandled event type ${event.type}');
+  if (!testing){
+    switch (stripeEvent.type) {
+      case "payment_intent.succeeded": 
+        const paymentIntentSucceeded = stripeEvent.data.object as {
+          id: string;
+          receipt_email: string;
+        }
+        console.log('paymentIntentSucceeded === ', paymentIntentSucceeded);
+        // NEED TO add db insert here;
+        break;
+      case "checkout.session.completed":
+        const savedSession = await handleCompletedCheckoutSession(stripeEvent);
+        if(!savedSession) 
+          return NextResponse.json(
+            {error: "unable to save checkout session"}, 
+            {status: 500}
+        );
+        break;
+      case "payment_intent.succeeded": 
+        // need to create a different function not 
+        const updated = await handleCompletedCheckoutSession(stripeEvent);
+        if(!updated) 
+          return NextResponse.json(
+            {error: "unable to save checkout session"}, 
+            {status: 500}
+        );
+        break;
+      default: 
+        console.warn('unhandled event type ${event.type}');
+    }
   }
 
   return NextResponse.json({ status:"success", message: 'stripe post successful', event: stripeEvent.type });
