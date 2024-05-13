@@ -7,6 +7,7 @@ import SyntaxHighlightingReactCatto from '@/app/components/Utils/SyntaxHighlight
 // import SyntaxHighlightingReactCatto from '../../../../../components/Utils/SyntaxHighlightingReactCatto/SyntaxHighlightingReactCatto';
 import Link from 'next/link';
 import React from 'react';
+import GithubGistCatto from '@/app/components/AtomicDesign/atoms/GithubGistCatto';
 
 export const metadata: Metadata = {
   title: 'Chris Catto Code Next.js React Hook Form',
@@ -346,14 +347,11 @@ const page = () => {
                       </div>
                     </div>
                   </li>
-
                 </ol>
               </div>
               <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
               <p className="indent-5">
-                Let's take a look at an entire file where we use react-hook-form:
-                <script src="https://gist.github.com/ccatto/d33aadd7e683e25ba8c6942b5eeec9b1.js"></script>  
-                end
+                So as we see we are able to use react hook forms to build some really great forms while adding validation with zod.
               </p>
               <br />
             </div>

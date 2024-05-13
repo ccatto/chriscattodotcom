@@ -50,7 +50,7 @@ test git actions
 - @logtail/next for https://betterstack.com/docs/logs/javascript/nextjs/
 - Using @sendgrid/mail to send email after issue with nodemailer on aws
 - @flydotio/dockerfile produces a dicker file
-- using datejs open source js date library great for manipulating dates & times
+- using dayjs open source js date library great for manipulating dates & times
 - using framer-motion for animations; when trying quickly couldn't get tailwind animation-spin work so went with this popular 3rd party library;
 - adding shadcn-ui to project
   -- shadcn-ui installed the following:
