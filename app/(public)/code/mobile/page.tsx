@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-
-  const pathName = 'https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2Fccatto%2Fgists%2Fblob%2Fmain%2Fstripe-webhook.ts&style=a11y-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on';
+  const pathName =
+    'https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2Fccatto%2Fgists%2Fblob%2Fmain%2Fstripe-webhook.ts&style=a11y-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on';
 
   return (
     <>
@@ -27,11 +27,9 @@ export default function Page() {
         <hr className="p-0" />
         <div className="m-4 flex-[80] rounded-2xl p-4 text-[#FAFAFA] ring-2 ring-gray-300 dark:bg-[#09090B] dark:ring-gray-500">
           <h2 className="mb-4 inline-block text-3xl font-extrabold tracking-tight">
-          XCode is the IDE to develop IOS apps.
+            XCode is the IDE to develop IOS apps.
           </h2>
-          <div>
-            This is a placeholder for mobile development documentation.
-          </div>
+          <div>This is a placeholder for mobile development documentation.</div>
         </div>
       </div>
     </>

@@ -25,9 +25,9 @@ const page = () => {
   const codeBlock5 = "<input{...register('email')}";
   const codeBlock6 =
     'const onSubmit: SubmitHandler<FormFields> = async (data) => {\n console.log("data === ", data);\n //do stuff\n} \n\n<form onSubmit={handleSubmit(onSubmit)}>';
-  const codeBlock7 = "{errors.email && (\n<div>{errors.email.message}</div>\n)}";
-  const codeBlock8 = "<button disabled={isSubmitting}";
-
+  const codeBlock7 =
+    '{errors.email && (\n<div>{errors.email.message}</div>\n)}';
+  const codeBlock8 = '<button disabled={isSubmitting}';
 
   return (
     <>
@@ -59,7 +59,8 @@ const page = () => {
                   they state it's performant; flexible & extensible forms with
                   easy-to-use validation & I agree with that which is why I
                   choose to use it. In this steps I am going to also use Zod as
-                  validation. We will install these 3 packages: react-hook-form hookform/resolvers zod.
+                  validation. We will install these 3 packages: react-hook-form
+                  hookform/resolvers zod.
                 </li>
               </ul>
             </div>
@@ -124,8 +125,7 @@ const page = () => {
                       role="alert"
                     >
                       <div className="flex items-center justify-between">
-                        <h3 className="font-medium">
-                          5. Register function</h3>
+                        <h3 className="font-medium">5. Register function</h3>
                       </div>
                     </div>
                   </li>
@@ -147,9 +147,7 @@ const page = () => {
                       role="alert"
                     >
                       <div className="flex items-center justify-between">
-                        <h3 className="font-medium">
-                          7. Display errors
-                        </h3>
+                        <h3 className="font-medium">7. Display errors</h3>
                       </div>
                     </div>
                   </li>
@@ -318,7 +316,8 @@ const page = () => {
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className=" indent-4">
-                            We will show errors so below each input field we will add the error.field_name.message:
+                            We will show errors so below each input field we
+                            will add the error.field_name.message:
                           </div>
                           <SyntaxHighlightingReactCatto
                             codeString={codeBlock7}
@@ -334,11 +333,13 @@ const page = () => {
                     >
                       <div className="flex flex-wrap items-center lg:flex-nowrap">
                         <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                          8. Utilize isSubmitting for async function to display feedback to user.
+                          8. Utilize isSubmitting for async function to display
+                          feedback to user.
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className=" indent-4">
-                            Utilize isSubmitting for async function to display feedback to user.
+                            Utilize isSubmitting for async function to display
+                            feedback to user.
                           </div>
                           <SyntaxHighlightingReactCatto
                             codeString={codeBlock8}
@@ -351,7 +352,8 @@ const page = () => {
               </div>
               <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
               <p className="indent-5">
-                So as we see we are able to use react hook forms to build some really great forms while adding validation with zod.
+                So as we see we are able to use react hook forms to build some
+                really great forms while adding validation with zod.
               </p>
               <br />
             </div>

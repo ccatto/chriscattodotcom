@@ -22,18 +22,16 @@ export default function Page() {
           />
         </div>
         <p>
-          This is our products page. It's just a stub now but will be built out eventually.
+          This is our products page. It's just a stub now but will be built out
+          eventually.
         </p>
-        <p>
-          This is a test product link button:
-        </p>
+        <p>This is a test product link button:</p>
         <Link
           href={constants.paymentLinks.cattoTestProduct}
           className="font-medium text-blue-600 hover:underline dark:text-blue-500"
         >
           Buy the test product
         </Link>
-
       </div>
     </>
   );

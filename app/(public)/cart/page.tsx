@@ -16,19 +16,17 @@ export default function Page() {
     <>
       <div className="flex h-full w-full flex-col flex-nowrap ">
         <div className="flex">
-          <JumbotronCattoFlexible
-            title="Catto Cart"
-            description="Catto Cart"
-          />
+          <JumbotronCattoFlexible title="Catto Cart" description="Catto Cart" />
         </div>
+        <p>This is the Cart page. This is just a stub but will be build out.</p>
         <p>
-          This is the Cart page. This is just a stub but will be build out. 
-        </p>
-        <p>
-          This is the test Stripe link button: <Link
-          href={constants.paymentLinks.cattoTestProduct}
-          className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-          >Test Stripe Payment</Link>
+          This is the test Stripe link button:{' '}
+          <Link
+            href={constants.paymentLinks.cattoTestProduct}
+            className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+          >
+            Test Stripe Payment
+          </Link>
         </p>
         <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-blue-100 dark:bg-blue-700 md:my-10" />
       </div>

@@ -6,10 +6,10 @@ import CommandPromptDisplay from '@/app/components/Utils/CommandPromptDisplay/Co
 import SyntaxHighlightingReactCatto from '@/app/components/Utils/SyntaxHighlightingReactCatto/SyntaxHighlightingReactCatto';
 
 export const metadata: Metadata = {
-  title: 'Chris Catto Mobile Capacitor Pages',
-  description: 'Chris Catto Mobile Capacitor Pages',
+  title: 'Chris Catto Mac Environment Setup ',
+  description: 'Chris Catto Mac Environment Setup',
   alternates: {
-    canonical: 'https://www.chriscatto.com/mobile/capacitor',
+    canonical: 'https://www.chriscatto.com/mac-environment-setup',
   },
 };
 
@@ -24,49 +24,33 @@ export default function Page() {
       <div className="flex h-full w-full flex-col flex-nowrap ">
         <div className="flex-none">
           <JumbotronCattoFlexible
-            title="Chris Catto Mobile Capacitor"
-            description="Chris Catto Mobile Capacitor"
+            title="Chris Catto Mac Environment Setup"
+            description="Chris Catto Mac Environment Setup"
           />
         </div>
         <hr className="p-0" />
         <div className="m-4 flex-[80] rounded-2xl p-4 text-[#FAFAFA] ring-2 ring-gray-300 dark:bg-[#09090B] dark:ring-gray-500">
           <h2 className="mb-4 inline-block text-3xl font-extrabold tracking-tight">
-            Mobile Capacitor
+            Mac Environment Setup
           </h2>
           <div>
             <div>
               <ul className="text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li className="m-5">
-                  Capacitor is a cross-platform native run time for apps.
-                  Official{' '}
-                  <Link
-                    target="_blank"
-                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                    href="https://capacitorjs.com/docs"
-                  >
-                    Capacitor page.
-                  </Link>{' '}
-                  Capacitor is a very good option kinda similar to react native
-                  but we can add it to our Next.js app to build native IOS &
-                  android apps. We can also combine it with Iconic which we'll
-                  get to later.
+                  Setting up our Mac developer environment is a fundamental
+                  piece of software development where we install software that
+                  we will utilize.
+                </li>
+                <li className="m-5">
+                  This page is a placeholder now & needs a bit more work #todo.
                 </li>
               </ul>
             </div>
             <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
             <div>
               <p className="flex justify-center text-2xl">
-                <span className="pr-2 font-bold">Summary</span>of setting up
-                Capacitor in Next.js includes the following which is based from
-                the{' '}
-                <Link
-                  target="_blank"
-                  className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                  href="https://capacitorjs.com/docs/getting-started"
-                >
-                  official capacitor install docs
-                </Link>
-                :
+                <span className="pr-2 font-bold">Summary</span>of setting up our
+                mac for development:
               </p>
               <div className="mt-4 flex justify-center">
                 <ol className="w-full space-y-4">
@@ -77,7 +61,33 @@ export default function Page() {
                     >
                       <div className="flex items-center justify-between">
                         <h3 className="font-medium">
-                          1. Install capacitor core & cli
+                          1. Install Browsers & extensions - Chrome
+                        </h3>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                      role="alert"
+                    >
+                      <div className="flex items-center justify-between">
+                        <h3 className="font-medium">2. Install Homebrew</h3>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                      role="alert"
+                    >
+                      <div className="flex items-center justify-between">
+                        <h3 className="font-medium">
+                          3. Install Git & tools
+                          <ul>
+                            <li>Sourcetree</li>
+                            <li>GitHub Desktop</li>
+                          </ul>
                         </h3>
                       </div>
                     </div>
@@ -89,7 +99,15 @@ export default function Page() {
                     >
                       <div className="flex items-center justify-between">
                         <h3 className="font-medium">
-                          2. Initialize app npx cap init
+                          4. Install IDE's
+                          <ul>
+                            <li>VS Code</li>
+                            <li>Xcode</li>
+                            <li>Android Studio</li>
+                            <li>DBeaver</li>
+                            <li>PG Admin - optional</li>
+                            <li>Eclipse - boo</li>
+                          </ul>
                         </h3>
                       </div>
                     </div>
@@ -101,8 +119,16 @@ export default function Page() {
                     >
                       <div className="flex items-center justify-between">
                         <h3 className="font-medium">
-                          3. Update capacitor.config.ts && Change webDir to
-                          "out"
+                          5. Communication Apps
+                          <ul>
+                            <li>Slack</li>
+                            <li>Discord</li>
+                            <li>What's App</li>
+                            <li>Teams & Outlook</li>
+                            <li>Zoom</li>
+                            <li>Skype - deprecated</li>
+                            <li>WebEx - optional</li>
+                          </ul>
                         </h3>
                       </div>
                     </div>
@@ -113,9 +139,7 @@ export default function Page() {
                       role="alert"
                     >
                       <div className="flex items-center justify-between">
-                        <h3 className="font-medium">
-                          4a. Create Android & IOS projects
-                        </h3>
+                        <h3 className="font-medium">7. Install Postman</h3>
                       </div>
                     </div>
                   </li>
@@ -125,64 +149,7 @@ export default function Page() {
                       role="alert"
                     >
                       <div className="flex items-center justify-between">
-                        <h3 className="font-medium">
-                          4b. Add platforms for IOS & Android
-                        </h3>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div
-                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
-                      role="alert"
-                    >
-                      <div className="flex items-center justify-between">
-                        <h3 className="font-medium">5. Build app</h3>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div
-                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
-                      role="alert"
-                    >
-                      <div className="flex items-center justify-between">
-                        <h3 className="font-medium">
-                          6. Update nextjs.config for static exports - "output:
-                          export"
-                        </h3>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div
-                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
-                      role="alert"
-                    >
-                      <div className="flex items-center justify-between">
-                        <h3 className="font-medium">7. Build app</h3>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div
-                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
-                      role="alert"
-                    >
-                      <div className="flex items-center justify-between">
-                        <h3 className="font-medium">8. Synchronize app</h3>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div
-                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
-                      role="alert"
-                    >
-                      <div className="flex items-center justify-between">
-                        <h3 className="font-medium">
-                          9. Run app in xcode npx cap open iOS
-                        </h3>
+                        <h3 className="font-medium">8. Install Docker</h3>
                       </div>
                     </div>
                   </li>

@@ -1,7 +1,7 @@
 // import { Customer } from './../../lib/definitions';
 import { NextRequest, NextResponse } from 'next/server';
-import Stripe from "stripe";
-import dayjs from "dayjs";
+import Stripe from 'stripe';
+import dayjs from 'dayjs';
 import { exec } from 'child_process';
 
 // const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
@@ -14,13 +14,12 @@ const fulfillOrder = async (data: Stripe.LineItem[], customerEmail: string) => {
   // const client = await clientPromise;
   // const db= client.db(constants.db);
   // const email = customerEmail.toLowerCase();
-  console.log("inside fulfillOrder need to add db insert or update");
-  // // update the users account so that it includes the tier 
+  console.log('inside fulfillOrder need to add db insert or update');
+  // // update the users account so that it includes the tier
   // const userUpserted = await.db.collection("users".findOneAndUpdate ())
 };
 
 const saveCheckoutSession = async (eventDataObject: any) => {
-
   try {
     console.log('inside saveCheckoutSession need to build out the db insert');
     return true;
@@ -36,111 +35,122 @@ const saveCheckoutSession = async (eventDataObject: any) => {
 };
 
 const handleCompletedCheckoutSession = async (
-  event: Stripe.CheckoutSessionCompletedEvent
+  event: Stripe.CheckoutSessionCompletedEvent,
 ) => {
   try {
     const sessionWithLineItem = await stripe.checkout.sessions.retrieve(
       (event.data.object as any).id,
       {
-        expand: ["line_items"],
-      }
+        expand: ['line_items'],
+      },
     );
     const lineItems = sessionWithLineItem.line_items;
-    if (!lineItems) return false; 
+    if (!lineItems) return false;
     const ordersFulfilled = await fulfillOrder(
       lineItems.data,
-      (event.data.object as any).customer_details.email
+      (event.data.object as any).customer_details.email,
     );
     await saveCheckoutSession(event.data.object);
     // if (ordersFulfilled) return true;
 
-    console.error("error fulfilling orders for", JSON.stringify(lineItems), JSON.stringify(event.data.object));
+    console.error(
+      'error fulfilling orders for',
+      JSON.stringify(lineItems),
+      JSON.stringify(event.data.object),
+    );
     return false;
-  } catch(e) {
-    console.error("error in function handleCompletedCheckoutSession ", e);
+  } catch (e) {
+    console.error('error in function handleCompletedCheckoutSession ', e);
     return false;
   }
 };
 
-
-// Stripe POST 
+// Stripe POST
 export async function POST(request: NextRequest, response: NextResponse) {
-
   // const payload = await request.body;
   const payload = await request.text();
   const responseParsed = JSON.parse(payload);
-  const stripeSignature = request.headers.get("Stripe-Signature");
+  const stripeSignature = request.headers.get('Stripe-Signature');
 
-  const dateTime = new Date(responseParsed.created = 1000).toLocaleDateString();
-  const timeString = new Date(responseParsed.created = 1000).toLocaleDateString();
+  const dateTime = new Date(
+    (responseParsed.created = 1000),
+  ).toLocaleDateString();
+  const timeString = new Date(
+    (responseParsed.created = 1000),
+  ).toLocaleDateString();
 
-  let stripeResult = "Stripe Webhook called;";
+  let stripeResult = 'Stripe Webhook called;';
   let stripeEvent;
   const testing = true;
 
   // const { PRICE_ID } = await request.json();
   // console.log('PRICE_ID === ' ,PRICE_ID);
 
-  console.log("----- this are the 3 values going to be passed: ");
-  console.log("payload === ", payload);
-  console.log("========================           ==================");
+  console.log('----- this are the 3 values going to be passed: ');
+  console.log('payload === ', payload);
+  console.log('========================           ==================');
   console.log('responseParsed === ', responseParsed);
-  console.log("========================           ==================");
-  console.log('process.env.STRIPE_SECRET_KEY! === ', process.env.STRIPE_SECRET_KEY!);
+  console.log('========================           ==================');
+  console.log(
+    'process.env.STRIPE_SECRET_KEY! === ',
+    process.env.STRIPE_SECRET_KEY!,
+  );
 
   try {
-    console.log("inside try & want to constructEvent -----------------------");
+    console.log('inside try & want to constructEvent -----------------------');
     stripeEvent = stripe.webhooks.constructEvent(
       // responseParsed,
       payload,
       stripeSignature!,
       // need web hook secret key not stripe secret key
       process.env.STRIPE_WEBHOOK_SECRET!,
-    )
-    console.log('inside try event.type === ', stripeEvent.type );
-  } catch(e){
-    console.log("error e === ", e);
+    );
+    console.log('inside try event.type === ', stripeEvent.type);
+  } catch (e) {
+    console.log('error e === ', e);
     return NextResponse.json({ error: e }, { status: 400 });
   }
 
-  if (!testing){
+  if (!testing) {
     switch (stripeEvent.type) {
-      case "payment_intent.succeeded": 
+      case 'payment_intent.succeeded':
         const paymentIntentSucceeded = stripeEvent.data.object as {
           id: string;
           receipt_email: string;
-        }
+        };
         console.log('paymentIntentSucceeded === ', paymentIntentSucceeded);
         // NEED TO add db insert here;
         break;
-      case "checkout.session.completed":
+      case 'checkout.session.completed':
         const savedSession = await handleCompletedCheckoutSession(stripeEvent);
-        if(!savedSession) 
+        if (!savedSession)
           return NextResponse.json(
-            {error: "unable to save checkout session"}, 
-            {status: 500}
-        );
+            { error: 'unable to save checkout session' },
+            { status: 500 },
+          );
         break;
-      case "payment_intent.succeeded": 
-        // need to create a different function not 
+      case 'payment_intent.succeeded':
+        // need to create a different function not
         const updated = await handleCompletedCheckoutSession(stripeEvent);
-        if(!updated) 
+        if (!updated)
           return NextResponse.json(
-            {error: "unable to save checkout session"}, 
-            {status: 500}
-        );
+            { error: 'unable to save checkout session' },
+            { status: 500 },
+          );
         break;
-      default: 
+      default:
         console.warn('unhandled event type ${event.type}');
     }
   }
 
-  return NextResponse.json({ status:"success", message: 'stripe post successful', event: stripeEvent.type });
+  return NextResponse.json({
+    status: 'success',
+    message: 'stripe post successful',
+    event: stripeEvent.type,
+  });
 
   // return NextResponse.json ({ received: true, status: stripeResult});
-
 }
-
 
 // export default async function handler(req, res) {
 //   if (req.method === 'POST') {
@@ -169,9 +179,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
 //   }
 // }
 
-
-
-// OLD JUNK Code: 
+// OLD JUNK Code:
 
 // const session = await stripe.checkout.sessions.create({
 //   line_items: [

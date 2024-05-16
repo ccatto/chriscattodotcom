@@ -10,7 +10,12 @@ const CodeGistsCatto = ({ path }: Props) => {
   return (
     <>
       {/* <div className="w-full "> */}
-      <iframe width="100%" className=" h-[13303px]; overflow-hidden" allow="clipboard-write" src={path}></iframe>
+      <iframe
+        width="100%"
+        className=" h-[13303px]; overflow-hidden"
+        allow="clipboard-write"
+        src={path}
+      ></iframe>
       {/* </div> */}
     </>
   );

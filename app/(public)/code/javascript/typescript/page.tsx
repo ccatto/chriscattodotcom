@@ -21,12 +21,18 @@ export default function Page() {
           />
         </div>
         <div className="m-4 flex-[80] rounded-2xl p-4 text-black ring-2 ring-gray-300 dark:bg-[#f7df1e] dark:ring-gray-500">
-          <p>This will eventually be a typescript section but at this time just a place holder. </p>
           <p>
-            Let's add this error: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
-            Type 'undefined' is not assignable to type 'string'.ts(2345)
-          </p><p>
-            Solution what we do is add an exclamation point at the end to say it will be a string;
+            This will eventually be a typescript section but at this time just a
+            place holder.{' '}
+          </p>
+          <p>
+            Let's add this error: Argument of type 'string | undefined' is not
+            assignable to parameter of type 'string'. Type 'undefined' is not
+            assignable to type 'string'.ts(2345)
+          </p>
+          <p>
+            Solution what we do is add an exclamation point at the end to say it
+            will be a string;
           </p>
         </div>
         {/* <hr className="m-3" /> */}

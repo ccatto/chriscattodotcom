@@ -21,14 +21,18 @@ export default function Page() {
           />
         </div>
         <div className="m-4 flex-[80] rounded-2xl p-4 text-black ring-2 ring-gray-300 dark:bg-[#f7df1e] dark:ring-gray-500">
-          <p>This will eventually be a DayJS section but at this time just a place holder. </p>
           <p>
-            DayJS is a js library that parses; validates & manipulates dates & times. It's very similar to moment but better. 
-          </p><p>
-          import dayjs from "dayjs";
-          const currentDate = dayjs();
-const formattedDate = currentDate.format('YYYY-MM-DD HH:mm:ss');
-console.log(formattedDate);
+            This will eventually be a DayJS section but at this time just a
+            place holder.{' '}
+          </p>
+          <p>
+            DayJS is a js library that parses; validates & manipulates dates &
+            times. It's very similar to moment but better.
+          </p>
+          <p>
+            import dayjs from "dayjs"; const currentDate = dayjs(); const
+            formattedDate = currentDate.format('YYYY-MM-DD HH:mm:ss');
+            console.log(formattedDate);
           </p>
         </div>
         {/* <hr className="m-3" /> */}

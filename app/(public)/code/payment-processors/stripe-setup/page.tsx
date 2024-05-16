@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-
-  const pathName = 'https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2Fccatto%2Fgists%2Fblob%2Fmain%2Fstripe-webhook.ts&style=a11y-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on';
+  const pathName =
+    'https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2Fccatto%2Fgists%2Fblob%2Fmain%2Fstripe-webhook.ts&style=a11y-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on';
 
   return (
     <>
@@ -33,13 +33,18 @@ export default function Page() {
             <div>
               <ul className="text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li className="m-5">
-                  Stripe is a payment processor that I've chosen to use. This is the official <Link
+                  Stripe is a payment processor that I've chosen to use. This is
+                  the official{' '}
+                  <Link
                     target="_blank"
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                     href="https://stripe.com/"
                   >
                     Stripe page.
-                  </Link> Stripe is an interesting option and currently it's the payment processor I choose to use. Let's take a look how to add it to a Next.js app.
+                  </Link>{' '}
+                  Stripe is an interesting option and currently it's the payment
+                  processor I choose to use. Let's take a look how to add it to
+                  a Next.js app.
                 </li>
               </ul>
             </div>
@@ -129,9 +134,7 @@ export default function Page() {
                       role="alert"
                     >
                       <div className="flex items-center justify-between">
-                        <h3 className="font-medium">
-                          6. Stripe CLI
-                        </h3>
+                        <h3 className="font-medium">6. Stripe CLI</h3>
                       </div>
                     </div>
                   </li>
@@ -141,9 +144,7 @@ export default function Page() {
                       role="alert"
                     >
                       <div className="flex items-center justify-between">
-                        <h3 className="font-medium">
-                          7. On Horizon
-                        </h3>
+                        <h3 className="font-medium">7. On Horizon</h3>
                       </div>
                     </div>
                   </li>
@@ -167,7 +168,10 @@ export default function Page() {
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className="indent-4">
-                            1. Create a stripe account & toggle the "test mode" pill in the top right corner. It's a nice feature since we can use test mode and not accrue any charges.
+                            1. Create a stripe account & toggle the "test mode"
+                            pill in the top right corner. It's a nice feature
+                            since we can use test mode and not accrue any
+                            charges.
                           </div>
                         </div>
                       </div>
@@ -184,11 +188,18 @@ export default function Page() {
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className="indent-4">
-                            In Stripe dashboard navigate to products page (we can use the search). Then basically click create product enter a bunch of optional data ensure to give it a price and then the products catalog we can view our products. Here is the <Link
+                            In Stripe dashboard navigate to products page (we
+                            can use the search). Then basically click create
+                            product enter a bunch of optional data ensure to
+                            give it a price and then the products catalog we can
+                            view our products. Here is the{' '}
+                            <Link
                               href="https://dashboard.stripe.com/test/products?active=true"
-                              target='_blank'
-                              className="font-medium text-blue-600 hover:underline dark:text-blue-500">
-                              stripe test product catalog.</Link>
+                              target="_blank"
+                              className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                            >
+                              stripe test product catalog.
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -205,7 +216,10 @@ export default function Page() {
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className="indent-4">
-                            Setup Stripe payment link; so we navigate to the product detail page and click the "Create payment link" button. This will create a page where we can make the purchase.
+                            Setup Stripe payment link; so we navigate to the
+                            product detail page and click the "Create payment
+                            link" button. This will create a page where we can
+                            make the purchase.
                           </div>
                         </div>
                       </div>
@@ -222,7 +236,11 @@ export default function Page() {
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className=" indent-4">
-                            Obtain API keys. We can search "API keys"; then copy & create 2 .env vars NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY && STRIPE_SECRET_KEY && NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY.
+                            Obtain API keys. We can search "API keys"; then copy
+                            & create 2 .env vars
+                            NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY &&
+                            STRIPE_SECRET_KEY &&
+                            NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY.
                           </div>
                         </div>
                       </div>
@@ -235,12 +253,17 @@ export default function Page() {
                     >
                       <div className="flex flex-wrap items-center lg:flex-nowrap">
                         <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                          5.  Setup Stripe Webhook Api.
+                          5. Setup Stripe Webhook Api.
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className=" indent-4">
-                            Setup Stripe Webhook Api. Search webhooks & click "Add an Endpoint". In our Next.js app in our "API" directory we need to create a new directory and name is something such as "stripe-checkout-session" then create a file names route.ts inside that (kinda normal route creation).
-                            We need to import stripe & obviously NextRequest, NextResponse.
+                            Setup Stripe Webhook Api. Search webhooks & click
+                            "Add an Endpoint". In our Next.js app in our "API"
+                            directory we need to create a new directory and name
+                            is something such as "stripe-checkout-session" then
+                            create a file names route.ts inside that (kinda
+                            normal route creation). We need to import stripe &
+                            obviously NextRequest, NextResponse.
                           </div>
                         </div>
                       </div>
@@ -257,7 +280,8 @@ export default function Page() {
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className=" indent-4">
-                            Review all different event types. The main event is charge.succeeded
+                            Review all different event types. The main event is
+                            charge.succeeded
                           </div>
                         </div>
                       </div>
@@ -270,20 +294,24 @@ export default function Page() {
                     >
                       <div className="flex flex-wrap items-center lg:flex-nowrap">
                         <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                          7.  Stripe CLI
+                          7. Stripe CLI
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className=" indent-4">
-                            install the Stripe CLI
-                            if we are on a terminal window & get this: zsh: command not found: stripe
-                            we need to install the CLI by doing the following: "brew install stripe/stripe-cli/stripe"
-                            We could run "stripe login" then a browser will open where we grant access then we will be authenticated in the terminal shell.
+                            install the Stripe CLI if we are on a terminal
+                            window & get this: zsh: command not found: stripe we
+                            need to install the CLI by doing the following:
+                            "brew install stripe/stripe-cli/stripe" We could run
+                            "stripe login" then a browser will open where we
+                            grant access then we will be authenticated in the
+                            terminal shell.
                             <p>
-                              stripe listen --forward-to localhost:3000/api/stripe-checkout-session
+                              stripe listen --forward-to
+                              localhost:3000/api/stripe-checkout-session
                             </p>
                             <p>
-                              trigger an event:
-                              stripe trigger payment_intent.succeeded
+                              trigger an event: stripe trigger
+                              payment_intent.succeeded
                             </p>
                           </div>
                         </div>
@@ -301,7 +329,9 @@ export default function Page() {
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className=" indent-4">
-                            On horizon; after payment confirmation we can setup redirects to certain pages within our website; Also we could add some error handling & logging.
+                            On horizon; after payment confirmation we can setup
+                            redirects to certain pages within our website; Also
+                            we could add some error handling & logging.
                           </div>
                         </div>
                       </div>
@@ -309,10 +339,10 @@ export default function Page() {
                   </li>
                 </ol>
                 <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
-                <div className="flex justify-center pb-4 w-full">
-                    This is a clean full file:
+                <div className="flex w-full justify-center pb-4">
+                  This is a clean full file:
                 </div>
-                <div className="flex justify-center w-full h-96 bg-green-400">
+                <div className="flex h-96 w-full justify-center bg-green-400">
                   <CodeGistsCatto path={pathName} />
                 </div>
               </div>
