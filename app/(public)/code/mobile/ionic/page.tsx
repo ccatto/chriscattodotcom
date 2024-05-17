@@ -19,6 +19,7 @@ export default function Page() {
   const codeBlock =
     "/* Ionic CSS Imports */\n/* Core CSS required for Ionic components to work properly */\nimport '@ionic/react/css/core.css';\n\n/* Basic CSS for apps built with Ionic */\nimport '@ionic/react/css/normalize.css';\nimport '@ionic/react/css/structure.css';\nimport '@ionic/react/css/typography.css';\n\n/* Optional CSS utils that can be commented out */\nimport '@ionic/react/css/padding.css';\nimport '@ionic/react/css/float-elements.css';\nimport '@ionic/react/css/text-alignment.css';\nimport '@ionic/react/css/text-transformation.css';\nimport '@ionic/react/css/flex-utils.css';\nimport '@ionic/react/css/display.css';\n";
   const codeBlock2 = '<html lang="en" className="hydrated">';
+  const codeBlock3 = "// at top import script\nimport Script from 'next/script';\n\n<Script\ntype=\"module\"\nsrc=\"https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js\"\nstrategy=\"lazyOnload\"\n/>\n<Script\nnoModule\nsrc=\"https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js\"\nstrategy=\"lazyOnload\"\n/>\n";
 
   return (
     <>
@@ -119,7 +120,9 @@ export default function Page() {
                       role="alert"
                     >
                       <div className="flex items-center justify-between">
-                        <h3 className="font-medium">4.</h3>
+                        <h3 className="font-medium">
+                          4. Add Iconic icons scripts
+                        </h3>
                       </div>
                     </div>
                   </li>
@@ -223,11 +226,33 @@ export default function Page() {
                       </div>
                     </div>
                   </li>
+                  <li>
+                    <div
+                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                      role="alert"
+                    >
+                      <div className="flex flex-wrap items-center lg:flex-nowrap">
+                        <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                          4. Add Iconic Image Scripts
+                        </h3>
+                        <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
+                          <div className="indent-4">
+                            Add iconic's image scripts in layout file.
+                            <SyntaxHighlightingReactCatto
+                              codeString={codeBlock3}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
                 </ol>
                 <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
                 <div className="flex w-full justify-center pb-4">
-                  So as we see it's a little bit to get capacitor added to our
-                  Next.js app but it sure is worth it.
+                  So as we see it's we can ionic to our app. A good <Link href="https://ionicframework.com/docs/components"
+                    target='_blank'
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                  >official ionic docs link to see the components. </Link>
                 </div>
               </div>
               <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />

@@ -435,6 +435,12 @@ export default function Page() {
                 <div className="flex w-full justify-center pb-4">
                   So as we see it's a little bit to get capacitor added to our
                   Next.js app but it sure is worth it.
+                  <p>
+                    Another topic good to see is <Link target="_blank"
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://capacitorjs.com/docs/guides/live-reload"
+                    >Live Reload with Capacitor</Link>.
+                  </p>
                 </div>
               </div>
               <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
