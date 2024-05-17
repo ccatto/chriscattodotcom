@@ -26,7 +26,8 @@ export default function Page() {
           output="remove unwanted files from your working directory"
         />
         <p>
-          If there are directories that are untracked & we want to remove untracked files which are actually directories/folders we can run
+          If there are directories that are untracked & we want to remove
+          untracked files which are actually directories/folders we can run
         </p>
         <CommandPromptDisplay
           command="git clean -fd"

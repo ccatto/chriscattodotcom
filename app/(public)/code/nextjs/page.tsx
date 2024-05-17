@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import JumbotronCattoFlexible from '@/app/components/JumbotronCattoFlexible/JumbotronCattoFlexible';
 // import SideNavGitCatto from '@/app/components/SideNavGitCatto/SideNavGitCatto'
 // import Image from 'next/image'
+import { SyntaxHighlightingReactCatto } from '@ccatto/common-sdk-catto';
 
 export const metadata: Metadata = {
   title: 'Chris Catto Code Next.js Home Tutorial',
@@ -12,9 +13,11 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
+  // const codeBlock = "console.log('testing');";
   return (
     <>
       <div className="flex h-full w-full flex-col flex-nowrap ">
+      {/* <SyntaxHighlightingReactCatto codeString={codeBlock} /> */}
         <div className="flex">
           <JumbotronCattoFlexible
             title="Next.js"

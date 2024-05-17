@@ -436,10 +436,15 @@ export default function Page() {
                   So as we see it's a little bit to get capacitor added to our
                   Next.js app but it sure is worth it.
                   <p>
-                    Another topic good to see is <Link target="_blank"
+                    Another topic good to see is{' '}
+                    <Link
+                      target="_blank"
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                       href="https://capacitorjs.com/docs/guides/live-reload"
-                    >Live Reload with Capacitor</Link>.
+                    >
+                      Live Reload with Capacitor
+                    </Link>
+                    .
                   </p>
                 </div>
               </div>

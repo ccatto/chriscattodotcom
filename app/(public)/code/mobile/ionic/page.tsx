@@ -19,7 +19,8 @@ export default function Page() {
   const codeBlock =
     "/* Ionic CSS Imports */\n/* Core CSS required for Ionic components to work properly */\nimport '@ionic/react/css/core.css';\n\n/* Basic CSS for apps built with Ionic */\nimport '@ionic/react/css/normalize.css';\nimport '@ionic/react/css/structure.css';\nimport '@ionic/react/css/typography.css';\n\n/* Optional CSS utils that can be commented out */\nimport '@ionic/react/css/padding.css';\nimport '@ionic/react/css/float-elements.css';\nimport '@ionic/react/css/text-alignment.css';\nimport '@ionic/react/css/text-transformation.css';\nimport '@ionic/react/css/flex-utils.css';\nimport '@ionic/react/css/display.css';\n";
   const codeBlock2 = '<html lang="en" className="hydrated">';
-  const codeBlock3 = "// at top import script\nimport Script from 'next/script';\n\n<Script\ntype=\"module\"\nsrc=\"https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js\"\nstrategy=\"lazyOnload\"\n/>\n<Script\nnoModule\nsrc=\"https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js\"\nstrategy=\"lazyOnload\"\n/>\n";
+  const codeBlock3 =
+    '// at top import script\nimport Script from \'next/script\';\n\n<Script\ntype="module"\nsrc="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"\nstrategy="lazyOnload"\n/>\n<Script\nnoModule\nsrc="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"\nstrategy="lazyOnload"\n/>\n';
 
   return (
     <>
@@ -249,10 +250,14 @@ export default function Page() {
                 </ol>
                 <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
                 <div className="flex w-full justify-center pb-4">
-                  So as we see it's we can ionic to our app. A good <Link href="https://ionicframework.com/docs/components"
-                    target='_blank'
+                  So as we see it's we can ionic to our app. A good{' '}
+                  <Link
+                    href="https://ionicframework.com/docs/components"
+                    target="_blank"
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                  >official ionic docs link to see the components. </Link>
+                  >
+                    official ionic docs link to see the components.{' '}
+                  </Link>
                 </div>
               </div>
               <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
