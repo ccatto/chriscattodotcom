@@ -216,6 +216,14 @@ const NextJSSideNavLinkList = () => {
               <span className="ms-3">Component Library Common SDK</span>
             </Link>
           </li>
+          <li>
+            <Link
+              href="/code/nextjs/react-hook-form"
+              className="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+            >
+              <span className="ms-3">React Hook Form</span>
+            </Link>
+          </li>
         </ul>
       </div>
     </>

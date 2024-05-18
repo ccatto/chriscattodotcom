@@ -48,7 +48,7 @@ const page = () => {
               <ul className="text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li className="m-5">
                   React-hook-from is an interesting library since it helps us to
-                  manage complex forms. The
+                  manage complex forms. The{' '}
                   <Link
                     target="_blank"
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
