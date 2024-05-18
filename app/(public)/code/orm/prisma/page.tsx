@@ -3,8 +3,8 @@ import JumbotronCattoFlexible from '@/app/components/JumbotronCattoFlexible/Jumb
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Chris Catto Code Database PostgreSQL',
-  description: 'Chris Catto Code Database PostgreSQL',
+  title: 'Chris Catto Code Database ORM Prisma',
+  description: 'Chris Catto Code Database ORM Prisma overview',
 };
 
 export default function Page() {

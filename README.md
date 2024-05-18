@@ -50,7 +50,7 @@ test git actions
 - @logtail/next for https://betterstack.com/docs/logs/javascript/nextjs/
 - Using @sendgrid/mail to send email after issue with nodemailer on aws
 - @flydotio/dockerfile produces a dicker file
-- using datejs open source js date library great for manipulating dates & times
+- using dayjs open source js date library great for manipulating dates & times
 - using framer-motion for animations; when trying quickly couldn't get tailwind animation-spin work so went with this popular 3rd party library;
 - adding shadcn-ui to project
   -- shadcn-ui installed the following:
@@ -62,11 +62,17 @@ test git actions
 
 ---
 
+- Adding stripe @stripe/stripe-js
+- using react-embed-gist to display code embedded
+- using use-shopping-cart for shopping cart state & logic for Stipe;
+
 shadcn components:
-table npx shadcn-ui@latest add table
-dropdown menu npx shadcn-ui@latest add dropdown-menu
-button
-input
+
+- table npx shadcn-ui@latest add table
+- dropdown menu npx shadcn-ui@latest add dropdown-menu
+- button
+- input
+- accordion
 
 ---
 

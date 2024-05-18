@@ -3,10 +3,11 @@ import { auth, signIn, signOut } from 'auth';
 import React from 'react';
 
 async function NextAuthLoginOutCatto() {
-  const session = await auth();
+  // const session = await auth();
   return (
     <div className="mx-auto p-4">
-      <div className=" text-white">
+      <h1>test</h1>
+      {/* <div className=" text-white">
         {session && session.user ? (
           <div className="flex gap-2">
             <p>{session.user.name}</p>
@@ -29,7 +30,7 @@ async function NextAuthLoginOutCatto() {
             <button type="submit">🔐 Sign In</button>
           </form>
         )}
-      </div>
+      </div> */}
     </div>
   );
 }

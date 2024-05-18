@@ -57,6 +57,14 @@ const FooterCatto = () => {
                         Prisma
                       </Link>
                     </li>
+                    <li className="mb-4">
+                      <Link
+                        href="/code/mac-environment-setup"
+                        className="hover:underline"
+                      >
+                        Environment Setup
+                      </Link>
+                    </li>
                     <li>
                       <Link href="/code" className="hover:underline">
                         SFCC

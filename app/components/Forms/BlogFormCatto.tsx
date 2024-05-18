@@ -37,7 +37,7 @@ const PagesFormCatto = () => {
   const onSubmit: SubmitHandler<FormFields> = async (data) => {
     console.log('inside onsubmit');
     try {
-      console.log('data ==', data);
+      console.log('data 22 ==', data);
       //   setIsEmailSentFail500(false);
       //   // const response = await fetch('api/sendgrid', {
       //   //   // const response = await fetch('api/email', {
@@ -48,7 +48,9 @@ const PagesFormCatto = () => {
       //   //   body: JSON.stringify(data),
       //   // });
       // const pagesDataResponseGet = await getPages();
-      const pagesDataResponse = await fetch('api/pages', {
+      // const res = await fetch('http://localhost:3000/api/pages');
+      const pagesDataResponse = await fetch('http://localhost:3000/api/pages', {
+        // const pagesDataResponse = await fetch('api/pages', {
         method: 'POST',
         headers: {
           'content-type': 'application/json',
