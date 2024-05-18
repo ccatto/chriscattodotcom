@@ -41,9 +41,9 @@ export default function Page() {
                   piece of software development where we install software that
                   we will utilize.
                 </li>
-                <li className="m-5">
+                {/* <li className="m-5">
                   This page is a placeholder now & needs a bit more work #todo.
-                </li>
+                </li> */}
               </ul>
             </div>
             <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
@@ -82,13 +82,7 @@ export default function Page() {
                       role="alert"
                     >
                       <div className="flex items-center justify-between">
-                        <h3 className="font-medium">
-                          3. Install Git & tools
-                          <ul>
-                            <li>Sourcetree</li>
-                            <li>GitHub Desktop</li>
-                          </ul>
-                        </h3>
+                        <h3 className="font-medium">3. Install Git & tools</h3>
                       </div>
                     </div>
                   </li>
@@ -98,17 +92,7 @@ export default function Page() {
                       role="alert"
                     >
                       <div className="flex items-center justify-between">
-                        <h3 className="font-medium">
-                          4. Install IDE's
-                          <ul>
-                            <li>VS Code</li>
-                            <li>Xcode</li>
-                            <li>Android Studio</li>
-                            <li>DBeaver</li>
-                            <li>PG Admin - optional</li>
-                            <li>Eclipse - boo</li>
-                          </ul>
-                        </h3>
+                        <h3 className="font-medium">4. Install IDE's</h3>
                       </div>
                     </div>
                   </li>
@@ -118,18 +102,7 @@ export default function Page() {
                       role="alert"
                     >
                       <div className="flex items-center justify-between">
-                        <h3 className="font-medium">
-                          5. Communication Apps
-                          <ul>
-                            <li>Slack</li>
-                            <li>Discord</li>
-                            <li>What's App</li>
-                            <li>Teams & Outlook</li>
-                            <li>Zoom</li>
-                            <li>Skype - deprecated</li>
-                            <li>WebEx - optional</li>
-                          </ul>
-                        </h3>
+                        <h3 className="font-medium">5. Communication Apps</h3>
                       </div>
                     </div>
                   </li>
@@ -139,7 +112,7 @@ export default function Page() {
                       role="alert"
                     >
                       <div className="flex items-center justify-between">
-                        <h3 className="font-medium">7. Install Postman</h3>
+                        <h3 className="font-medium">6. Install Postman</h3>
                       </div>
                     </div>
                   </li>
@@ -149,7 +122,7 @@ export default function Page() {
                       role="alert"
                     >
                       <div className="flex items-center justify-between">
-                        <h3 className="font-medium">8. Install Docker</h3>
+                        <h3 className="font-medium">7. Install Docker</h3>
                       </div>
                     </div>
                   </li>
@@ -169,18 +142,42 @@ export default function Page() {
                     >
                       <div className="flex flex-wrap items-center lg:flex-nowrap">
                         <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                          1. Install capacitor core & cli
+                          1. Install Browsers & extensions - Chrome
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className="indent-4">
-                            Install capacitor core & cli.
+                            <p>Install Browsers & extensions - Chrome</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                      role="alert"
+                    >
+                      <div className="flex flex-wrap items-center lg:flex-nowrap">
+                        <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                          2. Install Homebrew
+                        </h3>
+                        <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
+                          <div className="indent-4">
+                            Installing{' '}
+                            <Link
+                              href="https://brew.sh/"
+                              target="_blank"
+                              className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                            >
+                              Homebrew
+                            </Link>{' '}
+                            is very helpful package management system which
+                            helps us tremendously to install software. Check the
+                            official page to get the exact command but it goes a
+                            little something like this:
                             <CommandPromptDisplay
-                              command="npm I @capacitor/core"
-                              output="added 1 package, and audited 361 packages in 1s"
-                            />
-                            <CommandPromptDisplay
-                              command="npm I -D @capacitor/cli "
-                              output="added 77 packages, and audited 438 packages in 4s"
+                              command="/bin/bash -c \'\$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\'"
+                              output="homebrew installed message"
                             />
                           </div>
                         </div>
@@ -194,18 +191,18 @@ export default function Page() {
                     >
                       <div className="flex flex-wrap items-center lg:flex-nowrap">
                         <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                          2. Initialize app - "npx cap init"
+                          3. Install Git & tools
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className="indent-4">
-                            The CLI will ask you a few questions, starting with
-                            your app name, and the package ID you would like to
-                            use for your app.
-                            <CommandPromptDisplay
-                              command="npm cap init"
-                              output="[success] capacitor.config.ts created!"
-                            />
+                            Git on new mac's is installed by default. Git is the
+                            industry standard for software versioning. There are
+                            some good UI tools tool
                           </div>
+                          <ul>
+                            <li>Sourcetree</li>
+                            <li>GitHub Desktop</li>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -217,37 +214,56 @@ export default function Page() {
                     >
                       <div className="flex flex-wrap items-center lg:flex-nowrap">
                         <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                          3. Update capacitor.config.ts && Change webDir to
-                          "out"
-                        </h3>
-                        <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
-                          <div className="indent-4">
-                            Update capacitor.config.ts
-                          </div>
-                          <SyntaxHighlightingReactCatto
-                            codeString={codeBlock}
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div
-                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
-                      role="alert"
-                    >
-                      <div className="flex flex-wrap items-center lg:flex-nowrap">
-                        <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                          4a. Create Android & IOS projects
+                          4. Install IDE's
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className=" indent-4">
-                            Create Android & IOS projects:
+                            Iterated Development Environment's are essential for
+                            software development. Here are a few of my favorite.
                           </div>
-                          <CommandPromptDisplay
-                            command="npm I @capacitor/android @capacitor/iOS"
-                            output="added 2 packages, and audited 440 packages in 1s"
-                          />
+                          <ul className='className="max-w-md list-inside list-disc space-y-1'>
+                            <li>
+                              <Link
+                                target="_blank"
+                                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                                href="https://code.visualstudio.com/download"
+                              >
+                                VS Code
+                              </Link>
+                            </li>
+                            <li>
+                              Xcode - download from app store on your mac;
+                            </li>
+                            <li>
+                              <Link
+                                target="_blank"
+                                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                                href="https://developer.android.com/studio"
+                              >
+                                Android Studio
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                target="_blank"
+                                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                                href="https://dbeaver.io/download/"
+                              >
+                                DBeaver
+                              </Link>{' '}
+                              I've grown to like DBeaver for Postgresql however
+                              I do like others. I grew up on SSMS for .NET & for
+                              Mongo I often use for Compass
+                            </li>
+                            <li>
+                              Compass; SQL Server Management Studio SSMS & PG
+                              Admin - optional database IDE's
+                            </li>
+                            <li>
+                              Eclipse - boo (I need this for old SFCC dev but do
+                              not like it)
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -259,39 +275,35 @@ export default function Page() {
                     >
                       <div className="flex flex-wrap items-center lg:flex-nowrap">
                         <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                          4b. Add platforms for IOS & Android
-                        </h3>
-                        <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
-                          <div className=" indent-4">
-                            This will create our android & ios folders
-                          </div>
-                          <CommandPromptDisplay
-                            command="npx cap add android"
-                            output="[success] android platform added!"
-                          />
-                          <CommandPromptDisplay
-                            command="npx cap add ios"
-                            output="[success] ios platform added!"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div
-                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
-                      role="alert"
-                    >
-                      <div className="flex flex-wrap items-center lg:flex-nowrap">
-                        <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                          5. Build app
+                          5. Communication Apps
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div>
-                            <CommandPromptDisplay
-                              command="npm run build"
-                              output="Creating an optimized production build ..."
-                            />
+                            <ul className='className="max-w-md list-inside list-disc space-y-1'>
+                              <li>Slack - great chat app</li>
+                              <li>
+                                Discord - There are some good developer servers
+                                to join
+                              </li>
+                              <li>
+                                What's App - I use this for more social and
+                                messaging friends & group chats
+                              </li>
+                              <li>
+                                Teams & Outlook - If working in a Microsoft shop
+                                these are essential; however now a days kinda
+                                feel old
+                              </li>
+                              <li>
+                                Zoom - I don't love zoom but often business's
+                                use it{' '}
+                              </li>
+                              <li>
+                                Skype - deprecated - haven't used it in quite
+                                some time now
+                              </li>
+                              <li>WebEx - optional</li>
+                            </ul>
                           </div>
                         </div>
                       </div>
@@ -304,19 +316,18 @@ export default function Page() {
                     >
                       <div className="flex flex-wrap items-center lg:flex-nowrap">
                         <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                          6. Update nextjs.config for static exports - "output:
-                          export"
+                          6. Install Postman
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className=" indent-4">
-                            Update nextjs.config.mjs for static exports - add
-                            one line "output: export"; The{' '}
+                            Postman is a good app that we cn utilize to test
+                            API's
                             <Link
                               target="_blank"
                               className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                              href="https://nextjs.org/docs/pages/building-your-application/deploying/static-exports"
+                              href="https://www.postman.com/"
                             >
-                              official Next.js Static Exports page
+                              Official Postman page.
                             </Link>
                           </div>
                           <SyntaxHighlightingReactCatto
@@ -333,66 +344,22 @@ export default function Page() {
                     >
                       <div className="flex flex-wrap items-center lg:flex-nowrap">
                         <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                          7. Build app
+                          7. Install Docker
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className=" indent-4">
-                            Now this will add our "out" directory (below
-                            node_modules directory)
-                            <CommandPromptDisplay
-                              command="npm run build"
-                              output="○  (Static)  prerendered as static content"
-                            />
+                            Docker is a good free app that let's us use
+                            containers to help build software. One example is we
+                            can have a database container so it's easy to spin
+                            up and not have to install it all locally.
+                            <Link
+                              target="_blank"
+                              className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                              href="https://www.docker.com/"
+                            >
+                              Official Docker page.
+                            </Link>
                           </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div
-                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
-                      role="alert"
-                    >
-                      <div className="flex flex-wrap items-center lg:flex-nowrap">
-                        <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                          8. Synchronize app
-                        </h3>
-                        <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
-                          <div className=" indent-4">Synchronize app</div>
-                          <CommandPromptDisplay
-                            command="npx cap sync"
-                            output="[info] Sync finished in 0.028s"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div
-                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
-                      role="alert"
-                    >
-                      <div className="flex flex-wrap items-center lg:flex-nowrap">
-                        <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                          9. Run our app in IOS
-                        </h3>
-                        <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
-                          <div className=" indent-4">
-                            Run the app in xcode; we need to have xcode
-                            installed for this:
-                          </div>
-                          <CommandPromptDisplay
-                            command="npx cap open ios"
-                            output="✔ Opening the Xcode workspace... in 3.00s"
-                          />
-                          <p>
-                            Here we need to ensure the environment is setup
-                            including cocopods are installed.
-                          </p>
-                          <CommandPromptDisplay
-                            command="npx cap open android"
-                            output="[info] Opening Android project at: android."
-                          />
                         </div>
                       </div>
                     </div>
@@ -400,8 +367,8 @@ export default function Page() {
                 </ol>
                 <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
                 <div className="flex w-full justify-center pb-4">
-                  So as we see it's a little bit to get capacitor added to our
-                  Next.js app but it sure is worth it.
+                  So as we see our mac's environmental setup is fundamental &
+                  requires installing a bunch of software.
                 </div>
               </div>
               <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
