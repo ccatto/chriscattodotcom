@@ -24,26 +24,61 @@ Current node version is 20.9.0 as of March 26th 2024;
 
 ## April 23, 2024 Release 1.1.01
 
-- Release includes Layouts; Nav; 3 sections including Home; code & about.
+- 003 release May 3rd 003 contact page | gridsend & fly.io updated
+
+* Release includes Layouts; Nav; 3 sections including Home; code & about.
+
+- 004 contact page including inserting results via prisma into contact table May 6th 2024.
+
+* Release May 9th includes Added Prisma section & shadcn; tables & data fetching.
 
 test git actions
 
-* using @next/third-parties for GA4.
-* using "react-syntax-highlighter": "^15.5.0", && @types/react-syntax-highlighter for syntax highlighting
-* using pg package v^8.11.5 for postgresql
-* using prisma as ORM
-* using @prisma/client as db client
-* using next-auth for authentication
-* using @auth/prisma-adapter for auth adapter
-* using @auth/prisma-adapter for data base adapter for next-auth v5
-* using nodemailer for sending emails;
-* using react-hook-form for forms
-* using @hookform/resolvers for access to resolvers we can plug into our forms
-* using zod for validation library;
-* using googleapis for google APIs & dynamically generate access token;
-* @logtail/next for https://betterstack.com/docs/logs/javascript/nextjs/
-* Using @sendgrid/mail to send email after issue with nodemailer on aws
-* @flydotio/dockerfile produces a dicker file 
+- using @next/third-parties for GA4.
+- using "react-syntax-highlighter": "^15.5.0", && @types/react-syntax-highlighter for syntax highlighting
+- using pg package v^8.11.5 for postgresql
+- using prisma as ORM
+- using @prisma/client as db client
+- using next-auth for authentication
+- using @auth/prisma-adapter for auth adapter
+- using @auth/prisma-adapter for data base adapter for next-auth v5
+- using nodemailer for sending emails;
+- using react-hook-form for forms
+- using @hookform/resolvers for access to resolvers we can plug into our forms
+- using zod for validation library;
+- using googleapis for google APIs & dynamically generate access token;
+- @logtail/next for https://betterstack.com/docs/logs/javascript/nextjs/
+- Using @sendgrid/mail to send email after issue with nodemailer on aws
+- @flydotio/dockerfile produces a dicker file
+- using dayjs open source js date library great for manipulating dates & times
+- using framer-motion for animations; when trying quickly couldn't get tailwind animation-spin work so went with this popular 3rd party library;
+- adding shadcn-ui to project
+  -- shadcn-ui installed the following:
+
+* class-variance-authority
+* lucid-react
+* tailwind-merge
+* tailwindcss-animate
+
+---
+
+- Adding stripe @stripe/stripe-js
+- using react-embed-gist to display code embedded
+- using use-shopping-cart for shopping cart state & logic for Stipe;
+
+shadcn components:
+
+- table npx shadcn-ui@latest add table
+- dropdown menu npx shadcn-ui@latest add dropdown-menu
+- button
+- input
+- accordion
+
+---
+
+- using @tanstack/react-table for a data table
+
+---
 
 Needed to update tsconfig.json to add `"noImplicitAny": false,` to resolve the react-syntax-highlighter type error.
 

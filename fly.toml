@@ -4,6 +4,7 @@
 #
 
 app = 'chriscattodotcom-icy-leaf-3614'
+#app = 'chriscatto.com'
 primary_region = 'mia'
 
 [build]

@@ -1,4 +1,4 @@
-import NavWrapperCatto from '../Nav/NavWrapperCatto';
+import NavWrapperCatto from '../NavCatto/NavWrapperCatto';
 // import NavCatto from '../NavCatto/NavCatto';
 // import NextAuthLoginOutCatto from '../Auth/NextAuthLoginOutCatto';
 // import NavSimpleCatto from '../NavSimpleCatto/NavSimpleCatto';

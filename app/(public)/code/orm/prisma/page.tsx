@@ -3,8 +3,8 @@ import JumbotronCattoFlexible from '@/app/components/JumbotronCattoFlexible/Jumb
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Chris Catto Code Database PostgreSQL',
-  description: 'Chris Catto Code Database PostgreSQL',
+  title: 'Chris Catto Code Database ORM Prisma',
+  description: 'Chris Catto Code Database ORM Prisma overview',
 };
 
 export default function Page() {
@@ -17,66 +17,21 @@ export default function Page() {
             description="Prisma is an ORM which is works well with TypeScript; global database caching; connection pooling & real-time db events."
           />
         </div>
-        <div className="m-4 flex-[80] rounded-2xl p-4 text-black ring-2 ring-gray-300 dark:bg-[#0064a5] dark:ring-gray-500">
-          <ul className="space-y-2 font-medium">
-            <li>
-              <Link
-                href="/code/orm/prisma/overview"
-                className="group flex items-center rounded-lg p-2 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
-              >
-                <svg
-                  className="h-5 w-5 flex-shrink-0 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 "
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 18 21"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M6,9 C6.55228,9 7,9.44772 7,10 L7,14 C7,14.5523 6.55228,15 6,15 L2,15 C1.44772,15 1,14.5523 1,14 L1,10 C1,9.44772 1.44772,9 2,9 L6,9 Z M14,13 C14.5523,13 15,13.4477 15,14 C15,14.5523 14.5523,15 14,15 L10,15 C9.44772,15 9,14.5523 9,14 C9,13.4477 9.44772,13 10,13 L14,13 Z M5,11 L3,11 L3,13 L5,13 L5,11 Z M14,9 C14.5523,9 15,9.44772 15,10 C15,10.5523 14.5523,11 14,11 L10,11 C9.44772,11 9,10.5523 9,10 C9,9.44772 9.44772,9 10,9 L14,9 Z M6,1 C6.55228,1 7,1.44772 7,2 L7,6 C7,6.55228 6.55228,7 6,7 L2,7 C1.44772,7 1,6.55228 1,6 L1,2 C1,1.44772 1.44772,1 2,1 L6,1 Z M14,5 C14.5523,5 15,5.44772 15,6 C15,6.51283143 14.613973,6.93550653 14.1166239,6.9932722 L14,7 L10,7 C9.44772,7 9,6.55228 9,6 C9,5.48716857 9.38604429,5.06449347 9.88337975,5.0067278 L10,5 L14,5 Z M5,3 L3,3 L3,5 L5,5 L5,3 Z M14,1 C14.5523,1 15,1.44772 15,2 C15,2.55228 14.5523,3 14,3 L10,3 C9.44772,3 9,2.55228 9,2 C9,1.44772 9.44772,1 10,1 L14,1 Z"
-                  />
-                </svg>
-                prisma
-                {/* <span className="ms-3">
-                </span>
-                  <Link href="https://www.prisma.io/" target='_blank'>Prisma</Link> Overview */}
-                <div>
-                  Prisma:
-                  <br />
-                  Add it to project:
-                  <br />
-                  npm install prisma --save-dev
-                  <br />
-                  Install it globally:
-                  <br />
-                  npm i -g prisma
-                  <br />
-                  Prisma -v
-                  <br />
-                  5.13.0
-                  <br />
-                  April 2024
-                  <br />
-                  <br />
-                  npx prisma
-                  <br />
-                  npx prisma init
-                  <br />
-                  Created directory prisma & schema.prisma file
-                  <br />
-                  Prisma db pull Prisma generate
-                  https://www.prisma.io/docs/getting-started/setup-prisma/add-to-existing-project/relational-databases/baseline-your-database-typescript-postgresql
-                  Baseline db Create directory : prisma/migrations/0_init Then
-                  run following:
-                  {/* npx prisma migrate diff --from-empty --to-schema-datamodel prisma/schema.prisma --script > prisma/migrations/0_init/migration.sql */}
-                  Mark migration as applied; prisma migrate resolve --applied
-                  0_init To make changes: prisma migrate dev cmd: Prisma
-                  generate This command reads your Prisma schema and generates
-                  your Prisma Client library
-                </div>
-              </Link>
-            </li>
-          </ul>
+        <div className="dark:text-[text-[#E2E8F0] m-4 flex-[80] rounded-2xl p-4 ring-2 ring-gray-300 dark:bg-[#090A15]">
+          <p className="first-letter:float-start mb-3 text-gray-500 first-letter:me-3 first-letter:text-5xl first-letter:font-bold first-letter:text-gray-900 first-line:uppercase first-line:tracking-widest dark:text-gray-400 dark:first-letter:text-gray-100">
+            Prisma ORM is open source which includes the Prisma Client &
+            Migration system. It's quite popular maybe not as much as Sequelize
+            but it has a strong community. It works well with Rest API's &
+            GraphQL. It creates a "schema.prisma" file where it models the
+            database.
+          </p>
+          <p className="text-gray-500 dark:text-gray-400">
+            The migration tool is very helpful migrating the model to the
+            database. There is also the Prisma Studio which is a GUI database
+            IDE however currently I still like to just use other tools such as
+            DBeaver to inspect the DB. Overall Prisma in my opinion is a great
+            choice to go with for an ORM.
+          </p>
         </div>
         <hr className="m-3" />
       </div>

@@ -7,7 +7,6 @@ datasource db {
   url      = env("DATABASE_URL_NEON")
 }
 
-
 model Account {
   id                 String    @id @default(cuid())
   userId             String
@@ -22,6 +21,34 @@ model Account {
   user               User      @relation(fields: [userId], references: [id])
 
   @@unique([providerId, providerAccountId])
+}
+
+model navigation {
+  navigation_id    Int       @id @default(autoincrement())
+  nav_name         String    @db.VarChar(40)
+  nav_link         String?   @db.VarChar(100)
+  nav_image        String?   @db.VarChar(100)
+  created_date     DateTime? @default(now()) @db.Timestamp(6)
+  nav_level        String?   @db.VarChar(10)
+  nav_one_level_up String?   @db.VarChar(80)
+}
+
+model pages {
+  page_id          Int       @id @default(autoincrement())
+  page_name        String    @db.VarChar(100)
+  page_title       String?   @db.VarChar(200)
+  page_description String?   @db.VarChar(2000)
+  created_date     DateTime? @default(now()) @db.Timestamp(6)
+  is_active        Boolean?  @default(false)
+  is_draft         Boolean?  @default(true)
+  page_body        String?   @db.VarChar(30000)
+  page_directory   String?   @db.VarChar(500)
+}
+
+model playing_with_neon {
+  id    Int    @id @default(autoincrement())
+  name  String
+  value Float? @db.Real
 }
 
 model Session {
@@ -47,6 +74,7 @@ model User {
   accounts      Account[]
   sessions      Session[]
 }
+
 model VerificationRequest {
   id         String   @id @default(cuid())
   identifier String
@@ -58,27 +86,10 @@ model VerificationRequest {
   @@unique([identifier, token])
 }
 
-
-model playing_with_neon {
-  id    Int    @id @default(autoincrement())
-  name  String
-  value Float? @db.Real
-}
-
-model navigation {
-  navigation_id    Int       @id @default(autoincrement())
-  nav_name         String    @db.VarChar(40)
-  nav_link         String?   @db.VarChar(100)
-  nav_image        String?   @db.VarChar(100)
-  created_date     DateTime? @default(now()) @db.Timestamp(6)
-  nav_level        String?   @db.VarChar(10)
-  nav_one_level_up String?   @db.VarChar(80)
-}
-
-model pages {
-  page_id          Int       @id @default(autoincrement())
-  page_name        String    @db.VarChar(100)
-  page_title       String?   @db.VarChar(200)
-  page_description String?   @db.VarChar(2000)
-  created_date     DateTime? @default(now()) @db.Timestamp(6)
+model Contact {
+  contact_id    String   @id @default(cuid())
+  name          String
+  email_address String
+  message       String
+  date_created  DateTime @default(now())
 }

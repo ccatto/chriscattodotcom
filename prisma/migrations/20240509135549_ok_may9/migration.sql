@@ -1,0 +1,4 @@
+-- -- AlterTable
+-- ALTER TABLE "pages" ADD COLUMN     "is_active" BOOLEAN DEFAULT false,
+-- ADD COLUMN     "is_draft" BOOLEAN DEFAULT true,
+-- ADD COLUMN     "page_body" VARCHAR(30000);

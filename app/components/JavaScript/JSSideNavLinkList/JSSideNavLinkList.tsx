@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { useState } from 'react';
 
 const JSSideNavLinkList = () => {
@@ -13,7 +14,7 @@ const JSSideNavLinkList = () => {
       <div className="hidden h-full overflow-y-auto bg-gray-50 px-3 py-4 dark:bg-gray-800 lg:block">
         <ul className="space-y-2 font-medium">
           <li>
-            <a
+            <Link
               href="/code/javascript"
               className="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
             >
@@ -31,10 +32,10 @@ const JSSideNavLinkList = () => {
                 ></path>
               </svg>
               <span className="ms-3">JavaScript Home</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               href="/code/javascript/overview"
               className="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
             >
@@ -51,18 +52,10 @@ const JSSideNavLinkList = () => {
                 />
               </svg>
               <span className="ms-3">Javascript Overview</span>
-            </a>
+            </Link>
           </li>
-          {/* <li>
-            <a href="/code/javascript/fundamentals" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-              <svg className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 21">
-                <path d="M19.059 10.898l-3.171-7.927A1.543 1.543 0 0 0 14.454 2H12.02l.38 4.065h2.7L10 10.293 4.9 6.065h2.7L7.98 2H5.546c-.632 0-1.2.384-1.434.971L.941 10.898a4.25 4.25 0 0 0-.246 2.272l.59 3.539A1.544 1.544 0 0 0 2.808 18h14.383c.755 0 1.399-.546 1.523-1.291l.59-3.539a4.22 4.22 0 0 0-.245-2.272zm-2.1 4.347a.902.902 0 0 1-.891.755H3.932a.902.902 0 0 1-.891-.755l-.365-2.193A.902.902 0 0 1 3.567 12h12.867c.558 0 .983.501.891 1.052l-.366 2.193z" />
-              </svg>
-              <span className="ms-3">Fundamentals</span>
-            </a>
-          </li> */}
           <li>
-            <a
+            <Link
               href="/code/javascript/fundamentals"
               className="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
             >
@@ -80,7 +73,7 @@ const JSSideNavLinkList = () => {
                 />
               </svg>
               <span className="ms-3">Fundamentals</span>
-            </a>
+            </Link>
             <ul id="dropdown-example" className="space-y-2 py-2 indent-4">
               <li>
                 <a
@@ -115,6 +108,63 @@ const JSSideNavLinkList = () => {
                 </a>
               </li>
             </ul>
+          </li>
+          <li>
+            <Link
+              href="/code/javascript/async-await"
+              className="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+            >
+              <svg
+                className="h-5 w-5 text-gray-800 dark:text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="#9cafa3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M12 5.365V3m0 2.365a5.338 5.338 0 0 1 5.133 5.368v1.8c0 2.386 1.867 2.982 1.867 4.175 0 .593 0 1.292-.538 1.292H5.538C5 18 5 17.301 5 16.708c0-1.193 1.867-1.789 1.867-4.175v-1.8A5.338 5.338 0 0 1 12 5.365ZM8.733 18c.094.852.306 1.54.944 2.112a3.48 3.48 0 0 0 4.646 0c.638-.572 1.236-1.26 1.33-2.112h-6.92Z"
+                />
+              </svg>
+              <span className="ms-3">Async/Await</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/code/javascript/dayjs"
+              className="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+            >
+              <span className="ms-3">DayJS</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/code/javascript/frameworks/nodejs"
+              className="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+            >
+              <span className="ms-3">Node.js</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/code/javascript/frameworks/nodejs/semantic-versioning-semver"
+              className="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+            >
+              <span className="ms-3">Semantic Versioning</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/code/javascript/frameworks/nodejs/publish-npm-package"
+              className="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+            >
+              <span className="ms-3">Publish Npm Package</span>
+            </Link>
           </li>
         </ul>
       </div>

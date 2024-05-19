@@ -43,6 +43,10 @@ const helloworld = () => {
                   Next.js starter templates
                 </Link>
               </li>
+              <li>
+                npx create-next-app@latest . - the dot will use the existing
+                directory if not it will make a new folder;
+              </li>
             </ul>
           </div>
           <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />

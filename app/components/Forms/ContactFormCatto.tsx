@@ -11,6 +11,7 @@ const schema = z.object({
   email: z.string().email(),
   name: z.string().min(1),
   userNote: z.string().min(5),
+  // email_address: z.string().email(),
 });
 
 type FormFields = z.infer<typeof schema>;
@@ -31,6 +32,7 @@ const ContactFormCatto = () => {
   });
 
   const onSubmit: SubmitHandler<FormFields> = async (data) => {
+    // console.log("inside onsubmit");
     try {
       setIsEmailSentFail500(false);
       const response = await fetch('api/sendgrid', {
@@ -41,12 +43,26 @@ const ContactFormCatto = () => {
         },
         body: JSON.stringify(data),
       });
-      // console.log("response === ", response);
+
+      const contactDataResponse = await fetch('api/contact', {
+        method: 'POST',
+        headers: {
+          'content-type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+      // console.log("--------------contactDataResponse === ", contactDataResponse);
       // console.log("response.status === ", response.status);
       // console.log("response.statusText -=== ", response.statusText);
-      if (response.status === 200) {
+
+      if (
+        contactDataResponse.status === 200 &&
+        contactDataResponse.status === 200
+      ) {
+        // if (response.status === 200) {
         // console.log('in success response === ', response);
         setIsSubmitSuccessfulTrue(true);
+        // resizeTo({});
       }
     } catch {
       // console.log('YO an ERROR not 200');
@@ -55,6 +71,12 @@ const ContactFormCatto = () => {
       });
       setIsEmailSentFail500(true);
     }
+  };
+
+  const handleMailAgainClick = () => {
+    console.log('inside handleMailAgainClick()');
+    setIsSubmitSuccessfulTrue(false);
+    // reset();
   };
 
   return (
@@ -179,8 +201,8 @@ const ContactFormCatto = () => {
             </div>
             <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-200 md:my-10" />
             <div className="mb-5 flex items-center justify-center">
-              <Link
-                href="/contact"
+              <button
+                onClick={handleMailAgainClick}
                 className="inline-flex items-center justify-center rounded-lg bg-blue-700 px-5 py-2.5 text-center text-base font-medium text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
               >
                 Send another message
@@ -199,7 +221,7 @@ const ContactFormCatto = () => {
                     d="M1 5h12m0 0L9 1m4 4L9 9"
                   />
                 </svg>
-              </Link>
+              </button>
             </div>
           </div>
         </div>
@@ -238,11 +260,11 @@ const ContactFormCatto = () => {
           </div>
           <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-200 md:my-10" />
           <div className="mb-5 flex items-center justify-center">
-            <Link
-              href="/contact"
+            <button
+              onClick={handleMailAgainClick}
               className="inline-flex items-center justify-center rounded-lg bg-blue-700 px-5 py-2.5 text-center text-base font-medium text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
             >
-              Try the email again
+              Send another email
               <svg
                 className="ms-2 h-3.5 w-3.5 rtl:rotate-180"
                 aria-hidden="true"
@@ -258,7 +280,7 @@ const ContactFormCatto = () => {
                   d="M1 5h12m0 0L9 1m4 4L9 9"
                 />
               </svg>
-            </Link>
+            </button>
           </div>
         </div>
       )}

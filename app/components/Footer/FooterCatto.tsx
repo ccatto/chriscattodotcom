@@ -42,6 +42,29 @@ const FooterCatto = () => {
                         Javascript
                       </Link>
                     </li>
+                    <li className="mb-4">
+                      <Link href="/code/nextjs" className="hover:underline">
+                        Next.js
+                      </Link>
+                    </li>
+                    <li className="mb-4">
+                      <Link href="/code/git" className="hover:underline">
+                        Git
+                      </Link>
+                    </li>
+                    <li className="mb-4">
+                      <Link href="/code/orm/prisma" className="hover:underline">
+                        Prisma
+                      </Link>
+                    </li>
+                    <li className="mb-4">
+                      <Link
+                        href="/code/mac-environment-setup"
+                        className="hover:underline"
+                      >
+                        Environment Setup
+                      </Link>
+                    </li>
                     <li>
                       <Link href="/code" className="hover:underline">
                         SFCC
