@@ -1,10 +1,10 @@
-import { LoginFormCatto } from '@/app/components/Auth/login-form-catto';
+// import { LoginFormCatto } from '@/app/components/Auth/login-form-catto';
 
 const LoginPage = () => {
   return (
     <div>
       Login Page!
-      <LoginFormCatto />
+      {/* <LoginFormCatto /> */}
     </div>
   );
 };

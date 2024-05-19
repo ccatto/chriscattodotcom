@@ -2,7 +2,7 @@
 
 import React, { ReactNode, useState } from 'react';
 import GitNavDrawerCatto from '@/app/components/Git/GitNavDrawerCatto/GitNavDrawerCatto';
-import PageDrawerCattoDataProviderWrapper from '@/app/components/Utils/PageDrawerDataProviderCatto/PageDrawerCattoDataProvider';
+// import PageDrawerCattoDataProviderWrapper from '@/app/components/Utils/PageDrawerDataProviderCatto/PageDrawerCattoDataProvider';
 
 import SideNavGitCatto from '@/app/components/SideNavGitCatto/SideNavGitCatto';
 import Image from 'next/image';
@@ -27,13 +27,13 @@ const GitLayout = ({ children }: LayoutProps) => {
   return (
     <>
       <div className="flex min-h-[calc(100vh-27rem)]">
-        <PageDrawerCattoDataProviderWrapper>
+        {/* <PageDrawerCattoDataProviderWrapper> */}
           {/* <GitDrawerSideNavCatto /> */}
           <aside className="h-full lg:flex-[20]">
             <GitNavDrawerCatto />
           </aside>
           <article className=" h-full lg:flex-[80]">{children}</article>
-        </PageDrawerCattoDataProviderWrapper>
+        {/* </PageDrawerCattoDataProviderWrapper> */}
       </div>
       <hr className="m-3" />
     </>
