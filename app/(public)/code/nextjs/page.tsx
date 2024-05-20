@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import JumbotronCattoFlexible from '@/app/components/JumbotronCattoFlexible/JumbotronCattoFlexible';
 // import SideNavGitCatto from '@/app/components/SideNavGitCatto/SideNavGitCatto'
 // import Image from 'next/image'
-// import { SyntaxHighlightingReactCatto } from '@ccatto/common-sdk-catto';
+
 
 export const metadata: Metadata = {
   title: 'Chris Catto Code Next.js Home Tutorial',

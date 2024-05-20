@@ -5,7 +5,7 @@ import {
   ReactNode,
   createContext,
   useState,
-  useContext,
+  // useContext,
   useEffect,
 } from 'react';
 
@@ -80,5 +80,6 @@ const PageDrawerCattoDataProviderWrapper = ({ children, ...props }: Props) => {
 export default PageDrawerCattoDataProviderWrapper;
 
 export function usePageDrawerDataCattoContext() {
-  return useContext(PageDrawerCattoDataContext);
+  console.log("inside usePageDrawerDataCattoContext");
+  // return useContext(PageDrawerCattoDataContext);
 }

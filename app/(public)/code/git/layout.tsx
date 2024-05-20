@@ -8,7 +8,7 @@ import SideNavGitCatto from '@/app/components/SideNavGitCatto/SideNavGitCatto';
 import Image from 'next/image';
 import ButtonCatto from '@/app/components/AtomicDesign/atoms/ButtonCatto/ButtonCatto';
 import ImageCatto from '@/app/components/ImageCatto/ImageCatto';
-import GitDrawerSideNavCatto from '@/app/components/GitDrawerSideNavCatto/GitDrawerSideNavCatto';
+// import GitDrawerSideNavCatto from '@/app/components/GitDrawerSideNavCatto/GitDrawerSideNavCatto';
 
 // import React, { useState } from 'react';
 // import GitDrawerOpenButtonCatto from "@/app/components/atoms/GitDrawerOpenButtonCatto/GitDrawerOpenButtonCatto";
