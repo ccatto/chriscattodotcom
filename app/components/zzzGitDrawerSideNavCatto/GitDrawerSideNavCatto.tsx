@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import ImageCatto from '../ImageCatto/ImageCatto';
 import SideNavGitCatto from '../SideNavGitCatto/SideNavGitCatto';
-import { usePageDrawerDataCattoContext } from '../Utils/PageDrawerDataProviderCatto/PageDrawerCattoDataProvider';
+// import { usePageDrawerDataCattoContext } from '../Utils/PageDrawerDataProviderCatto/PageDrawerCattoDataProvider';
 // import GitSimpleTestNavCatto from '../Git/zzzGitSimpleTestNavCatto/GitSimpleTestNavCatto';
 // import GitSimpleTestNavCatto from '../Git/zzzGitSimpleTestNavCatto/GitSimpleTestNavCatto';
 
@@ -11,19 +11,19 @@ const GitDrawerSideNavCatto = () => {
   // New Context approach YO:
   // let { isPageDrawerOpen } = usePageDrawerDataCattoContext();
   // console.log("------ Context isPageDrawerOpen2 === ", isPageDrawerOpen);
-  let { isPageDrawerOpen } = usePageDrawerDataCattoContext();
-  console.log('-- ++ ---- Context isPageDrawerOpen === ', isPageDrawerOpen);
+  // let { isPageDrawerOpen } = usePageDrawerDataCattoContext();
+  // console.log('-- ++ ---- Context isPageDrawerOpen === ', isPageDrawerOpen);
   let openDrawer = false;
   // const [isGitDrawerOpen, setGitDrawerOpen] = useState(false);
   let simpleFalse = false;
 
   const clickSideNavHandler = () => {
-    console.log('isGitDrawerOpen === ', isPageDrawerOpen);
-    isPageDrawerOpen = !isPageDrawerOpen;
-    isDrawerOpen = isPageDrawerOpen;
-    console.log('state variable isDrawerOpen === ', isDrawerOpen);
-    console.log('After Set | isGitDrawerOpen === ', isPageDrawerOpen);
-    console.log(typeof isPageDrawerOpen);
+    // console.log('isGitDrawerOpen === ', isPageDrawerOpen);
+    // isPageDrawerOpen = !isPageDrawerOpen;
+    // isDrawerOpen = isPageDrawerOpen;
+    // console.log('state variable isDrawerOpen === ', isDrawerOpen);
+    // console.log('After Set | isGitDrawerOpen === ', isPageDrawerOpen);
+    // console.log(typeof isPageDrawerOpen);
     simpleFalse = true;
     console.log('simpleFalse ', simpleFalse);
   };

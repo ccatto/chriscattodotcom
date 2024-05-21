@@ -6,6 +6,12 @@ import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
 import NavLeftNameImageCatto from './NavLeftNameImageCatto';
 import AuthClientInOutWrapperCatto from '../Auth/AuthClientInOutWrapperCatto/AuthClientInOutWrapperCatto';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion';
 
 const NavLinksCatto = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -133,7 +139,6 @@ const NavLinksCatto = () => {
                   className="py-2 text-sm text-gray-700 dark:text-gray-200"
                   aria-labelledby="dropdownLargeButton"
                 >
-                  {/* Nav Code / Code Home */}
                   <li>
                     <Link
                       href="/code"
@@ -143,434 +148,384 @@ const NavLinksCatto = () => {
                       Code Home
                     </Link>
                   </li>
-                  {/* Nav code JavaScript */}
+
                   <li>
-                    <button
-                      className="flex w-full items-center justify-between px-4 py-2 hover:bg-gray-100 hover:text-blue-300 dark:hover:bg-gray-600"
-                      onClick={() =>
-                        setIsNavLevel2Item1Open(!isNavLevel2Item1Open)
-                      }
-                    >
-                      JavaScript
-                      <svg
-                        className="ms-2.5 h-2.5 w-2.5"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 10 6"
-                      >
-                        <path
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="m1 1 4 4 4-4"
-                        />
-                      </svg>
-                    </button>
-                    {/* Nav 2nd level JavaScript Menu */}
-                    <div
-                      className={`${isNavLevel2Item1Open ? 'block' : 'hidden'} z-10 w-44 divide-y divide-gray-100 rounded-lg bg-white shadow dark:bg-gray-500`}
-                    >
-                      <ul
-                        className="py-2 text-sm text-gray-700 dark:text-gray-200"
-                        aria-labelledby="doubleDropdownButton"
-                      >
-                        <li>
-                          <Link
-                            href="/code/javascript/overview"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
+                    <Accordion type="single" collapsible>
+                      <AccordionItem value="item-1">
+                        <AccordionTrigger>JavaScript</AccordionTrigger>
+                        <AccordionContent>
+                          <ul
+                            className="py-2 text-sm text-gray-700 dark:text-gray-200"
+                            aria-labelledby="doubleDropdownButton"
                           >
-                            JS Overview
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/code/javascript/fundamentals/helloworld"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
-                          >
-                            Hello World
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/code/javascript/fundamentals/datatypes"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
-                          >
-                            Data Types
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/code/javascript/fundamentals/functions"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
-                          >
-                            Functions
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/code/javascript/fundamentals/objects"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
-                          >
-                            Objects
-                          </Link>
-                        </li>
-                      </ul>
-                    </div>
+                            <li>
+                              <Link
+                                href="/code/javascript/overview"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                // onClick={handleCloseAllClick}
+                              >
+                                JS Overview
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/code/javascript/async-await"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              >
+                                Async / Await
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/code/javascript/dayjs"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                              >
+                                Dayjs
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/code/javascript/fundamentals/helloworld"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                // onClick={handleCloseAllClick}
+                              >
+                                Hello World
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/code/javascript/fundamentals/datatypes"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                // onClick={handleCloseAllClick}
+                              >
+                                Data Types
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/code/javascript/fundamentals/functions"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                // onClick={handleCloseAllClick}
+                              >
+                                Functions
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/code/javascript/fundamentals/objects"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                // onClick={handleCloseAllClick}
+                              >
+                                Objects
+                              </Link>
+                            </li>
+                          </ul>
+                        </AccordionContent>
+                      </AccordionItem>
+                    </Accordion>
                   </li>
-                  {/* Nav code Next.js */}
+
                   <li>
-                    <button
-                      className="flex w-full items-center justify-between px-4 py-2 hover:bg-gray-100 hover:text-blue-300 dark:hover:bg-gray-600"
-                      onClick={() =>
-                        setIsNavLevel2NextOpen(!isNavLevel2NextOpen)
-                      }
-                    >
-                      Next.js
-                      <svg
-                        className="ms-2.5 h-2.5 w-2.5"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 10 6"
-                      >
-                        <path
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="m1 1 4 4 4-4"
-                        />
-                      </svg>
-                    </button>
-                    {/* Nav 2nd level NextJS Menu */}
-                    <div
-                      className={`${isNavLevel2NextOpen ? 'block' : 'hidden'} z-10 w-44 divide-y divide-gray-100 rounded-lg bg-white shadow dark:bg-gray-500`}
-                    >
-                      <ul
-                        className="py-2 text-sm text-gray-700 dark:text-gray-200"
-                        aria-labelledby="doubleDropdownButton"
-                      >
-                        <li>
-                          <Link
-                            href="/code/nextjs/overview"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
+                    <Accordion type="single" collapsible>
+                      <AccordionItem value="item-1">
+                        <AccordionTrigger>Next.js</AccordionTrigger>
+                        <AccordionContent>
+                          <ul
+                            className="py-2 text-sm text-gray-700 dark:text-gray-200"
+                            aria-labelledby="doubleDropdownButton"
                           >
-                            Next Overview
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/code/nextjs/fundamentals/helloworld"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
-                          >
-                            Next Hello World
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/code/nextjs/fundamentals/tailwind-styling-css"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
-                          >
-                            Tailwind Styling CSS
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/code/nextjs/fundamentals/navigation"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
-                          >
-                            Navigation
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/code/nextjs/fundamentals/authentication"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
-                          >
-                            Next Auth
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/code/nextjs/shadcn-ui"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
-                          >
-                            Shadcn-ui
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/code/nextjs/react-hook-form"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
-                          >
-                            React-Hook-Form
-                          </Link>
-                        </li>
-                      </ul>
-                    </div>
+                            <li>
+                              <Link
+                                href="/code/javascript/frameworks/nextjs/overview"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                // onClick={handleCloseAllClick}
+                              >
+                                Next Overview
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/code/javascript/frameworks/nextjs/fundamentals/helloworld"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                // onClick={handleCloseAllClick}
+                              >
+                                Next Hello World
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/code/javascript/frameworks/nextjs/fundamentals/tailwind-styling-css"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                // onClick={handleCloseAllClick}
+                              >
+                                Tailwind Styling CSS
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/code/javascript/frameworks/nextjs/fundamentals/navigation"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                // onClick={handleCloseAllClick}
+                              >
+                                Navigation
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/code/javascript/frameworks/nextjs/fundamentals/authentication"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                // onClick={handleCloseAllClick}
+                              >
+                                Next Auth
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/code/javascript/frameworks/nextjs/shadcn-ui"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                // onClick={handleCloseAllClick}
+                              >
+                                Shadcn-ui
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/code/javascript/frameworks/nextjs/react-hook-form"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                // onClick={handleCloseAllClick}
+                              >
+                                React-Hook-Form
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="code/javascript/frameworks/nextjs/how-to-set-port-in-next-js"
+                                className="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                              >
+                                <span className="ms-3">Change Port</span>
+                              </Link>
+                            </li>
+                          </ul>
+                        </AccordionContent>
+                      </AccordionItem>
+                    </Accordion>
                   </li>
-                  {/* Nav Code Git */}
+
                   <li>
-                    <button
-                      className="flex w-full items-center justify-between px-4 py-2 hover:bg-gray-100 hover:text-blue-300 dark:hover:bg-gray-600"
-                      onClick={() =>
-                        setIsNavLevel3Item1Open(!isNavLevel3Item1Open)
-                      }
-                    >
-                      Git
-                      <svg
-                        className="ms-2.5 h-2.5 w-2.5"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 10 6"
-                      >
-                        <path
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="m1 1 4 4 4-4"
-                        />
-                      </svg>
-                    </button>
-                    {/* Nav 2nd level Git Menu h-100 overflow-y-auto*/}
-                    <div
-                      className={`${isNavLevel3Item1Open ? 'block' : 'hidden'} h-100 z-10 w-44 divide-y divide-gray-100 overflow-auto rounded-lg bg-white shadow dark:bg-gray-500`}
-                    >
-                      <ul
-                        className="py-2 text-sm text-gray-700 dark:text-gray-200"
-                        aria-labelledby="doubleDropdownButton"
-                      >
-                        <li>
-                          <Link
-                            href="/code/git/overview"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
+                    <Accordion type="single" collapsible>
+                      <AccordionItem value="item-1">
+                        <AccordionTrigger>Git</AccordionTrigger>
+                        <AccordionContent>
+                          <ul
+                            className="py-2 text-sm text-gray-700 dark:text-gray-200"
+                            aria-labelledby="doubleDropdownButton"
                           >
-                            Git Overview
-                          </Link>
-                        </li>
-                        {/* #todo make this nav look better when it's long list */}
-                        <div className="hidden">
-                          <li>
-                            <Link
-                              href="/code/git/installation"
-                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                              onClick={handleCloseAllClick}
-                            >
-                              Installation
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="/code/git/version"
-                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                              onClick={handleCloseAllClick}
-                            >
-                              Version
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              href="/code/git/status"
-                              className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                              onClick={handleCloseAllClick}
-                            >
-                              Status
-                            </Link>
-                          </li>
-                        </div>
-                        <li>
-                          <Link
-                            href="/code/git/log"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
-                          >
-                            Log
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/code/git/how-do-i-delete-a-git-branch-locally-and-remotely"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
-                          >
-                            Delete Branches
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/code/git/branch"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
-                          >
-                            Branch
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/code/git/checkout"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
-                          >
-                            Checkout
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/code/git/clean"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
-                          >
-                            Clean
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/code/git/clone"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
-                          >
-                            Clone
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/code/git/pull"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
-                          >
-                            Pull
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/code/git/reset"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
-                          >
-                            Reset
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/code/git/init"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
-                          >
-                            Init
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/code/git/add"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
-                          >
-                            Add
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/code/git/commit"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
-                          >
-                            Commit
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/code/git/push"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
-                          >
-                            Push
-                          </Link>
-                        </li>
-                      </ul>
-                    </div>
+                            <li>
+                              <Link
+                                href="/code/git/overview"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                // onClick={handleCloseAllClick}
+                              >
+                                Git Overview
+                              </Link>
+                            </li>
+                            {/* #todo make this nav look better when it's long list */}
+                            <div className="hidden">
+                              <li>
+                                <Link
+                                  href="/code/git/installation"
+                                  className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                  // onClick={handleCloseAllClick}
+                                >
+                                  Installation
+                                </Link>
+                              </li>
+                              <li>
+                                <Link
+                                  href="/code/git/version"
+                                  className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                  // onClick={handleCloseAllClick}
+                                >
+                                  Version
+                                </Link>
+                              </li>
+                              <li>
+                                <Link
+                                  href="/code/git/status"
+                                  className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                  // onClick={handleCloseAllClick}
+                                >
+                                  Status
+                                </Link>
+                              </li>
+                            </div>
+                            <li>
+                              <Link
+                                href="/code/git/log"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                // onClick={handleCloseAllClick}
+                              >
+                                Log
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/code/git/how-do-i-delete-a-git-branch-locally-and-remotely"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                // onClick={handleCloseAllClick}
+                              >
+                                Delete Branches
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/code/git/branch"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                // onClick={handleCloseAllClick}
+                              >
+                                Branch
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/code/git/checkout"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                // onClick={handleCloseAllClick}
+                              >
+                                Checkout
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/code/git/clean"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                // onClick={handleCloseAllClick}
+                              >
+                                Clean
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/code/git/clone"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                // onClick={handleCloseAllClick}
+                              >
+                                Clone
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/code/git/pull"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                // onClick={handleCloseAllClick}
+                              >
+                                Pull
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/code/git/reset"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                // onClick={handleCloseAllClick}
+                              >
+                                Reset
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/code/git/init"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                // onClick={handleCloseAllClick}
+                              >
+                                Init
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/code/git/add"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                // onClick={handleCloseAllClick}
+                              >
+                                Add
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/code/git/commit"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                // onClick={handleCloseAllClick}
+                              >
+                                Commit
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/code/git/push"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                // onClick={handleCloseAllClick}
+                              >
+                                Push
+                              </Link>
+                            </li>
+                          </ul>
+                        </AccordionContent>
+                      </AccordionItem>
+                    </Accordion>
                   </li>
-                  {/* Nav code ORM Prisma */}
+
                   <li>
-                    <button
-                      className="flex w-full items-center justify-between px-4 py-2 hover:bg-gray-100 hover:text-blue-300 dark:hover:bg-gray-600"
-                      onClick={() =>
-                        setIsNavLevel2PrismaOpen(!isNavLevel2PrismaOpen)
-                      }
-                    >
-                      Prisma
-                      <svg
-                        className="ms-2.5 h-2.5 w-2.5"
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 10 6"
-                      >
-                        <path
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="m1 1 4 4 4-4"
-                        />
-                      </svg>
-                    </button>
-                    {/* Nav 2nd level Prisma Menu */}
-                    <div
-                      className={`${isNavLevel2PrismaOpen ? 'block' : 'hidden'} z-10 w-44 divide-y divide-gray-100 rounded-lg bg-white shadow dark:bg-gray-500`}
-                    >
-                      <ul
-                        className="py-2 text-sm text-gray-700 dark:text-gray-200"
-                        aria-labelledby="doubleDropdownButton"
-                      >
-                        <li>
-                          <Link
-                            href="/code/orm/prisma"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
+                    <Accordion type="single" collapsible>
+                      <AccordionItem value="item-1">
+                        <AccordionTrigger>Prisma</AccordionTrigger>
+                        <AccordionContent>
+                          <ul
+                            className="py-2 text-sm text-gray-700 dark:text-gray-200"
+                            aria-labelledby="doubleDropdownButton"
                           >
-                            Prisma Home
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/code/orm/prisma/getting-started"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
-                          >
-                            Prisma Getting Started
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="/code/orm/prisma/updates"
-                            className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                            onClick={handleCloseAllClick}
-                          >
-                            Prisma Making Updates
-                          </Link>
-                        </li>
-                      </ul>
-                    </div>
+                            <li>
+                              <Link
+                                href="/code/orm/prisma"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                // onClick={handleCloseAllClick}
+                              >
+                                Prisma Home
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/code/orm/prisma/getting-started"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                // onClick={handleCloseAllClick}
+                              >
+                                Prisma Getting Started
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/code/orm/prisma/updates"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                // onClick={handleCloseAllClick}
+                              >
+                                Prisma Making Updates
+                              </Link>
+                            </li>
+                          </ul>
+                        </AccordionContent>
+                      </AccordionItem>
+                    </Accordion>
                   </li>
                 </ul>
               </div>
+              {/* <Accordion type="single" collapsible>
+                <AccordionItem value="item-1" className='border-b-0'>
+                  <AccordionTrigger className='m-0 p-0'>
+                    Code
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    Yes. It adheres to the WAI-ARIA design pattern.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion> */}
             </li>
             {/* About Link */}
             <li>
