@@ -100,8 +100,8 @@ const NavLinksCatto = () => {
             </li>
             {/* Code link section */}
             <li>
-              {/* Code nav link level 1  */}
-              <button
+                            {/* Code nav link level 1  */}
+                            <button
                 className={clsx(
                   {
                     'flex rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white':
@@ -139,7 +139,7 @@ const NavLinksCatto = () => {
                   className="py-2 text-sm text-gray-700 dark:text-gray-200"
                   aria-labelledby="dropdownLargeButton"
                 >
-                  {/* Nav Code / Code Home */}
+
                   <li>
                     <Link
                       href="/code"
@@ -149,7 +149,7 @@ const NavLinksCatto = () => {
                       Code Home
                     </Link>
                   </li>
-                  {/* Nav code JavaScript */}
+
                   <li>
                     <Accordion type="single" collapsible>
                       <AccordionItem value="item-1">
@@ -165,7 +165,7 @@ const NavLinksCatto = () => {
                               <Link
                                 href="/code/javascript/overview"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                // onClick={handleCloseAllClick}
+                              // onClick={handleCloseAllClick}
                               >
                                 JS Overview
                               </Link>
@@ -190,7 +190,7 @@ const NavLinksCatto = () => {
                               <Link
                                 href="/code/javascript/fundamentals/helloworld"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                // onClick={handleCloseAllClick}
+                              // onClick={handleCloseAllClick}
                               >
                                 Hello World
                               </Link>
@@ -199,7 +199,7 @@ const NavLinksCatto = () => {
                               <Link
                                 href="/code/javascript/fundamentals/datatypes"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                // onClick={handleCloseAllClick}
+                              // onClick={handleCloseAllClick}
                               >
                                 Data Types
                               </Link>
@@ -208,7 +208,7 @@ const NavLinksCatto = () => {
                               <Link
                                 href="/code/javascript/fundamentals/functions"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                // onClick={handleCloseAllClick}
+                              // onClick={handleCloseAllClick}
                               >
                                 Functions
                               </Link>
@@ -217,7 +217,7 @@ const NavLinksCatto = () => {
                               <Link
                                 href="/code/javascript/fundamentals/objects"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                // onClick={handleCloseAllClick}
+                              // onClick={handleCloseAllClick}
                               >
                                 Objects
                               </Link>
@@ -227,7 +227,7 @@ const NavLinksCatto = () => {
                       </AccordionItem>
                     </Accordion>
                   </li>
-                  {/* Nav code Next.js */}
+
                   <li>
                     <Accordion type="single" collapsible>
                       <AccordionItem value="item-1">
@@ -243,7 +243,7 @@ const NavLinksCatto = () => {
                               <Link
                                 href="/code/javascript/frameworks/nextjs/overview"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                // onClick={handleCloseAllClick}
+                              // onClick={handleCloseAllClick}
                               >
                                 Next Overview
                               </Link>
@@ -252,7 +252,7 @@ const NavLinksCatto = () => {
                               <Link
                                 href="/code/javascript/frameworks/nextjs/fundamentals/helloworld"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                // onClick={handleCloseAllClick}
+                              // onClick={handleCloseAllClick}
                               >
                                 Next Hello World
                               </Link>
@@ -261,7 +261,7 @@ const NavLinksCatto = () => {
                               <Link
                                 href="/code/javascript/frameworks/nextjs/fundamentals/tailwind-styling-css"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                // onClick={handleCloseAllClick}
+                              // onClick={handleCloseAllClick}
                               >
                                 Tailwind Styling CSS
                               </Link>
@@ -270,7 +270,7 @@ const NavLinksCatto = () => {
                               <Link
                                 href="/code/javascript/frameworks/nextjs/fundamentals/navigation"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                // onClick={handleCloseAllClick}
+                              // onClick={handleCloseAllClick}
                               >
                                 Navigation
                               </Link>
@@ -279,7 +279,7 @@ const NavLinksCatto = () => {
                               <Link
                                 href="/code/javascript/frameworks/nextjs/fundamentals/authentication"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                // onClick={handleCloseAllClick}
+                              // onClick={handleCloseAllClick}
                               >
                                 Next Auth
                               </Link>
@@ -288,7 +288,7 @@ const NavLinksCatto = () => {
                               <Link
                                 href="/code/javascript/frameworks/nextjs/shadcn-ui"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                // onClick={handleCloseAllClick}
+                              // onClick={handleCloseAllClick}
                               >
                                 Shadcn-ui
                               </Link>
@@ -297,7 +297,7 @@ const NavLinksCatto = () => {
                               <Link
                                 href="/code/javascript/frameworks/nextjs/react-hook-form"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                // onClick={handleCloseAllClick}
+                              // onClick={handleCloseAllClick}
                               >
                                 React-Hook-Form
                               </Link>
@@ -307,7 +307,7 @@ const NavLinksCatto = () => {
                       </AccordionItem>
                     </Accordion>
                   </li>
-                  {/* Nav Code Git */}
+
                   <li>
                     <Accordion type="single" collapsible>
                       <AccordionItem value="item-1">
@@ -323,7 +323,7 @@ const NavLinksCatto = () => {
                               <Link
                                 href="/code/git/overview"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                // onClick={handleCloseAllClick}
+                              // onClick={handleCloseAllClick}
                               >
                                 Git Overview
                               </Link>
@@ -334,7 +334,7 @@ const NavLinksCatto = () => {
                                 <Link
                                   href="/code/git/installation"
                                   className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                  // onClick={handleCloseAllClick}
+                                // onClick={handleCloseAllClick}
                                 >
                                   Installation
                                 </Link>
@@ -343,7 +343,7 @@ const NavLinksCatto = () => {
                                 <Link
                                   href="/code/git/version"
                                   className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                  // onClick={handleCloseAllClick}
+                                // onClick={handleCloseAllClick}
                                 >
                                   Version
                                 </Link>
@@ -352,7 +352,7 @@ const NavLinksCatto = () => {
                                 <Link
                                   href="/code/git/status"
                                   className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                  // onClick={handleCloseAllClick}
+                                // onClick={handleCloseAllClick}
                                 >
                                   Status
                                 </Link>
@@ -362,7 +362,7 @@ const NavLinksCatto = () => {
                               <Link
                                 href="/code/git/log"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                // onClick={handleCloseAllClick}
+                              // onClick={handleCloseAllClick}
                               >
                                 Log
                               </Link>
@@ -371,7 +371,7 @@ const NavLinksCatto = () => {
                               <Link
                                 href="/code/git/how-do-i-delete-a-git-branch-locally-and-remotely"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                // onClick={handleCloseAllClick}
+                              // onClick={handleCloseAllClick}
                               >
                                 Delete Branches
                               </Link>
@@ -380,7 +380,7 @@ const NavLinksCatto = () => {
                               <Link
                                 href="/code/git/branch"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                // onClick={handleCloseAllClick}
+                              // onClick={handleCloseAllClick}
                               >
                                 Branch
                               </Link>
@@ -389,7 +389,7 @@ const NavLinksCatto = () => {
                               <Link
                                 href="/code/git/checkout"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                // onClick={handleCloseAllClick}
+                              // onClick={handleCloseAllClick}
                               >
                                 Checkout
                               </Link>
@@ -398,7 +398,7 @@ const NavLinksCatto = () => {
                               <Link
                                 href="/code/git/clean"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                // onClick={handleCloseAllClick}
+                              // onClick={handleCloseAllClick}
                               >
                                 Clean
                               </Link>
@@ -407,7 +407,7 @@ const NavLinksCatto = () => {
                               <Link
                                 href="/code/git/clone"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                // onClick={handleCloseAllClick}
+                              // onClick={handleCloseAllClick}
                               >
                                 Clone
                               </Link>
@@ -416,7 +416,7 @@ const NavLinksCatto = () => {
                               <Link
                                 href="/code/git/pull"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                // onClick={handleCloseAllClick}
+                              // onClick={handleCloseAllClick}
                               >
                                 Pull
                               </Link>
@@ -425,7 +425,7 @@ const NavLinksCatto = () => {
                               <Link
                                 href="/code/git/reset"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                // onClick={handleCloseAllClick}
+                              // onClick={handleCloseAllClick}
                               >
                                 Reset
                               </Link>
@@ -434,7 +434,7 @@ const NavLinksCatto = () => {
                               <Link
                                 href="/code/git/init"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                // onClick={handleCloseAllClick}
+                              // onClick={handleCloseAllClick}
                               >
                                 Init
                               </Link>
@@ -443,7 +443,7 @@ const NavLinksCatto = () => {
                               <Link
                                 href="/code/git/add"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                // onClick={handleCloseAllClick}
+                              // onClick={handleCloseAllClick}
                               >
                                 Add
                               </Link>
@@ -452,7 +452,7 @@ const NavLinksCatto = () => {
                               <Link
                                 href="/code/git/commit"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                // onClick={handleCloseAllClick}
+                              // onClick={handleCloseAllClick}
                               >
                                 Commit
                               </Link>
@@ -461,7 +461,7 @@ const NavLinksCatto = () => {
                               <Link
                                 href="/code/git/push"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                // onClick={handleCloseAllClick}
+                              // onClick={handleCloseAllClick}
                               >
                                 Push
                               </Link>
@@ -471,7 +471,7 @@ const NavLinksCatto = () => {
                       </AccordionItem>
                     </Accordion>
                   </li>
-                  {/* Nav code ORM Prisma */}
+
                   <li>
                     <Accordion type="single" collapsible>
                       <AccordionItem value="item-1">
@@ -487,7 +487,7 @@ const NavLinksCatto = () => {
                               <Link
                                 href="/code/orm/prisma"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                // onClick={handleCloseAllClick}
+                              // onClick={handleCloseAllClick}
                               >
                                 Prisma Home
                               </Link>
@@ -496,7 +496,7 @@ const NavLinksCatto = () => {
                               <Link
                                 href="/code/orm/prisma/getting-started"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                // onClick={handleCloseAllClick}
+                              // onClick={handleCloseAllClick}
                               >
                                 Prisma Getting Started
                               </Link>
@@ -505,7 +505,7 @@ const NavLinksCatto = () => {
                               <Link
                                 href="/code/orm/prisma/updates"
                                 className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
-                                // onClick={handleCloseAllClick}
+                              // onClick={handleCloseAllClick}
                               >
                                 Prisma Making Updates
                               </Link>
@@ -517,6 +517,18 @@ const NavLinksCatto = () => {
                   </li>
                 </ul>
               </div>
+              {/* <Accordion type="single" collapsible>
+                <AccordionItem value="item-1" className='border-b-0'>
+                  <AccordionTrigger className='m-0 p-0'>
+                    Code
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    Yes. It adheres to the WAI-ARIA design pattern.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion> */}
+
+
             </li>
             {/* About Link */}
             <li>
