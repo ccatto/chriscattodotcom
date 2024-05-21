@@ -80,6 +80,6 @@ const PageDrawerCattoDataProviderWrapper = ({ children, ...props }: Props) => {
 export default PageDrawerCattoDataProviderWrapper;
 
 export function usePageDrawerDataCattoContext() {
-  console.log("inside usePageDrawerDataCattoContext");
+  console.log('inside usePageDrawerDataCattoContext');
   // return useContext(PageDrawerCattoDataContext);
 }

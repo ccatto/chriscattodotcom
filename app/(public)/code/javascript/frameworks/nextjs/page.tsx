@@ -3,7 +3,6 @@ import JumbotronCattoFlexible from '@/app/components/JumbotronCattoFlexible/Jumb
 // import SideNavGitCatto from '@/app/components/SideNavGitCatto/SideNavGitCatto'
 // import Image from 'next/image'
 
-
 export const metadata: Metadata = {
   title: 'Chris Catto Code Next.js Home Tutorial',
   description: 'Chris Catto Code Next.js Home Tutorial',

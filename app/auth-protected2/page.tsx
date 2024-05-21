@@ -5,7 +5,7 @@ import React from 'react';
 // import { auth, signIn, signOut } from 'auth';
 
 export default async function Page() {
-  <h1>holding</h1>
+  <h1>holding</h1>;
   // const session = await auth();
   // const { data: session } = useSession();
   // console.log('99auth protected session: ', session);

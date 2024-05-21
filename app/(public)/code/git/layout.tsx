@@ -28,11 +28,11 @@ const GitLayout = ({ children }: LayoutProps) => {
     <>
       <div className="flex min-h-[calc(100vh-27rem)]">
         {/* <PageDrawerCattoDataProviderWrapper> */}
-          {/* <GitDrawerSideNavCatto /> */}
-          <aside className="h-full lg:flex-[20]">
-            <GitNavDrawerCatto />
-          </aside>
-          <article className=" h-full lg:flex-[80]">{children}</article>
+        {/* <GitDrawerSideNavCatto /> */}
+        <aside className="h-full lg:flex-[20]">
+          <GitNavDrawerCatto />
+        </aside>
+        <article className=" h-full lg:flex-[80]">{children}</article>
         {/* </PageDrawerCattoDataProviderWrapper> */}
       </div>
       <hr className="m-3" />
@@ -40,28 +40,3 @@ const GitLayout = ({ children }: LayoutProps) => {
   );
 };
 export default GitLayout;
-
-// console.log('1 isGitDrawerOpen === ', isGitDrawerOpen);
-// let { isPageDrawerOpen2 } = usePageDrawerCattoDataContext();
-// console.log("------ Context isPageDrawerOpen2 === ", isPageDrawerOpen2);
-// const clickSideNavHandler = () => {
-//   // const [isGitDrawerOpen, setGitDrawerOpen] = useState(true);
-//   // const handleClick = () => {
-//   //   setGitDrawerOpen(!isGitDrawerOpen);
-//   // };
-//   // console.log('00 22 00 isGitDrawerOpen === ', isGitDrawerOpen);
-//   // return (event: React.MouseEvent) => {
-//   //   // console.log('1 isGitDrawerOpen === ', isGitDrawerOpen);
-//   //   // console.log('inside PREVIOUS CLICK');
-//   //   setGitDrawerOpen(!isGitDrawerOpen);
-//   //   console.log('setGitDrawerOpen === ', isGitDrawerOpen);
-//   //   // if (currentImg === 0 ) {
-//   //   //     console.log('inside AT beginning');
-//   //   //     setCurrentImg(totalSlides - 1);
-//   //   // } else {
-//   //   //     console.log('not at end yet');
-//   //   //     setCurrentImg(currentImg - 1);
-//   //   // }
-//   //   event.preventDefault();
-//   // }
-// }
