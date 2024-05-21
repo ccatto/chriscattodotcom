@@ -34,7 +34,8 @@ Current node version is 20.9.0 as of March 26th 2024;
 
 * 006 release May 19th 2024 lots of docs & pages;
 
-test git actions
+* test git actions
+* 007 top footer; nav accordions; 2 new doc pages remove array item & nextjs port.
 
 - using @next/third-parties for GA4.
 - using "react-syntax-highlighter": "^15.5.0", && @types/react-syntax-highlighter for syntax highlighting
