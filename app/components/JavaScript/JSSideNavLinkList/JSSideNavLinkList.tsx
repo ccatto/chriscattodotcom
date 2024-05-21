@@ -238,6 +238,14 @@ const JSSideNavLinkList = () => {
                         <span className="ms-3">React Hook Form</span>
                       </Link>
                     </li>
+                    <li>
+                      <Link
+                        href="code/javascript/frameworks/nextjs/how-to-set-port-in-next-js"
+                        className="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                      >
+                        <span className="ms-3">Change port</span>
+                      </Link>
+                    </li>
                   </ul>
                 </AccordionContent>
               </AccordionItem>
@@ -339,6 +347,14 @@ const JSSideNavLinkList = () => {
                         className="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                       >
                         <span className="ms-3">DayJS</span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/code/javascript/tutorials/how-can-i-remove-a-specific-item-from-an-array-in-javascript"
+                        className="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                      >
+                        <span className="ms-3">Remove item from array</span>
                       </Link>
                     </li>
                   </ul>

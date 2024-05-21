@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const FooterLinksBottomCatto = () => {
   return (
-    <div className=" m-4 rounded-xl bg-white shadow dark:bg-gray-800">
+    <div className=" m-4 rounded-xl bg-white shadow dark:bg-gray-800 border-dotted border-black border-4">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
@@ -31,7 +31,9 @@ const FooterLinksBottomCatto = () => {
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
             <div>
               <h2 className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
-                Code
+                <Link href="/code" className="hover:underline">
+                  Code
+                </Link>
               </h2>
               {/* <ul className="font-medium text-gray-500 dark:text-gray-400">
                 <li className="mb-4">

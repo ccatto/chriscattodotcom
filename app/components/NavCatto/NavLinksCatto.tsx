@@ -297,6 +297,14 @@ const NavLinksCatto = () => {
                                 React-Hook-Form
                               </Link>
                             </li>
+                            <li>
+                              <Link
+                                href="code/javascript/frameworks/nextjs/how-to-set-port-in-next-js"
+                                className="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                              >
+                                <span className="ms-3">Change Port</span>
+                              </Link>
+                            </li>
                           </ul>
                         </AccordionContent>
                       </AccordionItem>
