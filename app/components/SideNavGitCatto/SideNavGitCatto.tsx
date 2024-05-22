@@ -212,6 +212,14 @@ const SideNavGitCatto = () => {
               <span className="ms-3">Delete Branches</span>
             </Link>
           </li>
+          <li>
+            <Link
+              href="/code/git/tutorial/what-is-the-difference-between-git-pull-and-git-fetch"
+              className="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+            >
+              <span className="ms-3">Diff Git Pull & Fetch</span>
+            </Link>
+          </li>
         </ul>
       </div>
     </>
