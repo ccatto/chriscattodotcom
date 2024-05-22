@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const FooterLinksBottomCatto = () => {
   return (
-    <div className=" m-4 rounded-xl bg-white shadow dark:bg-gray-800 border-dotted border-black border-4">
+    <div className=" m-4 rounded-xl border-4 border-dotted border-black bg-white shadow dark:bg-gray-800">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">

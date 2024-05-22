@@ -359,9 +359,8 @@ const FooterLinksTopCatto = () => {
                 <span className="ms-3">Git Overview</span>
               </Link>
             </li>
-
             <li>
-              <a
+              <Link
                 href="/code/git/installation"
                 className="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
               >
@@ -375,7 +374,7 @@ const FooterLinksTopCatto = () => {
                   <path d="M19.059 10.898l-3.171-7.927A1.543 1.543 0 0 0 14.454 2H12.02l.38 4.065h2.7L10 10.293 4.9 6.065h2.7L7.98 2H5.546c-.632 0-1.2.384-1.434.971L.941 10.898a4.25 4.25 0 0 0-.246 2.272l.59 3.539A1.544 1.544 0 0 0 2.808 18h14.383c.755 0 1.399-.546 1.523-1.291l.59-3.539a4.22 4.22 0 0 0-.245-2.272zm-2.1 4.347a.902.902 0 0 1-.891.755H3.932a.902.902 0 0 1-.891-.755l-.365-2.193A.902.902 0 0 1 3.567 12h12.867c.558 0 .983.501.891 1.052l-.366 2.193z" />
                 </svg>
                 <span className="ms-3">Installation</span>
-              </a>
+              </Link>
             </li>
             <li>
               <Accordion type="single" collapsible>
@@ -490,41 +489,90 @@ const FooterLinksTopCatto = () => {
                           Push
                         </Link>
                       </li>
+                      <li>
+                        <Link
+                          href="/code/git/how-do-i-delete-a-git-branch-locally-and-remotely"
+                          className="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                        >
+                          <svg
+                            className="h-6 w-6 text-gray-800 dark:text-white"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke="#9cafa3"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M12 13V8m0 8h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                            />
+                          </svg>
+                          <span className="ms-3">Delete Branches</span>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/code/git/tutorial/what-is-the-difference-between-git-pull-and-git-fetch"
+                          className="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                        >
+                          <span className="ms-3">Diff Git Pull & Fetch</span>
+                        </Link>
+                      </li>
                     </ul>
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
             </li>
-            <li>
-              <Link
-                href="/code/git/how-do-i-delete-a-git-branch-locally-and-remotely"
-                className="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-              >
-                <svg
-                  className="h-6 w-6 text-gray-800 dark:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke="#9cafa3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M12 13V8m0 8h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                  />
-                </svg>
-                <span className="ms-3">Delete Branches</span>
-              </Link>
-            </li>
           </ul>
+          {/* Node.js */}
+          <div className='mt-0'>
+            <Accordion type="single" collapsible defaultValue="item-1">
+              <AccordionItem value="item-1">
+                <AccordionTrigger>
+                  Node.js
+                </AccordionTrigger>
+                <AccordionContent>
+                  <ul
+                    id="dropdown-example"
+                    className="space-y-2 py-2 indent-4"
+                  >
+                    <li>
+                      <Link
+                        href="/code/javascript/frameworks/nodejs/semantic-versioning-semver"
+                        className="group flex w-full items-center rounded-lg p-2 pl-11 text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                      >
+                        Semantic Versioning
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/code/javascript/frameworks/nodejs/publish-npm-package"
+                        className="group flex w-full items-center rounded-lg p-2 pl-11 text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                      >
+                        Publish NPM Package
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/code/javascript/frameworks/nodejs/whats-the-difference-between-tilde-and-caret-in-package-json"
+                        className="group flex w-full items-center rounded-lg p-2 pl-11 text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                      >
+                        Package difference ~ & ^
+                      </Link>
+                    </li>
+                  </ul>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </div>
         </div>
         <div>
           <h2 className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
-            Prisma
+            Prisma - ORM
           </h2>
           <ul className="font-medium text-gray-500 dark:text-gray-400">
             <li className="mb-4">
