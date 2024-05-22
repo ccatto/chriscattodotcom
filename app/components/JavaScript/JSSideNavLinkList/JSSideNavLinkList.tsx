@@ -281,6 +281,14 @@ const JSSideNavLinkList = () => {
                         <span className="ms-3">Publish Npm Package</span>
                       </Link>
                     </li>
+                    <li>
+                      <Link
+                        href="/code/javascript/frameworks/nodejs/whats-the-difference-between-tilde-and-caret-in-package-json"
+                        className="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                      >
+                        <span className="ms-3">Package difference ~ & ^</span>
+                      </Link>
+                    </li>
                   </ul>
                 </AccordionContent>
               </AccordionItem>
