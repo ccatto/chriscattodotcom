@@ -169,9 +169,7 @@ const FooterLinksTopCatto = () => {
               <Accordion type="single" collapsible>
                 <AccordionItem value="item-1">
                   <AccordionTrigger>
-                    <span className="ms-3">
-                      Fundamentals
-                    </span>
+                    <span className="ms-3">Fundamentals</span>
                   </AccordionTrigger>
                   <AccordionContent>
                     <ul
@@ -381,9 +379,7 @@ const FooterLinksTopCatto = () => {
             <li>
               <Accordion type="single" collapsible>
                 <AccordionItem value="item-1">
-                  <AccordionTrigger>
-                    Commands
-                  </AccordionTrigger>
+                  <AccordionTrigger>Commands</AccordionTrigger>
                   <AccordionContent>
                     <ul
                       id="dropdown-example"
@@ -533,17 +529,12 @@ const FooterLinksTopCatto = () => {
             </li>
           </ul>
           {/* Node.js */}
-          <div className='mt-0'>
+          <div className="mt-0">
             <Accordion type="single" collapsible defaultValue="item-1">
               <AccordionItem value="item-1">
-                <AccordionTrigger>
-                  Node.js
-                </AccordionTrigger>
+                <AccordionTrigger>Node.js</AccordionTrigger>
                 <AccordionContent>
-                  <ul
-                    id="dropdown-example"
-                    className="space-y-2 py-2"
-                  >
+                  <ul id="dropdown-example" className="space-y-2 py-2">
                     <li>
                       <Link
                         href="/code/javascript/frameworks/nodejs/semantic-versioning-semver"

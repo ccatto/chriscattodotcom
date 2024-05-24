@@ -24,7 +24,9 @@ export default function Page() {
             className="font-medium text-slate-700 hover:underline dark:text-slate-800"
           >
             My Trailhead profile for Salesforce Commerce Cloud
-          </Link>. Trailhead is a great resource to learn more about SFCC & other Salesforce cloud platforms.
+          </Link>
+          . Trailhead is a great resource to learn more about SFCC & other
+          Salesforce cloud platforms.
         </div>
         <hr className="m-3" />
       </div>

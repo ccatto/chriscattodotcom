@@ -6,10 +6,13 @@ import CommandPromptDisplay from '@/app/components/Utils/CommandPromptDisplay/Co
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'How Can I rename a local Git branch simply explained ChrisCatto.com documentation',
-  description: 'How Can I rename a local Git branch simply explained ChrisCatto.com documentation Git Tutorial',
+  title:
+    'How Can I rename a local Git branch simply explained ChrisCatto.com documentation',
+  description:
+    'How Can I rename a local Git branch simply explained ChrisCatto.com documentation Git Tutorial',
   alternates: {
-    canonical: 'https://www.chriscatto.com/code/git/tutorial/what-is-the-difference-between-git-pull-and-git-fetch',
+    canonical:
+      'https://www.chriscatto.com/code/git/tutorial/what-is-the-difference-between-git-pull-and-git-fetch',
   },
 };
 
@@ -24,10 +27,10 @@ const gitRenameBranch = () => {
       </div>
       <hr className="p-0" />
       <div className="flex-[80] pl-5 pt-5 dark:bg-gray-700">
-        <h3 className="mb-4 indent-5 inline-block text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+        <h3 className="mb-4 inline-block indent-5 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
           &gt; "git pull" does a "git fetch" followed by a "git merge"
         </h3>
-        <ul className='ml-6 mt-2 list-outside list-disc'>
+        <ul className="ml-6 mt-2 list-outside list-disc">
           <li>
             <Link
               target="_blank"
@@ -35,7 +38,9 @@ const gitRenameBranch = () => {
               href="https://git-scm.com/docs/git-fetch"
             >
               "git fetch"
-            </Link> updates our remote-tracking branches which we can safely execute anytime since it doesn't change any of our local branches.
+            </Link>{' '}
+            updates our remote-tracking branches which we can safely execute
+            anytime since it doesn't change any of our local branches.
           </li>
           <li>
             <Link
@@ -44,7 +49,9 @@ const gitRenameBranch = () => {
               href="https://git-scm.com/docs/git-pull"
             >
               "git pull"
-            </Link> brings a local branch up to date with it's remote branch; while also updating our other remote-tracking branches.
+            </Link>{' '}
+            brings a local branch up to date with it's remote branch; while also
+            updating our other remote-tracking branches.
           </li>
         </ul>
       </div>

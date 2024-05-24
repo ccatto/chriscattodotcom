@@ -39,7 +39,6 @@ Current node version is 20.9.0 as of March 26th 2024;
 
 * 008 5.22.24 hotfix to handleCloseAll with code nav;
 
-
 - using @next/third-parties for GA4.
 - using "react-syntax-highlighter": "^15.5.0", && @types/react-syntax-highlighter for syntax highlighting
 - using pg package v^8.11.5 for postgresql
