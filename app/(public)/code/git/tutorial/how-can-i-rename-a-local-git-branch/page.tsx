@@ -7,22 +7,22 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title:
-    'What is the Difference Between git pull and git fetch simply explained ChrisCatto.com documentation',
+    'How Can I rename a local Git branch simply explained ChrisCatto.com documentation',
   description:
-    'What is the Difference Between git pull and git fetch simply explained ChrisCatto.com documentation Git Tutorial',
+    'How Can I rename a local Git branch simply explained ChrisCatto.com documentation Git Tutorial',
   alternates: {
     canonical:
       'https://www.chriscatto.com/code/git/tutorial/what-is-the-difference-between-git-pull-and-git-fetch',
   },
 };
 
-const gitPullAndFetch = () => {
+const gitRenameBranch = () => {
   return (
     <div className="flex h-full w-full flex-col flex-nowrap ">
       <div className="flex-[20]">
         <JumbotronCattoFlexible
-          title="Git Tutorial What is the Difference Between git pull and git fetch simply explained"
-          description="Git docs: The Difference Between git pull and git fetch is a fundamental key concept in Git. Let's take a look at this in a bit of detail"
+          title="Git Tutorial How Can I rename a local Git branch Simply explained"
+          description="Git docs: We often need to rename our local branch to a new name. Let us take a closer look at how we can accomplish renaming  this"
         />
       </div>
       <hr className="p-0" />
@@ -59,4 +59,4 @@ const gitPullAndFetch = () => {
   );
 };
 
-export default gitPullAndFetch;
+export default gitRenameBranch;

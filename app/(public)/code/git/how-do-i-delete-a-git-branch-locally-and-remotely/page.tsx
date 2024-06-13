@@ -4,10 +4,13 @@ import CommandPromptDisplay from '@/app/components/Utils/CommandPromptDisplay/Co
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'How do I Delete A Git Branch Locally And Remotely Simply Explained ChrisCatto.com documentation',
-  description: 'How do I Delete A Git Branch Locally And Remotely Simply Explained in detail ChrisCatto.com documentation',
+  title:
+    'How do I Delete A Git Branch Locally And Remotely Simply Explained ChrisCatto.com documentation',
+  description:
+    'How do I Delete A Git Branch Locally And Remotely Simply Explained in detail ChrisCatto.com documentation',
   alternates: {
-    canonical: 'https://www.chriscatto.com/code/git/how-do-i-delete-a-git-branch-locally-and-remotely',
+    canonical:
+      'https://www.chriscatto.com/code/git/how-do-i-delete-a-git-branch-locally-and-remotely',
   },
 };
 
