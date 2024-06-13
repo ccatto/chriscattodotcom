@@ -38,7 +38,7 @@ Current node version is 20.9.0 as of March 26th 2024;
 * 007 top footer; nav accordions; 2 new doc pages remove array item & nextjs port.
 
 * 008 5.22.24 hotfix to handleCloseAll with code nav; 
-* 1st update in June 2024.
+* 1st update in June 2024. 2nd small
 
 - using @next/third-parties for GA4.
 - using "react-syntax-highlighter": "^15.5.0", && @types/react-syntax-highlighter for syntax highlighting
