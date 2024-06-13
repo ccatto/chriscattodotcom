@@ -39,7 +39,7 @@ Current node version is 20.9.0 as of March 26th 2024;
 
 * 008 5.22.24 hotfix to handleCloseAll with code nav; 
 
-* 009 6.13.24
+* 009 6.13.24 Updates
 
 
 * 1st update in June 2024. 2nd small
