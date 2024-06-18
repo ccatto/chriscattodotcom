@@ -610,6 +610,14 @@ const FooterLinksTopCatto = () => {
                 Environment Setup
               </Link>
             </h2>
+            <h2 className="mb-6 mt-5 text-sm font-semibold uppercase text-gray-900 dark:text-white">
+              <Link
+                href="/code/css-styles"
+                className="hover:underline"
+              >
+                CSS - Styles
+              </Link>
+            </h2>
           </ul>
         </div>
       </div>

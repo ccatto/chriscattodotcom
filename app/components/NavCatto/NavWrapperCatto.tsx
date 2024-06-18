@@ -5,9 +5,9 @@ import NavLinksCatto from './NavLinksCatto';
 const NavWrapperCatto = () => {
   return (
     <>
+      {/* Desktop */}
       <div className="hidden w-full lg:block">
         <nav className="flex h-20 items-center justify-center border-gray-200 bg-white dark:bg-gray-900">
-          {/* Desktop */}
           <div className="ml-auto mr-auto flex w-[70%]">
             <div className="basis-1/4">
               <NavLeftNameImageCatto />
