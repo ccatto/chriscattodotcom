@@ -16,7 +16,9 @@ const codeBlock5a =
   "<div className='flex justify-center h-20 w-96 bg-orange-300 text-black'>\n  justify-center(horizontally)\n</div>";
 const codeBlock5b =
   '<div className="flex items-center h-20 w-96 bg-orange-300 text-black">\n  items-center(vertically)\n</div>';
-const codeBlock6 =
+  const codeBlock5c =
+  '<div className="flex justify-end h-20 w-96 bg-orange-300 text-black">\n  justify-content: flex-end\n</div>';
+  const codeBlock6 =
   "<div className='flex flex-col w-full'>\n  <div className='flex-1 bg-orange-300 text-black'>Div 1</div>\n  <div className='flex-1 bg-blue-400 text-black'>2nd Div</div>\n  <div className='flex-1 bg-green-400 text-black'>3rd div</div>\n</div>";
 
 export const metadata: Metadata = {
@@ -109,6 +111,12 @@ export default function Page() {
           items-center(vertically)
         </div>
         <SyntaxHighlightingReactCatto codeString={codeBlock5b} />
+        <p>Simple justify-content: flex-end; to right justify</p>
+        <br />
+        <div className="flex justify-end h-20 w-96 bg-orange-300 text-black">
+          justify-content: flex-end
+        </div>
+        <SyntaxHighlightingReactCatto codeString={codeBlock5c} />
         <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-blue-100 dark:bg-blue-700 md:my-10" />
         <h6>
           Ex. 6: Let's take a look aligning & centering in a nested flexbox.
