@@ -2,7 +2,6 @@
 import Link from 'next/link';
 
 const CSSSideNavLinkList = () => {
-
   return (
     <>
       <div className="dark:text-[text-[#E2E8F0] hidden h-full overflow-y-auto bg-gray-50 px-3 py-4 text-[#E2E8F0] dark:bg-[#090A15]  lg:block ">
