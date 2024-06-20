@@ -24,7 +24,7 @@ export default async function RootLayout({
     <SessionProviderWrapperCatto>
       <html lang="en" className="dark">
         <body
-          className={`min-h-[calc(100vh-26rem)] ${montserrat.className} absolute m-0 flex w-screen flex-col overflow-x-hidden bg-gray-800 antialiased`}
+          className={`min-h-[calc(100vh-26rem)] ${montserrat.className} absolute m-0 flex w-full flex-col overflow-x-hidden bg-gray-800 antialiased`}
         >
           <HeaderCatto />
           {/* <h1 className="text-white">new</h1> */}
