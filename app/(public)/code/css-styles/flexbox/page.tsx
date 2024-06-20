@@ -16,9 +16,9 @@ const codeBlock5a =
   "<div className='flex justify-center h-20 w-96 bg-orange-300 text-black'>\n  justify-center(horizontally)\n</div>";
 const codeBlock5b =
   '<div className="flex items-center h-20 w-96 bg-orange-300 text-black">\n  items-center(vertically)\n</div>';
-  const codeBlock5c =
+const codeBlock5c =
   '<div className="flex justify-end h-20 w-96 bg-orange-300 text-black">\n  justify-content: flex-end\n</div>';
-  const codeBlock6 =
+const codeBlock6 =
   "<div className='flex flex-col w-full'>\n  <div className='flex-1 bg-orange-300 text-black'>Div 1</div>\n  <div className='flex-1 bg-blue-400 text-black'>2nd Div</div>\n  <div className='flex-1 bg-green-400 text-black'>3rd div</div>\n</div>";
 
 export const metadata: Metadata = {
@@ -26,6 +26,7 @@ export const metadata: Metadata = {
   description: 'Chris Catto Code CSS-Styles Flexbox',
 };
 
+// possible CSS Color theme #1e43ff
 export default function Page() {
   return (
     <div className="flex h-full w-full flex-col flex-nowrap ">
@@ -113,7 +114,7 @@ export default function Page() {
         <SyntaxHighlightingReactCatto codeString={codeBlock5b} />
         <p>Simple justify-content: flex-end; to right justify</p>
         <br />
-        <div className="flex justify-end h-20 w-96 bg-orange-300 text-black">
+        <div className="flex h-20 w-96 justify-end bg-orange-300 text-black">
           justify-content: flex-end
         </div>
         <SyntaxHighlightingReactCatto codeString={codeBlock5c} />
