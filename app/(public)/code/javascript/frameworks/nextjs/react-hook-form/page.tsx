@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 const page = () => {
   const codeBlock = 'npm install react-hook-form';
   const codeBlock2 =
-    "import { SubmitHandler, useForm } from 'react-hook-form';";
+    "import { SubmitHandler, useForm } from 'react-hook-form';\n import { z } from 'zod';";
   const codeBlock3 =
     'const schema = z.object({\n  email: z.string().min(3),\n  password: z.string().min(3),\n});\ntype FormFields = z.infer<typeof schema>;';
   const codeBlock4 =
@@ -209,7 +209,7 @@ const page = () => {
                             />
                             <p className="mt-2">
                               While we are doing this lets also import the
-                              SubmitHandler function
+                              SubmitHandler function & Zod
                             </p>
                           </div>
                         </div>
