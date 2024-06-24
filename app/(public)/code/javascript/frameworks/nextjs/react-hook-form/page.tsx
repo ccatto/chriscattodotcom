@@ -188,6 +188,7 @@ const page = () => {
                           <SyntaxHighlightingReactCatto
                             codeString={codeBlock}
                           />
+                          <div className='indent-4'>Also at the top we need to add 'use client'.</div>
                         </div>
                       </div>
                     </div>
