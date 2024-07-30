@@ -386,7 +386,7 @@ export default function Page() {
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className=" indent-4">
-                            The .zshrc file configuration is essential for Z-Shell scripting. In our directory of Macintosh HD > Users > userName we have (if not there we can create) a file named .zshrc. All files starting with a dot are "hidden" and we can view hidden files in finder by pressing cmd+shift+. So opening the file to me I like to simply use the app TextEdit (others use vim or text editing methods). Then here are some important lines we can add to our .zshrc
+                            The .zshrc file configuration is essential for Z-Shell scripting. In our directory of Macintosh HD &gt; Users &gt; userName we have (if not there we can create) a file named .zshrc. All files starting with a dot are "hidden" and we can view hidden files in finder by pressing cmd+shift+. So opening the file to me I like to simply use the app TextEdit (others use vim or text editing methods). Then here are some important lines we can add to our .zshrc
                             </div>
                             <SyntaxHighlightingReactCatto
                               codeString={codeBlock3}
