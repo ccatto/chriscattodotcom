@@ -43,8 +43,6 @@ Current node version is 20.9.0 as of March 26th 2024;
 
 * 010 7.30.24 starting - probably going to add more AWS section;
 
-
-
 * 1st update in June 2024. 2nd small
 
 - using @next/third-parties for GA4.
