@@ -59,7 +59,15 @@ export default function Page() {
               Elastic computing =&gt; capacity to increase & decreasing capacity
               with investment = 0; therefore this is related to cost.
               <br />
-
+              Advantages of AWS Cloud:
+              <ul>
+                <li>
+                  Increase speed and agility
+                </li>
+                <li>
+                  Stop guessing about capacity
+                </li>
+              </ul>
             </div>
             <div>
               AWS characteristics making AWS cost effective for workload with
@@ -111,6 +119,9 @@ export default function Page() {
               app by automagically adding or replace instances across multiple
               Availability Zones. ASGs add & removed instances based on Demand.
               * can be used to run a "customer-managed relational database";
+              <br />
+              Application Load Balancer - ensures that your app on EC2 always has the right amount of capacity to handle the current traffic demand
+              https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html
             </div>
             <div>
               AMI Amazon Machine Image - EC2 to launch a pre-configured EC2
@@ -122,6 +133,7 @@ export default function Page() {
               >
                 AMIs Amazon Machine Images
               </Link>
+              We must use AMI from the same region as EC2; the region of AMI has no bearing on the performance of EC2;
             </div>
             <div>
               <Link
@@ -241,7 +253,7 @@ export default function Page() {
               </Link>
             </div>
             <div>
-              AWS Applicable Use Policy - AUP
+              AWS Acceptable Use Policy - AUP - policy describes prohibited uses of the web services offered by AWS
               https://aws.amazon.com/aup/
             </div>
             <div>
@@ -277,6 +289,19 @@ export default function Page() {
               <br />
               good for get expert professional advice on migrating to AWS and managing their applications on AWS Cloud
               https://aws.amazon.com/partners/
+            </div>
+            <div>
+              Massive economies of scale - pay-as-you-go prices is offered as a benefit of AWS Cloud
+              https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html
+            </div>
+            <div>
+              AWS Cloud Adoption Framework (AWS CAF)
+              https://aws.amazon.com/cloud-adoption-framework/
+              Roles: CTO & Engineer
+            </div>
+            <div>
+              VPC peering connection - optimal way of privately sharing data between the two VPCs
+              https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html
             </div>
           </div>
           ---------------- ----------------
@@ -352,6 +377,11 @@ export default function Page() {
                   Configuration Management
                 </li>
               </ul>
+              <div>
+                For abstracted services like Amazon S3, AWS operates the infrastructure layer, the operating system, and platforms
+              </div>
+
+
             </div>
             <div>
               2 security measures to protect AWS accounts:
@@ -371,12 +401,21 @@ export default function Page() {
                 Penetration Testing
               </Link>
               We request & wait for approval from AWS internal security team.
+                <br/>
+                Penetration Tests || security assessments 
             </div>
             <div>
               Security Groups act as a virtual firewall for the Amazon EC2 instance;
             </div>
             <div>
               U2F security key - hardware - Universal 2nd Factor (U2F) Security Key is a device that you can plug into a USB port on your computer.
+            </div>
+            <div>
+              Virtual Multi-Factor Authentication (MFA) device - NOT a physical device - generates a six-digit numeric code
+            </div>
+            <div>
+              AWS CloudHSM - Hardware data encryption - Manage single-tenant hardware security modules (HSMs) on AWS
+              https://aws.amazon.com/cloudhsm/
             </div>
           </div>
           ---------------- -----------------------
@@ -397,6 +436,12 @@ export default function Page() {
               * IAM groups able to administer multiple users
               <br />
               IAM policies can limit S3 access to specific users.
+            </div>
+            <div>
+              AWS IAM Identity Center - SSO - access management to multiple AWS accounts as well as facilitate AWS Single Sign-On (AWS SSO) access to its AWS accounts
+              https://aws.amazon.com/iam/identity-center/
+              <br/>
+              Connect your existing workforce identity source and centrally manage access to AWS
             </div>
             <div>
               EC2 -
@@ -440,6 +485,8 @@ export default function Page() {
               read replicas - Amazon RDS Read Replicas provide enhanced performance and durability for Amazon RDS database (DB) instance
               <br />
               Read Replica improves database scalability & performance;
+              <br />
+              RDS Multi-AZ enhances database availability - benefit of deploying an Amazon RDS Multi-AZ database with one standby
             </div>
             <div>
               AWS CloudFormation - speed up cloud provisioning with
@@ -452,15 +499,14 @@ export default function Page() {
                 AWS CloudFormation
               </Link>
               CloudFormation good for deploying identical resources across all AWS regions and accounts using templates while estimating costs
+              <br />
+              CloudFormation can provision the same AWS infrastructure across multiple regions.
             </div>
             <div>AWS CodeDeploy - automates software deployments
               https://aws.amazon.com/codedeploy/
               Automate code deployment to maintain application uptime
             </div>
-            <div>
-              AWS OpsWorks automate how servers are configured; deployed; &
-              managed.
-            </div>
+
             <div>
               Aurora - scale MySQL & PostgreSQL
               <Link
@@ -475,6 +521,10 @@ export default function Page() {
               DynamoDB - NoSQL db's / schemaless database
               https://aws.amazon.com/pm/dynamodb
               Serverless, NoSQL, fully managed database with single-digit millisecond performance at any scale
+              <br />
+              Global tables - NoSQL supports active-active configuration in both the East and West US AWS regions
+              <br />
+              DynamoDB - good for  store data from a recommendation engine in a database with Least operational overhead for any scale;
             </div>
             <div>
               Redshift - big data as service / cloud data warehouse
@@ -574,10 +624,21 @@ export default function Page() {
               * EFS provides simple scalable elastic NFS file system & can be
               used for on-premises including Linux Glacier is used for archiving
               | long term low cost storage;
+              <br />
+              Amazon Elastic File System (Amazon EFS) - use a storage service which would be accessed by hundreds of EC2 instances simultaneously to append data to existing files
             </div>
+            https://aws.amazon.com/s3/storage-classes/
             <div>
               AWS Glacier - Long-term, secure, durable storage classes for data archiving at the lowest cost and milliseconds access
-              Deep Archive & Flexible Retrieval
+              <ul>
+                <li>
+                  Deep Archive - lowest-cost storage class and supports long-term retention and digital preservation for data that may be accessed once or twice in a year
+                </li>
+                <li>
+                  Flexible Retrieval - delivers low-cost storage, up to 10% lower cost (than Amazon S3 Glacier Instant Retrieval), for archive data that is accessed 1—2 times per year and is retrieved asynchronously
+                </li>
+              </ul>
+
               https://aws.amazon.com/pm/s3-glacier
             </div>
             <div>
@@ -615,10 +676,16 @@ export default function Page() {
                   Simple routing - With simple routing, you typically route traffic to a single resource, for example, to a web server for your website.
                 </li>
                 <li>
-                  atency-based routing - This routing policy is used when you have resources in multiple AWS Regions and you want to route traffic to the region that provides the best latency.
+                  Latency-based routing - This routing policy is used when you have resources in multiple AWS Regions and you want to route traffic to the region that provides the best latency.
                 </li>
               </ul>
-
+              <br />
+              S3 One Zone-IA used to store thumbnails images
+              <br />
+              Amazon S3 One Zone-Infrequent Access (S3 One Zone-IA) is for data that is accessed less frequently but requires rapid access when needed.
+              <br />
+              S3 buckets have encryption configured by default
+              <br/>
             </div>
             <div>
               AWS EBS - Elastic Block Store - high performance block storage
@@ -662,6 +729,8 @@ export default function Page() {
                 Amazon CloudWatch Logs
               </Link>
               CloudWatch to gain system-wide visibility into resource utilization; app perf & operational health
+              <br />
+              Amazon CloudWatch Logs to monitor, store, log files from EC2; on-premises servers & many others;
             </div>
             <div>
               Route 53 - DNS reliable & cost effective way to route end users to
@@ -719,7 +788,7 @@ export default function Page() {
               <br />
               CloudFront is global not regional.
               <br />
-              CloudFront delivers content worldwide through data centers called "Edge Locations"
+              CloudFront delivers content worldwide through data centers called "Edge Locations"; AWS Edge location is a site that CloudFront uses to cache copies of the content for faster delivery to users at any location;
               <br />
               CloudFront decreases latency & increases perf
             </div>
@@ -744,6 +813,8 @@ export default function Page() {
             <div>
               AWS Storage Gateway - service provides a hybrid storage service that enables on-premises app to seamlessly use cloud storage;
               https://aws.amazon.com/storagegateway/
+              <br/>
+              Encrypted by default - ge. All data transferred between the gateway and AWS storage is encrypted using SSL 
             </div>
             <div>
               Amazon ElastiCache
@@ -814,10 +885,8 @@ export default function Page() {
             </div>
             <div>
               AWS Elastic Beanstalk -
-              Deploy and scale web applications
+              PaaS (Platform as a Service) Deploy and scale web applications
               https://aws.amazon.com/elasticbeanstalk
-
-
             </div>
             <div>
               AWS KMS - Key Management Service
@@ -826,18 +895,25 @@ export default function Page() {
             </div>
             <div>
               https://aws.amazon.com/pm/eventbridge
-              Amazon EventBridge - Build event-driven applications at scale across AWS, existing systems, or SaaS applications
+              Amazon EventBridge - Serverless - Build event-driven applications at scale across AWS, existing systems, or SaaS applications
             </div>
             <div>
               AWS Fargate - Serverless compute for CONTAINERS
               https://aws.amazon.com/fargate/
               <br />
-              AWS Fargate is a serverless compute engine for containers that works with both Amazon Elastic Container Service (ECS) and Amazon Elastic Kubernetes Service (EKS).
+              AWS Fargate - serverless compute engine for containers that works with both Amazon Elastic Container Service (ECS) and Amazon Elastic Kubernetes Service (EKS).
+            </div>
+            <div>
+              AWS ECS - Elastic Container Service - docker containers
+              https://docs.aws.amazon.com/ecs/
             </div>
             <div>
               AWS OpsWorks
               https://aws.amazon.com/documentation-overview/opsworks/
               Chef & Puppet
+              <br />
+              AWS OpsWorks automate how servers are configured; deployed; &
+              managed.
             </div>
             <div>
               Amazon EBS - Elastic Block Store
@@ -864,7 +940,22 @@ export default function Page() {
               https://aws.amazon.com/macie/
             </div>
             <div>
-              AWS Compute Optimizer - Get recommendations to optimize your use of AWS resources
+              AWS Compute Optimizer - Get recommendations to optimize your use of AWS resources for such as: 
+              <ul>
+                <li>
+                  EC2
+                </li>
+                <li>
+                  EC2 Auto Scaling Groups
+                </li>
+                <li>
+                  EBS - Amazon Elastic Block Store
+                </li>
+                <li>
+                  Lambda functions
+                </li>
+              </ul>
+              AWS Compute Optimizer does NOT provide optimization for S3 || EFS
               https://aws.amazon.com/compute-optimizer/
 
             </div>
@@ -877,6 +968,18 @@ export default function Page() {
             <div>
               AWS Systems Manager Session Manager - best way to provide secure shell access to EC2 without opening new ports or public IP.
               https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html
+              <br />
+              AWS Systems Manager get operational insights of its resources to quickly identify any issues that might impact applications using those resources
+            </div>
+            <div>
+              AWS Auto Scaling - free to use - Application scaling to optimize performance and costs
+              https://aws.amazon.com/autoscaling/
+            </div>
+            <div>
+              Instance Store - provides temporary block-level storage for your EC2 instance.
+            </div>
+            <div>
+              AWS Local Zones - deliver a consistent low-latency for end-users in various locations
             </div>
           </div>
           ---------------- -----------------------
@@ -911,28 +1014,51 @@ export default function Page() {
             <div>
               EC2 Pricing models:
               <br />
-              -- On-Demand instances in EC2 Pricing model is MOST cost efficient
-              for an uninterruptible workload that runs once a year for 24 hours
-              <br />
-              -- Reserved instances are not cheap;
-              <br /> save up to 75%
-              <br /> good for 3 yrs non-interruptible
-              <br />
-              Amazon EC2 Reserved Instance Utilization Report provides ability to share the cost benefits of Reserved instances across AWS accounts;
-              <br />
-              -- Spot instances:
-              <br />
-              * can be interrupted; spot = interruptible jobs
-              <br />
-              * can save up to 90%;
-              <br />* adjusts based on demand;
-              <br />
-              When there is flexibility in when an app needs to run = a spot benefit
-              <br />
-              Spot instances will interrupt a running EC2 instance if capacity becomes temp unavailable;
-              -------------
-              <br />
-              On Demand is: pay for what you use - 1 benefit of On-demand EC2 pricing is paying only for time used.
+              <ul>
+                <li>
+                  On-Demand -
+                  instances in EC2 Pricing model is MOST cost efficient
+                  for an uninterruptible workload that runs once a year for 24 hours
+                  <br />
+                  On Demand is: pay for what you use - 1 benefit of On-demand EC2 pricing is paying only for time used.
+                </li>
+                <li>
+                  Reserved -
+                  <br />
+                  long term never interrupted.
+                  <br />
+                  instances are not cheap;
+                  <br /> save up to 75%
+                  <br /> good for 3 yrs non-interruptible
+                  <br />
+                  Amazon EC2 Reserved Instance Utilization Report provides ability to share the cost benefits of Reserved instances across AWS accounts;
+                  <br />
+                </li>
+                <li>
+                  Spot instances
+                  <ul>
+                    <li>
+                      * can be interrupted; spot = interruptible jobs
+                    </li>
+                    <li>
+                      * can save up to 90%;
+                    </li>
+                    <li>
+                      adjusts based on demand;
+                    </li>
+                    <li>
+                      When there is flexibility in when an app needs to run = a spot benefit
+                    </li>
+                    <li>
+                      Spot instances will interrupt a running EC2 instance if capacity becomes temp unavailable;
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Dedicated host - allows you to use your eligible software licenses from vendors such as Microsoft and Oracle on Amazon EC2 so that you get the flexibility and cost-effectiveness of using your licenses, but with the resiliency, simplicity, and elasticity of AWS
+                </li>
+              </ul>
+
               <br />
               There is a one-minute minimum charge for Linux based EC2 instances, so this is the correct option. Therefore is a user used 30 seconds we'll be charged for 60 seconds;
               <br />
@@ -1000,6 +1126,16 @@ export default function Page() {
               billing to take advantage of volume discounts
               <br />
               ex. if each company dept. has own AWS account to consolidate billing we could create an AWS Organization & invite the others.
+              <br />
+              Best practices for AWS Orgs:
+              <ul>
+                <li>
+                  Create AWS accounts per department
+                </li>
+                <li>
+                  Restrict account privileges using Service Control Policies (SCP)
+                </li>
+              </ul>
             </div>
             <div>Hosting models: Dedicated hosts ~= physical isolation;</div>
             <div>
@@ -1037,7 +1173,10 @@ export default function Page() {
             <div>
               AWS simple Monthly Calculator - can be used to forecast the future costs of running a new web app. It's a new app so the cost explorer is used to predict cost.
               <br />
-              AWS Cost Explorer
+              AWS Cost Explorer - used to forecast your AWS account usage and costs
+              https://aws.amazon.com/aws-cost-management/aws-cost-explorer/
+              <br />
+              * Visualize, understand, and manage your AWS costs and usage over time
             </div>
             <div>
               TOC total cost of ownership from on-prem vs AWS cloud 2 expenses considered are:
@@ -1062,6 +1201,9 @@ export default function Page() {
                   Use managed services
                 </li>
               </ul>
+            </div>
+            <div>
+              AWS Pricing Calculator -  compare the cost of running their IT infrastructure on-premises vs AWS Cloud. AWS Pricing Calculator lets you explore AWS services and create an estimate for the cost of your use cases on AWS
             </div>
           </div>
         </div>
