@@ -38,7 +38,7 @@ export default function Page() {
           </div>
           <br /> ---------------- -----------------------
           <br />
-          -- 1. AWS General - CloudConcepts
+          -- 1. AWS General - Cloud Concepts
           <br /> --- ---------------- -----------------------
           <br />
           <div>
@@ -86,6 +86,7 @@ export default function Page() {
               </Link>
               <br />
               Config is good to "Audit" change management of AWS resources
+              * tracking configuration changes
             </div>
             <div>
               Auto Scaling - enables compute capacity to adjust as loads change
@@ -113,7 +114,7 @@ export default function Page() {
             </div>
             <div>
               AMI Amazon Machine Image - EC2 to launch a pre-configured EC2
-              select a pre-configured templated AMI Amzaon Machine Image
+              select a pre-configured templated AMI Amazon Machine Image
               <Link
                 className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                 href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html"
@@ -150,8 +151,10 @@ export default function Page() {
               </ul>
               <br />
               Trusted Advisor will identify if unrestricted access to a resource has been allowed by a s "Security Group"
-              <br/>
-              Use Trusted Advisor if a Security officer wants a list of any potential vulnerabilities in EC2 
+              <br />
+              Use Trusted Advisor if a Security officer wants a list of any potential vulnerabilities in EC2
+              <br />
+              AWS Trusted Advisor is an online tool that provides you real-time guidance to help you provision your resources following AWS best practices on cost optimization, security, fault tolerance, service limits and performance improvement.
             </div>
             <div>
               Expanding into another region; We create resources in a new
@@ -215,7 +218,7 @@ export default function Page() {
               <br />
               use multiple availability zones
               <br />
-              Design principles to improve operational workloads: 
+              Design principles to improve operational workloads:
               <ul>
                 <li>
                   loose coupling
@@ -236,6 +239,44 @@ export default function Page() {
                 target="_blank">
                 AWS Enable VPC internet access using internet gateways
               </Link>
+            </div>
+            <div>
+              AWS Applicable Use Policy - AUP
+              https://aws.amazon.com/aup/
+            </div>
+            <div>
+              AWS Partner Solutions (formerly Quick Starts) - quickly deploy a popular tech on AWS
+              AWS Partner Solutions are automated reference deployments built by Amazon Web Services (AWS) solutions architects and AWS Partners.
+            </div>
+            <div>
+              The AWS Well-Architected Framework is based on six pillars
+              <ul>
+                <li>
+                  Operational Excellence - includes the ability to run and monitor systems to deliver business value and to continually improve supporting processes and procedures.
+                </li>
+                <li>
+                  Security - focuses on protecting information & systems
+                </li>
+                <li>
+                  Reliability,
+                </li>
+                <li>
+                  Performance Efficiency - focuses on using IT and computing resources efficiently
+                </li>
+                <li>
+                  Cost Optimization -  focuses on avoiding un-needed costs
+                </li>
+                <li>
+                  Sustainability.
+                </li>
+              </ul>
+              Operational Excellence - pillar of the AWS Well-Architected Framework recommends maintaining infrastructure as code (IaC)
+            </div>
+            <div>
+              APN Consulting Partner - is the global partner program for technology and consulting businesses that leverage Amazon Web Services to build solutions and services for customers
+              <br />
+              good for get expert professional advice on migrating to AWS and managing their applications on AWS Cloud
+              https://aws.amazon.com/partners/
             </div>
           </div>
           ---------------- ----------------
@@ -334,6 +375,9 @@ export default function Page() {
             <div>
               Security Groups act as a virtual firewall for the Amazon EC2 instance;
             </div>
+            <div>
+              U2F security key - hardware - Universal 2nd Factor (U2F) Security Key is a device that you can plug into a USB port on your computer.
+            </div>
           </div>
           ---------------- -----------------------
           <br />
@@ -375,6 +419,10 @@ export default function Page() {
               Track user activity & API usage.
               <br />
               a service to gather info about AWS account activity
+              <br />
+              use CloudTrail to log, monitor and retain account activity related to actions across your AWS infrastructure
+              <br />
+              ensure that its AWS account activity meets the governance, compliance and auditing norms
             </div>
             <div>Amazon GuardDuty assists in threat protection</div>
             <div>
@@ -387,9 +435,11 @@ export default function Page() {
               AWS Manages the maintenance of the OS
               <br />
               MS SQL Server - RDS can be used to host
-              <br/>
+              <br />
               https://aws.amazon.com/rds/features/read-replicas/
               read replicas - Amazon RDS Read Replicas provide enhanced performance and durability for Amazon RDS database (DB) instance
+              <br />
+              Read Replica improves database scalability & performance;
             </div>
             <div>
               AWS CloudFormation - speed up cloud provisioning with
@@ -401,10 +451,11 @@ export default function Page() {
               >
                 AWS CloudFormation
               </Link>
+              CloudFormation good for deploying identical resources across all AWS regions and accounts using templates while estimating costs
             </div>
             <div>AWS CodeDeploy - automates software deployments
-            https://aws.amazon.com/codedeploy/
-            Automate code deployment to maintain application uptime
+              https://aws.amazon.com/codedeploy/
+              Automate code deployment to maintain application uptime
             </div>
             <div>
               AWS OpsWorks automate how servers are configured; deployed; &
@@ -420,7 +471,11 @@ export default function Page() {
                 AWS Aurora
               </Link>
             </div>
-            <div>DynamoDB - NoSQL db's</div>
+            <div>
+              DynamoDB - NoSQL db's / schemaless database
+              https://aws.amazon.com/pm/dynamodb
+              Serverless, NoSQL, fully managed database with single-digit millisecond performance at any scale
+            </div>
             <div>
               Redshift - big data as service / cloud data warehouse
               <Link
@@ -462,10 +517,26 @@ export default function Page() {
               AWS Personal Health Dashboard - Provides alerts when an AWS event
               may impact a company's AWS resources. Provides alerts &
               remediation guidance when AWS is experiencing events.
-              <br/>
-               * ex.
+              <br />
+              * ex.
               provides a customized view of the health of specific AWS services
               that power a customers workloads running on AWS.
+              <br />
+              AWS Health Dashboard - Service Health -
+              <ul>
+                <li>
+                  used to subscribe to an RSS feed to be notified of the status of all AWS service interruptions
+                </li>
+                <li>
+                  * Service health is the single place to learn about the availability and operations of AWS services
+                </li>
+              </ul>
+
+              https://docs.aws.amazon.com/health/latest/ug/aws-health-dashboard-status.html
+              <br />
+              AWS Health - Your Account Health Dashboard -  personalized view of the status of the AWS services that are part of your Cloud architecture so that you can quickly assess the impact on your business when AWS service(s) are experiencing issues
+              <br />
+              AWS Health - Your Account Health Dashboard provides alerts and remediation guidance when AWS is experiencing events that may impact you.
             </div>
             <div>
               AWS Marketplace - search for software listing that runs on AWS
@@ -476,6 +547,15 @@ export default function Page() {
               >
                 AWS Marketplace
               </Link>
+              Facilitates use cases:
+              <ul>
+                <li>
+                  Sell Software as a Service (SaaS) solutions to AWS customers
+                </li>
+                <li>
+                  AWS customer can buy software that has been bundled into customized Amazon Machine Image (AMIs) by the AWS Marketplace sellers
+                </li>
+              </ul>
             </div>
             <div>
               AWS managed services such as ElastiCache & RDS benefits are: they
@@ -494,6 +574,11 @@ export default function Page() {
               * EFS provides simple scalable elastic NFS file system & can be
               used for on-premises including Linux Glacier is used for archiving
               | long term low cost storage;
+            </div>
+            <div>
+              AWS Glacier - Long-term, secure, durable storage classes for data archiving at the lowest cost and milliseconds access
+              Deep Archive & Flexible Retrieval
+              https://aws.amazon.com/pm/s3-glacier
             </div>
             <div>
               Amazon S3 - object storage build to retrieve any amount of data
@@ -516,6 +601,24 @@ export default function Page() {
               </Link>
               * can be used for serving large amounts of online video content
               with lowest possible latency
+              <br />
+              Routing types:
+              https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html
+              <ul>
+                <li>
+                  Weighted routing -  lets you associate multiple resources with a single domain name
+                </li>
+                <li>
+                  Failover routing - This routing policy is used when you want to configure active-passive failover.
+                </li>
+                <li>
+                  Simple routing - With simple routing, you typically route traffic to a single resource, for example, to a web server for your website.
+                </li>
+                <li>
+                  atency-based routing - This routing policy is used when you have resources in multiple AWS Regions and you want to route traffic to the region that provides the best latency.
+                </li>
+              </ul>
+
             </div>
             <div>
               AWS EBS - Elastic Block Store - high performance block storage
@@ -579,11 +682,23 @@ export default function Page() {
             <div>
               Elastic Load Balancing ELB - Distribute network traffic to improve application scalability
               https://aws.amazon.com/elasticloadbalancing/
-              <br/>
+              <br />
               automatically distributes incoming app
-              traffic across multiple targets such as EC2 instances; 
+              traffic across multiple targets such as EC2 instances;
               containers;
               IPs || Lambda functions.
+              <br />
+              Elastic Load Balancing (ELB) automatically distributes incoming application traffic across multiple targets, such as Amazon EC2 instances, containers, and IP addresses
+              <br />
+              Benefits:
+              <ul>
+                <li>
+                  Fault tolerance
+                </li>
+                <li>
+                  High Availability
+                </li>
+              </ul>
             </div>
             <div>
               AWS Services ways for customer to interact: * AWS Management
@@ -605,8 +720,8 @@ export default function Page() {
               CloudFront is global not regional.
               <br />
               CloudFront delivers content worldwide through data centers called "Edge Locations"
-                <br/>
-                CloudFront decreases latency & increases perf
+              <br />
+              CloudFront decreases latency & increases perf
             </div>
             <div>
               AWS Professional Services is an AWS team that can assist customers
@@ -634,7 +749,7 @@ export default function Page() {
               Amazon ElastiCache
               https://aws.amazon.com/pm/elasticache
               Storing common database query results which helps alleviate db access load.
-              <br/>
+              <br />
               decreases latency & increase perf;
             </div>
             <div>
@@ -677,15 +792,28 @@ export default function Page() {
               https://aws.amazon.com/snowball/
             </div>
             <div>
-              AWS Outposts is a service that offers same AWS service; infrastructure APIS to on-prem hybrid 
+              AWS Outposts is a service that offers same AWS service; infrastructure APIS to on-prem hybrid
               https://aws.amazon.com/outposts/
             </div>
             <div>
               Amazon Inspector - Automated & continual vulnerability management at scale
               https://aws.amazon.com/inspector
+              Inspector does:
+              <ul>
+                <li>
+                  * inspect OS against vulnerabilities
+                </li>
+                <li>
+                  * Analyze against unintended network accessibility
+                </li>
+                <li>
+                  * Automate security assessments
+                </li>
+              </ul>
+              Inspector does not -Track configuration changes
             </div>
             <div>
-              AWS Elastic Beanstalk - 
+              AWS Elastic Beanstalk -
               Deploy and scale web applications
               https://aws.amazon.com/elasticbeanstalk
 
@@ -697,12 +825,58 @@ export default function Page() {
               https://aws.amazon.com/kms/
             </div>
             <div>
-            https://aws.amazon.com/pm/eventbridge
-            Amazon EventBridge - Build event-driven applications at scale across AWS, existing systems, or SaaS applications
+              https://aws.amazon.com/pm/eventbridge
+              Amazon EventBridge - Build event-driven applications at scale across AWS, existing systems, or SaaS applications
             </div>
             <div>
-              AWS Fargate - Serverless compute for containers
+              AWS Fargate - Serverless compute for CONTAINERS
               https://aws.amazon.com/fargate/
+              <br />
+              AWS Fargate is a serverless compute engine for containers that works with both Amazon Elastic Container Service (ECS) and Amazon Elastic Kubernetes Service (EKS).
+            </div>
+            <div>
+              AWS OpsWorks
+              https://aws.amazon.com/documentation-overview/opsworks/
+              Chef & Puppet
+            </div>
+            <div>
+              Amazon EBS - Elastic Block Store
+              https://aws.amazon.com/ebs/
+              Easy to use, high performance block storage at any scale
+            </div>
+            <div>
+              Amazon Polly
+              https://aws.amazon.com/polly/
+              Deploy high-quality, natural-sounding human voices in dozens of languages
+            </div>
+            <div>
+              Amazon Transcribe -
+              https://aws.amazon.com/pm/transcribe
+              Automatically convert speech to text
+            </div>
+            <div>
+              VPC Endpoints
+              https://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/what-are-vpc-endpoints.html
+            </div>
+            <div>
+              Amazon Macie
+              Discover and protect your sensitive data at scale
+              https://aws.amazon.com/macie/
+            </div>
+            <div>
+              AWS Compute Optimizer - Get recommendations to optimize your use of AWS resources
+              https://aws.amazon.com/compute-optimizer/
+
+            </div>
+            <div>
+              AWS X-Ray - Analyze and debug production and distributed applications
+              <br />
+              XRay is good to debug performance issues for its serverless application built using a microservices architecture
+              https://aws.amazon.com/xray/
+            </div>
+            <div>
+              AWS Systems Manager Session Manager - best way to provide secure shell access to EC2 without opening new ports or public IP.
+              https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html
             </div>
           </div>
           ---------------- -----------------------
@@ -759,6 +933,20 @@ export default function Page() {
               -------------
               <br />
               On Demand is: pay for what you use - 1 benefit of On-demand EC2 pricing is paying only for time used.
+              <br />
+              There is a one-minute minimum charge for Linux based EC2 instances, so this is the correct option. Therefore is a user used 30 seconds we'll be charged for 60 seconds;
+              <br />
+              https://aws.amazon.com/blogs/aws/new-per-second-billing-for-ec2-instances-and-ebs-volumes/
+              <br />
+              Optimize EC2 costs:
+              <ul>
+                <li>
+                  Set up Auto Scaling groups to align the number of instances with the demand
+                </li>
+                <li>
+                  Purchase Amazon EC2 Reserved instances (RIs)
+                </li>
+              </ul>
             </div>
             <div>
               An app has flexible start & end times. EC2 pricing model which is
@@ -848,7 +1036,7 @@ export default function Page() {
             </div>
             <div>
               AWS simple Monthly Calculator - can be used to forecast the future costs of running a new web app. It's a new app so the cost explorer is used to predict cost.
-              <br/>
+              <br />
               AWS Cost Explorer
             </div>
             <div>
