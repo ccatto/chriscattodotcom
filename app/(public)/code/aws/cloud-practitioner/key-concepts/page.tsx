@@ -67,6 +67,8 @@ export default function Page() {
               <br />
               - Elasticity - makes feasible to add remove resources
               <br />
+
+              <br />
               Pay-as-you-go pricing - pay only upon usage;
             </div>
             <div>
@@ -136,6 +138,20 @@ export default function Page() {
               Determine if any security groups in AWS have been provisioned to
               allow unrestricted access for specific ports by Ex. 2 categories:
               Instance Usage & Performance
+              <br />
+              AWS Trusted Advisor monitors & provides advises on
+              <ul>
+                <li>
+                  Compliance w/ security best practices
+                </li>
+                <li>
+                  Cost optimization
+                </li>
+              </ul>
+              <br />
+              Trusted Advisor will identify if unrestricted access to a resource has been allowed by a s "Security Group"
+              <br/>
+              Use Trusted Advisor if a Security officer wants a list of any potential vulnerabilities in EC2 
             </div>
             <div>
               Expanding into another region; We create resources in a new
@@ -199,10 +215,27 @@ export default function Page() {
               <br />
               use multiple availability zones
               <br />
-
+              Design principles to improve operational workloads: 
+              <ul>
+                <li>
+                  loose coupling
+                </li>
+                <li>
+                  disposable resources
+                </li>
+              </ul>
             </div>
             <div>
-              Multi-site active-active is the DR disaster recovery which offers the lowest probability of down time; aka hot standby 
+              Multi-site active-active is the DR disaster recovery which offers the lowest probability of down time; aka hot standby
+            </div>
+            <div>
+              Internet Gateway - is an allows inbound traffic from internet to access a VPC;
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html"
+                target="_blank">
+                AWS Enable VPC internet access using internet gateways
+              </Link>
             </div>
           </div>
           ---------------- ----------------
@@ -236,25 +269,48 @@ export default function Page() {
               <br />
               Managing VPC network access control lists to secure apps
               <br />
-
+              Maintaining server-side Encryption
+              <br />
+              Using RDS customer is responsible for controlling network access through security groups;
+              <br />
               ------------------------------
               <br />
               AWS responsible for security "OF" the cloud:
+              <ul>
+                <li>
+                  * has sole responsibility for physical security; "Security of the
+                  Cloud"
+                </li>
+                <li>
+                  * AWS is responsible for protecting the infrastructure that
+                  runs all of the services offered in AWS Cloud; * updating firmware
+                </li>
+                <li>
+                  auditing physical data center assets
+                </li>
+                <li>
+                  patching db software
+                </li>
+                <li>
+                  backing up DBs
+                </li>
+                <li>
+                  securing the EC2 Hypervisor & physical controls
+                </li>
+                <li>
+                  edge location management
+                </li>
+              </ul>
               <br />
-              * has sole responsibility for physical security; "Security of the
-              Cloud"
-              <br />* AWS is responsible for protecting the infrastructure that
-              runs all of the services offered in AWS Cloud; * updating firmware
-              <br />
-              auditing physical data center assets
-              <br />
-              patching db software
-              <br />
-              backing up DBs
-              <br />
-              securing the EC2 Hypervisor & physical controls
-              <br />
-              edge location management
+              Shared responsibility-
+              <ul>
+                <li>
+                  Awareness & training
+                </li>
+                <li>
+                  Configuration Management
+                </li>
+              </ul>
             </div>
             <div>
               2 security measures to protect AWS accounts:
@@ -276,7 +332,7 @@ export default function Page() {
               We request & wait for approval from AWS internal security team.
             </div>
             <div>
-              Security Groups act as a virtual firewall for the Amazon EC2 instance; 
+              Security Groups act as a virtual firewall for the Amazon EC2 instance;
             </div>
           </div>
           ---------------- -----------------------
@@ -331,6 +387,9 @@ export default function Page() {
               AWS Manages the maintenance of the OS
               <br />
               MS SQL Server - RDS can be used to host
+              <br/>
+              https://aws.amazon.com/rds/features/read-replicas/
+              read replicas - Amazon RDS Read Replicas provide enhanced performance and durability for Amazon RDS database (DB) instance
             </div>
             <div>
               AWS CloudFormation - speed up cloud provisioning with
@@ -343,7 +402,10 @@ export default function Page() {
                 AWS CloudFormation
               </Link>
             </div>
-            <div>AWS CodeDeploy - automates software deployments</div>
+            <div>AWS CodeDeploy - automates software deployments
+            https://aws.amazon.com/codedeploy/
+            Automate code deployment to maintain application uptime
+            </div>
             <div>
               AWS OpsWorks automate how servers are configured; deployed; &
               managed.
@@ -390,7 +452,7 @@ export default function Page() {
             <div>
               AWS Lambda - runs code serverless without thinking of servers or
               clusters; https://aws.amazon.com/lambda/
-              <br/>
+              <br />
               charged by - users pay based on the number of requests & consumed compute resources.
             </div>
             <div>
@@ -399,7 +461,9 @@ export default function Page() {
             <div>
               AWS Personal Health Dashboard - Provides alerts when an AWS event
               may impact a company's AWS resources. Provides alerts &
-              remediation guidance when AWS is experiencing events. * ex.
+              remediation guidance when AWS is experiencing events.
+              <br/>
+               * ex.
               provides a customized view of the health of specific AWS services
               that power a customers workloads running on AWS.
             </div>
@@ -494,6 +558,7 @@ export default function Page() {
               >
                 Amazon CloudWatch Logs
               </Link>
+              CloudWatch to gain system-wide visibility into resource utilization; app perf & operational health
             </div>
             <div>
               Route 53 - DNS reliable & cost effective way to route end users to
@@ -512,8 +577,12 @@ export default function Page() {
               </Link>
             </div>
             <div>
-              Elastic Load Balancing - automatically distributes incoming app
-              traffic across multiple targets such as EC2 instances; containers;
+              Elastic Load Balancing ELB - Distribute network traffic to improve application scalability
+              https://aws.amazon.com/elasticloadbalancing/
+              <br/>
+              automatically distributes incoming app
+              traffic across multiple targets such as EC2 instances; 
+              containers;
               IPs || Lambda functions.
             </div>
             <div>
@@ -536,7 +605,8 @@ export default function Page() {
               CloudFront is global not regional.
               <br />
               CloudFront delivers content worldwide through data centers called "Edge Locations"
-
+                <br/>
+                CloudFront decreases latency & increases perf
             </div>
             <div>
               AWS Professional Services is an AWS team that can assist customers
@@ -564,6 +634,8 @@ export default function Page() {
               Amazon ElastiCache
               https://aws.amazon.com/pm/elasticache
               Storing common database query results which helps alleviate db access load.
+              <br/>
+              decreases latency & increase perf;
             </div>
             <div>
               AWS Quick start reference deployments - help deploy popular IT solution & start using it immediately
@@ -577,6 +649,60 @@ export default function Page() {
               <br />
               * it verifies that hosted workloads are automatically compliant with the controls of supported compliance frameworks;
 
+            </div>
+            <div>
+              AWS Glue is an ETL service to make it easy to prepare data for analytics
+              https://aws.amazon.com/glue/
+            </div>
+            <div>
+              Amazon GuardDuty is a threat detection service.
+            </div>
+            <div>
+              Help decrease network latency for a globally dispersed user base: 2 services || features:
+              <ul>
+                <li>
+                  AWS CloudFront
+                </li>
+                <li>
+                  AWS Global Accelerator - improves performance for a wide range of app
+                </li>
+              </ul>
+            </div>
+            <div>
+              AWS QuickSight is a BI dashboard service;
+              https://docs.aws.amazon.com/quicksight/latest/user/welcome.html
+            </div>
+            <div>
+              AWS Snowball is a service that will allow transfer of large data from on-prem to cloud;
+              https://aws.amazon.com/snowball/
+            </div>
+            <div>
+              AWS Outposts is a service that offers same AWS service; infrastructure APIS to on-prem hybrid 
+              https://aws.amazon.com/outposts/
+            </div>
+            <div>
+              Amazon Inspector - Automated & continual vulnerability management at scale
+              https://aws.amazon.com/inspector
+            </div>
+            <div>
+              AWS Elastic Beanstalk - 
+              Deploy and scale web applications
+              https://aws.amazon.com/elasticbeanstalk
+
+
+            </div>
+            <div>
+              AWS KMS - Key Management Service
+              Create and control keys used to encrypt or digitally sign your data
+              https://aws.amazon.com/kms/
+            </div>
+            <div>
+            https://aws.amazon.com/pm/eventbridge
+            Amazon EventBridge - Build event-driven applications at scale across AWS, existing systems, or SaaS applications
+            </div>
+            <div>
+              AWS Fargate - Serverless compute for containers
+              https://aws.amazon.com/fargate/
             </div>
           </div>
           ---------------- -----------------------
@@ -605,6 +731,8 @@ export default function Page() {
               Enterprise - includes a dedicated Technical Account Manger
               <br />
               includes Infrastructure Event Management without additional costs.
+              <br />
+              AWS Concierge support team is the primary contact for billing & account inquires for Enterprise level support.
             </div>
             <div>
               EC2 Pricing models:
@@ -617,7 +745,7 @@ export default function Page() {
               <br /> good for 3 yrs non-interruptible
               <br />
               Amazon EC2 Reserved Instance Utilization Report provides ability to share the cost benefits of Reserved instances across AWS accounts;
-              <br/>
+              <br />
               -- Spot instances:
               <br />
               * can be interrupted; spot = interruptible jobs
@@ -627,7 +755,10 @@ export default function Page() {
               <br />
               When there is flexibility in when an app needs to run = a spot benefit
               <br />
-              On demand is: pay for what you use - 1 benefit of On-demand EC2 pricing is paying only for time used.
+              Spot instances will interrupt a running EC2 instance if capacity becomes temp unavailable;
+              -------------
+              <br />
+              On Demand is: pay for what you use - 1 benefit of On-demand EC2 pricing is paying only for time used.
             </div>
             <div>
               An app has flexible start & end times. EC2 pricing model which is
@@ -643,6 +774,17 @@ export default function Page() {
               <br />
               Spot instances optimizes costs; run hyperscale workloads & builds
               sustainable solutions.
+            </div>
+            <div>
+              Optimize EC2 costs by:
+              <ul>
+                <li>
+                  Implementing Auto Scaling groups to add & remove instances based on  demand;
+                </li>
+                <li>
+                  Purchasing Reserved Instances
+                </li>
+              </ul>
             </div>
             <div>
               AWS Artifact - access AWS & ISV security & compliance reports
@@ -706,6 +848,8 @@ export default function Page() {
             </div>
             <div>
               AWS simple Monthly Calculator - can be used to forecast the future costs of running a new web app. It's a new app so the cost explorer is used to predict cost.
+              <br/>
+              AWS Cost Explorer
             </div>
             <div>
               TOC total cost of ownership from on-prem vs AWS cloud 2 expenses considered are:
@@ -719,6 +863,17 @@ export default function Page() {
               * Labor costs to replace old servers
               <br />
               AWS Total Cost of Ownership (TCO) calculator allows us to estimate the cost saving when using AWS && if a company perform a cost benefit analysis of migrating to AWS;
+            </div>
+            <div>
+              Migrating production workloads to the AWS cloud to reduce operational costs:
+              <ul>
+                <li>
+                  Reduce overprovisioned instances
+                </li>
+                <li>
+                  Use managed services
+                </li>
+              </ul>
             </div>
           </div>
         </div>
