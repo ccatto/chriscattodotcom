@@ -59,6 +59,8 @@ export default function Page() {
               Elastic computing =&gt; capacity to increase & decreasing capacity
               with investment = 0; therefore this is related to cost.
               <br />
+              AWS performs infrastructure discovery scans on the customer's behalf.
+              <br/>
               Advantages of AWS Cloud:
               <ul>
                 <li>
@@ -121,7 +123,12 @@ export default function Page() {
               * can be used to run a "customer-managed relational database";
               <br />
               Application Load Balancer - ensures that your app on EC2 always has the right amount of capacity to handle the current traffic demand
-              https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html"
+                target="_blank">
+                EC2 Auto Scaling
+              </Link>
             </div>
             <div>
               AMI Amazon Machine Image - EC2 to launch a pre-configured EC2
@@ -254,7 +261,11 @@ export default function Page() {
             </div>
             <div>
               AWS Acceptable Use Policy - AUP - policy describes prohibited uses of the web services offered by AWS
-              https://aws.amazon.com/aup/
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/aup/"
+                target="_blank">AWS Acceptable Use Policy - AUP
+              </Link>
             </div>
             <div>
               AWS Partner Solutions (formerly Quick Starts) - quickly deploy a popular tech on AWS
@@ -288,20 +299,45 @@ export default function Page() {
               APN Consulting Partner - is the global partner program for technology and consulting businesses that leverage Amazon Web Services to build solutions and services for customers
               <br />
               good for get expert professional advice on migrating to AWS and managing their applications on AWS Cloud
-              https://aws.amazon.com/partners/
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href=""
+                target="_blank">
+              </Link>
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/partners/"
+                target="_blank">
+                Partners
+              </Link>
             </div>
             <div>
               Massive economies of scale - pay-as-you-go prices is offered as a benefit of AWS Cloud
-              https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html"
+                target="_blank">
+                6 Advantages of Cloud Computing
+              </Link>
             </div>
             <div>
               AWS Cloud Adoption Framework (AWS CAF)
-              https://aws.amazon.com/cloud-adoption-framework/
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/cloud-adoption-framework/"
+                target="_blank">
+                AWS Cloud Adoption Framework (AWS CAF)
+              </Link>
               Roles: CTO & Engineer
             </div>
             <div>
               VPC peering connection - optimal way of privately sharing data between the two VPCs
-              https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html"
+                target="_blank">
+                What is VPC Peering
+              </Link>
             </div>
           </div>
           ---------------- ----------------
@@ -401,8 +437,8 @@ export default function Page() {
                 Penetration Testing
               </Link>
               We request & wait for approval from AWS internal security team.
-                <br/>
-                Penetration Tests || security assessments 
+              <br />
+              Penetration Tests || security assessments
             </div>
             <div>
               Security Groups act as a virtual firewall for the Amazon EC2 instance;
@@ -415,7 +451,12 @@ export default function Page() {
             </div>
             <div>
               AWS CloudHSM - Hardware data encryption - Manage single-tenant hardware security modules (HSMs) on AWS
-              https://aws.amazon.com/cloudhsm/
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/cloudhsm/"
+                target="_blank">
+                AWS CloudHSM
+              </Link>
             </div>
           </div>
           ---------------- -----------------------
@@ -439,8 +480,13 @@ export default function Page() {
             </div>
             <div>
               AWS IAM Identity Center - SSO - access management to multiple AWS accounts as well as facilitate AWS Single Sign-On (AWS SSO) access to its AWS accounts
-              https://aws.amazon.com/iam/identity-center/
-              <br/>
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/iam/identity-center/"
+                target="_blank">
+                AWS IAM Identity Center - SSO
+              </Link>
+              <br />
               Connect your existing workforce identity source and centrally manage access to AWS
             </div>
             <div>
@@ -481,10 +527,15 @@ export default function Page() {
               <br />
               MS SQL Server - RDS can be used to host
               <br />
-              https://aws.amazon.com/rds/features/read-replicas/
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/rds/features/read-replicas/"
+                target="_blank">
+                Read Replicas
+              </Link>
               read replicas - Amazon RDS Read Replicas provide enhanced performance and durability for Amazon RDS database (DB) instance
               <br />
-              Read Replica improves database scalability & performance;
+              Read Replica improves database scalability & performance; - scale out globally
               <br />
               RDS Multi-AZ enhances database availability - benefit of deploying an Amazon RDS Multi-AZ database with one standby
             </div>
@@ -503,10 +554,14 @@ export default function Page() {
               CloudFormation can provision the same AWS infrastructure across multiple regions.
             </div>
             <div>AWS CodeDeploy - automates software deployments
-              https://aws.amazon.com/codedeploy/
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/codedeploy/"
+                target="_blank">
+                AWS CodeDeploy
+              </Link>
               Automate code deployment to maintain application uptime
             </div>
-
             <div>
               Aurora - scale MySQL & PostgreSQL
               <Link
@@ -519,7 +574,12 @@ export default function Page() {
             </div>
             <div>
               DynamoDB - NoSQL db's / schemaless database
-              https://aws.amazon.com/pm/dynamodb
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/pm/dynamodb"
+                target="_blank">
+                DynamoDB - NoSQL
+              </Link>
               Serverless, NoSQL, fully managed database with single-digit millisecond performance at any scale
               <br />
               Global tables - NoSQL supports active-active configuration in both the East and West US AWS regions
@@ -537,17 +597,34 @@ export default function Page() {
               </Link>
             </div>
             <div>
-              AWS KMS - Key Management Service https://aws.amazon.com/kms/
+              AWS KMS - Key Management Service
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/kms/"
+                target="_blank">
+                AWS KMS
+              </Link>
               create & control keys used to encrypt or digitally sign data;
             </div>
             <div>
               AWS Direct Connect - enables us to connect securely AWS to on-prem
               data center. ex. Direct connect can connect Amazon VPC to
-              on-premises data center. https://aws.amazon.com/directconnect/
+              on-premises data center.
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/directconnect/"
+                target="_blank">
+                AWS Direct Connect
+              </Link>
             </div>
             <div>
               AWS VPC
-              https://aws.amazon.com/vpc/
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/vpc/"
+                target="_blank">
+                AWS VPC
+              </Link>
               2 features that can be configured with VPC are:
               <br />
               * Security Groups
@@ -556,7 +633,13 @@ export default function Page() {
             </div>
             <div>
               AWS Lambda - runs code serverless without thinking of servers or
-              clusters; https://aws.amazon.com/lambda/
+              clusters;
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/lambda/"
+                target="_blank">
+                AWS Lambda
+              </Link>
               <br />
               charged by - users pay based on the number of requests & consumed compute resources.
             </div>
@@ -581,8 +664,12 @@ export default function Page() {
                   * Service health is the single place to learn about the availability and operations of AWS services
                 </li>
               </ul>
-
-              https://docs.aws.amazon.com/health/latest/ug/aws-health-dashboard-status.html
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://docs.aws.amazon.com/health/latest/ug/aws-health-dashboard-status.html"
+                target="_blank">
+                AWS Health Dashboard Status
+              </Link>
               <br />
               AWS Health - Your Account Health Dashboard -  personalized view of the status of the AWS services that are part of your Cloud architecture so that you can quickly assess the impact on your business when AWS service(s) are experiencing issues
               <br />
@@ -627,7 +714,12 @@ export default function Page() {
               <br />
               Amazon Elastic File System (Amazon EFS) - use a storage service which would be accessed by hundreds of EC2 instances simultaneously to append data to existing files
             </div>
-            https://aws.amazon.com/s3/storage-classes/
+            <Link
+              className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+              href="https://aws.amazon.com/s3/storage-classes/"
+              target="_blank">
+              Storage Classes
+            </Link>
             <div>
               AWS Glacier - Long-term, secure, durable storage classes for data archiving at the lowest cost and milliseconds access
               <ul>
@@ -638,8 +730,12 @@ export default function Page() {
                   Flexible Retrieval - delivers low-cost storage, up to 10% lower cost (than Amazon S3 Glacier Instant Retrieval), for archive data that is accessed 1—2 times per year and is retrieved asynchronously
                 </li>
               </ul>
-
-              https://aws.amazon.com/pm/s3-glacier
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/pm/s3-glacier"
+                target="_blank">
+                S3 Glacier
+              </Link>
             </div>
             <div>
               Amazon S3 - object storage build to retrieve any amount of data
@@ -664,7 +760,12 @@ export default function Page() {
               with lowest possible latency
               <br />
               Routing types:
-              https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html"
+                target="_blank">
+                Routing Policy
+              </Link>
               <ul>
                 <li>
                   Weighted routing -  lets you associate multiple resources with a single domain name
@@ -685,7 +786,7 @@ export default function Page() {
               Amazon S3 One Zone-Infrequent Access (S3 One Zone-IA) is for data that is accessed less frequently but requires rapid access when needed.
               <br />
               S3 buckets have encryption configured by default
-              <br/>
+              <br />
             </div>
             <div>
               AWS EBS - Elastic Block Store - high performance block storage
@@ -750,7 +851,12 @@ export default function Page() {
             </div>
             <div>
               Elastic Load Balancing ELB - Distribute network traffic to improve application scalability
-              https://aws.amazon.com/elasticloadbalancing/
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/elasticloadbalancing/"
+                target="_blank">
+                Elastic Load Balancing ELB
+              </Link>
               <br />
               automatically distributes incoming app
               traffic across multiple targets such as EC2 instances;
@@ -812,13 +918,23 @@ export default function Page() {
             </div>
             <div>
               AWS Storage Gateway - service provides a hybrid storage service that enables on-premises app to seamlessly use cloud storage;
-              https://aws.amazon.com/storagegateway/
-              <br/>
-              Encrypted by default - ge. All data transferred between the gateway and AWS storage is encrypted using SSL 
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/storagegateway/"
+                target="_blank">
+                AWS Storage Gateway
+              </Link>
+              <br />
+              Encrypted by default - ge. All data transferred between the gateway and AWS storage is encrypted using SSL
             </div>
             <div>
               Amazon ElastiCache
-              https://aws.amazon.com/pm/elasticache
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/pm/elasticache"
+                target="_blank">
+                Amazon ElastiCache
+              </Link>
               Storing common database query results which helps alleviate db access load.
               <br />
               decreases latency & increase perf;
@@ -838,7 +954,12 @@ export default function Page() {
             </div>
             <div>
               AWS Glue is an ETL service to make it easy to prepare data for analytics
-              https://aws.amazon.com/glue/
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/glue/"
+                target="_blank">
+                AWS Glue
+              </Link>
             </div>
             <div>
               Amazon GuardDuty is a threat detection service.
@@ -856,19 +977,39 @@ export default function Page() {
             </div>
             <div>
               AWS QuickSight is a BI dashboard service;
-              https://docs.aws.amazon.com/quicksight/latest/user/welcome.html
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://docs.aws.amazon.com/quicksight/latest/user/welcome.html"
+                target="_blank">
+                AWS QuickSight
+              </Link>
             </div>
             <div>
               AWS Snowball is a service that will allow transfer of large data from on-prem to cloud;
-              https://aws.amazon.com/snowball/
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/snowball/"
+                target="_blank">
+                AWS Snowball
+              </Link>
             </div>
             <div>
               AWS Outposts is a service that offers same AWS service; infrastructure APIS to on-prem hybrid
-              https://aws.amazon.com/outposts/
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/outposts/"
+                target="_blank">
+                AWS Outposts
+              </Link>
             </div>
             <div>
               Amazon Inspector - Automated & continual vulnerability management at scale
-              https://aws.amazon.com/inspector
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/inspector"
+                target="_blank">
+                Amazon Inspector
+              </Link>
               Inspector does:
               <ul>
                 <li>
@@ -886,30 +1027,60 @@ export default function Page() {
             <div>
               AWS Elastic Beanstalk -
               PaaS (Platform as a Service) Deploy and scale web applications
-              https://aws.amazon.com/elasticbeanstalk
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/elasticbeanstalk"
+                target="_blank">
+                AWS Elastic Beanstalk
+              </Link>
             </div>
             <div>
               AWS KMS - Key Management Service
               Create and control keys used to encrypt or digitally sign your data
-              https://aws.amazon.com/kms/
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/kms/"
+                target="_blank">
+                AWS KMS - Key Management Service
+              </Link>
             </div>
             <div>
-              https://aws.amazon.com/pm/eventbridge
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/pm/eventbridge"
+                target="_blank">
+                Event Bridge
+              </Link>
               Amazon EventBridge - Serverless - Build event-driven applications at scale across AWS, existing systems, or SaaS applications
             </div>
             <div>
               AWS Fargate - Serverless compute for CONTAINERS
-              https://aws.amazon.com/fargate/
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/fargate/"
+                target="_blank">
+                AWS Fargate
+              </Link>
               <br />
               AWS Fargate - serverless compute engine for containers that works with both Amazon Elastic Container Service (ECS) and Amazon Elastic Kubernetes Service (EKS).
             </div>
             <div>
               AWS ECS - Elastic Container Service - docker containers
-              https://docs.aws.amazon.com/ecs/
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://docs.aws.amazon.com/ecs/"
+                target="_blank">
+                AWS ECS - Elastic Container Service
+              </Link>
             </div>
             <div>
               AWS OpsWorks
-              https://aws.amazon.com/documentation-overview/opsworks/
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/documentation-overview/opsworks/"
+                target="_blank">
+                AWS OpsWorks
+              </Link>
               Chef & Puppet
               <br />
               AWS OpsWorks automate how servers are configured; deployed; &
@@ -917,30 +1088,55 @@ export default function Page() {
             </div>
             <div>
               Amazon EBS - Elastic Block Store
-              https://aws.amazon.com/ebs/
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/ebs/"
+                target="_blank">
+                Amazon EBS - Elastic Block Store
+              </Link>
               Easy to use, high performance block storage at any scale
             </div>
             <div>
               Amazon Polly
-              https://aws.amazon.com/polly/
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/polly/"
+                target="_blank">
+                Amazon Polly
+              </Link>
               Deploy high-quality, natural-sounding human voices in dozens of languages
             </div>
             <div>
               Amazon Transcribe -
-              https://aws.amazon.com/pm/transcribe
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/pm/transcribe"
+                target="_blank">
+                Amazon Transcribe
+              </Link>
               Automatically convert speech to text
             </div>
             <div>
               VPC Endpoints
-              https://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/what-are-vpc-endpoints.html
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/what-are-vpc-endpoints.html"
+                target="_blank">
+                VPC Endpoints
+              </Link>
             </div>
             <div>
               Amazon Macie
               Discover and protect your sensitive data at scale
-              https://aws.amazon.com/macie/
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/macie/"
+                target="_blank">
+                Amazon Macie
+              </Link>
             </div>
             <div>
-              AWS Compute Optimizer - Get recommendations to optimize your use of AWS resources for such as: 
+              AWS Compute Optimizer - Get recommendations to optimize your use of AWS resources for such as:
               <ul>
                 <li>
                   EC2
@@ -957,23 +1153,43 @@ export default function Page() {
               </ul>
               AWS Compute Optimizer does NOT provide optimization for S3 || EFS
               https://aws.amazon.com/compute-optimizer/
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href=""
+                target="_blank">
 
+              </Link>
             </div>
             <div>
               AWS X-Ray - Analyze and debug production and distributed applications
               <br />
               XRay is good to debug performance issues for its serverless application built using a microservices architecture
-              https://aws.amazon.com/xray/
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/xray/"
+                target="_blank">
+                AWS X-Ray
+              </Link>
             </div>
             <div>
               AWS Systems Manager Session Manager - best way to provide secure shell access to EC2 without opening new ports or public IP.
-              https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html"
+                target="_blank">
+                AWS Systems Manager Session Manager
+              </Link>
               <br />
               AWS Systems Manager get operational insights of its resources to quickly identify any issues that might impact applications using those resources
             </div>
             <div>
               AWS Auto Scaling - free to use - Application scaling to optimize performance and costs
-              https://aws.amazon.com/autoscaling/
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/autoscaling/"
+                target="_blank">
+                AWS Auto Scaling
+              </Link>
             </div>
             <div>
               Instance Store - provides temporary block-level storage for your EC2 instance.
@@ -1062,7 +1278,12 @@ export default function Page() {
               <br />
               There is a one-minute minimum charge for Linux based EC2 instances, so this is the correct option. Therefore is a user used 30 seconds we'll be charged for 60 seconds;
               <br />
-              https://aws.amazon.com/blogs/aws/new-per-second-billing-for-ec2-instances-and-ebs-volumes/
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/blogs/aws/new-per-second-billing-for-ec2-instances-and-ebs-volumes/"
+                target="_blank">
+                  EC2 Billing
+              </Link>
               <br />
               Optimize EC2 costs:
               <ul>
@@ -1174,7 +1395,12 @@ export default function Page() {
               AWS simple Monthly Calculator - can be used to forecast the future costs of running a new web app. It's a new app so the cost explorer is used to predict cost.
               <br />
               AWS Cost Explorer - used to forecast your AWS account usage and costs
-              https://aws.amazon.com/aws-cost-management/aws-cost-explorer/
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                href="https://aws.amazon.com/aws-cost-management/aws-cost-explorer/"
+                target="_blank">
+                  AWS Cost Explorer
+              </Link>
               <br />
               * Visualize, understand, and manage your AWS costs and usage over time
             </div>
@@ -1213,9 +1439,9 @@ export default function Page() {
   );
 }
 
-<Link
+{/* <Link
   className="font-medium text-blue-600 hover:underline dark:text-blue-500"
   href=""
   target="_blank">
 
-</Link>
+</Link> */}
