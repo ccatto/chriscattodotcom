@@ -28,14 +28,17 @@ export default function Page() {
             <div>
               <ul className="text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li className="m-5">
-                  Amazon Web Services Cloud Practitioner is an AWS certification which focuses on fundamentals and high-level understand of AWS cloud services & technology.
+                  Amazon Web Services Cloud Practitioner is an AWS certification
+                  which focuses on fundamentals and high-level understand of AWS
+                  cloud services & technology.
                 </li>
               </ul>
             </div>
             <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
             <div>
               <p className="flex justify-center text-2xl">
-                <span className="pr-2 font-bold">Summary</span>of AWS Cloud Practitioner Key Concepts:
+                <span className="pr-2 font-bold">Summary</span>of AWS Cloud
+                Practitioner Key Concepts:
               </p>
               <div className="mt-4 flex justify-center">
                 <ol className="w-full space-y-4">
@@ -119,31 +122,22 @@ export default function Page() {
               AWS Features & Benefits:
               <ul className='className="max-w-md list-inside list-disc space-y-1'>
                 <li>
-                  Global availability is a feature of AWS which will
-                  support an international company to provide low latency to
-                  customers
+                  Global availability is a feature of AWS which will support an
+                  international company to provide low latency to customers
                 </li>
-                <li>
-                  AWS feature reducing the TCO (total cost of ownership)
-                </li>
+                <li>AWS feature reducing the TCO (total cost of ownership)</li>
 
                 <li>
                   Reduce TCO total code of ownership & OPEX operational
                   expenditure
                 </li>
+                <li>Ability to focus on revenue-generating activities;</li>
                 <li>
-                  Ability to focus on revenue-generating activities;
+                  Elasticity & Agility; the most celebrated benefit is
+                  Elasticity since we can expand services as traffic grows;
                 </li>
-                <li>
-                  Elasticity & Agility; the most celebrated benefit
-                  is Elasticity since we can expand services as traffic grows;
-                </li>
-                <li>
-                  Increase speed and agility
-                </li>
-                <li>
-                  Stop guessing about capacity
-                </li>
+                <li>Increase speed and agility</li>
+                <li>Stop guessing about capacity</li>
                 <li>
                   AWS performs infrastructure discovery scans on the customer's
                   behalf.
