@@ -616,6 +616,33 @@ const FooterLinksTopCatto = () => {
               </Link>
             </h2>
           </ul>
+          <div className="mt-0">
+            <Accordion type="single" collapsible defaultValue="item-1">
+              <AccordionItem value="item-1">
+                <AccordionTrigger>AWS</AccordionTrigger>
+                <AccordionContent>
+                  <ul id="dropdown-example" className="space-y-2 py-2">
+                    <li>
+                      <Link
+                        href="/code/aws/cloud-practitioner"
+                        className="group flex w-full items-center rounded-lg p-2 pl-11 text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                      >
+                        Cloud Practitioner Summary
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/code/aws/cloud-practitioner/key-concepts"
+                        className="group flex w-full items-center rounded-lg p-2 pl-11 text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                      >
+                        Cloud Practitioner Details
+                      </Link>
+                    </li>
+                  </ul>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </div>
         </div>
       </div>
     </div>

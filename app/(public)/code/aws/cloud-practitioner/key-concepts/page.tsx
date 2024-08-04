@@ -19,6 +19,79 @@ export default function Page() {
             description="Amazon Web Services Cloud Practitioner is an AWS certification which focuses on fundamentals and high-level understand of AWS cloud services & technology."
           />
         </div>
+
+        <div className="m-4 flex-[80] rounded-2xl p-4 text-[#FAFAFA] ring-2 ring-gray-300 dark:bg-[#232f3e] dark:ring-gray-500">
+          <h2 className="mb-4 inline-block text-3xl font-extrabold tracking-tight">
+            AWS Cloud Practitioner - Key Concepts
+          </h2>
+          <div>
+            <div>
+              <ul className="text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li className="m-5">
+                  Amazon Web Services Cloud Practitioner is an AWS certification which focuses on fundamentals and high-level understand of AWS cloud services & technology.
+                </li>
+              </ul>
+            </div>
+            <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
+            <div>
+              <p className="flex justify-center text-2xl">
+                <span className="pr-2 font-bold">Summary</span>of AWS Cloud Practitioner Key Concepts:
+              </p>
+              <div className="mt-4 flex justify-center">
+                <ol className="w-full space-y-4">
+                  <li>
+                    <div
+                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-900 dark:text-slate-200"
+                      role="alert"
+                    >
+                      <div className="flex items-center justify-between">
+                        <h3 className="font-medium">
+                          1. AWS General - Cloud Concepts
+                        </h3>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-900 dark:text-slate-200"
+                      role="alert"
+                    >
+                      <div className="flex items-center justify-between">
+                        <h3 className="font-medium">
+                          2. Security & Compliance
+                        </h3>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-900 dark:text-slate-200"
+                      role="alert"
+                    >
+                      <div className="flex items-center justify-between">
+                        <h3 className="font-medium">
+                          3. Services & Cloud technology
+                        </h3>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-900 dark:text-slate-200"
+                      role="alert"
+                    >
+                      <div className="flex items-center justify-between">
+                        <h3 className="font-medium">
+                          4. Billing; Pricing & Services
+                        </h3>
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="m-4 flex-[80] rounded-2xl p-4 text-white ring-2 ring-gray-300 dark:bg-[#232f3e] dark:ring-gray-500">
           <h1>AWS Cloud Practitioner Exam</h1>
           <h3>
@@ -43,31 +116,44 @@ export default function Page() {
           <br />
           <div>
             <div>
-              AWS Features: Global availability is a feature of AWS which will
-              support an international company to provide low latency to
-              customers
-            </div>
-            <div>
-              AWS feature reducing the TCO (total cost of ownership)
-              <br />
-              AWS Cloud benefit:
-              <br /> ability to focus on revenue-generating activities;
-              <br /> Reduce TCO total code of ownership & OPEX operational
-              expenditure
-              <br /> benefits: Elasticity & Agility; the most celebrated benefit
-              is Elasticity since we can expand services as traffic grows;
-              <br />
-              Elastic computing =&gt; capacity to increase & decreasing capacity
-              with investment = 0; therefore this is related to cost.
-              <br />
-              AWS performs infrastructure discovery scans on the customer's
-              behalf.
-              <br />
-              Advantages of AWS Cloud:
-              <ul>
-                <li>Increase speed and agility</li>
-                <li>Stop guessing about capacity</li>
+              AWS Features & Benefits:
+              <ul className='className="max-w-md list-inside list-disc space-y-1'>
+                <li>
+                  Global availability is a feature of AWS which will
+                  support an international company to provide low latency to
+                  customers
+                </li>
+                <li>
+                  AWS feature reducing the TCO (total cost of ownership)
+                </li>
+
+                <li>
+                  Reduce TCO total code of ownership & OPEX operational
+                  expenditure
+                </li>
+                <li>
+                  Ability to focus on revenue-generating activities;
+                </li>
+                <li>
+                  Elasticity & Agility; the most celebrated benefit
+                  is Elasticity since we can expand services as traffic grows;
+                </li>
+                <li>
+                  Increase speed and agility
+                </li>
+                <li>
+                  Stop guessing about capacity
+                </li>
+                <li>
+                  AWS performs infrastructure discovery scans on the customer's
+                  behalf.
+                </li>
               </ul>
+            </div>
+            <br />
+            <div>
+              Elastic computing =&gt; capacity to increase & decreasing capacity
+              with investment = 0; therefore this is related to cost;
             </div>
             <div>
               AWS characteristics making AWS cost effective for workload with
