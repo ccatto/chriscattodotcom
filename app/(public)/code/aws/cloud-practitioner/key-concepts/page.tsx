@@ -643,95 +643,137 @@ export default function Page() {
           <br />
           ---------------- ----------------
           <div>
-            <div
-              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
-              role="alert"
-            >
-              {/* <div className="flex flex-wrap items-center lg:flex-nowrap"> */}
-              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                AWS Shared Responsibility model
-              </h3>
-              <ul className="text-xl font-normal text-gray-700 dark:text-gray-400">
-                <li className="m-5"></li>
-              </ul>
-            </div>
-
-            <div
-              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
-              role="alert"
-            >
-              {/* <div className="flex flex-wrap items-center lg:flex-nowrap"> */}
-              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                Security - Security-related services AWS offers: MFA physical
-                tokens; Data Encryption is often done with help of KMS
-              </h3>
-            </div>
-
             <div>
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://docs.aws.amazon.com/whitepapers/latest/aws-risk-and-compliance/shared-responsibility-model.html"
-                target="_blank"
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
               >
-                Shared responsibility model
-              </Link>
-              Customers responsible for security "IN" the cloud:
-              <br />
-              * patching EC2 instances;
-              <br />
-              * data encryption - ensure that app data is encrypted at rest &&
-              Encrypting data in transit & at rest
-              <br />
-              * ensure users have security training
-              <br />
-              * penetration tests
-              <br />
-              Managing VPC network access control lists to secure apps
-              <br />
-              Maintaining server-side Encryption
-              <br />
-              Using RDS customer is responsible for controlling network access
-              through security groups;
-              <br />
-              ------------------------------
-              <br />
-              AWS responsible for security "OF" the cloud:
-              <ul>
-                <li>
-                  * has sole responsibility for physical security; "Security of
-                  the Cloud"
-                </li>
-                <li>
-                  * AWS is responsible for protecting the infrastructure that
-                  runs all of the services offered in AWS Cloud; * updating
-                  firmware
-                </li>
-                <li>auditing physical data center assets</li>
-                <li>patching db software</li>
-                <li>backing up DBs</li>
-                <li>securing the EC2 Hypervisor & physical controls</li>
-                <li>edge location management</li>
-              </ul>
-              <br />
-              Shared responsibility-
-              <ul>
-                <li>Awareness & training</li>
-                <li>Configuration Management</li>
-              </ul>
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  AWS Shared Responsibility model
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    Customers responsibility:
+                  </li>
+                  <ul className="text-xl font-normal text-gray-700 dark:text-gray-400">
+                    <li>
+                      * data encryption - ensure that app data is encrypted at rest &&
+                      Encrypting data in transit & at rest
+                    </li>
+                    <li>
+                      * patching EC2 instances;
+                    </li>
+                    <li>
+                      * ensure users have security training
+                    </li>
+                    <li>
+                      * penetration tests
+                    </li>
+                    <li>
+                      Managing VPC network access control lists to secure apps
+                    </li>
+                    <li>
+                      Maintaining server-side Encryption
+                    </li>
+                    <li>
+                      Using RDS customer is responsible for controlling network access
+                      through security groups;
+                    </li>
+                  </ul>
+
+                  <li>
+                    AWS responsibility:
+                  </li>
+                  <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                    <li>
+                      AWS responsible for security "OF" the cloud:
+                    </li>
+                    <li>
+                      * has sole responsibility for physical security; "Security of
+                      the Cloud"
+                    </li>
+                    <li>
+                      * AWS is responsible for protecting the infrastructure that
+                      runs all of the services offered in AWS Cloud; * updating
+                      firmware
+                    </li>
+                    <li>Auditing physical data center assets</li>
+                    <li>Patching db software</li>
+                    <li>Backing up DBs</li>
+                    <li>Securing the EC2 Hypervisor & physical controls</li>
+                    <li>Edge location management</li>
+                    <li>For abstracted services like Amazon S3, AWS operates the
+                      infrastructure layer, the operating system, and platforms
+                    </li>
+                  </ul>
+                  <li>
+                    Shared responsibility-
+                    <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                      <li>Awareness & training</li>
+                      <li>Configuration Management</li>
+                      <li>
+                        Awareness & training is a shared control between customer & AWS
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="m-5">
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://docs.aws.amazon.com/whitepapers/latest/aws-risk-and-compliance/shared-responsibility-model.html"
+                      target="_blank"
+                    >
+                      Shared responsibility model
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
+              >
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  Security - Security-related services AWS offers: MFA physical
+                  tokens; Data Encryption is often done with help of KMS
+                </h3>
+              </div>
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
+              >
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  2 security measures to protect AWS accounts:
+                  <ul className="text-xl font-normal text-gray-700 dark:text-gray-400">
+                    <li>
+                      * grant least
+                    </li>
+                    <li>
+                      privilege access to IAM users; * Activate MFA
+                    </li>
+                  </ul>
+                </h3>
+              </div>
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
+              >
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+
+                  Security Groups act as a virtual firewall for the Amazon EC2
+                  instance;
+                </h3>
+              </div>
               <div>
-                For abstracted services like Amazon S3, AWS operates the
-                infrastructure layer, the operating system, and platforms
               </div>
             </div>
-            <div>
-              2 security measures to protect AWS accounts: * grant least
-              privilege access to IAM users; * Activate MFA
-            </div>
-            <div>
-              Awareness & training is a shared control between customer & AWS
-            </div>
-            <div>
-              SECURITY Steps taken when conducting penetration testing on AWS?
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+
+                SECURITY Steps taken when conducting penetration testing on AWS?
+              </h3>
               <Link
                 className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                 href="https://aws.amazon.com/security/penetration-testing/"
@@ -743,29 +785,44 @@ export default function Page() {
               <br />
               Penetration Tests || security assessments
             </div>
-            <div>
-              Security Groups act as a virtual firewall for the Amazon EC2
-              instance;
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+
+                U2F security key - hardware - Universal 2nd Factor (U2F) Security
+                Key is a device that you can plug into a USB port on your
+                computer.
+              </h3>
             </div>
-            <div>
-              U2F security key - hardware - Universal 2nd Factor (U2F) Security
-              Key is a device that you can plug into a USB port on your
-              computer.
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Virtual Multi-Factor Authentication (MFA) device - NOT a physical
+                device - generates a six-digit numeric code
+              </h3>
             </div>
-            <div>
-              Virtual Multi-Factor Authentication (MFA) device - NOT a physical
-              device - generates a six-digit numeric code
-            </div>
-            <div>
-              AWS CloudHSM - Hardware data encryption - Manage single-tenant
-              hardware security modules (HSMs) on AWS
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/cloudhsm/"
-                target="_blank"
-              >
-                AWS CloudHSM
-              </Link>
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS CloudHSM - Hardware data encryption - Manage single-tenant
+                hardware security modules (HSMs) on AWS
+                <Link
+                  className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                  href="https://aws.amazon.com/cloudhsm/"
+                  target="_blank"
+                >
+                  AWS CloudHSM
+                </Link>
+              </h3>
             </div>
           </div>
           ---------------- -----------------------
@@ -773,221 +830,462 @@ export default function Page() {
           -- 3. Services & Cloud technology <br />
           --- ---------------- -----------------------
           <div>
-            <div>
-              IAM - Identity & Access Management
-              <br />
-              adds security & identity * MFA & enforcing pw strength &
-              expiration IAM policies don't have access keys. The only way you
-              will ever get an Access key is to create them from an IAM user.
-              <br />
-              Apply an IAM policy to an IAM group - apply common access controls
-              to large set of use
-              <br />
-              * IAM groups able to administer multiple users
-              <br />
-              IAM policies can limit S3 access to specific users.
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                IAM - Identity & Access Management
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  adds security & identity * MFA & enforcing pw strength &
+                  expiration IAM policies don't have access keys. The only way you
+                  will ever get an Access key is to create them from an IAM user.
+                </li>
+                <li>
+                  Apply an IAM policy to an IAM group - apply common access controls
+                  to large set of use
+                </li>
+                <li>
+                  * IAM groups able to administer multiple users
+                </li>
+                <li>
+                  IAM policies can limit S3 access to specific users.
+                </li>
+                <li>
+                  AWS IAM Identity Center - SSO - access management to multiple AWS
+                  accounts as well as facilitate AWS Single Sign-On (AWS SSO) access
+                  to its AWS accounts
+                </li>
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/iam/identity-center/"
+                    target="_blank"
+                  >
+                    AWS IAM Identity Center - SSO
+                  </Link>
+                </li>
+                <li>
+                  Connect your existing workforce identity source and centrally
+                  manage access to AWS
+                </li>
+              </ul>
             </div>
-            <div>
-              AWS IAM Identity Center - SSO - access management to multiple AWS
-              accounts as well as facilitate AWS Single Sign-On (AWS SSO) access
-              to its AWS accounts
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/iam/identity-center/"
-                target="_blank"
-              >
-                AWS IAM Identity Center - SSO
-              </Link>
-              <br />
-              Connect your existing workforce identity source and centrally
-              manage access to AWS
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                EC2
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li> * can be used to manually launch "instances" bases on resource
+                  requirements
+                </li>
+                <li>
+                  can be used to host MS SQL Server
+                </li>
+              </ul>
             </div>
-            <div>
-              EC2 -
-              <br />
-              * can be used to manually launch "instances" bases on resource
-              requirements
-              <br />
-              can be used to host MS SQL Server
-              <br />
+
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS Cloud Tail
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li> <Link
+                  className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                  href="https://aws.amazon.com/cloudtrail/"
+                  target="_blank"
+                >
+                  AWS CloudTrail
+                </Link>
+                </li>
+                <li>
+                  Track user activity & API usage.
+                </li>
+                <li>
+                  a service to gather info about AWS account activity
+                </li>
+                <li>
+                  use CloudTrail to log, monitor and retain account activity related
+                  to actions across your AWS infrastructure
+                </li>
+                <li>
+                  ensure that its AWS account activity meets the governance,
+                  compliance and auditing norms
+                </li>
+
+              </ul>
             </div>
-            <div>
-              AWS Cloud Tail
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/cloudtrail/"
-                target="_blank"
-              >
-                AWS CloudTrail
-              </Link>
-              Track user activity & API usage.
-              <br />
-              a service to gather info about AWS account activity
-              <br />
-              use CloudTrail to log, monitor and retain account activity related
-              to actions across your AWS infrastructure
-              <br />
-              ensure that its AWS account activity meets the governance,
-              compliance and auditing norms
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Amazon GuardDuty Protect your AWS accounts, workloads, and data with intelligent threat detection
+
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  assists in threat protection
+                </li>
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/guardduty/"
+                    target="_blank"
+                  >
+                    AWS GuardDuty
+                  </Link>
+                </li>
+              </ul>
             </div>
-            <div>Amazon GuardDuty assists in threat protection</div>
-            <div>
-              Amazon RDS - relational Database Service advantage is it
-              <br />
-              simplifies administration tasks.
-              <br />
-              * used to host db's
-              <br />
-              AWS Manages the maintenance of the OS
-              <br />
-              MS SQL Server - RDS can be used to host
-              <br />
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/rds/features/read-replicas/"
-                target="_blank"
-              >
-                Read Replicas
-              </Link>
-              read replicas - Amazon RDS Read Replicas provide enhanced
-              performance and durability for Amazon RDS database (DB) instance
-              <br />
-              Read Replica improves database scalability & performance; - scale
-              out globally
-              <br />
-              RDS Multi-AZ enhances database availability - benefit of deploying
-              an Amazon RDS Multi-AZ database with one standby
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Amazon RDS - relational Database Service advantage is it
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  simplifies administration tasks.
+                </li>
+                <li>
+                  * used to host db's
+                </li>
+                <li>
+                  AWS Manages the maintenance of the OS
+                </li>
+                <li>
+                  MS SQL Server - RDS can be used to host
+                </li>
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/rds/"
+                    target="_blank"
+                  >
+                    AWS RDB
+                  </Link>
+                </li>
+              </ul>
             </div>
-            <div>
-              AWS CloudFormation - speed up cloud provisioning with
-              infrastructure as code;
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/cloudformation/"
-                target="_blank"
-              >
-                AWS CloudFormation
-              </Link>
-              CloudFormation good for deploying identical resources across all
-              AWS regions and accounts using templates while estimating costs
-              <br />
-              CloudFormation can provision the same AWS infrastructure across
-              multiple regions.
+
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Read Replicas provide enhanced
+                performance and durability for Amazon RDS database (DB) instance
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/rds/features/read-replicas/"
+                    target="_blank"
+                  >
+                    Read Replicas
+                  </Link>
+                </li>
+                <li>
+                  Read Replica improves database scalability & performance; - scale
+                  out globally
+                </li>
+                <li>
+                  RDS Multi-AZ enhances database availability - benefit of deploying
+                  an Amazon RDS Multi-AZ database with one standby
+                </li>
+              </ul>
             </div>
-            <div>
-              AWS CodeDeploy - automates software deployments
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/codedeploy/"
-                target="_blank"
-              >
-                AWS CodeDeploy
-              </Link>
-              Automate code deployment to maintain application uptime
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS CloudFormation - speed up cloud provisioning with
+                infrastructure as code;
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/cloudformation/"
+                    target="_blank"
+                  >
+                    AWS CloudFormation
+                  </Link>
+                </li>
+                <li>
+                  CloudFormation good for deploying identical resources across all
+                  AWS regions and accounts using templates while estimating costs
+                </li>
+                <li>
+                  CloudFormation can provision the same AWS infrastructure across
+                  multiple regions.
+                </li>
+              </ul>
             </div>
-            <div>
-              Aurora - scale MySQL & PostgreSQL
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/rds/aurora/"
-                target="_blank"
-              >
-                AWS Aurora
-              </Link>
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS CodeDeploy - automates software deployments
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/codedeploy/"
+                    target="_blank"
+                  >
+                    AWS CodeDeploy
+                  </Link>
+                </li>
+                <li>
+                  Automate code deployment to maintain application uptime
+                </li>
+              </ul>
             </div>
-            <div>
-              DynamoDB - NoSQL db's / schemaless database
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/pm/dynamodb"
-                target="_blank"
-              >
-                DynamoDB - NoSQL
-              </Link>
-              Serverless, NoSQL, fully managed database with single-digit
-              millisecond performance at any scale
-              <br />
-              Global tables - NoSQL supports active-active configuration in both
-              the East and West US AWS regions
-              <br />
-              DynamoDB - good for store data from a recommendation engine in a
-              database with Least operational overhead for any scale;
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Aurora - scale MySQL & PostgreSQL
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/rds/aurora/"
+                    target="_blank"
+                  >
+                    AWS Aurora
+                  </Link>
+                </li>
+              </ul>
             </div>
-            <div>
-              Redshift - big data as service / cloud data warehouse
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/pm/redshift/"
-                target="_blank"
-              >
-                AWS Redshift
-              </Link>
+
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                DynamoDB - NoSQL db's / schemaless database
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/pm/dynamodb"
+                    target="_blank"
+                  >
+                    DynamoDB - NoSQL
+                  </Link>
+                </li>
+                <li>
+                  Serverless, NoSQL, fully managed database with single-digit
+                  millisecond performance at any scale
+                </li>
+                <li>
+                  Global tables - NoSQL supports active-active configuration in both
+                  the East and West US AWS regions
+                </li>
+                <li>
+                  DynamoDB - good for store data from a recommendation engine in a
+                  database with Least operational overhead for any scale;
+                </li>
+              </ul>
             </div>
-            <div>
-              AWS KMS - Key Management Service
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/kms/"
-                target="_blank"
-              >
-                AWS KMS
-              </Link>
-              create & control keys used to encrypt or digitally sign data;
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Redshift - big data as service / cloud data warehouse
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/pm/redshift/"
+                    target="_blank"
+                  >
+                    AWS Redshift
+                  </Link>
+                </li>
+              </ul>
             </div>
-            <div>
-              AWS Direct Connect - enables us to connect securely AWS to on-prem
-              data center. ex. Direct connect can connect Amazon VPC to
-              on-premises data center.
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/directconnect/"
-                target="_blank"
-              >
-                AWS Direct Connect
-              </Link>
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS KMS - Key Management Service
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/kms/"
+                    target="_blank"
+                  >
+                    AWS KMS
+                  </Link>
+                </li>
+                <li>
+                  create & control keys used to encrypt or digitally sign data;
+                </li>
+              </ul>
             </div>
-            <div>
-              AWS VPC
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/vpc/"
-                target="_blank"
-              >
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS Direct Connect - enables us to connect securely AWS to on-prem
+                data center. ex. Direct connect can connect Amazon VPC to
+                on-premises data center.
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  On-Prem connections
+                </li>
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/directconnect/"
+                    target="_blank"
+                  >
+                    AWS Direct Connect
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 AWS VPC
-              </Link>
-              2 features that can be configured with VPC are:
-              <br />
-              * Security Groups
-              <br />* subnets
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/vpc/"
+                    target="_blank"
+                  >
+                    AWS VPC
+                  </Link>
+                </li>
+                <li>
+                  2 features that can be configured with VPC are:
+                </li>
+                <li>
+                  * Security Groups
+                </li>
+                <li>* subnets
+                </li>
+              </ul>
             </div>
-            <div>
-              AWS Lambda - runs code serverless without thinking of servers or
-              clusters;
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/lambda/"
-                target="_blank"
-              >
-                AWS Lambda
-              </Link>
-              <br />
-              charged by - users pay based on the number of requests & consumed
-              compute resources.
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS Lambda - runs code serverless without thinking of servers or
+                clusters;
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/lambda/"
+                    target="_blank"
+                  >
+                    AWS Lambda
+                  </Link>
+                </li>
+                <li>
+                  charged by - users pay based on the number of requests & consumed
+                  compute resources.
+                </li>
+              </ul>
             </div>
-            <div>
-              Amazon Step Functions; Amazon DynamoDB & Amazon SNS - serverless
-              platform;
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Amazon Step Functions; Amazon DynamoDB & Amazon SNS - serverless
+                platform;
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  Amazon DynamoDB
+                </li>
+                <li>
+                  Amazon SNS
+                </li>
+              </ul>
             </div>
-            <div>
-              AWS Personal Health Dashboard - Provides alerts when an AWS event
-              may impact a company's AWS resources. Provides alerts &
-              remediation guidance when AWS is experiencing events.
-              <br />
-              * ex. provides a customized view of the health of specific AWS
-              services that power a customers workloads running on AWS.
-              <br />
-              AWS Health Dashboard - Service Health -
-              <ul>
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS Personal Health Dashboard
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  Provides alerts when an AWS event
+                  may impact a company's AWS resources. Provides alerts &
+                  remediation guidance when AWS is experiencing events.
+                </li>
+                <li>
+                  * ex. provides a customized view of the health of specific AWS
+                  services that power a customers workloads running on AWS.
+
+                </li>
+              </ul>
+            </div>
+
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS Health Dashboard - Service Health -
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>
                   used to subscribe to an RSS feed to be notified of the status
                   of all AWS service interruptions
@@ -996,35 +1294,63 @@ export default function Page() {
                   * Service health is the single place to learn about the
                   availability and operations of AWS services
                 </li>
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://docs.aws.amazon.com/health/latest/ug/aws-health-dashboard-status.html"
+                    target="_blank"
+                  >
+                    AWS Health Dashboard Status
+                  </Link>
+                </li>
+                <li>
+                  AWS Health - Your Account Health Dashboard - personalized view of
+                  the status of the AWS services that are part of your Cloud
+                  architecture so that you can quickly assess the impact on your
+                  business when AWS service(s) are experiencing issues
+                </li>
+                <li>
+                  AWS Health - Your Account Health Dashboard provides alerts and
+                  remediation guidance when AWS is experiencing events that may
+                  impact you.
+                </li>
               </ul>
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://docs.aws.amazon.com/health/latest/ug/aws-health-dashboard-status.html"
-                target="_blank"
-              >
-                AWS Health Dashboard Status
-              </Link>
-              <br />
-              AWS Health - Your Account Health Dashboard - personalized view of
-              the status of the AWS services that are part of your Cloud
-              architecture so that you can quickly assess the impact on your
-              business when AWS service(s) are experiencing issues
-              <br />
-              AWS Health - Your Account Health Dashboard provides alerts and
-              remediation guidance when AWS is experiencing events that may
-              impact you.
             </div>
-            <div>
-              AWS Marketplace - search for software listing that runs on AWS
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/marketplace"
-                target="_blank"
-              >
-                AWS Marketplace
-              </Link>
-              Facilitates use cases:
-              <ul>
+
+
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS Marketplace - search for software listing that runs on AWS
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/marketplace"
+                    target="_blank"
+                  >
+                    AWS Marketplace
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+
+
+
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Facilitates use cases:
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>
                   Sell Software as a Service (SaaS) solutions to AWS customers
                 </li>
@@ -1035,39 +1361,67 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <div>
-              AWS managed services such as ElastiCache & RDS benefits are: they
-              simplify patching & updating OS's.
-            </div>
-            <div>
-              RDS & EFS are services for read/write of constantly changing data
-              Amazon Elastic File System EFS
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/efs/"
-                target="_blank"
-              >
-                EFS - Amazon Elastic File System
-              </Link>
-              * EFS provides simple scalable elastic NFS file system & can be
-              used for on-premises including Linux Glacier is used for archiving
-              | long term low cost storage;
-              <br />
-              Amazon Elastic File System (Amazon EFS) - use a storage service
-              which would be accessed by hundreds of EC2 instances
-              simultaneously to append data to existing files
-            </div>
-            <Link
-              className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-              href="https://aws.amazon.com/s3/storage-classes/"
-              target="_blank"
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
             >
-              Storage Classes
-            </Link>
-            <div>
-              AWS Glacier - Long-term, secure, durable storage classes for data
-              archiving at the lowest cost and milliseconds access
-              <ul>
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS managed services such as ElastiCache & RDS benefits are: they
+                simplify patching & updating OS's.
+              </h3>
+
+            </div>
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                RDS & EFS are services for read/write of constantly changing data
+                Amazon Elastic File System EFS
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/efs/"
+                    target="_blank"
+                  >
+                    EFS - Amazon Elastic File System
+                  </Link>
+                </li>
+                <li>
+                  * EFS provides simple scalable elastic NFS file system & can be
+                  used for on-premises including Linux Glacier is used for archiving
+                  | long term low cost storage;
+                </li>
+                <li>
+                  Amazon Elastic File System (Amazon EFS) - use a storage service
+                  which would be accessed by hundreds of EC2 instances
+                  simultaneously to append data to existing files
+                </li>
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/s3/storage-classes/"
+                    target="_blank"
+                  >
+                    Storage Classes
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS Glacier - Long-term, secure, durable storage classes for data
+                archiving at the lowest cost and milliseconds access
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>
                   Deep Archive - lowest-cost storage class and supports
                   long-term retention and digital preservation for data that may
@@ -1079,46 +1433,92 @@ export default function Page() {
                   archive data that is accessed 1—2 times per year and is
                   retrieved asynchronously
                 </li>
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/pm/s3-glacier"
+                    target="_blank"
+                  >
+                    S3 Glacier
+                  </Link>
+                </li>
               </ul>
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/pm/s3-glacier"
-                target="_blank"
-              >
-                S3 Glacier
-              </Link>
             </div>
-            <div>
-              Amazon S3 - object storage build to retrieve any amount of data
-              from anywhere lowest cost durable storage option for retaining
-              database backups for immediate retrieval;
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/s3/"
-                target="_blank"
-              >
-                AWS S3
-              </Link>
-              * can be used for hosting static websites;
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html"
-                target="_blank"
-              >
-                Hosting a static website using Amazon S3
-              </Link>
-              * can be used for serving large amounts of online video content
-              with lowest possible latency
-              <br />
-              Routing types:
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html"
-                target="_blank"
-              >
-                Routing Policy
-              </Link>
-              <ul>
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Amazon S3 - object storage build to retrieve any amount of data
+                from anywhere lowest cost durable storage option for retaining
+                database backups for immediate retrieval;
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/s3/"
+                    target="_blank"
+                  >
+                    AWS S3
+                  </Link>
+                </li>
+                <li>
+                  * can be used for serving large amounts of online video content
+                  with lowest possible latency
+                </li>
+                <li>
+                  * can be used for hosting static websites;
+                </li>
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html"
+                    target="_blank"
+                  >
+                    Hosting a static website using Amazon S3
+                  </Link>
+                </li>
+                <li>
+                  S3 One Zone-IA used to store thumbnails images
+                </li>
+                <li>
+                  Amazon S3 One Zone-Infrequent Access (S3 One Zone-IA) is for data
+                  that is accessed less frequently but requires rapid access when
+                  needed.
+                </li>
+                <li>
+                  S3 buckets have encryption configured by default
+
+                </li>
+                <li>
+                  Route 53 - DNS reliable & cost effective way to route end users to
+                  apps; Route 53 is considered global not regional
+                </li>
+              </ul>
+            </div>
+
+
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Routing types:
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html"
+                    target="_blank"
+                  >
+                    Routing Policy
+                  </Link>
+                </li>
+
                 <li>
                   Weighted routing - lets you associate multiple resources with
                   a single domain name
@@ -1138,452 +1538,896 @@ export default function Page() {
                   traffic to the region that provides the best latency.
                 </li>
               </ul>
-              <br />
-              S3 One Zone-IA used to store thumbnails images
-              <br />
-              Amazon S3 One Zone-Infrequent Access (S3 One Zone-IA) is for data
-              that is accessed less frequently but requires rapid access when
-              needed.
-              <br />
-              S3 buckets have encryption configured by default
-              <br />
             </div>
-            <div>
-              AWS EBS - Elastic Block Store - high performance block storage
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/ebs/"
-                target="_blank"
-              >
-                EBS - Amazon Elastic Block Store
-              </Link>
-              is a device you can mount onto EC2 it is a block storage so you
-              format it; we are able to chose which type of file we want.
-            </div>
-            <div>
-              AWS CLI - to access with IAM we utilize access keys;
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://docs.aws.amazon.com/cli/v1/userguide/cli-authentication-user.html"
-                target="_blank"
-              >
-                Authenticate with IAM user credentials
-              </Link>
-            </div>
-            <div>
-              AWS CloudWatch - observe & monitor resources & apps ex. a metrics
-              repo with customizable notification thresholds & channels
-              CloudWatch logs: advantages are real-time monitoring & adjustable
-              retention
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/cloudwatch/"
-                target="_blank"
-              >
-                Amazon CloudWatch
-              </Link>
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html"
-                target="_blank"
-              >
-                Amazon CloudWatch Logs
-              </Link>
-              CloudWatch to gain system-wide visibility into resource
-              utilization; app perf & operational health
-              <br />
-              Amazon CloudWatch Logs to monitor, store, log files from EC2;
-              on-premises servers & many others;
-            </div>
-            <div>
-              Route 53 - DNS reliable & cost effective way to route end users to
-              apps; Route 53 is considered global not regional
-            </div>
-            <div>
-              AWS Redshift - scalable data warehouse solution | power data
-              driven decisions with the best price-performance cloud data
-              warehouse
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/redshift/"
-                target="_blank"
-              >
-                AWS Redshift
-              </Link>
-            </div>
-            <div>
-              Elastic Load Balancing ELB - Distribute network traffic to improve
-              application scalability
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/elasticloadbalancing/"
-                target="_blank"
-              >
-                Elastic Load Balancing ELB
-              </Link>
-              <br />
-              automatically distributes incoming app traffic across multiple
-              targets such as EC2 instances; containers; IPs || Lambda
-              functions.
-              <br />
-              Elastic Load Balancing (ELB) automatically distributes incoming
-              application traffic across multiple targets, such as Amazon EC2
-              instances, containers, and IP addresses
-              <br />
-              Benefits:
-              <ul>
-                <li>Fault tolerance</li>
-                <li>High Availability</li>
-              </ul>
-            </div>
-            <div>
-              AWS Services ways for customer to interact: * AWS Management
-              console - GUI * CLI control from command line * SDKs access via
-              many programming languages
-            </div>
-            <div>
-              AWS CloudFront - CDN service build for perf; security & developers
-              * can be used to serve large amounts of online video with lowest
-              possible latency
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/cloudfront/"
-                target="_blank"
-              >
-                AWS CloudFront
-              </Link>
-              <br />
-              CloudFront is global not regional.
-              <br />
-              CloudFront delivers content worldwide through data centers called
-              "Edge Locations"; AWS Edge location is a site that CloudFront uses
-              to cache copies of the content for faster delivery to users at any
-              location;
-              <br />
-              CloudFront decreases latency & increases perf
-            </div>
-            <div>
-              AWS Professional Services is an AWS team that can assist customers
-              with accelerating adoption through paid engagements. * provides
-              architect prototypes & solutions tailers to the customer.
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/professional-services/"
-                target="_blank"
-              >
-                AWS Professional Services
-              </Link>
-            </div>
-            <div>
-              AWS Partner Network Consulting Partners is an org that is focused
-              on assisting customers with advice; professional services when
-              moving to AWS. AWS Partner Network Technology Partners refers to a
-              company that is developing their own product/service.
-            </div>
-            <div>
-              AWS Storage Gateway - service provides a hybrid storage service
-              that enables on-premises app to seamlessly use cloud storage;
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/storagegateway/"
-                target="_blank"
-              >
-                AWS Storage Gateway
-              </Link>
-              <br />
-              Encrypted by default - ge. All data transferred between the
-              gateway and AWS storage is encrypted using SSL
-            </div>
-            <div>
-              Amazon ElastiCache
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/pm/elasticache"
-                target="_blank"
-              >
-                Amazon ElastiCache
-              </Link>
-              Storing common database query results which helps alleviate db
-              access load.
-              <br />
-              decreases latency & increase perf;
-            </div>
-            <div>
-              AWS Quick start reference deployments - help deploy popular IT
-              solution & start using it immediately
-            </div>
-            <div>
-              AWS Directory Service - SSO - AWS SSO is an service that lets you
-              access from MS AD;
-            </div>
-            <div>
-              AWS Compliance Program - * It assures customers that AWS is
-              maintaining physical security & data protection
-              <br />* it verifies that hosted workloads are automatically
-              compliant with the controls of supported compliance frameworks;
-            </div>
-            <div>
-              AWS Glue is an ETL service to make it easy to prepare data for
-              analytics
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/glue/"
-                target="_blank"
-              >
-                AWS Glue
-              </Link>
-            </div>
-            <div>Amazon GuardDuty is a threat detection service.</div>
-            <div>
-              Help decrease network latency for a globally dispersed user base:
-              2 services || features:
-              <ul>
-                <li>AWS CloudFront</li>
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS EBS - Elastic Block Store - high performance block storage
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>
-                  AWS Global Accelerator - improves performance for a wide range
-                  of app
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/ebs/"
+                    target="_blank"
+                  >
+                    EBS - Amazon Elastic Block Store
+                  </Link>
+                </li>
+                <li>
+                  is a device you can mount onto EC2 it is a block storage so you
+                  format it; we are able to chose which type of file we want.
                 </li>
               </ul>
             </div>
+
+            {/* Good below */}
             <div>
-              AWS QuickSight is a BI dashboard service;
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://docs.aws.amazon.com/quicksight/latest/user/welcome.html"
-                target="_blank"
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
               >
-                AWS QuickSight
-              </Link>
-            </div>
-            <div>
-              AWS Snowball is a service that will allow transfer of large data
-              from on-prem to cloud;
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/snowball/"
-                target="_blank"
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  AWS CLI - to access with IAM we utilize access keys;
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://docs.aws.amazon.com/cli/v1/userguide/cli-authentication-user.html"
+                      target="_blank"
+                    >
+                      Authenticate with IAM user credentials
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
               >
-                AWS Snowball
-              </Link>
-            </div>
-            <div>
-              AWS Outposts is a service that offers same AWS service;
-              infrastructure APIS to on-prem hybrid
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/outposts/"
-                target="_blank"
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  AWS CloudWatch - observe & monitor resources & apps ex. a metrics
+                  repo with customizable notification thresholds & channels
+                  CloudWatch logs: advantages are real-time monitoring & adjustable
+                  retention
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://aws.amazon.com/cloudwatch/"
+                      target="_blank"
+                    >
+                      Amazon CloudWatch
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html"
+                      target="_blank"
+                    >
+                      Amazon CloudWatch Logs
+                    </Link>
+                  </li>
+                  <li>
+                    CloudWatch to gain system-wide visibility into resource
+                    utilization; app perf & operational health
+                  </li>
+                  <li>
+                    Amazon CloudWatch Logs to monitor, store, log files from EC2;
+                    on-premises servers & many others;
+                  </li>
+                </ul>
+              </div>
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
               >
-                AWS Outposts
-              </Link>
-            </div>
-            <div>
-              Amazon Inspector - Automated & continual vulnerability management
-              at scale
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/inspector"
-                target="_blank"
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  AWS Redshift - scalable data warehouse solution | power data
+                  driven decisions with the best price-performance cloud data
+                  warehouse
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://aws.amazon.com/redshift/"
+                      target="_blank"
+                    >
+                      AWS Redshift
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
               >
-                Amazon Inspector
-              </Link>
-              Inspector does:
-              <ul>
-                <li>* inspect OS against vulnerabilities</li>
-                <li>* Analyze against unintended network accessibility</li>
-                <li>* Automate security assessments</li>
-              </ul>
-              Inspector does not -Track configuration changes
-            </div>
-            <div>
-              AWS Elastic Beanstalk - PaaS (Platform as a Service) Deploy and
-              scale web applications
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/elasticbeanstalk"
-                target="_blank"
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  Elastic Load Balancing ELB - Distribute network traffic to improve
+                  application scalability
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    automatically distributes incoming app traffic across multiple
+                    targets such as EC2 instances; containers; IPs || Lambda
+                    functions.
+                  </li>
+                  <li>
+                    Elastic Load Balancing (ELB) automatically distributes incoming
+                    application traffic across multiple targets, such as Amazon EC2
+                    instances, containers, and IP addresses
+                  </li>
+                  <li>
+                    Benefits:
+                    <ul className='ml-5'>
+                      <li>Fault tolerance</li>
+                      <li>High Availability</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
               >
-                AWS Elastic Beanstalk
-              </Link>
-            </div>
-            <div>
-              AWS KMS - Key Management Service Create and control keys used to
-              encrypt or digitally sign your data
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/kms/"
-                target="_blank"
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  AWS Services ways for customer to interact: * AWS Management
+                  console - GUI * CLI control from command line * SDKs access via
+                  many programming languages
+                </h3>
+
+              </div>
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
               >
-                AWS KMS - Key Management Service
-              </Link>
-            </div>
-            <div>
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/pm/eventbridge"
-                target="_blank"
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  AWS CloudFront - CDN service build for perf; security & developers
+                  * can be used to serve large amounts of online video with lowest
+                  possible latency
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://aws.amazon.com/cloudfront/"
+                      target="_blank"
+                    >
+                      AWS CloudFront
+                    </Link>
+                  </li>
+                  <li>
+                    CloudFront is global not regional.
+                  </li>
+                  <li>
+                    CloudFront decreases latency & increases perf
+                  </li>
+                  <li>
+                    CloudFront delivers content worldwide through data centers called
+                    "Edge Locations"; AWS Edge location is a site that CloudFront uses
+                    to cache copies of the content for faster delivery to users at any
+                    location;
+                  </li>
+                </ul>
+              </div>
+
+
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
               >
-                Event Bridge
-              </Link>
-              Amazon EventBridge - Serverless - Build event-driven applications
-              at scale across AWS, existing systems, or SaaS applications
-            </div>
-            <div>
-              AWS Fargate - Serverless compute for CONTAINERS
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/fargate/"
-                target="_blank"
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  AWS Professional Services is an AWS team that can assist customers
+                  with accelerating adoption through paid engagements. * provides
+                  architect prototypes & solutions tailers to the customer.
+
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://aws.amazon.com/professional-services/"
+                      target="_blank"
+                    >
+                      AWS Professional Services
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
               >
-                AWS Fargate
-              </Link>
-              <br />
-              AWS Fargate - serverless compute engine for containers that works
-              with both Amazon Elastic Container Service (ECS) and Amazon
-              Elastic Kubernetes Service (EKS).
-            </div>
-            <div>
-              AWS ECS - Elastic Container Service - docker containers
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://docs.aws.amazon.com/ecs/"
-                target="_blank"
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  AWS Partner Network Consulting Partners is an org that is focused
+                  on assisting customers with advice; professional services when
+                  moving to AWS. AWS Partner Network Technology Partners refers to a
+                  company that is developing their own product/service.
+
+                </h3>
+
+              </div>
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
               >
-                AWS ECS - Elastic Container Service
-              </Link>
-            </div>
-            <div>
-              AWS OpsWorks
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/documentation-overview/opsworks/"
-                target="_blank"
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  AWS Storage Gateway - service provides a hybrid storage service
+                  that enables on-premises app to seamlessly use cloud storage;
+
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://aws.amazon.com/storagegateway/"
+                      target="_blank"
+                    >
+                      AWS Storage Gateway
+                    </Link>
+                  </li>
+                  <li>
+                    Encrypted by default - ge. All data transferred between the
+                    gateway and AWS storage is encrypted using SSL
+                  </li>
+                </ul>
+              </div>
+
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
               >
-                AWS OpsWorks
-              </Link>
-              Chef & Puppet
-              <br />
-              AWS OpsWorks automate how servers are configured; deployed; &
-              managed.
-            </div>
-            <div>
-              Amazon EBS - Elastic Block Store
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/ebs/"
-                target="_blank"
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  Amazon ElastiCache
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://aws.amazon.com/pm/elasticache"
+                      target="_blank"
+                    >
+                      Amazon ElastiCache
+                    </Link>
+                  </li>
+                  <li>
+                    Storing common database query results which helps alleviate db
+                    access load.
+                  </li>
+                  <li>
+                    decreases latency & increase perf;
+                  </li>
+                </ul>
+              </div>
+
+
+
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
               >
-                Amazon EBS - Elastic Block Store
-              </Link>
-              Easy to use, high performance block storage at any scale
-            </div>
-            <div>
-              Amazon Polly
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/polly/"
-                target="_blank"
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  AWS Quick start reference deployments - help deploy popular IT
+                  solution & start using it immediately
+                </h3>
+
+              </div>
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
               >
-                Amazon Polly
-              </Link>
-              Deploy high-quality, natural-sounding human voices in dozens of
-              languages
-            </div>
-            <div>
-              Amazon Transcribe -
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/pm/transcribe"
-                target="_blank"
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  AWS Directory Service - SSO - AWS SSO is an service that lets you
+                  access from MS AD;
+                </h3>
+
+              </div>
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
               >
-                Amazon Transcribe
-              </Link>
-              Automatically convert speech to text
-            </div>
-            <div>
-              VPC Endpoints
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/what-are-vpc-endpoints.html"
-                target="_blank"
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  AWS Compliance Program - * It assures customers that AWS is
+                  maintaining physical security & data protection
+                  <br />
+
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    * it verifies that hosted workloads are automatically
+                    compliant with the controls of supported compliance frameworks;
+                  </li>
+                </ul>
+              </div>
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
               >
-                VPC Endpoints
-              </Link>
-            </div>
-            <div>
-              Amazon Macie Discover and protect your sensitive data at scale
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/macie/"
-                target="_blank"
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  AWS Glue is an ETL service to make it easy to prepare data for
+                  analytics
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://aws.amazon.com/glue/"
+                      target="_blank"
+                    >
+                      AWS Glue
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
               >
-                Amazon Macie
-              </Link>
-            </div>
-            <div>
-              AWS Compute Optimizer - Get recommendations to optimize your use
-              of AWS resources for such as:
-              <ul>
-                <li>EC2</li>
-                <li>EC2 Auto Scaling Groups</li>
-                <li>EBS - Amazon Elastic Block Store</li>
-                <li>Lambda functions</li>
-              </ul>
-              AWS Compute Optimizer does NOT provide optimization for S3 || EFS
-              https://aws.amazon.com/compute-optimizer/
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href=""
-                target="_blank"
-              ></Link>
-            </div>
-            <div>
-              AWS X-Ray - Analyze and debug production and distributed
-              applications
-              <br />
-              XRay is good to debug performance issues for its serverless
-              application built using a microservices architecture
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/xray/"
-                target="_blank"
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  Amazon GuardDuty is a threat detection service.
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+
+                  </li>
+                </ul>
+              </div>
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
               >
-                AWS X-Ray
-              </Link>
-            </div>
-            <div>
-              AWS Systems Manager Session Manager - best way to provide secure
-              shell access to EC2 without opening new ports or public IP.
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html"
-                target="_blank"
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  Help decrease network latency for a globally dispersed user base:
+                  2 services || features:
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+
+                    <li>AWS CloudFront</li>
+                    <li>
+                      AWS Global Accelerator - improves performance for a wide range
+                      of app
+                    </li>
+
+                  </li>
+                </ul>
+              </div>
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
               >
-                AWS Systems Manager Session Manager
-              </Link>
-              <br />
-              AWS Systems Manager get operational insights of its resources to
-              quickly identify any issues that might impact applications using
-              those resources
-            </div>
-            <div>
-              AWS Auto Scaling - free to use - Application scaling to optimize
-              performance and costs
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/autoscaling/"
-                target="_blank"
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  AWS QuickSight is a BI dashboard service;
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://docs.aws.amazon.com/quicksight/latest/user/welcome.html"
+                      target="_blank"
+                    >
+                      AWS QuickSight
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
               >
-                AWS Auto Scaling
-              </Link>
-            </div>
-            <div>
-              Instance Store - provides temporary block-level storage for your
-              EC2 instance.
-            </div>
-            <div>
-              AWS Local Zones - deliver a consistent low-latency for end-users
-              in various locations
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  AWS Snowball is a service that will allow transfer of large data
+                  from on-prem to cloud;
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://aws.amazon.com/snowball/"
+                      target="_blank"
+                    >
+                      AWS Snowball
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
+              >
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  AWS Outposts is a service that offers same AWS service;
+                  infrastructure APIS to on-prem hybrid
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://aws.amazon.com/outposts/"
+                      target="_blank"
+                    >
+                      AWS Outposts
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
+              >
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  Amazon Inspector - Automated & continual vulnerability management
+                  at scale
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://aws.amazon.com/inspector"
+                      target="_blank"
+                    >
+                      Amazon Inspector
+                    </Link>
+                  </li>
+                  <li>
+                    Inspector does:
+                    <ul className='ml-5'>
+                      <li>* inspect OS against vulnerabilities</li>
+                      <li>* Analyze against unintended network accessibility</li>
+                      <li>* Automate security assessments</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Inspector does not -Track configuration changes
+                  </li>
+                </ul>
+              </div>
+
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
+              >
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  AWS Elastic Beanstalk - PaaS (Platform as a Service) Deploy and
+                  scale web applications
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://aws.amazon.com/elasticbeanstalk"
+                      target="_blank"
+                    >
+                      AWS Elastic Beanstalk
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
+              >
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  AWS KMS - Key Management Service Create and control keys used to
+                  encrypt or digitally sign your data
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://aws.amazon.com/kms/"
+                      target="_blank"
+                    >
+                      AWS KMS - Key Management Service
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
+              >
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  Amazon EventBridge - Serverless - Build event-driven applications
+                  at scale across AWS, existing systems, or SaaS applications
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://aws.amazon.com/pm/eventbridge"
+                      target="_blank"
+                    >
+                      Event Bridge
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
+              >
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  AWS Fargate - Serverless compute for CONTAINERS
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://aws.amazon.com/fargate/"
+                      target="_blank"
+                    >
+                      AWS Fargate
+                    </Link>
+                  </li>
+                  <li>
+                    AWS Fargate - serverless compute engine for containers that works
+                    with both Amazon Elastic Container Service (ECS) and Amazon
+                    Elastic Kubernetes Service (EKS).
+                  </li>
+                </ul>
+              </div>
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
+              >
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  AWS ECS - Elastic Container Service - docker containers
+
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://docs.aws.amazon.com/ecs/"
+                      target="_blank"
+                    >
+                      AWS ECS - Elastic Container Service
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
+              >
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  AWS OpsWorks
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://aws.amazon.com/documentation-overview/opsworks/"
+                      target="_blank"
+                    >
+                      AWS OpsWorks
+                    </Link>
+                  </li>
+                  <li>
+                    Chef & Puppet
+                  </li>
+                  <li>
+                    AWS OpsWorks automate how servers are configured; deployed; &
+                    managed.
+                  </li>
+                </ul>
+              </div>
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
+              >
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  Amazon EBS - Elastic Block Store
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://aws.amazon.com/ebs/"
+                      target="_blank"
+                    >
+                      Amazon EBS - Elastic Block Store
+                    </Link>
+                  </li>
+                  <li>
+                    Easy to use, high performance block storage at any scale
+                  </li>
+                </ul>
+              </div>
+
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
+              >
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  Amazon Polly
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://aws.amazon.com/polly/"
+                      target="_blank"
+                    >
+                      Amazon Polly
+                    </Link>
+                  </li>
+                  <li>
+                    Deploy high-quality, natural-sounding human voices in dozens of
+                    languages
+                  </li>
+                </ul>
+              </div>
+
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
+              >
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  Amazon Transcribe -
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://aws.amazon.com/pm/transcribe"
+                      target="_blank"
+                    >
+                      Amazon Transcribe
+                    </Link>
+                  </li>
+                  <li>
+                    Automatically convert speech to text
+                  </li>
+                </ul>
+              </div>
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
+              >
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  VPC Endpoints
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    A VPC endpoint enables customers to privately connect to supported AWS services and VPC endpoint services powered by AWS PrivateLink. Amazon VPC instances do not require public IP addresses to communicate with resources of the service. Traffic between an Amazon VPC and a service does not leave the Amazon network.
+                  </li>
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/what-are-vpc-endpoints.html"
+                      target="_blank"
+                    >
+                      VPC Endpoints
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
+              >
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  Amazon Macie Discover and protect your sensitive data at scale
+
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://aws.amazon.com/macie/"
+                      target="_blank"
+                    >
+                      Amazon Macie
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
+              >
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  AWS Compute Optimizer - Get recommendations to optimize your use
+                  of AWS resources for such as:
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://aws.amazon.com/compute-optimizer/"
+                      target="_blank"
+                    >AWS Compute Optimizer</Link>
+                  </li>
+                  <li>
+                    AWS Compute Optimizer does NOT provide optimization for S3 || EFS
+                  </li>
+                  <li>
+                    <ul className='ml-5'>
+                      <li>EC2</li>
+                      <li>EC2 Auto Scaling Groups</li>
+                      <li>EBS - Amazon Elastic Block Store</li>
+                      <li>Lambda functions</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
+              >
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  AWS X-Ray - Analyze and debug production and distributed
+                  applications
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    XRay is good to debug performance issues for its serverless
+                    application built using a microservices architecture
+                  </li>
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://aws.amazon.com/xray/"
+                      target="_blank"
+                    >
+                      AWS X-Ray
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
+              >
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  AWS Systems Manager Session Manager - best way to provide secure
+                  shell access to EC2 without opening new ports or public IP.
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html"
+                      target="_blank"
+                    >
+                      AWS Systems Manager Session Manager
+                    </Link>
+                  </li><li>
+                    AWS Systems Manager get operational insights of its resources to
+                    quickly identify any issues that might impact applications using
+                    those resources
+                  </li>
+                </ul>
+              </div>
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
+              >
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  AWS Auto Scaling - free to use - Application scaling to optimize
+                  performance and costs
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://aws.amazon.com/autoscaling/"
+                      target="_blank"
+                    >
+                      AWS Auto Scaling
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
+              >
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  Instance Store - provides temporary block-level storage for your
+                  EC2 instance.
+                </h3>
+
+              </div>
+
+
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
+              >
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  AWS Local Zones - deliver a consistent low-latency for end-users
+                  in various locations
+                </h3>
+
+              </div>
+
             </div>
           </div>
           ---------------- -----------------------
@@ -1835,9 +2679,9 @@ export default function Page() {
               of your use cases on AWS
             </div>
           </div>
-        </div>
-        {/* <hr className="m-3" /> */}
-      </div>
+        </div >
+
+      </div >
     </>
   );
 }
@@ -1847,6 +2691,6 @@ export default function Page() {
   className="font-medium text-blue-600 hover:underline dark:text-blue-500"
   href=""
   target="_blank">
-
+ 
 </Link> */
 }
