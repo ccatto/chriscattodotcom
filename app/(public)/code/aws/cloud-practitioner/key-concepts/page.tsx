@@ -150,27 +150,25 @@ export default function Page() {
                   behalf.
                 </li>
                 <li>
-                  Making AWS cost effective for workload with
-                  dynamic user demand
+                  Making AWS cost effective for workload with dynamic user
+                  demand
                 </li>
                 <li>
                   AWS shorten the time to provision IT resources by ??
                   programmatically provision existing resources.
                 </li>
-                <li>
-                  AWS Cloud feature - agility:
-                </li>
+                <li>AWS Cloud feature - agility:</li>
                 <li>
                   Agility - "Quickly" deliver new functionality in an iterative
-                  manner minimizing the time to market an example of AWS agility is
-                  decreased acquisition time for new compute resources;
+                  manner minimizing the time to market an example of AWS agility
+                  is decreased acquisition time for new compute resources;
                   <br />
                   ability to scale up & down during peek times;
                 </li>
                 <li>
                   <div>
-                    Massive economies of scale - pay-as-you-go prices is offered as a
-                    benefit of AWS Cloud
+                    Massive economies of scale - pay-as-you-go prices is offered
+                    as a benefit of AWS Cloud
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                       href="https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html"
@@ -191,8 +189,8 @@ export default function Page() {
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                   Elastic computing =&gt;
                 </h3>
-                Capacity to increase & decreasing capacity
-                with investment = 0; therefore this is related to cost;
+                Capacity to increase & decreasing capacity with investment = 0;
+                therefore this is related to cost;
                 <br />
                 makes feasible to add remove resources
               </div>
@@ -215,9 +213,8 @@ export default function Page() {
                 AWS Config
               </h3>
               <ul className='className="max-w-md list-inside list-disc space-y-1'>
+                <li>Assess; audit & evaluate configurations resources.</li>
                 <li>
-                  Assess; audit & evaluate configurations resources.
-                </li><li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                     href="https://aws.amazon.com/config/"
@@ -237,7 +234,8 @@ export default function Page() {
               role="alert"
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                Auto Scaling - enables compute capacity to adjust as loads change
+                Auto Scaling - enables compute capacity to adjust as loads
+                change
               </h3>
             </div>
             <div
@@ -264,11 +262,10 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 EC2 Auto Scaling
               </h3>
-              groups help achieve high availability for a web
-              app by automagically adding or replace instances across multiple
+              groups help achieve high availability for a web app by
+              automagically adding or replace instances across multiple
               Availability Zones. ASGs add & removed instances based on Demand.
               * can be used to run a "customer-managed relational database";
-
             </div>
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -278,17 +275,14 @@ export default function Page() {
                 Application Load Balancer
               </h3>
               <ul className='className="max-w-md list-inside list-disc space-y-1'>
-                <li>
-                  groups help achieve high availability for a web
-                </li>
+                <li>groups help achieve high availability for a web</li>
               </ul>
-
               app by automagically adding or replace instances across multiple
               Availability Zones. ASGs add & removed instances based on Demand.
-              * can be used to run a "customer-managed relational database";
-              - ensures that your app on EC2 always
-              has the right amount of capacity to handle the current traffic
-              demand<br />
+              * can be used to run a "customer-managed relational database"; -
+              ensures that your app on EC2 always has the right amount of
+              capacity to handle the current traffic demand
+              <br />
               <Link
                 className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                 href="https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html"
@@ -305,9 +299,7 @@ export default function Page() {
                 AMI - Amazon Machine Image
               </h3>
               <ul className='className="max-w-md list-inside list-disc space-y-1'>
-                <li>
-                  EC2 to launch a pre-configured EC2
-                </li>
+                <li>EC2 to launch a pre-configured EC2</li>
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -320,12 +312,9 @@ export default function Page() {
                 <li>
                   select a pre-configured templated AMI Amazon Machine Image
                 </li>
+                <li>We must use AMI from the same region as EC2;</li>
                 <li>
-                  We must use AMI from the same region as EC2;
-                </li>
-                <li>
-                  the region of AMI has
-                  no bearing on the performance of EC2;
+                  the region of AMI has no bearing on the performance of EC2;
                 </li>
               </ul>
             </div>
@@ -339,16 +328,10 @@ export default function Page() {
               <ul className='className="max-w-md list-inside list-disc space-y-1'>
                 <li>
                   AWS Trusted Advisor
-                  <ul className='ml-5 className="max-w-md list-inside list-disc space-y-1'>
-                    <li>
-                      optimizes costs
-                    </li>
-                    <li>
-                      improve performance
-                    </li>
-                    <li>
-                      address security gaps
-                    </li>
+                  <ul className='className="max-w-md ml-5 list-inside list-disc space-y-1'>
+                    <li>optimizes costs</li>
+                    <li>improve performance</li>
+                    <li>address security gaps</li>
                   </ul>
                 </li>
                 <li>
@@ -363,39 +346,35 @@ export default function Page() {
                 <li>
                   AWS Trusted Advisor monitors & provides advises on
                   <ul>
-                    <li>
-                      Compliance w/ security best practices
-                    </li>
-                    <li>
-                      Cost optimization
-                    </li>
+                    <li>Compliance w/ security best practices</li>
+                    <li>Cost optimization</li>
                   </ul>
                 </li>
                 <li>
-                  Trusted Advisor will identify if unrestricted access to a resource
-                  has been allowed by a "Security Group"
+                  Trusted Advisor will identify if unrestricted access to a
+                  resource has been allowed by a "Security Group"
                 </li>
                 <li>
                   AWS Trusted Advisor can be run & review the findings with will
-                  Determine if any security groups in AWS have been provisioned to
-                  allow unrestricted access for specific ports by Ex. 2 categories:
-                  Instance Usage & Performance
+                  Determine if any security groups in AWS have been provisioned
+                  to allow unrestricted access for specific ports by Ex. 2
+                  categories: Instance Usage & Performance
                 </li>
                 <li>
                   Use Trusted Advisor if a Security officer wants a list of any
                   potential vulnerabilities in EC2
                 </li>
                 <li>
-                  AWS Trusted Advisor is an online tool that provides you real-time
-                  guidance to help you provision your resources following AWS best
-                  practices on cost optimization, security, fault tolerance, service
-                  limits and performance improvement.
+                  AWS Trusted Advisor is an online tool that provides you
+                  real-time guidance to help you provision your resources
+                  following AWS best practices on cost optimization, security,
+                  fault tolerance, service limits and performance improvement.
                 </li>
                 <li>
-                  A highly available workload in AWS with a disaster recovery plan
-                  in case of a regional service interruption:
-                  <br /> run on 2 Availability
-                  Zones in one region & using another region for disaster recovery.
+                  A highly available workload in AWS with a disaster recovery
+                  plan in case of a regional service interruption:
+                  <br /> run on 2 Availability Zones in one region & using
+                  another region for disaster recovery.
                 </li>
               </ul>
             </div>
@@ -433,9 +412,9 @@ export default function Page() {
                   availability
                 </li>
                 <li>
-                  AWS Regions are separate geographic areas. They are
-                  an example of global infrastructure ex. when choosing AWS region
-                  take into consideration: reduced latency to users (important for
+                  AWS Regions are separate geographic areas. They are an example
+                  of global infrastructure ex. when choosing AWS region take
+                  into consideration: reduced latency to users (important for
                   UX) & Data sovereignty compliance
                 </li>
               </ul>
@@ -446,12 +425,15 @@ export default function Page() {
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 AWS Well architected framework - change management steps to
-                achieve reliability: AWS Certificate Manager is a service manages
-                SSL/TLS.
+                achieve reliability: AWS Certificate Manager is a service
+                manages SSL/TLS.
               </h3>
-              <Link className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+              <Link
+                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                 target="_blank"
-                href={'https://aws.amazon.com/certificate-manager/'} >AWS Certificate Manager
+                href={'https://aws.amazon.com/certificate-manager/'}
+              >
+                AWS Certificate Manager
               </Link>
             </div>
             <div
@@ -463,20 +445,22 @@ export default function Page() {
               </h3>
               <ul className='className="max-w-md list-inside list-disc space-y-1'>
                 <li>
-                  Automatically recover from failure: By monitoring a workload for key performance indicators (KPIs), you can run automation when a threshold is breached.
+                  Automatically recover from failure: By monitoring a workload
+                  for key performance indicators (KPIs), you can run automation
+                  when a threshold is breached.
                 </li>
                 <li>
                   * use fault-tolerant services; * use EBS elastic block store
-                  snapshots; * auto-scaling for auto-recovery * example of design
-                  for failure: distributing workloads across multiple availability
-                  zones
+                  snapshots; * auto-scaling for auto-recovery * example of
+                  design for failure: distributing workloads across multiple
+                  availability zones
                 </li>
                 <li>
                   * design for scalability - Design for failure principle |
                 </li>
                 <li>
-                  Implement loose coupling - between services can also be done by
-                  asynchronous integration.
+                  Implement loose coupling - between services can also be done
+                  by asynchronous integration.
                 </li>
                 <li>
                   <Link
@@ -488,8 +472,8 @@ export default function Page() {
                   </Link>
                 </li>
                 <li>
-                  * ex. - using many instances in parallel is a good approach
-                  to transcoding a large number of video files.
+                  * ex. - using many instances in parallel is a good approach to
+                  transcoding a large number of video files.
                 </li>
                 <li>
                   Design principles to improve operational workloads:
@@ -498,14 +482,11 @@ export default function Page() {
                     <li>disposable resources</li>
                   </ul>
                 </li>
+                <li>use multiple availability zones</li>
                 <li>
-                  use multiple availability zones
+                  Multi-site active-active is the DR disaster recovery which
+                  offers the lowest probability of down time; aka hot standby
                 </li>
-                <li>
-                  Multi-site active-active is the DR disaster recovery which offers
-                  the lowest probability of down time; aka hot standby
-                </li>
-
               </ul>
             </div>
             <div
@@ -516,8 +497,8 @@ export default function Page() {
                 Implement Elasticity principle
               </h3>
               - ensure we scale up & down;
-              <br />ex.
-              re-architecting a large monolithic app: * using individual
+              <br />
+              ex. re-architecting a large monolithic app: * using individual
               components * Elasticity principle - "growth in users"
               <br /> * 2 concepts of elasticity: scaling # of EC2 instances
               based on traffic && resizing RDS instances as business needs
@@ -528,7 +509,7 @@ export default function Page() {
               role="alert"
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                Internet Gateway  - is an allows inbound traffic from internet to
+                Internet Gateway - is an allows inbound traffic from internet to
                 access a VPC;
               </h3>
               <br />
@@ -545,8 +526,8 @@ export default function Page() {
               role="alert"
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                AWS Acceptable Use Policy - AUP - policy describes prohibited uses
-                of the web services offered by AWS
+                AWS Acceptable Use Policy - AUP - policy describes prohibited
+                uses of the web services offered by AWS
               </h3>
               <br />
               <Link
@@ -566,9 +547,8 @@ export default function Page() {
                 popular tech on AWS
               </h3>
               <br />
-              AWS Partner Solutions are automated reference
-              deployments built by Amazon Web Services (AWS) solutions
-              architects and AWS Partners.
+              AWS Partner Solutions are automated reference deployments built by
+              Amazon Web Services (AWS) solutions architects and AWS Partners.
             </div>
 
             <div
@@ -608,8 +588,8 @@ export default function Page() {
               </h3>
               <ul className='className="max-w-md list-inside list-disc space-y-1'>
                 <li>
-                  good for get expert professional advice on migrating to AWS and
-                  managing their applications on AWS Cloud
+                  good for get expert professional advice on migrating to AWS
+                  and managing their applications on AWS Cloud
                 </li>
                 <li>
                   <Link
@@ -628,7 +608,8 @@ export default function Page() {
               role="alert"
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                AWS Cloud Adoption Framework (AWS CAF)              </h3>
+                AWS Cloud Adoption Framework (AWS CAF){' '}
+              </h3>
               <Link
                 className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                 href="https://aws.amazon.com/cloud-adoption-framework/"
@@ -637,7 +618,6 @@ export default function Page() {
                 AWS Cloud Adoption Framework (AWS CAF)
               </Link>
               <br />
-
               Roles: CTO & Engineer
             </div>
             <div
@@ -672,8 +652,7 @@ export default function Page() {
                 AWS Shared Responsibility model
               </h3>
               <ul className="text-xl font-normal text-gray-700 dark:text-gray-400">
-                <li className="m-5">
-                </li>
+                <li className="m-5"></li>
               </ul>
             </div>
 
@@ -689,7 +668,6 @@ export default function Page() {
             </div>
 
             <div>
-
               <Link
                 className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                 href="https://docs.aws.amazon.com/whitepapers/latest/aws-risk-and-compliance/shared-responsibility-model.html"
