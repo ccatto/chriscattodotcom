@@ -652,57 +652,44 @@ export default function Page() {
                   AWS Shared Responsibility model
                 </h3>
                 <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
-                  <li>
-                    Customers responsibility:
-                  </li>
+                  <li>Customers responsibility:</li>
                   <ul className="text-xl font-normal text-gray-700 dark:text-gray-400">
                     <li>
-                      * data encryption - ensure that app data is encrypted at rest &&
-                      Encrypting data in transit & at rest
+                      * data encryption - ensure that app data is encrypted at
+                      rest && Encrypting data in transit & at rest
                     </li>
-                    <li>
-                      * patching EC2 instances;
-                    </li>
-                    <li>
-                      * ensure users have security training
-                    </li>
-                    <li>
-                      * penetration tests
-                    </li>
+                    <li>* patching EC2 instances;</li>
+                    <li>* ensure users have security training</li>
+                    <li>* penetration tests</li>
                     <li>
                       Managing VPC network access control lists to secure apps
                     </li>
+                    <li>Maintaining server-side Encryption</li>
                     <li>
-                      Maintaining server-side Encryption
-                    </li>
-                    <li>
-                      Using RDS customer is responsible for controlling network access
-                      through security groups;
+                      Using RDS customer is responsible for controlling network
+                      access through security groups;
                     </li>
                   </ul>
 
-                  <li>
-                    AWS responsibility:
-                  </li>
+                  <li>AWS responsibility:</li>
                   <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                    <li>AWS responsible for security "OF" the cloud:</li>
                     <li>
-                      AWS responsible for security "OF" the cloud:
+                      * has sole responsibility for physical security; "Security
+                      of the Cloud"
                     </li>
                     <li>
-                      * has sole responsibility for physical security; "Security of
-                      the Cloud"
-                    </li>
-                    <li>
-                      * AWS is responsible for protecting the infrastructure that
-                      runs all of the services offered in AWS Cloud; * updating
-                      firmware
+                      * AWS is responsible for protecting the infrastructure
+                      that runs all of the services offered in AWS Cloud; *
+                      updating firmware
                     </li>
                     <li>Auditing physical data center assets</li>
                     <li>Patching db software</li>
                     <li>Backing up DBs</li>
                     <li>Securing the EC2 Hypervisor & physical controls</li>
                     <li>Edge location management</li>
-                    <li>For abstracted services like Amazon S3, AWS operates the
+                    <li>
+                      For abstracted services like Amazon S3, AWS operates the
                       infrastructure layer, the operating system, and platforms
                     </li>
                   </ul>
@@ -712,7 +699,8 @@ export default function Page() {
                       <li>Awareness & training</li>
                       <li>Configuration Management</li>
                       <li>
-                        Awareness & training is a shared control between customer & AWS
+                        Awareness & training is a shared control between
+                        customer & AWS
                       </li>
                     </ul>
                   </li>
@@ -743,12 +731,8 @@ export default function Page() {
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                   2 security measures to protect AWS accounts:
                   <ul className="text-xl font-normal text-gray-700 dark:text-gray-400">
-                    <li>
-                      * grant least
-                    </li>
-                    <li>
-                      privilege access to IAM users; * Activate MFA
-                    </li>
+                    <li>* grant least</li>
+                    <li>privilege access to IAM users; * Activate MFA</li>
                   </ul>
                 </h3>
               </div>
@@ -757,13 +741,11 @@ export default function Page() {
                 role="alert"
               >
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-
                   Security Groups act as a virtual firewall for the Amazon EC2
                   instance;
                 </h3>
               </div>
-              <div>
-              </div>
+              <div></div>
             </div>
 
             <div
@@ -771,7 +753,6 @@ export default function Page() {
               role="alert"
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-
                 SECURITY Steps taken when conducting penetration testing on AWS?
               </h3>
               <Link
@@ -791,10 +772,9 @@ export default function Page() {
               role="alert"
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-
-                U2F security key - hardware - Universal 2nd Factor (U2F) Security
-                Key is a device that you can plug into a USB port on your
-                computer.
+                U2F security key - hardware - Universal 2nd Factor (U2F)
+                Security Key is a device that you can plug into a USB port on
+                your computer.
               </h3>
             </div>
 
@@ -803,8 +783,8 @@ export default function Page() {
               role="alert"
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                Virtual Multi-Factor Authentication (MFA) device - NOT a physical
-                device - generates a six-digit numeric code
+                Virtual Multi-Factor Authentication (MFA) device - NOT a
+                physical device - generates a six-digit numeric code
               </h3>
             </div>
 
@@ -840,23 +820,20 @@ export default function Page() {
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>
                   adds security & identity * MFA & enforcing pw strength &
-                  expiration IAM policies don't have access keys. The only way you
-                  will ever get an Access key is to create them from an IAM user.
+                  expiration IAM policies don't have access keys. The only way
+                  you will ever get an Access key is to create them from an IAM
+                  user.
                 </li>
                 <li>
-                  Apply an IAM policy to an IAM group - apply common access controls
-                  to large set of use
+                  Apply an IAM policy to an IAM group - apply common access
+                  controls to large set of use
                 </li>
+                <li>* IAM groups able to administer multiple users</li>
+                <li>IAM policies can limit S3 access to specific users.</li>
                 <li>
-                  * IAM groups able to administer multiple users
-                </li>
-                <li>
-                  IAM policies can limit S3 access to specific users.
-                </li>
-                <li>
-                  AWS IAM Identity Center - SSO - access management to multiple AWS
-                  accounts as well as facilitate AWS Single Sign-On (AWS SSO) access
-                  to its AWS accounts
+                  AWS IAM Identity Center - SSO - access management to multiple
+                  AWS accounts as well as facilitate AWS Single Sign-On (AWS
+                  SSO) access to its AWS accounts
                 </li>
                 <li>
                   <Link
@@ -878,19 +855,16 @@ export default function Page() {
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
             >
-              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                EC2
-              </h3>
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">EC2</h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
-                <li> * can be used to manually launch "instances" bases on resource
+                <li>
+                  {' '}
+                  * can be used to manually launch "instances" bases on resource
                   requirements
                 </li>
-                <li>
-                  can be used to host MS SQL Server
-                </li>
+                <li>can be used to host MS SQL Server</li>
               </ul>
             </div>
-
 
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -900,29 +874,26 @@ export default function Page() {
                 AWS Cloud Tail
               </h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
-                <li> <Link
-                  className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                  href="https://aws.amazon.com/cloudtrail/"
-                  target="_blank"
-                >
-                  AWS CloudTrail
-                </Link>
-                </li>
                 <li>
-                  Track user activity & API usage.
+                  {' '}
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/cloudtrail/"
+                    target="_blank"
+                  >
+                    AWS CloudTrail
+                  </Link>
                 </li>
+                <li>Track user activity & API usage.</li>
+                <li>a service to gather info about AWS account activity</li>
                 <li>
-                  a service to gather info about AWS account activity
-                </li>
-                <li>
-                  use CloudTrail to log, monitor and retain account activity related
-                  to actions across your AWS infrastructure
+                  use CloudTrail to log, monitor and retain account activity
+                  related to actions across your AWS infrastructure
                 </li>
                 <li>
                   ensure that its AWS account activity meets the governance,
                   compliance and auditing norms
                 </li>
-
               </ul>
             </div>
 
@@ -931,13 +902,11 @@ export default function Page() {
               role="alert"
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                Amazon GuardDuty Protect your AWS accounts, workloads, and data with intelligent threat detection
-
+                Amazon GuardDuty Protect your AWS accounts, workloads, and data
+                with intelligent threat detection
               </h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
-                <li>
-                  assists in threat protection
-                </li>
+                <li>assists in threat protection</li>
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -958,18 +927,10 @@ export default function Page() {
                 Amazon RDS - relational Database Service advantage is it
               </h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
-                <li>
-                  simplifies administration tasks.
-                </li>
-                <li>
-                  * used to host db's
-                </li>
-                <li>
-                  AWS Manages the maintenance of the OS
-                </li>
-                <li>
-                  MS SQL Server - RDS can be used to host
-                </li>
+                <li>simplifies administration tasks.</li>
+                <li>* used to host db's</li>
+                <li>AWS Manages the maintenance of the OS</li>
+                <li>MS SQL Server - RDS can be used to host</li>
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -982,14 +943,13 @@ export default function Page() {
               </ul>
             </div>
 
-
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                Read Replicas provide enhanced
-                performance and durability for Amazon RDS database (DB) instance
+                Read Replicas provide enhanced performance and durability for
+                Amazon RDS database (DB) instance
               </h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>
@@ -1002,12 +962,12 @@ export default function Page() {
                   </Link>
                 </li>
                 <li>
-                  Read Replica improves database scalability & performance; - scale
-                  out globally
+                  Read Replica improves database scalability & performance; -
+                  scale out globally
                 </li>
                 <li>
-                  RDS Multi-AZ enhances database availability - benefit of deploying
-                  an Amazon RDS Multi-AZ database with one standby
+                  RDS Multi-AZ enhances database availability - benefit of
+                  deploying an Amazon RDS Multi-AZ database with one standby
                 </li>
               </ul>
             </div>
@@ -1031,12 +991,13 @@ export default function Page() {
                   </Link>
                 </li>
                 <li>
-                  CloudFormation good for deploying identical resources across all
-                  AWS regions and accounts using templates while estimating costs
+                  CloudFormation good for deploying identical resources across
+                  all AWS regions and accounts using templates while estimating
+                  costs
                 </li>
                 <li>
-                  CloudFormation can provision the same AWS infrastructure across
-                  multiple regions.
+                  CloudFormation can provision the same AWS infrastructure
+                  across multiple regions.
                 </li>
               </ul>
             </div>
@@ -1058,9 +1019,7 @@ export default function Page() {
                     AWS CodeDeploy
                   </Link>
                 </li>
-                <li>
-                  Automate code deployment to maintain application uptime
-                </li>
+                <li>Automate code deployment to maintain application uptime</li>
               </ul>
             </div>
 
@@ -1084,7 +1043,6 @@ export default function Page() {
               </ul>
             </div>
 
-
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1107,12 +1065,12 @@ export default function Page() {
                   millisecond performance at any scale
                 </li>
                 <li>
-                  Global tables - NoSQL supports active-active configuration in both
-                  the East and West US AWS regions
+                  Global tables - NoSQL supports active-active configuration in
+                  both the East and West US AWS regions
                 </li>
                 <li>
-                  DynamoDB - good for store data from a recommendation engine in a
-                  database with Least operational overhead for any scale;
+                  DynamoDB - good for store data from a recommendation engine in
+                  a database with Least operational overhead for any scale;
                 </li>
               </ul>
             </div>
@@ -1145,7 +1103,6 @@ export default function Page() {
               </h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>
-
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                     href="https://aws.amazon.com/kms/"
@@ -1165,14 +1122,12 @@ export default function Page() {
               role="alert"
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                AWS Direct Connect - enables us to connect securely AWS to on-prem
-                data center. ex. Direct connect can connect Amazon VPC to
-                on-premises data center.
+                AWS Direct Connect - enables us to connect securely AWS to
+                on-prem data center. ex. Direct connect can connect Amazon VPC
+                to on-premises data center.
               </h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
-                <li>
-                  On-Prem connections
-                </li>
+                <li>On-Prem connections</li>
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -1189,9 +1144,7 @@ export default function Page() {
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
             >
-              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                AWS VPC
-              </h3>
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">AWS VPC</h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>
                   <Link
@@ -1202,14 +1155,9 @@ export default function Page() {
                     AWS VPC
                   </Link>
                 </li>
-                <li>
-                  2 features that can be configured with VPC are:
-                </li>
-                <li>
-                  * Security Groups
-                </li>
-                <li>* subnets
-                </li>
+                <li>2 features that can be configured with VPC are:</li>
+                <li>* Security Groups</li>
+                <li>* subnets</li>
               </ul>
             </div>
 
@@ -1232,8 +1180,8 @@ export default function Page() {
                   </Link>
                 </li>
                 <li>
-                  charged by - users pay based on the number of requests & consumed
-                  compute resources.
+                  charged by - users pay based on the number of requests &
+                  consumed compute resources.
                 </li>
               </ul>
             </div>
@@ -1247,12 +1195,8 @@ export default function Page() {
                 platform;
               </h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
-                <li>
-                  Amazon DynamoDB
-                </li>
-                <li>
-                  Amazon SNS
-                </li>
+                <li>Amazon DynamoDB</li>
+                <li>Amazon SNS</li>
               </ul>
             </div>
 
@@ -1265,18 +1209,16 @@ export default function Page() {
               </h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>
-                  Provides alerts when an AWS event
-                  may impact a company's AWS resources. Provides alerts &
-                  remediation guidance when AWS is experiencing events.
+                  Provides alerts when an AWS event may impact a company's AWS
+                  resources. Provides alerts & remediation guidance when AWS is
+                  experiencing events.
                 </li>
                 <li>
                   * ex. provides a customized view of the health of specific AWS
                   services that power a customers workloads running on AWS.
-
                 </li>
               </ul>
             </div>
-
 
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -1304,8 +1246,8 @@ export default function Page() {
                   </Link>
                 </li>
                 <li>
-                  AWS Health - Your Account Health Dashboard - personalized view of
-                  the status of the AWS services that are part of your Cloud
+                  AWS Health - Your Account Health Dashboard - personalized view
+                  of the status of the AWS services that are part of your Cloud
                   architecture so that you can quickly assess the impact on your
                   business when AWS service(s) are experiencing issues
                 </li>
@@ -1316,8 +1258,6 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-
-
 
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -1338,10 +1278,6 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-
-
-
-
 
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -1367,10 +1303,9 @@ export default function Page() {
               role="alert"
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                AWS managed services such as ElastiCache & RDS benefits are: they
-                simplify patching & updating OS's.
+                AWS managed services such as ElastiCache & RDS benefits are:
+                they simplify patching & updating OS's.
               </h3>
-
             </div>
 
             <div
@@ -1378,8 +1313,8 @@ export default function Page() {
               role="alert"
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                RDS & EFS are services for read/write of constantly changing data
-                Amazon Elastic File System EFS
+                RDS & EFS are services for read/write of constantly changing
+                data Amazon Elastic File System EFS
               </h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>
@@ -1392,13 +1327,13 @@ export default function Page() {
                   </Link>
                 </li>
                 <li>
-                  * EFS provides simple scalable elastic NFS file system & can be
-                  used for on-premises including Linux Glacier is used for archiving
-                  | long term low cost storage;
+                  * EFS provides simple scalable elastic NFS file system & can
+                  be used for on-premises including Linux Glacier is used for
+                  archiving | long term low cost storage;
                 </li>
                 <li>
-                  Amazon Elastic File System (Amazon EFS) - use a storage service
-                  which would be accessed by hundreds of EC2 instances
+                  Amazon Elastic File System (Amazon EFS) - use a storage
+                  service which would be accessed by hundreds of EC2 instances
                   simultaneously to append data to existing files
                 </li>
                 <li>
@@ -1418,8 +1353,8 @@ export default function Page() {
               role="alert"
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                AWS Glacier - Long-term, secure, durable storage classes for data
-                archiving at the lowest cost and milliseconds access
+                AWS Glacier - Long-term, secure, durable storage classes for
+                data archiving at the lowest cost and milliseconds access
               </h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>
@@ -1465,12 +1400,10 @@ export default function Page() {
                   </Link>
                 </li>
                 <li>
-                  * can be used for serving large amounts of online video content
-                  with lowest possible latency
+                  * can be used for serving large amounts of online video
+                  content with lowest possible latency
                 </li>
-                <li>
-                  * can be used for hosting static websites;
-                </li>
+                <li>* can be used for hosting static websites;</li>
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -1480,26 +1413,19 @@ export default function Page() {
                     Hosting a static website using Amazon S3
                   </Link>
                 </li>
+                <li>S3 One Zone-IA used to store thumbnails images</li>
                 <li>
-                  S3 One Zone-IA used to store thumbnails images
+                  Amazon S3 One Zone-Infrequent Access (S3 One Zone-IA) is for
+                  data that is accessed less frequently but requires rapid
+                  access when needed.
                 </li>
+                <li>S3 buckets have encryption configured by default</li>
                 <li>
-                  Amazon S3 One Zone-Infrequent Access (S3 One Zone-IA) is for data
-                  that is accessed less frequently but requires rapid access when
-                  needed.
-                </li>
-                <li>
-                  S3 buckets have encryption configured by default
-
-                </li>
-                <li>
-                  Route 53 - DNS reliable & cost effective way to route end users to
-                  apps; Route 53 is considered global not regional
+                  Route 53 - DNS reliable & cost effective way to route end
+                  users to apps; Route 53 is considered global not regional
                 </li>
               </ul>
             </div>
-
-
 
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -1557,8 +1483,9 @@ export default function Page() {
                   </Link>
                 </li>
                 <li>
-                  is a device you can mount onto EC2 it is a block storage so you
-                  format it; we are able to chose which type of file we want.
+                  is a device you can mount onto EC2 it is a block storage so
+                  you format it; we are able to chose which type of file we
+                  want.
                 </li>
               </ul>
             </div>
@@ -1590,10 +1517,10 @@ export default function Page() {
                 role="alert"
               >
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                  AWS CloudWatch - observe & monitor resources & apps ex. a metrics
-                  repo with customizable notification thresholds & channels
-                  CloudWatch logs: advantages are real-time monitoring & adjustable
-                  retention
+                  AWS CloudWatch - observe & monitor resources & apps ex. a
+                  metrics repo with customizable notification thresholds &
+                  channels CloudWatch logs: advantages are real-time monitoring
+                  & adjustable retention
                 </h3>
                 <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                   <li>
@@ -1619,12 +1546,11 @@ export default function Page() {
                     utilization; app perf & operational health
                   </li>
                   <li>
-                    Amazon CloudWatch Logs to monitor, store, log files from EC2;
-                    on-premises servers & many others;
+                    Amazon CloudWatch Logs to monitor, store, log files from
+                    EC2; on-premises servers & many others;
                   </li>
                 </ul>
               </div>
-
 
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -1653,23 +1579,23 @@ export default function Page() {
                 role="alert"
               >
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                  Elastic Load Balancing ELB - Distribute network traffic to improve
-                  application scalability
+                  Elastic Load Balancing ELB - Distribute network traffic to
+                  improve application scalability
                 </h3>
                 <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                   <li>
-                    automatically distributes incoming app traffic across multiple
-                    targets such as EC2 instances; containers; IPs || Lambda
-                    functions.
+                    automatically distributes incoming app traffic across
+                    multiple targets such as EC2 instances; containers; IPs ||
+                    Lambda functions.
                   </li>
                   <li>
-                    Elastic Load Balancing (ELB) automatically distributes incoming
-                    application traffic across multiple targets, such as Amazon EC2
-                    instances, containers, and IP addresses
+                    Elastic Load Balancing (ELB) automatically distributes
+                    incoming application traffic across multiple targets, such
+                    as Amazon EC2 instances, containers, and IP addresses
                   </li>
                   <li>
                     Benefits:
-                    <ul className='ml-5'>
+                    <ul className="ml-5">
                       <li>Fault tolerance</li>
                       <li>High Availability</li>
                     </ul>
@@ -1677,29 +1603,25 @@ export default function Page() {
                 </ul>
               </div>
 
-
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
               >
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                   AWS Services ways for customer to interact: * AWS Management
-                  console - GUI * CLI control from command line * SDKs access via
-                  many programming languages
+                  console - GUI * CLI control from command line * SDKs access
+                  via many programming languages
                 </h3>
-
               </div>
-
 
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
               >
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                  AWS CloudFront - CDN service build for perf; security & developers
-                  * can be used to serve large amounts of online video with lowest
-                  possible latency
+                  AWS CloudFront - CDN service build for perf; security &
+                  developers * can be used to serve large amounts of online
+                  video with lowest possible latency
                 </h3>
                 <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                   <li>
@@ -1711,33 +1633,26 @@ export default function Page() {
                       AWS CloudFront
                     </Link>
                   </li>
+                  <li>CloudFront is global not regional.</li>
+                  <li>CloudFront decreases latency & increases perf</li>
                   <li>
-                    CloudFront is global not regional.
-                  </li>
-                  <li>
-                    CloudFront decreases latency & increases perf
-                  </li>
-                  <li>
-                    CloudFront delivers content worldwide through data centers called
-                    "Edge Locations"; AWS Edge location is a site that CloudFront uses
-                    to cache copies of the content for faster delivery to users at any
-                    location;
+                    CloudFront delivers content worldwide through data centers
+                    called "Edge Locations"; AWS Edge location is a site that
+                    CloudFront uses to cache copies of the content for faster
+                    delivery to users at any location;
                   </li>
                 </ul>
               </div>
-
-
-
 
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
               >
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                  AWS Professional Services is an AWS team that can assist customers
-                  with accelerating adoption through paid engagements. * provides
-                  architect prototypes & solutions tailers to the customer.
-
+                  AWS Professional Services is an AWS team that can assist
+                  customers with accelerating adoption through paid engagements.
+                  * provides architect prototypes & solutions tailers to the
+                  customer.
                 </h3>
                 <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                   <li>
@@ -1752,19 +1667,17 @@ export default function Page() {
                 </ul>
               </div>
 
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
               >
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                  AWS Partner Network Consulting Partners is an org that is focused
-                  on assisting customers with advice; professional services when
-                  moving to AWS. AWS Partner Network Technology Partners refers to a
-                  company that is developing their own product/service.
-
+                  AWS Partner Network Consulting Partners is an org that is
+                  focused on assisting customers with advice; professional
+                  services when moving to AWS. AWS Partner Network Technology
+                  Partners refers to a company that is developing their own
+                  product/service.
                 </h3>
-
               </div>
 
               <div
@@ -1772,9 +1685,9 @@ export default function Page() {
                 role="alert"
               >
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                  AWS Storage Gateway - service provides a hybrid storage service
-                  that enables on-premises app to seamlessly use cloud storage;
-
+                  AWS Storage Gateway - service provides a hybrid storage
+                  service that enables on-premises app to seamlessly use cloud
+                  storage;
                 </h3>
                 <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                   <li>
@@ -1792,8 +1705,6 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
-
-
 
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -1813,18 +1724,12 @@ export default function Page() {
                     </Link>
                   </li>
                   <li>
-                    Storing common database query results which helps alleviate db
-                    access load.
+                    Storing common database query results which helps alleviate
+                    db access load.
                   </li>
-                  <li>
-                    decreases latency & increase perf;
-                  </li>
+                  <li>decreases latency & increase perf;</li>
                 </ul>
               </div>
-
-
-
-
 
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -1834,21 +1739,17 @@ export default function Page() {
                   AWS Quick start reference deployments - help deploy popular IT
                   solution & start using it immediately
                 </h3>
-
               </div>
-
 
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
               >
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                  AWS Directory Service - SSO - AWS SSO is an service that lets you
-                  access from MS AD;
+                  AWS Directory Service - SSO - AWS SSO is an service that lets
+                  you access from MS AD;
                 </h3>
-
               </div>
-
 
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -1858,16 +1759,15 @@ export default function Page() {
                   AWS Compliance Program - * It assures customers that AWS is
                   maintaining physical security & data protection
                   <br />
-
                 </h3>
                 <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                   <li>
                     * it verifies that hosted workloads are automatically
-                    compliant with the controls of supported compliance frameworks;
+                    compliant with the controls of supported compliance
+                    frameworks;
                   </li>
                 </ul>
               </div>
-
 
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -1890,7 +1790,6 @@ export default function Page() {
                 </ul>
               </div>
 
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -1899,34 +1798,28 @@ export default function Page() {
                   Amazon GuardDuty is a threat detection service.
                 </h3>
                 <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
-                  <li>
-
-                  </li>
+                  <li></li>
                 </ul>
               </div>
-
 
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
               >
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                  Help decrease network latency for a globally dispersed user base:
-                  2 services || features:
+                  Help decrease network latency for a globally dispersed user
+                  base: 2 services || features:
                 </h3>
                 <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                   <li>
-
                     <li>AWS CloudFront</li>
                     <li>
-                      AWS Global Accelerator - improves performance for a wide range
-                      of app
+                      AWS Global Accelerator - improves performance for a wide
+                      range of app
                     </li>
-
                   </li>
                 </ul>
               </div>
-
 
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -1948,19 +1841,16 @@ export default function Page() {
                 </ul>
               </div>
 
-
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
               >
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                  AWS Snowball is a service that will allow transfer of large data
-                  from on-prem to cloud;
+                  AWS Snowball is a service that will allow transfer of large
+                  data from on-prem to cloud;
                 </h3>
                 <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                   <li>
-
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                       href="https://aws.amazon.com/snowball/"
@@ -1971,8 +1861,6 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
-
-
 
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -1995,14 +1883,13 @@ export default function Page() {
                 </ul>
               </div>
 
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
               >
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                  Amazon Inspector - Automated & continual vulnerability management
-                  at scale
+                  Amazon Inspector - Automated & continual vulnerability
+                  management at scale
                 </h3>
                 <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                   <li>
@@ -2016,27 +1903,25 @@ export default function Page() {
                   </li>
                   <li>
                     Inspector does:
-                    <ul className='ml-5'>
+                    <ul className="ml-5">
                       <li>* inspect OS against vulnerabilities</li>
-                      <li>* Analyze against unintended network accessibility</li>
+                      <li>
+                        * Analyze against unintended network accessibility
+                      </li>
                       <li>* Automate security assessments</li>
                     </ul>
                   </li>
-                  <li>
-                    Inspector does not -Track configuration changes
-                  </li>
+                  <li>Inspector does not -Track configuration changes</li>
                 </ul>
               </div>
-
-
 
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
               >
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                  AWS Elastic Beanstalk - PaaS (Platform as a Service) Deploy and
-                  scale web applications
+                  AWS Elastic Beanstalk - PaaS (Platform as a Service) Deploy
+                  and scale web applications
                 </h3>
                 <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                   <li>
@@ -2051,15 +1936,13 @@ export default function Page() {
                 </ul>
               </div>
 
-
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
               >
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                  AWS KMS - Key Management Service Create and control keys used to
-                  encrypt or digitally sign your data
+                  AWS KMS - Key Management Service Create and control keys used
+                  to encrypt or digitally sign your data
                 </h3>
                 <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                   <li>
@@ -2074,15 +1957,14 @@ export default function Page() {
                 </ul>
               </div>
 
-
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
               >
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                  Amazon EventBridge - Serverless - Build event-driven applications
-                  at scale across AWS, existing systems, or SaaS applications
+                  Amazon EventBridge - Serverless - Build event-driven
+                  applications at scale across AWS, existing systems, or SaaS
+                  applications
                 </h3>
                 <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                   <li>
@@ -2096,7 +1978,6 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
-
 
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -2116,13 +1997,12 @@ export default function Page() {
                     </Link>
                   </li>
                   <li>
-                    AWS Fargate - serverless compute engine for containers that works
-                    with both Amazon Elastic Container Service (ECS) and Amazon
-                    Elastic Kubernetes Service (EKS).
+                    AWS Fargate - serverless compute engine for containers that
+                    works with both Amazon Elastic Container Service (ECS) and
+                    Amazon Elastic Kubernetes Service (EKS).
                   </li>
                 </ul>
               </div>
-
 
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -2130,7 +2010,6 @@ export default function Page() {
               >
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                   AWS ECS - Elastic Container Service - docker containers
-
                 </h3>
                 <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                   <li>
@@ -2144,7 +2023,6 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
-
 
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -2163,16 +2041,13 @@ export default function Page() {
                       AWS OpsWorks
                     </Link>
                   </li>
+                  <li>Chef & Puppet</li>
                   <li>
-                    Chef & Puppet
-                  </li>
-                  <li>
-                    AWS OpsWorks automate how servers are configured; deployed; &
-                    managed.
+                    AWS OpsWorks automate how servers are configured; deployed;
+                    & managed.
                   </li>
                 </ul>
               </div>
-
 
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -2197,8 +2072,6 @@ export default function Page() {
                 </ul>
               </div>
 
-
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -2217,13 +2090,11 @@ export default function Page() {
                     </Link>
                   </li>
                   <li>
-                    Deploy high-quality, natural-sounding human voices in dozens of
-                    languages
+                    Deploy high-quality, natural-sounding human voices in dozens
+                    of languages
                   </li>
                 </ul>
               </div>
-
-
 
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -2242,12 +2113,9 @@ export default function Page() {
                       Amazon Transcribe
                     </Link>
                   </li>
-                  <li>
-                    Automatically convert speech to text
-                  </li>
+                  <li>Automatically convert speech to text</li>
                 </ul>
               </div>
-
 
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -2258,7 +2126,12 @@ export default function Page() {
                 </h3>
                 <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                   <li>
-                    A VPC endpoint enables customers to privately connect to supported AWS services and VPC endpoint services powered by AWS PrivateLink. Amazon VPC instances do not require public IP addresses to communicate with resources of the service. Traffic between an Amazon VPC and a service does not leave the Amazon network.
+                    A VPC endpoint enables customers to privately connect to
+                    supported AWS services and VPC endpoint services powered by
+                    AWS PrivateLink. Amazon VPC instances do not require public
+                    IP addresses to communicate with resources of the service.
+                    Traffic between an Amazon VPC and a service does not leave
+                    the Amazon network.
                   </li>
                   <li>
                     <Link
@@ -2272,16 +2145,12 @@ export default function Page() {
                 </ul>
               </div>
 
-
-
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
               >
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                   Amazon Macie Discover and protect your sensitive data at scale
-
                 </h3>
                 <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                   <li>
@@ -2296,15 +2165,13 @@ export default function Page() {
                 </ul>
               </div>
 
-
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
               >
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                  AWS Compute Optimizer - Get recommendations to optimize your use
-                  of AWS resources for such as:
+                  AWS Compute Optimizer - Get recommendations to optimize your
+                  use of AWS resources for such as:
                 </h3>
                 <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                   <li>
@@ -2312,13 +2179,16 @@ export default function Page() {
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                       href="https://aws.amazon.com/compute-optimizer/"
                       target="_blank"
-                    >AWS Compute Optimizer</Link>
+                    >
+                      AWS Compute Optimizer
+                    </Link>
                   </li>
                   <li>
-                    AWS Compute Optimizer does NOT provide optimization for S3 || EFS
+                    AWS Compute Optimizer does NOT provide optimization for S3
+                    || EFS
                   </li>
                   <li>
-                    <ul className='ml-5'>
+                    <ul className="ml-5">
                       <li>EC2</li>
                       <li>EC2 Auto Scaling Groups</li>
                       <li>EBS - Amazon Elastic Block Store</li>
@@ -2327,8 +2197,6 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
-
-
 
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -2355,18 +2223,17 @@ export default function Page() {
                 </ul>
               </div>
 
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
               >
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                  AWS Systems Manager Session Manager - best way to provide secure
-                  shell access to EC2 without opening new ports or public IP.
+                  AWS Systems Manager Session Manager - best way to provide
+                  secure shell access to EC2 without opening new ports or public
+                  IP.
                 </h3>
                 <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                   <li>
-
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                       href="https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html"
@@ -2374,22 +2241,22 @@ export default function Page() {
                     >
                       AWS Systems Manager Session Manager
                     </Link>
-                  </li><li>
-                    AWS Systems Manager get operational insights of its resources to
-                    quickly identify any issues that might impact applications using
-                    those resources
+                  </li>
+                  <li>
+                    AWS Systems Manager get operational insights of its
+                    resources to quickly identify any issues that might impact
+                    applications using those resources
                   </li>
                 </ul>
               </div>
-
 
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
               >
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                  AWS Auto Scaling - free to use - Application scaling to optimize
-                  performance and costs
+                  AWS Auto Scaling - free to use - Application scaling to
+                  optimize performance and costs
                 </h3>
                 <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                   <li>
@@ -2404,30 +2271,25 @@ export default function Page() {
                 </ul>
               </div>
 
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
+              >
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  Instance Store - provides temporary block-level storage for
+                  your EC2 instance.
+                </h3>
+              </div>
 
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
               >
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                  Instance Store - provides temporary block-level storage for your
-                  EC2 instance.
+                  AWS Local Zones - deliver a consistent low-latency for
+                  end-users in various locations
                 </h3>
-
               </div>
-
-
-              <div
-                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
-                role="alert"
-              >
-                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                  AWS Local Zones - deliver a consistent low-latency for end-users
-                  in various locations
-                </h3>
-
-              </div>
-
             </div>
           </div>
           ---------------- -----------------------
@@ -2679,9 +2541,8 @@ export default function Page() {
               of your use cases on AWS
             </div>
           </div>
-        </div >
-
-      </div >
+        </div>
+      </div>
     </>
   );
 }
