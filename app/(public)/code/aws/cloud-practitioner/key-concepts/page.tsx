@@ -118,8 +118,15 @@ export default function Page() {
           <br /> --- ---------------- -----------------------
           <br />
           <div>
-            <div>
-              AWS Features & Benefits:
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              {/* <div className="flex flex-wrap items-center lg:flex-nowrap"> */}
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS Features & Benefits:
+              </h3>
+              <br />
               <ul className='className="max-w-md list-inside list-disc space-y-1'>
                 <li>
                   Global availability is a feature of AWS which will support an
@@ -142,67 +149,146 @@ export default function Page() {
                   AWS performs infrastructure discovery scans on the customer's
                   behalf.
                 </li>
+                <li>
+                  Making AWS cost effective for workload with
+                  dynamic user demand
+                </li>
+                <li>
+                  AWS shorten the time to provision IT resources by ??
+                  programmatically provision existing resources.
+                </li>
+                <li>
+                  AWS Cloud feature - agility:
+                </li>
+                <li>
+                  Agility - "Quickly" deliver new functionality in an iterative
+                  manner minimizing the time to market an example of AWS agility is
+                  decreased acquisition time for new compute resources;
+                  <br />
+                  ability to scale up & down during peek times;
+                </li>
+                <li>
+                  <div>
+                    Massive economies of scale - pay-as-you-go prices is offered as a
+                    benefit of AWS Cloud
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html"
+                      target="_blank"
+                    >
+                      6 Advantages of Cloud Computing
+                    </Link>
+                  </div>
+                </li>
               </ul>
+              {/* </div> */}
+            </div>
+            <div>
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
+              >
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  Elastic computing =&gt;
+                </h3>
+                Capacity to increase & decreasing capacity
+                with investment = 0; therefore this is related to cost;
+                <br />
+                makes feasible to add remove resources
+              </div>
             </div>
             <br />
-            <div>
-              Elastic computing =&gt; capacity to increase & decreasing capacity
-              with investment = 0; therefore this is related to cost;
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Pay-as-you-go pricing - pay only upon usage;
+              </h3>
             </div>
-            <div>
-              AWS characteristics making AWS cost effective for workload with
-              dynamic user demand
-              <br />
-              - Elasticity - makes feasible to add remove resources
-              <br />
-              <br />
-              Pay-as-you-go pricing - pay only upon usage;
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS Config
+              </h3>
+              <ul className='className="max-w-md list-inside list-disc space-y-1'>
+                <li>
+                  Assess; audit & evaluate configurations resources.
+                </li><li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/config/"
+                    target="_blank"
+                  >
+                    Amazon Config
+                  </Link>
+                </li>
+                <li>
+                  Config is good to "Audit" change management of AWS resources *
+                  tracking configuration changes
+                </li>
+              </ul>
             </div>
-            <div>
-              AWS shorten the time to provision IT resources by ??
-              programmatically provision existing resources.
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Auto Scaling - enables compute capacity to adjust as loads change
+              </h3>
             </div>
-            <div>
-              AWS Config - Assess; audit & evaluate configurations resources.
-              <br />
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/config/"
-                target="_blank"
-              >
-                Amazon Config
-              </Link>
-              <br />
-              Config is good to "Audit" change management of AWS resources *
-              tracking configuration changes
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Load balancing - distributing load.
+              </h3>
             </div>
-            <div>
-              Auto Scaling - enables compute capacity to adjust as loads change
-              <br />
-              Load balancing - distributing load.
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Cloud - is a deployment models that enables customers to fully
+                trade their capital IT expenses for operational expenses
+              </h3>
             </div>
-            <div>
-              Cloud - is a deployment models that enables customers to fully
-              trade their capital IT expenses for operational expenses
-            </div>
-            <div>
-              AWS Cloud feature - agility:
-              <br />
-              Agility - "Quickly" deliver new functionality in an iterative
-              manner minimizing the time to market an example of AWS agility is
-              decreased acquisition time for new compute resources;
-              <br />
-              ability to scale up & down during peek times;
-            </div>
-            <div>
-              EC2 Auto Scaling groups help achieve high availability for a web
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                EC2 Auto Scaling
+              </h3>
+              groups help achieve high availability for a web
               app by automagically adding or replace instances across multiple
               Availability Zones. ASGs add & removed instances based on Demand.
               * can be used to run a "customer-managed relational database";
-              <br />
-              Application Load Balancer - ensures that your app on EC2 always
+
+            </div>
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Application Load Balancer
+              </h3>
+              <ul className='className="max-w-md list-inside list-disc space-y-1'>
+                <li>
+                  groups help achieve high availability for a web
+                </li>
+              </ul>
+
+              app by automagically adding or replace instances across multiple
+              Availability Zones. ASGs add & removed instances based on Demand.
+              * can be used to run a "customer-managed relational database";
+              - ensures that your app on EC2 always
               has the right amount of capacity to handle the current traffic
-              demand
+              demand<br />
               <Link
                 className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                 href="https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html"
@@ -211,130 +297,241 @@ export default function Page() {
                 EC2 Auto Scaling
               </Link>
             </div>
-            <div>
-              AMI Amazon Machine Image - EC2 to launch a pre-configured EC2
-              select a pre-configured templated AMI Amazon Machine Image
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html"
-                target="_blank"
-              >
-                AMIs Amazon Machine Images
-              </Link>
-              We must use AMI from the same region as EC2; the region of AMI has
-              no bearing on the performance of EC2;
-            </div>
-            <div>
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/premiumsupport/technology/trusted-advisor/"
-                target="_blank"
-              >
-                AWS Trusted Advisor
-              </Link>
-              <br />
-              AWS Trusted Advisor - optimizes costs, improve performance, &
-              address security gaps;
-              <br />
-              AWS Trusted Advisor can be run & review the findings with will
-              Determine if any security groups in AWS have been provisioned to
-              allow unrestricted access for specific ports by Ex. 2 categories:
-              Instance Usage & Performance
-              <br />
-              AWS Trusted Advisor monitors & provides advises on
-              <ul>
-                <li>Compliance w/ security best practices</li>
-                <li>Cost optimization</li>
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AMI - Amazon Machine Image
+              </h3>
+              <ul className='className="max-w-md list-inside list-disc space-y-1'>
+                <li>
+                  EC2 to launch a pre-configured EC2
+                </li>
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html"
+                    target="_blank"
+                  >
+                    AMIs Amazon Machine Images
+                  </Link>
+                </li>
+                <li>
+                  select a pre-configured templated AMI Amazon Machine Image
+                </li>
+                <li>
+                  We must use AMI from the same region as EC2;
+                </li>
+                <li>
+                  the region of AMI has
+                  no bearing on the performance of EC2;
+                </li>
               </ul>
-              <br />
-              Trusted Advisor will identify if unrestricted access to a resource
-              has been allowed by a s "Security Group"
-              <br />
-              Use Trusted Advisor if a Security officer wants a list of any
-              potential vulnerabilities in EC2
-              <br />
-              AWS Trusted Advisor is an online tool that provides you real-time
-              guidance to help you provision your resources following AWS best
-              practices on cost optimization, security, fault tolerance, service
-              limits and performance improvement.
             </div>
-            <div>
-              Expanding into another region; We create resources in a new
-              region;
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS Trusted Advisor
+              </h3>
+              <ul className='className="max-w-md list-inside list-disc space-y-1'>
+                <li>
+                  AWS Trusted Advisor
+                  <ul className='ml-5 className="max-w-md list-inside list-disc space-y-1'>
+                    <li>
+                      optimizes costs
+                    </li>
+                    <li>
+                      improve performance
+                    </li>
+                    <li>
+                      address security gaps
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/premiumsupport/technology/trusted-advisor/"
+                    target="_blank"
+                  >
+                    AWS Trusted Advisor
+                  </Link>
+                </li>
+                <li>
+                  AWS Trusted Advisor monitors & provides advises on
+                  <ul>
+                    <li>
+                      Compliance w/ security best practices
+                    </li>
+                    <li>
+                      Cost optimization
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Trusted Advisor will identify if unrestricted access to a resource
+                  has been allowed by a "Security Group"
+                </li>
+                <li>
+                  AWS Trusted Advisor can be run & review the findings with will
+                  Determine if any security groups in AWS have been provisioned to
+                  allow unrestricted access for specific ports by Ex. 2 categories:
+                  Instance Usage & Performance
+                </li>
+                <li>
+                  Use Trusted Advisor if a Security officer wants a list of any
+                  potential vulnerabilities in EC2
+                </li>
+                <li>
+                  AWS Trusted Advisor is an online tool that provides you real-time
+                  guidance to help you provision your resources following AWS best
+                  practices on cost optimization, security, fault tolerance, service
+                  limits and performance improvement.
+                </li>
+                <li>
+                  A highly available workload in AWS with a disaster recovery plan
+                  in case of a regional service interruption:
+                  <br /> run on 2 Availability
+                  Zones in one region & using another region for disaster recovery.
+                </li>
+              </ul>
             </div>
-            <div>
-              Regions & Availability Zones great white paper:
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://docs.aws.amazon.com/whitepapers/latest/get-started-documentdb/aws-regions-and-availability-zones.html"
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Regions & Availability Zones
+              </h3>
+              <ul className='className="max-w-md list-inside list-disc space-y-1'>
+                <li>
+                  Expanding into another region; We create resources in a new
+                  region;
+                </li>
+                <li>
+                  great white paper:
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://docs.aws.amazon.com/whitepapers/latest/get-started-documentdb/aws-regions-and-availability-zones.html"
+                    target="_blank"
+                  >
+                    AWS Regions and Availability Zones
+                  </Link>
+                </li>
+                <li>
+                  Availability Zones are interconnected with a region for low
+                  latency;
+                </li>
+                <li>
+                  AWS availability zones are one or more discrete data centers;
+                </li>
+                <li>
+                  a minimum of 2 zones must be provisioned to achieve high
+                  availability
+                </li>
+                <li>
+                  AWS Regions are separate geographic areas. They are
+                  an example of global infrastructure ex. when choosing AWS region
+                  take into consideration: reduced latency to users (important for
+                  UX) & Data sovereignty compliance
+                </li>
+              </ul>
+            </div>
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS Well architected framework - change management steps to
+                achieve reliability: AWS Certificate Manager is a service manages
+                SSL/TLS.
+              </h3>
+              <Link className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                 target="_blank"
-              >
-                AWS Regions and Availability Zones
+                href={'https://aws.amazon.com/certificate-manager/'} >AWS Certificate Manager
               </Link>
-              AWS availability zones are one or more discrete data centers; a
-              minimum of 2 zones must be provisioned to achieve high
-              availability AWS Regions are separate geographic areas. They are
-              an example of global infrastructure ex. when choosing AWS region
-              take into consideration: reduced latency to users (important for
-              UX) & Data sovereignty compliance
-              <br />
-              Availability Zones are interconnected with a region for low
-              latency;
-              <br />
             </div>
-            <div>
-              A highly available workload in AWS with a disaster recovery plan
-              in case of a regional service interruption: run on 2 Availability
-              Zones in one region & using another region for disaster recovery.
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Architecture Design Principles:
+              </h3>
+              <ul className='className="max-w-md list-inside list-disc space-y-1'>
+                <li>
+                  Automatically recover from failure: By monitoring a workload for key performance indicators (KPIs), you can run automation when a threshold is breached.
+                </li>
+                <li>
+                  * use fault-tolerant services; * use EBS elastic block store
+                  snapshots; * auto-scaling for auto-recovery * example of design
+                  for failure: distributing workloads across multiple availability
+                  zones
+                </li>
+                <li>
+                  * design for scalability - Design for failure principle |
+                </li>
+                <li>
+                  Implement loose coupling - between services can also be done by
+                  asynchronous integration.
+                </li>
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/design-principles.html"
+                    target="_blank"
+                  >
+                    AWS Design principles
+                  </Link>
+                </li>
+                <li>
+                  * ex. - using many instances in parallel is a good approach
+                  to transcoding a large number of video files.
+                </li>
+                <li>
+                  Design principles to improve operational workloads:
+                  <ul>
+                    <li>loose coupling</li>
+                    <li>disposable resources</li>
+                  </ul>
+                </li>
+                <li>
+                  use multiple availability zones
+                </li>
+                <li>
+                  Multi-site active-active is the DR disaster recovery which offers
+                  the lowest probability of down time; aka hot standby
+                </li>
+
+              </ul>
             </div>
-            <div>
-              AWS Well architected framework - change management steps to
-              achieve reliability: AWS Certificate Manager is a service manages
-              SSL/TLS.
-            </div>
-            <div>
-              Architecture Design Principles:
-              <br />* ex. - using many instances in parallel is a good approach
-              to transcoding a large number of video files.
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/design-principles.html"
-                target="_blank"
-              >
-                AWS Design principles
-              </Link>
-              - Implement Elasticity principle - ensure we scale up & down; ex.
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Implement Elasticity principle
+              </h3>
+              - ensure we scale up & down;
+              <br />ex.
               re-architecting a large monolithic app: * using individual
               components * Elasticity principle - "growth in users"
               <br /> * 2 concepts of elasticity: scaling # of EC2 instances
               based on traffic && resizing RDS instances as business needs
               change;
-              <br />
-              * design for scalability - Design for failure principle |
-              <br />
-              * use fault-tolerant services; * use EBS elastic block store
-              snapshots; * auto-scaling for auto-recovery * example of design
-              for failure: distributing workloads across multiple availability
-              zones
-              <br />
-              Implement loose coupling - between services can also be done by
-              asynchronous integration.
-              <br />
-              use multiple availability zones
-              <br />
-              Design principles to improve operational workloads:
-              <ul>
-                <li>loose coupling</li>
-                <li>disposable resources</li>
-              </ul>
             </div>
-            <div>
-              Multi-site active-active is the DR disaster recovery which offers
-              the lowest probability of down time; aka hot standby
-            </div>
-            <div>
-              Internet Gateway - is an allows inbound traffic from internet to
-              access a VPC;
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Internet Gateway  - is an allows inbound traffic from internet to
+                access a VPC;
+              </h3>
+              <br />
               <Link
                 className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                 href="https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html"
@@ -343,9 +540,15 @@ export default function Page() {
                 AWS Enable VPC internet access using internet gateways
               </Link>
             </div>
-            <div>
-              AWS Acceptable Use Policy - AUP - policy describes prohibited uses
-              of the web services offered by AWS
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS Acceptable Use Policy - AUP - policy describes prohibited uses
+                of the web services offered by AWS
+              </h3>
+              <br />
               <Link
                 className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                 href="https://aws.amazon.com/aup/"
@@ -354,15 +557,28 @@ export default function Page() {
                 AWS Acceptable Use Policy - AUP
               </Link>
             </div>
-            <div>
-              AWS Partner Solutions (formerly Quick Starts) - quickly deploy a
-              popular tech on AWS AWS Partner Solutions are automated reference
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS Partner Solutions (formerly Quick Starts) - quickly deploy a
+                popular tech on AWS
+              </h3>
+              <br />
+              AWS Partner Solutions are automated reference
               deployments built by Amazon Web Services (AWS) solutions
               architects and AWS Partners.
             </div>
-            <div>
-              The AWS Well-Architected Framework is based on six pillars
-              <ul>
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                The AWS Well-Architected Framework is based on six pillars
+              </h3>
+              <ul className='className="max-w-md list-inside list-disc space-y-1'>
                 <li>
                   Operational Excellence - includes the ability to run and
                   monitor systems to deliver business value and to continually
@@ -377,42 +593,42 @@ export default function Page() {
                 <li>Cost Optimization - focuses on avoiding un-needed costs</li>
                 <li>Sustainability.</li>
               </ul>
+              <br />
               Operational Excellence - pillar of the AWS Well-Architected
               Framework recommends maintaining infrastructure as code (IaC)
             </div>
-            <div>
-              APN Consulting Partner - is the global partner program for
-              technology and consulting businesses that leverage Amazon Web
-              Services to build solutions and services for customers
-              <br />
-              good for get expert professional advice on migrating to AWS and
-              managing their applications on AWS Cloud
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href=""
-                target="_blank"
-              ></Link>
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/partners/"
-                target="_blank"
-              >
-                Partners
-              </Link>
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                APN Consulting Partner - is the global partner program for
+                technology and consulting businesses that leverage Amazon Web
+                Services to build solutions and services for customers
+              </h3>
+              <ul className='className="max-w-md list-inside list-disc space-y-1'>
+                <li>
+                  good for get expert professional advice on migrating to AWS and
+                  managing their applications on AWS Cloud
+                </li>
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/partners/"
+                    target="_blank"
+                  >
+                    Partners
+                  </Link>
+                </li>
+              </ul>
             </div>
-            <div>
-              Massive economies of scale - pay-as-you-go prices is offered as a
-              benefit of AWS Cloud
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html"
-                target="_blank"
-              >
-                6 Advantages of Cloud Computing
-              </Link>
-            </div>
-            <div>
-              AWS Cloud Adoption Framework (AWS CAF)
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS Cloud Adoption Framework (AWS CAF)              </h3>
               <Link
                 className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                 href="https://aws.amazon.com/cloud-adoption-framework/"
@@ -420,11 +636,18 @@ export default function Page() {
               >
                 AWS Cloud Adoption Framework (AWS CAF)
               </Link>
+              <br />
+
               Roles: CTO & Engineer
             </div>
-            <div>
-              VPC peering connection - optimal way of privately sharing data
-              between the two VPCs
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                VPC peering connection - optimal way of privately sharing data
+                between the two VPCs
+              </h3>
               <Link
                 className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                 href="https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html"
@@ -440,12 +663,33 @@ export default function Page() {
           <br />
           ---------------- ----------------
           <div>
-            <div>
-              Security - Security-related services AWS offers: MFA physical
-              tokens; Data Encryption is often done with help of KMS
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              {/* <div className="flex flex-wrap items-center lg:flex-nowrap"> */}
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS Shared Responsibility model
+              </h3>
+              <ul className="text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li className="m-5">
+                </li>
+              </ul>
             </div>
+
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              {/* <div className="flex flex-wrap items-center lg:flex-nowrap"> */}
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Security - Security-related services AWS offers: MFA physical
+                tokens; Data Encryption is often done with help of KMS
+              </h3>
+            </div>
+
             <div>
-              AWS Shared Responsibility model
+
               <Link
                 className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                 href="https://docs.aws.amazon.com/whitepapers/latest/aws-risk-and-compliance/shared-responsibility-model.html"
