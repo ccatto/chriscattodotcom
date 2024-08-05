@@ -1797,11 +1797,7 @@ export default function Page() {
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                   Amazon GuardDuty is a threat detection service.
                 </h3>
-                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
-                  <li></li>
-                </ul>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -1811,16 +1807,13 @@ export default function Page() {
                   base: 2 services || features:
                 </h3>
                 <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>AWS CloudFront</li>
                   <li>
-                    <li>AWS CloudFront</li>
-                    <li>
-                      AWS Global Accelerator - improves performance for a wide
-                      range of app
-                    </li>
+                    AWS Global Accelerator - improves performance for a wide
+                    range of app
                   </li>
                 </ul>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -1840,7 +1833,6 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -1861,7 +1853,6 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -1882,7 +1873,6 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -1914,7 +1904,6 @@ export default function Page() {
                   <li>Inspector does not -Track configuration changes</li>
                 </ul>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -1935,7 +1924,6 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -1956,7 +1944,6 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -1978,7 +1965,6 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -2003,7 +1989,6 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -2023,7 +2008,6 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -2048,7 +2032,6 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -2071,7 +2054,6 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -2095,7 +2077,6 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -2116,7 +2097,6 @@ export default function Page() {
                   <li>Automatically convert speech to text</li>
                 </ul>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -2144,7 +2124,6 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -2164,7 +2143,6 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -2197,7 +2175,6 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -2222,7 +2199,6 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -2249,7 +2225,6 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -2270,7 +2245,6 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -2280,7 +2254,6 @@ export default function Page() {
                   your EC2 instance.
                 </h3>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -2298,34 +2271,66 @@ export default function Page() {
           <br />
           --- ---------------- -----------------------
           <div>
-            <div>
-              AWS Support Plans:
-              <br />
-              ex. Business - minimum that allows one hour response time
-              <br />
-              Minimum plan that provides technical support phone calls. 24/7
-              phone; email & chat to cloud support engineers.
-              <br />
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/premiumsupport/plans/"
-                target="_blank"
-              >
-                AWS Support Plans
-              </Link>
-              * Enterprise * Business * Developer * Basic
-              <br />
-              Enterprise - includes a dedicated Technical Account Manger
-              <br />
-              includes Infrastructure Event Management without additional costs.
-              <br />
-              AWS Concierge support team is the primary contact for billing &
-              account inquires for Enterprise level support.
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS Support Plans:
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>       <Link
+                  className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                  href="https://aws.amazon.com/premiumsupport/plans/"
+                  target="_blank"
+                >
+                  AWS Support Plans
+                </Link>
+                </li>
+                <li>
+                  Business
+                  <ul className='ml-5'>
+                    <li>
+                      minimum that allows one hour response time
+                    </li>
+                    <li>
+                      Minimum plan that provides technical support phone calls. 24/7
+                      phone; email & chat to cloud support engineers.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Enterprise
+                  <ul className='ml-5'>
+                    <li>
+                      includes a dedicated Technical Account Manger
+                    </li>
+                    <li>
+
+                      includes Infrastructure Event Management without additional costs.
+                    </li>
+                    <li>
+                      AWS Concierge support team is the primary contact for billing &
+                      account inquires for Enterprise level support.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Developer
+                </li>
+                <li>
+                  Basic
+                </li>
+              </ul>
             </div>
-            <div>
-              EC2 Pricing models:
-              <br />
-              <ul>
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                EC2 Pricing models:
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>
                   On-Demand - instances in EC2 Pricing model is MOST cost
                   efficient for an uninterruptible workload that runs once a
@@ -2350,7 +2355,7 @@ export default function Page() {
                 </li>
                 <li>
                   Spot instances
-                  <ul>
+                  <ul className='ml-5'>
                     <li>* can be interrupted; spot = interruptible jobs</li>
                     <li>* can save up to 90%;</li>
                     <li>adjusts based on demand;</li>
@@ -2372,46 +2377,78 @@ export default function Page() {
                   elasticity of AWS
                 </li>
               </ul>
-              <br />
-              There is a one-minute minimum charge for Linux based EC2
-              instances, so this is the correct option. Therefore is a user used
-              30 seconds we'll be charged for 60 seconds;
-              <br />
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/blogs/aws/new-per-second-billing-for-ec2-instances-and-ebs-volumes/"
-                target="_blank"
-              >
-                EC2 Billing
-              </Link>
-              <br />
-              Optimize EC2 costs:
-              <ul>
+            </div>
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+
+                There is a one-minute minimum charge for Linux based EC2
+                instances, so this is the correct option. Therefore is a user used
+                30 seconds we'll be charged for 60 seconds;
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/blogs/aws/new-per-second-billing-for-ec2-instances-and-ebs-volumes/"
+                    target="_blank"
+                  >
+                    EC2 Billing
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Optimize EC2 costs:
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>
                   Set up Auto Scaling groups to align the number of instances
                   with the demand
                 </li>
-                <li>Purchase Amazon EC2 Reserved instances (RIs)</li>
+                <li>
+                  Purchase Amazon EC2 Reserved instances (RIs)
+                </li>
               </ul>
             </div>
-            <div>
-              An app has flexible start & end times. EC2 pricing model which is
-              best would be "Spot Instances".
-              <br />
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/ec2/spot/"
-                target="_blank"
-              >
-                Amazon EC2 Spot Instances
-              </Link>
-              <br />
-              Spot instances optimizes costs; run hyperscale workloads & builds
-              sustainable solutions.
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                An app has flexible start & end times. EC2 pricing model which is
+                best would be "Spot Instances".
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/ec2/spot/"
+                    target="_blank"
+                  >
+                    Amazon EC2 Spot Instances
+                  </Link>
+                </li>
+                <li>
+                  Spot instances optimizes costs; run hyperscale workloads & builds
+                  sustainable solutions.
+                </li>
+              </ul>
             </div>
-            <div>
-              Optimize EC2 costs by:
-              <ul>
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Optimize EC2 costs by:
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>
                   Implementing Auto Scaling groups to add & remove instances
                   based on demand;
@@ -2419,139 +2456,233 @@ export default function Page() {
                 <li>Purchasing Reserved Instances</li>
               </ul>
             </div>
-            <div>
-              AWS Artifact - access AWS & ISV security & compliance reports
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/artifact/"
-                target="_blank"
-              >
-                AWS Artifact
-              </Link>
-              <br />
-              ex. we can download compliance & certification reports;
-            </div>
-            <div>
-              BILLING AWS Organizations - centrally manage environments &
-              multiple AWS accounts
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/organizations/"
-                target="_blank"
-              >
-                AWS Organizations
-              </Link>
-              ex. if customer is using multiple AWS accounts with separate
-              billing to take advantage of volume discounts
-              <br />
-              ex. if each company dept. has own AWS account to consolidate
-              billing we could create an AWS Organization & invite the others.
-              <br />
-              Best practices for AWS Orgs:
-              <ul>
-                <li>Create AWS accounts per department</li>
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS Artifact - access AWS & ISV security & compliance reports
+
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>
-                  Restrict account privileges using Service Control Policies
-                  (SCP)
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/artifact/"
+                    target="_blank"
+                  >
+                    AWS Artifact
+                  </Link>
+                </li>
+                <li>
+                  ex. we can download compliance & certification reports;
                 </li>
               </ul>
             </div>
-            <div>Hosting models: Dedicated hosts ~= physical isolation;</div>
-            <div>
-              ex. Cost allocation tags is good to track & categorize spending?
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html"
-                target="_blank"
-              >
-                Cost Allocation Tags
-              </Link>
-              ex. Volume pricing qualifications is an advantage of consolidated
-              billing;
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                BILLING AWS Organizations - centrally manage environments &
+                multiple AWS accounts
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/organizations/"
+                    target="_blank"
+                  >
+                    AWS Organizations
+                  </Link>
+                </li>
+                <li>
+                  ex. if customer is using multiple AWS accounts with separate
+                  billing to take advantage of volume discounts
+                </li>
+                <li>
+                  ex. if each company dept. has own AWS account to consolidate
+                  billing we could create an AWS Organization & invite the others.
+                </li>
+                <li>
+                  Best practices for AWS Orgs:
+                  <ul className='ml-5'>
+                    <li>Create AWS accounts per department</li>
+                    <li>
+                      Restrict account privileges using Service Control Policies
+                      (SCP)
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
-            <div>
-              AWS Cost & Usage tool give most granular insight into cost &
-              usage.
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting/"
-                target="_blank"
-              >
-                AWS Cost & Usage tool
-              </Link>
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Hosting models: Dedicated hosts ~= physical isolation;
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  ex. Cost allocation tags is good to track & categorize spending?
+                </li>
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html"
+                    target="_blank"
+                  >
+                    Cost Allocation Tags
+                  </Link>
+                </li>
+                <li>
+                  ex. Volume pricing qualifications is an advantage of consolidated
+                  billing;
+                </li>
+              </ul>
             </div>
-            <div>
-              Massive economies of scale - customers can benefit - periodic
-              price reductions as the result of Amazon's operational
-              efficiencies.
-              <br />
-              The massive scale at which AWS operates also benefits customers -
-              ever increasing economies of scale enables them to continually
-              reduce the pricing of compute and storage services.
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS Cost & Usage tool give most granular insight into cost &
+                usage.
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting/"
+                    target="_blank"
+                  >
+                    AWS Cost & Usage tool
+                  </Link>
+                </li>
+              </ul>
             </div>
-            <div>
-              Moving from on-premises data center to AWS cloud - one financial
-              difference will be: * moving from upfront Capital Expense CAPEX to
-              variable operational expense OPEX - trade CapEx for OpEx
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Massive economies of scale - customers can benefit - periodic
+                price reductions as the result of Amazon's operational
+                efficiencies.
+                <br />
+                The massive scale at which AWS operates also benefits customers -
+                ever increasing economies of scale enables them to continually
+                reduce the pricing of compute and storage services.
+              </h3>
             </div>
-            <div>
-              AWS simple Monthly Calculator - can be used to forecast the future
-              costs of running a new web app. It's a new app so the cost
-              explorer is used to predict cost.
-              <br />
-              AWS Cost Explorer - used to forecast your AWS account usage and
-              costs
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/aws-cost-management/aws-cost-explorer/"
-                target="_blank"
-              >
-                AWS Cost Explorer
-              </Link>
-              <br />* Visualize, understand, and manage your AWS costs and usage
-              over time
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Moving from on-premises data center to AWS cloud - one financial
+                difference will be:
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  * moving from upfront Capital Expense CAPEX to
+                  variable operational expense OPEX - trade CapEx for OpEx
+                </li>
+              </ul>
             </div>
-            <div>
-              TOC total cost of ownership from on-prem vs AWS cloud 2 expenses
-              considered are: * storage hardware * physical servers
-              <br />
-              2 factors doing TOC total cost of ownership when moving from
-              on-premises to AWS cloud:
-              <br />
-              * power consumption
-              <br />
-              * Labor costs to replace old servers
-              <br />
-              AWS Total Cost of Ownership (TCO) calculator allows us to estimate
-              the cost saving when using AWS && if a company perform a cost
-              benefit analysis of migrating to AWS;
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS simple Monthly Calculator - can be used to forecast the future
+                costs of running a new web app. It's a new app so the cost
+                explorer is used to predict cost.
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                </li>
+              </ul>
             </div>
-            <div>
-              Migrating production workloads to the AWS cloud to reduce
-              operational costs:
-              <ul>
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS Cost Explorer - used to forecast your AWS account usage and
+                costs
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/aws-cost-management/aws-cost-explorer/"
+                    target="_blank"
+                  >
+                    AWS Cost Explorer
+                  </Link>
+                </li>
+                <li>
+                  * Visualize, understand, and manage your AWS costs and usage
+                  over time
+                </li>
+              </ul>
+            </div>
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                TOC total cost of ownership from on-prem vs AWS cloud 2 expenses
+                considered are: * storage hardware * physical servers
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  2 factors doing TOC total cost of ownership when moving from
+                  on-premises to AWS cloud:
+                </li>
+                <li>
+                  * power consumption
+                </li>
+                <li>
+                  * Labor costs to replace old servers
+                </li>
+                <li>
+                  AWS Total Cost of Ownership (TCO) calculator allows us to estimate
+                  the cost saving when using AWS && if a company perform a cost
+                  benefit analysis of migrating to AWS;
+                </li>
+              </ul>
+            </div>
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Migrating production workloads to the AWS cloud to reduce
+                operational costs:
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>Reduce overprovisioned instances</li>
                 <li>Use managed services</li>
               </ul>
             </div>
-            <div>
-              AWS Pricing Calculator - compare the cost of running their IT
-              infrastructure on-premises vs AWS Cloud. AWS Pricing Calculator
-              lets you explore AWS services and create an estimate for the cost
-              of your use cases on AWS
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS Pricing Calculator - compare the cost of running their IT
+                infrastructure on-premises vs AWS Cloud. AWS Pricing Calculator
+                lets you explore AWS services and create an estimate for the cost
+                of your use cases on AWS
+              </h3>
             </div>
           </div>
         </div>
       </div>
     </>
   );
-}
-
-{
-  /* <Link
-  className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-  href=""
-  target="_blank">
- 
-</Link> */
 }
