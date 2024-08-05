@@ -2279,48 +2279,42 @@ export default function Page() {
                 AWS Support Plans:
               </h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
-                <li>       <Link
-                  className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                  href="https://aws.amazon.com/premiumsupport/plans/"
-                  target="_blank"
-                >
-                  AWS Support Plans
-                </Link>
+                <li>
+                  {' '}
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/premiumsupport/plans/"
+                    target="_blank"
+                  >
+                    AWS Support Plans
+                  </Link>
                 </li>
                 <li>
                   Business
-                  <ul className='ml-5'>
+                  <ul className="ml-5">
+                    <li>minimum that allows one hour response time</li>
                     <li>
-                      minimum that allows one hour response time
-                    </li>
-                    <li>
-                      Minimum plan that provides technical support phone calls. 24/7
-                      phone; email & chat to cloud support engineers.
+                      Minimum plan that provides technical support phone calls.
+                      24/7 phone; email & chat to cloud support engineers.
                     </li>
                   </ul>
                 </li>
                 <li>
                   Enterprise
-                  <ul className='ml-5'>
+                  <ul className="ml-5">
+                    <li>includes a dedicated Technical Account Manger</li>
                     <li>
-                      includes a dedicated Technical Account Manger
+                      includes Infrastructure Event Management without
+                      additional costs.
                     </li>
                     <li>
-
-                      includes Infrastructure Event Management without additional costs.
-                    </li>
-                    <li>
-                      AWS Concierge support team is the primary contact for billing &
-                      account inquires for Enterprise level support.
+                      AWS Concierge support team is the primary contact for
+                      billing & account inquires for Enterprise level support.
                     </li>
                   </ul>
                 </li>
-                <li>
-                  Developer
-                </li>
-                <li>
-                  Basic
-                </li>
+                <li>Developer</li>
+                <li>Basic</li>
               </ul>
             </div>
             <div
@@ -2355,7 +2349,7 @@ export default function Page() {
                 </li>
                 <li>
                   Spot instances
-                  <ul className='ml-5'>
+                  <ul className="ml-5">
                     <li>* can be interrupted; spot = interruptible jobs</li>
                     <li>* can save up to 90%;</li>
                     <li>adjusts based on demand;</li>
@@ -2383,10 +2377,9 @@ export default function Page() {
               role="alert"
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-
                 There is a one-minute minimum charge for Linux based EC2
-                instances, so this is the correct option. Therefore is a user used
-                30 seconds we'll be charged for 60 seconds;
+                instances, so this is the correct option. Therefore is a user
+                used 30 seconds we'll be charged for 60 seconds;
               </h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>
@@ -2412,9 +2405,7 @@ export default function Page() {
                   Set up Auto Scaling groups to align the number of instances
                   with the demand
                 </li>
-                <li>
-                  Purchase Amazon EC2 Reserved instances (RIs)
-                </li>
+                <li>Purchase Amazon EC2 Reserved instances (RIs)</li>
               </ul>
             </div>
             <div
@@ -2422,8 +2413,8 @@ export default function Page() {
               role="alert"
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                An app has flexible start & end times. EC2 pricing model which is
-                best would be "Spot Instances".
+                An app has flexible start & end times. EC2 pricing model which
+                is best would be "Spot Instances".
               </h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>
@@ -2436,8 +2427,8 @@ export default function Page() {
                   </Link>
                 </li>
                 <li>
-                  Spot instances optimizes costs; run hyperscale workloads & builds
-                  sustainable solutions.
+                  Spot instances optimizes costs; run hyperscale workloads &
+                  builds sustainable solutions.
                 </li>
               </ul>
             </div>
@@ -2462,7 +2453,6 @@ export default function Page() {
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 AWS Artifact - access AWS & ISV security & compliance reports
-
               </h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>
@@ -2474,9 +2464,7 @@ export default function Page() {
                     AWS Artifact
                   </Link>
                 </li>
-                <li>
-                  ex. we can download compliance & certification reports;
-                </li>
+                <li>ex. we can download compliance & certification reports;</li>
               </ul>
             </div>
             <div
@@ -2503,11 +2491,12 @@ export default function Page() {
                 </li>
                 <li>
                   ex. if each company dept. has own AWS account to consolidate
-                  billing we could create an AWS Organization & invite the others.
+                  billing we could create an AWS Organization & invite the
+                  others.
                 </li>
                 <li>
                   Best practices for AWS Orgs:
-                  <ul className='ml-5'>
+                  <ul className="ml-5">
                     <li>Create AWS accounts per department</li>
                     <li>
                       Restrict account privileges using Service Control Policies
@@ -2526,7 +2515,8 @@ export default function Page() {
               </h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>
-                  ex. Cost allocation tags is good to track & categorize spending?
+                  ex. Cost allocation tags is good to track & categorize
+                  spending?
                 </li>
                 <li>
                   <Link
@@ -2538,8 +2528,8 @@ export default function Page() {
                   </Link>
                 </li>
                 <li>
-                  ex. Volume pricing qualifications is an advantage of consolidated
-                  billing;
+                  ex. Volume pricing qualifications is an advantage of
+                  consolidated billing;
                 </li>
               </ul>
             </div>
@@ -2572,8 +2562,8 @@ export default function Page() {
                 price reductions as the result of Amazon's operational
                 efficiencies.
                 <br />
-                The massive scale at which AWS operates also benefits customers -
-                ever increasing economies of scale enables them to continually
+                The massive scale at which AWS operates also benefits customers
+                - ever increasing economies of scale enables them to continually
                 reduce the pricing of compute and storage services.
               </h3>
             </div>
@@ -2587,8 +2577,8 @@ export default function Page() {
               </h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>
-                  * moving from upfront Capital Expense CAPEX to
-                  variable operational expense OPEX - trade CapEx for OpEx
+                  * moving from upfront Capital Expense CAPEX to variable
+                  operational expense OPEX - trade CapEx for OpEx
                 </li>
               </ul>
             </div>
@@ -2597,13 +2587,12 @@ export default function Page() {
               role="alert"
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                AWS simple Monthly Calculator - can be used to forecast the future
-                costs of running a new web app. It's a new app so the cost
-                explorer is used to predict cost.
+                AWS simple Monthly Calculator - can be used to forecast the
+                future costs of running a new web app. It's a new app so the
+                cost explorer is used to predict cost.
               </h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
-                <li>
-                </li>
+                <li></li>
               </ul>
             </div>
             <div
@@ -2643,16 +2632,12 @@ export default function Page() {
                   2 factors doing TOC total cost of ownership when moving from
                   on-premises to AWS cloud:
                 </li>
+                <li>* power consumption</li>
+                <li>* Labor costs to replace old servers</li>
                 <li>
-                  * power consumption
-                </li>
-                <li>
-                  * Labor costs to replace old servers
-                </li>
-                <li>
-                  AWS Total Cost of Ownership (TCO) calculator allows us to estimate
-                  the cost saving when using AWS && if a company perform a cost
-                  benefit analysis of migrating to AWS;
+                  AWS Total Cost of Ownership (TCO) calculator allows us to
+                  estimate the cost saving when using AWS && if a company
+                  perform a cost benefit analysis of migrating to AWS;
                 </li>
               </ul>
             </div>
@@ -2676,8 +2661,8 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 AWS Pricing Calculator - compare the cost of running their IT
                 infrastructure on-premises vs AWS Cloud. AWS Pricing Calculator
-                lets you explore AWS services and create an estimate for the cost
-                of your use cases on AWS
+                lets you explore AWS services and create an estimate for the
+                cost of your use cases on AWS
               </h3>
             </div>
           </div>
