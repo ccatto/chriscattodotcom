@@ -433,8 +433,11 @@ export default function Page() {
                 AWS Well architected framework - change management steps to
                 achieve reliability:
                 <br />
-                AWS Certificate Manager ACM is a service
-                manages SSL/TLS. AWS Certificate Manager is a service that lets you easily provision, manage, and deploy public and private Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificates for use with AWS services and your internal connected resources.
+                AWS Certificate Manager ACM is a service manages SSL/TLS. AWS
+                Certificate Manager is a service that lets you easily provision,
+                manage, and deploy public and private Secure Sockets
+                Layer/Transport Layer Security (SSL/TLS) certificates for use
+                with AWS services and your internal connected resources.
               </h3>
               <Link
                 className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -850,10 +853,14 @@ export default function Page() {
               </h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>
-                  AWS WAF -  is a web application firewall that helps protect your web applications or APIs against common web exploits that may affect availability, compromise security, or consume excessive resources.
+                  AWS WAF - is a web application firewall that helps protect
+                  your web applications or APIs against common web exploits that
+                  may affect availability, compromise security, or consume
+                  excessive resources.
                 </li>
                 <li>
-                  AWS Shield is only used to safeguard running applications from DDoS attacks.
+                  AWS Shield is only used to safeguard running applications from
+                  DDoS attacks.
                 </li>
                 <li>
                   <Link
@@ -863,7 +870,6 @@ export default function Page() {
                   >
                     AWS Shield
                   </Link>
-
                 </li>
               </ul>
             </div>
@@ -905,33 +911,17 @@ export default function Page() {
                 </Link>
               </h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
-                <li>
-                  Actions only by root user:
-                </li>
-                <li>
-                  Change account settings
-                </li>
-                <li>
-                  Close Account
-                </li>
-                <li>
-                  Change or cancel AWS Support plan
-                </li>
-                <li>
-                  Register as a seller in Reserved Instances Marketplace
-                </li>
-                <li>
-                  view tax invoices
-                </li>
-                <li>
-                  Restore IAM user permissions
-                </li>
+                <li>Actions only by root user:</li>
+                <li>Change account settings</li>
+                <li>Close Account</li>
+                <li>Change or cancel AWS Support plan</li>
+                <li>Register as a seller in Reserved Instances Marketplace</li>
+                <li>view tax invoices</li>
+                <li>Restore IAM user permissions</li>
                 <li>
                   Config S3 to enable MFA & edit S3 that include invalid VPC ID
                 </li>
-                <li>
-                  Sign up for GovCloud
-                </li>
+                <li>Sign up for GovCloud</li>
               </ul>
             </div>
           </div>
@@ -1054,7 +1044,9 @@ export default function Page() {
                   </Link>
                 </li>
                 <li>
-                  Amazon GuardDuty is a threat detection service that continuously monitors for malicious activity and unauthorized behavior to protect your AWS accounts and workloads.
+                  Amazon GuardDuty is a threat detection service that
+                  continuously monitors for malicious activity and unauthorized
+                  behavior to protect your AWS accounts and workloads.
                 </li>
               </ul>
             </div>
@@ -1254,7 +1246,9 @@ export default function Page() {
                   create & control keys used to encrypt or digitally sign data;
                 </li>
                 <li>
-                  AWS KMS is a managed service that enables you to easily create and control the keys used for cryptographic operations. It is managed by AWS.
+                  AWS KMS is a managed service that enables you to easily create
+                  and control the keys used for cryptographic operations. It is
+                  managed by AWS.
                 </li>
               </ul>
             </div>
@@ -2062,11 +2056,13 @@ export default function Page() {
                       <li>Automate security assessments</li>
                     </ul>
                   </li>
+                  <li>Inspector does not -Track configuration changes</li>
                   <li>
-                    Inspector does not -Track configuration changes
-                  </li>
-                  <li>
-                    Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS. It helps you test the network accessibility of your Amazon EC2 instances and the security state of your applications running on the instances.
+                    Amazon Inspector is an automated security assessment service
+                    that helps improve the security and compliance of
+                    applications deployed on AWS. It helps you test the network
+                    accessibility of your Amazon EC2 instances and the security
+                    state of your applications running on the instances.
                   </li>
                 </ul>
               </div>
@@ -2491,7 +2487,8 @@ export default function Page() {
                 role="alert"
               >
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                  Amazon Detective - quickly find the root of potential security issues to take faster actions
+                  Amazon Detective - quickly find the root of potential security
+                  issues to take faster actions
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                     href="https://aws.amazon.com/detective/"
@@ -2501,7 +2498,6 @@ export default function Page() {
                   </Link>
                 </h3>
               </div>
-
             </div>
           </div>
           ---------------- -----------------------
