@@ -166,17 +166,17 @@ export default function Page() {
                   ability to scale up & down during peek times;
                 </li>
                 <li>
-                  <div>
-                    Massive economies of scale - pay-as-you-go prices is offered
-                    as a benefit of AWS Cloud
-                    <Link
-                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                      href="https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html"
-                      target="_blank"
-                    >
-                      6 Advantages of Cloud Computing
-                    </Link>
-                  </div>
+                  Massive economies of scale - pay-as-you-go prices is offered
+                  as a benefit of AWS Cloud
+                </li>
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html"
+                    target="_blank"
+                  >
+                    6 Advantages of Cloud Computing
+                  </Link>
                 </li>
               </ul>
               {/* </div> */}
@@ -310,11 +310,14 @@ export default function Page() {
                   </Link>
                 </li>
                 <li>
-                  select a pre-configured templated AMI Amazon Machine Image
+                  Select a pre-configured templated AMI Amazon Machine Image
                 </li>
                 <li>We must use AMI from the same region as EC2;</li>
                 <li>
-                  the region of AMI has no bearing on the performance of EC2;
+                  The region of AMI has no bearing on the performance of EC2;
+                </li>
+                <li>
+                  An Amazon Machine Image (AMI) provides the information required to launch an instance.
                 </li>
               </ul>
             </div>
@@ -375,6 +378,9 @@ export default function Page() {
                   plan in case of a regional service interruption:
                   <br /> run on 2 Availability Zones in one region & using
                   another region for disaster recovery.
+                </li>
+                <li>
+                  Trusted Advisor can help us analyze your infrastructure to identify unattached or underutilized Amazon EBS Elastic Volumes
                 </li>
               </ul>
             </div>
@@ -546,11 +552,20 @@ export default function Page() {
                 AWS Partner Solutions (formerly Quick Starts) - quickly deploy a
                 popular tech on AWS
               </h3>
-              <br />
-              AWS Partner Solutions are automated reference deployments built by
-              Amazon Web Services (AWS) solutions architects and AWS Partners.
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  AWS Partner Solutions are automated reference deployments built by
+                  Amazon Web Services (AWS) solutions architects and AWS Partners.
+                </li>
+                <Link
+                  className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                  href="https://aws.amazon.com/startups/partner-solutions"
+                  target="_blank"
+                >
+                  AWS Partner Solutions - Startups
+                </Link>
+              </ul>
             </div>
-
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -563,6 +578,9 @@ export default function Page() {
                   Operational Excellence - includes the ability to run and
                   monitor systems to deliver business value and to continually
                   improve supporting processes and procedures.
+                  <br />
+                  pillar of the AWS Well-Architected
+                  Framework recommends maintaining infrastructure as code (IaC)
                 </li>
                 <li>Security - focuses on protecting information & systems</li>
                 <li>Reliability,</li>
@@ -573,9 +591,6 @@ export default function Page() {
                 <li>Cost Optimization - focuses on avoiding un-needed costs</li>
                 <li>Sustainability.</li>
               </ul>
-              <br />
-              Operational Excellence - pillar of the AWS Well-Architected
-              Framework recommends maintaining infrastructure as code (IaC)
             </div>
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -670,7 +685,6 @@ export default function Page() {
                       access through security groups;
                     </li>
                   </ul>
-
                   <li>AWS responsibility:</li>
                   <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                     <li>AWS responsible for security "OF" the cloud:</li>
@@ -745,9 +759,7 @@ export default function Page() {
                   instance;
                 </h3>
               </div>
-              <div></div>
             </div>
-
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -755,18 +767,27 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 SECURITY Steps taken when conducting penetration testing on AWS?
               </h3>
-              <Link
-                className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                href="https://aws.amazon.com/security/penetration-testing/"
-                target="_blank"
-              >
-                Penetration Testing
-              </Link>
-              We request & wait for approval from AWS internal security team.
-              <br />
-              Penetration Tests || security assessments
+              <ul className="text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/security/penetration-testing/"
+                    target="_blank"
+                  >
+                    Penetration Testing
+                  </Link>
+                </li>
+                <li>
+                  We request & wait for approval from AWS internal security team.
+                </li>
+                <li>
+                  Penetration Tests || security assessments
+                </li>
+                <li>
+                  AWS customers can carry out security assessments or penetration tests against their AWS infrastructure without prior approval for few common AWS services.
+                </li>
+              </ul>
             </div>
-
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -777,7 +798,6 @@ export default function Page() {
                 your computer.
               </h3>
             </div>
-
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -787,7 +807,6 @@ export default function Page() {
                 physical device - generates a six-digit numeric code
               </h3>
             </div>
-
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -803,6 +822,11 @@ export default function Page() {
                   AWS CloudHSM
                 </Link>
               </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  AWS CloudHSM is a cloud-based Hardware Security Module (HSM) that enables you to easily generate and use your encryption keys on the AWS Cloud.
+                </li>
+              </ul>
             </div>
           </div>
           ---------------- -----------------------
@@ -847,6 +871,9 @@ export default function Page() {
                 <li>
                   Connect your existing workforce identity source and centrally
                   manage access to AWS
+                </li>
+                <li>
+                  Always free to use IAM ||  IAM enables us to manage access to AWS services & resources securely. Using IAM, we can create & manage AWS users & groups, & use permissions to allow & deny their access to AWS resources. IAM is a feature of your AWS account offered at no additional charge.
                 </li>
               </ul>
             </div>
@@ -949,7 +976,7 @@ export default function Page() {
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 Read Replicas provide enhanced performance and durability for
-                Amazon RDS database (DB) instance
+                Amazon RDS database (DB) instance & improves scalability
               </h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>
@@ -971,7 +998,6 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1217,6 +1243,9 @@ export default function Page() {
                   * ex. provides a customized view of the health of specific AWS
                   services that power a customers workloads running on AWS.
                 </li>
+                <li>
+                  AWS Health - Your Account Health Dashboard | gives a personalized view of the status of the AWS services that are part of your Cloud architecture so that you can quickly assess the impact on your business when AWS service(s) are experiencing issues
+                </li>
               </ul>
             </div>
 
@@ -1275,6 +1304,9 @@ export default function Page() {
                   >
                     AWS Marketplace
                   </Link>
+                </li>
+                <li>
+                  Sell Software as a Service (SaaS) solutions to AWS customers
                 </li>
               </ul>
             </div>
@@ -1413,7 +1445,12 @@ export default function Page() {
                     Hosting a static website using Amazon S3
                   </Link>
                 </li>
-                <li>S3 One Zone-IA used to store thumbnails images</li>
+                <li>
+                  S3 One Zone-IA used to store thumbnails images
+                </li>
+                <li>
+                  Use Amazon S3 One Zone-Infrequent Access (S3 One Zone-IA) to store the thumbnails
+                </li>
                 <li>
                   Amazon S3 One Zone-Infrequent Access (S3 One Zone-IA) is for
                   data that is accessed less frequently but requires rapid
@@ -1448,6 +1485,8 @@ export default function Page() {
                 <li>
                   Weighted routing - lets you associate multiple resources with
                   a single domain name
+                  <br />
+                  Weighted routing is an AWS Route 53 routing policy would you use to route traffic to multiple resources and also choose how much traffic is routed to each resource
                 </li>
                 <li>
                   Failover routing - This routing policy is used when you want
@@ -1549,6 +1588,9 @@ export default function Page() {
                     Amazon CloudWatch Logs to monitor, store, log files from
                     EC2; on-premises servers & many others;
                   </li>
+                  <li>
+                    CloudWatch Logs are good for a company to centralize the server logs for its EC2 instances & on-premises servers
+                  </li>
                 </ul>
               </div>
 
@@ -1599,6 +1641,15 @@ export default function Page() {
                       <li>Fault tolerance</li>
                       <li>High Availability</li>
                     </ul>
+                  </li>
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://aws.amazon.com/elasticloadbalancing/"
+                      target="_blank"
+                    >
+                      Elastic Load Balancing (ELB)
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -1700,7 +1751,7 @@ export default function Page() {
                     </Link>
                   </li>
                   <li>
-                    Encrypted by default - ge. All data transferred between the
+                    Encrypted by default - All data transferred between the
                     gateway and AWS storage is encrypted using SSL
                   </li>
                 </ul>
@@ -1894,14 +1945,20 @@ export default function Page() {
                   <li>
                     Inspector does:
                     <ul className="ml-5">
-                      <li>* inspect OS against vulnerabilities</li>
                       <li>
-                        * Analyze against unintended network accessibility
+                        inspect OS against vulnerabilities
                       </li>
-                      <li>* Automate security assessments</li>
+                      <li>
+                        Analyze against unintended network accessibility
+                      </li>
+                      <li>
+                        Automate security assessments
+                      </li>
                     </ul>
                   </li>
-                  <li>Inspector does not -Track configuration changes</li>
+                  <li>
+                    Inspector does not -Track configuration changes
+                  </li>
                 </ul>
               </div>
               <div
@@ -2005,6 +2062,9 @@ export default function Page() {
                     >
                       AWS ECS - Elastic Container Service
                     </Link>
+                  </li>
+                  <li>
+                    Amazon Elastic Container Service (Amazon ECS) is a highly scalable, fast, container management service that makes it easy to run, stop, and manage Docker containers on a cluster.
                   </li>
                 </ul>
               </div>
@@ -2141,6 +2201,9 @@ export default function Page() {
                       Amazon Macie
                     </Link>
                   </li>
+                  <li>
+                    Amazon Macie is a fully managed data security and data privacy service that uses machine learning and pattern matching to discover and protect your sensitive data in AWS.
+                  </li>
                 </ul>
               </div>
               <div
@@ -2197,6 +2260,9 @@ export default function Page() {
                       AWS X-Ray
                     </Link>
                   </li>
+                  <li>
+                    Debug performance issues for its serverless application built using a microservices architecture
+                  </li>
                 </ul>
               </div>
               <div
@@ -2222,6 +2288,9 @@ export default function Page() {
                     AWS Systems Manager get operational insights of its
                     resources to quickly identify any issues that might impact
                     applications using those resources
+                  </li>
+                  <li>
+                    AWS Systems Manager Session Manager is a fully-managed service that provides you with an interactive browser-based shell and CLI experience.
                   </li>
                 </ul>
               </div>
@@ -2261,6 +2330,8 @@ export default function Page() {
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                   AWS Local Zones - deliver a consistent low-latency for
                   end-users in various locations
+                  <br/>
+                  AWS Local Zones allow you to use select AWS services, like compute and storage services, closer to more end-users, providing them very low latency access to the applications running locally.
                 </h3>
               </div>
             </div>
@@ -2334,7 +2405,7 @@ export default function Page() {
                   EC2 pricing is paying only for time used.
                 </li>
                 <li>
-                  Reserved -
+                  Reserved Instances - RI
                   <br />
                   long term never interrupted.
                   <br />
@@ -2378,7 +2449,7 @@ export default function Page() {
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 There is a one-minute minimum charge for Linux based EC2
-                instances, so this is the correct option. Therefore is a user
+                instances. Therefore if a user
                 used 30 seconds we'll be charged for 60 seconds;
               </h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
@@ -2497,7 +2568,9 @@ export default function Page() {
                 <li>
                   Best practices for AWS Orgs:
                   <ul className="ml-5">
-                    <li>Create AWS accounts per department</li>
+                    <li>
+                      Create AWS accounts per department
+                    </li>
                     <li>
                       Restrict account privileges using Service Control Policies
                       (SCP)
@@ -2660,9 +2733,13 @@ export default function Page() {
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 AWS Pricing Calculator - compare the cost of running their IT
-                infrastructure on-premises vs AWS Cloud. AWS Pricing Calculator
+                infrastructure on-premises vs AWS Cloud.
+                <br />
+                AWS Pricing Calculator
                 lets you explore AWS services and create an estimate for the
                 cost of your use cases on AWS
+                <br />
+                AWS Pricing Calculator can be used to forecast your AWS account usage and costs
               </h3>
             </div>
           </div>
