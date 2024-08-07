@@ -177,6 +177,26 @@ export default function Page() {
                     6 Advantages of Cloud Computing
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/what-is-cloud-computing/"
+                    target="_blank"
+                  >
+                    Cloud Computing - overview
+                  </Link>
+                </li>
+                <li>
+                  Compute, Storage, and data transfer out of the AWS Cloud are
+                  the 3 pricing fundamentals of the AWS Cloud.
+                </li>
+                <li>
+                  Capacity is unlimited in the cloud, you do not need to worry
+                  about it. The 4 points of considerations when choosing an AWS
+                  Region are: compliance with data governance and legal
+                  requirements, proximity to customers, available services and
+                  features within a Region, and pricing.
+                </li>
               </ul>
             </div>
             <div>
@@ -272,7 +292,9 @@ export default function Page() {
                 Application Load Balancer
               </h3>
               <ul className='className="max-w-md list-inside list-disc space-y-1'>
-                <li>groups help achieve high availability for a web</li>
+                <li>
+                  groups help achieve high availability for a web
+                </li>
               </ul>
               app by automagically adding or replace instances across multiple
               Availability Zones. ASGs add & removed instances based on Demand.
@@ -287,6 +309,18 @@ export default function Page() {
               >
                 EC2 Auto Scaling
               </Link>
+              <div>
+                EC2 Instance Store has a better I/O performance, but data is lost if: the EC2 instance is stopped or terminated, or when the underlying disk drive fails.
+              </div>
+              <div>
+                An Auto Scaling Group (ASG) can automatically and quickly scale-in and scale-out to match the changing load on your applications and websites.
+              </div>
+              <div>
+                Auto Scaling Groups (ASG)  offers easy horizontal scaling of compute capacity && offers the capacity to scale-out and scale-in by adding or removing instances based on demand.
+              </div>
+              <div>
+                Auto Scaling Groups can add or remove instances, but from the same type. They cannot change the EC2 Instances Types on the fly.
+              </div>
             </div>
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -670,7 +704,8 @@ export default function Page() {
                 role="alert"
               >
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                  AWS Shared Responsibility model
+                  AWS Shared Responsibility model - The Shared Responsibility
+                  Model defines who is responsible for what in the AWS Cloud.
                 </h3>
                 <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                   <li>Customers responsibility:</li>
@@ -689,6 +724,10 @@ export default function Page() {
                     <li>
                       Using RDS customer is responsible for controlling network
                       access through security groups;
+                    </li>
+                    <li>
+                      Customers are responsible for defining and using IAM
+                      policies.
                     </li>
                   </ul>
                   <li>AWS responsibility:</li>
@@ -975,9 +1014,21 @@ export default function Page() {
                   their access to AWS resources. IAM is a feature of your AWS
                   account offered at no additional charge.
                 </li>
+                <li>
+                  IAM Credentials report is a Security tool that lists all your
+                  account's users and the status of their various credentials.
+                  The other IAM Security Tool is IAM Access Advisor. It shows
+                  the service permissions granted to a user and when those
+                  services were last accessed.
+                </li>
+                <li>
+                  An IAM policy is an entity that, when attached to an identity
+                  or resource, defines their permissions. JSON docs to define
+                  users; groups || roles permissions;
+                </li>
+                <li>IAM is a global service (encompasses all regions).</li>
               </ul>
             </div>
-
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -992,7 +1043,6 @@ export default function Page() {
                 <li>can be used to host MS SQL Server</li>
               </ul>
             </div>
-
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1021,9 +1071,11 @@ export default function Page() {
                   ensure that its AWS account activity meets the governance,
                   compliance and auditing norms
                 </li>
+                <li>
+                  CloudTrail can record the history of events/API calls made within you AWS account, which will help determine who or what deleted the resource. You should investigate it first.
+                </li>
               </ul>
             </div>
-
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1050,7 +1102,6 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1072,9 +1123,14 @@ export default function Page() {
                     AWS RDB
                   </Link>
                 </li>
+                <li>
+                  suited for OLTP workloads
+                </li>
+                <li>
+                  RDS Multi-AZ deployments’ main purpose is high availability, while RDS Read replicas’ main purpose is scalability.
+                </li>
               </ul>
             </div>
-
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1130,9 +1186,14 @@ export default function Page() {
                   CloudFormation can provision the same AWS infrastructure
                   across multiple regions.
                 </li>
+                <li>
+                  AWS CloudFormation templates are JSON or YAML-formatted text files. They are declarations of the AWS resources that make up a stack.
+                </li>
+                <li>
+                  CloudFormation is free of use; but we do pay for the resources created.
+                </li>
               </ul>
             </div>
-
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1150,10 +1211,26 @@ export default function Page() {
                     AWS CodeDeploy
                   </Link>
                 </li>
-                <li>Automate code deployment to maintain application uptime</li>
+                <li>
+                  Automate code deployment to maintain application uptime
+                </li>
+                <li>
+                  AWS CodeArtifact (repo for code dependencies) is a managed artifact repository (also called code dependencies)
+                </li>
+                <li>
+                  AWS CodeBuild is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy
+                </li>
+                <li>
+                  AWS CodeDeploy is a hybrid service that automates code deployments to any instance, including Amazon EC2 instances and instances running on-premises.
+                </li>
+                <li>
+                  AWS CodeCommit is a secure, highly scalable, managed source control service that makes it easier for teams to collaborate on code. It also provides software version control.
+                </li>
+                <li>
+                  AWS Cloud Development Kit (AWS CDK) is an open source software development framework to define your cloud application resources using familiar programming languages.
+                </li>
               </ul>
             </div>
-
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1171,9 +1248,61 @@ export default function Page() {
                     AWS Aurora
                   </Link>
                 </li>
+                <li>
+                  Amazon Aurora is a MySQL and PostgreSQL-compatible relational database built for the cloud, that combines the performance and availability of traditional enterprise databases with the simplicity and cost-effectiveness of open source databases. It is a proprietary technology from AWS.
+                </li>
+                <li>
+                  A relational database & is a proprietary technology from AWS and is cloud-optimized
+                </li>
               </ul>
             </div>
-
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Amazon QLDB - Quantum Ledger Database
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/qldb/"
+                    target="_blank"
+                  >
+                    AWS QLDB
+                  </Link>
+                </li>
+                <li>
+                  A service that is an immutable ledger database
+                </li>
+                <li>
+                  Amazon QLDB is a fully managed ledger database that provides a transparent, immutable, and cryptographically verifiable transaction log owned by a central trusted authority
+                </li>
+              </ul>
+            </div>
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS EMR - Elastic MapReduce Hadoop cluster Big Data - Easily run and scale Apache Spark, Hive, Presto, and other big data workloads
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/emr/"
+                    target="_blank"
+                  >
+                    AWS EMR
+                  </Link>
+                </li>
+                <li>
+                  Amazon EMR is a web service that enables businesses, researchers, data analysts, and developers to easily and cost-effectively process vast amounts of data. EMR helps creating Hadoop clusters (Big Data) to analyze and process vast amount of data
+                </li>
+              </ul>
+            </div>
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1203,9 +1332,36 @@ export default function Page() {
                   DynamoDB - good for store data from a recommendation engine in
                   a database with Least operational overhead for any scale;
                 </li>
+                <li>
+                  Amazon DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memory cache for Amazon DynamoDB that delivers up to a 10 times performance improvement—from milliseconds to microseconds—even at millions of requests per second.
+                </li>
               </ul>
             </div>
-
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS Athena
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/athena/"
+                    target="_blank"
+                  >
+                    AWS Athena
+                  </Link>
+                </li>
+                <li>
+                  Serverless SQL
+                </li>
+                <li>
+                  Amazon Athena is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL. Athena is serverless, so there is no infrastructure to manage, and you pay only for the queries that you run.
+                </li>
+              </ul>
+            </div>
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1252,7 +1408,6 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1275,12 +1430,13 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
             >
-              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">AWS VPC</h3>
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS VPC
+              </h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>
                   <Link
@@ -1292,11 +1448,16 @@ export default function Page() {
                   </Link>
                 </li>
                 <li>2 features that can be configured with VPC are:</li>
-                <li>* Security Groups</li>
+                <li>
+                  * Security Groups - operate at instance level and can control
+                  traffic in & out of EC2
+                </li>
                 <li>* subnets</li>
+                <li>
+                  NAT Gateways allow your instances in your private subnets to access the Internet while remaining private, and are managed by AWS.
+                </li>
               </ul>
             </div>
-
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1321,7 +1482,6 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1333,9 +1493,11 @@ export default function Page() {
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>Amazon DynamoDB</li>
                 <li>Amazon SNS</li>
+                <li>
+                  Lambda is charged by call & duration; In AWS Lambda, we are charged per request and compute time, that's it.
+                </li>
               </ul>
             </div>
-
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1362,7 +1524,6 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1399,9 +1560,11 @@ export default function Page() {
                   remediation guidance when AWS is experiencing events that may
                   impact you.
                 </li>
+                <li>
+                  AWS Health Dashboard provides alerts and remediation guidance when AWS is experiencing events that may impact you.
+                </li>
               </ul>
             </div>
-
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1470,6 +1633,15 @@ export default function Page() {
                   </Link>
                 </li>
                 <li>
+                  Amazon EFS is a fully managed service that makes it easy to
+                  set up, scale, and cost-optimize file storage in the Amazon
+                  Cloud.
+                </li>
+                <li>
+                  EFS - EC2 Storage used to create a shared network file system
+                  for EC2 Instances
+                </li>
+                <li>
                   * EFS provides simple scalable elastic NFS file system & can
                   be used for on-premises including Linux Glacier is used for
                   archiving | long term low cost storage;
@@ -1521,7 +1693,6 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1567,12 +1738,25 @@ export default function Page() {
                 </li>
                 <li>S3 buckets have encryption configured by default</li>
                 <li>
-                  Route 53 - DNS reliable & cost effective way to route end
-                  users to apps; Route 53 is considered global not regional
+                  Lifecycle Rules can be used to define when S3 objects should
+                  be transitioned to another storage class or when objects
+                  should be deleted after some time.
+                </li>
+                <li>
+                  Amazon S3 Standard-Infrequent Access allow you to store
+                  infrequently accessed data, with rapid access when needed, has
+                  a high durability, and is stored in several Availability Zones
+                  to avoid data loss in case of a disaster. It can be used to
+                  store data for disaster recovery, backups, etc.
+                </li>
+                <li>
+                  S3 Transfer Acceleration enables fast, easy, and secure transfers of files over long distances between your client and an S3 bucket.
+                </li>
+                <li>
+                  AWS Outposts bring native AWS services, infrastructure, and operating models to virtually any data center, co-location space, or on-premises facility.
                 </li>
               </ul>
             </div>
-
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1613,6 +1797,19 @@ export default function Page() {
                   have resources in multiple AWS Regions and you want to route
                   traffic to the region that provides the best latency.
                 </li>
+                <li>
+                  Route 53 - DNS reliable & cost effective way to route end
+                  users to apps; Route 53 is considered global not regional
+                </li>
+                <li>
+                  AWS Wavelength (5G) is an AWS Infrastructure offering optimized for mobile edge computing applications. Wavelength combines the high bandwidth and ultra-low latency of 5G networks with AWS compute and storage services to enable developers to innovate and build a whole new class of applications.
+                </li>
+                <li>
+                  Route 53 Policy: Weighted Routing Policy is used to route traffic to multiple resources in proportions that you specify.
+                </li>
+                <li>
+                  Route 53 some features are: Domain Registration, DNS, Health Checks, Routing Policy
+                </li>
               </ul>
             </div>
             <div
@@ -1637,10 +1834,20 @@ export default function Page() {
                   you format it; we are able to chose which type of file we
                   want.
                 </li>
+                <li>
+                  EBS Volumes can be attached to only one EC2 Instance at a time, but EC2 Instances can have multiple EBS Volumes attached to them.
+                </li>
+                <li>
+                  EBS Volumes allows instances' data to persist even after their termination.
+                </li>
+                <li>
+                  EBS Snapshots are used to backup data on your EBS Volumes at a point in time.
+                </li>
+                <li>
+                  EBS Volumes are tied to only one availability zone.
+                </li>
               </ul>
             </div>
-
-            {/* Good below */}
             <div>
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -1661,7 +1868,6 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -1703,9 +1909,17 @@ export default function Page() {
                     CloudWatch Logs are good for a company to centralize the
                     server logs for its EC2 instances & on-premises servers
                   </li>
+                  <li>
+                    CloudWatch Alarms feature allows you to watch CloudWatch metrics and to receive notifications when the metrics fall outside of the levels (high or low thresholds) that you configure.
+                  </li>
+                  <li>
+                    CloudWatch Logs to monitor, store, and access your log files from Amazon Elastic Compute Cloud (Amazon EC2) instances, AWS CloudTrail, Route 53, and other sources.
+                  </li>
+                  <li>
+                    CloudWatch we can set up metrics monitoring for every service in AWS
+                  </li>
                 </ul>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -1727,7 +1941,6 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -1763,9 +1976,14 @@ export default function Page() {
                       Elastic Load Balancing (ELB)
                     </Link>
                   </li>
+                  <li>
+                    A Network Load Balancer ultra-high performance - can handle millions of requests per second with low-latency. It operates at Layer 4, and is best-suited for load-balancing TCP, UDP, and TLS traffic with ultra high-performance.
+                  </li>
+                  <li>
+                    Application Load - HTTP / HTTPS only layer 7. Application Load Balancers are used for HTTP and HTTPS load balancing. They are the best-suited for this kind of traffic.
+                  </li>
                 </ul>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -1776,7 +1994,6 @@ export default function Page() {
                   via many programming languages
                 </h3>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -1796,17 +2013,22 @@ export default function Page() {
                       AWS CloudFront
                     </Link>
                   </li>
-                  <li>CloudFront is global not regional.</li>
-                  <li>CloudFront decreases latency & increases perf</li>
+                  <li>
+                    CloudFront is global not regional.
+                  </li>
+                  <li>
+                    CloudFront decreases latency & increases perf</li>
                   <li>
                     CloudFront delivers content worldwide through data centers
                     called "Edge Locations"; AWS Edge location is a site that
                     CloudFront uses to cache copies of the content for faster
                     delivery to users at any location;
                   </li>
+                  <li>
+                    Uses Caching Content in Edge Locations to improve read performance; CloudFront uses Edge Location to cache content, and therefore bring more of your content closer to your viewers to improve read performance.
+                  </li>
                 </ul>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -1829,7 +2051,6 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -1842,7 +2063,6 @@ export default function Page() {
                   product/service.
                 </h3>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -1945,6 +2165,15 @@ export default function Page() {
                       AWS Glue
                     </Link>
                   </li>
+                  <li>
+                    AWS Glue is a serverless service to prepare data so it can be loaded for analytics.
+                  </li>
+                  <li>
+                    AWS Glue is a fully managed extract, transform, and load (ETL) service that makes it easy for customers to prepare and load their data for analytics.
+                  </li>
+                  <li>
+                    AWS Glue Data Catalog is a central repository to store structural and operational metadata for all your data assets. For a given data set, you can store its table definition, physical location, add business relevant attributes, as well as track how this data has changed over time.
+                  </li>
                 </ul>
               </div>
               <div
@@ -1995,8 +2224,8 @@ export default function Page() {
                 role="alert"
               >
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                  AWS Snowball is a service that will allow transfer of large
-                  data from on-prem to cloud;
+                  AWS Snowball is a service that will allow transfer of
+                  "petabytes" || large data from on-prem to cloud;
                 </h3>
                 <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                   <li>
@@ -2007,6 +2236,18 @@ export default function Page() {
                     >
                       AWS Snowball
                     </Link>
+                  </li>
+                  <li>
+                    Snowmobile is used to move exabytes of data in or out of AWS
+                    (1 EB=1,000 PBs=1,000,000 TBs)
+                  </li>
+                  <li>Snowcone up to 8 Terabytes</li>
+                  <li>Snowball Edge - up to petabytes</li>
+                  <li>
+                    Snowball Edge Storage Optimized devices are well suited for
+                    large-scale data migrations and recurring transfer
+                    workflows, as well as local computing with higher capacity
+                    needs.
                   </li>
                 </ul>
               </div>
@@ -2083,6 +2324,9 @@ export default function Page() {
                     >
                       AWS Elastic Beanstalk
                     </Link>
+                  </li>
+                  <li>
+                    Elastic Beanstalk 9s free of use, but we do pay for the resources created.
                   </li>
                 </ul>
               </div>
@@ -2173,6 +2417,12 @@ export default function Page() {
                     scalable, fast, container management service that makes it
                     easy to run, stop, and manage Docker containers on a
                     cluster.
+                  </li>
+                  <li>
+                    ECS allows you to launch Docker containers on AWS, but you must provision and maintain the infrastructure (i.e. EC2 instances).
+                  </li>
+                  <li>
+                    Elastic Container Registry (ECR) is a service where you store your Docker image so they can be run by ECS or Fargate.
                   </li>
                 </ul>
               </div>
@@ -2374,6 +2624,9 @@ export default function Page() {
                     Debug performance issues for its serverless application
                     built using a microservices architecture
                   </li>
+                  <li>
+                    CodeGuru is a developer tool that provides intelligent recommendations to improve code quality and identify an application’s most expensive lines of code.
+                  </li>
                 </ul>
               </div>
               <div
@@ -2458,7 +2711,6 @@ export default function Page() {
                   Data Sitting on an RDS refers to data at rest.
                 </h3>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -2481,7 +2733,6 @@ export default function Page() {
                   Data Sitting on an RDS refers to data at rest.
                 </h3>
               </div>
-
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                 role="alert"
@@ -2496,6 +2747,14 @@ export default function Page() {
                   >
                     AWS Detective
                   </Link>
+                </h3>
+              </div>
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
+              >
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  Amazon FSx makes it easy and cost effective to launch
                 </h3>
               </div>
             </div>
@@ -2581,6 +2840,14 @@ export default function Page() {
                   ability to share the cost benefits of Reserved instances
                   across AWS accounts;
                   <br />
+                  1 year or 3 years terms are available for EC2 Reserved
+                  Instances
+                  <br />
+                  EC2 Image Builder is an automated pipeline for the creation,
+                  maintenance, validation, sharing, and deployment of Linux or
+                  Windows images for use on AWS and on-premises.
+                  <br />
+                  EC2 Image Builder can be used to automate image management processes
                 </li>
                 <li>
                   Spot instances
@@ -2595,6 +2862,11 @@ export default function Page() {
                     <li>
                       Spot instances will interrupt a running EC2 instance if
                       capacity becomes temp unavailable;
+                    </li>
+                    <li>
+                      Spot Instances are good for short workloads, but are less
+                      reliable. Spot Instances can provide the biggest discount,
+                      but is not suitable for critical jobs or databases
                     </li>
                   </ul>
                 </li>
