@@ -292,9 +292,7 @@ export default function Page() {
                 Application Load Balancer
               </h3>
               <ul className='className="max-w-md list-inside list-disc space-y-1'>
-                <li>
-                  groups help achieve high availability for a web
-                </li>
+                <li>groups help achieve high availability for a web</li>
               </ul>
               app by automagically adding or replace instances across multiple
               Availability Zones. ASGs add & removed instances based on Demand.
@@ -310,16 +308,24 @@ export default function Page() {
                 EC2 Auto Scaling
               </Link>
               <div>
-                EC2 Instance Store has a better I/O performance, but data is lost if: the EC2 instance is stopped or terminated, or when the underlying disk drive fails.
+                EC2 Instance Store has a better I/O performance, but data is
+                lost if: the EC2 instance is stopped or terminated, or when the
+                underlying disk drive fails.
               </div>
               <div>
-                An Auto Scaling Group (ASG) can automatically and quickly scale-in and scale-out to match the changing load on your applications and websites.
+                An Auto Scaling Group (ASG) can automatically and quickly
+                scale-in and scale-out to match the changing load on your
+                applications and websites.
               </div>
               <div>
-                Auto Scaling Groups (ASG)  offers easy horizontal scaling of compute capacity && offers the capacity to scale-out and scale-in by adding or removing instances based on demand.
+                Auto Scaling Groups (ASG) offers easy horizontal scaling of
+                compute capacity && offers the capacity to scale-out and
+                scale-in by adding or removing instances based on demand.
               </div>
               <div>
-                Auto Scaling Groups can add or remove instances, but from the same type. They cannot change the EC2 Instances Types on the fly.
+                Auto Scaling Groups can add or remove instances, but from the
+                same type. They cannot change the EC2 Instances Types on the
+                fly.
               </div>
             </div>
             <div
@@ -1072,7 +1078,9 @@ export default function Page() {
                   compliance and auditing norms
                 </li>
                 <li>
-                  CloudTrail can record the history of events/API calls made within you AWS account, which will help determine who or what deleted the resource. You should investigate it first.
+                  CloudTrail can record the history of events/API calls made
+                  within you AWS account, which will help determine who or what
+                  deleted the resource. You should investigate it first.
                 </li>
               </ul>
             </div>
@@ -1123,11 +1131,10 @@ export default function Page() {
                     AWS RDB
                   </Link>
                 </li>
+                <li>suited for OLTP workloads</li>
                 <li>
-                  suited for OLTP workloads
-                </li>
-                <li>
-                  RDS Multi-AZ deployments’ main purpose is high availability, while RDS Read replicas’ main purpose is scalability.
+                  RDS Multi-AZ deployments’ main purpose is high availability,
+                  while RDS Read replicas’ main purpose is scalability.
                 </li>
               </ul>
             </div>
@@ -1187,10 +1194,13 @@ export default function Page() {
                   across multiple regions.
                 </li>
                 <li>
-                  AWS CloudFormation templates are JSON or YAML-formatted text files. They are declarations of the AWS resources that make up a stack.
+                  AWS CloudFormation templates are JSON or YAML-formatted text
+                  files. They are declarations of the AWS resources that make up
+                  a stack.
                 </li>
                 <li>
-                  CloudFormation is free of use; but we do pay for the resources created.
+                  CloudFormation is free of use; but we do pay for the resources
+                  created.
                 </li>
               </ul>
             </div>
@@ -1211,23 +1221,30 @@ export default function Page() {
                     AWS CodeDeploy
                   </Link>
                 </li>
+                <li>Automate code deployment to maintain application uptime</li>
                 <li>
-                  Automate code deployment to maintain application uptime
+                  AWS CodeArtifact (repo for code dependencies) is a managed
+                  artifact repository (also called code dependencies)
                 </li>
                 <li>
-                  AWS CodeArtifact (repo for code dependencies) is a managed artifact repository (also called code dependencies)
+                  AWS CodeBuild is a fully managed continuous integration
+                  service that compiles source code, runs tests, and produces
+                  software packages that are ready to deploy
                 </li>
                 <li>
-                  AWS CodeBuild is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy
+                  AWS CodeDeploy is a hybrid service that automates code
+                  deployments to any instance, including Amazon EC2 instances
+                  and instances running on-premises.
                 </li>
                 <li>
-                  AWS CodeDeploy is a hybrid service that automates code deployments to any instance, including Amazon EC2 instances and instances running on-premises.
+                  AWS CodeCommit is a secure, highly scalable, managed source
+                  control service that makes it easier for teams to collaborate
+                  on code. It also provides software version control.
                 </li>
                 <li>
-                  AWS CodeCommit is a secure, highly scalable, managed source control service that makes it easier for teams to collaborate on code. It also provides software version control.
-                </li>
-                <li>
-                  AWS Cloud Development Kit (AWS CDK) is an open source software development framework to define your cloud application resources using familiar programming languages.
+                  AWS Cloud Development Kit (AWS CDK) is an open source software
+                  development framework to define your cloud application
+                  resources using familiar programming languages.
                 </li>
               </ul>
             </div>
@@ -1249,10 +1266,15 @@ export default function Page() {
                   </Link>
                 </li>
                 <li>
-                  Amazon Aurora is a MySQL and PostgreSQL-compatible relational database built for the cloud, that combines the performance and availability of traditional enterprise databases with the simplicity and cost-effectiveness of open source databases. It is a proprietary technology from AWS.
+                  Amazon Aurora is a MySQL and PostgreSQL-compatible relational
+                  database built for the cloud, that combines the performance
+                  and availability of traditional enterprise databases with the
+                  simplicity and cost-effectiveness of open source databases. It
+                  is a proprietary technology from AWS.
                 </li>
                 <li>
-                  A relational database & is a proprietary technology from AWS and is cloud-optimized
+                  A relational database & is a proprietary technology from AWS
+                  and is cloud-optimized
                 </li>
               </ul>
             </div>
@@ -1273,11 +1295,11 @@ export default function Page() {
                     AWS QLDB
                   </Link>
                 </li>
+                <li>A service that is an immutable ledger database</li>
                 <li>
-                  A service that is an immutable ledger database
-                </li>
-                <li>
-                  Amazon QLDB is a fully managed ledger database that provides a transparent, immutable, and cryptographically verifiable transaction log owned by a central trusted authority
+                  Amazon QLDB is a fully managed ledger database that provides a
+                  transparent, immutable, and cryptographically verifiable
+                  transaction log owned by a central trusted authority
                 </li>
               </ul>
             </div>
@@ -1286,7 +1308,9 @@ export default function Page() {
               role="alert"
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                AWS EMR - Elastic MapReduce Hadoop cluster Big Data - Easily run and scale Apache Spark, Hive, Presto, and other big data workloads
+                AWS EMR - Elastic MapReduce Hadoop cluster Big Data - Easily run
+                and scale Apache Spark, Hive, Presto, and other big data
+                workloads
               </h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>
@@ -1299,7 +1323,11 @@ export default function Page() {
                   </Link>
                 </li>
                 <li>
-                  Amazon EMR is a web service that enables businesses, researchers, data analysts, and developers to easily and cost-effectively process vast amounts of data. EMR helps creating Hadoop clusters (Big Data) to analyze and process vast amount of data
+                  Amazon EMR is a web service that enables businesses,
+                  researchers, data analysts, and developers to easily and
+                  cost-effectively process vast amounts of data. EMR helps
+                  creating Hadoop clusters (Big Data) to analyze and process
+                  vast amount of data
                 </li>
               </ul>
             </div>
@@ -1333,7 +1361,10 @@ export default function Page() {
                   a database with Least operational overhead for any scale;
                 </li>
                 <li>
-                  Amazon DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memory cache for Amazon DynamoDB that delivers up to a 10 times performance improvement—from milliseconds to microseconds—even at millions of requests per second.
+                  Amazon DynamoDB Accelerator (DAX) is a fully managed, highly
+                  available, in-memory cache for Amazon DynamoDB that delivers
+                  up to a 10 times performance improvement—from milliseconds to
+                  microseconds—even at millions of requests per second.
                 </li>
               </ul>
             </div>
@@ -1354,11 +1385,12 @@ export default function Page() {
                     AWS Athena
                   </Link>
                 </li>
+                <li>Serverless SQL</li>
                 <li>
-                  Serverless SQL
-                </li>
-                <li>
-                  Amazon Athena is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL. Athena is serverless, so there is no infrastructure to manage, and you pay only for the queries that you run.
+                  Amazon Athena is an interactive query service that makes it
+                  easy to analyze data in Amazon S3 using standard SQL. Athena
+                  is serverless, so there is no infrastructure to manage, and
+                  you pay only for the queries that you run.
                 </li>
               </ul>
             </div>
@@ -1434,9 +1466,7 @@ export default function Page() {
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
             >
-              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                AWS VPC
-              </h3>
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">AWS VPC</h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>
                   <Link
@@ -1454,7 +1484,9 @@ export default function Page() {
                 </li>
                 <li>* subnets</li>
                 <li>
-                  NAT Gateways allow your instances in your private subnets to access the Internet while remaining private, and are managed by AWS.
+                  NAT Gateways allow your instances in your private subnets to
+                  access the Internet while remaining private, and are managed
+                  by AWS.
                 </li>
               </ul>
             </div>
@@ -1494,7 +1526,8 @@ export default function Page() {
                 <li>Amazon DynamoDB</li>
                 <li>Amazon SNS</li>
                 <li>
-                  Lambda is charged by call & duration; In AWS Lambda, we are charged per request and compute time, that's it.
+                  Lambda is charged by call & duration; In AWS Lambda, we are
+                  charged per request and compute time, that's it.
                 </li>
               </ul>
             </div>
@@ -1561,7 +1594,8 @@ export default function Page() {
                   impact you.
                 </li>
                 <li>
-                  AWS Health Dashboard provides alerts and remediation guidance when AWS is experiencing events that may impact you.
+                  AWS Health Dashboard provides alerts and remediation guidance
+                  when AWS is experiencing events that may impact you.
                 </li>
               </ul>
             </div>
@@ -1750,10 +1784,14 @@ export default function Page() {
                   store data for disaster recovery, backups, etc.
                 </li>
                 <li>
-                  S3 Transfer Acceleration enables fast, easy, and secure transfers of files over long distances between your client and an S3 bucket.
+                  S3 Transfer Acceleration enables fast, easy, and secure
+                  transfers of files over long distances between your client and
+                  an S3 bucket.
                 </li>
                 <li>
-                  AWS Outposts bring native AWS services, infrastructure, and operating models to virtually any data center, co-location space, or on-premises facility.
+                  AWS Outposts bring native AWS services, infrastructure, and
+                  operating models to virtually any data center, co-location
+                  space, or on-premises facility.
                 </li>
               </ul>
             </div>
@@ -1802,13 +1840,20 @@ export default function Page() {
                   users to apps; Route 53 is considered global not regional
                 </li>
                 <li>
-                  AWS Wavelength (5G) is an AWS Infrastructure offering optimized for mobile edge computing applications. Wavelength combines the high bandwidth and ultra-low latency of 5G networks with AWS compute and storage services to enable developers to innovate and build a whole new class of applications.
+                  AWS Wavelength (5G) is an AWS Infrastructure offering
+                  optimized for mobile edge computing applications. Wavelength
+                  combines the high bandwidth and ultra-low latency of 5G
+                  networks with AWS compute and storage services to enable
+                  developers to innovate and build a whole new class of
+                  applications.
                 </li>
                 <li>
-                  Route 53 Policy: Weighted Routing Policy is used to route traffic to multiple resources in proportions that you specify.
+                  Route 53 Policy: Weighted Routing Policy is used to route
+                  traffic to multiple resources in proportions that you specify.
                 </li>
                 <li>
-                  Route 53 some features are: Domain Registration, DNS, Health Checks, Routing Policy
+                  Route 53 some features are: Domain Registration, DNS, Health
+                  Checks, Routing Policy
                 </li>
               </ul>
             </div>
@@ -1835,17 +1880,19 @@ export default function Page() {
                   want.
                 </li>
                 <li>
-                  EBS Volumes can be attached to only one EC2 Instance at a time, but EC2 Instances can have multiple EBS Volumes attached to them.
+                  EBS Volumes can be attached to only one EC2 Instance at a
+                  time, but EC2 Instances can have multiple EBS Volumes attached
+                  to them.
                 </li>
                 <li>
-                  EBS Volumes allows instances' data to persist even after their termination.
+                  EBS Volumes allows instances' data to persist even after their
+                  termination.
                 </li>
                 <li>
-                  EBS Snapshots are used to backup data on your EBS Volumes at a point in time.
+                  EBS Snapshots are used to backup data on your EBS Volumes at a
+                  point in time.
                 </li>
-                <li>
-                  EBS Volumes are tied to only one availability zone.
-                </li>
+                <li>EBS Volumes are tied to only one availability zone.</li>
               </ul>
             </div>
             <div>
@@ -1910,13 +1957,19 @@ export default function Page() {
                     server logs for its EC2 instances & on-premises servers
                   </li>
                   <li>
-                    CloudWatch Alarms feature allows you to watch CloudWatch metrics and to receive notifications when the metrics fall outside of the levels (high or low thresholds) that you configure.
+                    CloudWatch Alarms feature allows you to watch CloudWatch
+                    metrics and to receive notifications when the metrics fall
+                    outside of the levels (high or low thresholds) that you
+                    configure.
                   </li>
                   <li>
-                    CloudWatch Logs to monitor, store, and access your log files from Amazon Elastic Compute Cloud (Amazon EC2) instances, AWS CloudTrail, Route 53, and other sources.
+                    CloudWatch Logs to monitor, store, and access your log files
+                    from Amazon Elastic Compute Cloud (Amazon EC2) instances,
+                    AWS CloudTrail, Route 53, and other sources.
                   </li>
                   <li>
-                    CloudWatch we can set up metrics monitoring for every service in AWS
+                    CloudWatch we can set up metrics monitoring for every
+                    service in AWS
                   </li>
                 </ul>
               </div>
@@ -1977,10 +2030,15 @@ export default function Page() {
                     </Link>
                   </li>
                   <li>
-                    A Network Load Balancer ultra-high performance - can handle millions of requests per second with low-latency. It operates at Layer 4, and is best-suited for load-balancing TCP, UDP, and TLS traffic with ultra high-performance.
+                    A Network Load Balancer ultra-high performance - can handle
+                    millions of requests per second with low-latency. It
+                    operates at Layer 4, and is best-suited for load-balancing
+                    TCP, UDP, and TLS traffic with ultra high-performance.
                   </li>
                   <li>
-                    Application Load - HTTP / HTTPS only layer 7. Application Load Balancers are used for HTTP and HTTPS load balancing. They are the best-suited for this kind of traffic.
+                    Application Load - HTTP / HTTPS only layer 7. Application
+                    Load Balancers are used for HTTP and HTTPS load balancing.
+                    They are the best-suited for this kind of traffic.
                   </li>
                 </ul>
               </div>
@@ -2013,11 +2071,8 @@ export default function Page() {
                       AWS CloudFront
                     </Link>
                   </li>
-                  <li>
-                    CloudFront is global not regional.
-                  </li>
-                  <li>
-                    CloudFront decreases latency & increases perf</li>
+                  <li>CloudFront is global not regional.</li>
+                  <li>CloudFront decreases latency & increases perf</li>
                   <li>
                     CloudFront delivers content worldwide through data centers
                     called "Edge Locations"; AWS Edge location is a site that
@@ -2025,7 +2080,10 @@ export default function Page() {
                     delivery to users at any location;
                   </li>
                   <li>
-                    Uses Caching Content in Edge Locations to improve read performance; CloudFront uses Edge Location to cache content, and therefore bring more of your content closer to your viewers to improve read performance.
+                    Uses Caching Content in Edge Locations to improve read
+                    performance; CloudFront uses Edge Location to cache content,
+                    and therefore bring more of your content closer to your
+                    viewers to improve read performance.
                   </li>
                 </ul>
               </div>
@@ -2166,13 +2224,21 @@ export default function Page() {
                     </Link>
                   </li>
                   <li>
-                    AWS Glue is a serverless service to prepare data so it can be loaded for analytics.
+                    AWS Glue is a serverless service to prepare data so it can
+                    be loaded for analytics.
                   </li>
                   <li>
-                    AWS Glue is a fully managed extract, transform, and load (ETL) service that makes it easy for customers to prepare and load their data for analytics.
+                    AWS Glue is a fully managed extract, transform, and load
+                    (ETL) service that makes it easy for customers to prepare
+                    and load their data for analytics.
                   </li>
                   <li>
-                    AWS Glue Data Catalog is a central repository to store structural and operational metadata for all your data assets. For a given data set, you can store its table definition, physical location, add business relevant attributes, as well as track how this data has changed over time.
+                    AWS Glue Data Catalog is a central repository to store
+                    structural and operational metadata for all your data
+                    assets. For a given data set, you can store its table
+                    definition, physical location, add business relevant
+                    attributes, as well as track how this data has changed over
+                    time.
                   </li>
                 </ul>
               </div>
@@ -2326,7 +2392,8 @@ export default function Page() {
                     </Link>
                   </li>
                   <li>
-                    Elastic Beanstalk 9s free of use, but we do pay for the resources created.
+                    Elastic Beanstalk 9s free of use, but we do pay for the
+                    resources created.
                   </li>
                 </ul>
               </div>
@@ -2419,10 +2486,14 @@ export default function Page() {
                     cluster.
                   </li>
                   <li>
-                    ECS allows you to launch Docker containers on AWS, but you must provision and maintain the infrastructure (i.e. EC2 instances).
+                    ECS allows you to launch Docker containers on AWS, but you
+                    must provision and maintain the infrastructure (i.e. EC2
+                    instances).
                   </li>
                   <li>
-                    Elastic Container Registry (ECR) is a service where you store your Docker image so they can be run by ECS or Fargate.
+                    Elastic Container Registry (ECR) is a service where you
+                    store your Docker image so they can be run by ECS or
+                    Fargate.
                   </li>
                 </ul>
               </div>
@@ -2625,7 +2696,9 @@ export default function Page() {
                     built using a microservices architecture
                   </li>
                   <li>
-                    CodeGuru is a developer tool that provides intelligent recommendations to improve code quality and identify an application’s most expensive lines of code.
+                    CodeGuru is a developer tool that provides intelligent
+                    recommendations to improve code quality and identify an
+                    application’s most expensive lines of code.
                   </li>
                 </ul>
               </div>
@@ -2847,7 +2920,8 @@ export default function Page() {
                   maintenance, validation, sharing, and deployment of Linux or
                   Windows images for use on AWS and on-premises.
                   <br />
-                  EC2 Image Builder can be used to automate image management processes
+                  EC2 Image Builder can be used to automate image management
+                  processes
                 </li>
                 <li>
                   Spot instances
