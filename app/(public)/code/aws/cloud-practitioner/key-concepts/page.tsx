@@ -143,11 +143,15 @@ export default function Page() {
                   Elasticity since we can expand services as traffic grows;
                 </li>
                 <li>
-                  concept of elasticity: <ul>
+                  concept of elasticity:{' '}
+                  <ul>
                     <li>
-                      The ability to adjust resource allocation in response to changing demand.</li>
+                      The ability to adjust resource allocation in response to
+                      changing demand.
+                    </li>
                     <li>
-                      The speed at which additional resources are made available on demand.
+                      The speed at which additional resources are made available
+                      on demand.
                     </li>
                   </ul>
                 </li>
@@ -254,11 +258,10 @@ export default function Page() {
                   tracking configuration changes
                 </li>
                 <li>
-                  AWS Config is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources.
+                  AWS Config is a service that enables you to assess, audit, and
+                  evaluate the configurations of your AWS resources.
                 </li>
-                <li>
-                  Record configurations and changes over time
-                </li>
+                <li>Record configurations and changes over time</li>
               </ul>
             </div>
             <div
@@ -479,14 +482,11 @@ export default function Page() {
                   UX) & Data sovereignty compliance
                 </li>
                 <li>
-                  What are the advantages of deploying an application with Amazon EC2 instances in multiple Availability Zones?
+                  What are the advantages of deploying an application with
+                  Amazon EC2 instances in multiple Availability Zones?
                   <ul>
-                    <li>
-                      increasing the availability of the app
-                    </li>
-                    <li>
-                      preventing a single point of failure
-                    </li>
+                    <li>increasing the availability of the app</li>
+                    <li>preventing a single point of failure</li>
                   </ul>
                 </li>
               </ul>
@@ -654,28 +654,29 @@ export default function Page() {
                   pillar of the AWS Well-Architected Framework recommends
                   maintaining infrastructure as code (IaC)
                 </li>
+                <li>Security - focuses on protecting information & systems</li>
                 <li>
-                  Security - focuses on protecting information & systems
-                </li>
-                <li>
-                  Reliability - focuses on workloads performing their intended functions and how to recover quickly from failure to meet demands.
+                  Reliability - focuses on workloads performing their intended
+                  functions and how to recover quickly from failure to meet
+                  demands.
                 </li>
                 <li>
                   Performance Efficiency - focuses on using IT and computing
                   resources efficiently
                   <br />
-                  provides guidance on selecting appropriate compute resources based on workload needs
+                  provides guidance on selecting appropriate compute resources
+                  based on workload needs
                 </li>
+                <li>Cost Optimization - focuses on avoiding un-needed costs</li>
                 <li>
-                  Cost Optimization - focuses on avoiding un-needed costs
-                </li>
-                <li>
-                  Sustainability -  focuses on minimizing the environmental impacts of running cloud workloads.
+                  Sustainability - focuses on minimizing the environmental
+                  impacts of running cloud workloads.
                 </li>
               </ul>
               <div>
-                A user deploys an Amazon RDS DB instance in multiple Availability Zones.
-                This strategy involves the Reliablity pillar of the AWS Well-Architected Framework
+                A user deploys an Amazon RDS DB instance in multiple
+                Availability Zones. This strategy involves the Reliablity pillar
+                of the AWS Well-Architected Framework
               </div>
             </div>
             <div
@@ -712,11 +713,10 @@ export default function Page() {
               </h3>
               <ul className='className="max-w-md list-inside list-disc space-y-1'>
                 <li>
-                  Cloud fluency capability is identified under the People Perspective for organizational adaptation to cloud technology
+                  Cloud fluency capability is identified under the People
+                  Perspective for organizational adaptation to cloud technology
                 </li>
-                <li>
-                  Roles: CTO & Engineer
-                </li>
+                <li>Roles: CTO & Engineer</li>
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -729,7 +729,6 @@ export default function Page() {
               </ul>
 
               <br />
-
             </div>
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -750,10 +749,12 @@ export default function Page() {
                   </Link>
                 </li>
                 <li>
-                  VPC Peering connection is a networking connection between two VPCs using AWS' network.
+                  VPC Peering connection is a networking connection between two
+                  VPCs using AWS' network.
                 </li>
                 <li>
-                  AWS Site-to-Site VPN creates an encrypted connection between on-prem & aws
+                  AWS Site-to-Site VPN creates an encrypted connection between
+                  on-prem & aws
                 </li>
               </ul>
             </div>
@@ -795,9 +796,7 @@ export default function Page() {
                       Customers are responsible for defining and using IAM
                       policies.
                     </li>
-                    <li>
-                      Configure an S3 bucket to allow public access.
-                    </li>
+                    <li>Configure an S3 bucket to allow public access.</li>
                   </ul>
                   <li>AWS responsibility:</li>
                   <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
@@ -927,8 +926,9 @@ export default function Page() {
               role="alert"
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                AWS CloudHSM | Hardware Security Model | Hardware data encryption - Manage single-tenant
-                hardware security modules (HSMs) on AWS
+                AWS CloudHSM | Hardware Security Model | Hardware data
+                encryption - Manage single-tenant hardware security modules
+                (HSMs) on AWS
                 <Link
                   className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                   href="https://aws.amazon.com/cloudhsm/"
@@ -967,7 +967,9 @@ export default function Page() {
                   excessive resources.
                 </li>
                 <li>
-                  WAF protects its web applications from common web exploits that may affect availability, compromise security, or consume excessive resources
+                  WAF protects its web applications from common web exploits
+                  that may affect availability, compromise security, or consume
+                  excessive resources
                 </li>
                 <li>
                   AWS Shield is only used to safeguard running applications from
@@ -1006,7 +1008,9 @@ export default function Page() {
                   Centrally automate security checks across several AWS accounts
                 </li>
                 <li>
-                  AWS Security Hub provides you with a comprehensive view of your security state within AWS and your compliance with security standards and best practices.
+                  AWS Security Hub provides you with a comprehensive view of
+                  your security state within AWS and your compliance with
+                  security standards and best practices.
                 </li>
               </ul>
             </div>
@@ -1039,14 +1043,11 @@ export default function Page() {
               </ul>
             </div>
             <div>
-              To gain programmatic access to an AWS account, the required credential components are an:
+              To gain programmatic access to an AWS account, the required
+              credential components are an:
               <ul>
-                <li>
-                  access key ID
-                </li>
-                <li>
-                  secret access key
-                </li>
+                <li>access key ID</li>
+                <li>secret access key</li>
               </ul>
             </div>
           </div>
@@ -1112,11 +1113,12 @@ export default function Page() {
                   or resource, defines their permissions. JSON docs to define
                   users; groups || roles permissions;
                 </li>
+                <li>IAM is a global service (encompasses all regions).</li>
                 <li>
-                  IAM is a global service (encompasses all regions).
-                </li>
-                <li>
-                  AWS IAM policy and a roles: A policy is a set of permissions that determine what an AWS service can do, while a role is a temporary identity that can be assumed by a user or AWS service.
+                  AWS IAM policy and a roles: A policy is a set of permissions
+                  that determine what an AWS service can do, while a role is a
+                  temporary identity that can be assumed by a user or AWS
+                  service.
                 </li>
               </ul>
             </div>
@@ -1168,7 +1170,8 @@ export default function Page() {
                   deleted the resource. You should investigate it first.
                 </li>
                 <li>
-                  CloudTrail can ensure the AWS account activity meets governance, compliance & auditing norms.
+                  CloudTrail can ensure the AWS account activity meets
+                  governance, compliance & auditing norms.
                 </li>
               </ul>
             </div>
@@ -1256,7 +1259,8 @@ export default function Page() {
                   AWS DMS database migration service https://aws.amazon.com/dms/
                 </li>
                 <li>
-                  AWS MGN Application Migration Service. migrate physical servers like dbs or app to EC2.
+                  AWS MGN Application Migration Service. migrate physical
+                  servers like dbs or app to EC2.
                 </li>
               </ul>
             </div>
@@ -1321,7 +1325,8 @@ export default function Page() {
                   artifact repository (also called code dependencies)
                 </li>
                 <li>
-                  AWS CodeArtifact allows you to publish and share software packages used in the software development process;
+                  AWS CodeArtifact allows you to publish and share software
+                  packages used in the software development process;
                 </li>
                 <li>
                   AWS CodeBuild is a fully managed continuous integration
@@ -1558,10 +1563,13 @@ export default function Page() {
                   </Link>
                 </li>
                 <li>
-                  AWS Direct Connect is a cloud service solution that makes it easy to establish a dedicated private network connection from your premises to AWS.
+                  AWS Direct Connect is a cloud service solution that makes it
+                  easy to establish a dedicated private network connection from
+                  your premises to AWS.
                 </li>
                 <li>
-                  Direct Connect is used to establish a consistent & private connection from company's on-prem data center to AWS.
+                  Direct Connect is used to establish a consistent & private
+                  connection from company's on-prem data center to AWS.
                 </li>
               </ul>
             </div>
@@ -1569,9 +1577,7 @@ export default function Page() {
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
             >
-              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                AWS VPC
-              </h3>
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">AWS VPC</h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>
                   <Link
@@ -1587,11 +1593,12 @@ export default function Page() {
                   * Security Groups - operate at instance level and can control
                   traffic in & out of EC2
                 </li>
+                <li>* subnets</li>
                 <li>
-                  * subnets
-                </li>
-                <li>
-                  Virtual private cloud (VPC) is a virtual network dedicated to your AWS account. It is logically isolated from other virtual networks in the AWS Cloud. You can launch your AWS resources, such as Amazon EC2 instances, into your VPC.
+                  Virtual private cloud (VPC) is a virtual network dedicated to
+                  your AWS account. It is logically isolated from other virtual
+                  networks in the AWS Cloud. You can launch your AWS resources,
+                  such as Amazon EC2 instances, into your VPC.
                 </li>
                 <li>
                   NAT Gateways allow your instances in your private subnets to
@@ -1599,16 +1606,23 @@ export default function Page() {
                   by AWS.
                 </li>
                 <li>
-                  A public subnet is accessible from the Internet while a private subnet is not accessible from the Internet.
+                  A public subnet is accessible from the Internet while a
+                  private subnet is not accessible from the Internet.
                 </li>
                 <li>
-                  NACL - network access control list is an optional layer of security for your VPC that acts as a firewall for controlling traffic in and out of one or more subnets. They have both ALLOW and DENY rules.
+                  NACL - network access control list is an optional layer of
+                  security for your VPC that acts as a firewall for controlling
+                  traffic in and out of one or more subnets. They have both
+                  ALLOW and DENY rules.
                 </li>
                 <li>
-                  AWS Transit Gateway connects thousands of VPC and on-premises networks together in a single gateway.
+                  AWS Transit Gateway connects thousands of VPC and on-premises
+                  networks together in a single gateway.
                 </li>
                 <li>
-                  An internet gateway is a horizontally scaled, redundant, and highly available VPC component that allows communication between your VPC and the internet.
+                  An internet gateway is a horizontally scaled, redundant, and
+                  highly available VPC component that allows communication
+                  between your VPC and the internet.
                 </li>
               </ul>
             </div>
@@ -1635,7 +1649,8 @@ export default function Page() {
                   consumed compute resources.
                 </li>
                 <li>
-                  Lambda is charged by # of requests & time it takes for function to run;
+                  Lambda is charged by # of requests & time it takes for
+                  function to run;
                 </li>
               </ul>
             </div>
@@ -1723,7 +1738,9 @@ export default function Page() {
                   when AWS is experiencing events that may impact you.
                 </li>
                 <li>
-                  AWS Health Dashboard - Service Health can be used to subscribe to an RSS feed to be notified of the status of all AWS service interruptions
+                  AWS Health Dashboard - Service Health can be used to subscribe
+                  to an RSS feed to be notified of the status of all AWS service
+                  interruptions
                 </li>
               </ul>
             </div>
@@ -1916,9 +1933,7 @@ export default function Page() {
                   transfers of files over long distances between your client and
                   an S3 bucket.
                 </li>
-                <li>
-                  Inbound data transfer in the S3 region is free.
-                </li>
+                <li>Inbound data transfer in the S3 region is free.</li>
                 <li>
                   AWS Outposts bring native AWS services, infrastructure, and
                   operating models to virtually any data center, co-location
@@ -2023,12 +2038,8 @@ export default function Page() {
                   EBS Snapshots are used to backup data on your EBS Volumes at a
                   point in time.
                 </li>
-                <li>
-                  EBS Volumes are tied to only one availability zone.
-                </li>
-                <li>
-                  EBS Snapshots are added cost in GB per month
-                </li>
+                <li>EBS Volumes are tied to only one availability zone.</li>
+                <li>EBS Snapshots are added cost in GB per month</li>
               </ul>
             </div>
             <div>
@@ -2222,10 +2233,12 @@ export default function Page() {
                     viewers to improve read performance.
                   </li>
                   <li>
-                    CloudFront pricing is different across different geographic regions.
+                    CloudFront pricing is different across different geographic
+                    regions.
                   </li>
                   <li>
-                    CloudFront achieves lower latency & high transfer speeds; it speeds up distribute of static & dynamic web content.
+                    CloudFront achieves lower latency & high transfer speeds; it
+                    speeds up distribute of static & dynamic web content.
                   </li>
                 </ul>
               </div>
@@ -2331,10 +2344,15 @@ export default function Page() {
                 </h3>
                 <ul>
                   <li>
-                    AWS Security Token Service (AWS STS) is a web service that enables you to request temporary, limited-privilege credentials for AWS Identity and Access Management (IAM) users or for users that you authenticate (federated users).
+                    AWS Security Token Service (AWS STS) is a web service that
+                    enables you to request temporary, limited-privilege
+                    credentials for AWS Identity and Access Management (IAM)
+                    users or for users that you authenticate (federated users).
                   </li>
                   <li>
-                    Amazon Cognito lets you add user sign-up, sign-in, and access control to your web and mobile apps quickly and easily.
+                    Amazon Cognito lets you add user sign-up, sign-in, and
+                    access control to your web and mobile apps quickly and
+                    easily.
                   </li>
                 </ul>
               </div>
@@ -2508,15 +2526,9 @@ export default function Page() {
                   <li>
                     Inspector does:
                     <ul className="ml-5">
-                      <li>
-                        inspect OS against vulnerabilities
-                      </li>
-                      <li>
-                        Analyze against unintended network accessibility
-                      </li>
-                      <li>
-                        Automate security assessments
-                      </li>
+                      <li>inspect OS against vulnerabilities</li>
+                      <li>Analyze against unintended network accessibility</li>
+                      <li>Automate security assessments</li>
                     </ul>
                   </li>
                   <li>Inspector does not -Track configuration changes</li>
@@ -2708,8 +2720,8 @@ export default function Page() {
                 </h3>
                 <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                   <li>
-                    Amazon Polly Deploy high-quality, natural-sounding human voices in dozens
-                    of languages
+                    Amazon Polly Deploy high-quality, natural-sounding human
+                    voices in dozens of languages
                   </li>
                   <li>
                     <Link
@@ -2734,22 +2746,38 @@ export default function Page() {
                     </Link>
                   </li>
                   <li>
-                    Amazon Lex is a service for building chat bots / conversational interfaces
+                    Amazon Lex is a service for building chat bots /
+                    conversational interfaces
                   </li>
                   <li>
-                    Amazon Rekognition makes it easy to add image and video analysis to your applications using proven, highly scalable, deep learning technology that requires no machine learning expertise to use.
+                    Amazon Rekognition makes it easy to add image and video
+                    analysis to your applications using proven, highly scalable,
+                    deep learning technology that requires no machine learning
+                    expertise to use.
                   </li>
                   <li>
-                    Amazon Personalize is a machine learning service that makes it easy for developers to create individualized recommendations for customers using their applications.
+                    Amazon Personalize is a machine learning service that makes
+                    it easy for developers to create individualized
+                    recommendations for customers using their applications.
                   </li>
                   <li>
-                    Amazon Comprehend is a natural language processing (NLP) service that uses machine learning to find meaning and insights in text.
+                    Amazon Comprehend is a natural language processing (NLP)
+                    service that uses machine learning to find meaning and
+                    insights in text.
                   </li>
                   <li>
-                    Amazon SageMaker is a fully managed service that provides every developer and data scientist with the ability to build, train, and deploy machine learning (ML) models quickly. SageMaker removes the heavy lifting from each step of the machine learning process to make it easier to develop high quality models.
+                    Amazon SageMaker is a fully managed service that provides
+                    every developer and data scientist with the ability to
+                    build, train, and deploy machine learning (ML) models
+                    quickly. SageMaker removes the heavy lifting from each step
+                    of the machine learning process to make it easier to develop
+                    high quality models.
                   </li>
                   <li>
-                    Amazon Kendra is a document search service powered by machine learning. Kendra is a highly accurate and easy to use enterprise search service that's powered by machine learning.
+                    Amazon Kendra is a document search service powered by
+                    machine learning. Kendra is a highly accurate and easy to
+                    use enterprise search service that's powered by machine
+                    learning.
                   </li>
                 </ul>
               </div>
@@ -2803,7 +2831,10 @@ export default function Page() {
                     matching to discover and protect your sensitive data in AWS.
                   </li>
                   <li>
-                    Amazon Macie is a security service that uses machine learning to automatically discover, classify, and protect sensitive data in AWS, such as personally identifiable information (PII) or intellectual property.
+                    Amazon Macie is a security service that uses machine
+                    learning to automatically discover, classify, and protect
+                    sensitive data in AWS, such as personally identifiable
+                    information (PII) or intellectual property.
                   </li>
                 </ul>
               </div>
@@ -2897,7 +2928,8 @@ export default function Page() {
                     applications using those resources
                   </li>
                   <li>
-                    AWS Systems Manager view and manage operational data from multiple AWS resources
+                    AWS Systems Manager view and manage operational data from
+                    multiple AWS resources
                   </li>
                   <li>
                     AWS Systems Manager Session Manager is a fully-managed
@@ -2998,7 +3030,9 @@ export default function Page() {
                     </Link>
                   </li>
                   <li>
-                    Amazon Detective makes it easy to analyze, investigate, and quickly identify the root cause of potential security issues or suspicious activities.
+                    Amazon Detective makes it easy to analyze, investigate, and
+                    quickly identify the root cause of potential security issues
+                    or suspicious activities.
                   </li>
                 </ul>
               </div>
@@ -3028,10 +3062,16 @@ export default function Page() {
                     </Link>
                   </li>
                   <li>
-                    Amazon EFS is a file storage service for use with Amazon EC2. Amazon EFS provides a file system interface, file system access semantics, and concurrently-accessible storage for up to thousands of Amazon EC2 instances. Amazon EFS uses the Network File System protocol.
+                    Amazon EFS is a file storage service for use with Amazon
+                    EC2. Amazon EFS provides a file system interface, file
+                    system access semantics, and concurrently-accessible storage
+                    for up to thousands of Amazon EC2 instances. Amazon EFS uses
+                    the Network File System protocol.
                   </li>
                   <li>
-                    EFS is a a storage service which would be accessed by hundreds of EC2 instances simultaneously to append data to existing files
+                    EFS is a a storage service which would be accessed by
+                    hundreds of EC2 instances simultaneously to append data to
+                    existing files
                   </li>
                 </ul>
               </div>
@@ -3053,10 +3093,16 @@ export default function Page() {
                     </Link>
                   </li>
                   <li>
-                    OpsHub is a tool provides an easy-to-use graphical user interface for managing AWS Snowball devices
+                    OpsHub is a tool provides an easy-to-use graphical user
+                    interface for managing AWS Snowball devices
                   </li>
                   <li>
-                    AWS OpsHub simplifies the management of AWS Snowball devices, enabling easy deployment of edge computing workloads and data migration to the cloud. It offers a graphical interface to configure devices, transfer data, launch applications, and monitor metrics, replacing traditional CLI and API methods
+                    AWS OpsHub simplifies the management of AWS Snowball
+                    devices, enabling easy deployment of edge computing
+                    workloads and data migration to the cloud. It offers a
+                    graphical interface to configure devices, transfer data,
+                    launch applications, and monitor metrics, replacing
+                    traditional CLI and API methods
                   </li>
                 </ul>
               </div>
@@ -3108,13 +3154,20 @@ export default function Page() {
                       billing & account inquires for Enterprise level support.
                     </li>
                     <li>
-                      Enterprise Support Plan comes with a business-critical system down response under 15 minutes and offers access to a Technical Account Manager, as well as a Concierge Support Team. It is the only plan to have these features.
+                      Enterprise Support Plan comes with a business-critical
+                      system down response under 15 minutes and offers access to
+                      a Technical Account Manager, as well as a Concierge
+                      Support Team. It is the only plan to have these features.
                     </li>
                   </ul>
                 </li>
-                <li>Developer</li>
                 <li>
-                  Basic - Support includes 24/7 access to customer service and documentation.</li>
+                  Developer
+                </li>
+                <li>
+                  Basic - Support includes 24/7 access to customer service and
+                  documentation.
+                </li>
               </ul>
             </div>
             <div
@@ -3176,7 +3229,9 @@ export default function Page() {
                       but is not suitable for critical jobs or databases
                     </li>
                     <li>
-                      Spot instances can access unused EC2 capacity; allows customers to purchase unused EC2 capacity at often discounted rate.
+                      Spot instances can access unused EC2 capacity; allows
+                      customers to purchase unused EC2 capacity at often
+                      discounted rate.
                     </li>
                   </ul>
                 </li>
@@ -3198,7 +3253,8 @@ export default function Page() {
                 instances. Therefore if a user used 30 seconds we'll be charged
                 for 60 seconds;
                 <br />
-                EC2 instances, you pay per second of compute capacity. There is also a minimum of 60s of use.
+                EC2 instances, you pay per second of compute capacity. There is
+                also a minimum of 60s of use.
               </h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>
@@ -3224,11 +3280,12 @@ export default function Page() {
                   Set up Auto Scaling groups to align the number of instances
                   with the demand
                 </li>
+                <li>Purchase Amazon EC2 Reserved instances (RIs)</li>
                 <li>
-                  Purchase Amazon EC2 Reserved instances (RIs)
-                </li>
-                <li>
-                  fyi - Compute Savings Plans provide the most flexibility and help to reduce your costs by up to 66% in exchange for a commitment to a consistent amount of usage for a 1 or 3 year term.
+                  fyi - Compute Savings Plans provide the most flexibility and
+                  help to reduce your costs by up to 66% in exchange for a
+                  commitment to a consistent amount of usage for a 1 or 3 year
+                  term.
                 </li>
               </ul>
             </div>
@@ -3329,7 +3386,11 @@ export default function Page() {
                   </ul>
                 </li>
                 <li>
-                  AWS Control Tower offers the easiest way to set up and govern a new, secure, multi-account AWS environment. It establishes a landing zone that is based on best-practices blueprints, and enables governance using guardrails you can choose from a pre-packaged list.
+                  AWS Control Tower offers the easiest way to set up and govern
+                  a new, secure, multi-account AWS environment. It establishes a
+                  landing zone that is based on best-practices blueprints, and
+                  enables governance using guardrails you can choose from a
+                  pre-packaged list.
                 </li>
               </ul>
             </div>
@@ -3487,7 +3548,9 @@ export default function Page() {
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 AWS Pricing Calculator - compare the cost of running their IT
-                infrastructure on-premises vs AWS Cloud. Good for a company to check whether or not it is cost-effective to migrate to the AWS Cloud
+                infrastructure on-premises vs AWS Cloud. Good for a company to
+                check whether or not it is cost-effective to migrate to the AWS
+                Cloud
                 <br />
                 AWS Pricing Calculator lets you explore AWS services and create
                 an estimate for the cost of your use cases on AWS
@@ -3495,7 +3558,9 @@ export default function Page() {
                 AWS Pricing Calculator can be used to forecast your AWS account
                 usage and costs
                 <br />
-                AWS Compute Optimizer recommends optimal AWS resources for your workloads to reduce costs and improve performance by using machine learning to analyze historical utilization metrics.
+                AWS Compute Optimizer recommends optimal AWS resources for your
+                workloads to reduce costs and improve performance by using
+                machine learning to analyze historical utilization metrics.
               </h3>
             </div>
           </div>
