@@ -121,7 +121,6 @@ export default function Page() {
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
             >
-              {/* <div className="flex flex-wrap items-center lg:flex-nowrap"> */}
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 AWS Features & Benefits:
               </h3>
@@ -143,7 +142,7 @@ export default function Page() {
                   Elasticity since we can expand services as traffic grows;
                 </li>
                 <li>
-                  concept of elasticity:{' '}
+                  Concept of elasticity:
                   <ul>
                     <li>
                       The ability to adjust resource allocation in response to
@@ -152,6 +151,15 @@ export default function Page() {
                     <li>
                       The speed at which additional resources are made available
                       on demand.
+                    </li>
+                    <li>
+                      <Link
+                        className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                        href="https://wa.aws.amazon.com/wellarchitected/2020-07-02T19-33-23/wat.concept.elasticity.en.html"
+                        target="_blank"
+                      >
+                        Elasticity
+                      </Link>
                     </li>
                   </ul>
                 </li>
@@ -726,9 +734,12 @@ export default function Page() {
                     AWS Cloud Adoption Framework (AWS CAF)
                   </Link>
                 </li>
+                <li>
+                  Benefits management is a capability from AWS CAF governance
+                  perspective is required to define and track business outcomes
+                  during a cloud transformation journey
+                </li>
               </ul>
-
-              <br />
             </div>
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -755,6 +766,36 @@ export default function Page() {
                 <li>
                   AWS Site-to-Site VPN creates an encrypted connection between
                   on-prem & aws
+                </li>
+              </ul>
+            </div>
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                "6 R's" migration strategy in AWS
+              </h3>
+              <ul className='className="max-w-md list-inside list-disc space-y-1'>
+                <li>
+                  Refactor, Rehost, Repurchase, Retain, Retire, and Rebuild
+                </li>
+                <li>not one of the 6 R's: Reiterate; Retry & Replicate</li>
+              </ul>
+            </div>
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Cloud fluency
+              </h3>
+              <ul className='className="max-w-md list-inside list-disc space-y-1'>
+                <li>
+                  In AWS Cloud Adoption Framework (CAF), cloud fluency is identified under the People Perspective for organizational adaptation to cloud technology
+                </li>
+                <li>
+                  Cloud fluency emphasizes the importance of education and knowledge across the organization about cloud technologies and AWS services. Ensuring that staff are cloud-fluent means they understand not only the technical aspects but also the operational, financial, and business implications of using AWS services.
                 </li>
               </ul>
             </div>
@@ -943,6 +984,17 @@ export default function Page() {
                   that enables you to easily generate and use your encryption
                   keys on the AWS Cloud.
                 </li>
+                <li>
+                  CloudHSM is a security device to manage cryptographic keys to
+                  use for highly secure sensitive data
+                </li>
+                <li>
+                  AWS CloudHSM provides hardware-based key storage and
+                  cryptographic operations within a tamper-resistant hardware
+                  device. This service helps you meet corporate, contractual,
+                  and regulatory compliance requirements for data security by
+                  using dedicated HSM appliances within the AWS Cloud.
+                </li>
               </ul>
             </div>
             <div
@@ -970,6 +1022,10 @@ export default function Page() {
                   WAF protects its web applications from common web exploits
                   that may affect availability, compromise security, or consume
                   excessive resources
+                </li>
+                <li>
+                  WAF creates security rules to protect from cross-site
+                  scripting attacks.
                 </li>
                 <li>
                   AWS Shield is only used to safeguard running applications from
@@ -1048,6 +1104,26 @@ export default function Page() {
               <ul>
                 <li>access key ID</li>
                 <li>secret access key</li>
+              </ul>
+            </div>
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Network ACL - Network Access Control List (ACL) is a security layer in AWS that acts as a firewall for controlling traffic at the subnet level.
+                <Link
+                  className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                  href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html"
+                  target="_blank"
+                >
+                  VPC Network Acts | Control subnet traffic with network access control lists
+                </Link>
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  Used to control incoming and outgoing traffic at the subnet level
+                </li>
               </ul>
             </div>
           </div>
@@ -1652,6 +1728,9 @@ export default function Page() {
                   Lambda is charged by # of requests & time it takes for
                   function to run;
                 </li>
+                <li>
+                  Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale
+                </li>
               </ul>
             </div>
             <div
@@ -1929,6 +2008,13 @@ export default function Page() {
                   store data for disaster recovery, backups, etc.
                 </li>
                 <li>
+                  S3 Standard-IA has a higher storage cost but a lower retrieval
+                  cost, while S3 Glacier has a lower storage cost but a higher
+                  retrieval cost. S3 Standard-IA has a higher storage cost than
+                  S3 Glacier because it is designed to provide fast access to
+                  data;
+                </li>
+                <li>
                   S3 Transfer Acceleration enables fast, easy, and secure
                   transfers of files over long distances between your client and
                   an S3 bucket.
@@ -2000,6 +2086,9 @@ export default function Page() {
                 <li>
                   Route 53 some features are: Domain Registration, DNS, Health
                   Checks, Routing Policy
+                </li>
+                <li>
+                  Use Amazon Route 53 with latency-based routing to ensure global content delivery with the lowest possible latency
                 </li>
               </ul>
             </div>
@@ -2482,6 +2571,13 @@ export default function Page() {
                     large-scale data migrations and recurring transfer
                     workflows, as well as local computing with higher capacity
                     needs.
+                  </li>
+                  <li>
+                    AWS Snowball key features:
+                    <ul>
+                      <li>High-speed and secure data migration to AWS Cloud</li>
+                      <li>Local data processing capabilities</li>
+                    </ul>
                   </li>
                 </ul>
               </div>
@@ -3106,6 +3202,38 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
+              <div
+                className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                role="alert"
+              >
+                <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                  AWS DataSync - Simplify and accelerate secure data migrations
+                </h3>
+                <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://aws.amazon.com/datasync/"
+                      target="_blank"
+                    >
+                      AWS DataSync
+                    </Link>
+                  </li>
+                  <li>
+                    AWS automatically performs data validation after every
+                    DataSync task.
+                  </li>
+                  <li>
+                    AWS DataSync includes automatic data validation as a
+                    feature. After DataSync transfers the data to the
+                    destination, it automatically validates the data by
+                    comparing the metadata from the source and destination
+                    locations, ensuring that data was transferred accurately and
+                    completely. This helps users to have confidence that the
+                    transferred data is consistent with the source data.
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           ---------------- -----------------------
@@ -3161,9 +3289,7 @@ export default function Page() {
                     </li>
                   </ul>
                 </li>
-                <li>
-                  Developer
-                </li>
+                <li>Developer</li>
                 <li>
                   Basic - Support includes 24/7 access to customer service and
                   documentation.
@@ -3345,7 +3471,12 @@ export default function Page() {
                     AWS Artifact
                   </Link>
                 </li>
-                <li>ex. we can download compliance & certification reports;</li>
+                <li>
+                  ex. we can download compliance & certification reports;
+                </li>
+                <li>
+                  provides Service Organization Control (SOC) and Payment Card Industry (PCI) reports
+                </li>
               </ul>
             </div>
             <div
