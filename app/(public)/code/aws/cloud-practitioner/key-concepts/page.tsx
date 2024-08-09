@@ -792,10 +792,17 @@ export default function Page() {
               </h3>
               <ul className='className="max-w-md list-inside list-disc space-y-1'>
                 <li>
-                  In AWS Cloud Adoption Framework (CAF), cloud fluency is identified under the People Perspective for organizational adaptation to cloud technology
+                  In AWS Cloud Adoption Framework (CAF), cloud fluency is
+                  identified under the People Perspective for organizational
+                  adaptation to cloud technology
                 </li>
                 <li>
-                  Cloud fluency emphasizes the importance of education and knowledge across the organization about cloud technologies and AWS services. Ensuring that staff are cloud-fluent means they understand not only the technical aspects but also the operational, financial, and business implications of using AWS services.
+                  Cloud fluency emphasizes the importance of education and
+                  knowledge across the organization about cloud technologies and
+                  AWS services. Ensuring that staff are cloud-fluent means they
+                  understand not only the technical aspects but also the
+                  operational, financial, and business implications of using AWS
+                  services.
                 </li>
               </ul>
             </div>
@@ -1111,18 +1118,22 @@ export default function Page() {
               role="alert"
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                Network ACL - Network Access Control List (ACL) is a security layer in AWS that acts as a firewall for controlling traffic at the subnet level.
+                Network ACL - Network Access Control List (ACL) is a security
+                layer in AWS that acts as a firewall for controlling traffic at
+                the subnet level.
                 <Link
                   className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                   href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html"
                   target="_blank"
                 >
-                  VPC Network Acts | Control subnet traffic with network access control lists
+                  VPC Network Acts | Control subnet traffic with network access
+                  control lists
                 </Link>
               </h3>
               <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li>
-                  Used to control incoming and outgoing traffic at the subnet level
+                  Used to control incoming and outgoing traffic at the subnet
+                  level
                 </li>
               </ul>
             </div>
@@ -1729,7 +1740,9 @@ export default function Page() {
                   function to run;
                 </li>
                 <li>
-                  Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale
+                  Amazon API Gateway is a fully managed service that makes it
+                  easy for developers to create, publish, maintain, monitor, and
+                  secure APIs at any scale
                 </li>
               </ul>
             </div>
@@ -2044,7 +2057,6 @@ export default function Page() {
                     Routing Policy
                   </Link>
                 </li>
-
                 <li>
                   Weighted routing - lets you associate multiple resources with
                   a single domain name
@@ -2088,7 +2100,8 @@ export default function Page() {
                   Checks, Routing Policy
                 </li>
                 <li>
-                  Use Amazon Route 53 with latency-based routing to ensure global content delivery with the lowest possible latency
+                  Use Amazon Route 53 with latency-based routing to ensure
+                  global content delivery with the lowest possible latency
                 </li>
               </ul>
             </div>
@@ -3471,11 +3484,10 @@ export default function Page() {
                     AWS Artifact
                   </Link>
                 </li>
+                <li>ex. we can download compliance & certification reports;</li>
                 <li>
-                  ex. we can download compliance & certification reports;
-                </li>
-                <li>
-                  provides Service Organization Control (SOC) and Payment Card Industry (PCI) reports
+                  provides Service Organization Control (SOC) and Payment Card
+                  Industry (PCI) reports
                 </li>
               </ul>
             </div>
