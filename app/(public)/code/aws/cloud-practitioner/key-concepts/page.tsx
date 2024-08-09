@@ -662,11 +662,16 @@ export default function Page() {
                   pillar of the AWS Well-Architected Framework recommends
                   maintaining infrastructure as code (IaC)
                 </li>
-                <li>Security - focuses on protecting information & systems</li>
+                <li>
+                  Security - focuses on protecting information & systems</li>
                 <li>
                   Reliability - focuses on workloads performing their intended
                   functions and how to recover quickly from failure to meet
                   demands.
+                  <br />
+                  Scale horizontally to increase aggregate workload availability.
+                  <br />
+                  Ability to recover from failure automatically.
                 </li>
                 <li>
                   Performance Efficiency - focuses on using IT and computing
@@ -674,8 +679,16 @@ export default function Page() {
                   <br />
                   provides guidance on selecting appropriate compute resources
                   based on workload needs
+                  <br />
+                  ensures the right selection of resource types and optimized sizes for workload requirements
                 </li>
-                <li>Cost Optimization - focuses on avoiding un-needed costs</li>
+                <li>
+                  Cost Optimization - focuses on avoiding un-needed costs. The
+                  Cost Optimization pillar focuses on achieving the lowest cost
+                  of operation for a system and reducing cost through effective
+                  resource management, matching supply with demand and
+                  optimizing over time.
+                </li>
                 <li>
                   Sustainability - focuses on minimizing the environmental
                   impacts of running cloud workloads.
@@ -720,6 +733,9 @@ export default function Page() {
                 AWS Cloud Adoption Framework (AWS CAF)
               </h3>
               <ul className='className="max-w-md list-inside list-disc space-y-1'>
+                <li>
+                  Governance is key functionality of CAF
+                </li>
                 <li>
                   Cloud fluency capability is identified under the People
                   Perspective for organizational adaptation to cloud technology
@@ -766,6 +782,31 @@ export default function Page() {
                 <li>
                   AWS Site-to-Site VPN creates an encrypted connection between
                   on-prem & aws
+                </li>
+              </ul>
+            </div>
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Amazon VPC
+              </h3>
+              <ul className='className="max-w-md list-inside list-disc space-y-1'>
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html"
+                    target="_blank"
+                  >
+                    Control traffic to your AWS resources using security group
+                  </Link>
+                </li>
+                <li>
+                  An NACL contains both allowed and denied rules.
+                </li>
+                <li>
+                  A Security Group has only allowed rules.
                 </li>
               </ul>
             </div>
@@ -844,7 +885,12 @@ export default function Page() {
                       Customers are responsible for defining and using IAM
                       policies.
                     </li>
-                    <li>Configure an S3 bucket to allow public access.</li>
+                    <li>
+                      Configure an S3 bucket to allow public access.
+                    </li>
+                    <li>
+                      Customers are responsible for configuring firewalls and access management.
+                    </li>
                   </ul>
                   <li>AWS responsibility:</li>
                   <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
@@ -1194,6 +1240,8 @@ export default function Page() {
                   The other IAM Security Tool is IAM Access Advisor. It shows
                   the service permissions granted to a user and when those
                   services were last accessed.
+                  <br />
+                  IAM Credentials report reviews how frequently passwords and access keys are updated within its AWS environment.
                 </li>
                 <li>
                   An IAM policy is an entity that, when attached to an identity
@@ -1206,6 +1254,17 @@ export default function Page() {
                   that determine what an AWS service can do, while a role is a
                   temporary identity that can be assumed by a user or AWS
                   service.
+                </li>
+                <li>
+                  AWS IAM access keys best practices include:
+                  <ul>
+                    <li>
+                      Don't embed access keys directly into code.
+                    </li>
+                    <li>
+                      Rotate access keys periodically.
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </div>
@@ -1742,7 +1801,7 @@ export default function Page() {
                 <li>
                   Amazon API Gateway is a fully managed service that makes it
                   easy for developers to create, publish, maintain, monitor, and
-                  secure APIs at any scale
+                  secure APIs at any scale. Good to enhance its application scalability and resilience by migrating to a microservices approach for its next-generation software suite.
                 </li>
               </ul>
             </div>
@@ -1945,7 +2004,7 @@ export default function Page() {
                 <li>
                   Deep Archive - lowest-cost storage class and supports
                   long-term retention and digital preservation for data that may
-                  be accessed once or twice in a year
+                  be accessed once or twice in a year || Good for Disaster Recovery
                 </li>
                 <li>
                   Flexible Retrieval - delivers low-cost storage, up to 10%
@@ -1997,7 +2056,9 @@ export default function Page() {
                     Hosting a static website using Amazon S3
                   </Link>
                 </li>
-                <li>S3 One Zone-IA used to store thumbnails images</li>
+                <li>
+                  S3 One Zone-IA used to store thumbnails images
+                </li>
                 <li>
                   Use Amazon S3 One Zone-Infrequent Access (S3 One Zone-IA) to
                   store the thumbnails
@@ -2007,7 +2068,8 @@ export default function Page() {
                   data that is accessed less frequently but requires rapid
                   access when needed.
                 </li>
-                <li>S3 buckets have encryption configured by default</li>
+                <li>
+                  S3 buckets have encryption configured by default</li>
                 <li>
                   Lifecycle Rules can be used to define when S3 objects should
                   be transitioned to another storage class or when objects
@@ -2032,11 +2094,16 @@ export default function Page() {
                   transfers of files over long distances between your client and
                   an S3 bucket.
                 </li>
-                <li>Inbound data transfer in the S3 region is free.</li>
+                <li>
+                  Inbound data transfer in the S3 region is free.
+                </li>
                 <li>
                   AWS Outposts bring native AWS services, infrastructure, and
                   operating models to virtually any data center, co-location
                   space, or on-premises facility.
+                </li>
+                <li>
+                  S3 - Use "Server Access Logging" to obtain a security & access audit of an Amazon S3 bucket. Server Access Logging allows detailed logging of requests made to an S3 bucket.
                 </li>
               </ul>
             </div>
@@ -2141,7 +2208,21 @@ export default function Page() {
                   point in time.
                 </li>
                 <li>EBS Volumes are tied to only one availability zone.</li>
-                <li>EBS Snapshots are added cost in GB per month</li>
+                <li>
+                  EBS Snapshots are added cost in GB per month
+                </li>
+                <li>
+                  EBS Provisioned IOPS SSD (io2) ensures rapid data retrieval and continuous read/write operations.
+                </li>
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html"
+                    target="_blank"
+                  >
+                    EBS - Volume Types
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>
@@ -2219,6 +2300,9 @@ export default function Page() {
                   <li>
                     CloudWatch we can set up metrics monitoring for every
                     service in AWS
+                  </li>
+                  <li>
+                    CloudWatch to monitor the CPU usage of the EC2 instances
                   </li>
                 </ul>
               </div>
@@ -2320,8 +2404,12 @@ export default function Page() {
                       AWS CloudFront
                     </Link>
                   </li>
-                  <li>CloudFront is global not regional.</li>
-                  <li>CloudFront decreases latency & increases perf</li>
+                  <li>
+                    CloudFront is global not regional.
+                  </li>
+                  <li>
+                    CloudFront decreases latency & increases perf
+                  </li>
                   <li>
                     CloudFront delivers content worldwide through data centers
                     called "Edge Locations"; AWS Edge location is a site that
@@ -2341,6 +2429,18 @@ export default function Page() {
                   <li>
                     CloudFront achieves lower latency & high transfer speeds; it
                     speeds up distribute of static & dynamic web content.
+                  </li>
+                  <li>
+                    Data transfers OUT - impacts cost of CloudFront;
+                  </li>
+                  <li>
+                    <Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://aws.amazon.com/cloudfront/pricing/"
+                      target="_blank"
+                    >
+                      CloudFront Pricing
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -2966,6 +3066,9 @@ export default function Page() {
                     </Link>
                   </li>
                   <li>
+                    Compute Optimizer - optimize its AWS resource configuration to minimize costs and enhance workload performance
+                  </li>
+                  <li>
                     AWS Compute Optimizer does NOT provide optimization for S3
                     || EFS
                   </li>
@@ -3072,7 +3175,7 @@ export default function Page() {
                 role="alert"
               >
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                  Instance Store - provides temporary block-level storage for
+                  Instance Store - high I/O - provides temporary block-level storage for
                   your EC2 instance.
                 </h3>
               </div>
@@ -3248,10 +3351,106 @@ export default function Page() {
                 </ul>
               </div>
             </div>
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Amazon Elastic Transcoder
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  Amazon Elastic Transcoder is a scalable media transcoding
+                  service in AWS that converts audio and video files into
+                  formats suitable for various devices.
+                </li>
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/elastictranscoder"
+                    target="_blank"
+                  >
+                    AWS Elastic Transcoder
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Amazon Device Farm - test applications across multiple desktop
+                browsers and mobile devices
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  AWS Device Farm allows you to test your applications on real
+                  physical devices in the AWS Cloud.
+                </li>
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/device-farm"
+                    target="_blank"
+                  >
+                    AWS Device Farm
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Network Load Balancer (NLB) - type of Elastic Load Balancer can
+                handle millions of requests per second at the TCP and UDP
+                connection level
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  Network Load Balancers are designed to handle millions of
+                  requests per second while maintaining high throughput and
+                  ultra-low latency.
+                </li>
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://docs.aws.amazon.com/elasticloadbalancing/latest/network/introduction.html"
+                    target="_blank"
+                  >
+                    Network Load Balancer
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                SQS - Simple Queue Service
+              </h3>
+              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+                <li>
+                  Amazon Simple Queue Service (SQS) is another AWS service that provides decoupled communication for microservices-based applications.
+                </li>
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/sqs/"
+                    target="_blank"
+                  >
+                    Amazon SQS Simple Queue Service
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
           ---------------- -----------------------
           <br />
-          -- 4. Billing; Pricing & Services
+          --4. Billing; Pricing & Services
           <br />
           --- ---------------- -----------------------
           <div>
@@ -3372,6 +3571,11 @@ export default function Page() {
                       customers to purchase unused EC2 capacity at often
                       discounted rate.
                     </li>
+                    <li>
+                      If the Spot price increases and exceeds your maximum price then "the instance is terminated and cannot be recovered."
+                      <br />
+                      Spot Instances are an offering from AWS where you can bid for spare Amazon EC2 computing capacity. If your Spot Instance is running and the Spot price increases above your maximum price, AWS will automatically terminate your instance.
+                    </li>
                   </ul>
                 </li>
                 <li>
@@ -3382,6 +3586,22 @@ export default function Page() {
                   elasticity of AWS
                 </li>
               </ul>
+              <li>
+                EC2 Instance Types:
+                <Link
+                  className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                  href="https://aws.amazon.com/ec2/instance-types/"
+                  target="_blank"
+                >
+                  EC2 Instance Types
+                </Link>
+              </li>
+              <li>
+                Accelerated Computing - instances use hardware accelerators, or co-processors, to perform functions, such as floating point number calculations, graphics processing, or data pattern matching, more efficiently than is possible in software running on CPUs.
+              </li>
+              <li>
+                Reserved Instances for continuous baseline usage and On-Demand Instances for usage spikes are good sometimes;
+              </li>
             </div>
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -3704,6 +3924,22 @@ export default function Page() {
                 AWS Compute Optimizer recommends optimal AWS resources for your
                 workloads to reduce costs and improve performance by using
                 machine learning to analyze historical utilization metrics.
+              </h3>
+            </div>
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS Cost Anomaly Detection - receive alerts for unauthorized or unusual billing activity that indicates potential fraud or mismanagement
+                <br />
+                <Link
+                  className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                  href="https://aws.amazon.com/aws-cost-management/aws-cost-anomaly-detection/"
+                  target="_blank"
+                >
+                  AWS Cost Anomaly Detection
+                </Link>
               </h3>
             </div>
           </div>
