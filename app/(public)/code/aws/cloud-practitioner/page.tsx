@@ -21,46 +21,67 @@ export default function Page() {
         </div>
         <div className="m-4 flex-[80] rounded-2xl p-4 text-white ring-2 ring-gray-300 dark:bg-[#232f3e] dark:ring-gray-500">
           <h1>AWS Cloud Practitioner Exam</h1>
-          <h3>
-            This section is to document & assist in learning the AWS Cloud
-            Practitioner exam
-          </h3>
-          <div>
-            The{' '}
-            <Link
-              href="https://aws.amazon.com/certification/certified-cloud-practitioner/"
-              target="_blank"
-              className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-            >
-              official AWS Cloud Practitioner exam page.
-            </Link>{' '}
-            Let us break this down into 4 sections.
-          </div>
-          <ul className="max-w-md list-inside list-disc space-y-1 text-gray-500 dark:text-gray-400">
+          <h3>This section is to document & assist in learning the AWS Cloud Practitioner exam</h3>
+          <div>The <Link href="https://aws.amazon.com/certification/certified-cloud-practitioner/" target='_blank' className='font-medium text-blue-600 dark:text-blue-500 hover:underline'>official AWS Cloud Practitioner exam page.</Link> Let us break this down into 4 sections.</div>
+          <ul className='max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400'>
             <li>1. Cloud Concepts | 24%</li>
             <li>2. Security & Compliance | 30%</li>
             <li>3. Cloud Technology & Services | 34%</li>
             <li>4. Billing; Pricing & Services | 12%</li>
           </ul>
           <div>Sections:</div>
-          <ul className="max-w-md list-inside list-disc space-y-1 text-gray-500 dark:text-gray-400">
-            <li>IAM</li>
-            <li>EC2</li>
-            <li>ELB & ASG</li>
-            <li>Amazon S3</li>
-            <li>Databases & Analytics</li>
-            <li>ECS; Lambda; Batch & Lightsail</li>
-            <li>Deployments & Managing Infrastructure at Scale</li>
-            <li>AWS Global Infrastructure</li>
-            <li>Cloud Integrations</li>
-            <li>Cloud Monitoring</li>
-            <li>VPC & Networking</li>
-            <li>Security & Compliance</li>
-            <li>Machine Learning</li>
-            <li>Account Management, Billing & Support</li>
-            <li>Advanced Identity</li>
-            <li>Other Services</li>
-            <li>AWS Architecting & Ecosystem</li>
+          <ul className='max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400'>
+            <li>
+              IAM
+            </li>
+            <li>
+              EC2
+            </li>
+            <li>
+              ELB & ASG
+            </li>
+            <li>
+              Amazon S3
+            </li>
+            <li>
+              Databases & Analytics
+            </li>
+            <li>
+              ECS; Lambda; Batch & Lightsail
+            </li>
+            <li>
+              Deployments & Managing Infrastructure at Scale
+            </li>
+            <li>
+              AWS Global Infrastructure
+            </li>
+            <li>
+              Cloud Integrations
+            </li>
+            <li>
+              Cloud Monitoring
+            </li>
+            <li>
+              VPC & Networking
+            </li>
+            <li>
+              Security & Compliance
+            </li>
+            <li>
+              Machine Learning
+            </li>
+            <li>
+              Account Management, Billing & Support
+            </li>
+            <li>
+              Advanced Identity
+            </li>
+            <li>
+              Other Services
+            </li>
+            <li>
+              AWS Architecting & Ecosystem
+            </li>
           </ul>
           {/* <ul className="space-y-2 font-medium">
             <li>
