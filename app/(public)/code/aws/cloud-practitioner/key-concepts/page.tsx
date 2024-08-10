@@ -125,7 +125,7 @@ export default function Page() {
                 AWS Features & Benefits:
               </h3>
               <br />
-              <ul className='max-w-md list-inside list-disc space-y-1'>
+              <ul className="max-w-md list-inside list-disc space-y-1">
                 <li>
                   Global availability is a feature of AWS which will support an
                   international company to provide low latency to customers
@@ -218,12 +218,10 @@ export default function Page() {
                   requirements, proximity to customers, available services and
                   features within a Region, and pricing.
                 </li>
-                <li>
-                  Pay-as-you-go pricing - pay only upon usage;
-                </li>
+                <li>Pay-as-you-go pricing - pay only upon usage;</li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700"></hr>
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2"></hr>
             <div>
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -238,7 +236,7 @@ export default function Page() {
                 makes feasible to add remove resources
               </div>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -246,7 +244,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 AWS Config
               </h3>
-              <ul className='max-w-md list-inside list-disc space-y-1'>
+              <ul className="max-w-md list-inside list-disc space-y-1">
                 <li>Assess; audit & evaluate configurations resources.</li>
                 <li>
                   <Link
@@ -260,9 +258,7 @@ export default function Page() {
                 <li>
                   Config is good to "Audit" change management of AWS resources
                 </li>
-                <li>
-                  Tracking configuration changes
-                </li>
+                <li>Tracking configuration changes</li>
                 <li>
                   AWS Config is a service that enables you to assess, audit, and
                   evaluate the configurations of your AWS resources.
@@ -270,7 +266,7 @@ export default function Page() {
                 <li>Record configurations and changes over time</li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -280,7 +276,7 @@ export default function Page() {
                 change
               </h3>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -290,7 +286,7 @@ export default function Page() {
                 trade their CApital IT EXpenses for OPerational EXpenses
               </h3>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -303,7 +299,7 @@ export default function Page() {
               Availability Zones. ASGs add & removed instances based on Demand.
               * can be used to run a "customer-managed relational database";
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -311,15 +307,12 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 Application Load Balancer
               </h3>
-              <ul className='max-w-md list-inside list-disc space-y-1'>
-                <li>
-                  groups help achieve high availability for a web</li>
-                <li>
-                  Load balancing - distributing load.
-                </li>
+              <ul className="max-w-md list-inside list-disc space-y-1">
+                <li>groups help achieve high availability for a web</li>
+                <li>Load balancing - distributing load.</li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -327,13 +320,14 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 EC2 Auto Scaling
               </h3>
-              <ul className='max-w-md list-inside list-disc space-y-1'>
+              <ul className="max-w-md list-inside list-disc space-y-1">
                 <li>
-                  app by automagically adding or replace instances across multiple
-                  Availability Zones. ASGs add & removed instances based on Demand.
-                  * can be used to run a "customer-managed relational database"; -
-                  ensures that your app on EC2 always has the right amount of
-                  capacity to handle the current traffic demand
+                  app by automagically adding or replace instances across
+                  multiple Availability Zones. ASGs add & removed instances
+                  based on Demand. * can be used to run a "customer-managed
+                  relational database"; - ensures that your app on EC2 always
+                  has the right amount of capacity to handle the current traffic
+                  demand
                 </li>
                 <li>
                   <Link
@@ -346,8 +340,8 @@ export default function Page() {
                 </li>
                 <li>
                   EC2 Instance Store has a better I/O performance, but data is
-                  lost if: the EC2 instance is stopped or terminated, or when the
-                  underlying disk drive fails.
+                  lost if: the EC2 instance is stopped or terminated, or when
+                  the underlying disk drive fails.
                 </li>
                 <li>
                   An Auto Scaling Group (ASG) can automatically and quickly
@@ -366,7 +360,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -374,7 +368,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 AMI - Amazon Machine Image
               </h3>
-              <ul className='max-w-md list-inside list-disc space-y-1'>
+              <ul className="max-w-md list-inside list-disc space-y-1">
                 <li>EC2 to launch a pre-configured EC2</li>
                 <li>
                   <Link
@@ -398,7 +392,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -406,10 +400,10 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 AWS Trusted Advisor
               </h3>
-              <ul className='max-w-md list-inside list-disc space-y-1'>
+              <ul className="max-w-md list-inside list-disc space-y-1">
                 <li>
                   AWS Trusted Advisor
-                  <ul className='max-w-md ml-5 list-inside list-disc space-y-1'>
+                  <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                     <li>optimizes costs</li>
                     <li>improve performance</li>
                     <li>address security gaps</li>
@@ -464,7 +458,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -472,7 +466,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 Regions & Availability Zones
               </h3>
-              <ul className='max-w-md list-inside list-disc space-y-1'>
+              <ul className="max-w-md list-inside list-disc space-y-1">
                 <li>
                   Expanding into another region; We create resources in a new
                   region;
@@ -507,14 +501,14 @@ export default function Page() {
                 <li>
                   What are the advantages of deploying an application with
                   Amazon EC2 instances in multiple Availability Zones?
-                  <ul className='max-w-md list-inside list-disc space-y-1'>
+                  <ul className="max-w-md list-inside list-disc space-y-1">
                     <li>increasing the availability of the app</li>
                     <li>preventing a single point of failure</li>
                   </ul>
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -537,7 +531,7 @@ export default function Page() {
                 AWS Certificate Manager
               </Link>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -545,7 +539,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 Architecture Design Principles:
               </h3>
-              <ul className='max-w-md list-inside list-disc space-y-1'>
+              <ul className="max-w-md list-inside list-disc space-y-1">
                 <li>
                   Automatically recover from failure: By monitoring a workload
                   for key performance indicators (KPIs), you can run automation
@@ -591,7 +585,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -607,7 +601,7 @@ export default function Page() {
               based on traffic && resizing RDS instances as business needs
               change;
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -625,7 +619,7 @@ export default function Page() {
                 AWS Enable VPC internet access using internet gateways
               </Link>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -643,7 +637,7 @@ export default function Page() {
                 AWS Acceptable Use Policy - AUP
               </Link>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -652,7 +646,7 @@ export default function Page() {
                 AWS Partner Solutions (formerly Quick Starts) - quickly deploy a
                 popular tech on AWS
               </h3>
-              <ul className='max-w-md list-inside list-disc space-y-1'>
+              <ul className="max-w-md list-inside list-disc space-y-1">
                 <li>
                   AWS Partner Solutions are automated reference deployments
                   built by Amazon Web Services (AWS) solutions architects and
@@ -669,7 +663,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -677,11 +671,12 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 The AWS Well-Architected Framework is based on six pillars
               </h3>
-              <ul className='max-w-md list-inside list-disc space-y-1'>
+              <ul className="max-w-md list-inside list-disc space-y-1">
                 <li>
-                  <span className='font-bold'>Operational Excellence</span> - includes the ability to run and
-                  monitor systems to deliver business value and to continually
-                  improve supporting processes and procedures.
+                  <span className="font-bold">Operational Excellence</span> -
+                  includes the ability to run and monitor systems to deliver
+                  business value and to continually improve supporting processes
+                  and procedures.
                   <br />
                   pillar of the AWS Well-Architected Framework recommends
                   maintaining infrastructure as code (IaC)
@@ -689,25 +684,30 @@ export default function Page() {
                   Adopt serverless architecture whenever possible
                 </li>
                 <li>
-                  <span className='font-bold'>Security</span> - focuses on protecting information & systems
+                  <span className="font-bold">Security</span> - focuses on
+                  protecting information & systems
                   <br />
-                  Implement the principle of least privilege to all AWS resources
+                  Implement the principle of least privilege to all AWS
+                  resources
                 </li>
                 <li>
-                  <span className='font-bold'>Reliability</span> - focuses on workloads performing their intended
-                  functions and how to recover quickly from failure to meet
-                  demands.
+                  <span className="font-bold">Reliability</span> - focuses on
+                  workloads performing their intended functions and how to
+                  recover quickly from failure to meet demands.
                   <br />
                   Scale horizontally to increase aggregate workload
                   availability.
                   <br />
                   Ability to recover from failure automatically.
                   <br />
-                  Horizontal scaling is another important aspect of the Reliability Pillar. AWS offers elastic scaling capabilities that allow applications to scale horizontally by adding more instances to distribute the workload.
+                  Horizontal scaling is another important aspect of the
+                  Reliability Pillar. AWS offers elastic scaling capabilities
+                  that allow applications to scale horizontally by adding more
+                  instances to distribute the workload.
                 </li>
                 <li>
-                  <span className='font-bold'>Performance Efficiency</span> - focuses on using IT and computing
-                  resources efficiently
+                  <span className="font-bold">Performance Efficiency</span> -
+                  focuses on using IT and computing resources efficiently
                   <br />
                   provides guidance on selecting appropriate compute resources
                   based on workload needs
@@ -715,18 +715,21 @@ export default function Page() {
                   ensures the right selection of resource types and optimized
                   sizes for workload requirements
                   <br />
-                  Use the right type and size of resources for your workload. By using the correct type and size of resources, the system can achieve optimal performance and reduce unnecessary costs.
+                  Use the right type and size of resources for your workload. By
+                  using the correct type and size of resources, the system can
+                  achieve optimal performance and reduce unnecessary costs.
                 </li>
                 <li>
-                  <span className='font-bold'>Cost Optimization</span> - focuses on avoiding un-needed costs. The
-                  Cost Optimization pillar focuses on achieving the lowest cost
-                  of operation for a system and reducing cost through effective
-                  resource management, matching supply with demand and
-                  optimizing over time.
+                  <span className="font-bold">Cost Optimization</span> - focuses
+                  on avoiding un-needed costs. The Cost Optimization pillar
+                  focuses on achieving the lowest cost of operation for a system
+                  and reducing cost through effective resource management,
+                  matching supply with demand and optimizing over time.
                 </li>
                 <li>
-                  <span className='font-bold'>Sustainability</span> - focuses on minimizing the "environmental"
-                  impacts of running cloud workloads.
+                  <span className="font-bold">Sustainability</span> - focuses on
+                  minimizing the "environmental" impacts of running cloud
+                  workloads.
                 </li>
               </ul>
               <div>
@@ -735,7 +738,7 @@ export default function Page() {
                 of the AWS Well-Architected Framework
               </div>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -745,7 +748,7 @@ export default function Page() {
                 technology and consulting businesses that leverage Amazon Web
                 Services to build solutions and services for customers
               </h3>
-              <ul className='max-w-md list-inside list-disc space-y-1'>
+              <ul className="max-w-md list-inside list-disc space-y-1">
                 <li>
                   Good for get expert professional advice on migrating to AWS
                   and managing their applications on AWS Cloud
@@ -760,11 +763,12 @@ export default function Page() {
                   </Link>
                 </li>
                 <li>
-                  Service to help identify the right solution we need when a company wants to migrate infrastructure to the AWS cloud
+                  Service to help identify the right solution we need when a
+                  company wants to migrate infrastructure to the AWS cloud
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -772,7 +776,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 AWS Cloud Adoption Framework (AWS CAF)
               </h3>
-              <ul className='max-w-md list-inside list-disc space-y-1'>
+              <ul className="max-w-md list-inside list-disc space-y-1">
                 <li>Governance is key functionality of CAF</li>
                 <li>
                   Cloud fluency capability is identified under the People
@@ -795,7 +799,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -804,7 +808,7 @@ export default function Page() {
                 VPC Peering Connection - optimal way of privately sharing data
                 between the two VPCs
               </h3>
-              <ul className='max-w-md list-inside list-disc space-y-1'>
+              <ul className="max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -824,7 +828,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -832,7 +836,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 Amazon VPC
               </h3>
-              <ul className='max-w-md list-inside list-disc space-y-1'>
+              <ul className="max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -842,20 +846,18 @@ export default function Page() {
                     Control traffic to your AWS resources using security group
                   </Link>
                 </li>
-                <li>
-                  An NACL contains both allowed and denied rules.</li>
-                <li>
-                  A Security Group has only allowed rules.
-                </li>
+                <li>An NACL contains both allowed and denied rules.</li>
+                <li>A Security Group has only allowed rules.</li>
                 <li>
                   Have complete control over the virtual networking environment.
                 </li>
                 <li>
-                  Can configure network ACL that acts as a firewall for controlling traffic.
+                  Can configure network ACL that acts as a firewall for
+                  controlling traffic.
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -863,14 +865,14 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 "6 R's" migration strategy in AWS
               </h3>
-              <ul className='max-w-md list-inside list-disc space-y-1'>
+              <ul className="max-w-md list-inside list-disc space-y-1">
                 <li>
                   Refactor, Rehost, Repurchase, Retain, Retire, and Rebuild
                 </li>
                 <li>not one of the 6 R's: Reiterate; Retry & Replicate</li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -878,7 +880,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 Cloud fluency
               </h3>
-              <ul className='max-w-md list-inside list-disc space-y-1'>
+              <ul className="max-w-md list-inside list-disc space-y-1">
                 <li>
                   In AWS Cloud Adoption Framework (CAF), cloud fluency is
                   identified under the People Perspective for organizational
@@ -894,7 +896,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
           </div>
           ---------------- ----------------
           <br />
@@ -902,7 +904,7 @@ export default function Page() {
           <br />
           ---------------- ----------------
           <div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -911,32 +913,26 @@ export default function Page() {
                 AWS Shared Responsibility model - The Shared Responsibility
                 Model defines who is responsible for what in the AWS Cloud.
               </h3>
-              <ul className='max-w-md list-inside list-disc space-y-1'>
+              <ul className="max-w-md list-inside list-disc space-y-1">
                 <li>
-                  <span className='font-bold'>Customers responsibility:</span>
+                  <span className="font-bold">Customers responsibility:</span>
                 </li>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
-                    Customers responsible for security <span className='font-bold'>"IN"</span> the cloud:
+                    Customers responsible for security{' '}
+                    <span className="font-bold">"IN"</span> the cloud:
                   </li>
                   <li>
-                    Data encryption - ensure that app data is encrypted at rest && Encrypting data in transit & at rest
+                    Data encryption - ensure that app data is encrypted at rest
+                    && Encrypting data in transit & at rest
                   </li>
-                  <li>
-                    Patching EC2 instances;
-                  </li>
-                  <li>
-                    Ensure users have security training
-                  </li>
-                  <li>
-                    Penetration tests
-                  </li>
+                  <li>Patching EC2 instances;</li>
+                  <li>Ensure users have security training</li>
+                  <li>Penetration tests</li>
                   <li>
                     Managing VPC network access control lists to secure apps
                   </li>
-                  <li>
-                    Maintaining server-side Encryption
-                  </li>
+                  <li>Maintaining server-side Encryption</li>
                   <li>
                     Using RDS customer is responsible for controlling network
                     access through security groups;
@@ -945,61 +941,51 @@ export default function Page() {
                     Customers are responsible for defining and using IAM
                     policies.
                   </li>
-                  <li>
-                    Configure an S3 bucket to allow public access;
-                  </li>
+                  <li>Configure an S3 bucket to allow public access;</li>
                   <li>
                     Customers are responsible for configuring firewalls and
                     access management.
                   </li>
                   <li>
-                    Applying appropriate security levels of assets stored in the AWS environment.
+                    Applying appropriate security levels of assets stored in the
+                    AWS environment.
                   </li>
                 </ul>
                 <li>
-                  <span className='font-bold'>AWS responsibility:</span>
+                  <span className="font-bold">AWS responsibility:</span>
                 </li>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
-                    AWS responsible for security <span className='font-bold'>"OF"</span> the cloud:</li>
-                  <li>
-                    has sole responsibility for physical security; "Security
-                    of the Cloud"
+                    AWS responsible for security{' '}
+                    <span className="font-bold">"OF"</span> the cloud:
                   </li>
                   <li>
-                    AWS is responsible for protecting the infrastructure
-                    that runs all of the services offered in AWS Cloud;
+                    has sole responsibility for physical security; "Security of
+                    the Cloud"
                   </li>
                   <li>
-                    updating firmware
+                    AWS is responsible for protecting the infrastructure that
+                    runs all of the services offered in AWS Cloud;
                   </li>
-                  <li>
-                    Auditing physical data center assets</li>
-                  <li>
-                    Patching db software</li>
-                  <li>
-                    Backing up DBs</li>
-                  <li>
-                    Securing the EC2 Hypervisor & physical controls</li>
-                  <li>
-                    Edge location management</li>
+                  <li>updating firmware</li>
+                  <li>Auditing physical data center assets</li>
+                  <li>Patching db software</li>
+                  <li>Backing up DBs</li>
+                  <li>Securing the EC2 Hypervisor & physical controls</li>
+                  <li>Edge location management</li>
                   <li>
                     For abstracted services like Amazon S3, AWS operates the
                     infrastructure layer, the operating system, and platforms
                   </li>
                 </ul>
                 <li>
-                  <span className='font-bold'>Shared responsibility:</span>
-                  <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                  <span className="font-bold">Shared responsibility:</span>
+                  <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
+                    <li>Awareness & training</li>
+                    <li>Configuration Management</li>
                     <li>
-                      Awareness & training
-                    </li>
-                    <li>
-                      Configuration Management
-                    </li>
-                    <li>
-                      Awareness & training is a shared control between
-                      customer & AWS
+                      Awareness & training is a shared control between customer
+                      & AWS
                     </li>
                   </ul>
                 </li>
@@ -1014,7 +1000,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1023,17 +1009,18 @@ export default function Page() {
                 Security - Security-related services AWS offers:
                 <br />
                 MFA physical tokens;
-                <br />Data Encryption is often done with help of KMS
+                <br />
+                Data Encryption is often done with help of KMS
               </h3>
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 2 security measures to protect AWS accounts:
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>grant least</li>
                   <li>privilege access to IAM users; * Activate MFA</li>
                 </ul>
               </h3>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1043,7 +1030,7 @@ export default function Page() {
                 instance;
               </h3>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1051,7 +1038,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 SECURITY Steps taken when conducting penetration testing on AWS?
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -1073,7 +1060,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1085,17 +1072,18 @@ export default function Page() {
                 your computer.
               </h3>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 Virtual Multi-Factor Authentication (MFA) device
-                <br />NOT a physical device - generates a six-digit numeric code
+                <br />
+                NOT a physical device - generates a six-digit numeric code
               </h3>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1105,7 +1093,7 @@ export default function Page() {
                 encryption - Manage single-tenant hardware security modules
                 (HSMs) on AWS
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -1133,7 +1121,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1141,7 +1129,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 AWS WAF - Web Application Firewall
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -1167,8 +1155,8 @@ export default function Page() {
                   scripting attacks;
                 </li>
                 <li>
-                  AWS <span className='font-bold'>Shield</span>  is only used to safeguard running applications from
-                  DDoS attacks;
+                  AWS <span className="font-bold">Shield</span> is only used to
+                  safeguard running applications from DDoS attacks;
                 </li>
                 <li>
                   <Link
@@ -1181,7 +1169,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1189,7 +1177,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 AWS Security Hub
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -1206,13 +1194,13 @@ export default function Page() {
                   Centrally automate security checks across several AWS accounts
                 </li>
                 <li>
-                  AWS Security Hub provides us with a comprehensive view of
-                  your security state within AWS and your compliance with
-                  security standards and best practices.
+                  AWS Security Hub provides us with a comprehensive view of your
+                  security state within AWS and your compliance with security
+                  standards and best practices.
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1220,7 +1208,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 Root User Privileges
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -1230,35 +1218,20 @@ export default function Page() {
                     Root User Privileges
                   </Link>
                 </li>
-                <li>
-                  Actions only by root user:
-                </li>
-                <li>
-                  Change account settings
-                </li>
-                <li>
-                  Close Account
-                </li>
-                <li>
-                  Change or cancel AWS Support plan
-                </li>
-                <li>
-                  Register as a seller in Reserved Instances Marketplace</li>
-                <li>
-                  view tax invoices
-                </li>
-                <li>
-                  Restore IAM user permissions
-                </li>
+                <li>Actions only by root user:</li>
+                <li>Change account settings</li>
+                <li>Close Account</li>
+                <li>Change or cancel AWS Support plan</li>
+                <li>Register as a seller in Reserved Instances Marketplace</li>
+                <li>view tax invoices</li>
+                <li>Restore IAM user permissions</li>
                 <li>
                   Config S3 to enable MFA & edit S3 that include invalid VPC ID
                 </li>
-                <li>
-                  Sign up for GovCloud
-                </li>
+                <li>Sign up for GovCloud</li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1267,26 +1240,22 @@ export default function Page() {
                 To gain programmatic access to an AWS account, the required
                 credential components are an:
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
-                <li>
-                  access key ID
-                </li>
-                <li>
-                  secret access key</li>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
+                <li>access key ID</li>
+                <li>secret access key</li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 Network ACL - Network Access Control List (ACL)
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
-                    ACL is a security
-                    layer in AWS that acts as a firewall for controlling traffic at
-                    the subnet level.
+                    ACL is a security layer in AWS that acts as a firewall for
+                    controlling traffic at the subnet level.
                   </li>
                   <li>
                     <Link
@@ -1294,8 +1263,8 @@ export default function Page() {
                       href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html"
                       target="_blank"
                     >
-                      VPC Network Acts | Control subnet traffic with network access
-                      control lists
+                      VPC Network Acts | Control subnet traffic with network
+                      access control lists
                     </Link>
                   </li>
                   <li>
@@ -1305,7 +1274,7 @@ export default function Page() {
                 </ul>
               </h3>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1313,9 +1282,10 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 AWS Service Catalog
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
-                  AWS Service Catalog enables organizations to create and manage catalogs of IT services for use on AWS
+                  AWS Service Catalog enables organizations to create and manage
+                  catalogs of IT services for use on AWS
                 </li>
                 <li>
                   <Link
@@ -1327,20 +1297,19 @@ export default function Page() {
                   </Link>
                 </li>
                 <li>
-                  Manage its deployed IT services and govern infrastructure as code (IaC) templates.
+                  Manage its deployed IT services and govern infrastructure as
+                  code (IaC) templates.
                 </li>
               </ul>
-
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
-
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
           </div>
           ---------------- -----------------------
           <br />
           -- 3. Services & Cloud technology <br />
           --- ---------------- -----------------------
           <div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1348,7 +1317,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 IAM - Identity & Access Management
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   adds security & identity * MFA & enforcing pw strength &
                   expiration IAM policies don't have access keys. The only way
@@ -1359,12 +1328,8 @@ export default function Page() {
                   Apply an IAM policy to an IAM group - apply common access
                   controls to large set of use
                 </li>
-                <li>
-                  IAM groups able to administer multiple users
-                </li>
-                <li>
-                  IAM policies can limit S3 access to specific users.
-                </li>
+                <li>IAM groups able to administer multiple users</li>
+                <li>IAM policies can limit S3 access to specific users.</li>
                 <li>
                   AWS IAM Identity Center - SSO - access management to multiple
                   AWS accounts as well as facilitate AWS Single Sign-On (AWS
@@ -1414,32 +1379,28 @@ export default function Page() {
                 </li>
                 <li>
                   AWS IAM access keys best practices include:
-                  <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                  <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                     <li>Don't embed access keys directly into code.</li>
                     <li>Rotate access keys periodically.</li>
                   </ul>
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
             >
-              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                AWS EC2
-              </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">AWS EC2</h3>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   Can be used to manually launch "instances" bases on resource
                   requirements
                 </li>
-                <li>
-                  can be used to host MS SQL Server
-                </li>
+                <li>can be used to host MS SQL Server</li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1447,7 +1408,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 AWS Cloud Tail
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -1457,10 +1418,8 @@ export default function Page() {
                     AWS CloudTrail
                   </Link>
                 </li>
-                <li>
-                  Track user activity & API usage.</li>
-                <li>
-                  A service to gather info about AWS account activity</li>
+                <li>Track user activity & API usage.</li>
+                <li>A service to gather info about AWS account activity</li>
                 <li>
                   Use CloudTrail to log, monitor and retain account activity
                   related to actions across your AWS infrastructure
@@ -1480,7 +1439,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1489,9 +1448,8 @@ export default function Page() {
                 Amazon GuardDuty Protect your AWS accounts, workloads, and data
                 with intelligent threat detection
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
-                <li>
-                  Assists in threat protection</li>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
+                <li>Assists in threat protection</li>
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -1508,7 +1466,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1516,16 +1474,11 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 Amazon RDS - relational Database Service advantage is it
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
-                <li>
-                  Simplifies administration tasks.</li>
-                <li>
-                  Used to host db's</li>
-                <li>
-                  AWS Manages the maintenance of the OS</li>
-                <li>
-                  MS SQL Server - RDS can be used to host
-                </li>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
+                <li>Simplifies administration tasks.</li>
+                <li>Used to host db's</li>
+                <li>AWS Manages the maintenance of the OS</li>
+                <li>MS SQL Server - RDS can be used to host</li>
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -1535,9 +1488,7 @@ export default function Page() {
                     AWS RDB
                   </Link>
                 </li>
-                <li>
-                  Suited for OLTP workloads
-                </li>
+                <li>Suited for OLTP workloads</li>
                 <li>
                   RDS Multi-AZ deployments' main purpose is high availability,
                   while RDS Read replicas' main purpose is scalability.
@@ -1548,7 +1499,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1557,7 +1508,7 @@ export default function Page() {
                 Read Replicas provide enhanced performance and durability for
                 Amazon RDS database (DB) instance & improves scalability
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -1571,9 +1522,7 @@ export default function Page() {
                   Read Replica improves database scalability & performance; -
                   scale out globally
                 </li>
-                <li>
-                  AWS DMS database migration service
-                </li>
+                <li>AWS DMS database migration service</li>
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -1589,7 +1538,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1598,7 +1547,7 @@ export default function Page() {
                 AWS CloudFormation - speed up cloud provisioning with
                 infrastructure as code;
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -1628,7 +1577,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1636,7 +1585,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 AWS CodeDeploy - automates software deployments
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -1646,8 +1595,7 @@ export default function Page() {
                     AWS CodeDeploy
                   </Link>
                 </li>
-                <li>
-                  Automate code deployment to maintain application uptime</li>
+                <li>Automate code deployment to maintain application uptime</li>
                 <li>
                   AWS CodeArtifact (repo for code dependencies) is a managed
                   artifact repository (also called code dependencies)
@@ -1677,11 +1625,12 @@ export default function Page() {
                   resources using familiar programming languages.
                 </li>
                 <li>
-                  AWS CodePipeline - service supports CD (Continuous Delivery) that automates the release process whenever you change code
+                  AWS CodePipeline - service supports CD (Continuous Delivery)
+                  that automates the release process whenever you change code
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1689,7 +1638,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 Aurora - scale MySQL & PostgreSQL
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -1712,7 +1661,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1720,7 +1669,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 Amazon QLDB - Quantum Ledger Database
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -1738,7 +1687,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1748,7 +1697,7 @@ export default function Page() {
                 and scale Apache Spark, Hive, Presto, and other big data
                 workloads
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -1767,7 +1716,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1775,7 +1724,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 DynamoDB - NoSQL db's / schemaless database
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -1805,7 +1754,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1813,7 +1762,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 AWS Athena
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -1832,7 +1781,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1840,7 +1789,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 Redshift - big data as service / cloud data warehouse
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -1852,7 +1801,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1860,7 +1809,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 AWS KMS - Key Management Service
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -1880,21 +1829,22 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                AWS Direct Connect - Create a dedicated network connection to AWS
-
+                AWS Direct Connect - Create a dedicated network connection to
+                AWS
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
-                  Direct Connect enables us to connect securely AWS to on-prem data center. ex. Direct connect can connect Amazon VPC to on-premises data center.
+                  Direct Connect enables us to connect securely AWS to on-prem
+                  data center. ex. Direct connect can connect Amazon VPC to
+                  on-premises data center.
                 </li>
-                <li>
-                  On-Prem connections</li>
+                <li>On-Prem connections</li>
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -1915,13 +1865,13 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">AWS VPC</h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -1931,15 +1881,13 @@ export default function Page() {
                     AWS VPC
                   </Link>
                 </li>
-                <li>
-                  2 features that can be configured with VPC are:</li>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <li>2 features that can be configured with VPC are:</li>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     Security Groups - operate at instance level and can control
                     traffic in & out of EC2
                   </li>
-                  <li>
-                    Subnets</li>
+                  <li>Subnets</li>
                 </ul>
                 <li>
                   Virtual private cloud (VPC) is a virtual network dedicated to
@@ -1973,7 +1921,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -1982,7 +1930,7 @@ export default function Page() {
                 AWS Lambda - runs code serverless without thinking of servers or
                 clusters;
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -2009,7 +1957,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -2018,18 +1966,16 @@ export default function Page() {
                 Amazon Step Functions; Amazon DynamoDB & Amazon SNS - serverless
                 platform;
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
-                <li>
-                  Amazon DynamoDB</li>
-                <li>
-                  Amazon SNS</li>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
+                <li>Amazon DynamoDB</li>
+                <li>Amazon SNS</li>
                 <li>
                   Lambda is charged by call & duration; In AWS Lambda, we are
                   charged per request and compute time, that's it.
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -2037,7 +1983,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 AWS Personal Health Dashboard
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   Provides alerts when an AWS event may impact a company's AWS
                   resources. Provides alerts & remediation guidance when AWS is
@@ -2067,7 +2013,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -2075,7 +2021,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 AWS Health Dashboard - Service Health -
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   used to subscribe to an RSS feed to be notified of the status
                   of all AWS service interruptions
@@ -2104,7 +2050,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -2112,7 +2058,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 AWS Marketplace - search for software listing that runs on AWS
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -2130,7 +2076,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 Facilitates use cases:
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   Sell Software as a Service (SaaS) solutions to AWS customers
                 </li>
@@ -2141,7 +2087,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -2149,13 +2095,11 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 AWS managed services such as ElastiCache & RDS benefits are:
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
-                <li>
-                  they simplify patching & updating OS's
-                </li>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
+                <li>they simplify patching & updating OS's</li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -2164,7 +2108,7 @@ export default function Page() {
                 RDS & EFS are services for read/write of constantly changing
                 data Amazon Elastic File System EFS
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -2204,7 +2148,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -2213,7 +2157,7 @@ export default function Page() {
                 AWS Glacier - Long-term, secure, durable storage classes for
                 data archiving at the lowest cost and milliseconds access
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   Deep Archive - lowest-cost storage class and supports
                   long-term retention and digital preservation for data that may
@@ -2237,7 +2181,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -2247,7 +2191,7 @@ export default function Page() {
                 from anywhere lowest cost durable storage option for retaining
                 database backups for immediate retrieval;
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -2318,13 +2262,15 @@ export default function Page() {
                   detailed logging of requests made to an S3 bucket.
                 </li>
                 <li>
-                  Use client-side encryption by using the AWS Encryption SDK when needing to encrypt data before sending it to S3;
+                  Use client-side encryption by using the AWS Encryption SDK
+                  when needing to encrypt data before sending it to S3;
                   <br />
-                  The AWS Encryption SDK simplifies the task of encrypting data on the client side before uploading it to S3
+                  The AWS Encryption SDK simplifies the task of encrypting data
+                  on the client side before uploading it to S3
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -2332,7 +2278,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 Routing types:
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -2391,17 +2337,13 @@ export default function Page() {
                 <li>
                   Route 53 provides:
                   <ul>
-                    <li>
-                      DNS Management
-                    </li>
-                    <li>
-                      Domain registration
-                    </li>
+                    <li>DNS Management</li>
+                    <li>Domain registration</li>
                   </ul>
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -2409,7 +2351,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 AWS EBS - Elastic Block Store - high performance block storage
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -2454,7 +2396,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div>
               <div
                 className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -2463,7 +2405,7 @@ export default function Page() {
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                   AWS CLI - to access with IAM we utilize access keys;
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -2485,7 +2427,7 @@ export default function Page() {
                   channels CloudWatch logs: advantages are real-time monitoring
                   & adjustable retention
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -2545,7 +2487,7 @@ export default function Page() {
                   driven decisions with the best price-performance cloud data
                   warehouse
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -2565,7 +2507,7 @@ export default function Page() {
                   Elastic Load Balancing ELB - Distribute network traffic to
                   improve application scalability
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     automatically distributes incoming app traffic across
                     multiple targets such as EC2 instances; containers; IPs ||
@@ -2624,7 +2566,7 @@ export default function Page() {
                   developers * can be used to serve large amounts of online
                   video with lowest possible latency
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -2634,12 +2576,8 @@ export default function Page() {
                       AWS CloudFront
                     </Link>
                   </li>
-                  <li>
-                    CloudFront is global not regional;
-                  </li>
-                  <li>
-                    CloudFront decreases latency & increases perf;
-                  </li>
+                  <li>CloudFront is global not regional;</li>
+                  <li>CloudFront decreases latency & increases perf;</li>
                   <li>
                     CloudFront delivers content worldwide through data centers
                     called "Edge Locations"; AWS Edge location is a site that
@@ -2682,7 +2620,7 @@ export default function Page() {
                   * provides architect prototypes & solutions tailers to the
                   customer.
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -2715,7 +2653,7 @@ export default function Page() {
                   service that enables on-premises app to seamlessly use cloud
                   storage;
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -2738,7 +2676,7 @@ export default function Page() {
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                   Amazon ElastiCache
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -2772,7 +2710,7 @@ export default function Page() {
                   AWS Directory Service - SSO - AWS SSO is an service that lets
                   you access from MS AD;
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     AWS Security Token Service (AWS STS) is a web service that
                     enables you to request temporary, limited-privilege
@@ -2795,7 +2733,7 @@ export default function Page() {
                   maintaining physical security & data protection
                   <br />
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     * it verifies that hosted workloads are automatically
                     compliant with the controls of supported compliance
@@ -2811,7 +2749,7 @@ export default function Page() {
                   AWS Glue is an ETL service to make it easy to prepare data for
                   analytics
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -2856,7 +2794,7 @@ export default function Page() {
                   Help decrease network latency for a globally dispersed user
                   base: 2 services || features:
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>AWS CloudFront</li>
                   <li>
                     AWS Global Accelerator - improves performance for a wide
@@ -2871,7 +2809,7 @@ export default function Page() {
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                   AWS QuickSight is a BI dashboard service;
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -2891,7 +2829,7 @@ export default function Page() {
                   AWS Snowball is a service that will allow transfer of
                   "petabytes" || large data from on-prem to cloud;
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -2930,7 +2868,7 @@ export default function Page() {
                   AWS Outposts is a service that offers same AWS service;
                   infrastructure APIS to on-prem hybrid
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -2950,7 +2888,7 @@ export default function Page() {
                   Amazon Inspector - Automated & continual vulnerability
                   management at scale
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -2986,7 +2924,7 @@ export default function Page() {
                   AWS Elastic Beanstalk - PaaS (Platform as a Service) Deploy
                   and scale web applications
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -3010,7 +2948,7 @@ export default function Page() {
                   AWS KMS - Key Management Service Create and control keys used
                   to encrypt or digitally sign your data
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -3031,7 +2969,7 @@ export default function Page() {
                   applications at scale across AWS, existing systems, or SaaS
                   applications
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -3050,7 +2988,7 @@ export default function Page() {
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                   AWS Fargate - Serverless compute for CONTAINERS
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -3074,7 +3012,7 @@ export default function Page() {
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                   AWS ECS - Elastic Container Service - docker containers
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -3109,7 +3047,7 @@ export default function Page() {
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                   AWS OpsWorks
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -3133,7 +3071,7 @@ export default function Page() {
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                   Amazon EBS - Elastic Block Store
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -3155,7 +3093,7 @@ export default function Page() {
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                   Machine Learning
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     Amazon Polly Deploy high-quality, natural-sounding human
                     voices in dozens of languages
@@ -3224,7 +3162,7 @@ export default function Page() {
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                   VPC Endpoints
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     A VPC endpoint enables customers to privately connect to
                     supported AWS services and VPC endpoint services powered by
@@ -3251,7 +3189,7 @@ export default function Page() {
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                   Amazon Macie Discover and protect your sensitive data at scale
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -3282,7 +3220,7 @@ export default function Page() {
                   AWS Compute Optimizer - Get recommendations to optimize your
                   use of AWS resources for such as:
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -3318,7 +3256,7 @@ export default function Page() {
                   AWS X-Ray - Analyze and debug production and distributed
                   applications
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     XRay is good to debug performance issues for its serverless
                     application built using a microservices architecture
@@ -3352,7 +3290,7 @@ export default function Page() {
                   secure shell access to EC2 without opening new ports or public
                   IP.
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -3386,7 +3324,7 @@ export default function Page() {
                   AWS Auto Scaling - free to use - Application scaling to
                   optimize performance and costs
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -3459,7 +3397,7 @@ export default function Page() {
                   Amazon Detective - quickly find the root of potential security
                   issues to take faster actions
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -3491,7 +3429,7 @@ export default function Page() {
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                   AWS EFS | Amazon Elastic File System
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -3522,7 +3460,7 @@ export default function Page() {
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                   AWS OpsHub
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -3553,7 +3491,7 @@ export default function Page() {
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                   AWS DataSync - Simplify and accelerate secure data migrations
                 </h3>
-                <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
                     <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -3579,7 +3517,7 @@ export default function Page() {
                 </ul>
               </div>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -3587,7 +3525,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 Amazon Elastic Transcoder
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   Amazon Elastic Transcoder is a scalable media transcoding
                   service in AWS that converts audio and video files into
@@ -3604,7 +3542,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -3613,7 +3551,7 @@ export default function Page() {
                 Amazon Device Farm - test applications across multiple desktop
                 browsers and mobile devices
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   AWS Device Farm allows you to test your applications on real
                   physical devices in the AWS Cloud.
@@ -3629,7 +3567,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -3639,7 +3577,7 @@ export default function Page() {
                 handle millions of requests per second at the TCP and UDP
                 connection level
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   Network Load Balancers are designed to handle millions of
                   requests per second while maintaining high throughput and
@@ -3656,7 +3594,7 @@ export default function Page() {
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -3664,7 +3602,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 SQS - Simple Queue Service
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   Amazon Simple Queue Service (SQS) is another AWS service that
                   provides decoupled communication for microservices-based
@@ -3680,21 +3618,25 @@ export default function Page() {
                   </Link>
                 </li>
                 <li>
-                  SQS - A service that provides decoupled communication for microservices-based applications
+                  SQS - A service that provides decoupled communication for
+                  microservices-based applications
                 </li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                AWS Pinpoint - Connect with customers through scalable, targeted multichannel communications
+                AWS Pinpoint - Connect with customers through scalable, targeted
+                multichannel communications
               </h3>
-              <ul className='ml-5 max-w-md list-inside list-disc space-y-1'>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
-                  Amazon Pinpoint is a scalable and flexible service that allows you to engage with your customers through multiple channels, including email, SMS, push notifications, and more.
+                  Amazon Pinpoint is a scalable and flexible service that allows
+                  you to engage with your customers through multiple channels,
+                  including email, SMS, push notifications, and more.
                 </li>
                 <li>
                   <Link
@@ -3705,22 +3647,23 @@ export default function Page() {
                     AWS Pinpoint
                   </Link>
                 </li>
-                <li>
-                  Send a bulk marketing email to customers.
-                </li>
+                <li>Send a bulk marketing email to customers.</li>
               </ul>
             </div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                if you receive a notification that your AWS account has been compromised:
+                if you receive a notification that your AWS account has been
+                compromised:
                 <br />
-                Delete any resources on your account that you didn't create, such as Amazon EC2 instances and AMIs.
+                Delete any resources on your account that you didn't create,
+                such as Amazon EC2 instances and AMIs.
                 <br />
-                Delete any potentially unauthorized IAM users, and then change the password for all other IAM users.
+                Delete any potentially unauthorized IAM users, and then change
+                the password for all other IAM users.
               </h3>
             </div>
             {/* aws cloud9?
@@ -3732,7 +3675,7 @@ export default function Page() {
           <br />
           --- ---------------- -----------------------
           <div>
-            <hr className="w-3 h-3 mx-auto my-2 bg-gray-200 border-0 rounded md:my-2 dark:bg-gray-700" />
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
               role="alert"
@@ -3759,13 +3702,17 @@ export default function Page() {
                       24/7 phone; email & chat to cloud support engineers.
                     </li>
                     <li>
-                      Ideal support plan should you choose if you want to start a startup
+                      Ideal support plan should you choose if you want to start
+                      a startup
                     </li>
                     <li>
-                      Offers 24/7 access to Cloud Support Engineers via email, chat, and phone. It also provides a response time of less than one hour for business-critical system downtime.
+                      Offers 24/7 access to Cloud Support Engineers via email,
+                      chat, and phone. It also provides a response time of less
+                      than one hour for business-critical system downtime.
                     </li>
                     <li>
-                      Provides detailed architectural guidance contextual to your use-cases.
+                      Provides detailed architectural guidance contextual to
+                      your use-cases.
                     </li>
                   </ul>
                 </li>
@@ -3792,7 +3739,10 @@ export default function Page() {
                 <li>
                   Developer
                   <br />
-                  Offers best practice guidance and troubleshooting help during local business hours, but its coverage and benefits are limited compared to the Business plan. It's more suitable for testing or doing early development on AWS.
+                  Offers best practice guidance and troubleshooting help during
+                  local business hours, but its coverage and benefits are
+                  limited compared to the Business plan. It's more suitable for
+                  testing or doing early development on AWS.
                 </li>
                 <li>
                   Basic - Support includes 24/7 access to customer service and
@@ -3841,12 +3791,8 @@ export default function Page() {
                   <br />
                   most cost-effective options when using EC2 instances:
                   <ul>
-                    <li>
-                      Reserved Instances for sustained workloads
-                    </li>
-                    <li>
-                      Spot Instances for stateless and flexible workloads
-                    </li>
+                    <li>Reserved Instances for sustained workloads</li>
+                    <li>Spot Instances for stateless and flexible workloads</li>
                   </ul>
                 </li>
                 <li>
@@ -3910,7 +3856,8 @@ export default function Page() {
                 matching, more efficiently than is possible in software running
                 on CPUs.
                 <br />
-                Accelerated Computing is good to develop an application using a data pattern matching algorithm
+                Accelerated Computing is good to develop an application using a
+                data pattern matching algorithm
               </li>
               <li>
                 Reserved Instances for continuous baseline usage and On-Demand
@@ -4263,9 +4210,13 @@ export default function Page() {
               role="alert"
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                A startup reconfigured the AWS infrastructure to release a new feature last month. They noticed that the AWS bill was significantly higher than expected this month. The reason could be:
+                A startup reconfigured the AWS infrastructure to release a new
+                feature last month. They noticed that the AWS bill was
+                significantly higher than expected this month. The reason could
+                be:
                 <br />
-                They keep unused elastic IPs that are not associated with any Resources.
+                They keep unused elastic IPs that are not associated with any
+                Resources.
               </h3>
             </div>
           </div>
