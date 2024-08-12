@@ -172,12 +172,8 @@ export default function Page() {
                     </li>
                   </ul>
                 </li>
-                <li>
-                  Increase speed and agility
-                </li>
-                <li>
-                  Stop guessing about capacity
-                </li>
+                <li>Increase speed and agility</li>
+                <li>Stop guessing about capacity</li>
                 <li>
                   AWS performs infrastructure discovery scans on the customer's
                   behalf.
@@ -191,11 +187,10 @@ export default function Page() {
                   programmatically provision existing resources.
                 </li>
                 <li>
-                  Automatically Adjust the required resources based on demand changes.
+                  Automatically Adjust the required resources based on demand
+                  changes.
                 </li>
-                <li>
-                  AWS Cloud feature - agility:
-                </li>
+                <li>AWS Cloud feature - agility:</li>
                 <li>
                   Agility - "Quickly" deliver new functionality in an iterative
                   manner minimizing the time to market an example of AWS agility
@@ -971,10 +966,19 @@ export default function Page() {
                     AWS environment.
                   </li>
                   <li>
-                    For EC2 instance; responsible for guest OS (including patches & updates), firewall & network config, IAM & encrypting app data
+                    For EC2 instance; responsible for guest OS (including
+                    patches & updates), firewall & network config, IAM &
+                    encrypting app data
                   </li>
                   <li>
-                    RDS: Check ports IP  Security group inbound rules; user permissions; create db with or without public access; ensure DB is configured to only allow SSL connections && database encryption settings
+                    RDS: Check ports IP Security group inbound rules; user
+                    permissions; create db with or without public access; ensure
+                    DB is configured to only allow SSL connections && database
+                    encryption settings
+                  </li>
+                  <li>
+                    S3 Bucket config; bucket policy; IAM user & roles &
+                    Encryption
                   </li>
                 </ul>
                 <li>
@@ -1004,10 +1008,17 @@ export default function Page() {
                     infrastructure layer, the operating system, and platforms
                   </li>
                   <li>
-                    protecting infrastructure (hardware, software, facilities & networking) that runs all the AWS Services; Managed services like S3, DynamoDB, RDS
+                    protecting infrastructure (hardware, software, facilities &
+                    networking) that runs all the AWS Services; Managed services
+                    like S3, DynamoDB, RDS
                   </li>
                   <li>
                     RDS DB & OS Patching; audit the underlying instance & disks
+                  </li>
+                  <li>
+                    S3: guarantee unlimited storage & we get encryption; ensure
+                    separation of data between different customers; ensure AWS
+                    employees cannot access data;
                   </li>
                 </ul>
                 <li>
@@ -1507,14 +1518,10 @@ export default function Page() {
                 Amazon RDS - relational Database Service advantage is it
               </h3>
               <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
-                <li>
-                  Simplifies administration tasks.</li>
-                <li>
-                  Used to host db's</li>
-                <li>
-                  AWS Manages the maintenance of the OS</li>
-                <li>
-                  MS SQL Server - RDS can be used to host</li>
+                <li>Simplifies administration tasks.</li>
+                <li>Used to host db's</li>
+                <li>AWS Manages the maintenance of the OS</li>
+                <li>MS SQL Server - RDS can be used to host</li>
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -1534,7 +1541,8 @@ export default function Page() {
                   deploying an Amazon RDS Multi-AZ database with one standby
                 </li>
                 <li>
-                  Amazon RDS replicates data in a synchronous way to different AZ
+                  Amazon RDS replicates data in a synchronous way to different
+                  AZ
                 </li>
               </ul>
             </div>
@@ -2418,12 +2426,8 @@ export default function Page() {
                   EBS Snapshots are used to backup data on your EBS Volumes at a
                   point in time.
                 </li>
-                <li>
-                  EBS Volumes are tied to only one availability zone.
-                </li>
-                <li>
-                  EBS Snapshots are added cost in GB per month
-                </li>
+                <li>EBS Volumes are tied to only one availability zone.</li>
+                <li>EBS Snapshots are added cost in GB per month</li>
                 <li>
                   EBS Provisioned IOPS SSD (io2) ensures rapid data retrieval
                   and continuous read/write operations.
@@ -2438,7 +2442,8 @@ export default function Page() {
                   </Link>
                 </li>
                 <li>
-                  Durability -  is the benefit of creating snapshots of Amazon EBS volumes to back up data
+                  Durability - is the benefit of creating snapshots of Amazon
+                  EBS volumes to back up data
                 </li>
               </ul>
             </div>
