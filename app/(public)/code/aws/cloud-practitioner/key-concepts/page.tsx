@@ -704,6 +704,8 @@ export default function Page() {
                   <br />
                   Implement the principle of least privilege to all AWS
                   resources
+                  <br />
+                  applying best practices around the protection
                 </li>
                 <li>
                   <span className="font-bold">Reliability</span> - focuses on
@@ -719,6 +721,15 @@ export default function Page() {
                   Reliability Pillar. AWS offers elastic scaling capabilities
                   that allow applications to scale horizontally by adding more
                   instances to distribute the workload.
+                  <br />
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://wa.aws.amazon.com/wellarchitected/2020-07-02T19-33-23/wat.pillar.reliability.en.html"
+                    target="_blank"
+                  >
+                    AWS Reliability Pillar
+                  </Link>
+
                 </li>
                 <li>
                   <span className="font-bold">Performance Efficiency</span> -
@@ -997,7 +1008,7 @@ export default function Page() {
                     AWS is responsible for protecting the infrastructure that
                     runs all of the services offered in AWS Cloud;
                   </li>
-                  <li>updating firmware</li>
+                  <li>Updating firmware</li>
                   <li>Auditing physical data center assets</li>
                   <li>Patching db software</li>
                   <li>Backing up DBs</li>
@@ -1286,7 +1297,9 @@ export default function Page() {
               <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>access key ID</li>
                 <li>secret access key</li>
+                <li>Access key ID and secret access key are both required to access AWS CLI.</li>
               </ul>
+
             </div>
             <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
@@ -1419,6 +1432,18 @@ export default function Page() {
                   that determine what an AWS service can do, while a role is a
                   temporary identity that can be assumed by a user or AWS
                   service.
+                </li>
+                <li>
+                  A user is a permanent identity that can access AWS services, while a role is a temporary identity that can be assumed by a user or AWS service.
+                </li>
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html"
+                    target="_blank"
+                  >
+                    AWS IAM Identities (users; user groups & roles)
+                  </Link>
                 </li>
                 <li>
                   AWS IAM access keys best practices include:
@@ -2596,6 +2621,10 @@ export default function Page() {
                     Load Balancers are used for HTTP and HTTPS load balancing.
                     They are the best-suited for this kind of traffic.
                   </li>
+                  <li>
+                    Using Elastic Load Balancing with sticky sessions. Elastic Load Balancing (ELB) with sticky sessions is a powerful feature for maintaining user session continuity in stateful applications.<br/>
+                    An effective strategy for maintaining high availability of stateful applications with persistent sessions ELB w/ sticky sessions;
+                  </li>
                 </ul>
               </div>
               <div
@@ -3009,6 +3038,9 @@ export default function Page() {
                       AWS KMS - Key Management Service
                     </Link>
                   </li>
+                  <li>
+                    AWS Key Management Service (KMS) is designed to create and control cryptographic keys for encrypting and decrypting data across AWS services. It supports centralized control over the cryptographic keys and provides an auditable solution to satisfy compliance requirements.
+                  </li>
                 </ul>
               </div>
               <div
@@ -3183,7 +3215,14 @@ export default function Page() {
                   <li>
                     Amazon Personalize is a machine learning service that makes
                     it easy for developers to create individualized
-                    recommendations for customers using their applications.
+                    recommendations for customers using their applications.{' '}<Link
+                      className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                      href="https://aws.amazon.com/personalize"
+                      target="_blank"
+                    >
+                      Amazon Personalize
+                    </Link>
+
                   </li>
                   <li>
                     Amazon Comprehend is a natural language processing (NLP)
@@ -3823,7 +3862,7 @@ export default function Page() {
                   long term never interrupted.
                   <br />
                   instances are not cheap;
-                  <br /> save up to 75%
+                  <br /> save up to 72%
                   <br /> good for 3 yrs non-interruptible
                   <br />
                   Amazon EC2 Reserved Instance Utilization Report provides
@@ -3913,6 +3952,9 @@ export default function Page() {
               <li>
                 Reserved Instances for continuous baseline usage and On-Demand
                 Instances for usage spikes are good sometimes;
+              </li>
+              <li>
+                AWS does not charge for data transfer between an EC2 instance and an S3 bucket within the same region
               </li>
             </div>
             <div
