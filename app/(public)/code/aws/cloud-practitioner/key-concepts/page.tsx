@@ -729,7 +729,6 @@ export default function Page() {
                   >
                     AWS Reliability Pillar
                   </Link>
-
                 </li>
                 <li>
                   <span className="font-bold">Performance Efficiency</span> -
@@ -1297,9 +1296,11 @@ export default function Page() {
               <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>access key ID</li>
                 <li>secret access key</li>
-                <li>Access key ID and secret access key are both required to access AWS CLI.</li>
+                <li>
+                  Access key ID and secret access key are both required to
+                  access AWS CLI.
+                </li>
               </ul>
-
             </div>
             <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
@@ -1434,7 +1435,9 @@ export default function Page() {
                   service.
                 </li>
                 <li>
-                  A user is a permanent identity that can access AWS services, while a role is a temporary identity that can be assumed by a user or AWS service.
+                  A user is a permanent identity that can access AWS services,
+                  while a role is a temporary identity that can be assumed by a
+                  user or AWS service.
                 </li>
                 <li>
                   <Link
@@ -2622,8 +2625,14 @@ export default function Page() {
                     They are the best-suited for this kind of traffic.
                   </li>
                   <li>
-                    Using Elastic Load Balancing with sticky sessions. Elastic Load Balancing (ELB) with sticky sessions is a powerful feature for maintaining user session continuity in stateful applications.<br/>
-                    An effective strategy for maintaining high availability of stateful applications with persistent sessions ELB w/ sticky sessions;
+                    Using Elastic Load Balancing with sticky sessions. Elastic
+                    Load Balancing (ELB) with sticky sessions is a powerful
+                    feature for maintaining user session continuity in stateful
+                    applications.
+                    <br />
+                    An effective strategy for maintaining high availability of
+                    stateful applications with persistent sessions ELB w/ sticky
+                    sessions;
                   </li>
                 </ul>
               </div>
@@ -3039,7 +3048,11 @@ export default function Page() {
                     </Link>
                   </li>
                   <li>
-                    AWS Key Management Service (KMS) is designed to create and control cryptographic keys for encrypting and decrypting data across AWS services. It supports centralized control over the cryptographic keys and provides an auditable solution to satisfy compliance requirements.
+                    AWS Key Management Service (KMS) is designed to create and
+                    control cryptographic keys for encrypting and decrypting
+                    data across AWS services. It supports centralized control
+                    over the cryptographic keys and provides an auditable
+                    solution to satisfy compliance requirements.
                   </li>
                 </ul>
               </div>
@@ -3215,14 +3228,14 @@ export default function Page() {
                   <li>
                     Amazon Personalize is a machine learning service that makes
                     it easy for developers to create individualized
-                    recommendations for customers using their applications.{' '}<Link
+                    recommendations for customers using their applications.{' '}
+                    <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                       href="https://aws.amazon.com/personalize"
                       target="_blank"
                     >
                       Amazon Personalize
                     </Link>
-
                   </li>
                   <li>
                     Amazon Comprehend is a natural language processing (NLP)
@@ -3954,7 +3967,8 @@ export default function Page() {
                 Instances for usage spikes are good sometimes;
               </li>
               <li>
-                AWS does not charge for data transfer between an EC2 instance and an S3 bucket within the same region
+                AWS does not charge for data transfer between an EC2 instance
+                and an S3 bucket within the same region
               </li>
             </div>
             <div
