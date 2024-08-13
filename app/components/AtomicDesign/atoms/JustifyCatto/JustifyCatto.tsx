@@ -13,7 +13,6 @@ type Props = {
 //                     Input: line of text & desired length;
 //                     Output: Justified string;
 
-
 const JustifyCatto = () => {
   // ts below (used straight js since easier to use online code pens & fiddles to run):
   // const countNumberOfWords = (str: string) => {
