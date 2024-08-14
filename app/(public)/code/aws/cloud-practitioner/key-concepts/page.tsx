@@ -2341,7 +2341,7 @@ export default function Page() {
                   when needing to encrypt data before sending it to S3;
                   <br />
                   The AWS Encryption SDK simplifies the task of encrypting data
-                  on the client side before uploading it to S3
+                  on the client side before uploading it to S3.
                 </li>
               </ul>
             </div>
