@@ -35,7 +35,7 @@ const HowToSetPortInNextJs = () => {
           JS Examples
         </div>
         <div>
-          next
+          {/* next */}
           {/* <form onSubmit={handleChange}>
 
             <input type="text" name="text" onChange={handleChange} />
@@ -43,7 +43,7 @@ const HowToSetPortInNextJs = () => {
             <button type="submit">Send</button>
           </form> */}
         </div>
-        <JustifyCatto />
+        {/* <JustifyCatto /> */}
         {/* <SyntaxHighlightingReactCatto codeString={codeBlock} /> */}
       </div>
     </>
