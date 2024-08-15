@@ -2343,6 +2343,17 @@ export default function Page() {
                   The AWS Encryption SDK simplifies the task of encrypting data
                   on the client side before uploading it to S3.
                 </li>
+                <li>
+                  Amazon S3 Multi-Region Access Points make it simpler to build applications that require global access to data by streamlining the endpoint naming convention and by automatically routing requests to data in the most optimal AWS region.
+                  <br />
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/s3/features/multi-region-access-points"
+                    target="_blank"
+                  >
+                    Hosting a static website using Amazon S3
+                  </Link>
+                </li>
               </ul>
             </div>
             <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
@@ -3786,7 +3797,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 AWS Support Plans:
               </h3>
-              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -3798,7 +3809,7 @@ export default function Page() {
                 </li>
                 <li>
                   Business
-                  <ul className="ml-5">
+                  <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                     <li>minimum that allows one hour response time</li>
                     <li>
                       Minimum plan that provides technical support phone calls.
@@ -3821,7 +3832,7 @@ export default function Page() {
                 </li>
                 <li>
                   Enterprise
-                  <ul className="ml-5">
+                  <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                     <li>includes a dedicated Technical Account Manger</li>
                     <li>
                       includes Infrastructure Event Management without
@@ -3860,7 +3871,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 EC2 Pricing models:
               </h3>
-              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   On-Demand - instances in EC2 Pricing model is MOST cost
                   efficient for an uninterruptible workload that runs once a
@@ -3983,7 +3994,7 @@ export default function Page() {
                 EC2 instances, you pay per second of compute capacity. There is
                 also a minimum of 60s of use.
               </h3>
-              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -4002,7 +4013,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 Optimize EC2 costs:
               </h3>
-              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   Set up Auto Scaling groups to align the number of instances
                   with the demand
@@ -4024,7 +4035,7 @@ export default function Page() {
                 An app has flexible start & end times. EC2 pricing model which
                 is best would be "Spot Instances".
               </h3>
-              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -4047,7 +4058,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 Optimize EC2 costs by:
               </h3>
-              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   Implementing Auto Scaling groups to add & remove instances
                   based on demand;
@@ -4062,7 +4073,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 AWS Artifact - access AWS & ISV security & compliance reports
               </h3>
-              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -4087,7 +4098,7 @@ export default function Page() {
                 BILLING AWS Organizations - centrally manage environments &
                 multiple AWS accounts
               </h3>
-              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -4132,7 +4143,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 Hosting models: Dedicated hosts ~= physical isolation;
               </h3>
-              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   ex. Cost allocation tags is good to track & categorize
                   spending?
@@ -4160,7 +4171,7 @@ export default function Page() {
                 AWS Cost & Usage tool give most granular insight into cost &
                 usage.
               </h3>
-              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -4194,7 +4205,7 @@ export default function Page() {
                 Moving from on-premises data center to AWS cloud - one financial
                 difference will be:
               </h3>
-              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   * moving from upfront Capital Expense CAPEX to variable
                   operational expense OPEX - trade CapEx for OpEx
@@ -4210,7 +4221,7 @@ export default function Page() {
                 future costs of running a new web app. It's a new app so the
                 cost explorer is used to predict cost.
               </h3>
-              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li></li>
               </ul>
             </div>
@@ -4222,7 +4233,7 @@ export default function Page() {
                 AWS Cost Explorer - used to forecast your AWS account usage and
                 costs
               </h3>
-              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -4246,13 +4257,13 @@ export default function Page() {
                 TOC total cost of ownership from on-prem vs AWS cloud 2 expenses
                 considered are: * storage hardware * physical servers
               </h3>
-              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
                   2 factors doing TOC total cost of ownership when moving from
                   on-premises to AWS cloud:
                 </li>
-                <li>* power consumption</li>
-                <li>* Labor costs to replace old servers</li>
+                <li>power consumption</li>
+                <li>Labor costs to replace old servers</li>
                 <li>
                   AWS Total Cost of Ownership (TCO) calculator allows us to
                   estimate the cost saving when using AWS && if a company
@@ -4268,7 +4279,7 @@ export default function Page() {
                 Migrating production workloads to the AWS cloud to reduce
                 operational costs:
               </h3>
-              <ul className="ml-5 text-xl font-normal text-gray-700 dark:text-gray-400">
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>Reduce overprovisioned instances</li>
                 <li>Use managed services</li>
               </ul>
@@ -4282,16 +4293,21 @@ export default function Page() {
                 infrastructure on-premises vs AWS Cloud. Good for a company to
                 check whether or not it is cost-effective to migrate to the AWS
                 Cloud
-                <br />
-                AWS Pricing Calculator lets you explore AWS services and create
-                an estimate for the cost of your use cases on AWS
-                <br />
-                AWS Pricing Calculator can be used to forecast your AWS account
-                usage and costs
-                <br />
-                AWS Compute Optimizer recommends optimal AWS resources for your
-                workloads to reduce costs and improve performance by using
-                machine learning to analyze historical utilization metrics.
+                <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
+                  <li>
+                    AWS Pricing Calculator lets you explore AWS services and create
+                    an estimate for the cost of your use cases on AWS
+                  </li>
+                  <li>
+                    AWS Pricing Calculator can be used to forecast your AWS account
+                    usage and costs
+                  </li>
+                  <li>
+                    AWS Compute Optimizer recommends optimal AWS resources for your
+                    workloads to reduce costs and improve performance by using
+                    machine learning to analyze historical utilization metrics.
+                  </li>
+                </ul>
               </h3>
             </div>
             <div
