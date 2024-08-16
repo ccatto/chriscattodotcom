@@ -2344,7 +2344,11 @@ export default function Page() {
                   on the client side before uploading it to S3.
                 </li>
                 <li>
-                  Amazon S3 Multi-Region Access Points make it simpler to build applications that require global access to data by streamlining the endpoint naming convention and by automatically routing requests to data in the most optimal AWS region.
+                  Amazon S3 Multi-Region Access Points make it simpler to build
+                  applications that require global access to data by
+                  streamlining the endpoint naming convention and by
+                  automatically routing requests to data in the most optimal AWS
+                  region.
                   <br />
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
@@ -2472,7 +2476,8 @@ export default function Page() {
                   and continuous read/write operations.
                 </li>
                 <li>
-                  Creating snapshots of Amazon Elastic Block Store (EBS) volumes provides the benefit of durability
+                  Creating snapshots of Amazon Elastic Block Store (EBS) volumes
+                  provides the benefit of durability
                 </li>
                 <li>
                   <Link
@@ -3792,12 +3797,12 @@ export default function Page() {
                 AWS Cloud9 IDE for writing; running & debugging code
                 <br />
                 <Link
-                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                    href="https://aws.amazon.com/pm/cloud9"
-                    target="_blank"
-                  >
-                    AWS Cloud9
-                  </Link>
+                  className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                  href="https://aws.amazon.com/pm/cloud9"
+                  target="_blank"
+                >
+                  AWS Cloud9
+                </Link>
               </h3>
             </div>
             {/*  ec2 fleet? */}
@@ -3848,7 +3853,8 @@ export default function Page() {
                       your use-cases.
                     </li>
                     <li>
-                      AWS Business Support provides detailed architectural guidance contextual to your use-cases.
+                      AWS Business Support provides detailed architectural
+                      guidance contextual to your use-cases.
                     </li>
                   </ul>
                 </li>
@@ -4317,17 +4323,18 @@ export default function Page() {
                 Cloud
                 <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
-                    AWS Pricing Calculator lets you explore AWS services and create
-                    an estimate for the cost of your use cases on AWS
+                    AWS Pricing Calculator lets you explore AWS services and
+                    create an estimate for the cost of your use cases on AWS
                   </li>
                   <li>
-                    AWS Pricing Calculator can be used to forecast your AWS account
-                    usage and costs
+                    AWS Pricing Calculator can be used to forecast your AWS
+                    account usage and costs
                   </li>
                   <li>
-                    AWS Compute Optimizer recommends optimal AWS resources for your
-                    workloads to reduce costs and improve performance by using
-                    machine learning to analyze historical utilization metrics.
+                    AWS Compute Optimizer recommends optimal AWS resources for
+                    your workloads to reduce costs and improve performance by
+                    using machine learning to analyze historical utilization
+                    metrics.
                   </li>
                 </ul>
               </h3>
