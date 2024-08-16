@@ -2472,6 +2472,9 @@ export default function Page() {
                   and continuous read/write operations.
                 </li>
                 <li>
+                  Creating snapshots of Amazon Elastic Block Store (EBS) volumes provides the benefit of durability
+                </li>
+                <li>
                   <Link
                     className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                     href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html"
@@ -3780,8 +3783,24 @@ export default function Page() {
                 the password for all other IAM users.
               </h3>
             </div>
-            {/* aws cloud9?
-            ec2 fleet? */}
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS Cloud9 IDE for writing; running & debugging code
+                <br />
+                <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/pm/cloud9"
+                    target="_blank"
+                  >
+                    AWS Cloud9
+                  </Link>
+              </h3>
+            </div>
+            {/*  ec2 fleet? */}
           </div>
           ---------------- -----------------------
           <br />
@@ -3827,6 +3846,9 @@ export default function Page() {
                     <li>
                       Provides detailed architectural guidance contextual to
                       your use-cases.
+                    </li>
+                    <li>
+                      AWS Business Support provides detailed architectural guidance contextual to your use-cases.
                     </li>
                   </ul>
                 </li>
