@@ -238,7 +238,9 @@ export default function Page() {
                 </li>
                 <li>Pay-as-you-go pricing - pay only upon usage;</li>
                 <li>
-                  AWS helps users focus on business value by increasing speed and agility through automatic scaling and deployment capabilities.
+                  AWS helps users focus on business value by increasing speed
+                  and agility through automatic scaling and deployment
+                  capabilities.
                 </li>
               </ul>
             </div>
@@ -478,7 +480,8 @@ export default function Page() {
                   Volumes
                 </li>
                 <li>
-                  Trusted Advisor provides recommendations that helps us reduce costs;
+                  Trusted Advisor provides recommendations that helps us reduce
+                  costs;
                 </li>
               </ul>
             </div>
@@ -936,11 +939,19 @@ export default function Page() {
               role="alert"
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                Multi-tier architecture benefits in AWS it improves security by separating public-facing and internal resources
+                Multi-tier architecture benefits in AWS it improves security by
+                separating public-facing and internal resources
               </h3>
               <ul className="max-w-md list-inside list-disc space-y-1">
                 <li>
-                  A multi-tier architecture separates systems into different tiers or layers, each having a specific role and responsibility. In a typical three-tier architecture, for example, there's a presentation tier (public-facing, user interface), a logic tier (application processing, business logic), and a data tier (database, file storage). This separation greatly enhances security by limiting the exposure of the more sensitive tiers.
+                  A multi-tier architecture separates systems into different
+                  tiers or layers, each having a specific role and
+                  responsibility. In a typical three-tier architecture, for
+                  example, there's a presentation tier (public-facing, user
+                  interface), a logic tier (application processing, business
+                  logic), and a data tier (database, file storage). This
+                  separation greatly enhances security by limiting the exposure
+                  of the more sensitive tiers.
                 </li>
               </ul>
             </div>
@@ -954,7 +965,8 @@ export default function Page() {
               </h3>
               <ul className="max-w-md list-inside list-disc space-y-1">
                 <li>
-                  AWS Elastic Disaster Recovery (EDR) provides automated, cross-region disaster recovery for critical workloads
+                  AWS Elastic Disaster Recovery (EDR) provides automated,
+                  cross-region disaster recovery for critical workloads
                 </li>
                 <li>
                   <Link
@@ -1267,10 +1279,15 @@ export default function Page() {
                   </Link>
                 </li>
                 <li>
-                  AWS Shield Standard is a managed Distributed Denial of Service (DDoS) protection service that safeguards web applications running on AWS
+                  AWS Shield Standard is a managed Distributed Denial of Service
+                  (DDoS) protection service that safeguards web applications
+                  running on AWS
                 </li>
                 <li>
-                  AWS Shield Advanced provides advanced DDoS protection by offering additional DDoS mitigation capabilities over AWS Shield Standard. It also includes cost protection and risk management benefits.
+                  AWS Shield Advanced provides advanced DDoS protection by
+                  offering additional DDoS mitigation capabilities over AWS
+                  Shield Standard. It also includes cost protection and risk
+                  management benefits.
                 </li>
               </ul>
             </div>
@@ -1421,7 +1438,9 @@ export default function Page() {
               </h3>
               <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
-                  Audit manager is a service that could provide insight into how AWS services impact organizations in meeting SOC2 compliance requirements
+                  Audit manager is a service that could provide insight into how
+                  AWS services impact organizations in meeting SOC2 compliance
+                  requirements
                 </li>
                 <li>
                   <Link
@@ -1433,7 +1452,9 @@ export default function Page() {
                   </Link>
                 </li>
                 <li>
-                  AWS Audit Manager helps automate the process of assessing, managing, and reporting on compliance with regulations and industry standards.
+                  AWS Audit Manager helps automate the process of assessing,
+                  managing, and reporting on compliance with regulations and
+                  industry standards.
                 </li>
               </ul>
             </div>
@@ -1447,7 +1468,9 @@ export default function Page() {
               </h3>
               <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
-                  Store sensitive data in an Amazon S3 bucket and encrypt it after upload. Therefore, they want to manage their own keys for encryption in AWS services
+                  Store sensitive data in an Amazon S3 bucket and encrypt it
+                  after upload. Therefore, they want to manage their own keys
+                  for encryption in AWS services
                 </li>
                 <li>
                   <Link
@@ -1459,12 +1482,13 @@ export default function Page() {
                   </Link>
                 </li>
                 <li>
-                  A Customer Managed Key (CMK) is a key that's generated and managed within AWS Key Management Service (KMS) by the customer.
+                  A Customer Managed Key (CMK) is a key that's generated and
+                  managed within AWS Key Management Service (KMS) by the
+                  customer.
                 </li>
               </ul>
             </div>
             <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
-
           </div>
           ---------------- -----------------------
           <br />
@@ -1574,13 +1598,18 @@ export default function Page() {
                   requirements
                 </li>
                 <li>can be used to host MS SQL Server</li>
-                <li>2 services required to launch EC2:
+                <li>
+                  2 services required to launch EC2:
                   <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                     <li>
-                      VPC - Amazon Virtual Private Cloud (VPC) is a virtual network dedicated to an AWS account. It's like your own slice of the AWS cloud, and it's where your EC2 instances live.
+                      VPC - Amazon Virtual Private Cloud (VPC) is a virtual
+                      network dedicated to an AWS account. It's like your own
+                      slice of the AWS cloud, and it's where your EC2 instances
+                      live.
                     </li>
                     <li>
-                      AMI - An Amazon Machine Image (AMI) is an essential component for launching an EC2 instance
+                      AMI - An Amazon Machine Image (AMI) is an essential
+                      component for launching an EC2 instance
                     </li>
                   </ul>
                 </li>
@@ -1657,13 +1686,20 @@ export default function Page() {
                   deploying an Amazon RDS Multi-AZ database with one standby
                 </li>
                 <li>
-                  Use Amazon RDS Multi-AZ deployment with automatic failover when need a db to continue functioning in AZ outage w/out manual intervention.
+                  Use Amazon RDS Multi-AZ deployment with automatic failover
+                  when need a db to continue functioning in AZ outage w/out
+                  manual intervention.
                 </li>
                 <li>
-                  Amazon RDS replicates data in a synchronous way to different AZ
+                  Amazon RDS replicates data in a synchronous way to different
+                  AZ
                 </li>
                 <li>
-                  AWS Lambda allows you to receive a notification after inserting data into Amazon RDS. AWS Lambda is a serverless compute service that allows you to run your code in response to events, such as changes to data in an Amazon RDS database, and automatically manages the compute resources for you.
+                  AWS Lambda allows you to receive a notification after
+                  inserting data into Amazon RDS. AWS Lambda is a serverless
+                  compute service that allows you to run your code in response
+                  to events, such as changes to data in an Amazon RDS database,
+                  and automatically manages the compute resources for you.
                 </li>
               </ul>
             </div>
@@ -1785,7 +1821,8 @@ export default function Page() {
                 <li>
                   AWS CodeCommit is a secure, highly scalable, managed source
                   control service that makes it easier for teams to collaborate
-                  on code. It also provides software version control. Git based repos;
+                  on code. It also provides software version control. Git based
+                  repos;
                 </li>
                 <li>
                   AWS Cloud Development Kit (AWS CDK) is an open source software
@@ -1882,9 +1919,7 @@ export default function Page() {
                   creating Hadoop clusters (Big Data) to analyze and process
                   vast amount of data
                 </li>
-                <li>
-                  EMR can analyze large-scale datasets;
-                </li>
+                <li>EMR can analyze large-scale datasets;</li>
               </ul>
             </div>
             <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
@@ -2455,21 +2490,27 @@ export default function Page() {
                   </Link>
                 </li>
                 <li>
-                  S3 Versioning allows you to keep multiple versions of an object in a single bucket. It can ensure that deleted objects can be retrieved;
+                  S3 Versioning allows you to keep multiple versions of an
+                  object in a single bucket. It can ensure that deleted objects
+                  can be retrieved;
                 </li>
                 <li>
                   Encrypted data at rest in S3 we can use
                   <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                     <li>
-                      AWS KMS-managed keys (SSE-KMS) | SSE-KMS, Amazon S3 automatically encrypts the object data on the server-side
+                      AWS KMS-managed keys (SSE-KMS) | SSE-KMS, Amazon S3
+                      automatically encrypts the object data on the server-side
                     </li>
                     <li>
-                      AWS S3 managed keys (SSE-S3) | When we use SSE-S3, Amazon S3 handles and manages the encryption keys for us
+                      AWS S3 managed keys (SSE-S3) | When we use SSE-S3, Amazon
+                      S3 handles and manages the encryption keys for us
                     </li>
                   </ul>
                 </li>
                 <li>
-                  Set up S3 Object Lock with a retention period of X years to retain; S3 Object Lock provides a way to store objects using a "Write Once, Read Many" (WORM) model;
+                  Set up S3 Object Lock with a retention period of X years to
+                  retain; S3 Object Lock provides a way to store objects using a
+                  "Write Once, Read Many" (WORM) model;
                 </li>
               </ul>
             </div>
@@ -3016,7 +3057,8 @@ export default function Page() {
                     time.
                   </li>
                   <li>
-                    Glue is a service that we can use to prepare data for analysis
+                    Glue is a service that we can use to prepare data for
+                    analysis
                   </li>
                 </ul>
               </div>
@@ -3133,8 +3175,8 @@ export default function Page() {
                 role="alert"
               >
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                  Amazon GuardDuty Protect your AWS accounts, workloads, and data
-                  with intelligent threat detection
+                  Amazon GuardDuty Protect your AWS accounts, workloads, and
+                  data with intelligent threat detection
                 </h3>
                 <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>Assists in threat protection</li>
@@ -3201,11 +3243,14 @@ export default function Page() {
                 </h3>
                 <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
-                    The difference between AWS Inspector & GuardDuty: Amazon Inspector provides you with security assessments of your applications settings and configurations on your EC2 instances while Amazon GuardDuty helps with analyzing your entire AWS environment for potential threats. Inspector only covers EC2 at the moment.
+                    The difference between AWS Inspector & GuardDuty: Amazon
+                    Inspector provides you with security assessments of your
+                    applications settings and configurations on your EC2
+                    instances while Amazon GuardDuty helps with analyzing your
+                    entire AWS environment for potential threats. Inspector only
+                    covers EC2 at the moment.
                   </li>
-                  <li>
-                    Inspector only covers EC2 at the moment
-                  </li>
+                  <li>Inspector only covers EC2 at the moment</li>
                 </ul>
               </div>
               <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
@@ -3239,8 +3284,9 @@ export default function Page() {
                 role="alert"
               >
                 <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
-                  AWS App Runner - PaaS (Platform as a Service) - service that makes it easy to deploy from source code or a container to a scalable & secure web app
-
+                  AWS App Runner - PaaS (Platform as a Service) - service that
+                  makes it easy to deploy from source code or a container to a
+                  scalable & secure web app
                 </h3>
                 <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                   <li>
@@ -3253,7 +3299,8 @@ export default function Page() {
                     </Link>
                   </li>
                   <li>
-                    App Runner connects directly to your code or image repository.
+                    App Runner connects directly to your code or image
+                    repository.
                   </li>
                 </ul>
               </div>
@@ -3452,7 +3499,8 @@ export default function Page() {
                   </li>
                   <li>
                     Amazon Lex is a service for building chat bots /
-                    conversational interfaces | Lex ~= Chatbot | <Link
+                    conversational interfaces | Lex ~= Chatbot |{' '}
+                    <Link
                       className="font-medium text-blue-600 hover:underline dark:text-blue-500"
                       href="https://docs.aws.amazon.com/lex/latest/dg/what-is.html"
                       target="_blank"
@@ -3526,7 +3574,8 @@ export default function Page() {
                     </Link>
                   </li>
                   <li>
-                    VPC Endpoints - can establish a connection between VPC & DynamoDB table without public internet connection;
+                    VPC Endpoints - can establish a connection between VPC &
+                    DynamoDB table without public internet connection;
                   </li>
                 </ul>
               </div>
@@ -3688,7 +3737,10 @@ export default function Page() {
                     </Link>
                   </li>
                   <li>
-                    Remove unhealthy instances and create a new one. Auto Scaling with Amazon EC2 can improve fault tolerance by automatically replacing instances that become unhealthy or fail a health check.
+                    Remove unhealthy instances and create a new one. Auto
+                    Scaling with Amazon EC2 can improve fault tolerance by
+                    automatically replacing instances that become unhealthy or
+                    fail a health check.
                   </li>
                 </ul>
               </div>
