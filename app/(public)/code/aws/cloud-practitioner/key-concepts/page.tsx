@@ -131,7 +131,6 @@ export default function Page() {
                   international company to provide low latency to customers
                 </li>
                 <li>AWS feature reducing the TCO (total cost of ownership)</li>
-
                 <li>
                   Reduce TCO total code of ownership & OPEX operational
                   expenditure
@@ -146,7 +145,7 @@ export default function Page() {
                 </li>
                 <li>
                   Concept of elasticity:
-                  <ul>
+                  <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                     <li>
                       The ability to adjust resource allocation in response to
                       changing demand.
@@ -154,15 +153,6 @@ export default function Page() {
                     <li>
                       The speed at which additional resources are made available
                       on demand.
-                    </li>
-                    <li>
-                      <Link
-                        className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-                        href="https://wa.aws.amazon.com/wellarchitected/2020-07-02T19-33-23/wat.concept.elasticity.en.html"
-                        target="_blank"
-                      >
-                        Elasticity
-                      </Link>
                     </li>
                     <li>
                       <Link
