@@ -111,9 +111,11 @@ export default function Page() {
             </Link>{' '}
             Let us break this down into 4 sections.
           </div>
-          <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
-          <h3 className="flex justify-center text-3xl font-bold dark:text-white">1. AWS General - Cloud Concepts</h3>
-          <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
+          <hr className="mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
+          <h3 className="flex justify-center text-3xl font-bold dark:text-white">
+            1. AWS General - Cloud Concepts
+          </h3>
+          <hr className="mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
           <div>
             <div
               className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
@@ -969,9 +971,11 @@ export default function Page() {
             </div>
             <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
           </div>
-          <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
-          <h3 className="flex justify-center text-3xl font-bold dark:text-white">2. Security & Compliance</h3>
-          <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
+          <hr className="mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
+          <h3 className="flex justify-center text-3xl font-bold dark:text-white">
+            2. Security & Compliance
+          </h3>
+          <hr className="mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
           <div>
             <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
@@ -1476,9 +1480,11 @@ export default function Page() {
             </div>
             <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
           </div>
-          <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
-          <h3 className="flex justify-center text-3xl font-bold dark:text-white">3. Services & Cloud technology</h3>
-          <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
+          <hr className="mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
+          <h3 className="flex justify-center text-3xl font-bold dark:text-white">
+            3. Services & Cloud technology
+          </h3>
+          <hr className="mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
           <div>
             <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
@@ -4090,9 +4096,11 @@ export default function Page() {
             <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             {/*  ec2 fleet? */}
           </div>
-          <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
-          <h3 className="flex justify-center text-3xl font-bold dark:text-white">4. Billing; Pricing & Services</h3>
-          <hr className="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
+          <hr className="mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
+          <h3 className="flex justify-center text-3xl font-bold dark:text-white">
+            4. Billing; Pricing & Services
+          </h3>
+          <hr className="mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
           <div>
             <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             <div
