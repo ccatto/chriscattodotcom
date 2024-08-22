@@ -4654,7 +4654,7 @@ export default function Page() {
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 AWS Cost Anomaly Detection - receive alerts for unauthorized or
                 unusual billing activity that indicates potential fraud or
-                mismanagement
+                mismanagement.
                 <br />
                 <Link
                   className="font-medium text-blue-600 hover:underline dark:text-blue-500"
