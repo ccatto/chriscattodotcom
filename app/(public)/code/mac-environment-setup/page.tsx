@@ -18,7 +18,8 @@ export default function Page() {
     'https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2Fccatto%2Fgists%2Fblob%2Fmain%2Fstripe-webhook.ts&style=a11y-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on';
   const codeBlock = "const CapacitorConfig = {\n    webDir: 'out',";
   const codeBlock2 = 'const nextConfig = {\n  output: export';
-  const codeBlock3 = 'export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")" \n[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm \n\nexport PATH=/opt/homebrew/bin:$PATH \nexport NVM_DIR="$HOME/.nvm" \n[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm \n[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion';
+  const codeBlock3 =
+    'export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")" \n[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm \n\nexport PATH=/opt/homebrew/bin:$PATH \nexport NVM_DIR="$HOME/.nvm" \n[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm \n[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion';
 
   return (
     <>
@@ -386,12 +387,19 @@ export default function Page() {
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className=" indent-4">
-                            The .zshrc file configuration is essential for Z-Shell scripting. In our directory of Macintosh HD &gt; Users &gt; userName we have (if not there we can create) a file named .zshrc. All files starting with a dot are "hidden" and we can view hidden files in finder by pressing cmd+shift+. So opening the file to me I like to simply use the app TextEdit (others use vim or text editing methods). Then here are some important lines we can add to our .zshrc
-                            </div>
-                            <SyntaxHighlightingReactCatto
-                              codeString={codeBlock3}
-                            />
-                          
+                            The .zshrc file configuration is essential for
+                            Z-Shell scripting. In our directory of Macintosh HD
+                            &gt; Users &gt; userName we have (if not there we
+                            can create) a file named .zshrc. All files starting
+                            with a dot are "hidden" and we can view hidden files
+                            in finder by pressing cmd+shift+. So opening the
+                            file to me I like to simply use the app TextEdit
+                            (others use vim or text editing methods). Then here
+                            are some important lines we can add to our .zshrc
+                          </div>
+                          <SyntaxHighlightingReactCatto
+                            codeString={codeBlock3}
+                          />
                         </div>
                       </div>
                     </div>
