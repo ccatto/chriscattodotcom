@@ -970,6 +970,21 @@ export default function Page() {
               </ul>
             </div>
             <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Amazon Kinesis Video Streams
+              </h3>
+              <ul className="max-w-md list-inside list-disc space-y-1">
+                <li>
+                  Amazon Kinesis Video Streams is a service for streaming video. It makes it easy to securely stream video from connected devices to AWS for analytics, machine learning (ML), and other processing. This service does not handle the conversion of media file formats.
+                </li>
+              </ul>
+            </div>
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
+
           </div>
           <hr className="mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
           <h3 className="flex justify-center text-3xl font-bold dark:text-white">
@@ -4030,6 +4045,9 @@ export default function Page() {
                 <li>
                   SQS - A service that provides decoupled communication for
                   microservices-based applications
+                </li>
+                <li>
+                  Amazon Simple Queue Service (SQS) is another AWS service that provides decoupled communication for microservices-based applications. SQS is a fully managed message queuing service that enables you to decouple the components of a distributed application. Microservices can send messages to SQS queues, and other microservices can consume those messages at their own pace, allowing for asynchronous and decoupled communication.
                 </li>
               </ul>
             </div>
