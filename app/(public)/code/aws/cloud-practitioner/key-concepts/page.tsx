@@ -139,6 +139,7 @@ export default function Page() {
                   Reduced need for manual intervention & increased efficiency
                 </li>
                 <li>Ability to focus on revenue-generating activities;</li>
+                <li>Transitioning to a fully variable expense model from a capital expense-heavy model;</li>
                 <li>
                   Elasticity & Agility; the most celebrated benefit is
                   Elasticity since we can expand services as traffic grows;
