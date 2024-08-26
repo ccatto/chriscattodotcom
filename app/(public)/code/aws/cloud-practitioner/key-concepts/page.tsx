@@ -474,6 +474,9 @@ export default function Page() {
                   Trusted Advisor provides recommendations that helps us reduce
                   costs;
                 </li>
+                <li>
+                AWS Trusted Advisor inspects AWS environment and makes recommendations to help you save money, improve system performance, and close security gaps. Trusted Advisor provides real-time insight into your usage patterns, configurations, and resources, then compares it to AWS best practices
+                </li>
               </ul>
             </div>
             <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
@@ -825,6 +828,9 @@ export default function Page() {
                   perspective is required to define and track business outcomes
                   during a cloud transformation journey
                 </li>
+                <li>
+                  Data architecture is capability is included in the platform perspective of CAF
+                </li>
               </ul>
             </div>
             <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
@@ -967,6 +973,9 @@ export default function Page() {
                   >
                     AWS Elastic Disaster Recovery (EDR)
                   </Link>
+                </li>
+                <li>
+                  EDR good for ability to quickly activate a standby environment if the primary one fails.
                 </li>
               </ul>
             </div>
@@ -1623,6 +1632,9 @@ export default function Page() {
                     </li>
                   </ul>
                 </li>
+                <li>
+                  EC2 is IaaS Infrastructure as a Service
+                </li>
               </ul>
             </div>
             <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
@@ -1930,6 +1942,9 @@ export default function Page() {
                   vast amount of data
                 </li>
                 <li>EMR can analyze large-scale datasets;</li>
+                <li>
+                  EMR is designed to efficiently process, analyze, and derive insights from large datasets quickly by distributing the data across a resizable cluster of AWS EC2 instances. It simplifies running big data frameworks for processing and analyzing large datasets, handling everything from provisioning and configuring the data processing infrastructure to scaling and managing the cluster.
+                </li>
               </ul>
             </div>
             <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
