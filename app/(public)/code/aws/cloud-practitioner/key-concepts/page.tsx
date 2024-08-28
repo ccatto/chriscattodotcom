@@ -4243,7 +4243,9 @@ export default function Page() {
               </h3>
               <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
-                  centrally manage security policies across multiple AWS accounts for AWS WAF, AWS Shield Advanced, and VPC security groups;
+                  centrally manage security policies across multiple AWS
+                  accounts for AWS WAF, AWS Shield Advanced, and VPC security
+                  groups;
                 </li>
                 <li>
                   AWS Firewall Manager is a security management service that
@@ -4276,10 +4278,12 @@ export default function Page() {
               </h3>
               <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
                 <li>
-                  AWS Resource Groups helps you to group your AWS resources, which can then be managed and automated as a collection.
+                  AWS Resource Groups helps you to group your AWS resources,
+                  which can then be managed and automated as a collection.
                 </li>
                 <li>
-                  effectively organize and manage AWS resources across different environments such as development, testing, and production
+                  effectively organize and manage AWS resources across different
+                  environments such as development, testing, and production
                 </li>
                 <li>
                   <Link
