@@ -3379,6 +3379,9 @@ export default function Page() {
                     Elastic Beanstalk 9s free of use, but we do pay for the
                     resources created.
                   </li>
+                  <li>
+                    Limited Access to OS: AWS Elastic Beanstalk provides a platform for deploying and scaling web applications with limited access to the underlying operating system.
+                  </li>
                 </ul>
               </div>
               <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
