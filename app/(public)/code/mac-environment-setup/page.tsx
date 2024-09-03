@@ -138,6 +138,16 @@ export default function Page() {
                       </div>
                     </div>
                   </li>
+                  <li>
+                    <div
+                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                      role="alert"
+                    >
+                      <div className="flex items-center justify-between">
+                        <h3 className="font-medium">9. PDF Reader</h3>
+                      </div>
+                    </div>
+                  </li>
                 </ol>
               </div>
               <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
@@ -400,6 +410,23 @@ export default function Page() {
                           <SyntaxHighlightingReactCatto
                             codeString={codeBlock3}
                           />
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div
+                      className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+                      role="alert"
+                    >
+                      <div className="flex flex-wrap items-center lg:flex-nowrap">
+                        <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                          8. .zshrc file configuration
+                        </h3>
+                        <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
+                          <div className=" indent-4">
+                            Infrequently we have to edit PDF. There are quite a few popular tools. Adobe reader or PDF Expert are decent https://pdfexpert.com/
+                          </div>
                         </div>
                       </div>
                     </div>
