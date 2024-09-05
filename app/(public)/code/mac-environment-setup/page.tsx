@@ -425,7 +425,9 @@ export default function Page() {
                         </h3>
                         <div className="w-full rounded-2xl bg-slate-600 p-2 lg:ml-5 lg:basis-3/4">
                           <div className=" indent-4">
-                            Infrequently we have to edit PDF. There are quite a few popular tools. Adobe reader or PDF Expert are decent https://pdfexpert.com/
+                            Infrequently we have to edit PDF. There are quite a
+                            few popular tools. Adobe reader or PDF Expert are
+                            decent https://pdfexpert.com/
                           </div>
                         </div>
                       </div>

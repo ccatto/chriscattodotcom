@@ -3380,7 +3380,9 @@ export default function Page() {
                     resources created.
                   </li>
                   <li>
-                    Limited Access to OS: AWS Elastic Beanstalk provides a platform for deploying and scaling web applications with limited access to the underlying operating system.
+                    Limited Access to OS: AWS Elastic Beanstalk provides a
+                    platform for deploying and scaling web applications with
+                    limited access to the underlying operating system.
                   </li>
                 </ul>
               </div>
