@@ -138,7 +138,7 @@ export default function Page() {
                       </div>
                     </div>
                   </li>
-                  <li>
+                  {/* <li>
                     <div
                       className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                       role="alert"
@@ -147,7 +147,7 @@ export default function Page() {
                         <h3 className="font-medium">9. PDF Reader</h3>
                       </div>
                     </div>
-                  </li>
+                  </li> */}
                 </ol>
               </div>
               <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
@@ -414,7 +414,7 @@ export default function Page() {
                       </div>
                     </div>
                   </li>
-                  <li>
+                  {/* <li>
                     <div
                       className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
                       role="alert"
@@ -432,7 +432,7 @@ export default function Page() {
                         </div>
                       </div>
                     </div>
-                  </li>
+                  </li> */}
                 </ol>
                 <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
                 <div className="flex w-full justify-center pb-4">
