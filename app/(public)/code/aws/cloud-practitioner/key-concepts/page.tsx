@@ -140,6 +140,10 @@ export default function Page() {
                 </li>
                 <li>Ability to focus on revenue-generating activities;</li>
                 <li>
+                  Transitioning to a fully variable expense model from a capital
+                  expense-heavy model;
+                </li>
+                <li>
                   Elasticity & Agility; the most celebrated benefit is
                   Elasticity since we can expand services as traffic grows;
                 </li>
@@ -473,6 +477,13 @@ export default function Page() {
                   Trusted Advisor provides recommendations that helps us reduce
                   costs;
                 </li>
+                <li>
+                  AWS Trusted Advisor inspects AWS environment and makes
+                  recommendations to help you save money, improve system
+                  performance, and close security gaps. Trusted Advisor provides
+                  real-time insight into your usage patterns, configurations,
+                  and resources, then compares it to AWS best practices
+                </li>
               </ul>
             </div>
             <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
@@ -745,6 +756,9 @@ export default function Page() {
                   Use the right type and size of resources for your workload. By
                   using the correct type and size of resources, the system can
                   achieve optimal performance and reduce unnecessary costs.
+                  <br />
+                  Using serverless architectures is a key design principle
+                  recommended by AWS for achieving performance efficiency
                 </li>
                 <li>
                   <span className="font-bold">Cost Optimization</span> - focuses
@@ -824,6 +838,10 @@ export default function Page() {
                   perspective is required to define and track business outcomes
                   during a cloud transformation journey
                 </li>
+                <li>
+                  Data architecture is capability is included in the platform
+                  perspective of CAF
+                </li>
               </ul>
             </div>
             <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
@@ -897,6 +915,10 @@ export default function Page() {
                   Refactor, Rehost, Repurchase, Retain, Retire, and Rebuild
                 </li>
                 <li>not one of the 6 R's: Reiterate; Retry & Replicate</li>
+                <li>
+                  Refactor - enhance the scalability of its legacy application
+                  by breaking it into smaller
+                </li>
               </ul>
             </div>
             <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
@@ -967,6 +989,10 @@ export default function Page() {
                     AWS Elastic Disaster Recovery (EDR)
                   </Link>
                 </li>
+                <li>
+                  EDR good for ability to quickly activate a standby environment
+                  if the primary one fails.
+                </li>
               </ul>
             </div>
             <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
@@ -984,6 +1010,60 @@ export default function Page() {
                   devices to AWS for analytics, machine learning (ML), and other
                   processing. This service does not handle the conversion of
                   media file formats.
+                </li>
+              </ul>
+            </div>
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Amazon EFS with Lifecycle Management
+              </h3>
+              <ul className="max-w-md list-inside list-disc space-y-1">
+                <li>
+                  Amazon Elastic File System (EFS) is a scalable, elastic,
+                  cloud-native file storage service for Linux-based workloads.
+                  It seamlessly integrates with AWS cloud services and
+                  on-premise resources, providing a simple, serverless,
+                  set-and-forget elastic file system. Amazon EFS is designed to
+                  be highly available and durable, offering a file system
+                  interface and file system semantics. It allows multiple EC2
+                  instances to access the data concurrently.
+                </li>
+                <li>
+                  multiple EC2 instances simultaneously & ensure that
+                  infrequently used files are moved to a more cost-effective
+                  storage class;
+                </li>
+              </ul>
+            </div>
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Amazon MemoryDB
+              </h3>
+              <ul className="max-w-md list-inside list-disc space-y-1">
+                <li>
+                  Amazon MemoryDB is a fully managed in-memory database service
+                  built on an architecture designed for durability and fault
+                  tolerance. It is designed to support applications requiring
+                  microsecond read latency and high-speed data ingestion, making
+                  it a perfect fit for a gaming application like the one
+                  described.
+                </li>
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/memorydb"
+                    target="_blank"
+                  >
+                    MemoryDB
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -1622,6 +1702,7 @@ export default function Page() {
                     </li>
                   </ul>
                 </li>
+                <li>EC2 is IaaS Infrastructure as a Service</li>
               </ul>
             </div>
             <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
@@ -1929,6 +2010,15 @@ export default function Page() {
                   vast amount of data
                 </li>
                 <li>EMR can analyze large-scale datasets;</li>
+                <li>
+                  EMR is designed to efficiently process, analyze, and derive
+                  insights from large datasets quickly by distributing the data
+                  across a resizable cluster of AWS EC2 instances. It simplifies
+                  running big data frameworks for processing and analyzing large
+                  datasets, handling everything from provisioning and
+                  configuring the data processing infrastructure to scaling and
+                  managing the cluster.
+                </li>
               </ul>
             </div>
             <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
@@ -3155,6 +3245,10 @@ export default function Page() {
                       <li>Local data processing capabilities</li>
                     </ul>
                   </li>
+                  <li>
+                    Snowcone 8TB || Snowball - 80 Petabytes || Snowmobile
+                    Exabytes
+                  </li>
                 </ul>
               </div>
               <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
@@ -3284,6 +3378,11 @@ export default function Page() {
                   <li>
                     Elastic Beanstalk 9s free of use, but we do pay for the
                     resources created.
+                  </li>
+                  <li>
+                    Limited Access to OS: AWS Elastic Beanstalk provides a
+                    platform for deploying and scaling web applications with
+                    limited access to the underlying operating system.
                   </li>
                 </ul>
               </div>
@@ -4122,6 +4221,87 @@ export default function Page() {
               </h3>
             </div>
             <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS Neptune - High-performance graph analytics and serverless
+                database for superior scalability and availability
+                <br />
+                <Link
+                  className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                  href="https://aws.amazon.com/neptune/"
+                  target="_blank"
+                >
+                  AWS Neptune
+                </Link>
+              </h3>
+            </div>
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS Firewall Manager
+              </h3>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
+                <li>
+                  centrally manage security policies across multiple AWS
+                  accounts for AWS WAF, AWS Shield Advanced, and VPC security
+                  groups;
+                </li>
+                <li>
+                  AWS Firewall Manager is a security management service that
+                  centrally configures and manages firewall rules across
+                  multiple AWS accounts and resources. It automates the
+                  deployment and enforcement of security policies, ensuring
+                  consistent protection for applications deployed in AWS.
+                  Firewall Manager supports AWS WAF, AWS Shield Advanced, and
+                  VPC security groups, allowing administrators to create and
+                  apply rules based on security best practices
+                </li>
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://aws.amazon.com/neptune/"
+                    target="_blank"
+                  >
+                    AWS Firewall Manager
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                AWS Resource Groups
+              </h3>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
+                <li>
+                  AWS Resource Groups helps you to group your AWS resources,
+                  which can then be managed and automated as a collection.
+                </li>
+                <li>
+                  effectively organize and manage AWS resources across different
+                  environments such as development, testing, and production
+                </li>
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://docs.aws.amazon.com/ARG/latest/userguide/resource-groups.html"
+                    target="_blank"
+                  >
+                    Resource Groups
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
             {/*  ec2 fleet? */}
           </div>
           <hr className="mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
@@ -4449,6 +4629,36 @@ export default function Page() {
               role="alert"
             >
               <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
+                Service control policies (SCPs)
+              </h3>
+              <ul className="ml-5 max-w-md list-inside list-disc space-y-1">
+                <li>
+                  <Link
+                    className="font-medium text-blue-600 hover:underline dark:text-blue-500"
+                    href="https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html"
+                    target="_blank"
+                  >
+                    Service control policies (SCPs)
+                  </Link>
+                </li>
+                <li>
+                  AWS Service Control Policies (SCPs) are a type of policy that
+                  you can use to manage permissions in your AWS organization.
+                  SCPs enable you to define the maximum permissions for member
+                  accounts in the organization.
+                </li>
+                <li>
+                  can be used to grant permission to access AWS resources from
+                  members' accounts in the AWS organization
+                </li>
+              </ul>
+            </div>
+            <hr className="mx-auto my-2 h-3 w-3 rounded border-0 bg-gray-200 dark:bg-gray-700 md:my-2" />
+            <div
+              className="w-full rounded-lg border border-green-300 bg-green-50 p-4 text-slate-200 dark:border-green-800 dark:bg-gray-800 dark:text-slate-200"
+              role="alert"
+            >
+              <h3 className="mb-3 font-medium lg:mb-0 lg:basis-1/4">
                 BILLING AWS Organizations - centrally manage environments &
                 multiple AWS accounts
               </h3>
@@ -4487,6 +4697,14 @@ export default function Page() {
                   landing zone that is based on best-practices blueprints, and
                   enables governance using guardrails you can choose from a
                   pre-packaged list.
+                </li>
+                <li>
+                  Consolidated billing combines incurred costs across accounts
+                  into a single invoice.
+                </li>
+                <li>
+                  All member accounts can share their reserved instances when
+                  needed.
                 </li>
               </ul>
             </div>
