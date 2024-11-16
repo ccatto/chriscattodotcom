@@ -21,6 +21,7 @@ This is based from the starter template for the Next.js App Router Course. It co
 ```
 
 Current node version is 20.9.0 as of March 26th 2024;
+Current Next version is 15.0.3
 
 ## April 23, 2024 Release 1.1.01
 
@@ -39,6 +40,17 @@ Current node version is 20.9.0 as of March 26th 2024;
 
 * 008 5.22.24 hotfix to handleCloseAll with code nav;
 
+* 009 6.13.24 Updates - released 7.30 including css-styles & flexbox.
+
+* 010 7.30.24 starting - probably going to add more AWS section;
+
+* 011 8.23.24 AWS initial section of cloud practitioner is pretty much complete;
+
+* 1st update in June 2024. 2nd small
+
+* 011 11.16.24 deployed aws minor updates & switched to branch 12
+
+- when deploying utilize the command `fly deploy` 
 
 - using @next/third-parties for GA4.
 - using "react-syntax-highlighter": "^15.5.0", && @types/react-syntax-highlighter for syntax highlighting

@@ -1,16 +1,17 @@
 import React, { ReactNode, useState } from 'react';
 import JSNavDrawerCatto from '@/app/components/JavaScript/JSNavDrawerCatto/JSNavDrawerCatto';
+import CSSSideNavLinkList from '@/app/components/AtomicDesign/molecules/CSSSideNavLinkList/CSSSideNavLinkList';
 
 type LayoutProps = {
   children: ReactNode;
 };
 
-const SFCCLayout = ({ children }: LayoutProps) => {
+const CSSLayout = ({ children }: LayoutProps) => {
   return (
     <>
       <div className="flex min-h-[calc(100vh-27rem)]">
         <aside className="h-full lg:flex-[20]">
-          <JSNavDrawerCatto />
+          <CSSSideNavLinkList />
         </aside>
         <article className="h-full lg:flex-[80]">{children}</article>
       </div>
@@ -19,4 +20,4 @@ const SFCCLayout = ({ children }: LayoutProps) => {
   );
 };
 
-export default SFCCLayout;
+export default CSSLayout;

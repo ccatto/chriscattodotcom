@@ -19,32 +19,39 @@ export default function Page() {
       </div>
       <hr className="p-0" />
       <div className="flex-[80] p-2 dark:bg-gray-700">
-        <h2 className="mb-4 pl-5 inline-block text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+        <h2 className="mb-4 inline-block pl-5 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
           Terminal example:
         </h2>
         <CommandPromptDisplay
           command="git push"
           output="remote: Resolving deltas: 100% (8/8), completed with 4 local objects."
         />
-        <p className='pl-5 indent-4'>
-          When pushing remember what ObiWan said to Luke "Use the Force". It's often needed to use force flag. One time I often use force is when rebasing and then need to push. So for an example there we want to push to origin and use force.
+        <p className="pl-5 indent-4">
+          When pushing remember what ObiWan said to Luke "Use the Force". It's
+          often needed to use force flag. One time I often use force is when
+          rebasing and then need to push. So for an example there we want to
+          push to origin and use force.
         </p>
         <CommandPromptDisplay
           command="git push origin branchName --force"
           output=" + 2339f78...59f9746 branchName -> branchName (forced update)"
         />
-        <p className='pl-5 indent-4'>
-          We can also use force with lease. This flag will protect all remote refs that are going to be updated.
+        <p className="pl-5 indent-4">
+          We can also use force with lease. This flag will protect all remote
+          refs that are going to be updated.
         </p>
         <CommandPromptDisplay
           command="git push origin branchName --force-with-lease"
           output=" + 2339f78...59f9746 branchName -> branchName (forced update)"
         />
-        <p className='pl-5'>
-          Here is the <Link href="https://git-scm.com/docs/git-push"
+        <p className="pl-5">
+          Here is the{' '}
+          <Link
+            href="https://git-scm.com/docs/git-push"
             target="_blank"
             className="font-medium text-blue-600 hover:underline dark:text-blue-500"
-          >official git docs page on git push.
+          >
+            official git docs page on git push.
           </Link>
         </p>
       </div>

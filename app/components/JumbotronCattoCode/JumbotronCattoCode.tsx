@@ -71,10 +71,6 @@ const JumbotronCattoCode = () => {
             </a>
           </div>
           <div className="rounded-lg border border-gray-200 bg-gray-50 p-8 dark:border-gray-700 dark:bg-gray-800 md:p-12">
-            {/* <Link
-              href="#"
-              className="mb-2 inline-flex items-center rounded-md bg-purple-100 px-2.5 py-0.5 text-xs font-medium text-purple-800 dark:bg-gray-700 dark:text-purple-400"
-            > */}
             <div className="mb-2 inline-flex items-center rounded-md bg-purple-100 px-2.5 py-0.5 text-xs font-medium text-purple-800 dark:bg-gray-700 dark:text-purple-400">
               <svg
                 className="me-1.5 h-2.5 w-2.5"
@@ -102,6 +98,27 @@ const JumbotronCattoCode = () => {
               platform allows brands to sell products online. I have been in the
               space for over 7 years now and enjoy the platform.
             </p>
+            <Link
+              href="/code/sfcc"
+              className="inline-flex items-center text-lg font-medium text-blue-600 hover:underline dark:text-blue-500"
+            >
+              Read more
+              <svg
+                className="ms-2 h-3.5 w-3.5 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </Link>
           </div>
         </div>
         {/* 2nd Row */}
@@ -211,7 +228,6 @@ const JumbotronCattoCode = () => {
             </Link>
           </div>
         </div>
-
         {/* 3rd Row */}
         <div className="mt-6 grid gap-8 md:grid-cols-2">
           {/* Env Setup section */}

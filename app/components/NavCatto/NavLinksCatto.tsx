@@ -382,7 +382,8 @@ const NavLinksCatto = () => {
                             <li>
                               <Link
                                 href="/code/git/tutorial/what-is-the-difference-between-git-pull-and-git-fetch"
-                                className="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                                className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                                onClick={handleCloseAllClick}
                               >
                                 Diff Git Pull & Fetch
                               </Link>

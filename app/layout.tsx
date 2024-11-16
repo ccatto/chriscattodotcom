@@ -24,13 +24,13 @@ export default async function RootLayout({
     <SessionProviderWrapperCatto>
       <html lang="en" className="dark">
         <body
-          className={`min-h-[calc(100vh-26rem)] ${montserrat.className} absolute m-0 flex w-screen flex-col overflow-x-hidden bg-gray-800 antialiased`}
+          className={`min-h-[calc(100vh-26rem)] ${montserrat.className} absolute m-0 flex w-full flex-col overflow-x-hidden bg-gray-800 antialiased`}
         >
           <HeaderCatto />
-          <h1 className="text-white">new</h1>
+          {/* <h1 className="text-white">new</h1> */}
           <hr />
           <div className="mt-20 flex h-full">
-            <div className="h-full flex-[1] bg-gradient-to-r from-gray-500 to-gray-900"></div>
+            <div className="flex-[1] bg-gradient-to-r from-gray-500 to-gray-900"></div>
             <main className="flex-[98] bg-gray-700">{children}</main>
             <div className="flex-[1] bg-gradient-to-r from-gray-900 to-gray-500"></div>
           </div>
