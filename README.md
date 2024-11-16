@@ -48,6 +48,10 @@ Current Next version is 15.0.3
 
 * 1st update in June 2024. 2nd small
 
+* 011 11.16.24 deployed aws minor updates & switched to branch 12
+
+- when deploying utilize the command `fly deploy` 
+
 - using @next/third-parties for GA4.
 - using "react-syntax-highlighter": "^15.5.0", && @types/react-syntax-highlighter for syntax highlighting
 - using pg package v^8.11.5 for postgresql
