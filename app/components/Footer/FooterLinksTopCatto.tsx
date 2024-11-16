@@ -139,14 +139,14 @@ const FooterLinksTopCatto = () => {
               </Accordion>
             </li>
             <li className="mb-4">
-              <Accordion type="single" collapsible defaultValue="item-1">
+               {/* .NET Overview */}
+              {/* <Accordion type="single" collapsible defaultValue="item-1">
                 <AccordionItem value="item-1">
                   <AccordionTrigger>
                     <span className="pl-2">MS .NET</span>
                   </AccordionTrigger>
                   <AccordionContent>
                     <ul>
-                      {/* .NET Overview */}
                       <li className="-scroll-mt-3">
                         <Link
                           href="/code/.NET/overview"
@@ -203,7 +203,7 @@ const FooterLinksTopCatto = () => {
                     </ul>
                   </AccordionContent>
                 </AccordionItem>
-              </Accordion>
+              </Accordion> */}
             </li>
           </ul>
         </div>
