@@ -15,29 +15,26 @@ export default function Page() {
       <div className="flex h-full w-full flex-col flex-nowrap ">
         <div className="flex">
           <JumbotronCattoFlexible
-            title="AWS Cloud Practitioner"
-            description="Amazon Web Services Cloud Practitioner is an AWS certification which focuses on fundamentals and high-level understand of AWS cloud services & technology."
+            title=".NET Key Concepts by Chris Catto"
+            description=".NET Key Concepts focuses on fundamentals and high-level understand of .NET Framework & technology."
           />
         </div>
         <div className="m-4 flex-[80] rounded-2xl p-4 text-[#FAFAFA] ring-2 ring-gray-300 dark:bg-[#232f3e] dark:ring-gray-500">
           <h2 className="mb-4 inline-block text-3xl font-extrabold tracking-tight">
-            AWS Cloud Practitioner - Key Concepts
+            .NET - Key Concepts
           </h2>
           <div>
             <div>
               <ul className="text-xl font-normal text-gray-700 dark:text-gray-400">
                 <li className="m-5">
-                  Amazon Web Services Cloud Practitioner is an AWS certification
-                  which focuses on fundamentals and high-level understand of AWS
-                  cloud services & technology.
+                  .NET Framework is a very popular & mature software development framework made my Microsoft
                 </li>
               </ul>
             </div>
             <hr className="m-5 mx-auto my-4 h-1 w-48 rounded border-0 bg-gray-100 dark:bg-gray-700 md:my-10" />
             <div>
               <p className="flex justify-center text-2xl">
-                <span className="pr-2 font-bold">Summary</span>of AWS Cloud
-                Practitioner Key Concepts:
+                <span className="pr-2 font-bold">Summary</span>of .NET Key Concepts:
               </p>
               <div className="mt-4 flex justify-center">
                 <ol className="w-full space-y-4">
@@ -48,7 +45,7 @@ export default function Page() {
                     >
                       <div className="flex items-center justify-between">
                         <h3 className="font-medium">
-                          1. AWS General - Cloud Concepts
+                          1. .NET General - Cloud Concepts
                         </h3>
                       </div>
                     </div>
