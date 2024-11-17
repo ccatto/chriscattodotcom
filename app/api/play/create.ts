@@ -8,13 +8,15 @@ export default async function handler(req: any, res: any) {
 
     try {
       // we can access db records with prisma functions
-      const playRecord = await prisma.playing_with_neon.create({
-        data: {
-          // title,
-          name: name,
-          value: value,
-        },
-      });
+      const playRecord = 'test';
+      // commented out nov 17th after neon db deleted;
+      // await prisma.playing_with_neon.create({
+      //   data: {
+      //     // title,
+      //     name: name,
+      //     value: value,
+      //   },
+      // });
       res.status(200).json({ playRecord });
     } catch (e) {
       res.status(500).json(e);

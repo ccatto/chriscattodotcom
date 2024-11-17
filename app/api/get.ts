@@ -7,14 +7,15 @@ export default async function handler(req: any, res: any) {
     const { user } = req.query;
 
     try {
-      const list = await prisma.playing_with_neon.findMany({
-        // where: {
-        //   userId: parseInt(user),
-        // },
-        // orderBy: {
-        //   createdAt: "desc",
-        // },
-      });
+      const list = 'test nov 17';
+      // const list = await prisma.playing_with_neon.findMany({
+      //   // where: {
+      //   //   userId: parseInt(user),
+      //   // },
+      //   // orderBy: {
+      //   //   createdAt: "desc",
+      //   // },
+      // });
       res.status(200).json({ list });
     } catch (e) {
       res.status(500).json(e);

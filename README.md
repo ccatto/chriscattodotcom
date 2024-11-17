@@ -50,7 +50,14 @@ Current Next version is 15.0.3
 
 * 011 11.16.24 deployed aws minor updates & switched to branch 12
 
-- when deploying utilize the command `fly deploy` 
+- when deploying utilize the command 
+- 
+* 012 is branch chriscatto.com version 1.2.2 updated Next to v15 & eslint; also neon db was deleted I think since it was free & not used;
+
+* 013 what is on deck???
+=======
+`fly deploy` 
+
 
 - using @next/third-parties for GA4.
 - using "react-syntax-highlighter": "^15.5.0", && @types/react-syntax-highlighter for syntax highlighting
@@ -121,3 +128,5 @@ Needed to update tsconfig.json to add `"noImplicitAny": false,` to resolve the r
     <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> 
     <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> 
 </p>
+
+- updating to next 15 is interesting due to dependencies 
