@@ -65,92 +65,93 @@ const handleCompletedCheckoutSession = async (
   }
 };
 
+// november 17 commented out getting and error after upgrading to next 15  NextResponse<unknown>
 // Stripe POST
-export async function POST(request: NextRequest, response: NextResponse) {
-  // const payload = await request.body;
-  const payload = await request.text();
-  const responseParsed = JSON.parse(payload);
-  const stripeSignature = request.headers.get('Stripe-Signature');
+// export async function POST(request: NextRequest, response: NextResponse) {
+//   // const payload = await request.body;
+//   const payload = await request.text();
+//   const responseParsed = JSON.parse(payload);
+//   const stripeSignature = request.headers.get('Stripe-Signature');
 
-  const dateTime = new Date(
-    (responseParsed.created = 1000),
-  ).toLocaleDateString();
-  const timeString = new Date(
-    (responseParsed.created = 1000),
-  ).toLocaleDateString();
+//   const dateTime = new Date(
+//     (responseParsed.created = 1000),
+//   ).toLocaleDateString();
+//   const timeString = new Date(
+//     (responseParsed.created = 1000),
+//   ).toLocaleDateString();
 
-  let stripeResult = 'Stripe Webhook called;';
-  let stripeEvent;
-  const testing = true;
+//   let stripeResult = 'Stripe Webhook called;';
+//   let stripeEvent;
+//   const testing = true;
 
-  // const { PRICE_ID } = await request.json();
-  // console.log('PRICE_ID === ' ,PRICE_ID);
+//   // const { PRICE_ID } = await request.json();
+//   // console.log('PRICE_ID === ' ,PRICE_ID);
 
-  console.log('----- this are the 3 values going to be passed: ');
-  console.log('payload === ', payload);
-  console.log('========================           ==================');
-  console.log('responseParsed === ', responseParsed);
-  console.log('========================           ==================');
-  console.log(
-    'process.env.STRIPE_SECRET_KEY! === ',
-    process.env.STRIPE_SECRET_KEY!,
-  );
+//   console.log('----- this are the 3 values going to be passed: ');
+//   console.log('payload === ', payload);
+//   console.log('========================           ==================');
+//   console.log('responseParsed === ', responseParsed);
+//   console.log('========================           ==================');
+//   console.log(
+//     'process.env.STRIPE_SECRET_KEY! === ',
+//     process.env.STRIPE_SECRET_KEY!,
+//   );
 
-  try {
-    console.log('inside try & want to constructEvent -----------------------');
-    stripeEvent = stripe.webhooks.constructEvent(
-      // responseParsed,
-      payload,
-      stripeSignature!,
-      // need web hook secret key not stripe secret key
-      process.env.STRIPE_WEBHOOK_SECRET!,
-    );
-    console.log('inside try event.type === ', stripeEvent.type);
-  } catch (e) {
-    console.log('error e === ', e);
-    return NextResponse.json({ error: e }, { status: 400 });
-  }
+//   try {
+//     console.log('inside try & want to constructEvent -----------------------');
+//     stripeEvent = stripe.webhooks.constructEvent(
+//       // responseParsed,
+//       payload,
+//       stripeSignature!,
+//       // need web hook secret key not stripe secret key
+//       process.env.STRIPE_WEBHOOK_SECRET!,
+//     );
+//     console.log('inside try event.type === ', stripeEvent.type);
+//   } catch (e) {
+//     console.log('error e === ', e);
+//     return NextResponse.json({ error: e }, { status: 400 });
+//   }
 
-  if (!testing) {
-    switch (stripeEvent.type) {
-      case 'payment_intent.succeeded':
-        const paymentIntentSucceeded = stripeEvent.data.object as {
-          id: string;
-          receipt_email: string;
-        };
-        console.log('paymentIntentSucceeded === ', paymentIntentSucceeded);
-        // NEED TO add db insert here;
-        break;
-      case 'checkout.session.completed':
-        const savedSession = await handleCompletedCheckoutSession(stripeEvent);
-        if (!savedSession)
-          return NextResponse.json(
-            { error: 'unable to save checkout session' },
-            { status: 500 },
-          );
-        break;
-      case 'payment_intent.succeeded':
-        // need to create a different function not
-        const updated = await handleCompletedCheckoutSession(stripeEvent);
-        if (!updated)
-          return NextResponse.json(
-            { error: 'unable to save checkout session' },
-            { status: 500 },
-          );
-        break;
-      default:
-        console.warn('unhandled event type ${event.type}');
-    }
-  }
+//   if (!testing) {
+//     switch (stripeEvent.type) {
+//       case 'payment_intent.succeeded':
+//         const paymentIntentSucceeded = stripeEvent.data.object as {
+//           id: string;
+//           receipt_email: string;
+//         };
+//         console.log('paymentIntentSucceeded === ', paymentIntentSucceeded);
+//         // NEED TO add db insert here;
+//         break;
+//       case 'checkout.session.completed':
+//         const savedSession = await handleCompletedCheckoutSession(stripeEvent);
+//         if (!savedSession)
+//           return NextResponse.json(
+//             { error: 'unable to save checkout session' },
+//             { status: 500 },
+//           );
+//         break;
+//       case 'payment_intent.succeeded':
+//         // need to create a different function not
+//         const updated = await handleCompletedCheckoutSession(stripeEvent);
+//         if (!updated)
+//           return NextResponse.json(
+//             { error: 'unable to save checkout session' },
+//             { status: 500 },
+//           );
+//         break;
+//       default:
+//         console.warn('unhandled event type ${event.type}');
+//     }
+//   }
 
-  return NextResponse.json({
-    status: 'success',
-    message: 'stripe post successful',
-    event: stripeEvent.type,
-  });
+//   return NextResponse.json({
+//     status: 'success',
+//     message: 'stripe post successful',
+//     event: stripeEvent.type,
+//   });
 
-  // return NextResponse.json ({ received: true, status: stripeResult});
-}
+//   // return NextResponse.json ({ received: true, status: stripeResult});
+// }
 
 // export default async function handler(req, res) {
 //   if (req.method === 'POST') {

@@ -9,7 +9,9 @@ async function main() {
   // ... you will write your Prisma Client queries here
   // const allUsers = await prisma.user.findMany()
   // console.log(allUsers)
-  const playTableData = await prisma.playing_with_neon.findMany();
+  // commented out after nov 17 neon 
+  const playTableData = 'test'; // await prisma.playing_with_neon.findMany();
+  // const playTableData = await prisma.playing_with_neon.findMany();
   // console.log('playTableData ===', playTableData);
 }
 
