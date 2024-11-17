@@ -48,9 +48,16 @@ Current Next version is 15.0.3
 
 * 1st update in June 2024. 2nd small
 
+* 011 11.16.24 deployed aws minor updates & switched to branch 12
+
+- when deploying utilize the command 
+- 
 * 012 is branch chriscatto.com version 1.2.2 updated Next to v15 & eslint; also neon db was deleted I think since it was free & not used;
 
 * 013 what is on deck???
+=======
+`fly deploy` 
+
 
 - using @next/third-parties for GA4.
 - using "react-syntax-highlighter": "^15.5.0", && @types/react-syntax-highlighter for syntax highlighting

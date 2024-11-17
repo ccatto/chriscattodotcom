@@ -60,7 +60,7 @@ export default function Page() {
             <li>Account Management, Billing & Support</li>
             <li>Advanced Identity</li>
             <li>Other Services</li>
-            <li>AWS Architecting & Ecosystem</li>
+            <li>AWS Architecting & Ecosystems</li>
           </ul>
           {/* <ul className="space-y-2 font-medium">
             <li>
