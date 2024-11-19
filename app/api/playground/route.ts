@@ -11,6 +11,7 @@ async function main() {
   // console.log(allUsers)
   // commented out after nov 17 neon 
   const playTableData = 'test'; // await prisma.playing_with_neon.findMany();
+  
   // const playTableData = await prisma.playing_with_neon.findMany();
   // console.log('playTableData ===', playTableData);
 }
