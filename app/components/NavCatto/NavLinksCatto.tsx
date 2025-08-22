@@ -525,6 +525,15 @@ const NavLinksCatto = () => {
                       </AccordionItem>
                     </Accordion>
                   </li>
+                  <li>
+                    <Link
+                      href="/code/aws/cloud-practitioner"
+                      className="block px-4 py-2 hover:bg-gray-100 hover:text-blue-300 dark:hover:bg-gray-600"
+                      onClick={handleCloseAllClick}
+                    >
+                      AWS
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </li>
