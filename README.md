@@ -61,6 +61,8 @@ branch cc-16 new feature 2025 jan 2025
 * 013 what is on deck????
 
 * 016 Software Architecture Design Patterns 1.2.6
+
+* 017 🌅 2025 Autumn
 =======
 `fly deploy` 
 
