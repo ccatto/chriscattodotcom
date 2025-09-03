@@ -534,6 +534,15 @@ const NavLinksCatto = () => {
                       AWS
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="/code/software-architecture-design-patterns"
+                      className="block px-4 py-2 hover:bg-gray-100 hover:text-blue-300 dark:hover:bg-gray-600"
+                      onClick={handleCloseAllClick}
+                    >
+                      Design Patterns
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </li>

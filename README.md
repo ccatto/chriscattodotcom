@@ -59,6 +59,8 @@ branch cc-16 new feature 2025 jan 2025
 * 012 is branch chriscatto.com version 1.2.2 updated Next to v15 & eslint; also neon db was deleted I think since it was free & not used;
 
 * 013 what is on deck????
+
+* 016 Software Architecture Design Patterns 1.2.6
 =======
 `fly deploy` 
 

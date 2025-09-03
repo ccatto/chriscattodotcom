@@ -79,7 +79,7 @@ const FactoryPatternDetailCatto: React.FC<{ isOpen: boolean; onClose: () => void
       </div>
       <p className="text-slate-700 dark:text-slate-300 mb-4">
         The Factory pattern creates objects without specifying their exact classes. It provides a way to encapsulate 
-        object creation logic and promotes loose coupling between components. Here is a more detailed page focused on the 
+        object creation logic and promotes loose coupling between components. Here is a more detailed page focused on the <LinkCatto linkText="Factory Pattern" href="/code/software-architecture-design-patterns/factory-pattern" />
       </p>
       
       <div className="bg-slate-50 dark:bg-slate-900 p-4 rounded-md">
