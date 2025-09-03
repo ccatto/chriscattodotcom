@@ -206,7 +206,46 @@ const FooterLinksTopCatto = () => {
               </Accordion> */}
             </li>
           </ul>
+
+          <h2 className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
+            Architecture
+          </h2>
+          <ul className="font-medium text-gray-500 dark:text-gray-400">
+            <li className="mb-4">
+              <Accordion type="single" collapsible defaultValue="item-1">
+                <AccordionItem value="item-1">
+                  <AccordionTrigger>
+                    <span className="ms-3">Software Patterns</span>
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <ul
+                      id="dropdown-example"
+                      className="space-y-2 py-2 indent-4"
+                    >
+                      <li>
+                        <a
+                          href="/code/software-architecture-design-patterns"
+                          className="group flex w-full items-center rounded-lg p-2 pl-11 text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                        >
+                          Design Patterns
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/code/software-architecture-design-patterns/factory-pattern"
+                          className="group flex w-full items-center rounded-lg p-2 pl-11 text-gray-900 transition duration-75 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                        >
+                          Factory Pattern
+                        </a>
+                      </li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </li>
+          </ul>
         </div>
+
         <div>
           <h2 className="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">
             Next.JS
