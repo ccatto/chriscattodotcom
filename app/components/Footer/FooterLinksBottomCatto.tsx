@@ -1,7 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import fs from 'fs';
+import path from 'path';
 
 const FooterLinksBottomCatto = () => {
+  const packageJsonPath = path.resolve(process.cwd(), 'package.json');
+  const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf-8'));
+  const version = packageJson.version;
+  
   return (
     <div className=" m-4 rounded-xl border-4 border-dotted border-black bg-white shadow dark:bg-gray-800">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
@@ -116,7 +122,10 @@ const FooterLinksBottomCatto = () => {
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 dark:text-gray-400 sm:text-center">
             © 2006 - {new Date().getFullYear()} Chris Catto .com™. All Rights
-            Reserved.
+            Reserved.           
+             <span className="text-center text-sm text-slate-500 dark:text-slate-500">
+            &nbsp;(v{version})
+            </span>
           </span>
           <div className="mt-4 flex sm:mt-0 sm:justify-center">
             {/* https://tw-elements.com/docs/standard/components/social-buttons/ */}
